@@ -56,10 +56,16 @@
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <div class="inline-flex items-center gap-2 bg-indigo-500/25 border border-indigo-400/40 rounded-full px-4 py-1 text-xs font-semibold mb-3">
-            <span>🎓 دانشکده اقتصاد دانشگاه تهران</span>
-            <span>•</span>
-            <span>دوره تخصصی MBA (کد 0410)</span>
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <div class="inline-flex items-center gap-2 bg-indigo-500/25 border border-indigo-400/40 rounded-full px-4 py-1 text-xs font-semibold">
+              <span>🎓 دانشکده اقتصاد دانشگاه تهران</span>
+              <span>•</span>
+              <span>دوره تخصصی MBA (کد 0410)</span>
+            </div>
+            <a href="../" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white border border-white/30 rounded-full px-3.5 py-1 text-xs font-bold transition-all shadow-sm hover:scale-105 backdrop-blur-md">
+              <span>🏠 پرتال اصلی و انتخاب کلاس</span>
+              <span class="text-xs">➔</span>
+            </a>
           </div>
           <h1 class="text-3xl md:text-4xl font-black tracking-tight mb-2">
             دانشنامه کاربردی و داشبورد تعاملی مدیریت استراتژیک
@@ -83,7 +89,10 @@
       </div>
 
       <!-- Navigation Tabs -->
-      <div class="flex flex-wrap gap-2 mt-7 border-t border-white/15 pt-4">
+      <div class="flex flex-wrap items-center gap-2 mt-7 border-t border-white/15 pt-4">
+        <a href="../" class="px-4 py-2.5 rounded-xl text-xs md:text-sm font-black transition-all bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-md flex items-center gap-2 hover:scale-105">
+          <span>🏠 بازگشت به صفحه اصلی (انتخاب کلاس)</span>
+        </a>
         <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-bold transition-all bg-white text-slate-900 shadow-md">
           📊 داشبورد کلان دوره
         </button>

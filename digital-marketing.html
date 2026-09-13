@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دانشنامه کاربردی و داشبورد تعاملی دیجیتال مارکتینگ | دانشکده اقتصاد دانشگاه تهران</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+  <style>
+    .gradient-header { background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 50%, #0f172a 100%); }
+
+    body { font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .card-hover { transition: all 0.25s ease-in-out; }
+    .card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+    
+    .prose-custom { font-size: 0.875rem; line-height: 1.8; color: #334155; }
+    .prose-custom h1 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-top: 1.5rem; margin-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+    .prose-custom h2 { font-size: 1.25rem; font-weight: 700; color: #1e293b; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+    .prose-custom h3 { font-size: 1.05rem; font-weight: 700; color: #334155; margin-top: 1rem; margin-bottom: 0.5rem; }
+    .prose-custom p { margin-bottom: 0.85rem; text-align: justify; }
+    .prose-custom ul { list-style-type: disc; margin-right: 1.5rem; margin-bottom: 0.85rem; }
+    .prose-custom ol { list-style-type: decimal; margin-right: 1.5rem; margin-bottom: 0.85rem; }
+    .prose-custom li { margin-bottom: 0.35rem; }
+    .prose-custom blockquote { border-right: 4px solid #3b82f6; background-color: #f8fafc; padding: 0.75rem 1rem; border-radius: 0.5rem; margin: 1rem 0; color: #1e40af; font-weight: 500; }
+    .prose-custom table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.8rem; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
+    .prose-custom th { background-color: #f1f5f9; padding: 0.6rem 0.75rem; font-weight: 700; border: 1px solid #cbd5e1; text-align: right !important; direction: rtl !important; }
+    .prose-custom td { padding: 0.6rem 0.75rem; border: 1px solid #e2e8f0; text-align: right !important; direction: rtl !important; }
+    .prose-custom th:has(.math-eq), .prose-custom td:has(.math-eq), .prose-custom th.text-center, .prose-custom td.text-center { text-align: center !important; }
+    .prose-custom pre { background-color: #0f172a; color: #f8fafc; padding: 1rem; border-radius: 0.75rem; overflow-x: auto; font-family: monospace; font-size: 0.8rem; margin: 1rem 0; direction: ltr; text-align: left; }
+    .prose-custom code { background-color: #f1f5f9; color: #0f172a; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-family: monospace; font-size: 0.825rem; }
+    .prose-custom pre code { background-color: transparent; color: inherit; padding: 0; }
+    
+    /* Mathematical Formulas & Fractions Styling */
+    .math-eq { display: inline-flex !important; align-items: center !important; gap: 5px !important; direction: ltr !important; font-family: Cambria, 'Times New Roman', serif !important; font-size: 0.95rem !important; font-weight: 700 !important; vertical-align: middle !important; color: #0f172a !important; margin: 3px 0 !important; }
+    .math-frac { display: inline-flex !important; flex-direction: column !important; align-items: center !important; vertical-align: middle !important; text-align: center !important; margin: 0 4px !important; }
+    .math-num { border-bottom: 2px solid #1e293b !important; padding: 1px 6px 3px 6px !important; color: #1d4ed8 !important; font-weight: 800 !important; width: 100% !important; text-align: center !important; font-size: 0.85rem !important; line-height: 1.2 !important; }
+    .math-den { padding: 3px 6px 1px 6px !important; color: #b91c1c !important; font-weight: 800 !important; width: 100% !important; text-align: center !important; font-size: 0.85rem !important; line-height: 1.2 !important; }
+    .math-op { font-size: 1.15rem !important; color: #475569 !important; font-weight: 900 !important; margin: 0 2px !important; }
+    .math-var { color: #0f172a !important; font-weight: 900 !important; }
+    .math-val { color: #047857 !important; font-weight: 900 !important; }
+
+  </style>
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$']] },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="gradient-header text-white py-9 px-6 shadow-xl relative overflow-hidden">
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-blue-500/25 border border-blue-400/40 rounded-full px-4 py-1 text-xs font-semibold mb-3">
+            <span>🎓 دانشکده اقتصاد دانشگاه تهران</span>
+            <span>•</span>
+            <span>دوره تخصصی MBA (کد 0410)</span>
+          </div>
+          <h1 class="text-3xl md:text-4xl font-black tracking-tight mb-2">
+            دانشنامه کاربردی و داشبورد تعاملی دیجیتال مارکتینگ
+          </h1>
+          <p class="text-blue-100 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
+            مجموعه تحلیلی و راهبردی ۵ جلسه کامل | مدرس: <strong class="text-white font-semibold">استاد ناصر حجتی</strong> | <div class="inline-flex items-center gap-2 mt-1">
+  <span class="text-blue-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
+  <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
+    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+    <span>Parsa Rezaie</span>
+  </a>
+</div>
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3.5 text-center min-w-[120px]">
+            <div class="text-2xl font-black text-amber-300">۵ جلسه</div>
+            <div class="text-xs text-blue-100 font-medium">۱۶ ساعت تدریس</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="flex flex-wrap gap-2 mt-7 border-t border-white/15 pt-4">
+        <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-bold transition-all bg-white text-slate-900 shadow-md">
+          📊 داشبورد کلان دوره
+        </button>
+        <button onclick="switchTab('session1')" id="tab-session1" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۱: استراتژی و مدل‌های پایه
+        </button>
+        <button onclick="switchTab('session2')" id="tab-session2" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۲: پلتفرم‌های ایران و پرفورمنس
+        </button>
+        <button onclick="switchTab('session3')" id="tab-session3" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۳: اتوماسیون، CRM و سئو تکنیکال
+        </button>
+        <button onclick="switchTab('session4')" id="tab-session4" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۴: هوش مصنوعی و لندینگ پیج
+        </button>
+        <button onclick="switchTab('session5')" id="tab-session5" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۵: جمع‌بندی استراتژیک و CRO
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-6xl mx-auto px-4 py-8 flex-1 w-full">
+
+    <!-- TAB: OVERVIEW -->
+    <section id="content-overview" class="tab-content space-y-8">
+      
+      <!-- Key Philosophy Banner -->
+      <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-r-4 border-amber-500 p-5 rounded-2xl shadow-sm">
+        <div class="flex items-start gap-3.5">
+          <div class="p-3 bg-amber-500 text-white rounded-xl shadow-md text-xl">💡</div>
+          <div>
+            <h3 class="text-sm md:text-base font-extrabold text-amber-950 mb-1">دکترین محوری استاد ناصر حجتی در کل دوره:</h3>
+            <p class="text-xs md:text-sm text-amber-900 leading-relaxed text-justify">
+              «دیجیتال مارکتینگ یک معجزه مستقل نیست که بتواند کسب‌وکار دارای محصول ضعیف یا بیزینس‌پلن ناقص را نجات دهد؛ بلکه اهرم مقیاس‌پذیرکننده (Scale) استراتژی بازاریابی، کیفیت محصول و مدل کسب‌وکار است. تزریق بودجه سنگین تبلیغاتی پیش از اثبات زیرساخت، یعنی هدر دادن بی‌بازگشت سرمایه و نابودی قطعی برند!»
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Roadmap Grid (5 Sessions) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 card-hover shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm">۱</span>
+              <span class="text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full">استراتژی کلان</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">زیرساخت استراتژیک بازاریابی</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">تحلیل مدل‌های 7P و STP، تفکیک حیاتی UVP از USP، فرآیند انطباق از PSF تا PMF و تحلیل چرخه‌های عمر (PLC/CLC).</p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <button onclick="switchTab('session1')" class="w-full text-center text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors py-1">مشاهده خلاصه و جزئیات جلسه اول ➔</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 card-hover shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">۲</span>
+              <span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full">رسانه‌های ایران</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">پرفورمنس مارکتینگ</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">کالبدشکافی ۵ پلتفرم یکتانت، جریان، نجوا، تریبون و آپارات. نردبان مدل‌های مالی تبلیغات (CPC/CPL/CPA/CPS) و ریتارگتینگ ۹۷ درصدی.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <button onclick="switchTab('session2')" class="w-full text-center text-xs font-bold text-emerald-600 hover:text-emerald-800 transition-colors py-1">مشاهده خلاصه و جزئیات جلسه دوم ➔</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 card-hover shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-8 h-8 rounded-lg bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-sm">۳</span>
+              <span class="text-[11px] font-bold text-purple-600 bg-purple-50 px-2.5 py-0.5 rounded-full">اتوماسیون و سئو</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">CRM، امنیت و سئو تکنیکال</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">تفاوت قیف B2B و B2C، امنیت پیج‌های اینستاگرام با نوین‌هاب، اتوماسیون پیگیری لیدها در دیدار CRM، سئو تکنیکال و گوگل ترندز.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <button onclick="switchTab('session3')" class="w-full text-center text-xs font-bold text-purple-600 hover:text-purple-800 transition-colors py-1">مشاهده خلاصه و جزئیات جلسه سوم ➔</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 card-hover shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-8 h-8 rounded-lg bg-rose-100 text-rose-800 flex items-center justify-center font-bold text-sm">۴</span>
+              <span class="text-[11px] font-bold text-rose-600 bg-rose-50 px-2.5 py-0.5 rounded-full">فروش هوشمند</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">هوش مصنوعی و لندینگ پیج</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">تحلیل تماس‌های کال‌سنتر با هوش مصنوعی (STT)، کیووردچی در وب فارسی، آنالیز رقبا با SocialInsider و مهندسی نرخ تبدیل (CRO).</p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <button onclick="switchTab('session4')" class="w-full text-center text-xs font-bold text-rose-600 hover:text-rose-800 transition-colors py-1">مشاهده خلاصه و جزئیات جلسه چهارم ➔</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 card-hover shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-sm">۵</span>
+              <span class="text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2.5 py-0.5 rounded-full">جمع‌بندی و تبدیل</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">معماری CRO و کسب‌وکار چابک</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">حل تله ترافیک بی‌نتیجه، طراحی صفحات فرود مینیمال با لود زیر ۳ ثانیه، فریم‌ورک‌های مهندسی پرامپت و پرتاب MVP در ۶۰ دقیقه.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <button onclick="switchTab('session5')" class="w-full text-center text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors py-1">مشاهده خلاصه و جزئیات جلسه پنجم ➔</button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    
+    <!-- TAB: SESSION 1 -->
+    <section id="content-session1" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm">
+        
+        <!-- Tab Header -->
+        <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-200">
+          <div>
+            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">جلسه 1</span>
+            <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">زیرساخت استراتژیک، مدل‌های پایه و چرخه عمر مشتری</h2>
+          </div>
+          <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-blue-600 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+        </div>
+
+        <!-- TOP LAYER: Executive Visual Summary -->
+        
+    <div class="bg-blue-50/60 border border-blue-200 rounded-2xl p-6 mb-6">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-xl">🎯</span>
+        <h3 class="text-base md:text-lg font-black text-blue-950">خلاصه اجرایی و مدیریتی جلسه اول: زیرساخت استراتژیک و چرخه عمر</h3>
+      </div>
+      <p class="text-xs md:text-sm text-blue-900 leading-relaxed mb-5 text-justify">
+        در این جلسه، چارچوب‌های بنیادین ورود به بازاریابی دیجیتال بررسی شد. تاکید محوری استاد بر تفکیک دقیق <strong>UVP</strong> (ارزش ادراک‌شده از زاویه دید مشتری) از <strong>USP</strong> (مزیت فنی محصول) و انطباق محصول با بازار (PMF) پیش از هرگونه تخصیص بودجه تبلیغاتی است.
+      </p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+        <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+          <div class="text-xs font-bold text-blue-600 mb-1">تفاوت UVP و USP</div>
+          <p class="text-xs text-slate-600 leading-relaxed">UVP پاسخ به این سوال است که «این محصول کدام درد عمیق مشتری را برطرف می‌کند؟»، نه اینکه مشخصات فنی آن چیست.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+          <div class="text-xs font-bold text-blue-600 mb-1">مسیر انطباق بازار</div>
+          <p class="text-xs text-slate-600 leading-relaxed">حرکت نظام‌مند از Problem-Solution Fit به سمت Product-Market Fit با استفاده از حداقل محصول پذیرفتنی (MVP).</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+          <div class="text-xs font-bold text-blue-600 mb-1">چرخه عمر مشتری (CLC)</div>
+          <p class="text-xs text-slate-600 leading-relaxed">سرمایه‌گذاری روی حفظ مشتریان فعلی و بازگشت لیدها به دلیل هزینه ۶ برابری جذب مشتریان کاملاً جدید.</p>
+        </div>
+      </div>
+
+      <!-- Matrix Table -->
+      <div class="bg-white rounded-xl border border-blue-200 overflow-hidden shadow-sm">
+        <table class="w-full text-xs text-right">
+          <thead class="bg-blue-100 text-blue-950 font-bold">
+            <tr>
+              <th class="p-3">مفهوم کلیدی</th>
+              <th class="p-3">زاویه دید سنتی (اشتباه)</th>
+              <th class="p-3">زاویه دید استراتژیک مدرن (رویکرد استاد حجتی)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-blue-100 text-slate-700">
+            <tr>
+              <td class="p-3 font-bold text-blue-900">پیشنهاد ارزش (UVP)</td>
+              <td class="p-3">توضیح مشخصات فنی و ویژگی‌های محصول (USP)</td>
+              <td class="p-3">حل درد و ایجاد تحول ملموس در زندگی یا بیزینس مشتری</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-blue-900">تزریق بودجه تبلیغاتی</td>
+              <td class="p-3">تبلیغات زودهنگام برای کشف بازار</td>
+              <td class="p-3">تبلیغات صرفاً بعد از اثبات PMF برای مقیاس‌پذیری (Scale)</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-blue-900">شاخص موفقیت کمپین</td>
+              <td class="p-3">تعداد بازدید (Impression) و فالوور</td>
+              <td class="p-3">نسبت ارزش طول عمر مشتری به هزینه جذب (CLV / CAC > 3)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+        <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+        <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+          <div>
+            <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه 1</h3>
+            <p class="text-xs text-slate-400">شامل تمام مبانی علمی، مثال‌های موردی، تنظیمات تخصصی و نکات ریز تدریس استاد</p>
+          </div>
+          <button onclick="toggleSessionFull('s1')" id="btn-toggle-s1" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+            <span>مطالعه متن کامل و تفصیلی جلسه</span>
+            <span id="icon-toggle-s1">▼</span>
+          </button>
+        </div>
+
+        <div id="full-s1" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+          <div class="prose-custom"><h1 id="-">دیجیتال مارکتینگ - جلسه اول (مفاهیم پایه و استراتژی دیجیتال)</h1>
+<p><strong>مدرس:</strong> استاد ناصر حجتی<br />
+<strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA  </p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده اجرایی (Executive Summary)</h2>
+<h3 id="_1">خلاصه مدیریتی</h3>
+<p>جلسه نخست درس «دیجیتال مارکتینگ» با تدریس استاد ناصر حجتی، بر پیوند گسست‌ناپذیر «استراتژی‌های بنیادین کسب‌وکار» و «ابزارها و تکنیک‌های دیجیتال مارکتینگ» تمرکز دارد. پیام محوری استاد حجتی در این جلسه این است که <strong>دیجیتال مارکتینگ به تنهایی یک معجزه مستقل نیست، بلکه لایه اجرایی و مقیاس‌پذیرکننده (Scalable) استراتژی بازاریابی و مدل کسب‌وکار است.</strong> اجرای ابزارهای دیجیتال بدون زیرساخت استراتژیک (نظیر بیزینس پلن، مدل درآمدی، عارضه‌یابی عملیاتی و فهم عمیق پرسونای مخاطب) تنها به سوزاندن منابع مالی و شکست کسب‌وکار می‌انجامد.</p>
+<p>در این جلسه، ضمن تبیین ساختار ۵ جلسه‌ای دوره (شامل ۱۸ ساعت آموزش کاربردی و کاملاً عملیاتی یا On-screen)، ابعاد ۱۲‌گانه طرح کسب‌وکار (Business Plan)، تفکیک مفاهیم کلیدی نظیر <strong>UVP در برابر USP</strong>، <strong>PMF در برابر PSF</strong>، تحلیل چرخه عمر (محصول، برند و مشتری) و مدل‌های ۷P و STP به تفصیل بررسی شد. استاد حجتی با استناد به آمارهای شکست بیش از ۹۵ درصدی استارتاپ‌ها در ایران، علت اصلی ناکامی‌ها را غفلت از امکان‌سنجی (Feasibility Study) و نبودِ تطابق میان ظرفیت‌های عملیاتی و کمپین‌های تبلیغاتی دانستند.</p>
+<h3 id="_2">مهم‌ترین دستاوردهای اجرایی برای مدیران</h3>
+<ol>
+<li><strong>توقف کمپین‌های هیجانی بدون زیرساخت:</strong> تا زمانی که مدل کسب‌وکار (Business Model) و انطباق محصول با بازار (PMF) اثبات نشده است، نباید بودجه سنگین صرف کمپین‌های دیجیتال مارکتینگ شود.</li>
+<li><strong>پیوستگی عملیات و بازاریابی:</strong> کمپین دیجیتال باید دقیقاً بر اساس ظرفیت عملیاتی (Capacity) کسب‌وکار طراحی شود؛ در غیر این صورت، جذب لید (Lead) زیاد بدون امکان پاسخگویی، باعث تخریب برند (Anti-Branding) می‌شود.</li>
+<li><strong>تمرکز بر ارزش پیشنهادی یکتا (UVP):</strong> در عصر دیجیتال، به جای ادعاهای فروش محور (USP)، باید بر خلق ارزش ملموس و حل مسئله واقعی مشتری (UVP) تمرکز کرد.</li>
+<li><strong>استفاده از هوش مصنوعی و داده‌کاوی به عنوان اهرم سرعت:</strong> ابزارهای هوش مصنوعی و داده‌کاوی (پایتون، کلود، پرپلکسیتی و...) جایگزین تفکر استراتژیک نیستند، بلکه سرعت اجرا و تحلیل را صدها برابر می‌کنند.</li>
+</ol>
+<hr />
+<h2 id="session-outline">۲. سرفصل‌ها و نقشه ذهنی مباحث (Session Outline)</h2>
+<pre><code class="language-text">دیجیتال مارکتینگ (جلسه اول: زیرساخت استراتژیک)
+│
+├── ۱. ساختار دوره و فلسفه تدریس
+│   ├── ۵ جلسه (۱۸ ساعت مفید)
+│   └── رویکرد کاملاً عملیاتی (On-screen) و ابزارمحور از جلسه دوم
+│
+├── ۲. اسناد استراتژیک پیش‌نیاز دیجیتال مارکتینگ
+│   ├── مدل کسب‌وکار (Business Model - BM)
+│   ├── امکان‌سنجی مالی و عملیاتی (Feasibility Study - FS)
+│   ├── ارائه به سرمایه‌گذار (Pitch Deck) و محاسبه نرخ بازگشت سرمایه (ROI)
+│   └── طرح جامع کسب‌وکار (Business Plan - BP) و ماژول‌های ۱۲‌گانه آن
+│
+├── ۳. مفاهیم و فریم‌ورک‌های بنیادین بازاریابی
+│   ├── ماتریس بازاریابی اصیل و توسعه‌یافته (4P -&gt; 7P)
+│   ├── فرآیند سه‌گانه STP (بخش‌بندی، هدف‌گیری، جایگاه‌یابی)
+│   ├── تفکیک USP (مزیت رقابتی فروش) و UVP (ارزش پیشنهادی یکتا)
+│   ├── فرآیند انطباق: از PSF (تطابق مسئله-راهکار) تا PMF (تطابق محصول-بازار)
+│   └── تمایز تحقیقات بازار (Market Research) و تحقیقات بازاریابی (Marketing Research)
+│
+├── ۴. تحلیل چرخه‌های عمر (Life Cycle Analysis)
+│   ├── چرخه عمر محصول (PLC)
+│   ├── چرخه عمر برند (BLC)
+│   └── چرخه عمر مشتری (CLC) و ارزش طول عمر مشتری (CLV)
+│
+└── ۵. اکوسیستم ابزارها و فناوری‌های تحول‌آفرین
+    ├── هوش مصنوعی و مدل‌های زبانی (LLMs: ChatGPT, Claude, Perplexity, DeepSeek)
+    ├── ابزارهای اتوماسیون و سئو (Screaming Frog, Brandwatch, N8N)
+    └── داده‌کاوی و تحلیل داده (Python, Pandas, Scikit-learn)
+</code></pre>
+<hr />
+<h2 id="core-topics-theories">۳. شرح موشکافانه و تفصیلی مفاهیم تدریس‌شده (Core Topics &amp; Theories)</h2>
+<h3 id="_3">فلسفه آموزشی دوره</h3>
+<p>کلاس به‌جای مباحث صرفاً تئوریک و اسلایدمحور، مبتنی بر تمرین عملی روی نرم‌افزارها و ابزارهای واقعی است. از جلسه دوم تمام مباحث به صورت زنده روی صفحه نمایش (On-screen) اجرا، تمرین و تحلیل خواهند شد.</p>
+<h3 id="_4">اسناد استراتژیک پیش‌نیاز دیجیتال مارکتینگ</h3>
+<p>پیش از خروج هرگونه بودجه بازاریابی دیجیتال، کسب‌وکار باید اسناد چهارگانه زیر را تدوین کرده باشد:</p>
+<pre><code>[Feasibility Study (FS)] ──&gt; [Business Model (BM)] ──&gt; [Business Plan (BP)] ──&gt; [Pitch Deck]
+</code></pre>
+<h4 id="business-model-bm">۱. مدل کسب‌وکار (Business Model - BM)</h4>
+<p>نحوه خلق، ارائه و ضبط ارزش (Value Capture). شامل الگوی درآمدزایی، تعامل با مشتریان و ساختار هزینه‌ها.</p>
+<h4 id="feasibility-study-fs">۲. امکان‌سنجی (Feasibility Study - FS)</h4>
+<p>تحلیل فنی، مالی و بازار پیش از راه‌اندازی کسب‌وکار. </p>
+<blockquote>
+<p><strong>نکته کلیدی استاد حجتی:</strong> بیش از ۹۵٪ از شکست کسب‌وکارها و استارتاپ‌ها در ایران ناشی از نادیده گرفتن مرحله امکان‌سنجی و اتکا به فرضیات خوش‌بینانه ناپایدار است.</p>
+</blockquote>
+<h4 id="pitch-deck">۳. ارائه به سرمایه‌گذار (Pitch Deck)</h4>
+<p>مجموعه اسلاید‌های فشرده و متمرکز بر نرخ بازگشت سرمایه (ROI) و مدل بازگشت وجه برای جلب جذب سرمایه از VCها یا سرمایه‌گذاران فرشته.</p>
+<h4 id="business-plan-bp">۴. طرح جامع کسب‌وکار (Business Plan - BP)</h4>
+<p>سند جامع شامل ۱۲ ماژول کلیدی زیر:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">شماره</th>
+<th style="text-align: right;">ماژول استراتژیک BP</th>
+<th style="text-align: right;">نقش در دیجیتال مارکتینگ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">۱</td>
+<td style="text-align: right;">منابع انسانی (HR)</td>
+<td style="text-align: right;">جذب و نگهداشت متخصصان سئو، تولید محتوا و ادس</td>
+</tr>
+<tr>
+<td style="text-align: center;">۲</td>
+<td style="text-align: right;">روابط عمومی (PR)</td>
+<td style="text-align: right;">مدیریت اعتبار برند و کمپین‌های انتشار اخبار و بیانیه</td>
+</tr>
+<tr>
+<td style="text-align: center;">۳</td>
+<td style="text-align: right;">امور مالی (Finance)</td>
+<td style="text-align: right;">بودجه‌بندی کمپین‌ها، تعیین CAC و محاسبه LTV/CLV</td>
+</tr>
+<tr>
+<td style="text-align: center;">۴</td>
+<td style="text-align: right;">لجستیک و تامین (Logistics)</td>
+<td style="text-align: right;">زنجیره تامین و انبارداری برای پاسخ به تقاضای دیجیتال</td>
+</tr>
+<tr>
+<td style="text-align: center;">۵</td>
+<td style="text-align: right;">تحقیق و توسعه (R&amp;D)</td>
+<td style="text-align: right;">نوآوری در محصول بر اساس داده‌های بازخورد کاربران</td>
+</tr>
+<tr>
+<td style="text-align: center;">۶</td>
+<td style="text-align: right;">فناوری اطلاعات (IT)</td>
+<td style="text-align: right;">زیرساخت‌های سرور، امنیت، وب‌سایت و اپلیکیشن</td>
+</tr>
+<tr>
+<td style="text-align: center;">۷</td>
+<td style="text-align: right;">بازاریابی (Marketing)</td>
+<td style="text-align: right;">استراتژی‌های پروموشن، STP و مدیریت رسانه‌ها</td>
+</tr>
+<tr>
+<td style="text-align: center;">۸</td>
+<td style="text-align: right;">فروش (Sales)</td>
+<td style="text-align: right;">فرآیند تبدیل لید به مشتری و مدیریت خط لوله فروش</td>
+</tr>
+<tr>
+<td style="text-align: center;">۹</td>
+<td style="text-align: right;">برندسازی (Branding)</td>
+<td style="text-align: right;">هویت بصری، لحن گفتار (Tone of Voice) و جایگاه ذهنی</td>
+</tr>
+<tr>
+<td style="text-align: center;">۱۰</td>
+<td style="text-align: right;">امور حقوقی (Legal)</td>
+<td style="text-align: right;">قوانین تجارت الکترونیک، حق مالکیت معنوی و حریم خصوصی</td>
+</tr>
+<tr>
+<td style="text-align: center;">۱۱</td>
+<td style="text-align: right;">بازطراحی فرآیندها (Processes)</td>
+<td style="text-align: right;">اتوماسیون فرآیندهای ثبت سفارش و پشتیبانی</td>
+</tr>
+<tr>
+<td style="text-align: center;">۱۲</td>
+<td style="text-align: right;">هوش مصنوعی و اتوماسیون (AI)</td>
+<td style="text-align: right;">استفاده از ایجنت‌های هوشمند برای پاسخگویی و داده‌کاوی</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_5">مفاهیم و فریم‌ورک‌های اصیل بازاریابی</h3>
+<h4 id="4p-7p">۱. آمیخته بازاریابی خدمات و محصولات (4P به 7P)</h4>
+<p>آمیخته سنتی بازاریابی شامل <strong>Product (محصول)</strong>، <strong>Price (قیمت)</strong>، <strong>Place (توزیع)</strong> و <strong>Promotion (ترویج)</strong> در بازاریابی دیجیتال و خدمات به <strong>7P</strong> ارتقا یافته است:</p>
+<pre><code>                  ┌─── Product (محصول)
+                  ├─── Price (قیمت)
+                  ├─── Place (توزیع)
+ 4P اولیه ────────┼─── Promotion (ترویج)
+                  │
+                  ├─── People (کارکنان و سرمایه انسانی)
+ 3P مکمل ─────────┼─── Process (فرآیندها و ساختار ارائه)
+                  └─── Physical Evidence (شواهد فیزیکی و بصری)
+</code></pre>
+<ul>
+<li><strong>People (کارکنان):</strong> نحوه رفتار ادمین‌ها، تیم پشتیبانی آنلاین و مرکز تماس با مشتری.</li>
+<li><strong>Process (فرآیندها):</strong> سرعت لود سایت، فرآیند ثبت سفارش، سهولت پرداخت و پیگیری سفارش.</li>
+<li><strong>Physical Evidence (شواهد فیزیکی):</strong> طراحی UI/UX، اینماد، گواهی‌نامه‌های امنیتی SSL و بسته‌بندی ارسال کالا.</li>
+</ul>
+<h4 id="stp-segmenting-targeting-positioning">۲. فریم‌ورک STP (Segmenting, Targeting, Positioning)</h4>
+<ul>
+<li><strong>Segmentation (بخش‌بندی بازار):</strong> تقسیم بازار به دسته‌های همگن بر اساس متغیرهای دموگرافیک، جغرافیایی، رفتار مصرف‌کننده (Behavioral) و روان‌شناختی (Psychographic).</li>
+<li><strong>Targeting (هدف‌گیری):</strong> انتخاب جذاب‌ترین بخش‌های بازار بر اساس ارزش مالی و نرخ انطباق با منابع شرکت.</li>
+<li><strong>Positioning (جایگاه‌یابی در ذهن):</strong> ساخت یک تصویر متمایز و پایدار از برند در ذهن مشتری در مقایسه با رقبا.</li>
+</ul>
+<h4 id="usp-uvp">۳. تفکیک مفهومی USP و UVP</h4>
+<pre><code>USP (Unique Selling Proposition) ──&gt; متمرکز بر ویژگی محصول و فروش مجزا
+UVP (Unique Value Proposition) ──&gt; متمرکز بر حل مسئله مشتری و خلق ارزش پایدار
+</code></pre>
+<ul>
+<li><strong>USP (مزیت رقابتی فروش):</strong> ویژگی منحصر‌به‌فرد محصول که رقبا ندارند (مثلاً: «تنها یخچال با گارانتی ۱۰ ساله مجهز به موتور خطی»).</li>
+<li><strong>UVP (ارزش پیشنهادی یکتا):</strong> پاسخ صریح به این سوال مشتری که <em>«چرا باید از میان همه گزینه‌ها، شما را انتخاب کنم و چه دردی از من دوا می‌کنید؟»</em> (مثلاً: «تحویل ۳۰ دقیقه‌ای پیتزا گرم یا رایگان شدن آن»).</li>
+</ul>
+<h4 id="psf-pmf">۴. انطباق راهکار و محصول با بازار (PSF به PMF)</h4>
+<pre><code>[شناسایی درد مشتری] ──&gt; [PSF: ارائه راهکار اولیه] ──&gt; [تست و اصلاح] ──&gt; [PMF: پذیرش گسترده بازار]
+</code></pre>
+<ol>
+<li><strong>PSF (Problem-Solution Fit):</strong> اثبات اینکه راهکار شما (Solution) دقیقاً درد و مسئله اصلی مشتری (Problem) را حل می‌کند.</li>
+<li><strong>PMF (Product-Market Fit):</strong> مرحله‌ای که محصول ساخته‌شده، خریداران کافی در یک بازار بزرگ دارد و مشتریان حاضرند برای آن پول بپردازند و آن را به دیگران توصیه کنند.</li>
+</ol>
+<h4 id="_6">۵. تحقیقات بازار در برابر تحقیقات بازاریابی</h4>
+<ul>
+<li><strong>تحقیقات بازار (Market Research):</strong> بررسی کل بازار، اندازه بازار (Market Size)، سهم بازار رقبا، قوانین بالادستی و رفتارهای کلان مصرف‌کنندگان.</li>
+<li><strong>تحقیقات بازاریابی (Marketing Research):</strong> بررسی ابزارهای تخصصی بازاریابی و ارزیابی اثرگذاری عناصر 7P (مانند تست تست A/B یک کمپین ایمیلی، بررسی نرخ کلیک یک بنر یا ارزیابی اثر بسته‌بندی جدید بر فروش).</li>
+</ul>
+<hr />
+<h3 id="life-cycle-models">چرخه‌های عمر (Life Cycle Models)</h3>
+<h4 id="plc-product-life-cycle">۱. چرخه عمر محصول (PLC - Product Life Cycle)</h4>
+<p>شامل چهار مرحله <strong>معرفی (Introduction)</strong>، <strong>رشد (Growth)</strong>، <strong>بلوغ (Maturity)</strong> و <strong>افول (Decline)</strong>. استراتژی بازاریابی دیجیتال در هر مرحله کاملاً متفاوت است (مثلاً در مرحله معرفی، هدف آگا‌هی از برند است، اما در مرحله بلوغ، نگهداشت مشتری و بهینه‌سازی قیمت).</p>
+<h4 id="blc-brand-life-cycle">۲. چرخه عمر برند (BLC - Brand Life Cycle)</h4>
+<p>برندها فرآیندی بلندمدت‌تر از محصولات دارند. یک محصول ممکن است وارد مرحله افول شود، اما برند با ری‌برندینگ (Rebranding) یا ارائه خطوط محصول جدید به حیات خود ادامه دهد.</p>
+<h4 id="clc-clv">۳. چرخه عمر مشتری (CLC) و ارزش طول عمر مشتری (CLV)</h4>
+<ul>
+<li><strong>CLC (Customer Life Cycle):</strong> مراحل تعامل مشتری با برند شامل: آگاهی (Awareness)، ارزیابی (Consideration)، خرید (Purchase)، نگهداشت (Retention) و وفاداری/توصیه‌کنندگی (Advocacy).</li>
+<li><strong>CLV (Customer Lifetime Value):</strong> مجموع سود خالص ارائه‌شده توسط یک مشتری در طول کل دوره تعاملش با کسب‌وکار.<blockquote>
+<p>[!TIP]</p>
+<h3 id="clv-customer-lifetime-value">🧮 کارت فرمول ارزش طول عمر مشتری (CLV - Customer Lifetime Value)</h3>
+<p><div class="math-eq" dir="ltr" style="font-size: 1.1rem; margin: 10px 0;"><br />
+  <span class="math-var">CLV</span><br />
+  <span class="math-op">=</span><br />
+  <span class="math-val">AOV</span><br />
+  <span class="math-op">×</span><br />
+  <span class="math-val">F</span><br />
+  <span class="math-op">×</span><br />
+  <span class="math-val">T</span><br />
+</div></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">نماد</th>
+<th style="text-align: right; direction: rtl;">عنوان متغیر</th>
+<th style="text-align: right; direction: rtl;">نام فارسی</th>
+<th style="text-align: right; direction: rtl;">شرح و نقش در تصمیم‌گیری</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>AOV</strong></td>
+<td style="text-align: right; direction: rtl;">Average Order Value</td>
+<td style="text-align: right; direction: rtl;">میانگین ارزش هر سفارش</td>
+<td style="text-align: right; direction: rtl;">میانگین مبلغ ریالی پرداختی مشتری در هر سبد خرید.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>F</strong></td>
+<td style="text-align: right; direction: rtl;">Purchase Frequency</td>
+<td style="text-align: right; direction: rtl;">تکرار خرید سالانه</td>
+<td style="text-align: right; direction: rtl;">تعداد دفعات خرید مجدد مشتری در طول یک سال.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>T</strong></td>
+<td style="text-align: right; direction: rtl;">Customer Lifespan</td>
+<td style="text-align: right; direction: rtl;">طول دوره ارتباط (سال)</td>
+<td style="text-align: right; direction: rtl;">میانگین سال‌های وفاداری و تعامل مشتری با برند.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>🔢 سناریوی عددی نمونه:</strong><br />
+  <div class="math-eq" dir="ltr"><span>1,000,000</span><span class="math-op">×</span><span>3</span><span class="math-op">×</span><span>2</span><span class="math-op">=</span><span class="math-val">6,000,000 تومان</span></div></li>
+<li><strong>💡 قاعده طلایی بازاریابی (Golden Ratio):</strong><br />
+  <div class="math-eq" dir="ltr"><span class="math-var">CLV</span><span class="math-op">≥</span><span>3</span><span class="math-op">×</span><span class="math-var">CAC</span></div> (ارزش مشتری باید حداقل ۳ برابر هزینه جذب باشد).</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h2 id="real-world-case-studies">۴. مثال‌های کاربردی، کیس‌استادی‌ها و تجربیات استاد (Real-world Case Studies)</h2>
+<h3 id="_7">کیس ۱: تفاوت چرخه خرید در کالاهای باگیرایی بالا و پایین</h3>
+<ul>
+<li><strong>شرح کیس:</strong> مقایسه رفتار خرید کالاهایی نظیر <strong>یخچال، فرش و مبلمان</strong> (High-Involvement) با کالاهایی نظیر <strong>نان و مواد غذایی روزمره</strong> (Low-Involvement).</li>
+<li><strong>تحلیل استاد:</strong> در کالاهای اساسی و سرمایه‌ای، بازاریابی دیجیتال باید بر پایه‌ریزی آگاهی، ارزیابی، بازاریابی مجدد (Retargeting) و ارتباطات B2B یا B2C مداوم باشد. ارسال پیامک تبلیغاتی روزانه به مشتری برای خرید مجدد یخچال ناآگاهانه است، در حالی که در کالاهای با تکرار بالا، نرخ تعامل روزانه اهمیت دارد.</li>
+</ul>
+<h3 id="_8">کیس ۲: اکوسیستم ایران‌خودرو، ایساکو و امدادخودرو</h3>
+<ul>
+<li><strong>شرح کیس:</strong> بررسی نحوه پوشش کل چرخه عمر مشتری (CLC) توسط گروه ایران‌خودرو.</li>
+<li><strong>تحلیل استاد:</strong> فروش خودرو تنها نقطه شروع تعامل با مشتری است. کسب درآمد اصلی و پایدار از طریق شبکه تامین قطعات (ایساکو) و خدمات پس از فروش و پشتیبانی جاده‌ای (امدادخودرو) در طول چرخه حیات محصول رخ می‌دهد. دیجیتال مارکتینگ باید لایه ارتباطی این اکوسیستم را یکپارچه کند.</li>
+</ul>
+<h3 id="_9">کیس ۳: کمپین شکلات‌سازی و ناهماهنگی کیفیت با بسته‌بندی</h3>
+<ul>
+<li><strong>شرح کیس:</strong> یک شرکت تولید شکلات بدون ارزیابی دقیق کیفیت محصول (طعم و فرمولاسیون)، بودجه سنگینی را صرف طراحی و چاپ ۵۰۰,۰۰۰ جعبه لوکس صادراتی در چاپخانه‌های گردنه تنباکویی تهران کرد. کمپین تبلیغاتی زودهنگام اجرا شد، اما محصول به دلیل کیفیت پایین طعم، پس از اولین خرید توسط مشتریان پس زده شد.</li>
+<li><strong>تحلیل استاد:</strong> شکست در انطباق راهکار-محصول (PSF) و کیفیت پایه محصول (Product در 4P)، با برترین بسته‌بندی‌ها و سنگین‌ترین کمپین‌های تبلیغاتی جبران نمی‌شود. نتیجه این ناهماهنگی، خسارت مالی سنگین و نابودی اعتبار برند در گام نخست بود.</li>
+</ul>
+<h3 id="capacity">کیس ۴: کلینیک زیبایی و بحران عدم تناسب ظرفیت (Capacity)</h3>
+<ul>
+<li><strong>شرح کیس:</strong> یک کلینیک زیبایی کمپین تبلیغاتی دیجیتال پرحجمی را اجرا کرد که منجر به ورود صدها لید (Lead) و تماس تلفنی در روز شد. اما کلینیک تنها ۱ منشی و ۲ پزشک داشت. صف‌های طویل، پاسخگویی نامناسب تلفنی و نوبت‌دهی‌های چندماهه ایجاد شد.</li>
+<li><strong>تحلیل استاد:</strong> این کمپین به دلیل نادیده گرفتن عناصر <strong>Process</strong> و <strong>People</strong> در 7P، به‌جای سودآوری به یک کمپین تخریب برند (Anti-Branding) تبدیل شد. تعداد زیادی از لیدهای گران‌قیمت به دلیل عدم پاسخگویی سوختند و نظرات منفی زیادی در شبکه‌های اجتماعی ثبت شد.</li>
+</ul>
+<h3 id="_10">کیس ۵: واردکننده پوشاک و فروش کانتینری ۴۰ فوت در ۱۲ ساعت</h3>
+<ul>
+<li><strong>شرح کیس:</strong> واردکننده پوشاک، یک کانتینر ۴۰ فوت لباس را طی یک حراج آنلاین ۱۲ ساعته با سود ۱۰۰ میلیون تومانی فروخت. به دلیل هجوم فیزیکی و آنلاین خریداران، نیروهای انتظامی (نوپو) به محل انبار اعزام شدند. پس از اتمام بار، هیچ داده‌ای از خریداران ثبت نشد.</li>
+<li><strong>تحلیل استاد:</strong> با وجود موفقیت مالی مقطعی، این کسب‌وکار فاقد زیرساخت CRM بود. اگر داده‌های چند صد خریدار جمع‌آوری می‌شد، ارزش دوره عمر مشتریان (CLV) آتی می‌توانست صدها برابر سود حاصل از حراج یکباره کانتینر باشد.</li>
+</ul>
+<h3 id="-_1">کیس ۶: وکیل و ریسک بیمه آتش‌سوزی (عدم تحلیل هزینه-فایده)</h3>
+<ul>
+<li><strong>شرح کیس:</strong> یک وکیل برای دفتر کاری ۵ میلیارد تومانی خود از پرداخت حق بیمه سالانه ۵۰ هزار تومانی (در زمان خود) امتناع کرد و پس از حادثه آتش‌سوزی، کل دارایی خود را از دست داد.</li>
+<li><strong>تحلیل استاد:</strong> عدم درک تحلیل هزینه-فایده (Cost-Benefit Analysis) و مدیریت ریسک در کسب‌وکارها، فاجعه‌بار است. در دیجیتال مارکتینگ نیز عدم صرف هزینه‌های جزئی زیرساختی (مانند سئو، امنیت و ابزارهای داده‌کاوی) می‌تواند کل دارایی‌های دیجیتال برند را نابود کند.</li>
+</ul>
+<hr />
+<h2 id="tools-platforms">۵. ابزارها، پلتفرم‌ها و تکنولوژی‌های معرفی‌شده (Tools &amp; Platforms)</h2>
+<p>در طول جلسه، استاد حجتی ابزارها و فناوری‌های تحول‌آفرین زیر را جهت استفاده در فرآیندهای دیجیتال مارکتینگ معرفی نمودند:</p>
+<pre><code>[موتورهای جستجو و هوش مصنوعی]
+  ├── Perplexity AI / ChatGPT / Claude / DeepSeek / Grok / NotebookLM
+  └── DALL-E / Codex (مولدهای محتوای بصری و کد)
+
+[سئو و تحقیق کلمات کلیدی]
+  ├── Screaming Frog (کرول و تحلیل فنی وب‌سایت)
+  ├── Ahrefs / Moz / SEMrush (تحلیل بک‌لینک، رقبا و آنالیز کلمات)
+  └── Google Trends (شناسایی ترندهای کلان سرچ)
+
+[تحلیل داده‌ها و گوش دادن به شبکه‌های اجتماعی]
+  ├── Brandwatch (سوشیال لیسنینگ و تحلیل حس جمعی)
+  └── Python Ecosystem: Pandas, Scikit-learn, Anaconda (داده‌کاوی و الگوریتم‌های پیش‌بین)
+
+[اتوماسیون و انتشار]
+  ├── N8N / Zapier (اتصال ابزارها و اتوماسیون فرآیندها)
+  └── NovinHub (مدیریت یکپارچه انتشار در شبکه‌های اجتماعی)
+</code></pre>
+<hr />
+<h2 id="executive-action-items-frameworks">۶. جعبه‌ابزار تصمیم‌گیری مدیران (Executive Action Items &amp; Frameworks)</h2>
+<h3 id="_11">چک‌لیست اقدامات عملیاتی مدیرعامل و مدیر مارکتینگ</h3>
+<pre><code>[ ] ۱. ارزیابی اسناد بالادستی (تکمیل BM، BP و FS پیش از شروع کمپین)
+[ ] ۲. سنجش ظرفیت عملیاتی (هماهنگی نرخ جذب لید با توان تیم فروش و پشتیبانی)
+[ ] ۳. شفاف‌سازی UVP (استخراج ارزش یکتا و درج آن در پیام محوری تبلیغات)
+[ ] ۴. نصب و پیکربندی ابزارهای جمع‌آوری داده (CRM، ابزارهای آنالیتیکس)
+[ ] ۵. تحلیل هزینه جذب مشتری (CAC) در برابر ارزش طول عمر مشتری (CLV)
+[ ] ۶. اتوماسیون پاسخگویی اولیه (استفاده از ایجنت‌های هوش مصنوعی و اتوماسیون)
+</code></pre>
+<h3 id="_12">اشتباهات مهلک و رایج کسب‌وکارها در دیجیتال مارکتینگ</h3>
+<ol>
+<li><strong>تمرکز بر شاخص‌های توخالی (Vanity Metrics):</strong> خوشحالی از افزایش تعداد فالوور یا بازدید ویدیو بدون داشتن فرآیند تبدیل (Conversion) به فروش.</li>
+<li><strong>خلط میان USP و UVP:</strong> تأکید بر ویژگی‌های فنی محصول به‌جای تشریح دردی که از مشتری دوا می‌شود.</li>
+<li><strong>اجرای کمپین بدون CRM:</strong> سوزاندن بودجه‌های سنگین تبلیغاتی بدون جمع‌آوری لیدها و نبودِ برنامه برای بازاریابی مجدد (Remarketing).</li>
+<li><strong>عدم انطباق تبلیغات با واقعیت عملیاتی:</strong> وعده‌های بزرگ در تبلیغات دیجیتال که فرآیند پشتیبانی و لجستیک شرکت توان برآورده ساختن آن را ندارد.</li>
+</ol></div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- TAB: SESSION 2 -->
+    <section id="content-session2" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm">
+        
+        <!-- Tab Header -->
+        <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-200">
+          <div>
+            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">جلسه 2</span>
+            <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">پرفورمنس مارکتینگ، رسانه‌های دیجیتال ایران و ریتارگتینگ</h2>
+          </div>
+          <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-blue-600 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+        </div>
+
+        <!-- TOP LAYER: Executive Visual Summary -->
+        
+    <div class="bg-emerald-50/60 border border-emerald-200 rounded-2xl p-6 mb-6">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-xl">📊</span>
+        <h3 class="text-base md:text-lg font-black text-emerald-950">خلاصه اجرایی و مدیریتی جلسه دوم: پرفورمنس مارکتینگ و رسانه‌های ایران</h3>
+      </div>
+      <p class="text-xs md:text-sm text-emerald-900 leading-relaxed mb-5 text-justify">
+        این جلسه به کالبدشکافی عملیاتی پلتفرم‌های تبلیغاتی ایران (یکتانت، تریبون، نجوا، جریان، آپارات) و مدل‌های خرید مبتنی بر عملکرد اختصاص دارد. مدل‌های پرداخت بر اساس اقدام (CPC, CPL, CPA, CPS) و راه‌اندازی کمپین‌های ریتارگتینگ برای جذب ۹۷٪ کاربرانی که در بازدید اول خرید نمی‌کنند تشریح شد.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+        <div class="bg-white p-4 rounded-xl border border-emerald-100 shadow-sm">
+          <div class="text-xs font-bold text-emerald-600 mb-1">نردبان مدل‌های خرید</div>
+          <p class="text-xs text-slate-600 leading-relaxed">گذار از CPM به سمت CPC و نهایتاً مدل‌های پیشرفته CPL و CPS برای مهار هدررفت بودجه تبلیغاتی.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-emerald-100 shadow-sm">
+          <div class="text-xs font-bold text-emerald-600 mb-1">قدرت ریتارگتینگ (Retargeting)</div>
+          <p class="text-xs text-slate-600 leading-relaxed">هدف‌گیری مجدد بازدیدکنندگانی که بدون خرید سایت را ترک کرده‌اند با نرخ تبدیل ۳ تا ۵ برابر ترافیک سرد.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-emerald-100 shadow-sm">
+          <div class="text-xs font-bold text-emerald-600 mb-1">ترکیب هم‌افزای پلتفرم‌ها</div>
+          <p class="text-xs text-slate-600 leading-relaxed">استفاده همزمان از تریبون (سئو)، یکتانت (ترافیک ورودی) و نجوا (پوش‌نوتیفیکیشن و بازگشت کاربر).</p>
+        </div>
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="bg-white rounded-xl border border-emerald-200 overflow-hidden shadow-sm">
+        <table class="w-full text-xs text-right">
+          <thead class="bg-emerald-100 text-emerald-950 font-bold">
+            <tr>
+              <th class="p-3">پلتفرم ایرانی</th>
+              <th class="p-3">کارکرد اصلی</th>
+              <th class="p-3">مدل بهینه خرید</th>
+              <th class="p-3">مزیت کلیدی برای کسب‌وکار</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-emerald-100 text-slate-700">
+            <tr>
+              <td class="p-3 font-bold text-emerald-900">یکتانت</td>
+              <td class="p-3">تبلیغات همسان و بنری ریتارگتینگ</td>
+              <td class="p-3">CPC (پرداخت به ازای کلیک)</td>
+              <td class="p-3">پوشش بیش از ۹۰٪ وب‌سایت‌های پربازدید فارسی</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-emerald-900">تریبون</td>
+              <td class="p-3">انتشار رپورتاژ آگهی و سئو</td>
+              <td class="p-3">پکیج رپورتاژ دائمی</td>
+              <td class="p-3">بک‌لینک باکیفیت و ارتقای اتوریتی دامنه در گوگل</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-emerald-900">نجوا</td>
+              <td class="p-3">پوش‌نوتیفیکیشن وب و موبایل</td>
+              <td class="p-3">CPM / ارسال مستقیم</td>
+              <td class="p-3">بازگرداندن ارزان و سریع کاربران به قیف فروش</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-emerald-900">جریان</td>
+              <td class="p-3">اینفلوئنسر مارکتینگ و تلگرام</td>
+              <td class="p-3">تعرفه‌ای بر اساس درگیری</td>
+              <td class="p-3">انتشار در کانال‌های تخصصی با نرخ تبدیل بالا</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+        <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+        <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+          <div>
+            <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه 2</h3>
+            <p class="text-xs text-slate-400">شامل تمام مبانی علمی، مثال‌های موردی، تنظیمات تخصصی و نکات ریز تدریس استاد</p>
+          </div>
+          <button onclick="toggleSessionFull('s2')" id="btn-toggle-s2" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+            <span>مطالعه متن کامل و تفصیلی جلسه</span>
+            <span id="icon-toggle-s2">▼</span>
+          </button>
+        </div>
+
+        <div id="full-s2" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+          <div class="prose-custom"><h1 id="-">دیجیتال مارکتینگ - جلسه دوم</h1>
+<p><strong>مدرس:</strong> استاد ناصر حجتی<br />
+<strong>دوره:</strong> مدیریت کسب‌وکار (MBA) - دانشکده اقتصاد دانشگاه تهران<br />
+<strong>موضوع جلسه:</strong> ابزارها و پلتفرم‌های تخصصی بازاریابی دیجیتال، مدل‌های تبلیغاتی و تحلیل عملکرد کمپین‌ها در اکوسیستم ایران  </p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده اجرایی (Executive Summary)</h2>
+<h3 id="_1">چکیده مدیریتی</h3>
+<p>این جلسه از کلاس دیجیتال مارکتینگ استاد ناصر حجتی، به تشریح جامع و عملیاتی «پلتفرم‌ها، ابزارها و مدل‌های خرید تبلیغات در فضای دیجیتال ایران» اختصاص دارد. فلسفه کلیدی مطرح‌شده توسط استاد، گذار از <strong>بازاریابی سنتی و سنجه‌های کیفی غیرقابل سنجش</strong> به سمت <strong>بازاریابی مبتنی بر عملکرد (Performance Marketing)</strong> و <strong>مدیریت داده‌محور</strong> است. استاد حجتی با تحلیل ساختار مالی کمپین‌ها، به مدیران ارشد هشدار می‌دهد که الگوبرداری کورکورانه کسب‌وکارهای کوچک و متوسط (SMBs) از برندهای بزرگ (نظیر صرافی‌های رمزارز، طلافروشی‌های بزرگ یا بانک‌ها) در خرید بنرهای ثابت و برندسازی آگاهی‌بخش (Impression-based/CPM)، موجب اتلاف سنگین منابع مالی می‌شود.</p>
+<p>در این جلسه، ماتریس تصمیم‌گیری انتخابی ابزار بر اساس اهداف کسب‌وکار طراحی شده و نحوه کار با ۵ پلتفرم اصلی اکوسیستم ایران شامل <strong>یکتانت (تبلیغات همسان و بنری)، جریان (بازاریابی شبکه‌های اجتماعی و اینفلوئنسری)، نجوا (پوش‌نوتیفیکیشن و تبلیغات مکان‌محور)، تریبون (رپورتاژ آگهی و سئو)</strong> و <strong>آپارات (تبلیغات ویدئویی)</strong> به همراه فرمول‌های محاسباتی بازگشت سرمایه (ROI) و قیف فروش تحلیل شده است.</p>
+<h3 id="_2">مهم‌ترین دستاوردهای مدیریتی جلسه</h3>
+<ol>
+<li><strong>تغییر پارادایم از Impression به Action:</strong> هدایت بودجه تبلیغاتی به سمت مدل‌های CPC ،CPL ،CPO و CPS بر اساس مرحله رشد کسب‌وکار.</li>
+<li><strong>تسلط بر اقتصاد کمپین (Campaign Economics):</strong> محاسبه دقیق نرخ تبدیل (CR) و هزینه جذب مشتری (CAC) و برنامه‌ریزی هدفمند برای ۹۷٪ از کاربرانی که در نوبت اول خرید نمی‌کنند (بازاریابی مجدد / Retargeting).</li>
+<li><strong>حفظ امنیت برند (Brand Safety) در اینفلوئنسر مارکتینگ:</strong> عدم اتکا به تعداد فالوور و تاکید بر «نرخ درگیری» (Engagement Rate) و همپوشانی پرسونای مخاطب با برند.</li>
+<li><strong>هم‌افزایی کانال‌های دیجیتال:</strong> ترکیب رپورتاژ آگهی (سئو) + تبلیغات همسان (ترافیک) + پوش‌نوتیفیکیشن (بازگشت کاربر) برای ایجاد لیدهای باکیفیت و ارزان.</li>
+</ol>
+<hr />
+<h2 id="session-outline">۲. سرفصل‌ها و نقشه ذهنی مباحث (Session Outline)</h2>
+<pre><code class="language-text">نقشه ذهنی مفاهیم جلسه دوم: دیجیتال مارکتینگ
+│
+├── ۱. مدل‌های تجاری و پرداخت در تبلیغات دیجیتال
+│   ├── تبلیغات نمایش‌محور (CPM / Fixed Banner) -&gt; مناسب برندینگ
+│   ├── تبلیغات کلیک‌محور (PPC / CPC) -&gt; مناسب ترافیک و فروش SMBها
+│   ├── تبلیغات لیدمجموع (CPL) -&gt; دریافت اطلاعات تماس (Lead Gen)
+│   ├── تبلیغات سفارش‌محور (CPO) -&gt; ثبت سفارش در سبد خرید
+│   ├── تبلیغات فروش‌محور (CPS) -&gt; پرداخت پس از تسویه‌حساب نهایی
+│   └── تبلیغات اقدام‌محور (CPA) -&gt; نصب اپلیکیشن، ثبت‌نام و...
+│
+├── ۲. تحلیل ریاضی و محاسباتی قیف فروش و کمپین
+│   ├── محاسبه تعداد کلیک، نرخ تبدیل (CR) و هزینه جذب (CAC)
+│   └── استراتژی بازاریابی مجدد (Retargeting) برای افت قیف (Drop-off)
+│
+├── ۳. بررسی تفصیلی پلتفرم‌های تبلیغاتی اکوسیستم ایران
+│   ├── یکتانت (Yektanet): تبلیغات همسان، بنری، هدف‌گیری موضوعی و رفتاری
+│   ├── جریان (Jaryan): اینفلوئنسر مارکتینگ، پیج‌های پرمخاطب، چالش‌های اخلاق برند
+│   ├── نجوا (Najva): پوش‌نوتیفیکیشن وب و اپ، تبلیغات مکان‌محور (Geo-fencing/BTS)
+│   ├── تریبون (Triboon): رپورتاژ آگهی، اعتبار دامنه (DA/DR)، ساخت بک‌لینک و سئو
+│   └── آپارات (Aparat): تبلیغات ویدئویی Pre-roll و Mid-roll، قانون ۵ ثانیه اول
+│
+└── ۴. فریم‌ورک‌های تصمیم‌گیری و خطاهای مهلک مدیریتی
+    ├── چک‌لیست اجرایی کمپین
+    └── اشتباهات رایج در تخصیص بودجه و انتخاب رسانه
+</code></pre>
+<hr />
+<h2 id="core-topics-theories">۳. شرح موشکافانه و تفصیلی مفاهیم تدریس‌شده (Core Topics &amp; Theories)</h2>
+<h3 id="advertising-pricing-models">۳.۱. مدل‌های پرداخت و قیمت‌گذاری تبلیغات (Advertising Pricing Models)</h3>
+<p>در دیجیتال مارکتینگ، انتخاب مدل پرداخت، تعیین‌کننده میزان ریسک مالی کسب‌وکار است. استاد حجتی مدل‌ها را به دو دسته اصلی <strong>برندسازی (Branding)</strong> و <strong>عملکردی (Performance)</strong> تقسیم می‌کنند:</p>
+<pre><code>[ قیف بازاریابی و مدل‌های متناظر پرداخت ]
+
+      /\         آگاهی از برند (Awareness)          --&gt; CPM / Fixed Banner
+     /  \       ---------------------------------
+    /    \        علاقه‌مندی و ترافیک (Interest)    --&gt; CPC / PPC
+   /      \     ---------------------------------
+  /        \       ارزیابی و ثبت‌نام (Lead/Action)   --&gt; CPL / CPA
+ /__________\     فروش و تسویه (Sale/Order)         --&gt; CPO / CPS
+</code></pre>
+<h4 id="cpm-cost-per-mille-fixed-banner">۱. نمایش‌محور (CPM - Cost Per Mille / Fixed Banner)</h4>
+<ul>
+<li><strong>تعریف:</strong> پرداخت هزینه‌ای ثابت به ازای هر ۱۰۰۰ بار نمایش بنر (CPM) یا اجاره ماهانه یک موقعیت بنری در سایت‌های پربازدید.</li>
+<li><strong>معادل انگلیسی و تلفظ:</strong> Cost Per Mille (سی‌پی‌ام) / Fixed Position Banner.</li>
+<li><strong>تحلیل عملکرد:</strong> این مدل هیچ تضمینی برای کلیک یا خرید ارائه نمی‌دهد. نرخ کلیک (CTR) بنرهای ثابت معمولاً بسیار پایین (زیر ۰٫۱٪) است.</li>
+<li><strong>کاربرد استراتژیک:</strong> صرفاً برای آگاهی از برند (Brand Awareness) برندهای بزرگ که بودجه‌های میلیاردی دارند (مانند بانک‌ها، صرافی‌های رمزارز بزرگ، طلافروشی‌های آنلاین کشوری). کاربرد آن برای کسب‌وکارهای کوچک و متوسط، سوخت کامل بودجه است.</li>
+</ul>
+<h4 id="ppc-pay-per-click-cpc-cost-per-click">۲. کلیک‌محور (PPC - Pay Per Click / CPC - Cost Per Click)</h4>
+<ul>
+<li><strong>تعریف:</strong> پرداخت هزینه تنها زمانی صورت می‌گیرد که کاربر روی تبلیغ کلیک کرده و وارد صفحه فرود (Landing Page) شود.</li>
+<li><strong>معادل انگلیسی و تلفظ:</strong> Cost Per Click (سی‌پی‌سی).</li>
+<li><strong>تحلیل عملکرد:</strong> ریسک مالی نمایش بدون اثر را از بین می‌برد. نیازمند هماهنگی کامل بین «پیام تبلیغ»، «طراحی بنر» و «محتوای صفحه فرود» است.</li>
+</ul>
+<h4 id="cpl-cost-per-lead">۳. سرنخ‌محور (CPL - Cost Per Lead)</h4>
+<ul>
+<li><strong>تعریف:</strong> پرداخت هزینه به ازای دریافت اطلاعات تماس (نام، شماره تلفن، ایمیل) از مشتری بالقوه.</li>
+<li><strong>معادل انگلیسی و تلفظ:</strong> Cost Per Lead (سی‌پی‌ال).</li>
+<li><strong>کاربرد:</strong> عالی برای B2Bها، خدمات گرون‌قیمت (مانند مشاوره، املاک، دوره‌های آموزشی MBA، فروش خودرو).</li>
+</ul>
+<h4 id="cpo-cost-per-order-cps-cost-per-sale">۴. سفارش‌محور (CPO - Cost Per Order) و فروش‌محور (CPS - Cost Per Sale)</h4>
+<ul>
+<li><strong>تعریف:</strong> پرداخت کارمزد یا مبلغی مشخص، تنها در صورتی که کاربر محصول را به سبد خرید اضافه کند (CPO) یا فرآیند پرداخت نهایی را تکمیل کند (CPS).</li>
+<li><strong>معادل انگلیسی و تلفظ:</strong> Cost Per Sale (سی‌پی‌اس) / Cost Per Order (سی‌پی‌او).</li>
+<li><strong>تحلیل عملکرد:</strong> ایده‌آل‌ترین مدل برای فروشگاه‌های اینترنتی؛ زیرا ریسک تبلیغات تماماً به پلتفرم مجری منتقل می‌شود. قیمت این مدل‌ها بالاتر از CPC است اما تضمین‌کننده درآمد است.</li>
+</ul>
+<h4 id="cpa-cost-per-action">۵. اقدام‌محور (CPA - Cost Per Action)</h4>
+<ul>
+<li><strong>تعریف:</strong> پرداخت هزینه به ازای یک اقدام خاص مثل نصب اپلیکیشن، دیدن ویدئو تا چند دقیقه مشخص، پر کردن فرم نظرسنجی یا عضویت در پلتفرم.</li>
+<li><strong>معادل انگلیسی و تلفظ:</strong> Cost Per Action (سی‌پی‌ای).</li>
+</ul>
+<hr />
+<h3 id="campaign-math-economics">۳.۲. تحلیل ریاضی و محاسباتی کمپین‌های تبلیغاتی (Campaign Math &amp; Economics)</h3>
+<p>استاد حجتی در کلاس یک نمونه محاسباتی واقعی را برای تحلیل اقتصادی کمپین کلیک‌محور تشریح کردند:</p>
+<h4 id="_3">داده‌های فرضی سناریو:</h4>
+<ul>
+<li><strong>بودجه کل کمپین (Total Budget):</strong> ۱۰,۰۰۰,۰۰۰ تومان</li>
+<li><strong>میانگین هزینه هر کلیک (Avg. CPC):</strong> ۲,۵۰۰ تومان</li>
+<li><strong>نرخ تبدیل میانگین صفحه فرود (Conversion Rate - CR):</strong> ۳٪</li>
+</ul>
+<h4 id="_4">محاسبات:</h4>
+<blockquote>
+<p>[!NOTE]</p>
+<h3 id="performance-economics">🧮 کارت فرمول‌ها و محاسبات اقتصادی کمپین عملکردی (Performance Economics)</h3>
+<h4 id="total-clicks">۱. محاسبه کلیک‌های دریافتی (Total Clicks):</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">رابطه ریاضی</th>
+<th style="text-align: right; direction: rtl;">صورت کسر (Numerator)</th>
+<th style="text-align: right; direction: rtl;">مخرج کسر (Denominator)</th>
+<th style="text-align: center;">نتیجه سناریو</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-var">Clicks</span><span class="math-op">=</span><span class="math-frac"><span class="math-num">Total Budget</span><span class="math-den">CPC</span></span></div></td>
+<td style="text-align: right; direction: rtl;">بودجه کل: <strong>۱۰,۰۰۰,۰۰۰ تومان</strong></td>
+<td style="text-align: right; direction: rtl;">هزینه هر کلیک: <strong>۲,۵۰۰ تومان</strong></td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-frac"><span class="math-num">10,000,000</span><span class="math-den">2,500</span></span><span class="math-op">=</span><span class="math-val">4,000 کلیک</span></div></td>
+</tr>
+</tbody>
+</table>
+<h4 id="total-conversions">۲. محاسبه تعداد خریداران نهایی (Total Conversions):</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">رابطه ریاضی</th>
+<th style="text-align: right; direction: rtl;">ورودی خام (Clicks)</th>
+<th style="text-align: right; direction: rtl;">نرخ تبدیل (CR)</th>
+<th style="text-align: center;">خریداران نهایی</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-var">Conversions</span><span class="math-op">=</span><span>Clicks</span><span class="math-op">×</span><span>CR</span></div></td>
+<td style="text-align: right; direction: rtl;">ورودی به صفحه: <strong>۴,۰۰۰ کلیک</strong></td>
+<td style="text-align: right; direction: rtl;">نرخ تبدیل: <strong>۳٪ (۰.۰۳)</strong></td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span>4,000</span><span class="math-op">×</span><span>0.03</span><span class="math-op">=</span><span class="math-val">120 مشتری</span></div></td>
+</tr>
+</tbody>
+</table>
+<h4 id="cac">۳. محاسبه هزینه تمام‌شده جذب هر مشتری (CAC):</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">رابطه ریاضی</th>
+<th style="text-align: right; direction: rtl;">کل بودجه تبلیغات (Total Spend)</th>
+<th style="text-align: right; direction: rtl;">خریداران نهایی (Conversions)</th>
+<th style="text-align: center;">هزینه هر مشتری (CAC)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-var">CAC</span><span class="math-op">=</span><span class="math-frac"><span class="math-num">Total Budget</span><span class="math-den">Conversions</span></span></div></td>
+<td style="text-align: right; direction: rtl;">بودجه کل: <strong>۱۰,۰۰۰,۰۰۰ تومان</strong></td>
+<td style="text-align: right; direction: rtl;">خریداران نهایی: <strong>۱۲۰ نفر</strong></td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-frac"><span class="math-num">10,000,000</span><span class="math-den">120</span></span><span class="math-op">≈</span><span class="math-val">83,333 تومان</span></div></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<pre><code>[ تحلیل بازدهی و ریزش قیف فروش ]
+
+ ورودی‌ها (۴,۰۰۰ کلیک)  ======&gt;  [۳٪ خریداران (۱۲۰ نفر) - خروجی موفق]
+                           \
+                            \===&gt; [۹۷٪ ریزش (۳,۸۸۰ نفر) - پتانسیل ری‌تارگتینگ]
+</code></pre>
+<h4 id="_5">تحلیل استراتژیک استاد:</h4>
+<ul>
+<li>از ۴,۰۰۰ نفری که وارد سایت شده‌اند، <strong>۱۲۰ نفر (۳٪)</strong> خرید کرده‌اند و ۳,۸۸۰ نفر (<strong>۹۷٪</strong>) بدون خرید سایت را ترک کرده‌اند.</li>
+<li><strong>نکته کلیدی:</strong> آن ۹۷٪ کاملاً هدر نرفته‌اند! آن‌ها آگاهی اولیه پیدا کرده، بنر را دیده‌اند و وارد سایت شده‌اند (مخاطب راغب). اگر کسب‌وکار استراتژی <strong>بازاریابی مجدد (Retargeting)</strong> داشته باشد، می‌تواند با هزینه‌ای بسیار کمتر (مثلاً کلیک ۱,۰۰۰ تومانی) مجدداً این ۳,۸۸۰ نفر را هدف گرفته و نرخ تبدیل آن‌ها را در نوبت‌های بعدی افزایش دهد.</li>
+</ul>
+<hr />
+<h3 id="targeting-dimensions">۳.۳. هدف‌گیری هوشمند در تبلیغات (Targeting Dimensions)</h3>
+<p>پلتفرم‌های دیجیتال امکاناتی را فراهم می‌کنند که تبلیغ فقط به جامعه هدف نشان داده شود:<br />
+1. <strong>هدف‌گیری کلیدواژه‌ای (Keyword Targeting):</strong> نمایش تبلیغ بر اساس کلماتی که کاربر قبلاً در موتورهای جستجو یا سایت‌ها سرچ کرده است.<br />
+2. <strong>هدف‌گیری موضوعی/دسته بستری (Category/Contextual Targeting):</strong> نمایش بنر طلافروشی فقط در صفحات مربوط به اخبار اقتصادی، طلا و ارز.<br />
+3. <strong>هدف‌گیری جغرافیایی (Geo-targeting):</strong> تفکیک بر اساس کشور، استان، شهر یا موقعیت مکانی لحظه‌ای.<br />
+4. <strong>هدف‌گیری بر اساس دستگاه و سیستم‌عامل (Device &amp; OS Targeting):</strong> تفکیک کاربران آیفون (iOS) از اندروید یا دسکتاپ (مناسب برای محصولات لوکس یا اپلیکیشن‌های خاص).<br />
+5. <strong>هدف‌گیری رفتاری (Behavioral Targeting):</strong> بر اساس تاریخچه مرورگر، خریدهای قبلی و علایق کاربر.</p>
+<hr />
+<h2 id="real-world-case-studies">۴. مثال‌های کاربردی، کیس‌استادی‌ها و تجربیات استاد (Real-world Case Studies)</h2>
+<h3 id="_6">کیس‌استادی ۱: تبلیغات بنری ثابت صرافی‌های رمزارز و طلافروشی‌های آنلاین در برابر کسب‌وکارهای کوچک</h3>
+<ul>
+<li><strong>توصیف سناریو:</strong> سایت‌های خبری پربازدید ایران (مانند ایسنا، ایرنا، خبرآنلاین) بنرهای کوچک ۲×۳ سانتی‌متری یا بنرهای بالایی خود را با مبالغی بین ۸۰ تا ۲۵۰ میلیون تومان در ماه اجاره می‌دهند (با ظرفیت نمایش اشتراکی ۲۰٪ تا ۵۰٪).</li>
+<li><strong>تحلیل استاد:</strong> صرافی‌های رمزارز، بانک‌ها یا طلافروشی شمش طلا، این مبالغ را می‌پردازند چون به دنبال <strong>ایجاد حس اعتماد و آگاهی عمومی (Brand Awareness &amp; Trust)</strong> در مقیاس میلیونی هستند. برای آن‌ها حتی اگر یک خریدار بزرگ جذب شود، کل هزینه کمپین جبران می‌شود. اما اگر یک فروشگاه کوچک پوشاک یا یک شرکت خدماتی نوپا این بنرها را اجاره کند، شکست مالی حتمی است؛ زیرا این بنرها فروش مستقیم ایجاد نمی‌کنند و نرخ تبدیل به فروش (CR) بالایی ندارند.</li>
+</ul>
+<h3 id="brand-safety">کیس‌استادی ۲: عدم هماهنگی پرسونای اینفلوئنسر با محصول (چالش Brand Safety)</h3>
+<ul>
+<li><strong>توصیف سناریو:</strong> یک برند تولیدکننده تجهیزات پزشکی/بهداشتی (مانند شیردوش برقی یا لوازم جراحی لوکس)، تبلیغات خود را به یک اینفلوئنسر طنز/واینر یا اینفلوئنسری با محتوای سطح پایین و شوخی‌های زننده در اینستاگرام می‌سپارد.</li>
+<li><strong>تحلیل استاد:</strong> استاد حجتی بر مفاهیم <strong>امنیت برند (Brand Safety)</strong> و <strong>تطابق شخصیت برند با پرسونای اینفلوئنسر</strong> تاکید کردند. در این سناریو، گرچه بازديد (View) ویدیو بالا می‌رود، اما تخریب شدید شخصیت برند (Brand Erosion) رخ می‌دهد. مخاطب هدف محصولات تخصصی یا لوکس، اعتمادی به توصیه‌های یک واینر طنزپرداز ندارد. تبلیغ محصول تخصصی باید توسط اینفلوئنسرهای تخصصی (Micro/Macro-influencers تخصصی)، پزشکان یا طراحان مطرح ارائه شود، حتی اگر نرخ بازدید کمتری داشته باشند.</li>
+</ul>
+<h3 id="geo-fencing">کیس‌استادی ۳: تبلیغات مکان‌محور (Geo-fencing) طباخی و کله‌پزی حجتی با پلتفرم نجوا</h3>
+<ul>
+<li><strong>توصیف سناریو:</strong> طراحی کمپین تبلیغاتی برای یک طباخی واقع در نزدیکی یک شعاع جغرافیایی مشخص (مثلاً میدان فاطمی یا میدان کاج).</li>
+<li><strong>تحلیل استاد:</strong> با استفاده از سرویس Push Notification نجوا و قابلیت‌های BTS اپراتورها یا موقعیت مکانی گوشی، می‌توان در ساعات بین ۴:۳۰ تا ۶:۳۰ صبح برای گوشی‌هایی که در شعاع ۵ کیلومتری مغازه در حال حرکت یا فعال هستند، پوش‌نوتیفیکیشن ارسال کرد:<br />
+<em>«گرسنه‌ته؟ کله‌پایه‌داغ حجتی فقط ۵ دقیقه باهات فاصله داره! آدرس: ...»</em><br />
+    این نوع تبلیغ <strong>ابر‌محلی (Hyper-local)</strong>، بیشترین نیاز لحظه‌ای (Need-based) را هدف می‌گیرد، نرخ کلیک بالای ۱۰٪ ایجاد می‌کند و با کمترین هزینه، مشتری واقعی حضوری جلب می‌نماید.</li>
+</ul>
+<h3 id="_7">کیس‌استادی ۴: استراتژی هم‌افزایی سه پلتفرم (یکتانت + تریبون + نجوا)</h3>
+<ul>
+<li><strong>توصیف سناریو:</strong> یک بیزینس خدماتی می‌خواهد با بودجه محدود ۱۰ تا ۲۰ میلیون تومانی حداکثر ورودی و فروش را کسب کند.</li>
+<li><strong>تحلیل استاد:</strong> <ol>
+<li>ابتدا با <strong>تریبون</strong>، ۲ رپورتاژ آگهی جذاب در سایت‌های خبری کلیدی منتشر می‌کند تا بک‌لینک معتبر برای سئو گرفته و رتبه گوگل خود را بالا ببرد.</li>
+<li>سپس با <strong>یکتانت</strong>، کمپین همسان کلیک‌محور (CPC) بر روی همان کلمات کلیدی رپورتاژ راه می‌اندازد تا ترافیک ارزان و هدفمند وارد سایت کند.</li>
+<li>روی سایت، اسکریپت <strong>نجوا</strong> را فعال کرده تا از کاربرانی که وارد شده‌اند مجوز ارسال پوش‌نوتیفیکیشن بگیرد.</li>
+<li>در گام آخر، برای کاربرانی که خرید نکرده‌اند اما عضو پوش شده‌اند، تخفیف‌های زمان‌دار ری‌تارگتینگ ارسال می‌کند. این چرخه کامل، بازدهی بودجه را تا ۵ برابر افزایش می‌دهد.</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2 id="tools-platforms">۵. ابزارها، پلتفرم‌ها و تکنولوژی‌های معرفی‌شده (Tools &amp; Platforms)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">نام پلتفرم / ابزار</th>
+<th style="text-align: right;">حوزه فعالیت تخصصی</th>
+<th style="text-align: right;">ویژگی‌ها و امکانات کلیدی</th>
+<th style="text-align: right;">مدل تجاری / نحوه محاسبه</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>یکتانت (Yektanet)</strong></td>
+<td style="text-align: right;">شبکه تبلیغات همسان و بنری (Ad Network)</td>
+<td style="text-align: right;">- بزرگ‌ترین شبکه تبلیغات وب ایران<br>- تبلیغات همسان (Native Ads)<br>- هدف‌گیری موضوعی، رفتاری و کلیدواژه‌ای<br>- قابلیت ری‌تارگتینگ محصول و بنری</td>
+<td style="text-align: right;">CPC (پرداخت به ازای کلیک)</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>جریان (Jaryan)</strong></td>
+<td style="text-align: right;">بازاریابی شبکه‌های اجتماعی (Social Ads)</td>
+<td style="text-align: right;">- تبلیغات در پیج‌های اینستاگرام و کانال‌های تلگرام<br>- اتصال به اینفلوئنسرها و بلاگرها<br>- ارائه آمار نرخ درگیری (ER) و بازبینی قبل از انتشار</td>
+<td style="text-align: right;">CPM (بازدید) / تعرفه پست و استوری ثابت</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>نجوا (Najva)</strong></td>
+<td style="text-align: right;">پوش‌نوتیفیکیشن و ایمیل مارکتینگ</td>
+<td style="text-align: right;">- ارسال پیام روی مرورگر وب و اپلیکیشن<br>- هدف‌گیری بر اساس موقعیت مکانی (Geo-location)<br>- دسته‌بندی و سگمنتیشن مخاطبان<br>- پیام‌های اتوماتیک بازاریابی مجدد</td>
+<td style="text-align: right;">صبا / آبونمان ماهانه / ارسال موفق</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>تریبون (Triboon)</strong></td>
+<td style="text-align: right;">پلتفرم انتشار رپورتاژ آگهی و سئو</td>
+<td style="text-align: right;">- دسترسی به مراجع خبری و مجلات اینترنتی ایران<br>- امکان دریافت بک‌لینک‌های دائمی (Do-Follow)<br>- تحلیل شاخص‌های سئویی رسانه‌ها (DA, DR, Spam Score)<br>- تضمین عدم حذف محتوا</td>
+<td style="text-align: right;">انتشار ثابت (Fixed Fee) به ازای هر رپورتاژ</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>آپارات (Aparat)</strong></td>
+<td style="text-align: right;">تبلیغات ویدئویی (Video Ads)</td>
+<td style="text-align: right;">- تبلیغات Pre-roll (قبل از ویدئو) و Mid-roll (بین ویدئو)<br>- سیستم نمایش مبتنی بر قانون ۵ ثانیه اول (Skip Ad)<br>- هدف‌گیری بر اساس دسته‌بندی ویدئوها</td>
+<td style="text-align: right;">CPV (هزینه به ازای بازدید) / CPM</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>تپسل (Tapsell)</strong></td>
+<td style="text-align: right;">شبکه تبلیغات درون‌ برنامه‌ای (In-App)</td>
+<td style="text-align: right;">- تبلیغات هوشمند درون اپلیکیشن‌های موبایل<br>- تبلیغات ویدئویی جایزه‌دار (Rewarded Video)</td>
+<td style="text-align: right;">CPA / CPI / CPC</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>صباویژن (SabaVision)</strong></td>
+<td style="text-align: right;">شبکه تبلیغات بنری و ویدئویی</td>
+<td style="text-align: right;">- یکی از قدیمی‌ترین شبکه‌های تبلیغاتی ایران<br>- مجری تبلیغات بنری نمایش‌محور و کلیکی</td>
+<td style="text-align: right;">CPM / CPC / اجاره ثابت</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="executive-action-items-frameworks">۶. جعبه‌ابزار تصمیم‌گیری مدیران (Executive Action Items &amp; Frameworks)</h2>
+<h3 id="_8">چک‌لیست اجرایی ۶ مرحله‌ای کمپین دیجیتال مارکتینگ (برای مدیران ارشد)</h3>
+<pre><code class="language-text">[۱. تعیین هدف شفاف] ──&gt; [۲. انتخاب مدل پرداخت] ──&gt; [۳. انتخاب پلتفرم رسانه‌ای]
+ (Awareness / Lead / Sales)      (CPC, CPL, CPS, CPM)         (Yektanet, Najva, Triboon...)
+                                                                      │
+[۶. ری‌تارگتینگ و بهینه‌سازی] &lt;── [۵. آماده‌سازی فرود] &lt;── [۴. تولید محتوا و کپی]
+ (Retargeting &amp; ROI Analysis)   (Landing Page Alignment)     (Banner, Video, Copywriting)
+</code></pre>
+<ol>
+<li><strong>مرحله اول - شفاف‌سازی هدف (Goal Setting):</strong> آیا هدف افزایش فروش مستقیم است، جمع‌آوری لید، یا بالا بردن آگاهی از برند؟</li>
+<li><strong>مرحله دوم - انتخاب مدل قیمت‌گذاری مناسب:</strong> اگر کسب‌وکار کوچک یا متوسط هستید، مدل‌های CPC، CPL یا CPS را انتخاب کنید. از مدل‌های CPM و بنر ثابت دوری کنید.</li>
+<li><strong>مرحله سوم - انتخاب پلتفرم رسانه‌ای:</strong></li>
+<li>برای سئو و اعتبار پایدار: <strong>تریبون</strong> (رپورتاژ)</li>
+<li>برای ترافیک کلیکی و فروش سریع: <strong>یکتانت</strong> (تبلیغات همسان)</li>
+<li>برای تعامل و فروش محتوایی: <strong>جریان</strong> (اینستاگرام/تلگرام)</li>
+<li>برای بازگشت مشتری و نوتیفیکیشن لحظه‌ای: <strong>نجوا</strong> (Push Notification)</li>
+<li><strong>مرحله چهارم - بهینه‌سازی صفحه فرود (Landing Page Optimization):</strong> مطمئن شوید صفحه فرود دقیقاً پاسخگوی شعار تبلیغاتی است. سرعت بارگذاری بالا باشد و فرم‌های دریافت اطلاعات طولانی نباشند.</li>
+<li><strong>مرحله پنجم - تنظیم بودجه روزانه و سقف کلیک:</strong> سقف بودجه روزانه تعیین کنید تا از اتمام ناگهانی بودجه در ساعات ابتدایی روز بدون دریافت خروجی جلوگیری شود.</li>
+<li><strong>مرحله ششم - فعال‌سازی پکسل‌های بازاریابی مجدد (Retargeting Pixels):</strong> از روز اول کد ری‌تارگتینگ یکتانت یا نجوا را روی سایت بگذارید تا ۹۷٪ کاربرانی که خرید نکرده‌اند را در کمپین‌های بعدی هدف قرار دهید.</li>
+</ol>
+<hr />
+<h3 id="_9">اشتباهات مهلک و رایج مدیران در بازاریابی دیجیتال</h3>
+<ol>
+<li><strong>الگوبرداری کورکورانه از برندهای بزرگ (Big Brand Mimicry):</strong> تخصیص بودجه‌های محدود به بنرهای اجاره‌ای ثابت در سایت‌های خبری به تقلید از صرافی‌ها و بانک‌ها.</li>
+<li><strong>خرید فالوور یا تبلیغ در پیج‌های بدون تعامل (Fake Engagement Trap):</strong> ارزیابی اینفلوئنسرها بر اساس تعداد فالوور به جای ارزیابی نرخ درگیری (Engagement Rate) و کیفیت کامنت‌ها.</li>
+<li><strong>بی‌توجهی به نرخ تبدیل صفحه فرود (Ignoring Landing Page CR):</strong> هدایت ترافیک گران‌قیمت کلیکی به صفحه اصلی (Homepage) سایت به جای صفحه فرود اختصاصی محصول.</li>
+<li><strong>رها کردن کاربران بدون خرید (Abandoning Non-Converters):</strong> عدم استفاده از تکنولوژی Retargeting و سوزاندن هزینه جلب توجه اولیه کاربران.</li>
+<li><strong>ارسال پیام‌های نامربوط و اسپم (Spammy Push Notifications):</strong> ارسال نوتیفیکیشن‌های انبوه بدون سگمنتیشن جغرافیایی، زمانی و رفتاری که منجر به آنسابسکرایب (Block) شدن رسانه توسط کاربر می‌شود.</li>
+</ol></div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- TAB: SESSION 3 -->
+    <section id="content-session3" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm">
+        
+        <!-- Tab Header -->
+        <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-200">
+          <div>
+            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">جلسه 3</span>
+            <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">CRM، امنیت و سئو تکنیکال</h2>
+          </div>
+          <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-blue-600 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+        </div>
+
+        <!-- TOP LAYER: Executive Visual Summary -->
+        
+    <div class="bg-purple-50/60 border border-purple-200 rounded-2xl p-6 mb-6">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-xl">⚙️</span>
+        <h3 class="text-base md:text-lg font-black text-purple-950">خلاصه اجرایی و مدیریتی جلسه سوم: اتوماسیون، CRM و سئو تکنیکال</h3>
+      </div>
+      <p class="text-xs md:text-sm text-purple-900 leading-relaxed mb-5 text-justify">
+        جلسه سوم به زیرساخت‌های عملیاتی کسب‌وکار می‌پردازد: اتصال جریان ورودی لیدها به CRM (مانند دیدار CRM)، امن‌سازی کانال‌های ارتباطی (استفاده از ابزار نوین‌هاب) و بهینه‌سازی فنی موتور جستجو (سئو تکنیکال) برای کسب رتبه‌های پایدار ارگانیک بدون وابستگی به تبلیغات کلیکی.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+        <div class="bg-white p-4 rounded-xl border border-purple-100 shadow-sm">
+          <div class="text-xs font-bold text-purple-600 mb-1">مدیریت پیگیری لیدها در CRM</div>
+          <p class="text-xs text-slate-600 leading-relaxed">تعریف پایپ‌لاین فروش و ثبت اتوماتیک اطلاعات مشتری برای جلوگیری از فراموشی و اتلاف لیدها.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-purple-100 shadow-sm">
+          <div class="text-xs font-bold text-purple-600 mb-1">امنیت دارایی‌های دیجیتال</div>
+          <p class="text-xs text-slate-600 leading-relaxed">جلوگیری از دیزیبل شدن اکانت‌ها در شبکه‌های اجتماعی با ورود متمرکز API و زمان‌بندی نوین‌هاب.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-purple-100 shadow-sm">
+          <div class="text-xs font-bold text-purple-600 mb-1">ستون‌های سئو تکنیکال</div>
+          <p class="text-xs text-slate-600 leading-relaxed">رفع خطاهای کرول، ساختار تگ‌های کنونیکال و انطباق کلمات با ترندهای جستجوی Google Trends.</p>
+        </div>
+      </div>
+
+      <!-- Process Table -->
+      <div class="bg-white rounded-xl border border-purple-200 overflow-hidden shadow-sm">
+        <table class="w-full text-xs text-right">
+          <thead class="bg-purple-100 text-purple-950 font-bold">
+            <tr>
+              <th class="p-3">حوزه عملیاتی</th>
+              <th class="p-3">ابزار پیشنهادی</th>
+              <th class="p-3">اقدام فوری مدیر</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-purple-100 text-slate-700">
+            <tr>
+              <td class="p-3 font-bold text-purple-900">مدیریت ارتباط با مشتریان (CRM)</td>
+              <td class="p-3">دیدار CRM (Didar)</td>
+              <td class="p-3">تعیین مراحل خرید مشتری و تخصیص لیدها به کارشناسان فروش</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-purple-900">مدیریت و انتشار شبکه‌های اجتماعی</td>
+              <td class="p-3">نوین‌هاب (NovinHub)</td>
+              <td class="p-3">جداسازی پسوردهای ادمین‌ها و تعریف دسترسی بدون نیاز به پسورد پیج</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-purple-900">تحلیل فنی وب‌سایت و سئو</td>
+              <td class="p-3">Screaming Frog / Search Console</td>
+              <td class="p-3">شناسایی لینک‌های شکسته (404) و صفحات بدون تگ متا و کنونیکال</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+        <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+        <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+          <div>
+            <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه 3</h3>
+            <p class="text-xs text-slate-400">شامل تمام مبانی علمی، مثال‌های موردی، تنظیمات تخصصی و نکات ریز تدریس استاد</p>
+          </div>
+          <button onclick="toggleSessionFull('s3')" id="btn-toggle-s3" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+            <span>مطالعه متن کامل و تفصیلی جلسه</span>
+            <span id="icon-toggle-s3">▼</span>
+          </button>
+        </div>
+
+        <div id="full-s3" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+          <div class="prose-custom"><h1 id="-">جزوه جامع و کاربردی درس دیجیتال مارکتینگ - جلسه سوم</h1>
+<p><strong>مدرس:</strong> استاد ناصر حجتی<br />
+<strong>مرجع:</strong> دوره MBA - دانشکده اقتصاد دانشگاه تهران<br />
+<strong>تنظیم:</strong> فایل جامع راهنمای مدیران و دانشجویان ارشد MBA  </p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده اجرایی (Executive Summary)</h2>
+<h3 id="_1">شناسنامه جلسه</h3>
+<ul>
+<li><strong>عنوان درس:</strong> مدیریت بازاریابی دیجیتال (Digital Marketing Management)</li>
+<li><strong>موضوع جلسه:</strong> معماری زیرساخت‌های دیجیتال؛ از مدیریت یکپارچه کانال‌ها (Omnichannel) و اتوماسیون ارتباط با مشتری (CRM) تا بازاریابی هدایت‌شده (Inbound Marketing) و بهینه‌سازی فنی (Technical SEO)</li>
+<li><strong>مدرس:</strong> استاد ناصر حجتی</li>
+<li><strong>مخاطبان:</strong> مدیران ارشد، مشاوران مدیریت و دانشجویان دوره ارشد MBA</li>
+</ul>
+<h3 id="_2">چکیده اجرایی</h3>
+<p>در این جلسه، الگوی فکری حاکم بر «زیرساخت‌های نوین بازاریابی دیجیتال» مورد نقد و بررسی قرار گرفت. پیام کلیدی استاد حجتی این است که <strong>بازاریابی دیجیتال بدون زیرساخت یکپارچه، اتوماسیون مبتنی بر داده و CRM، صرفاً هدررفت سرمایه است.</strong> بازاریابی سنتی دیجیتال (مانند ارسال پیامک‌های انبوه بی‌هدف یا خرید فالوور) جای خود را به <strong>بازاریابی هدایت‌شده (Inbound Marketing)، شخصی‌سازی (Personalization) و مدیریت یکپارچه کانال‌های ارتباطی (Omnichannel Management)</strong> داده است.</p>
+<p>مدیران ارشد باید درک کنند که ارزش یک کسب‌وکار دیجیتال در نرخ تعامل واقعی (Engagement Rate) و نرخ تبدیل (Conversion Rate) نهفته است، نه در آمارهای فانتزی (Vanity Metrics) نظیر تعداد فالوور یا ایمیل‌های ارسال‌شده بی‌هدف. همچنین راهکارهای عملیاتی برای مدیریت امنیت شبکه‌های اجتماعی، تکنیک‌های استفاده از ابزارهای بومی و بین‌المللی برای آنالیز ترندها (Google Trends)، چکاپ فنی سئو (Technical SEO Audit)، اتوماسیون ایمیل و پیامک، و بهره‌گیری از هوش مصنوعی در پاسخگویی یکپارچه به مشتریان تبیین شد.</p>
+<hr />
+<h2 id="session-outline">۲. سرفصل‌ها و نقشه ذهنی مباحث (Session Outline)</h2>
+<pre><code class="language-text">دیجیتال مارکتینگ (جلسه سوم)
+├── ۱. چالش‌های بازاریابی دیجیتال در کسب‌وکارهای B2B و صنعتی
+│   ├── تفاوت قیچی بازاریابی B2B و B2C (ارزش طول عمر مشتری در برابر خریدهای هیجانی)
+│   ├── تحلیل نرخ تبدیل (Conversion Rate) و نرخ کلیک (CTR)
+│   └── نرخ لید واجد شرایط (MQL &amp; SQL) و بهینه‌سازی هزینه به‌ازای لید (CPL)
+├── ۲. مدیریت یکپارچه کانال‌های ارتباطی (Omnichannel &amp; Social Media Infrastructure)
+│   ├── چالش مدیریت هم‌زمان شبکه‌های اجتماعی (Instagram, Telegram, LinkedIn, Bale, Eitaa, etc.)
+│   ├── امنیت اکانت‌ها و سطوح دسترسی (RBAC)
+│   ├── خطرات تغییر IP و لاگین‌های هم‌زمان (مخاطرات بن شدن توسط Meta)
+│   └── بررسی ابزارهای مدیریت کانال‌ها (نوین‌هاب، Hootsuite، Buffer)
+├── ۳. اتوماسیون بازاریابی و مدیریت ارتباط با مشتری (CRM &amp; Automation)
+│   ├── نقش CRM در فرآیند نگه‌داشت و پیگیری مشتریان
+│   ├── اتصال هوش مصنوعی (LLMs) به CRM و چت‌بات‌های پاسخگو
+│   └── بررسی نرم‌افزارهای CRM (دیدار، سرور، پارس ویتایگر، ایده‌آل، جولیو، HubSpot)
+├── ۴. استراتژی بازاریابی پیامکی و ایمیلی (SMS &amp; Inbound Email Marketing)
+│   ├── آسیب‌شناسی پیامک‌های انبوه (Bulk SMS) در برابر پیامک‌های ماشینی/شخصی‌سازی‌شده
+│   ├── نرخ باز شدن (Open Rate) و تحلیل تجربه سامانه ثنا/پیامک‌های حاکمیتی
+│   ├── جایگاه ایمیل مارکتینگ در سال ۲۰۲۴ (بررسی آمار ۸۵ درصدی اثرگذاری)
+│   └── ابزارهای ایمیل مارکتینگ (Mailchimp, Brevo, MailerLite, پاکت)
+├── ۵. زیرساخت‌های فنی سئو و تحلیل رفتار جستجوی کاربران (Technical SEO &amp; Trends)
+│   ├── اهمیت برچسب‌های عنوان (Title Tag) و متادیپسکریپشن (Meta Description)
+│   ├── آنالیز رفتار کاربران با Google Trends (کیس‌استادی طلا، دلار، خودرو)
+│   ├── تحلیل ساختار متون و عناوین (H1 تا H6) و تصاویر (Alt Tags)
+│   └── ابزارهای آنالیز فنی (Checkup.tools, SEOptimer, Screaming Frog)
+└── ۶. بازاریابی صوتی و سامانه‌های تولید محتوای صوتی (Audio Marketing)
+    ├── اهمیت صدا در IVR، تیزرها و پادکست‌ها
+    └── معرفی سامانه بانک صدا (BankSeda)
+</code></pre>
+<hr />
+<h2 id="core-topics-theories">۳. شرح موشکافانه و تفصیلی مفاهیم تدریس‌شده (Core Topics &amp; Theories)</h2>
+<h3 id="b2b-b2c">۳.۱. آسیب‌شناسی قیچی فروش در B2B در مقایسه با B2C</h3>
+<p>در بازاریابی دیجیتال، اشتباه مهلک بسیاری از مدیران، یکسان فرض کردن فرآیند فروش در کسب‌وکارهای B2B (B2B E-commerce / Industrial Products) با B2C است:<br />
+*   <strong>در B2C:</strong> تصمیم‌گیری بر اساس هیجان، قیمت، تخفیف و سرعت انجام می‌شود. نرخ تبدیل (Conversion Rate) بالاتر و طول سیکل فروش کوتاه‌تر است.<br />
+*   <strong>در B2B:</strong> تصمیم‌گیری بر اساس تحلیل ریسک، فاکتور رسمی، مشخصات فنی، اعتبار برند و ارزش طول عمر مشتری (LTV) صورت می‌گیرد. بنابراین، کمپین‌های دیجیتال B2B نباید مستقیم روی «فروش آنلاین آنی» تمرکز کنند، بلکه باید روی <strong>جذب لید واجد شرایط (Qualified Lead Generation)</strong>، دریافت کاتالوگ، درخواست پیش‌فاکتور و ارتباط مستقیم تلفنی یا حضوری (CPL و SQL) تنظیم شوند.</p>
+<h3 id="omnichannel">۳.۲. مدیریت یکپارچه کانال‌ها (Omnichannel) و امنیت زیرساخت</h3>
+<p>با گستردگی پیام‌رسان‌ها و شبکه‌های اجتماعی در ایران (اینستاگرام، تلگرام، بله، ایتا، لینکدین، آپارات و یوتیوب)، مدیریت مجزای هر کانال موجب:<br />
+۱. اتلاف شدید وقت نیروی انسانی (ادمین‌ها)؛<br />
+۲. تاخیر در پاسخگویی به دایرکت‌ها و کامنت‌ها و از دست رفتن لیدها؛<br />
+۳. <strong>خطر امنیت اکانت‌ها:</strong> لاگین هم‌زمان چند ادمین با IPهای مختلف (خصوصاً روی اینستاگرام) باعث شناسایی اکانت به عنوان ربات و بن شدن (Ban) یا شادوبن (Shadowban) آن می‌شود.</p>
+<p><strong>راهکار استراتژیک:</strong> استفاده از پنل‌های مدیریت یکپارچه (Social Media Management Platforms) که از طریق API رسمی یا پروتکل‌های امن، دسترسی‌ها را بدون دادن پسورد اصلی به ادمین‌ها مدیریت کرده (Role-Based Access Control) و تمام دایرکت‌ها و کامنت‌ها را در یک «صندوق ورودی یکپارچه (Unified Inbox)» جمع‌آوری می‌کنند.</p>
+<h3 id="crm">۳.۳. اتوماسیون بازاریابی، هوش مصنوعی و CRM</h3>
+<p>CRM (Customer Relationship Management) صرفاً یک دفترچه تلفن دیجیتال نیست؛ بلکه قلب تپنده اتوماسیون بازاریابی است.<br />
+*   <strong>یکپارچه‌سازی با هوش مصنوعی (AI Integration):</strong> مدل‌های زبانی بزرگ (LLMها نظیر GPT-4، Claude، DeepSeek و Gemini) را می‌توان از طریق API به CRM و کانال‌های ورودی (دایرکت، چت وب‌سایت، پیامک) متصل کرد.<br />
+*   <strong>سناریوی هوشمند:</strong> هوش مصنوعی پرونده مشتری را در CRM می‌خواند، رفتار خریدهای قبلی او را تحلیل می‌کند، پاسخ تخصصی متنی یا صوتی (با لحن اختصاصی برند) تولید کرده و در صورت نیاز، لینک صدور پیش‌فاکتور یا پیگیری توسط کارشناس انسانی را فعال می‌کند.</p>
+<pre><code class="language-text">[مشتری در دایرکت/سایت] ➔ [ورود به صندوق یکپارچه] ➔ [فراخوانی تاریخچه از CRM] 
+                                                        │
+                                                        ▼
+[پاسخ هوشمند صوتی/متنی] ◄─ [پردازش توسط مدل هوش مصنوعی (LLM)]
+</code></pre>
+<h3 id="bulk-inbound">۳.۴. بازاریابی پیامکی و ایمیلی: پیامک انبوه (Bulk) در برابر پیامک سفارشی (Inbound)</h3>
+<p>استاد حجتی بر تفاوت عمیق بین <strong>ارسال اسپم (Spam/Bulk)</strong> و <strong>ارسال هدایت‌شده (Inbound/Transactional)</strong> تاکید ورزیدند:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">شاخص</th>
+<th style="text-align: right;">پیامک/ایمیل انبوه (Bulk / Spam)</th>
+<th style="text-align: right;">پیامک/ایمیل سفارشی‌سازی‌شده (Inbound / Automated)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>منبع دیتابیس</strong></td>
+<td style="text-align: right;">لیست‌های خریداری‌شده/بی‌هدف</td>
+<td style="text-align: right;">دیتابیس اختصاصی CRM (Opt-in)</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>محتوا</strong></td>
+<td style="text-align: right;">یکسان برای همه (General)</td>
+<td style="text-align: right;">کاملاً شخصی‌سازی‌شده بر اساس نام، نیاز و رفتار</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>نرخ باز شدن (Open Rate)</strong></td>
+<td style="text-align: right;">زیر ۱ تا ۳ درصد</td>
+<td style="text-align: right;">بالای ۷۰ تا ۹۰ درصد (مانند پیامک‌های سامانه ثنا یا بانک)</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>تأثیر بر برند</strong></td>
+<td style="text-align: right;">تخریب تصویر برند و بن شدن دامنه/شماره</td>
+<td style="text-align: right;">افزایش وفاداری مشتری (Customer Loyalty) و حس ارزش</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>مکانیسم تحریک</strong></td>
+<td style="text-align: right;">تبلیغاتی و مزاحم</td>
+<td style="text-align: right;">رویدادمحور (Event-Driven / Triggered)</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>کیس استادی سامانه ثنا (قوه قضاییه):</strong> علت نرخ باز شدن نزدیک به ۱۰۰٪ پیامک‌های ثنا، <strong>ارتباط مستقیم با نیاز، اهمیت بالا و شخصی‌سازی کامل</strong> آن برای مخاطب است. پیامک‌های تجاری نیز اگر توسط CRM و بر اساس محرک‌های رفتاری (مانند یادآوری سبد خرید رهاشده یا تبریک تولد همراه با پیشنهاد ویژه) ارسال شوند، جلب توجه مشابهی ایجاد می‌کنند.</li>
+<li><strong>وضعیت ایمیل مارکتینگ:</strong> برخلاف باور عمومی، ایمیل مارکتینگ نمورده است. آمارها نشان می‌دهد بیش از ۸۵٪ تصمیم‌گیرندگان کسب‌وکارها روزانه ایمیل خود را چک می‌کنند. ایمیل رسمی‌ترین کانال ارتباطی B2B و ابزاری عالی برای Retargeting است.</li>
+</ul>
+<h3 id="technical-seo">۳.۵. بهینه‌سازی فنی موتورهای جستجو (Technical SEO)</h3>
+<p>موتورهای جستجو برای درک محتوای یک وب‌سایت به کدهای HTML و ساختار فنی آن نگاه می‌کنند:<br />
+1.  <strong>Title Tag (برچسب عنوان):</strong> مهم‌ترین سیگنال متنی برای گوگل. طول استاندارد: <strong>۵۰ تا ۶۰ کاراکتر</strong>. باید حاوی کلمه کلیدی اصلی و اسم برند باشد.<br />
+2.  <strong>Meta Description (توضیحات متنی):</strong> خلاصه برگه که در نتایج گوگل (SERP) زیر عنوان دیده می‌شود. طول استاندارد: <strong>۱۲۰ تا ۱۶۰ کاراکتر</strong>. نقش مستقیم در افزایش نرخ کلیک (CTR) دارد.<br />
+3.  <strong>ساختار عناوین (H1 تا H6):</strong><br />
+    *   <strong>H1:</strong> فقط یک‌بار در هر برگه برای موضوع اصلی.<br />
+    *   <strong>H2 و H3:</strong> برای بخش‌بندی عناوین فرعی و ایجاد ساختار درختی.<br />
+4.  <strong>Alt Tag (متن جایگزین تصویر):</strong> توصیف تصویر برای موتورهای جستجو و نابینایان؛ مرجع اصلی گوگل در بخش Google Images.<br />
+5.  <strong>جریمه پنالتی گوگل (Google Penalty):</strong> کپی‌برداری محض از سایت‌های دیگر یا انتشار محتوای تولیدشده توسط هوش مصنوعی بدون ویرایش و ارزش‌افزوده انسانی، موجب شناسایی توسط الگوریتم‌های گوگل (نظیر SpamBrain) و حذف کامل سایت از نتایج می‌شود.</p>
+<hr />
+<h2 id="real-world-case-studies">۴. مثال‌های کاربردی، کیس‌استادی‌ها و تجربیات استاد (Real-world Case Studies)</h2>
+<h3 id="b2b-b2c_1">کیس استادی ۱: بازاریابی روغن‌های صنعتی (B2B) در برابر فروش آنلاین طلا (B2C)</h3>
+<ul>
+<li><strong>سناریو:</strong> یک شرکت تولیدکننده روغن‌های صنعتی کمپینی دیجیتال راه اندازی کرد اما فروش آنلاین مستقیم آن نزدیک به صفر بود.</li>
+<li><strong>تحلیل استاد حجتی:</strong> خریدار روغن صنعتی، مدیر خریدی است که نیاز به استعلام قیمت، فاکتور رسمی و تاییدیه آزمایشگاه فنی دارد. بازاریابی دیجیتال در این سناریو نباید لینک «پرداخت آنلاین» بگذارد؛ بلکه باید لید (شماره تماس مدیر خرید) را جذب کند (MQL)، سپس تیم فروش با او تماس گرفته (SQL) و معامله را ببندد. در مقابل، خریدار طلای کم‌اجرت یا مستعمل، خرید B2C آنی انجام می‌دهد.</li>
+</ul>
+<h3 id="_3">کیس استادی ۲: پیج اینستاگرام طلافروشی با ۵۱۶ فالوور و ۳۲۰ میلیون تومان سود خالص ماهانه</h3>
+<ul>
+<li><strong>سناریو:</strong> مقایسه دو پیج اینستاگرام؛ پیج اول دارای ۱۰۰ هزار فالوور فیک و بازدهی صفر، پیج دوم دارای ۵۱۶ فالوور واقعی و محلی.</li>
+<li><strong>تحلیل استاد حجتی:</strong> پیج ۵۱۶ نفره، روی اهالی یک منطقه خاص تمرکز کرده، محتوای ویدئویی شفاف از کارهای کم‌اجرت گذاشته و از طریق دایرکت و ارتباط مستمر، مشتریان را به فروشگاه حضوری کشیده‌است. این مثال اثبات می‌کند که <strong>تعداد فالوور یک آمار فانتزی (Vanity Metric) است</strong> و آن‌چه اهمیت دارد نرخ تعامل (Engagement) و قدرت تبدیل مخاطب به خریدار است.</li>
+</ul>
+<h3 id="google-trends">کیس استادی ۳: رفتارشناسی مردم ایران در بحران‌های اقتصادی با Google Trends</h3>
+<ul>
+<li><strong>تحلیل داده:</strong> استاد با مقایسه واژه‌های «قیمت طلا»، «قیمت دلار» و «قیمت خودرو» در بازه‌های زمانی بحران اقتصادی نشان داد که چگونه موج جستجوها ابتدا از استان‌های بزرگ (تهران، اصفهان، آذربایجان شرقی) شروع شده و سپس به سایر استان‌ها سرایت می‌کند.</li>
+<li><strong>کاربرد مدیریتی:</strong> مدیر یک مجموعه سرمایه‌گذاری یا فروشگاه آنلاین با رصد لحظه‌ای Google Trends می‌تواند پیش‌بینی کند که موج تقاضای مخاطبان در حال حرکت به سمت کدام محصولات است و بودجه تبلیغاتی خود را بر اساس جغرافیای جستجو تخصیص دهد.</li>
+</ul>
+<h3 id="nulled-themes">کیس استادی ۴: خطر فاجعه‌بار تم‌های نال‌شده (Nulled Themes) و کپی‌کاری سئو</h3>
+<ul>
+<li><strong>سناریو:</strong> کسب‌وکاری با پرداخت ۹۰۰ میلیون تومان به یک پیمانکار، سایتی تحویل گرفته بود که از قالب کپی‌شده و کد نال‌شده استفاده می‌کرد.</li>
+<li><strong>نتیجه:</strong> پس از ۴ ماه، تمام کدهای سایت حاوی لینک‌های اسپم و مخرب شد، گوگل سایت را کاملاً پنالتی و از نتایج حذف کرد (Index Deletion) و شرکت مجبور شد دامنه‌ای جدید خریداری کرده و از صفر شروع کند.</li>
+</ul>
+<hr />
+<h2 id="tools-platforms">۵. ابزارها، پلتفرم‌ها و تکنولوژی‌های معرفی‌شده (Tools &amp; Platforms)</h2>
+<p>در جدول زیر، تمامی ابزارها و پلتفرم‌های بررسی‌شده در جلسه سوم به همراه کاربرد دقیق آن‌ها تدوین شده است:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">نام ابزار / پلتفرم</th>
+<th style="text-align: right;">دسته‌بندی</th>
+<th style="text-align: right;">کاربرد اصلی و ویژگی‌های کلیدی</th>
+<th style="text-align: right;">توصیه استاد / نکات کلیدی</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>نوین‌هاب (NovinHub)</strong></td>
+<td style="text-align: right;">مدیریت شبکه‌های اجتماعی (ایرانی)</td>
+<td style="text-align: right;">انتشار زمان‌بندی‌شده، صندوق ورودی یکپارچه (دایرکت/کامنت)، تقویم شمسی، مدیریت دسترسی ادمین‌ها بدون دادن پسورد اصلی</td>
+<td style="text-align: right;"><strong>توصیه شدید</strong> برای جلوگیری از شادوبن شدن اینستاگرام و مدیریت تیم‌های شبکه‌های اجتماعی</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>پاکت (Paket)</strong></td>
+<td style="text-align: right;">ایمیل مارکتینگ (ایرانی)</td>
+<td style="text-align: right;">پنل ارسال ایمیل انبوه و اتوماتیک بومی با پرداخت ریالی؛ استفاده از زیرساخت و API پلتفرم جهانی Brevo در پشت صحنه</td>
+<td style="text-align: right;">بهترین جایگزین برای دور زدن تحریم‌ها و پرداخت‌های ارزی ایمیل مارکتینگ</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Checkup.tools</strong></td>
+<td style="text-align: right;">آنالیز فنی سئو (ایرانی)</td>
+<td style="text-align: right;">بررسی وضعیت Title، Meta Description، کدهای H1-H6، تصاویر بدون Alt، کدهای شکسته‌شده و امتیاز کلی SEO</td>
+<td style="text-align: right;">ابزاری بسیار سریع و رایگان برای کارفرمایان جهت نظارت بر عملکرد تیم سئو</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Google Trends</strong></td>
+<td style="text-align: right;">رفتارشناسی و تحقیقات بازار</td>
+<td style="text-align: right;">مقایسه میزان جستجوی کلمات کلیدی، تحلیل جغرافیایی جستجوها، رصد موضوعات داغ (Trending)</td>
+<td style="text-align: right;">ضروری برای تعیین استراتژی محتوا و پیش‌بینی تقاضای بازار</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>بانک صدا (BankSeda)</strong></td>
+<td style="text-align: right;">بازاریابی صوتی (ایرانی)</td>
+<td style="text-align: right;">سامانه سفارش گویندگی آنلاین برای تلفن گویا (IVR)، تیزر، نریشن، پادکست با لهجه‌ها و زبان‌های مختلف</td>
+<td style="text-align: right;">ابزاری عالی برای حرفه‌ای‌سازی صدای برند و پاسخگویی سناریومحور تلفنی</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Brevo (Sendinblue)</strong></td>
+<td style="text-align: right;">اتوماسیون ایمیل و پیامک (بین‌المللی)</td>
+<td style="text-align: right;">پلتفرم بین‌المللی ارسال ایمیل‌های سفارشی رفتاری (Transactional) و اتوماسیون مارکتینگ</td>
+<td style="text-align: right;">زیرساخت اصلی بسیاری از سامانه‌های بومی؛ فوق‌العاده قوی در ارسال بر اساس رفتار کاربر</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Hootsuite / Buffer</strong></td>
+<td style="text-align: right;">مدیریت شبکه‌های اجتماعی (بین‌المللی)</td>
+<td style="text-align: right;">پلتفرم‌های جهانی برنامه‌ریزی و آنالیز شبکه‌های اجتماعی</td>
+<td style="text-align: right;">نیازمند پرداخت ارزی و استفاده از ابزارهای تغییر IP جهت جلوگیری از مسدودی</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Didar / Sarv / ParsVitiger</strong></td>
+<td style="text-align: right;">CRM (ایرانی)</td>
+<td style="text-align: right;">مدیریت ارتباط با مشتریان، قیچی فروش، اتصال به پنل‌های پیامکی و ثبت تاریخچه تعاملات</td>
+<td style="text-align: right;">الزامی برای تمامی شرکت‌های متوسط و کوچک جهت نگه‌داشت مشتریان</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>Julio (جولیو)</strong></td>
+<td style="text-align: right;">CRM متصل به AI (بین‌المللی/بومی)</td>
+<td style="text-align: right;">سیستم مدیریت ارتباط با مشتری با قابلیت اتصال مستقیم به هوش مصنوعی برای پاسخگویی خودکار</td>
+<td style="text-align: right;">ابزاری پیشرفته برای اتوماسیون کامل پشتیبانی و فروش</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>SEOptimer / Screaming Frog</strong></td>
+<td style="text-align: right;">ابزارهای ممیزی فنی سئو</td>
+<td style="text-align: right;">آنالیز عمیق کدهای HTML، ساختار ربات‌ها، صفحات ۴۰۴ و بهینه‌سازی فنی صفحات</td>
+<td style="text-align: right;">ابزار تخصصی تیم‌های فنی و متخصصان سئو</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="executive-action-items-frameworks">۶. جعبه‌ابزار تصمیم‌گیری مدیران (Executive Action Items &amp; Frameworks)</h2>
+<h3 id="_4">چک‌لیست اقدامات عملیاتی برای مدیرعامل و مدیر مارکتینگ</h3>
+<pre><code class="language-text">[ ] ۱. بازنگری در امنیت شبکه‌های اجتماعی:
+       قطع دسترسی مستقیم ادمین‌ها به پسورد اصلی اینستاگرام و انتقال مدیریت به پنل نوین‌هاب.
+
+[ ] ۲. استقرار سیستم مدیریت ایمیل و پیامک مبتنی بر CRM:
+       توقف کامل خرید دیتابیس پیامک انبوه و راه‌اندازی کمپین‌های پیامکی/ایمیلی رفتاری (Transactional).
+
+[ ] ۳. چکاپ فنی سئوی وب‌سایت اصلی:
+       ورود آدرس سایت به Checkup.tools و اصلاح موارد قرمز (عدم وجود Title، Meta Description و Alt تصاویر).
+
+[ ] ۴. اتصال پنل صوتی حرفه‌ای به سیستم تلفنی (IVR):
+       استفاده از گویندگان بانک صدا برای ضبط پیام‌های تلفنی سناریومحور جهت افزایش اعتبار سازمان.
+
+[ ] ۵. اصلاح قیچی فروش در کمپین‌های B2B:
+       حذف گزینه‌های خرید آنی برای محصولات سنگین/صنعتی و جایگزینی آن با فرم‌های دریافت مشاوره/لید (CPL/SQL).
+</code></pre>
+<h3 id="fatal-mistakes">اشتباهات مهلک و رایج (Fatal Mistakes)</h3>
+<ol>
+<li><strong>تمرکز بر متریگ‌های فانتزی (Vanity Metrics):</strong> شادمانی از افزایش تعداد فالوورهای فیک به جای بررسی نرخ تبدیل واقعی و سود ناخالص ماهانه.</li>
+<li><strong>ارسال پیامک و ایمیل تبلیغاتی بی‌هدف (Spamming):</strong> ارسال پیامک‌های تبلیغاتی عمومی در ساعات ناپیوسته که موجب بلاک شدن شماره پنل و تخریب پرستیژ برند می‌شود.</li>
+<li><strong>استفاده از تم‌ها و پلاگین‌های نال‌شده (Nulled):</strong> به خطر انداختن کل دارایی دیجیتال سازمان به دلیل عدم پرداخت هزینه لایسنس معتبر.</li>
+<li><strong>تولید محتوای انبوه بی‌کیفیت با AI:</strong> انتشار مستقیم کپی‌های متنی ChatGPT روی وب‌سایت بدون ویرایش انسان، که منجر به جریمه سنگین الگوریتم‌های جدید گوگل می‌شود.</li>
+</ol>
+<hr />
+<h2 id="_5">۷. جمع‌بندی مدیریتی کلاس</h2>
+<p>در پایان این جلسه، استاد ناصر حجتی تاکید کردند که موفقیت در دیجیتال مارکتینگ حاصل <strong>یکپارچه‌سازی ابزارها (Tools Integration)</strong> است. هیچ ابزاری به تنهایی معجزه نمی‌کند. یک مدیر هوشمند MBA باید بتواند زنجیره‌ای از ابزارها را بسازد: </p>
+<blockquote>
+<p>[!TIP]</p>
+<h3 id="tools-integration-pipeline">🔄 زنجیره ۵ مرحله‌ای یکپارچه‌سازی ابزارهای دیجیتال (Tools Integration Pipeline)</h3>
+<p><code>┌────────────────────────┐      ┌────────────────────────┐      ┌────────────────────────┐
+│   ۱. تحقیقات و ترند    │ ──►  │   ۲. ارزیابی زیرساخت   │ ──►  │   ۳. جذب و تعامل       │
+│     Google Trends      │      │     Checkup.tools      │      │  NovinHub / Ad Networks │
+└────────────────────────┘      └────────────────────────┘      └────────────────────────┘
+                                                                            │
+                                ┌────────────────────────┐                  │
+                                │   ۵. اتوماسیون نگه‌داشت │ ◄────────────────┘
+                                │     Paket / SMS / Email│
+                                └────────────────────────┘
+                                            ▲
+                                            │
+                                ┌────────────────────────┐
+                                │   ۴. مدیریت لید و فروش │
+                                │       CRM Systems      │
+                                └────────────────────────┘</code><br />
+* <strong>بینش استراتژیک:</strong> ابزارها به تنهایی مزیت ایجاد نمی‌کنند؛ مزیت در نحوه جریان یافتن داده‌ها میان این ۵ لایه نهفته است.</p>
+</blockquote>
+<p>این زنجیره ارزش دیجیتال، ضامن بقا و رشد سودآور کسب‌وکارها در عصر تراکم اطلاعات و هوش مصنوعی خواهد بود.</p></div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- TAB: SESSION 4 -->
+    <section id="content-session4" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm">
+        
+        <!-- Tab Header -->
+        <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-200">
+          <div>
+            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">جلسه 4</span>
+            <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">هوش مصنوعی، تحلیل تماس و مهندسی لندینگ پیج</h2>
+          </div>
+          <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-blue-600 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+        </div>
+
+        <!-- TOP LAYER: Executive Visual Summary -->
+        
+    <div class="bg-rose-50/60 border border-rose-200 rounded-2xl p-6 mb-6">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-xl">🤖</span>
+        <h3 class="text-base md:text-lg font-black text-rose-950">خلاصه اجرایی و مدیریتی جلسه چهارم: هوش مصنوعی و بهینه‌سازی لندینگ پیج</h3>
+      </div>
+      <p class="text-xs md:text-sm text-rose-900 leading-relaxed mb-5 text-justify">
+        در جلسه چهارم، پیوند فناوری‌های هوش مصنوعی با فروش و بهینه‌سازی صفحات فرود (Landing Pages) بررسی شد. تحلیل هوشمند مکالمات تلفنی با Speech-to-Text، ابزارهای فارسی کیووردچی، مهندسی پرامپت و اصلاح طراحی صفحات فرود جهت ارتقای نرخ تبدیل (CRO) ارائه گردید.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+        <div class="bg-white p-4 rounded-xl border border-rose-100 shadow-sm">
+          <div class="text-xs font-bold text-rose-600 mb-1">تبدیل صوت به متن در کال‌سنتر</div>
+          <p class="text-xs text-slate-600 leading-relaxed">استخراج خودکار دلایل اصلی انصراف مشتریان و کلمات پرتکرار از دل مکالمات تلفنی تیم فروش.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-rose-100 shadow-sm">
+          <div class="text-xs font-bold text-rose-600 mb-1">کشف نیاز پنهان مخاطب</div>
+          <p class="text-xs text-slate-600 leading-relaxed">استفاده از ابزارهای بومی مانند کیووردچی برای کشف ادبیات واقعی جستجوی کاربران ایرانی در گوگل.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-rose-100 shadow-sm">
+          <div class="text-xs font-bold text-rose-600 mb-1">ارزیابی عملکرد لندینگ پیج</div>
+          <p class="text-xs text-slate-600 leading-relaxed">کاهش زمان بارگذاری به زیر ۳ ثانیه و حذف فرم‌های طولانی برای جلوگیری از افت نرخ تبدیل.</p>
+        </div>
+      </div>
+
+      <!-- Framework Table -->
+      <div class="bg-white rounded-xl border border-rose-200 overflow-hidden shadow-sm">
+        <table class="w-full text-xs text-right">
+          <thead class="bg-rose-100 text-rose-950 font-bold">
+            <tr>
+              <th class="p-3">عنصر لندینگ پیج</th>
+              <th class="p-3">اشتباه رایج در طراحی</th>
+              <th class="p-3">راهکار استاندارد و حرفه‌ای</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-rose-100 text-slate-700">
+            <tr>
+              <td class="p-3 font-bold text-rose-900">تیتر اول (Hero Headline)</td>
+              <td class="p-3">استفاده از شعارهای انتزاعی و نامفهوم</td>
+              <td class="p-3">بیان واضح نتیجه‌ای که کاربر ظرف ۵ ثانیه اول متوجه آن شود</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-rose-900">فرم ثبت اطلاعات (Lead Form)</td>
+              <td class="p-3">دریافت نام، کد پستی، سن، ایمیل، شغل</td>
+              <td class="p-3">صرفاً شماره موبایل و نام (حداقل اصطکاک ورود)</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-rose-900">دکمه اقدام (Call to Action)</td>
+              <td class="p-3">دکمه مبهم نظیر «ارسال» یا «کلیک کنید»</td>
+              <td class="p-3">دکمه ارزش‌محور: «دریافت رایگان مشاوره استراتژیک»</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+        <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+        <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+          <div>
+            <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه 4</h3>
+            <p class="text-xs text-slate-400">شامل تمام مبانی علمی، مثال‌های موردی، تنظیمات تخصصی و نکات ریز تدریس استاد</p>
+          </div>
+          <button onclick="toggleSessionFull('s4')" id="btn-toggle-s4" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+            <span>مطالعه متن کامل و تفصیلی جلسه</span>
+            <span id="icon-toggle-s4">▼</span>
+          </button>
+        </div>
+
+        <div id="full-s4" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+          <div class="prose-custom"><p>این جزوه تخصصی و جامع بر اساس محتوای آموزشی فایل صوتی جلسه چهارم درس «دیجیتال مارکتینگ» دوره MBA دانشکده اقتصاد دانشگاه تهران، با تدریس <strong>استاد ناصر حجتی</strong>، تدوین و تنظیم شده است.</p>
+<hr />
+<h1 id="-">دیجیتال مارکتینگ - جلسه چهارم</h1>
+<p><strong>استاد مربوطه:</strong> ناصر حجتی<br />
+<strong>محل تدریس:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA<br />
+<strong>موضوع جلسه:</strong> اتوماسیون هوشمند فروش، تکنولوژی‌های هوش مصنوعی، تحقیقات کلمات کلیدی و قصد جستجو، آنالیز رقبا در شبکه‌های اجتماعی و مهندسی صفحات فرود (Landing Page)</p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده اجرایی (Executive Summary)</h2>
+<h3 id="_1">چکیده اجرایی</h3>
+<p>در این جلسه، استراتژی‌های عملیاتی دیجیتال مارکتینگ با محوریت <strong>افزایش بهره‌وری سازمان، کاهش هزینه‌های جذب مشتری (CAC) و ارتقای نرخ تبدیل (Conversion Rate)</strong> از طریق بهینه‌سازی ابزارها و فرآیندها بررسی شد. محور اصلی تدریس استاد حجتی بر سه پایه استوار بود:<br />
+1. <strong>هوشمندسازی فرآیندهای فروش و CRM:</strong> استفاده از تکنولوژی‌های تبدیل گفتار به متن (Speech-to-Text) و هوش مصنوعی برای آنالیز درلحظه مکالمات تلفنی تیم فروش، رفع اعتراضات مشتریان (Objection Handling) و تحلیل رفتار خریدار.<br />
+2. <strong>تحقیقات بازار و قصد جستجو (Search Intent):</strong> تحلیل رفتار جستجوی کاربران ایرانی، استخراج کلمات کلیدی طولانی (Long-tail) و آنالیز عمیق عملکرد رقبا در شبکه‌های اجتماعی جهت اتخاذ استراتژی‌های محتوایی هدفمند.<br />
+3. <strong>مهندسی صفحات فرود (Landing Page Optimization):</strong> بررسی معماری صفحات فرود، ضرورت تفکیک ترافیک تبلیغاتی از صفحه اصلی (Homepage) و اصول بهینه‌سازی نرخ تبدیل (CRO).</p>
+<h3 id="key-takeaways">مهم‌ترین دستاوردهای اجرایی برای مدیران (Key Takeaways)</h3>
+<ul>
+<li><strong>عدم هدایت ترافیک تبلیغاتی به صفحه اصلی:</strong> هیچ کمپین تبلیغاتی کلیکی یا محتوایی نباید کاربر را به Homepage هدایت کند؛ بلکه باید به یک Landing Page اختصاصی با یک پیشنهاد ارزش (UVP) مشخص و یک فراخوان به عمل (CTA) واحد هدایت شود.</li>
+<li><strong>استفاده از هوش مصنوعی در تحلیل مراکز تماس:</strong> استخراج داده‌های متنی از مکالمات صوتی مشتریان، منابع بی‌نظیری از نیازها، اعتراضات و نقاط درد (Pain Points) خریداران را در اختیار تیم‌های مارکتینگ و محصول قرار می‌دهد.</li>
+<li><strong>تمرکز بر کلمات کلیدی طولانی و قصد کاربر:</strong> به‌جای رقابت سنگین روی کلمات کلیدی کوتاه و پرهزینه، استراتژی بازاریابی محتوایی باید بر پاسخ به کلمات کلیدی طولانی (Long-tail) با قصد خرید شفاف متمرکز شود.</li>
+<li><strong>آنالیز رقبا بر مبنای داده‌های ملموس:</strong> استفاده از ابزارهای بینش رقابتی (Competitor Intelligence) جهت سنجش نرخ درگیری (Engagement Rate)، زمان‌های بهینه انتشار و ارزیابی واقعی لایک‌ها و کامنت‌های ارگانیک در برابر فیک.</li>
+</ul>
+<hr />
+<h2 id="session-outline">۲. سرفصل‌ها و نقشه ذهنی مباحث (Session Outline)</h2>
+<pre><code class="language-text">دیجیتال مارکتینگ (جلسه چهارم)
+├── ۱. هوش مصنوعی و اتوماسیون فروش
+│   ├── تبدیل گفتار به متن (Speech-to-Text) در CRM
+│   ├── آنالیز درلحظه مکالمات مرکز تماس و رفع اعتراضات خریدار
+│   ├── بلاگرها و اینفلوئنسرهای مجازی (AI Avatars) و مقایسه با اینفلوئنسرهای انسانی
+│   └── راهکارهای دور زدن تحریم‌ها و دسترسی به اکانت‌های بین‌المللی AI
+├── ۲. تحقیقات کلمات کلیدی و قصد جستجو (Search Intent)
+│   ├── مفهوم قصد جستجو (Informational, Navigational, Transactional)
+│   ├── چالش‌های خطای تایپی، کیبورد انگلیسی و اصطلاحات بومی در وب فارسی
+│   └── معرفی و کاربرد ابزار تخصصی «کیووردچی» (Keywordchi)
+├── ۳. آنالیز رقبا و شبکه‌های اجتماعی (Social Media Intelligence)
+│   ├── شاخص‌های کلیدی عملکرد (Engagement Rate, Reach, Impressions)
+│   ├── آنالیز مقایسه‌ای رقبا با ابزار SocialInsider
+│   └── شناسایی تعاملات ارگانیک در برابر فیک
+├── ۴. مهندسی صفحات فرود (Landing Page Optimization &amp; CRO)
+│   ├── تفاوت ساختاری Landing Page با Homepage و Product Page
+│   ├── آناتومی استاندارد صفحه فرود (Above the Fold, UVP, Social Proof, CTA)
+│   └── اصول بهینه‌سازی نرخ تبدیل (CRO) و کاهش اصطکاک کاربر (Friction)
+└── ۵. ابزارشناسی تخصصی و مدل‌های برونسپاری
+    ├── معرفی ابزارهای آنالیز SEO و فنی (Screaming Frog, Brandwatch, Ahrefs, SEMrush)
+    └── مدل‌های کاری با مراکز تماس برونسپاری‌شده (Call Center Outsourcing)
+</code></pre>
+<hr />
+<h2 id="core-topics-theories">۳. شرح موشکافانه و تفصیلی مفاهیم تدریس‌شده (Core Topics &amp; Theories)</h2>
+<h3 id="crm">الف) هوش مصنوعی و پردازش صوت در خدمت CRM و فروش</h3>
+<p>یکی از حوزه‌های مغفول در مدیریت ارتباط با مشتریان (CRM)، داده‌های صوتی حاصل از تماس‌های تلفنی است. استاد حجتی با تاکید بر اهمیت تبدیل گفتار به متن (Speech-to-Text)، الگوریتم هوشمند زیر را برای افزایش نرخ تبدیل تیم‌های فروش ارائه دادند:</p>
+<pre><code class="language-text">ورودی صوتی (مکالمه تلفنی) ➔ تبدیل به متن (STT Engine) ➔ پردازش توسط هوش مصنوعی / LLM ➔ استخراج اعتراضات و سوالات کلیدی ➔ نمایش پیشنهادات پاسخ درلحظه به کارشناس فروش ➔ ثبت اتوماتیک در CRM
+</code></pre>
+<h4 id="_2">تحلیل فرآیند:</h4>
+<ol>
+<li><strong>ثبت و پیاده‌سازی متنی:</strong> مکالمه کارشناس فروش با مشتری از طریق زیرساخت VoIP ضبط شده و توسط موتورهای هوش مصنوعی متناسب با زبان فارسی (مانند تایپو) به متن تبدیل می‌شود.</li>
+<li><strong>تحلیل متن و رفتارشناسی (Sentiment Analysis):</strong> مدل‌های زبانی کلمات کلیدی نشان‌دهنده تردید، اعتراض به قیمت، مقایسه با رقبا یا تمایل به خرید را استخراج می‌کنند.</li>
+<li><strong>پشتیبانی درلحظه از کارشناس (Real-time Agent Assist):</strong> سیستم هوشمند با تحلیل متن مکالمه، کارت‌های راهنما (Prompt Cards) را روی مانیتور کارشناس فروش ظاهر می‌کند تا بهترین پاسخ را به اعتراض مشتری ارائه دهد.</li>
+<li><strong>کاهش هزینه‌های آموزش و جذب:</strong> این فرآیند زمان انطباق (Onboarding) نیروهای جدید فروش را به شدت کاهش داده و کیفیت مکالمات را استاندارد می‌سازد.</li>
+</ol>
+<h4 id="ai-avatars">چالش اینفلوئنسرهای انسانی در برابر سفیران برند مجازی (AI Avatars):</h4>
+<p>استاد به مقایسه استراتژیک استفاده از اینفلوئنسرهای واقعی و کاراکترهای ساخته‌شده با هوش مصنوعی پرداختند:<br />
+* <strong>ریسک‌های اینفلوئنسر انسانی:</strong> ادعاهای حقوقی جدید، عدم رعایت بندهای عدم رقابت (Non-compete)، حواشی اخلاقی یا سیاسی فرد که مستقیم به برند آسیب می‌زند، و هزینه‌های رو به افزایش.<br />
+* <strong>مزایای بلاگرهای مجازی (AI Avatars):</strong> مالکیت ۱۰۰٪ دارایی معنوی توسط شرکت، کنترل کامل روی پیام و لحن برند، عدم خستگی و امکان تولید محتوای ۲۴ساعته به زبان‌های مختلف، و همگام‌سازی دقیق حرکات لب (Lip-sync) با متن.</p>
+<hr />
+<h3 id="search-intent">ب) تحقیقات کلمات کلیدی و قصد جستجو (Search Intent)</h3>
+<p>موتورهای جستجو از تمرکز صرف بر کلمات کلیدی (Keyword Matching) به سمت درک هدف و قصد کاربر (Intent Matching) حرکت کرده‌اند. قصد کاربر به سه دسته اصلی تقسیم می‌شود:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">نوع قصد جستجو</th>
+<th style="text-align: right;">تعریف</th>
+<th style="text-align: right;">مثال در وب فارسی</th>
+<th style="text-align: right;">استراتژی محتوایی مناسب</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>اطلاعاتی (Informational)</strong></td>
+<td style="text-align: right;">کاربر به دنبال یادگیری یا حل یک مسئله است.</td>
+<td style="text-align: right;">«کابل افشان چیست؟»، «طلای آبشده بهتر است یا سکه»</td>
+<td style="text-align: right;">پست‌های جامع وبلاگ، ویدیوهای آموزشی، مقاله مقایسه‌ای</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>نابریبری / هدایت شونده (Navigational)</strong></td>
+<td style="text-align: right;">کاربر به دنبال رسیدن به یک برند یا صفحه خاص است.</td>
+<td style="text-align: right;">«دیجی کالا»، «ورود به پنل تکنولایف»</td>
+<td style="text-align: right;">بهینه‌سازی عنوان صفحه اصلی و صفحات Landing برند</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>تراکنشی / تجاری (Transactional)</strong></td>
+<td style="text-align: right;">کاربر قصد قطعی یا نزدیک به خرید دارد.</td>
+<td style="text-align: right;">«خرید کابل افشان ۲در۲.۵»، «قیمت طلای ۱۸ عیار امروز»</td>
+<td style="text-align: right;">صفحات محصول، Landing Page فروش با CTA برجسته</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_3">رفتارشناسی کاربر ایرانی در جستجو:</h4>
+<ol>
+<li><strong>تایپ فارسی با کیبورد انگلیسی (کلمات انگلیسی‌نما):</strong> بسیاری از کاربران از تغییر زبان کیبورد صرف‌نظر کرده و مثلاً کلمه «دیجی کالا» را به صورت <code>ndژd 'hgh</code> تایپ می‌کنند. سئوکارهای حرفه‌ای این عبارت‌ها را شناسایی کرده و روی صفحات فرود پوشش می‌دهند.</li>
+<li><strong>خطاهای املایی و اصطلاحات عامیانه:</strong> جستجوی عبارت‌هایی مانند «طلا از چی ساخته شده» به جای عبارت‌های علمی، نشان‌دهنده نیاز به تولید محتوا با زبان عامیانه و روان است.</li>
+<li><strong>عبارت‌های دم‌دراز (Long-tail Keywords):</strong> این عبارت‌ها نرخ تبدیل بسیار بالاتری دارند زیرا کاربر دقیقاً می‌داند چه می‌خواهد (مثلاً: «خرید کابل افشان شیلددار ۲ در ۱.۵ مس»).</li>
+</ol>
+<hr />
+<h3 id="landing-page-optimization-cro">ج) مهندسی صفحات فرود (Landing Page Optimization) و CRO</h3>
+<p>صفحه فرود (Landing Page) صفحه‌ای مستقل است که برای یک کمپین بازاریابی مشخص طراحی شده و دارای <strong>یک هدف واحد و شفاف (Single Conversion Goal)</strong> است.</p>
+<pre><code class="language-text">[ترافیک کمپین (بنر/کلیکی/سوشال)] ➔ [صفحه فرود اختصاصی (Landing Page)] ➔ [یک اقدام مشخص (CTA)] ➔ [تبدیل به لید/فروش]
+</code></pre>
+<pre><code class="language-text">            +-------------------------------------------------+
+            |                    HEADER                       |
+            |   [Logo]                         [Contact Info] |
+            +-------------------------------------------------+
+            |                  HERO SECTION                   |
+            |  H1: تیتر اصلی جذاب (Main Value Proposition)     |
+            |  Sub-headline: زیرتیتر مکمل و اقناع‌کننده       |
+            |                                                 |
+            |  +-----------------------+   +---------------+  |
+            |  |  [تصویر / ویدیو جذاب  |   |   فرم دریافت  |  |
+            |  |   از محصول یا خدمت]   |   |  اطلاعات یا   |  |
+            |  |                       |   |   دکمه CTA    |  |
+            |  +-----------------------+   +---------------+  |
+            +-------------------------------------------------+
+            |                 BODY SECTION                    |
+            |  - مزایای اصلی (Benefits, not just features)     |
+            |  - اثبات اجتماعی (Social Proof / Testimonials)   |
+            |  - نمادهای اعتماد و ضمانت‌ها (Trust Badges)     |
+            +-------------------------------------------------+
+            |                    FOOTER                       |
+            |  اطلاعات ضروری تماس / لینک‌های حقوقی محدود       |
+            +-------------------------------------------------+
+</code></pre>
+<h4 id="_4">اصول کلیدی در ساخت صفحات فرود موفق:</h4>
+<ol>
+<li><strong>تطابق پیام (Message Match):</strong> متنی که کاربر در آگهی تبلیغاتی روی آن کلیک کرده باید دقیقاً در تیتر اصلی (H1) صفحه فرود تکرار شود تا از ریزش کاربر جلوگیری گردد.</li>
+<li><strong>حذف مسیرهای خروج (Removing Navigation):</strong> منوهای بالای سایت (Header Navigation) و لینک‌های جانبی باید حذف شوند تا تمرکز کاربر فقط روی فرم یا دکمه اقدام (CTA) بماند.</li>
+<li><strong>قانون Above the Fold:</strong> مهم‌ترین پیشنهاد ارزش (UVP)، تصویر جذاب و فرم/دکمه CTA باید بدون نیاز به اسکرول کردن، در دید اولیه کاربر قرار گیرد.</li>
+<li><strong>کاهش اصطکاک (Friction Reduction):</strong> فرم‌ها باید حداقل فیلدهای ممکن را داشته باشند (مثلاً فقط شماره موبایل). هر فیلد اضافی نرخ تبدیل را بین ۱۰ تا ۲۵ درصد کاهش می‌دهد.</li>
+</ol>
+<hr />
+<h2 id="real-world-case-studies">۴. مثال‌های کاربردی، کیس‌استادی‌ها و تجربیات استاد (Real-world Case Studies)</h2>
+<h3 id="_5">۱. کیس‌استادی دیجی‌کالا و تکنولایف (تحلیل رقابتی در شبکه‌های اجتماعی)</h3>
+<ul>
+<li><strong>سناریو:</strong> آنالیز مقایسه‌ای عملکرد دیجی‌کالا و تکنولایف در اینستاگرام با ابزار SocialInsider.</li>
+<li><strong>یافته‌ها:</strong> تکنولایف با وجود فالوور کمتر در مقایسه با دیجی‌کالا، در برخی بازه‌های زمانی به دلیل انتشار ریلزهای تخصصی بررسی محصول (Product Review) نرخ درگیری (Engagement Rate) بالاتری ثبت کرده است.</li>
+<li><strong>تحلیل استاد:</strong> فالوور بیشتر به معنای بازدهی بیشتر نیست. الگوریتم‌های جدید اینستاگرام نمایش محتوا را بر اساس تعامل (Engagement) تنظیم می‌کنند نه تعداد فالوور. شرکت‌ها باید به‌جای خرید فالوور، روی تولید محتوای ارزشمند متمرکز شوند.</li>
+</ul>
+<h3 id="_6">۲. کیس‌استادی بازار طلا و سیم و کابل (تحلیل قصد جستجوی خرید)</h3>
+<ul>
+<li><strong>سناریو:</strong> بررسی کلمات کلیدی حوزه طلا («خرید طلای آبشده»، «قیمت طلا ۱۸ عیار») و سیم و کابل («کابل افشان ۲در۲.۵»).</li>
+<li><strong>تحلیل استاد:</strong> در صنعت سیم و کابل، خریداران عمده از کلمات کلیدی بسیار فنی و مهندسی استفاده می‌کنند (مانند کابل افشان شیلددار نسوز). خریدار طلا اما دو قصد متفاوت دارد: یا سرمایه‌گذاری (طلا آبشده و سکه) یا کادویی و زینتی (دستبند طلا). اگر صفحه فرود شما این دو دسته را تفکیک نکند، نرخ تبدیل به شدت افت خواهد کرد.</li>
+</ul>
+<h3 id="_7">۳. کیس‌استادی جذب نیرو و استخدام با تکنیک‌های دیجیتال</h3>
+<ul>
+<li><strong>تجربه استاد در مصاحبه‌های استخدامی:</strong> مصاحبه با متقاضیانی که از ابزارهای هوش مصنوعی برای پاسخ‌دهی سفارشی استفاده می‌کردند.</li>
+<li><strong>درس مدیریتی:</strong> مدیران موفق باید نحوه تشخیص سناریوهای تولیدشده توسط AI را بدانند و در عین حال، نیروهایی را جذب کنند که بلدند از هوش مصنوعی به عنوان یک شتاب‌دهنده پرومپت‌نویسی حرفه‌ای استفاده کنند.</li>
+</ul>
+<hr />
+<h2 id="tools-platforms">۵. ابزارها، پلتفرم‌ها و تکنولوژی‌های معرفی‌شده (Tools &amp; Platforms)</h2>
+<p>در جدول زیر، تمامی ابزارها و سامانه‌های معرفی‌شده در کلاس با ذکر کاربرد دقیق و لینک دسترسی جمع‌آوری شده‌اند:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">نام ابزار / پلتفرم</th>
+<th style="text-align: right;">آدرس وب‌سایت / دسترسی</th>
+<th style="text-align: right;">کاربرد اصلی در دیجیتال مارکتینگ</th>
+<th style="text-align: right;">توضیحات و سطح دسترسی در ایران</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><strong>تایپو (Typo)</strong></td>
+<td style="text-align: right;"><a href="https://typ.top">typ.top</a></td>
+<td style="text-align: right;">تبدیل گفتار به متن فارسی با هوش مصنوعی</td>
+<td style="text-align: right;">مناسب پیاده‌سازی متنی فایل‌های صوتی، جلسات و مکالمات مرکز تماس.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>ژولیو (Julio CRM)</strong></td>
+<td style="text-align: right;"><a href="https://julio.me">julio.me</a></td>
+<td style="text-align: right;">نرم‌افزار CRM بومی با قابلیت اتصال به VoIP</td>
+<td style="text-align: right;">آنالیز مکالمات تلفنی، ثبت خودکار متنی داده‌ها و ارزیابی عملکرد کارشناسان فروش.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>دیجی‌مارک (Digimark AI)</strong></td>
+<td style="text-align: right;"><a href="https://digimark-ai.com">digimark-ai.com</a></td>
+<td style="text-align: right;">پلتفرم جامع ابزارهای هوش مصنوعی بومی</td>
+<td style="text-align: right;">ارائه خدمات ویدیو، آواتارهای سخنگو، تصویرسازی و تولید محتوای متنی.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>کیووردچی (Keywordchi)</strong></td>
+<td style="text-align: right;"><a href="https://keywordchi.com">keywordchi.com</a></td>
+<td style="text-align: right;">تحقیقات کلمات کلیدی و کلمات دم‌دراز فارسی</td>
+<td style="text-align: right;">استخراج خطاهای تایپی، عبارات جستجوی بومی و ترکیبات کلمات کلیدی خریداران.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>سوشال اینسایدر (SocialInsider)</strong></td>
+<td style="text-align: right;"><a href="https://socialinsider.io">socialinsider.io</a></td>
+<td style="text-align: right;">آنالیز عمیق رقبا در شبکه‌های اجتماعی</td>
+<td style="text-align: right;">تحلیل اینستاگرام، یوتیوب و تیک‌تاک رقبا، محاسبه دقیق نرخ درگیری و ارزیابی پست‌ها.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>لندین (Landin)</strong></td>
+<td style="text-align: right;"><a href="https://landin.ir">landin.ir</a></td>
+<td style="text-align: right;">ابزار بدون کد (No-code) ساخت صفحات فرود</td>
+<td style="text-align: right;">طراحی سریع Landing Page با امکان اتصال به درگاه‌های پرداخت و سیستم‌های ایمیل/پیامک.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>اسکریمینگ فراگ (Screaming Frog)</strong></td>
+<td style="text-align: right;"><a href="https://screamingfrog.co.uk">screamingfrog.co.uk</a></td>
+<td style="text-align: right;">کراولر و آنالیزور فنی سئو (Technical SEO)</td>
+<td style="text-align: right;">بررسی ساختار لینک‌ها، عناوین، متاها، خطاهای ۴۰۴ و لنگرگاه‌های متنی سایت.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>برندواچ (Brandwatch)</strong></td>
+<td style="text-align: right;"><a href="https://brandwatch.com">brandwatch.com</a></td>
+<td style="text-align: right;">رصد برند و شنود شبکه‌های اجتماعی (Social Listening)</td>
+<td style="text-align: right;">تحلیل افکار عمومی و نظرات کاربران درباره برندها در لایه‌های مختلف وب.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>لایسنس مارکت / ایرانی‌کارت</strong></td>
+<td style="text-align: right;">پلتفرم‌های واسط مالی</td>
+<td style="text-align: right;">واسطه خرید اکانت‌های پرمیوم ابزارهای خارجی</td>
+<td style="text-align: right;">راهکار دور زدن تحریم‌ها برای پرداخت‌های ارزی ابزارهای هوش مصنوعی و SEO.</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>سوشال بلید (SocialBlade)</strong></td>
+<td style="text-align: right;"><a href="https://socialblade.com">socialblade.com</a></td>
+<td style="text-align: right;">ردیابی آمار و روند رشد صفحات اجتماعی</td>
+<td style="text-align: right;">آنالیز نمودار رشد فالوورها و نرخ تعامل برای تشخیص فالوورهای فیک.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="executive-action-items-frameworks">۶. جعبه‌ابزار تصمیم‌گیری مدیران (Executive Action Items &amp; Frameworks)</h2>
+<h3 id="cmo-checklist">چک‌لیست اقدامات عملیاتی برای مدیرعامل و مدیر مارکتینگ (CMO Checklist)</h3>
+<ul>
+<li>
+<p>[ ] <strong>گام ۱: راه اندازی سیستم شنود مکالمات فروش (Call Center AI Audit)</strong><br />
+  یک نمونه ۱۰۰ تایی از فایل‌های صوتی مرکز تماس را با ابزار تبدیل گفتار به متن پیاده‌سازی کرده و با الگوریتم‌های متنی، ۵ دلیل اصلی عدم خرید مشتریان را استخراج کنید.</p>
+</li>
+<li>
+<p>[ ] <strong>گام ۲: اصلاح ساختار کمپین‌های تبلیغاتی</strong><br />
+  تمامی کمپین‌های جاری کلیکی (PPC)، بنری و اینستاگرام را ممیزی کنید. در صورت وجود هرگونه تبلیغ که کاربر را به Homepage هدایت می‌کند، بلافاصله آن را توقیف کرده و یک Landing Page اختصاصی برای آن طراحی کنید.</p>
+</li>
+<li>
+<p>[ ] <strong>گام ۳: اجرای ممیزی رقبا در شبکه‌های اجتماعی</strong><br />
+  با استفاده از ابزار SocialInsider، عملکرد ۳ رقیب اصلی خود را در بازه ۶ ماهه گذشته بررسی کنید. نرخ تعامل (Engagement Rate) و نوع محتوایی که بالاترین لایک و کامنت ارگانیک را داشته شناسایی کنید.</p>
+</li>
+<li>
+<p>[ ] <strong>گام ۴: بازنگری معماری کلمات کلیدی با کیووردچی</strong><br />
+  کلمات کلیدی صنوبر و اصلی کسب‌وکار خود را وارد ابزار کیووردچی کرده و حداقل ۵۰ عبارت دم‌دراز (Long-tail) با قصد خرید شفاف انتخاب و به تیم محتوا جهت تولید مقاله مأموریت دهید.</p>
+</li>
+<li>
+<p>[ ] <strong>گام ۵: کاهش اصطکاک در صفحات فرود (CRO Optimization)</strong><br />
+  فیلدهای فرم‌های دریافت لید در Landing Pageها را ممیزی کنید. هر فیلدی غیر از «نام» و «شماره موبایل» که ضروری نیست را حذف کنید.</p>
+</li>
+</ul>
+<hr />
+<h3 id="_8">اشتباهات مهلک و رایج در دیجیتال مارکتینگ سازمان‌ها</h3>
+<ol>
+<li><strong>ارسال ترافیک تبلیغاتی به صفحه اصلی سایت (Homepage Dumping):</strong> صفحه اصلی به دلیل وجود عناصر گوناگون و منوهای متعدد باعث گیج شدن کاربر و افت شدید نرخ تبدیل می‌شود.</li>
+<li><strong>تمرکز بر متریگ‌های پوچ (Vanity Metrics):</strong> به جای توجه به تعداد فالوور یا بازدید صفحه، باید تمرکز مدیر بر نرخ تبدیل (Conversion Rate)، نرخ بازگشت سرمایه تبلیغات (ROAS) و هزینه جذب مشتری (CAC) باشد.</li>
+<li><strong>بی‌توجهی به اصطکاک فرم‌ها (Form Friction):</strong> گرفتن اطلاعات بیش از حد نیاز از کاربر در اولین لایه ارتباطی، به شدت به نرخ تبدیل آسیب می‌زند.</li>
+<li><strong>بی‌توجهی به قصد جستجوی کاربر (Ignoring Search Intent):</strong> ساخت مقاله ۵۰۰۰ کلمه‌ای اطلاعاتی برای کلمه‌ای که خریدار در آن به دنبال قیمت و دکمه خرید سریع می‌گردد.</li>
+</ol></div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- TAB: SESSION 5 -->
+    <section id="content-session5" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm">
+        
+        <!-- Tab Header -->
+        <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-200">
+          <div>
+            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">جلسه 5</span>
+            <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">معماری CRO، جمع‌بندی استراتژیک و کسب‌وکار چابک</h2>
+          </div>
+          <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-blue-600 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+        </div>
+
+        <!-- TOP LAYER: Executive Visual Summary -->
+        
+    <div class="bg-indigo-50/60 border border-indigo-200 rounded-2xl p-6 mb-6">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-xl">🏆</span>
+        <h3 class="text-base md:text-lg font-black text-indigo-950">خلاصه اجرایی و مدیریتی جلسه پنجم: جمع‌بندی استراتژیک، معماری CRO و کسب‌وکار چابک</h3>
+      </div>
+      <p class="text-xs md:text-sm text-indigo-900 leading-relaxed mb-5 text-justify">
+        جلسه پایانی دوره به جمع‌بندی جامع فرآیندها، طراحی کسب‌وکارهای چابک و معماری بهینه‌سازی نرخ تبدیل (CRO) اختصاص دارد. استاد حجتی با تشریح تله ترافیک بی‌نتیجه، نحوه پرتاب MVP در ۶۰ دقیقه و ارزیابی اقتصادی کسب‌وکار در شرایط عدم قطعیت را آموزش می‌دهد.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+        <div class="bg-white p-4 rounded-xl border border-indigo-100 shadow-sm">
+          <div class="text-xs font-bold text-indigo-600 mb-1">تله ترافیک بی‌نتیجه</div>
+          <p class="text-xs text-slate-600 leading-relaxed">افزایش بازدید بدون بهبود نرخ تبدیل فقط سوزاندن سرمایه است؛ ابتدا قیف را ترمیم کنید سپس شیر ترافیک را باز کنید.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-indigo-100 shadow-sm">
+          <div class="text-xs font-bold text-indigo-600 mb-1">تست سریع MVP در ۶۰ دقیقه</div>
+          <p class="text-xs text-slate-600 leading-relaxed">ساخت لندینگ پیج مینیمال با وردپرس/لندین، خرید ۵۰۰ کلیک تست، و اندازه‌گیری تقاضای واقعی مشتری.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-indigo-100 shadow-sm">
+          <div class="text-xs font-bold text-indigo-600 mb-1">مهندسی تست‌های A/B</div>
+          <p class="text-xs text-slate-600 leading-relaxed">تغییر یک متغیر در هر نوبت (قیمت، تصویر، تیتر) برای کشف دقیق اهرم جهش فروش.</p>
+        </div>
+      </div>
+
+      <!-- Action Framework Table -->
+      <div class="bg-white rounded-xl border border-indigo-200 overflow-hidden shadow-sm">
+        <table class="w-full text-xs text-right">
+          <thead class="bg-indigo-100 text-indigo-950 font-bold">
+            <tr>
+              <th class="p-3">گام عملیاتی</th>
+              <th class="p-3">شرح اقدام مدیر مارکتینگ</th>
+              <th class="p-3">شاخص کنترل (KPI)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-indigo-100 text-slate-700">
+            <tr>
+              <td class="p-3 font-bold text-indigo-900">۱. عیب‌یابی لندینگ پیج</td>
+              <td class="p-3">نصب مایکروسافت کلاریتی (Clarity) و تحلیل هیت‌مپ و اسکرول کاربران</td>
+              <td class="p-3">Bounce Rate < 40%</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-indigo-900">۲. یکپارچگی کمپین‌ها</td>
+              <td class="p-3">پیوند تبلیغات کلیکی به CRM و ست‌کردن ریتارگتینگ خودکار</td>
+              <td class="p-3">نرخ تبدیل نهایی (CR) > 3%</td>
+            </tr>
+            <tr>
+              <td class="p-3 font-bold text-indigo-900">۳. ارزیابی اقتصاد واحد</td>
+              <td class="p-3">محاسبه مستمر بهای تمام‌شده جذب مشتری در برابر ارزش خریدهای آتی</td>
+              <td class="p-3">CLV / CAC ≥ 3.0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+        <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+        <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+          <div>
+            <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه 5</h3>
+            <p class="text-xs text-slate-400">شامل تمام مبانی علمی، مثال‌های موردی، تنظیمات تخصصی و نکات ریز تدریس استاد</p>
+          </div>
+          <button onclick="toggleSessionFull('s5')" id="btn-toggle-s5" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+            <span>مطالعه متن کامل و تفصیلی جلسه</span>
+            <span id="icon-toggle-s5">▼</span>
+          </button>
+        </div>
+
+        <div id="full-s5" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+          <div class="prose-custom"><h1 id="-">دیجیتال مارکتینگ - جلسه پنجم (جمع‌بندی استراتژیک، کمپین‌های یکپارچه و بهینه‌سازی نهایی)</h1>
+<p><strong>مدرس:</strong> استاد ناصر حجتی<br />
+<strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA (کد 0410)<br />
+<strong>تنظیم و گردآوری:</strong> پارسا رضائی | <span class="inline-flex items-center gap-1"><a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" style="background-color: #0077b5; color: white; padding: 2px 8px; border-radius: 6px; font-weight: bold; font-size: 11px; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;"><svg style="width: 12px; height: 12px; fill: white;" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>Parsa Rezaie</a></span></p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده اجرایی (Executive Summary)</h2>
+<p>این جلسه به عنوان نشست پایانی و جمع‌بندی استراتژیک درس «دیجیتال مارکتینگ» دوره MBA دانشکده اقتصاد دانشگاه تهران، بر حلقه‌های مفقوده میان «جذب مخاطب» و «تبدیل نهایی به فروش» تمرکز دارد. پیام کلیدی استاد ناصر حجتی در این جلسه، عبور از بازاریابی سنتی و حتی دیجیتال مارکتینگ‌های سطحی، و حرکت به سمت <strong>«معماری مهندسی‌شده نرخ تبدیل (CRO)»</strong> به همراه <strong>«به‌کارگیری پیشرفته هوش مصنوعی مولد در فرآیندهای اجرایی»</strong> است.</p>
+<p>در این جلسه تحلیل می‌شود که چرا هدایت ترافیک ناشی از تبلیغات کلیکی به صفحات اصلی (Homepage) یا شبکه‌های اجتماعی، موجب اتلاف شدید منابع مالی کسب‌وکارها در ایران می‌شود. استاد حجتی با تشریح چالش‌های بومی زیرساختی (نظیر اختلالات اینترنت، کندی سرعت، فیلترینگ و چالش‌های درگاه پرداخت)، راهکار جامع استفاده از <strong>صفحات فرود اختصاصی (Landing Pages)</strong>، <strong>طراحی مینیمال UI/UX</strong>، و استفاده از <strong>فریم‌ورک‌های مهندسی پرامپت (Prompt Engineering) و مهندسی کانتکست (Context Engineering)</strong> را برای راه‌اندازی و توسعه کسب‌وکارهای چابک تشریح می‌کنند.</p>
+<pre><code>[ ترافیک ورودی (تبلیغات/سئو) ] 
+              │
+              ▼
+[ صفحه فرود اختصاصی (Landing Page) ] ──(CRO &amp; بهینه‌سازی زیرساخت)──► [ ماندگاری مخاطب ]
+              │
+              ▼
+[ قلاب منطقی و احساسی (Value Prop) ]
+              │
+              ▼
+[ اقدام به عمل شفاف (CTA) ]
+              │
+              ▼
+[ تبدیل به مشتری / پرداخت (Conversion / Payment) ]
+</code></pre>
+<h3 id="_1">مهم‌ترین دستاوردهای اجرایی برای مدیران:</h3>
+<ol>
+<li><strong>توقف اتلاف بودجه تبلیغاتی:</strong> عدم هدایت مخاطب کمپین‌ها به صفحه اصلی وب‌سایت یا پیج اینستاگرام و جایگزینی آن با صفحات فرود هدفمند.</li>
+<li><strong>ارتقای نرخ تبدیل (CRO):</strong> بهینه‌سازی سرعت بارگذاری لندینگ‌پیج‌ها به زیر ۳ الی ۶ ثانیه با در نظر گرفتن محدودیت‌های زیرساختی ایران.</li>
+<li><strong>نهادینه‌سازی هوش مصنوعی مولد:</strong> استفاده ساختاریافته از مدل‌های زبان بزرگ (LLM) از مرحله ایده‌پردازی و تولید سناریو تا کدنویسی خودکار و تولید لندینگ‌پیج.</li>
+<li><strong>راه‌اندازی مدل‌های کسب‌وکار چابک (Lean Business):</strong> توانایی ایجاد یک جریان درآمدی یا تست محصول حداقل پذیرفتنی (MVP) در کمتر از ۶۰ دقیقه با ترکیب ابزارهای بومی و هوش مصنوعی.</li>
+</ol>
+<hr />
+<h2 id="session-outline">۲. سرفصل‌ها و نقشه ذهنی مباحث (Session Outline)</h2>
+<pre><code>درخت مفاهیم جلسه پنجم:
+├── ۱. استراتژی صفحه فرود (Landing Page) و بهینه‌سازی نرخ تبدیل (CRO)
+│   ├── تفاوت‌های ساختاری صفحه اصلی (Homepage) و صفحه فرود
+│   ├── آناتومی یک لندینگ‌پیج پربازده (Hero Section, Value Prop, CTA)
+│   ├── چالش‌های زیرساختی ایران (پهنای باند، VPN، سرعت بارگذاری)
+│   └── نرخ پرش (Bounce Rate) و نرخ خروج (Exit Rate)
+│
+├── ۲. هوش مصنوعی در بازاریابی: از مهندسی پرامپت تا مهندسی کانتکست
+│   ├── سیر تطور هوش مصنوعی مولد (GPT-6 Astra, Claude, Gemini, DeepSeek)
+│   ├── مهندسی پرامپت (Prompt Engineering) و تکنیک‌های نقش‌آفرینی
+│   ├── مهندسی کانتکست (Context Engineering) و غنی‌سازی داده‌های ورودی
+│   └── تولید سناریوهای تصویری/ویدئویی ثانیه‌به‌ثانیه با AI
+│
+├── ۳. اقتصاد کمپین‌های دیجیتال و مدل‌های پرداختی
+│   ├── تحلیل جریان ترافیک و قیق فروش (Funnels)
+│   ├── شاخص‌های کلیدی عملکرد (CPC, CPA, ROAS, CR)
+│   └── یکپارچه‌سازی پلتفرم‌های تبلیغاتی با صفحات فرود و CRM
+│
+├── ۴. مدل‌های کسب‌وکار نوظهور و راه‌اندازی چابک (Lean Execution)
+│   ├── مدل همکاری در فروش (Affiliate) و دراپ‌شیپینگ بومی
+│   ├── ترکیب ابزارها: Landin.ir + AI + Torob + BalePay
+│   └── میان‌بر زدن موانع حقوقی و مالیاتی (ای‌نماد و کارت‌به‌کارت)
+│
+└── ۵. مطالعات موردی و تجربیات عملی استاد حجتی
+    ├── آسیب‌شناسی صفحات محصول دیجی‌کالا
+    ├── کیس‌استادی خدمات حقوقی و مدل حق‌الزحمه مستمر (Retainer) «روژان»
+    └── بازاریابی مال‌ها، بازار طلا و صنف کامپیوتر (علاءالدین، چهارسو و پایتخت)
+</code></pre>
+<hr />
+<h2 id="core-topics-theories">۳. شرح موشکافانه و تفصیلی مفاهیم تدریس‌شده (Core Topics &amp; Theories)</h2>
+<h3 id="landing-page-cro">۳.۱. استراتژی صفحه فرود (Landing Page) و بهینه‌سازی نرخ تبدیل (CRO)</h3>
+<h4 id="_2">الف) تفاوت‌های ساختاری و کارکردی</h4>
+<p>یکی از اشتباهات استراتژیک در بازاریابی دیجیتال، هدایت ترافیک خریداری‌شده (از طریق گوگل‌ادز، یکتانت، تپسل و...) به <strong>صفحه اصلی (Homepage)</strong> یا <strong>پیج اینستاگرام</strong> است.</p>
+<ul>
+<li><strong>صفحه اصلی (Homepage):</strong> دارای منوهای متعدد، لینک‌های خروجی فراوان و گزینه‌های متنوع است. هدف آن معرفی کلی برند است. بار شناختی (Cognitive Load) بالایی ایجاد کرده و تمرکز مخاطب را تضعیف می‌کند که منجر به افزایش نرخ پرش (Bounce Rate) می‌شود.</li>
+<li><strong>صفحه محصول (Product Page):</strong> مانند صفحات دیجی‌کالا، شامل جزئیات فنی فراوان است اما فاقد داستان‌سرایی (Storytelling)، قلاب احساسی و مسیر مستقیم برای اقدام به عمل فوری است.</li>
+<li><strong>صفحه فرود (Landing Page):</strong> یک صفحه مستقل، بدون منوهای ناوبری مزاحم، طراحی‌شده برای <strong>یک هدف مشخص</strong> (دریافت لید یا فروش مستقیم). تمام المان‌های این صفحه حول یک اقدام به عمل (Call to Action - CTA) سازماندهی شده‌اند.</li>
+</ul>
+<pre><code>+-------------------------------------------------------------------+
+|                           LANDING PAGE                            |
+|                                                                   |
+| [Header / Logo]                                                   |
+| ----------------------------------------------------------------- |
+| [Hero Section: تیتر اصلی جذاب (Hook) + زیرتیتر توصیفی]               |
+|                                                                   |
+| [تصویر / ویدئوی کوتاه محصول (Non-Autoplay)]                        |
+|                                                                   |
+| [پیشنهاد ارزش (Value Proposition) + ویژگی‌های کلیدی]              |
+|                                                                   |
+| [تأیید اجتماعی / نظرات مشتریان (Social Proof)]                    |
+|                                                                   |
+| [فرم دریافت اطلاعات (Lead Form) / درگاه پرداخت سریع (BalePay)]     |
+|                                                                   |
+| [دکمه اقدام به عمل نهایی (CTA)]                                   |
+| ----------------------------------------------------------------- |
+| [Footer: اطلاعات ضروری، مجوزها و راه‌های ارتباطی]                 |
++-------------------------------------------------------------------+
+</code></pre>
+<h4 id="_3">ب) آناتومی و اجزای یک صفحه فرود پربازده</h4>
+<ol>
+<li><strong>بخش فوقانی (Hero Section):</strong> شامل یک تیتر گیرا (Hook) که در کمتر از ۳ ثانیه مشکلی از مخاطب را هدف قرار می‌دهد یا مزیتی رقابتی را مطرح می‌کند.</li>
+<li><strong>پیشنهاد ارزش شفاف (Value Proposition):</strong> پاسخ به این سؤال مخاطب که «چرا باید این کسب‌وکار را انتخاب کنم؟».</li>
+<li><strong>رسانه دیداری (Visual Media):</strong> استفاده از عکس‌های باکیفیت و کم‌حجم یا ویدئوهای کوتاهی که به صورت خودکار پخش (Autoplay) <strong>نمی‌شوند</strong> (به دلیل محدودیت پهنای باند مخاطب ایرانی).</li>
+<li><strong>تأیید اجتماعی (Social Proof):</strong> نمایش لوگوی مشتریان قبلی، رضایت‌نامه‌ها، ویدئوهای کوتاه مشتریان یا آمار و ارقام قابل استناد.</li>
+<li><strong>اقدام به عمل (Call to Action - CTA):</strong> دکمه‌ای شفاف با رنگ متضاد و متن مستقیم (مثلاً «دریافت مشاوره رایگان»، «خرید با ۵۰٪ تخفیف»).</li>
+<li><strong>فرم دریافت لید (Lead Form) یا درگاه پرداخت:</strong> کمترین تعداد فرم ممکن (ترجیحاً فقط نام و شماره موبایل).</li>
+</ol>
+<h4 id="_4">ج) چالش‌های زیرساختی بومی و بهینه‌سازی فنی</h4>
+<p>در اکوسیستم ایران، متغیرهای زیرساختی مستقیماً بر بازدهی کمپین‌ها اثر می‌گذارند:<br />
+*   <strong>قانون ۳ تا ۶ ثانیه:</strong> تحقیقات نشان می‌دهد بیش از ۶۰ درصد مخاطبان ایرانی اگر بارگذاری یک صفحه به دلیل کندی اینترنت یا اختلالات VPN بیش از ۴ الی ۶ ثانیه طول بکشد، آن را می‌بندند.<br />
+*   <strong>سادگی UI/UX:</strong> استفاده از افکت‌های سنگین گرافیکی، اسکریپت‌های پیچیده جاوا اسکریپت و انیمیشن‌های سنگین که در وب‌سایت‌های غربی رایج است، در ایران به دلیل کندی شبکه باعث شکست کمپین می‌شود. طراحی باید <strong>مینیمال، سریع و متمرکز بر نسخه موبایل (Mobile-First)</strong> باشد.</p>
+<hr />
+<h3 id="_5">۳.۲. هوش مصنوعی در بازاریابی: از مهندسی پرامپت تا مهندسی کانتکست</h3>
+<p>استاد حجتی تأکید دارند که هوش مصنوعی مولد (Generative AI) از سطح یک ابزار چت ساده خارج شده و به یک <strong>«همکار و مجری هوشمند استراتژیک»</strong> تبدیل شده است.</p>
+<pre><code>سیر تطور تعامل با هوش مصنوعی:
+[ دستور ساده (Basic Prompt) ] ──► [ مهندسی پرامپت (Prompt Engineering) ] ──► [ مهندسی کانتکست (Context Engineering) ]
+(پاسخ‌های عمومی و سطحی)          (کنترل لحن، نقش و قالب خروجی)             (تزریق داده‌های سازمانی و شخصی‌سازی کامل)
+</code></pre>
+<h4 id="prompt-engineering">الف) مهندسی پرامپت (Prompt Engineering)</h4>
+<p>تکنیک‌های تنظیم دستورات دقیق برای هدایت مدل‌های زبانی (LLM):<br />
+1. <strong>تعریف نقش (Role Definition):</strong> تعیین شخصیت فرضی برای هوش مصنوعی (مثلاً: «تو یک مدیر ارشد بازاریابی با ۱۵ سال سابقه در اکوسیستم ریتیل ایران هستی»).<br />
+2. <strong>تعیین مخاطب هدف (Target Audience):</strong> مشخص کردن اینکه خروجی برای چه کسی تولید می‌شود (مثلاً: «متن را برای یک مدیرعامل ۵۰ ساله سنتی بنویس»).<br />
+3. <strong>قالب‌بندی خروجی (Format Specification):</strong> مشخص کردن شکل خروجی (جدول، بالت‌پوینت، کدهای HTML، سناریوی ویدئویی ثانیه‌به‌ثانیه).<br />
+4. <strong>محدودیت‌های منفی (Negative Constraints):</strong> مشخص کردن مواردی که نباید استفاده شوند (مثلاً: «از کلمات کلیشه‌ای مانند 'شایان ذکر است'، 'بی‌نظیر'، 'شگفت‌انگیز' و خطوط جداکننده افقی استفاده نکن»).</p>
+<h4 id="context-engineering">ب) مهندسی کانتکست (Context Engineering)</h4>
+<p>فرآیندی پیشرفته‌تر از پرامپت‌نویسی که در آن پیش‌زمینه کامل کسب‌وکار، اسناد سازمانی (PDFها، پرسوناها، گزارش‌های مالی، قوانین حقوقی) به مدل هوش مصنوعی تغذیه (Feed) می‌شود تا پاسخ‌ها از حالت عمومی خارج و کاملاً بومی و اختصاصی شوند.</p>
+<ul>
+<li><strong>تکنیک قفل کردن سند (Document Locking):</strong> بستن مسیر جستجوی عمومی مدل و اجبار آن به پاسخگویی <strong>صرفاً</strong> بر اساس اسناد بارگذاری‌شده تا از خطای هذیان (Hallucination) جلوگیری شود.</li>
+</ul>
+<pre><code>فرآیند تولید سناریوی تبلیغاتی ویدئویی با AI:
+[ تزریق کانتکست: پرسونا + پروموشن ] 
+               │
+               ▼
+[ دستور مهندسی‌شده (Prompt) ] 
+               │
+               ▼
+[ خروجی AI: سناریوی ۲ ستونه (Visual / Audio) ثانیه‌به‌ثانیه ]
+</code></pre>
+<hr />
+<h3 id="kpis">۳.۳. شاخص‌های کلیدی عملکرد (KPIs) و فرمول‌های محاسباتی</h3>
+<p>در بازاریابی عملکردی (Performance Marketing)، تحلیل دقیق داده‌ها و شاخص‌های مالی مرز میان سودآوری و سوخت بودجه را مشخص می‌سازد:</p>
+<blockquote>
+<p>[!TIP]</p>
+<h3 id="performance-kpis">📊 جدول فرمول‌های محاسباتی و شاخص‌های مالی کلیدی (Performance KPIs)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: right; direction: rtl;">شاخص کلیدی</th>
+<th style="text-align: center;">رابطه ریاضی</th>
+<th style="text-align: right; direction: rtl;">صورت کسر (Numerator)</th>
+<th style="text-align: right; direction: rtl;">مخرج کسر (Denominator)</th>
+<th style="text-align: center;">ضریب</th>
+<th style="text-align: center;">سناریوی عددی ملموس</th>
+<th style="text-align: right; direction: rtl;">تفسیر مدیریتی</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>نرخ پرش<br>(Bounce Rate)</strong></td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-var">Bounce Rate</span><span class="math-op">=</span><span class="math-frac"><span class="math-num">Exit Sessions</span><span class="math-den">Total Sessions</span></span><span class="math-op">×</span><span>100</span></div></td>
+<td style="text-align: right; direction: rtl;">نشست‌های تک‌صفحه‌ای بدون هیچ تعامل</td>
+<td style="text-align: right; direction: rtl;">کل نشست‌های ورودی به لندینگ</td>
+<td style="text-align: center;">× ۱۰۰</td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-frac"><span class="math-num">3,500</span><span class="math-den">10,000</span></span><span class="math-op">×</span><span>100</span><span class="math-op">=</span><span class="math-val">35%</span></div></td>
+<td style="text-align: right; direction: rtl;">درصد مخاطبانی که فوراً خارج شده‌اند. نرخ هدف: زیر ۴۰٪</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>نرخ تبدیل<br>(Conversion Rate)</strong></td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-var">CR</span><span class="math-op">=</span><span class="math-frac"><span class="math-num">Conversions</span><span class="math-den">Total Visitors</span></span><span class="math-op">×</span><span>100</span></div></td>
+<td style="text-align: right; direction: rtl;">تعداد اقدامات موفق (خرید یا لید)</td>
+<td style="text-align: right; direction: rtl;">کل بازدیدکنندگان صفحه فرود</td>
+<td style="text-align: center;">× ۱۰۰</td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-frac"><span class="math-num">120</span><span class="math-den">4,000</span></span><span class="math-op">×</span><span>100</span><span class="math-op">=</span><span class="math-val">3%</span></div></td>
+<td style="text-align: right; direction: rtl;">سنجش قدرت ترغیب صفحه فرود و وضوح دکمه CTA</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>هزینه هر کلیک<br>(CPC)</strong></td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-var">CPC</span><span class="math-op">=</span><span class="math-frac"><span class="math-num">Total Ad Spend</span><span class="math-den">Total Clicks</span></span></div></td>
+<td style="text-align: right; direction: rtl;">کل بودجه تبلیغاتی مصرف‌شده</td>
+<td style="text-align: right; direction: rtl;">تعداد کلیک‌های دریافتی کمپین</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-frac"><span class="math-num">10,000,000</span><span class="math-den">4,000</span></span><span class="math-op">=</span><span class="math-val">2,500 تومان</span></div></td>
+<td style="text-align: right; direction: rtl;">بهای جذب ترافیک خام از پلتفرم‌های تبلیغاتی</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>هزینه جذب مشتری<br>(CPA / CAC)</strong></td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-var">CAC</span><span class="math-op">=</span><span class="math-frac"><span class="math-num">Total Ad Spend</span><span class="math-den">Acquisitions</span></span></div></td>
+<td style="text-align: right; direction: rtl;">کل بودجه تبلیغاتی کمپین</td>
+<td style="text-align: right; direction: rtl;">تعداد خریداران یا لیدهای نهایی</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-frac"><span class="math-num">10,000,000</span><span class="math-den">120</span></span><span class="math-op">≈</span><span class="math-val">83,333 تومان</span></div></td>
+<td style="text-align: right; direction: rtl;">بهای تمام‌شده جذب یک مشتری خریدار واقعی</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>بازگشت هزینه تبلیغ<br>(ROAS)</strong></td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-var">ROAS</span><span class="math-op">=</span><span class="math-frac"><span class="math-num">Gross Revenue</span><span class="math-den">Ad Spend</span></span></div></td>
+<td style="text-align: right; direction: rtl;">درآمد ناخالص حاصل از کمپین</td>
+<td style="text-align: right; direction: rtl;">کل هزینه تبلیغات انجام‌شده</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><div class="math-eq" dir="ltr"><span class="math-frac"><span class="math-num">50,000,000</span><span class="math-den">10,000,000</span></span><span class="math-op">=</span><span class="math-val">5.0 (500%)</span></div></td>
+<td style="text-align: right; direction: rtl;">بازده مستقیم هر ریال تبلیغ (۵ به معنای ۵ برابر فروش)</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<hr />
+<h2 id="real-world-case-studies">۴. مثال‌های کاربردی، کیس‌استادی‌ها و تجربیات استاد (Real-world Case Studies)</h2>
+<h3 id="_6">کیس‌استادی ۱: تحلیل رفتار کاربران در دیجی‌کالا و خطای صفحات دسته‌بندی</h3>
+<p>استاد حجتی با بررسی زنده وب‌سایت دیجی‌کالا نشان دادند زمانی که کاربر واژه «مک‌بوک» را در گوگل جستجو می‌کند و روی تبلیغ کلیک می‌کند، وارد یک صفحه شلوغ دسته‌بندی با صدها محصول، فیلترهای متعدد و بنرهای تبلیغاتی متفرقه می‌شود.<br />
+*   <strong>تحلیل آسیب‌شناسی:</strong> وجود گزینه‌های زیاد (Overchoice) و فقدان یک مسیر هدایت‌کننده مشخص، نرخ پرش را افزایش می‌دهد. اگر همین کمپین ترافیک را به یک صفحه فرود اختصاصی هدایت می‌کرد که ۳ مدل برتر مک‌بوک را با جدول مقایسه‌ای و پیشنهاد تخفیف زمانی نمایش می‌داد، نرخ تبدیل تا ۳ برابر افزایش می‌یافت.</p>
+<h3 id="b2b-b2c">کیس‌استادی ۲: مدل کسب‌وکار مشاوره‌ای «روژان» (خدمات حقوقی B2B و B2C)</h3>
+<p>استاد به بررسی مدل کسب‌وکار دفتر وکالت و مشاوره حقوقی (با فرض کاراکتر روژان در کلاس) پرداختند:<br />
+*   <strong>چالش B2C:</strong> پرونده‌های خرد حقوقی (طلاق، مهریه، چک) ورودی بالایی دارند اما انرژی زیادی از دفتر وکالت می‌گیرند و سودآوری محدودی دارند.<br />
+*   <strong>راهکار استراتژیک B2B:</strong> تمرکز بر جذب قراردادهای مشاوره‌ای مستمر (Retainer) با مال‌ها، مجتمع‌های تجاری بزرگ و شرکت‌ها.<br />
+*   <strong>اجرا در دیجیتال مارکتینگ:</strong> ساخت صفحه فرود اختصاصی برای مدیران مال‌ها و مجتمع‌های تجاری (مثلاً با تیتر: «چگونه ریسک‌های حقوقی قراردادهای اجاره مال خود را صفر کنید؟»). جذب لید از طریق ارائه چک‌لیست حقوقی رایگان، برگزاری جلسه آنلاین و در نهایت عقد قرارداد مستمر ماهانه.</p>
+<pre><code>فرآیند جذب مشتریان شرکتی (B2B) برای دفاتر حقوقی:
+[ تبلیغ هدفمند (Targeted Ad) ] ──► [ صفحه فرود اختصاصی مدیران مال‌ها ] ──► [ دانلود چک‌لیست حقوقی رایگان در ازای شماره تماس ] ──► [ پیگیری تلفنی / جلسه آنلاین ] ──► [ عقد قرارداد مستمر (Retainer) ]
+</code></pre>
+<h3 id="lean-execution">کیس‌استادی ۳: راه‌اندازی کسب‌وکار نوپا در ۶۰ دقیقه (Lean Execution)</h3>
+<p>استاد حجتی نشان دادند که چگونه با ابزارهای امروزی می‌توان بدون داشتن انبار، بدون کدنویسی و بدون درگیر شدن با ای‌نماد، یک کسب‌وکار را در ۱ ساعت تست کرد:<br />
+1. <strong>شناسایی محصول:</strong> انتخاب یک محصول پرفروش در ترب (Torob) یا دیجی‌کالا (مثلاً یک لوازم جانبی موبایل).<br />
+2. <strong>ساخت لندینگ‌پیج:</strong> استفاده از پلتفرم <strong>Landin.ir</strong> و انتخاب یک قالب آماده.<br />
+3. <strong>تولید محتوا با AI:</strong> دادن نام محصول به ChatGPT برای نگارش تیتر، متن پیشنهاد ارزش و پاسخ به سؤالات متداول (FAQ).<br />
+4. <strong>تولید تصاویر:</strong> استفاده از ابزارهای تصویری AI یا دانلود تصاویر موجود و بهینه‌سازی حجم آن‌ها.<br />
+5. <strong>تنظیم درگاه پرداخت:</strong> استفاده از سرویس <strong>بله‌په‌ی (BalePay)</strong> برای اتصال سریع درگاه پرداخت بدون نیاز به پرونده‌های پیچیده مالیاتی در گام اول تست.<br />
+6. <strong>اجرای تبلیغات:</strong> شارژ حساب یکتانت و شروع تبلیغات همسان (Native) برای هدایت ترافیک به صفحه فرود.</p>
+<hr />
+<h2 id="tools-platforms">۵. ابزارها، پلتفرم‌ها و تکنولوژی‌های معرفی‌شده (Tools &amp; Platforms)</h2>
+<p>در طول این جلسه، استاد حجتی ابزارها و پلتفرم‌های متنوعی را برای بخش‌های مختلف فریم‌ورک بازاریابی دیجیتال معرفی کردند:</p>
+<pre><code>+---------------------------------------------------------------------------------------+
+|                    دسته‌بندی ابزارها و پلتفرم‌های بازاریابی دیجیتال                    |
++--------------------------+------------------------------------------------------------+
+| دسته‌بندی                 | ابزارها و پلتفرم‌های معرفی‌شده                            |
++--------------------------+------------------------------------------------------------+
+| ساخت صفحه فرود           | Landin.ir (لندین - پلتفرم بومی ساخت لندینگ‌پیج)            |
++--------------------------+------------------------------------------------------------+
+| هوش مصنوعی و مدل‌های زبانی | ChatGPT (OpenAI), GPT-6 Astra, Codex, Claude (Anthropic),  |
+|                          | Gemini (Google), DeepSeek, Grok, Perplexity                |
++--------------------------+------------------------------------------------------------+
+| تحلیل تحقیق بازار و داده | Perplexity AI, Google Trends, Perplexiti                   |
++--------------------------+------------------------------------------------------------+
+| پلتفرم‌های تبلیغاتی بومی  | یکتانت (Yektanet), تپسل (Tapsell), صباویژن (SabaVision)    |
++--------------------------+------------------------------------------------------------+
+| موتورهای جستجو و مقایسه   | گوگل‌ادز (Google Ads), ترب (Torob), ایمالز (Emalls)        |
++--------------------------+------------------------------------------------------------+
+| پلتفرم‌های پرداخت و مالی   | بله‌په‌ی (BalePay), زرین‌پال (ZarinPal), درگاه‌های مستقیم   |
++--------------------------+------------------------------------------------------------+
+| مدیریت شبکه‌های اجتماعی   | نوین‌هاب (NovinHub), Buffer, Hootsuite, Notion              |
++--------------------------+------------------------------------------------------------+
+| بازارهای مارکت‌پلیس      | دیجی‌کالا (Digikala), باسلام (Basalam)                      |
++--------------------------+------------------------------------------------------------+
+</code></pre>
+<hr />
+<h2 id="executive-action-items-frameworks">۶. جعبه‌ابزار تصمیم‌گیری مدیران (Executive Action Items &amp; Frameworks)</h2>
+<h3 id="_7">چک‌لیست اجرایی برای مدیران ارشد و مدیران بازاریابی</h3>
+<h4 id="landing-page-audit">۱. ارزیابی صفحات فرود (Landing Page Audit):</h4>
+<ul>
+<li>[ ] آیا تمامی تبلیغات کلیکی به صفحات فرود اختصاصی هدایت می‌شوند یا هنوز بخشی از ترافیک به صفحه اصلی ارسال می‌شود؟</li>
+<li>[ ] آیا زمان بارگذاری لندینگ‌پیج در شبکه موبایل ایران زیر ۴ ثانیه است؟</li>
+<li>[ ] آیا حجم تصاویر کمتر از ۱۰۰ کیلوبایت است و ویدئوها از قابلیت Autoplay استفاده نمی‌کنند؟</li>
+<li>[ ] آیا فرم دریافت لید خلاصه شده است (حداکثر ۲ یا ۳ فیلد)؟</li>
+<li>[ ] آیا دکمه اقدام به عمل (CTA) فوقانی بدون نیاز به اسکرول (Above the Fold) دیده می‌شود؟</li>
+</ul>
+<h4 id="ai-adoption">۲. پیاده‌سازی هوش مصنوعی سازمانی (AI Adoption):</h4>
+<ul>
+<li>[ ] تعیین یک فریم‌ورک استاندارد برای پرامپت‌نویسی تیم تولید محتوا و تبلیغات.</li>
+<li>[ ] تهیه اسناد کانتکست سازمانی (پرسونا، سند هویت برند، لحن برند) و بارگذاری آن در ابزارهای AI جهت شخصی‌سازی خروجی‌ها.</li>
+<li>[ ] به‌کارگیری AI برای تولید سناریوهای تصویری ۲ ستونه (Visual/Audio) جهت تیزرهای تبلیغاتی.</li>
+</ul>
+<h4 id="_8">۳. مدیریت مالی و فنی کمپین‌ها:</h4>
+<ul>
+<li>[ ] محاسبه دقیق CPC، CPA و ROAS برای تمام کانال‌های ورودی (یکتانت، گوگل‌ادز، اینستاگرام).</li>
+<li>[ ] قطع بودجه کانال‌هایی که هزینه جذب مشتری (CPA) آن‌ها از ارزش طول عمر مشتری (LTV) بالاتر است.</li>
+<li>[ ] یکپارچه‌سازی درگاه‌های پرداخت سریع برای کاهش اصطکاک خریدار در مرحله نهایی.</li>
+</ul>
+<hr />
+<h3 id="deadly-mistakes">اشتباهات مهلک و رایج کسب‌وکارها (Deadly Mistakes)</h3>
+<ol>
+<li><strong>هدایت ترافیک به پیج اینستاگرام در کمپین‌های سنگین:</strong> به دلیل فیلترینگ، نیاز به VPN و قطعی‌های مداوم، هدایت ترافیک تبلیغات کلیکی به اینستاگرام موجب سوختن حداقل ۵۰ الی ۷۰ درصد بودجه تبلیغاتی در همان ثانیه‌های اول می‌شود.</li>
+<li><strong>طراحی لندینگ‌پیج‌های سنگین و شلوغ:</strong> استفاده از فونت‌های غیراستاندارد، فایل‌های تصویری بهینه‌نشده و اسکریپت‌های متعدد که سرعت لود را در موبایل کاهش می‌دهد.</li>
+<li><strong>اعتماد کامل به خروجی‌های خام هوش مصنوعی:</strong> عدم ادیت و عدم بومی‌سازی متون تولیدشده توسط AI که باعث ایجاد متون کلیشه‌ای، بی‌روح و فارغ از لحن اختصاصی برند می‌شود.</li>
+<li><strong>عدم استفاده از منفی‌ها (Negative Constraints) در پرامپت‌ها:</strong> اجازه دادن به AI برای استفاده از کلمات اغراق‌آمیز و غیرواقعی که باورپذیری برند را نزد مخاطب فرهیخته کاهش می‌دهد.</li>
+<li><strong>پیچیده کردن فرآیند خرید:</strong> درگیر کردن مشتری با ثبت‌نام‌های طولانی، گرفتن کدملی و آدرس‌های متعدد پیش از مرحله پرداخت اولیه در محصولات خرد.</li>
+</ol></div>
+        </div>
+
+      </div>
+    </section>
+    
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-10 px-6 border-t border-slate-800 text-center text-xs mt-auto">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <p class="text-slate-300 font-bold">
+        دانشکده اقتصاد دانشگاه تهران • دوره تخصصی مدیریت کسب‌وکار (MBA - کد 0410)
+      </p>
+      <div class="inline-flex flex-wrap items-center justify-center gap-3">
+  <span class="text-slate-300 text-xs md:text-sm">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
+  <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-3 py-1 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
+    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+    <span>Parsa Rezaie</span>
+  </a>
+</div>
+    </div>
+  </footer>
+
+  
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-slate-900', 'shadow-md');
+        btn.classList.add('bg-white/15', 'text-white');
+      });
+      
+      const targetContent = document.getElementById('content-' + tabId);
+      if (targetContent) targetContent.classList.remove('hidden');
+      
+      const targetBtn = document.getElementById('tab-' + tabId);
+      if (targetBtn) {
+        targetBtn.classList.remove('bg-white/15', 'text-white');
+        targetBtn.classList.add('bg-white', 'text-slate-900', 'shadow-md');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleSessionFull(sessionId) {
+      const container = document.getElementById('full-' + sessionId);
+      const icon = document.getElementById('icon-toggle-' + sessionId);
+      const btn = document.getElementById('btn-toggle-' + sessionId);
+      
+      if (container.classList.contains('hidden')) {
+        container.classList.remove('hidden');
+        icon.innerText = '▲';
+        btn.querySelector('span:first-child').innerText = 'بستن متن کامل و تفصیلی';
+      } else {
+        container.classList.add('hidden');
+        icon.innerText = '▼';
+        btn.querySelector('span:first-child').innerText = 'مطالعه متن کامل و تفصیلی جلسه';
+      }
+    }
+  </script>
+
+</body>
+</html>

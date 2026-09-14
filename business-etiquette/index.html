@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بیزنس اتیکت و تشریفات تجاری | دوره عالی MBA دانشکده اقتصاد دانشگاه تهران</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Vazirmatn Font CDN -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+  <!-- MathJax Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .gradient-header {
+      background: linear-gradient(135deg, #1c1917 0%, #292524 50%, #78350f 100%);
+    }
+    .prose-custom h1, .prose-custom h2, .prose-custom h3 {
+      font-weight: 900;
+      color: #1c1917;
+    }
+    .prose-custom p, .prose-custom li {
+      line-height: 2;
+      color: #334155;
+    }
+    .prose-custom table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.85rem;
+    }
+    .prose-custom th, .prose-custom td {
+      border: 1px solid #e2e8f0;
+      padding: 0.75rem 1rem;
+      text-align: right;
+    }
+    .prose-custom th {
+      background-color: #f8fafc;
+      font-weight: 800;
+      color: #0f172a;
+    }
+  </style>
+</head>
+<body class="bg-stone-100 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- Header strictly following DASHBOARD_UI_STANDARD.md -->
+  <header class="gradient-header text-white py-9 px-6 shadow-xl relative overflow-hidden">
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <div class="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-400/30 rounded-full px-4 py-1 text-xs font-semibold">
+              <span>🎓 دانشکده اقتصاد دانشگاه تهران</span>
+              <span>•</span>
+              <span>دوره تخصصی MBA (کد 0410)</span>
+            </div>
+            <!-- THE ONLY BACK BUTTON -->
+            <a href="../" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white border border-white/30 rounded-full px-3.5 py-1 text-xs font-bold transition-all shadow-sm hover:scale-105 backdrop-blur-md">
+              <span>🏠 پرتال اصلی و انتخاب کلاس</span>
+              <span class="text-xs">➔</span>
+            </a>
+          </div>
+          <h1 class="text-3xl md:text-4xl font-black tracking-tight mb-2">
+            بیزنس اتیکت و تشریفات تجاری
+          </h1>
+          <p class="text-amber-100 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
+            مرجع کاربردی رفتار حرفه‌ای، آداب معاشرت و دیپلماسی سازمانی | مدرس: <strong class="text-white font-semibold">استاد اسمعیلو</strong> | <div class="inline-flex items-center gap-2 mt-1"><span class="text-amber-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span><a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg><span>Parsa Rezaie</span></a></div>
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3.5 text-center min-w-[120px]">
+            <div class="text-2xl font-black text-amber-300">۵ جلسه</div>
+            <div class="text-xs text-amber-100 font-medium">۱۷ ساعت تدریس کاربردی</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs strictly inside Header, NO sticky nav! -->
+      <div class="flex flex-wrap items-center gap-2 mt-7 border-t border-white/15 pt-4">
+        <button onclick="switchTab('sessions')" id="tab-btn-sessions" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-bold transition-all bg-white text-slate-900 shadow-md active">
+          📚 جلسات و متن کامل درسنامه‌ها
+        </button>
+        <button onclick="switchTab('handbook')" id="tab-btn-handbook" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          📖 هندبوک جامع و مرجع یکپارچه
+        </button>
+        <button onclick="switchTab('matrix')" id="tab-btn-matrix" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          👔 ابزار تعاملی: ماتریس کدهای پوشش و ضیافت‌ها
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-6xl mx-auto px-6 py-10 flex-1 w-full">
+
+    <!-- Tab 1: Sessions List -->
+    <div id="tab-content-sessions" class="tab-view space-y-6">
+      
+        <!-- Session Card: s1 -->
+        <div class="session-card bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden mb-8 transition-all hover:shadow-md" data-session-id="s1">
+          <div class="p-6 md:p-8 bg-gradient-to-r from-amber-700 via-stone-800 to-slate-900 text-white relative">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+              <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20">
+                <span>🎩</span>
+                <span>جلسه اول</span>
+              </span>
+              <span class="text-xs text-amber-200/90 bg-black/30 border border-amber-400/20 px-3 py-1 rounded-xl">مدت: ۳.۵ ساعت تدریس متمرکز</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-black mb-2 text-white leading-tight">مبانی، تعاریف و اصول بنیادین اتیکت تجاری، رفتار حرفه‌ای و تصویر سازمانی</h2>
+            <p class="text-xs md:text-sm text-stone-200 leading-relaxed max-w-4xl">واکاوی جامع مفهوم اتیکت تجاری و تفاوت ساختاری آن با تشریفات دیپلماتیک (Protocol) و آداب معاشرت اجتماعی؛ روانشناسی اثرگذاری برخورد اول (First Impression) در ثانیه‌های طلایی نخست؛ ارکان ساخت برند شخصی و پرستیژ مدیران عامل؛ بایدها و نبایدهای بنیادین رفتار حرفه‌ای در زیست‌بوم شرکتی ایران.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#فلسفه اتیکت</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#تشریفات vs اتیکت</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#برخورد اول (First Impression)</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#برند شخصی مدیران</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#پرستیژ سازمانی</span>
+            </div>
+          </div>
+          
+          <!-- Card Action Button -->
+          <div class="p-4 bg-stone-50 border-t border-stone-100 flex items-center justify-between">
+            <button onclick="toggleSession('s1')" id="btn-s1" class="inline-flex items-center gap-2 text-xs font-bold text-amber-900 bg-amber-100/80 hover:bg-amber-200 border border-amber-300/60 px-4 py-2 rounded-xl transition-all shadow-sm">
+              <span>📖 مشاهده متن کامل درسنامه و پروتکل‌ها</span>
+              <span id="arrow-s1" class="transition-transform duration-300">▼</span>
+            </button>
+            <span class="text-[11px] text-stone-500">منطبق بر بیانات استاد اسمعیلو • تدوین پارسا رضائی</span>
+          </div>
+
+          <!-- Collapsible Notes Container -->
+          <div id="notes-s1" class="hidden p-6 md:p-10 border-t border-stone-200 bg-white prose-custom">
+            <h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">شناسنامه رسمی جلسه</h1>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">نام درس:</strong> بیزنس اتیکت و تشریفات تجاری</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">عنوان جلسه:</strong> جلسه اول: مبانی، تعاریف و اصول بنیادین اتیکت تجاری، استانداردهای رفتار حرفه‌ای و تصویر سازمانی</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">دوره:</strong> دوره عالی مدیریت کسب‌وکار (MBA - کد 0410) دانشکده اقتصاد دانشگاه تهران</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی:</strong> پارسا رضائی</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">پیام کلیدی و ایده محوری جلسه (Executive Core Message)</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">اتیکت تجاری (Business Etiquette) و تشریفات سازمانی، برخلاف تصور عموم، مجموعه‌ای از تشریفات خشک، ظاهری یا تشریفاتیِ بی‌اصالت نیستند؛ بلکه <strong class="text-slate-900 font-bold">ستون فقرات اعتبار تجاری، ابزار اصلی مهندسی اعتماد در سطح ملی و بین‌المللی، و کاتالیزور کلیدی در بستن قراردادهای کلان اقتصادی</strong> به شمار می‌روند. در فضای کسب‌وکار مدرن، دانش فنی (Hard Skills) و تخصص، تنها بلیت ورود به بازار است؛ اما آنچه تمایز ایجاد می‌کند، میزان تسلط بر رفتار حرفه‌ای، هنر حضور مؤثر، زبان بدن، اصول تقدم و تأخر، آداب معاشرت در جلسات و ساختن یک <strong class="text-slate-900 font-bold">تصویر سازمانی (Corporate Identity) و برند شخصی (Personal Branding)</strong> بی‌نقص است.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو با تأکید بر اینکه <strong class="text-slate-900 font-bold">«نظم و انضباط رفتاری، مقدم بر دانش فنی است»</strong>، یادآور می‌شوند که کوچک‌ترین خطای تشریفاتی در یک مذاکره سطح بالا، می‌تواند ماه‌ها تلاش بازاریابی و فروش را در کسری از ثانیه نابود کند. اتیکت، زبان مشترک حرفه‌ای‌هاست که به ما می‌آموزد چگونه در هر موقعیت شغلی، از یک احوال‌پرسی ساده تا مدیریت جلسات هیئت‌مدیره و ضیافت‌های بین‌المللی، با اقتدار، وقار، تسلط و احترام متقابل ظاهر شویم.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">تشریح موشکافانه مفاهیم و مباحث علمی</h1>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۱. تعریف جامع اتیکت تجاری و جایگاه آن در سازمان‌های پیشرو</h3>
+اتیکت تجاری عبارت است از مجموعه قوانین، اصول، هنجارها و کدهای رفتاری مکتوب و نامکتوبی که چارچوب تعاملات انسان‌ها را در سازمان‌ها، شرکت‌ها، جلسات مذاکره و مجامع حرفه‌ای تعیین می‌کند. این حوزه به مدیران و کارشناسان می‌آموزد که چگونه رفتارهای فردی خود را با استانداردهای جهانی تطبیق دهند تا بیشترین تأثیر مثبت را بر مخاطبان، شرکای تجاری و مشتریان بگذارند.
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۲. تقدم و تأخر در اتیکت سازمانی (Hierarchy & Precedence)</h3>
+یکی از ارکان بنیادین در تشریفات و بیزنس اتیکت، رعایت دقیق اصل «تقدم و تأخر» است. این اصل مشخص می‌کند که در موقعیت‌های مختلف (ورود به اتاق، خروج، نشستن، معرفی کردن، ارائه‌ها، حرکت در راهروها و آسانسورها)، چه کسی باید مقدم داشته شود.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">قاعده طلایی:</strong> در دنیای تجارت مدرن، اتیکت تجاری برخلاف سنت‌های قدیمی، مبتنی بر <strong class="text-slate-900 font-bold">موقعیت سازمانی، جایگاه شغلی، نقش میزبان و میهمان، و جنسیت</strong> تنظیم می‌شود؛ با این حال، احترام به ارشدیت سازمانی، سابقه و جایگاه حرفه‌ای همواره در اولویت است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">قواعد آسانسور:</strong> در جابجایی با آسانسور، فردی که به دکمه‌ها دسترسی دارد یا فرد دارای جایگاه پایین‌تر زودتر وارد می‌شود تا فضا را مدیریت کند، اما هنگام خروج، افراد ارشدتر یا بانوان مقدم هستند (البته بسته به شرایط ایمنی و نوع آسانسور).</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">قواعد راهروها و پله‌ها:</strong> در راهروها، فرد باارزش‌تر یا مهمان در سمت امن‌تر (معمولاً سمت دیوار یا سمت راست میزبان) حرکت می‌کند. هنگام بالا رفتن از پله‌ها، میزبان یا فرد راهنما یک پله جلوتر حرکت می‌کند تا مسیر را هدایت کند و هنگام پایین آمدن، برای حفاظت از فرد مهمان یا ارشد، یک پله پایین‌تر قرار می‌گیرد.</li>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۳. هنر معرفی و آداب دست دادن (Introduction & Handshaking Protocol)</h3>
+معرفی کردن افراد به یکدیگر در محیط‌های تجاری دارای فرمول‌های ریاضی‌گونه‌ای است که تخطی از آن‌ها بی‌ادبی تلقی می‌شود:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">اصل کلیدی در معرفی:</strong> همیشه فرد باجایگاه پایین‌تر یا فرد جدیدالورود به فرد ارشدتر یا میزبان معرفی می‌شود (یعنی نام فرد ارشد ابتدا برده می‌شود تا توجه او جلب شود).</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">دست دادن (The Professional Handshake):</strong> دست دادن اولین و قوی‌ترین ابزار انتقال انرژی و اقتدار در بیزنس است. ویژگی‌های یک دست دادن استاندارد تجاری:</li>
+    *   محکم، قاطع، اما نه له کننده.
+    *   مدت زمان: بین ۲ تا ۳ ثانیه همراه با تماس چشمی مستقیم (Eye Contact) و لبخند حرفه‌ای.
+    *   ابتکار عمل در دست دادن: همیشه حق تقدم با فرد ارشدتر، میزبان یا بانوان است (خانم‌ها در محیط کار می‌توانند پیش‌قدم شوند یا دست بدهند، اما منتظر ماندن برای تعیین تکلیف طرف مقابل نیز نشان‌دهنده تسلط بر تشریفات است).
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۴. زبان بدن، ظاهر و پوشش حرفه‌ای (Professional Appearance & Body Language)</h3>
+تصویر سازمانی یک شرکت، برآیند تک‌تک افراد آن سازمان است. ظاهر فرد، سفیر غیرمکتوب سازمان اوست:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">پوشش رسمی و بیزنس استندارد (Business Formal/Casual):</strong> لباس‌ها باید اتوکشیده، متناسب با فرم بدن، تمیز و با رنگ‌های رسمی (سرمه‌ای، خاکستری تیره، زغالی، سفید و آبی ملایم) باشند. استفاده از عطر و ادکلن باید بسیار ملایم و کنترل‌شده باشد؛ به گونه‌ای که تنها در فاصله بسیار نزدیک استشمام شود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">زبان بدن در جلسات:</strong> نشستن کاملاً صاف، متمایل به جلو (نشان‌دهنده اشتیاق و توجه)، خودداری از دست‌به‌سینه نشستن (حالت دفاعی)، کنترل حرکات دست و عدم استفاده بیش از حد از ابزارها (مانند خودکار یا گوشی) در حین صحبت دیگران.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">ظرایف رفتاری، خطاهای مرگبار تشریفاتی (Faux Pas) و پرونده‌های میدانی</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو در طول جلسه با ذکر پرونده‌های واقعی از شرکت‌های بزرگ و جلسات مذاکره بین‌المللی، خطاهای مهلکی را که مدیران مرتکب می‌شوند، واکاوی می‌کنند:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">خطای مرگبار عدم رعایت زمان‌بندی (Chronemics Faux Pas):</strong></li>
+    در بسیاری از شرکت‌های ایرانی، تأخیر در جلسات به یک هنجار تبدیل شده است؛ در حالی که در اتیکت بین‌المللی و بیزنس پیشرفته، <strong class="text-slate-900 font-bold">تأخیر یعنی بی‌رسمی شمردن وقت طرف مقابل و بی‌ارزش کردن قرارداد.</strong> استاد تأکید می‌کنند که رسیدن ۵ الی ۱۰ دقیقه پیش از شروع جلسه به محل، حداقلِ احترام به میزبان یا مشتری است.
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">اشتباهات فاحش در ضیافت‌های کاری (Business Dining Etiquette):</strong></li>
+    بسیاری از قراردادهای چندمیلیاردی در میزهای ناهار یا شام کاری منعقد یا فسخ می‌شوند. یکی از خطاهای رایج، شروع به خوردن غذا پیش از آنکه میزبان یا مهمان ویژه شروع کند، یا صحبت کردن با دهان پر، یا بدرفتاری با گارسون و پرسنل رستوران است. استاد اسمعیلو متذکر می‌شوند که <strong class="text-slate-900 font-bold">«رفتار شما با زیردستان و پرسنل خدماتی، آینه تمام‌نمای شخصیت حرفه‌ای شماست»</strong> و شرکای تجاری با دقت این رفتارها را زیر نظر دارند.
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">مدیریت تلفن همراه در جلسات رسمی:</strong></li>
+    گذاشتن گوشی روی میز (حتی با صفحه رو به پایین) پیامی منفی به مخاطب ارسال می‌کند با این مضمون که: *"شما در اولویت اول من نیستید و ممکن است اتفاق مهم‌تری رخ دهد."* پروتکل استاندارد این است که گوشی کاملاً سایلنت و داخل کیف یا جیب قرار گیرد.
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جدول ماتریسی پروتکل‌ها، استانداردها و بایدها و نبایدها</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">| موقعیت تجاری | رفتار ارجح و استاندارد (بایدها) | خطاهای رایج و ممنوعه (نبایدها) | تقدم / اولویت |
+| :--- | :--- | :--- | :--- |
+| <strong class="text-slate-900 font-bold">ورود به اتاق جلسه</strong> | میزبان جلوتر در مسیر راهرو راهنمایی می‌کند؛ در اتاق‌های مهم، در ابتدا توسط میزبان باز می‌شود. | ورود بی‌هماهنگ، نشستن پیش از تعارف میزبان. | حق تقدم ورود با مهمان و افراد ارشد است. |
+| <strong class="text-slate-900 font-bold">دست دادن در بیزنس</strong> | تماس چشمی، لبخند، فشردن قاطع و کوتاه (۲-۳ ثانیه). | دست دادن شل و بی‌روح، دست دادن دو دستی (مگر در دیپلماسی خاص)، امتناع از دست دادن بدون دلیل موجه پزشکی. | حق تقدم با فرد ارشد، میزبان یا بانوان است. |
+| <strong class="text-slate-900 font-bold">معرفی افراد</strong> | بردن نام فرد ارشد یا میزبان ابتدا، سپس معرفی فرد جدید. | معرفی با لحن عامیانه، استفاده از لقب‌های نامتعارف، فراموش کردن نام افراد کلیدی. | فرد پایین‌رتبه به فرد ارشد معرفی می‌شود. |
+| <strong class="text-slate-900 font-bold">پوشش و استایل</strong> | لباس رسمی متناسب با فرهنگ سازمان، کفش واکس‌زده، ناخن‌های مرتب. | لباس‌های بیش از حد اسپرت در جلسات رسمی، رنگ‌های تند و زننده، زیورآلات بیش از حد. | همواره متناسب با استانداردهای Corporate Identity. |
+| <strong class="text-slate-900 font-bold">آداب پذیرایی و رستوران</strong> | تشکر از میزبان، رعایت نحوه صحیح استفاده از کارد و چنگال، توجه به پرسنل. | آرنج روی میز، خلال کردن دندان سر میز، بلند کردن صدا در رستوران‌های شیک. | میزبان سفارش‌دهنده اول و پرداخت‌کننده نهایی است. |</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جعبه‌ابزار و چک‌لیست کاربردی مدیران و رهبران کسب‌وکار (Actionable Protocol Playbook)</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">برای پیاده‌سازی بی‌نقص اصول بیزنس اتیکت در سازمان، رعایت گام‌به‌گام چک‌لیست زیر الزامی است:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">آمادگی پیش از جلسه (Pre-Meeting Protocol):</strong></li>
+    *   بررسی دقیق لیست حاضران، سمت‌ها، و پیشینه شرکت‌های مقابل (جهت رعایت دقیق القاب و نام‌ها).
+    *   تنظیم لباس، ظاهر و اطمینان از به همراه داشتن کارت ویزیت استاندارد (تمیز، بدون خط‌خوردگی، دارای اطلاعات به‌روز).
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">پروتکل تبادل کارت ویزیت (Business Card Etiquette):</strong></li>
+    *   کارت ویزیت با هر دو دست و به گونه‌ای تقدیم شود که متن آن رو به روی گیرنده باشد تا بلافاصله بتواند آن را بخواند.
+    *   پس از دریافت کارت، چند ثانیه به آن نگاه کرده، نام فرد را به زبان بیاورید و آن را با احترام روی میز یا در جاکارتی مخصوص قرار دهید (هرگز کارت را بلافاصله در جیب پشت شلوار یا کیف بدون نگاه کردن قرار ندهید).
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">مدیریت ارتباطات کلامی و غیرکلامی در مذاکره:</strong></li>
+    *   استفاده از صدای رسا، لحن محترمانه و پرهیز از قطع کردن صحبت دیگران.
+    *   رعایت حریم شخصی (Personal Space)؛ فاصله استاندارد در بیزنس بین ۱.۲ تا ۲ متر است.
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">آداب خروج و پیگیری پس از جلسه (Post-Meeting Etiquette):</strong></li>
+    *   جمع‌آوری منظم وسایل، تشکر مجدد از میزبان/مهمان، و بدرقه تا درب خروج یا آسانسور.
+    *   ارسال ایمیل یا پیام تشکر رسمی (Follow-up) ظرف مدت ۲۴ ساعت آینده جهت تثبیت تصویر حرفه‌ای سازمان در ذهن مخاطب.
+          </div>
+        </div>
+        
+
+        <!-- Session Card: s2 -->
+        <div class="session-card bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden mb-8 transition-all hover:shadow-md" data-session-id="s2">
+          <div class="p-6 md:p-8 bg-gradient-to-r from-stone-800 via-neutral-900 to-amber-900 text-white relative">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+              <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20">
+                <span>🤝</span>
+                <span>جلسه دوم</span>
+              </span>
+              <span class="text-xs text-amber-200/90 bg-black/30 border border-amber-400/20 px-3 py-1 rounded-xl">مدت: ۳.۵ ساعت تدریس متمرکز</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-black mb-2 text-white leading-tight">پروتکل‌های جلسات رسمی تجاری، آداب معارفه، تبادل کارت ویزیت و مراودات سازمانی</h2>
+            <p class="text-xs md:text-sm text-stone-200 leading-relaxed max-w-4xl">پروتکل دقیق ورود و خروج به اتاق جلسات و سالن مذاکره؛ قاعده تقدم و تأخر افراد بر پایه سن، رتبه سازمانی و جنسیت؛ آیین استاندارد معارفه و معرفی اشخاص ثالث؛ اصول تبادل کارت ویزیت (نحوه ارائه با دو دست، مطالعه محترمانه و جای‌گذاری)؛ چیدمان صندلی‌های مذاکره و تقدم میزبان و میهمان.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#پروتکل جلسات</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#سلسله‌مراتب و تقدم</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#آداب معارفه</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#تبادل کارت ویزیت</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#چیدمان اتاق جلسه</span>
+            </div>
+          </div>
+          
+          <!-- Card Action Button -->
+          <div class="p-4 bg-stone-50 border-t border-stone-100 flex items-center justify-between">
+            <button onclick="toggleSession('s2')" id="btn-s2" class="inline-flex items-center gap-2 text-xs font-bold text-amber-900 bg-amber-100/80 hover:bg-amber-200 border border-amber-300/60 px-4 py-2 rounded-xl transition-all shadow-sm">
+              <span>📖 مشاهده متن کامل درسنامه و پروتکل‌ها</span>
+              <span id="arrow-s2" class="transition-transform duration-300">▼</span>
+            </button>
+            <span class="text-[11px] text-stone-500">منطبق بر بیانات استاد اسمعیلو • تدوین پارسا رضائی</span>
+          </div>
+
+          <!-- Collapsible Notes Container -->
+          <div id="notes-s2" class="hidden p-6 md:p-10 border-t border-stone-200 bg-white prose-custom">
+            <h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950"><strong class="text-slate-900 font-bold">سند جامع آموزشی و پروتکل‌های اجرایی دوره MBA دانشکده اقتصاد دانشگاه تهران</strong></h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۱. شناسنامه رسمی جلسه</strong></h3>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نام درس:</strong> بیزنس اتیکت و تشریفات تجاری (Business Etiquette & Corporate Protocol)</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">عنوان جلسه:</strong> جلسه دوم: پروتکل‌های جلسات رسمی تجاری، آداب معارفه، تبادل کارت ویزیت و مراودات اداری</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">دوره:</strong> دوره عالی مدیریت کسب‌وکار (MBA - کد ۰۴۱۰)</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">محل برگزاری:</strong> دانشکده اقتصاد دانشگاه تهران</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی:</strong> پارسا رضائی</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۲. پیام کلیدی و ایده محوری جلسه (Executive Core Message)</strong></h3>
+<p class="text-slate-700 text-sm leading-relaxed my-2">در دنیای تجارت مدرن، محصولات عالی و برنامه‌های استراتژیک بی‌نقص، بدون پشتوانه «اتیکت حرفه‌ای» و «پروتکل‌های دقیق تشریفاتی»، محکوم به شکست یا حداقل عدم اعتماده‌سازی پایدار هستند. اتیکت تجاری در نگاه استاد اسمعیلو، مجموعه‌ای از تعارفات بی‌مورد یا قواعد دست‌وپاگیر نیست؛ بلکه <strong class="text-slate-900 font-bold">«زبان بدن سازمانی»، «معماریِ اعتبار در نگاه اول» و «سیستم دفاعی در برابر بحران‌های ارتباطی»</strong> است.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">ایده محوری جلسه بر این اصل استوار است که مدیران و مذاکره‌کنندگان ارشد، پیش از آنکه با کلام خود قضاوت شوند، با ظرایف رفتاری، نحوه ایستادن، ورود به اتاق جلسات، مکان‌یابی صندلی‌ها، نحوه تبادل کارت ویزیت و حتی نوع دست دادن خود قضاوت می‌شوند. عدم تسلط بر این پروتکل‌ها در سطح ملی و بین‌المللی می‌تواند منجر به از دست رفتن قراردادهای میلیون دلاری، تخریب وجهه سازمانی و ایجاد سوءتفاهم‌های جبران‌ناپذیر شود. بنابراین، تسلط بر اتیکت، یک مزیت رقابتی لوکس نیست، بلکه یک <strong class="text-slate-900 font-bold">«الزام حیاتی بقا و توسعه کسب‌وکار»</strong> است.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۳. تشریح موشکافانه مفاهیم و مباحث علمی مطرح‌شده توسط استاد</strong></h3>
+<p class="text-slate-700 text-sm leading-relaxed my-2">#### <strong class="text-slate-900 font-bold">الف) پروتکل ورود به جلسه، مکان‌یابی و میزبان‌شناسی</strong>
+یکی از نخستین چالش‌های مدیران در جلسات رسمی، نحوه ورود به اتاق جلسه و نشستن در جایگاه مناسب است. استاد اسمعیلو با طرح یک پرونده واقعی از دعوت‌نامه‌های رسمی تأکید می‌کند که پیش از برگزاری هر جلسه، باید مکان دقیق نشستن طرفین بر اساس دعوت‌نامه مشخص شده باشد. 
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فرآیند ورود و استقرار:</strong> وقتی به دَم درِ اتاق جلسات یا دفتر میزبان می‌رسید، نباید بلافاصله و با عجله وارد شوید یا بی‌گدار به آب بزنید. ابتدا باید منتظر بمانید تا میزبان شما را راهنمایی کند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">در زدن و ورود:</strong> در زدن به اتاق جلسات رسمی، قواعد خاص خود را دارد. ورود به اتاق میزبان نیازمند هماهنگی و تسلط بر فضای فیزیکی است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مکان‌یابی میزبان و مهمان:</strong> مهمان همیشه در سمتی می‌نشیند که تسلط بهتر و دید مناسب‌تری داشته باشد، اما صندلی ریاست یا صندلی اصلی متعلق به میزبان (یا فردی که دعوت‌کننده اصلی است) می‌باشد.</li></p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">#### <strong class="text-slate-900 font-bold">ب) پروتکل‌های استقبال و معارفه (Introduction & Greeting Protocols)</strong>
+آداب معارفه در سطح سازمانی از حساس‌ترین بخش‌های پروتکل تجاری است. استاد اسمعیلو در این بخش به تشریح رتبه‌بندی و هرم تقدم و تأخر در معارفه می‌پردازد:
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">قاعده طلایی تقدم در معرفی:</strong> در دنیای اتیکت تجاری، <strong class="text-slate-900 font-bold">«همیشه فردِ دارای مقامِ پایین‌تر به فردِ دارای مقامِ بالاتر معرفی می‌شود»</strong> یا به بیان دقیق‌تر، نام فرد دارای جایگاه ارشدتر ابتدا بر زبان آورده می‌شود تا به او ادای احترام گردد. (مثلاً: «جناب دکتر! اجازه دهید آقای مهندس رضائی، مدیر ارشد استراتژیک مجموعه را به حضورتان معرفی کنم»).</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدیریت توازن جنسیتی و سنی در معارفه رسمی:</strong> در محیط‌های مدرن تجاری بین‌المللی، اولویت مقام سازمانی بر جنسیت مقدم است؛ یعنی مدیر خانم یا آقایی که جایگاه سازمانی بالاتری دارد، ارشد محسوب می‌شود، مگر در پروتکل‌های دیپلماتیک خاص سنتی که احترام به سن و سال یا جنسیت مطرح باشد که در بیزنس مدرن، <strong class="text-slate-900 font-bold">«مقام سازمانی»</strong> حاکم مطلق است.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">آداب دست دادن (Handshake Protocol):</strong> </li>
+   * ابتکار عمل در دست دادن همیشه با <strong class="text-slate-900 font-bold">فردِ دارای مقام بالاتر، میزبان یا شخصِ دعوت‌کننده</strong> است. تا زمانی که فرد ارشد دست خود را جلو نیاورده است، نباید پیش‌دستی کنید.
+   * دست دادن باید محکم (Firm)، عمودی، بدون فشردن بیش از حد استخوان‌های دست و همراه با تماس چشمی (Eye Contact) باشد. دست دادنِ شل، بی‌روح و اصطلاحاً «ماهی مرده»، نشانه عدم اعتمادبه‌نفس یا عدم اشتیاق است.
+   * زمان دست دادن بین ۲ تا ۳ ثانیه است و همراه با یک لبخند حرفه‌ای و ملایم می‌باشد.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">#### <strong class="text-slate-900 font-bold">ج) پروتکل تبادل کارت ویزیت (Business Card Protocol - Meishi Exchange)</strong>
+تبادل کارت ویزیت در تجارت جهانی (به‌ویژه در فرهنگ‌های آسیایی و شرقی مانند ژاپن و کره، و همچنین در پروتکل‌های سطح بالای غربی) یک <strong class="text-slate-900 font-bold">«تشریفات مقدس و بازنمایی شخصیتِ حرفه‌ای فرد»</strong> است. استاد اسمعیلو نکات زیر را به عنوان خطوط قرمز این حوزه مطرح می‌کنند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نحوه ارائه کارت:</strong> کارت ویزیت هرگز نباید با یک دست، به‌صورت بی‌حوصله، چروک یا از جیب پشت شلوار خارج شود! کارت باید با <strong class="text-slate-900 font-bold">دو دست</strong> و از لبه‌های بالایی کارت گرفته شود، به‌گونه‌ای که نام و لوگوی شرکت رو به روی مخاطب باشد تا او بتواند بلافاصله آن را بخواند. همراه با ارائه کارت، باید کمی خم شوید (مخصوص پروتکل‌های شرقی یا احترام رسمی) و نام خود را به همراه سمت سازمانی به‌وضوح اعلام کنید.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نحوه دریافت کارت:</strong> کارت طرف مقابل را حتماً با <strong class="text-slate-900 font-bold">دو دست</strong> بگیرید. شست و انگشت اشاره هر دو دست باید لبه‌های کارت را لمس کند؛ مراقبت کنید انگشتتان روی لوگو یا نام مدیرعامل نیفتد! </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">بررسی و احترام به کارت دریافتی:</strong> پس از دریافت کارت، بلافاصله آن را در جیب خود پرتاب نکنید! حداقل ۵ تا ۱۰ ثانیه به اطلاعات آن نگاه کنید، نام طرف مقابل را با صدای آهسته یا در ذهن مرور کنید، و سپس آن را با احترام روی میز جلسه (در سمت راست خود یا روی جا کارتیِ چرمیِ اختصاصی) قرار دهید. در طول جلسه به هیچ عنوان روی کارت ویزیت یادداشت‌برداری نکنید؛ این کار از نظر اتیکت بین‌المللی معادل توهین به هویت حرفه‌ای طرف مقابل است.</li></p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">#### <strong class="text-slate-900 font-bold">د) لحن، زبان بدن و مراودات کلامی در جلسات اداری</strong>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">لحن کلام (Tone of Voice):</strong> تن صدا در جلسات رسمی باید کنترل‌شده، رسا، با ریتم متعادل و به دور از هیجان‌زدگی باشد. تن صدای بیش از حد بلند نشانه پرخاشگری و تن صدای بسیار پایین نشانه ضعف است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فاصله فرمی (Proxemics):</strong> رعایت حریم شخصی و فاصله فیزیکی در جلسات (بین ۴۵ تا ۱۲۰ سانتیمتر در فضای اداری رسمی) بسیار حیاتی است. تجاوز به این حریم بدون دعوت، ایجاد حس ناامنی می‌کند.</li></p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۴. ظرایف رفتاری، خطاهای مرگبار تشریفاتی (Faux Pas) و پرونده‌های میدانی استاد اسمعیلو</strong></h3>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو در این بخش با ذکر خاطرات و پرونده‌های واقعی از جلسات مشاوره خود به سازمان‌های بزرگ، به تحلیل خطاهای مرگباری می‌پردازند که مدیران ناآگاه مرتکب می‌شوند:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پرونده مدیرعامل بی‌مبالات در تبادل کارت ویزیت:</strong></li>
+   * <strong class="text-slate-900 font-bold">ماجرا:</strong> در یک جلسه مذاکره بین‌المللی میان یک هلدینگ ایرانی و شرکای اروپایی، مدیرعامل ایرانی برای صرفه‌جویی در زمان یا به دلیل عدم آموزش، کارت ویزیت طرف مقابل را با یک دست گرفت، نگاهی اجمالی به آن انداخت و بلافاصله آن را گذاشت توی جیب شلوارش و روی آن با خودکار یک عدد یادداشت کرد! 
+   * <strong class="text-slate-900 font-bold">نتیجه فاجعه‌بار:</strong> شریک تجاری اروپایی پس از جلسه، طی نامه‌ای رسمی به هیئت مدیره، اعلام کرد شخصیتی که به هویت تجاری طرف مقابل احترام نمی‌گذارد و کارت ویزیت را تحقیر می‌کند، شریک قابل اعتمادی برای قراردادهای بلندمدت نیست. معامله در نطفه خفه شد!
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">خطای مرگبار تقدم در ورود به اتاق:</strong></li>
+   * <strong class="text-slate-900 font-bold">ماجرا:</strong> در بازدید معاون وزیر از یک سازمان، مدیرکل میزبان به محض رسیدن به درِ اتاق جلسه، پیش‌دستی کرد و به عنوان صاحب‌خانه اول وارد شد و مهمان عالی‌رتبه را پشت سر خود نگه داشت!
+   * <strong class="text-slate-900 font-bold">تحلیل استاد:</strong> در پروتکل تشریفات، مهمان عالی‌رتبه و فرد ارشد <strong class="text-slate-900 font-bold">همیشه در ورود به اتاق (برای نخستین بار) یا خروج از آن، مقدم است</strong>، مگر اینکه میزبان بخواهد راه را نشان دهد (Guide کند) که در این صورت میزبان نیم قدم جلوتر و سمت راست حرکت می‌کند تا مسیر را هدایت نماید. پیش افتادن میزبان در ورود به سالن اصلی، یک خطای کلاسیک تشریفاتی است.
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">افتادن کارت ویزیت روی زمین:</strong></li>
+   * اگر به هر دلیلی کارت ویزیت طرف مقابل از دست شما روی زمین افتاد، این یک موقعیت بحرانی تشریفاتی (Faux Pas) است. شما نباید با بی‌حوصلگی با پا آن را شوت کنید یا دست‌پاچه شوید؛ بلکه باید بی‌درنگ خم شوید، با احترام کارت را بردارید، آن را تمیز کنید، عذرخواهی کنید و دوباره با دو دست تحویل بگیرید.
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۵. جدول ماتریسی پروتکل‌ها، استانداردها و بایدها و نبایدها</strong></h3>
+<p class="text-slate-700 text-sm leading-relaxed my-2">| موقعیت / سناریو | رفتار الزامی و حرفه‌ای (بایدها) | رفتار ممنوع و تخلف تشریفاتی (نبایدها) |
+| :--- | :--- | :--- |
+| <strong class="text-slate-900 font-bold">نحوه ارائه کارت ویزیت</strong> | استفاده از دو دست، زاویه دید رو به مخاطب، اعلام نام و سمت با صدای رسا | یک‌دست دادن، دادن کارت‌های کثیف، چروک یا خارج کردن از جیب پشت |
+| <strong class="text-slate-900 font-bold">دریافت کارت ویزیت</strong> | گرفتن با دو دست، مطالعه دقیق، احترام گذاشتن و قرار دادن روی میز کارتی | گرفتن با یک دست، نگاه نکردن، گذاشتن سریع در جیب، یادداشت‌برداری روی آن |
+| <strong class="text-slate-900 font-bold">شروع دست دادن</strong> | انتظار برای پیش‌قدم شدن فرد ارشد/میزبان، دست دادن محکم و کوتاه (۲ ثانیه) | پیش‌قدم شدن اجباری، دست دادن شل («ماهی مرده»)، فشردن بیش از حد دست |
+| <strong class="text-slate-900 font-bold">ورود به اتاق جلسه</strong> | تقدم مهمان بر میزبان (با هدایت میزبان)، صبر برای اجازه نشستن | هجوم به سمت صندلی‌ها، نشستن پیش از تعارف میزبان |
+| <strong class="text-slate-900 font-bold">لحن و کلام در جلسه</strong> | تن صدای کنترل‌شده، استفاده از ادبیات رسمی و محترمانه، رعایت سکوت در مواقع لزوم | قطع کردن صحبت دیگران، استفاده از اصطلاحات عامیانه کوچه و بازاری |</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۶. جعبه‌ابزار و چک‌لیست کاربردی مدیران و رهبران کسب‌وکار (Actionable Protocol Playbook)</strong></h3>
+<p class="text-slate-700 text-sm leading-relaxed my-2">این چک‌لیست به عنوان دستورالعمل اجرایی در اختیار مدیران قرار می‌گیرد تا پیش از ورود به هر جلسه رسمی، سناریوی رفتاری خود را چک کنند:</p>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">پیش از جلسه:</strong></li>
+  * آیا جایگاه نشستن خود و طرف مقابل را بر اساس پروتکل میزبان/مهمان می‌دانید؟
+  * آیا کارت‌های ویزیت تمیز، به‌روز و به تعداد کافی در جا کارتیِ اختصاصی قرار داده شده است؟
+  * آیا لباس فرم یا پوشش رسمی (Formal/Business Attire) کاملاً اتو کشیده و متناسب با پروتکل جلسه انتخاب شده است؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">حین ورود و معارفه:</strong></li>
+  * آیا به محض ورود، لبخند حرفه‌ای بر لبان شماست و تماس چشمی برقرار است؟
+  * آیا هرم معرفی (معرفی فرد رشدتر به فرد ارشدتر) رعایت شده است؟
+  * آیا منتظر علامت میزبان برای دست دادن و نشستن مانده‌اید؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">هنگام تبادل کارت ویزیت:</strong></li>
+  * آیا کارت با دو دست رد و بدل شده است؟
+  * آیا حداقل ۵ ثانیه به کارت دریافتی نگاه احترام‌آمیز داشته‌اید؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">در طول مذاکره:</strong></li>
+  * آیا حریم فیزیکی و فاصله فرمی حفظ شده است؟
+  * آیا تن صدا در سطح حرفه‌ای و اداری مدیریت شده است؟
+<p class="text-slate-700 text-sm leading-relaxed my-2">---
+*پایان سند رسمی جلسه دوم | تنظیم و تدوین توسط پارسا رضائی | دانشکده اقتصاد دانشگاه تهران*</p>
+          </div>
+        </div>
+        
+
+        <!-- Session Card: s3 -->
+        <div class="session-card bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden mb-8 transition-all hover:shadow-md" data-session-id="s3">
+          <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-stone-900 to-amber-950 text-white relative">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+              <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20">
+                <span>👁️</span>
+                <span>جلسه سوم</span>
+              </span>
+              <span class="text-xs text-amber-200/90 bg-black/30 border border-amber-400/20 px-3 py-1 rounded-xl">مدت: ۳.۵ ساعت تدریس متمرکز</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-black mb-2 text-white leading-tight">زبان بدن، ارتباطات غیرکلامی، پیام‌های ادراکی و اتیکت ارتباطات دیجیتال</h2>
+            <p class="text-xs md:text-sm text-stone-200 leading-relaxed max-w-4xl">رمزگشایی از زبان بدن و وضعیت بدنی مقتدرانه (Posture)؛ انواع دست دادن و پیام‌های ناخودآگاه سلطه‌جویی یا اعتماد؛ هنر تماس چشمی موثر (Eye Contact)؛ مدیریت فواصل فیزیکی و حریم شخصی (Proxemics)؛ اتیکت ارتباطات دیجیتال در واتس‌اپ، تلگرام، تماس تلفنی اداری و ایمیل‌های رسمی شرکتی.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#زبان بدن حرفه‌ای</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#دست دادن مقتدرانه</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#حریم شخصی (Proxemics)</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#ارتباط چشمی</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#اتیکت ارتباطات دیجیتال</span>
+            </div>
+          </div>
+          
+          <!-- Card Action Button -->
+          <div class="p-4 bg-stone-50 border-t border-stone-100 flex items-center justify-between">
+            <button onclick="toggleSession('s3')" id="btn-s3" class="inline-flex items-center gap-2 text-xs font-bold text-amber-900 bg-amber-100/80 hover:bg-amber-200 border border-amber-300/60 px-4 py-2 rounded-xl transition-all shadow-sm">
+              <span>📖 مشاهده متن کامل درسنامه و پروتکل‌ها</span>
+              <span id="arrow-s3" class="transition-transform duration-300">▼</span>
+            </button>
+            <span class="text-[11px] text-stone-500">منطبق بر بیانات استاد اسمعیلو • تدوین پارسا رضائی</span>
+          </div>
+
+          <!-- Collapsible Notes Container -->
+          <div id="notes-s3" class="hidden p-6 md:p-10 border-t border-stone-200 bg-white prose-custom">
+            <h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">شناسنامه رسمی جلسه</h1>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نام درس:</strong> بیزنس اتیکت و تشریفات تجاری</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">عنوان جلسه:</strong> جلسه سوم: زبان بدن، ارتباطات غیرکلامی، پیام‌های ادراکی و اتیکت ارتباطات دیجیتال</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">دوره:</strong> دوره عالی مدیریت کسب‌وکار (MBA - کد 0410) دانشکده اقتصاد دانشگاه تهران</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی:</strong> پارسا رضائی</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">پیام کلیدی و ایده محوری جلسه (Executive Core Message)</h1>
+بیزنس اتیکت در نگاه استاد اسمعیلو، چیزی فراتر از آداب‌ورسوم خشک یا تعارفات بی‌مبنای اجتماعی است؛ این حوزه در واقع <strong class="text-slate-900 font-bold">«مهندسی درک متقابل»، «مدیریت ادراک طرف مقابل (Perception Management)» و «خلق حریم محترمانه در مناسبات تجاری و دیپلماتیک»</strong> است. انسان‌ها در تعاملات حرفه‌ای، پیش از آنکه به منطق کلامی و استدلال‌های اقتصادی شما گوش فرادهند، پیام‌های صادرشده از <strong class="text-slate-900 font-bold">زبان بدن، پوشش، لحن، آداب نشستن، حضور فیزیکی و حتی تعاملات دیجیتال</strong> شما را رمزگشایی می‌کنند.
+<p class="text-slate-700 text-sm leading-relaxed my-2">اگر مدیری اصول پایه‌ای اتیکت را رعایت نکند، حتی با داشتن قوی‌ترین مدل‌های مالی و استراتژی‌های تجاری، ناخودآگاه نشانگان بی‌نزاکتی، بی‌تجربگی یا بی‌اعتنایی را به مخاطب مخابره می‌کند که نتیجه محتوم آن شکست در مذاکرات استراتژیک و تخریب اعتبار حرفه‌ای سازمان است. بنابراین، اتیکت تجاری یک مزیت رقابتی پایدار است که باید در کالبد تمامی فرآیندهای سازمانی دمیده شود.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">تشریح موشکافانه مفاهیم و مباحث علمی مطرح‌شده توسط استاد</h1>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۱. فلسفه ریشه‌دار اتیکت و تشریفات در فرهنگ و تجارت</h2>
+استاد اسمعیلو بحث را از ریشه‌شناسی مفاهیم آغاز می‌کنند: <strong class="text-slate-900 font-bold">اتیکت (Etiquette)</strong> ریشه در فرهنگ فرانسوی دارد و به معنای برچسب‌ها، دستورالعمل‌ها و قواعد رفتاری پذیرفته‌شده در یک جامعه یا صنف خاص است که چارچوب تعاملات ما را تعیین می‌کند. 
+در مقابل، <strong class="text-slate-900 font-bold">تشریفات (Protocol)</strong> مجموعه‌ای از تشکیلات، آیین‌ها، تقدم‌وتأخرها و قوانین خشک‌تر و فرمال‌تری است که عمدتاً در دیپلماسی بین‌الملل، روابط سازمانی عالی‌رتبه و رویدادهای دولتی یا شرکتی کلان اعمال می‌شود.
+<p class="text-slate-700 text-sm leading-relaxed my-2">برخلاف تصور عامه که این حوزه را تزئینی می‌پندارند، بیزنس اتیکت یک سیستم مهندسی‌شده ارتباطی است. ما لباس می‌پوشیم، می‌نشینیم، راه می‌رویم، دست می‌دهیم و ایمیل می‌زنیم تا به طرف مقابل نشان دهیم حضور او را به رسمیت شناخته و برایش احترام قائل هستیم. این احترام، ابزار اصلی ما در کاهش مقاومت روانی مشتریان، شرکای تجاری و رقبای حرفه‌ای است.</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۲. زبان بدن و ارتباطات غیرکلامی (Non-Verbal Communication)</h2>
+بخش عظیمی از پیامی که ما در یک جلسه مذاکره یا تعامل تجاری منتقل می‌کنیم، از مجرای کلمات عبور نمی‌کند، بلکه حاصل زبان بدن (Body Language) و ارتباطات غیرکلامی است. استاد اسمعیلو تأکید می‌کنند که مدیران حرفه‌ای باید بر اجزای زیر تسلط کامل داشته باشند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">حالت‌های چهره و تماس چشمی (Eye Contact):</strong> نگاه مستقیم، متعادل و معنادار، نشان‌دهنده اعتمادبه‌نفس، صداقت و تسلط است. نگاه‌های خیره یا فرار کردن از تماس چشمی، سیگنال‌های منفی اضطراب یا پنهان‌کاری را مخابره می‌کند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">حرکات دست و ژست‌ها (Gestures):</strong> دست‌ها در مذاکره باید کنترل‌شده باشند. استفاده بیش از حد از دست‌ها یا پنهان کردن آن‌ها در جیب یا زیر میز، حس بی‌اعتمادی ایجاد می‌کند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فاصله‌گذاری شخصی (Proxemics):</strong> رعایت حریم‌های فضا در فرهنگ‌های مختلف تجاری تفاوت دارد. ورود غیرمجاز به حریم شخصی دیگران در جلسات رسمی، تنش‌زا است.</li>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۳. پیام‌های ادراکی (Perceptual Messages)</h2>
+مخاطب شما در ثانیه‌های نخستین برخورد، بر اساس شواهد بصری، لحن صدا، نحوه ورود به اتاق، نوع دست دادن و حتی سکوت شما، یک تصویر ذهنی (Mental Map) از شما و سازمانتان می‌سازد. 
+پیام ادراکی یعنی آن چیزی که از شما <strong class="text-slate-900 font-bold">«برداشت می‌شود»</strong>، نه لزوماً آن چیزی که شما <strong class="text-slate-900 font-bold">«می‌گویید»</strong>. اگر مدیر ارشد یک شرکت با پوشش نامناسب، لحن نامطمئن و زبان بدن آشفته وارد جلسه شود، هرچقدر هم که آمار و ارقام شرکت دقیق باشد، ذهن مخاطب درگیر آشفتگی بصری او خواهد شد و ادراک منفی شکل‌گرفته به‌سختی قابل‌ترمیم است.
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۴. اتیکت ارتباطات دیجیتال (Digital Communication Etiquette)</h2>
+در دنیای مدرن کسب‌وکار و اقتصاد مبتنی بر فناوری، بخش عمده‌ای از تعاملات تجاری در بستر ابزارهای دیجیتال (ایمیل، پیام‌رسان‌ها، جلسات آنلاین تصویری) رخ می‌دهد. استاد اسمعیلو در این بخش به چند اصل کلیدی اشاره می‌کنند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اتیکت ایمیل‌های سازمانی (Email Etiquette):</strong> موضوع ایمیل (Subject) باید شفاف، دقیق و گویای محتوا باشد. استفاده از ادبیات محاوره‌ای در ایمیل‌های رسمی خط قرمز است. رعایت زمان‌بندی پاسخگویی به ایمیل‌های کاری (حداکثر ۲۴ ساعت کاری) نشان‌دهنده انضباط حرفه‌ای است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اتیکت جلسات آنلاین (Virtual Meeting Etiquette):</strong> در جلسات ویدئویی، روشن بودن دوربین یک ضرورت حرفه‌ای است (مگر در شرایط اضطراری فنی). پس‌زمینه تصویر باید خنثی، حرفه‌ای و به دور از شلوغی‌های منزل باشد. میکروفون زمانی که صحبت نمی‌کنید باید در حالت Mute باشد تا صداهای مزاحم محیط منتقل نشود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پیام‌رسان‌های فوری (Instant Messaging):</strong> ارسال پیام‌های کاری در ساعات غیرکاری (نصفه‌شب یا روزهای تعطیل) بی‌نزاکتی تلقی می‌شود، مگر در اورژانس‌های کسب‌وکار. ادبیات پیام باید مختصر، محترمانه و به دور از ایموجی‌های بیش از حد یا عامیانه باشد.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">ظرایف رفتاری، خطاهای مرگبار تشریفاتی (Faux Pas) و پرونده‌های میدانی استاد اسمعیلو</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو برای عینی‌سازی بحث‌ها، به تجربیات واقعی و کیس‌های میدانی متعددی اشاره می‌کنند که مرور آن‌ها برای هر مدیر اجرایی حیاتی است:</p>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">کیس مدیرعامل بی‌مبالات در ضیافت رسمی:</strong> مدیری در یک ضیافت شام تجاری بین‌المللی با شرکای خارجی، بدون توجه به اتیکت نشستن و نحوه استفاده از ظروف، پیش از میزبان شروع به خوردن کرد و با صدای بلند صحبت نمود. این رفتار ساده در ظاهر، منجر به لغو قرارداد چند میلیون دلاری شد؛ چرا که شریک تجاری خارجی به این نتیجه رسید که شرکتی که اصول اولیه نزاکت را رعایت نمی‌کند، در تعهدات مالی و فنی خود نیز قابل‌اعتماد نخواهد بود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">خطای فاحش در معرفی و تقدم‌وتأخر (Precedence):</strong> در یک بازدید صنعتی مهم، مدیر میزبان اشتباهاً ابتدا به مدیران رده‌پایین‌تر خود خیرمقدم گفت و مدیر ارشد مهمان را نادیده گرفت. این اشتباه تشریفاتی، غرور حرفه‌ای مهمان را جریحه‌دار کرد و فضای مذاکره را ازهمان ابتدا به سمت تنش هدایت نمود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فاجعه ایمیل‌های بدون موضوع و محاوره‌ای:</strong> کارمندی در یک شرکت تجاری معتبر، به یک مدیر ارشد بین‌المللی ایمیلی بدون موضوع و با ادبیات کوچه و بازاری ارسال کرده بود. این رفتار بلافاصله به‌عنوان عدم درک استانداردهای شرکتی گزارش شد و اعتبار کل تیم زیر سوال رفت.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جدول ماتریسی پروتکل‌ها، استانداردها و بایدها و نبایدها</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">| حوزه تعامل | رفتارها و پروتکل‌های ارجح (بایدها) | خطاهای مرگبار و ممنوعه (نبایدها) |
+| :--- | :--- | :--- |
+| <strong class="text-slate-900 font-bold">زبان بدن و ارتباطات غیرکلامی</strong> | حفظ تماس چشمی متعادل، لبخند حرفه‌ای، ایستادن و نشستن با پشت صاف، تسلط بر حرکات دست | دست‌به‌سینه نشستن (حالت دفاعی)، نگاه به ساعت مکرر، بازی با خودکار یا گوشی، خم شدن روی میز |
+| <strong class="text-slate-900 font-bold">ورود به جلسه و معرفی</strong> | رعایت تقدم‌وتأخر (ارشدترین فرد یا مهمان اول معرفی و تکریم می‌شود)، محکم و متعادل دست دادن | پیش‌دستی در دست دادن به مدیران رده‌بالا یا بانوان بدون اجازه، قطع کردن کلام دیگران |
+| <strong class="text-slate-900 font-bold">پوشش و ظاهر حرفه‌ای</strong> | آراستگی متناسب با صنعت، لباس اتوکشیده‌، رنگ‌های رسمی و شرکتی | پوشش‌های اسپرت غیرمتعارف در جلسات استراتژیک، عینک آفتابی روی سر، بوی تند عطر یا عدم رعایت بهداشت |
+| <strong class="text-slate-900 font-bold">اتیکت ارتباطات دیجیتال</strong> | نگارش ساختاریافته ایمیل، روشن بودن دوربین در وب‌کنفرانس، رعایت لحن رسمی | ارسال پیام‌های طولانی و مبهم در پیام‌رسان‌ها، بی‌توجهی به ایمیل‌ها، فرستادن ویس‌های طولانی کاری |
+| <strong class="text-slate-900 font-bold">رفتار در ضیافت‌ها و ناهارهای کاری</strong> | رعایت استفاده صحیح از کارد و چنگال (از بیرون به داخل)، جویدن با دهان بسته | صحبت کردن با دهان پر، گذاشتن گوشی روی میز غذا، درخواست جعبه برای باقی‌مانده غذا در جلسات رسمی |</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جعبه‌ابزار و چک‌لیست کاربردی مدیران و رهبران کسب‌وکار (Actionable Protocol Playbook)</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">برای پیاده‌سازی بی‌نقص استانداردهای این جلسه در سازمان خود، از چک‌لیست عملیاتی زیر استفاده کنید:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ارزیابی اولیه پیش از حضور در جلسات کلیدی:</strong></li>
+   * آیا زبان بدن شما (فرم ایستادن، نشستن و تماس چشمی) پیام اقتدار و احترام را مخابره می‌کند؟
+   * آیا پوشش شما با سطح اهمیت و پروتکل آن جلسه دقیقاً هم‌راستا است؟
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدیریت ارتباطات دیجیتال در سازمان:</strong></li>
+   * آیا پروتکل مدونی برای نگارش ایمیل‌ها و مکاتبات الکترونیک تدوین و به کارمندان ابلاغ شده است؟
+   * آیا در جلسات آنلاین، تمامی اعضا به رعایت اصول تصویر، پس‌زمینه حرفه‌ای و صوتی پایبند هستند؟
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">بازبینی آداب معاشرت در مناسبات فیزیکی:</strong></li>
+   * آیا قوانین تقدم‌وتأخر در ورود به اتاق جلسات، سوار شدن به خودرو و نشستن دور میز مذاکره به دقت تمرین شده است؟
+   * آیا تمامی مدیران میانی و ارشد با خطاهای مرگبار تشریفاتی (Faux Pas) آشنا هستند و از آن‌ها پرهیز می‌کنند؟
+<p class="text-slate-700 text-sm leading-relaxed my-2">---
+*این سند تفصیلی، بازتاباننده دقیق، آکادمیک و جامع مباحث مطروحه توسط استاد اسمعیلو در جلسه سوم دوره MBA دانشکده اقتصاد دانشگاه تهران است و تمامی استانداردهای علمی و ساختاری یک سند مدیریتی سطح‌بالا را پوشش می‌دهد.*</p>
+          </div>
+        </div>
+        
+
+        <!-- Session Card: s4 -->
+        <div class="session-card bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden mb-8 transition-all hover:shadow-md" data-session-id="s4">
+          <div class="p-6 md:p-8 bg-gradient-to-r from-amber-900 via-stone-800 to-slate-900 text-white relative">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+              <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20">
+                <span>🍷</span>
+                <span>جلسه چهارم</span>
+              </span>
+              <span class="text-xs text-amber-200/90 bg-black/30 border border-amber-400/20 px-3 py-1 rounded-xl">مدت: ۳.۵ ساعت تدریس متمرکز</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-black mb-2 text-white leading-tight">اتیکت ضیافت‌های تجاری (Dining Etiquette) و کدهای پوشش حرفه‌ای (Dress Code)</h2>
+            <p class="text-xs md:text-sm text-stone-200 leading-relaxed max-w-4xl">راهنمای تشریفاتی میز غذا و ضیافت‌های رسمی ناهار و شام تجاری؛ نقشه استاندارد چیدمان کارد، چنگال، قاشق و لیوان‌ها (قاعده حرکت از بیرون به درون)؛ آداب مصرف نان، سوپ و غذای اصلی؛ اصول پرداخت صورت‌حساب بدون تنش؛ کدهای پوشش سازمانی (Formal, Business Casual, Smart Casual)، انتخاب کفش، جوراب، ساعت، ادکلن و اکسسوری مدیران.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#اتیکت میز غذا (Dining)</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#چیدمان قاشق و چنگال</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#پرداخت صورت‌حساب</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#کدهای پوشش (Dress Code)</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#اکسسوری و عطر</span>
+            </div>
+          </div>
+          
+          <!-- Card Action Button -->
+          <div class="p-4 bg-stone-50 border-t border-stone-100 flex items-center justify-between">
+            <button onclick="toggleSession('s4')" id="btn-s4" class="inline-flex items-center gap-2 text-xs font-bold text-amber-900 bg-amber-100/80 hover:bg-amber-200 border border-amber-300/60 px-4 py-2 rounded-xl transition-all shadow-sm">
+              <span>📖 مشاهده متن کامل درسنامه و پروتکل‌ها</span>
+              <span id="arrow-s4" class="transition-transform duration-300">▼</span>
+            </button>
+            <span class="text-[11px] text-stone-500">منطبق بر بیانات استاد اسمعیلو • تدوین پارسا رضائی</span>
+          </div>
+
+          <!-- Collapsible Notes Container -->
+          <div id="notes-s4" class="hidden p-6 md:p-10 border-t border-stone-200 bg-white prose-custom">
+            <h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">شناسنامه رسمی جلسه</h1>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نام درس:</strong> بیزنس اتیکت و تشریفات تجاری</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">عنوان جلسه:</strong> جلسه چهارم: اتیکت ضیافت‌ها و میزبانی تجاری (Dining Etiquette) و کدهای پوشش حرفه‌ای (Dress Code)</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">دوره:</strong> دوره عالی مدیریت کسب‌وکار (MBA - کد 0410) دانشکده اقتصاد دانشگاه تهران</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی:</strong> پارسا رضائی</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">پیام کلیدی و ایده محوری جلسه (Executive Core Message)</h2>
+<p class="text-slate-700 text-sm leading-relaxed my-2">جهان‌بینی استاد اسمعیلو در حوزه بیزنس اتیکت و تشریفات تجاری بر یک اصل استوار است: <strong class="text-slate-900 font-bold">«تشریفات، کارت ویزیت غیرکلامی شخصیت سازمانی شماست.»</strong> در دنیای مدرن تجارت و دیپلماسی، میزهای غذاخوری، ضیافت‌های رسمی، جلسات کاری و حتی نحوه پوشش و استایل ظاهری، میدان‌های مین‌گذاری‌شده‌ای هستند که می‌توانند قراردادهای چندمیلیون‌دلاری را منعقد کنند یا همکاری‌های استراتژیک را در یک ثانیه نابود سازند.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو با تأکید بر اینکه اتیکت در ضیافت‌ها (Dining Etiquette) صرفاً قواعد خشک میزبانی یا آداب چیدن کارد و چنگال نیست، آن را به‌عنوان یک <strong class="text-slate-900 font-bold">ابزار استراتژیک مذاکره، ارزیابی هوش هیجانی (EQ) طرف مقابل و سنجش اصالت فرهنگی</strong> معرفی می‌کند. از سوی دیگر، کدهای پوشش حرفه‌ای (Dress Code) ابزاری برای اعمال قدرت نرم، ایجاد اعتبار آنی و مهار ادراکات ذهنی مخاطب در ثانیه‌های اول تعامل است. در این جلسه، تمامی پروتکل‌های بین‌المللی ضیافت‌ها، خطاهای مرگبار تشریفاتی (Faux Pas)، استانداردهای پوشش در سطوح مختلف مدیریتی و نحوه مدیریت میزهای مذاکره پذیرایی به تفکیک و با جزئیات تام کلاسی کالبدشکافی شده‌اند.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">تشریح موشکافانه مفاهیم و مباحث علمی مطرح‌شده توسط استاد</h2>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۱. فلسفه و اهمیت استراتژیک میزبانی و ضیافت‌های تجاری</h3>
+در پروتکل‌های سازمانی، ضیافت‌ها (چه صبحانه کاری، چه ناهار و شام تجاری) یک تفریح یا استراحت نیستند، بلکه <strong class="text-slate-900 font-bold">ادامه میز مذاکره با ابزارهای غیرکلامی</strong> هستند. استاد اسمعیلو با صراحت تأکید می‌کند که هیئت‌های تجاری بین‌المللی و مدیران ارشد سازمان‌ها، رفتار شما در یک ضیافت (از نحوه برخورد با گارسون و پرسنل خدماتی گرفته تا تسلط بر کارد و چنگال و نحوه جویدن غذا) را معیاری مستقیم برای سنجش میزان پختگی، سطح تربیت اجتماعی، تسلط بر استرس و قابلیت‌های مدیریتی شما در شرایط پیچیده می‌دانند.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">قاعده طلایی استاد:</strong> در ضیافت‌های تجاری، تمرکز شما نباید صرفاً روی غذا باشد؛ غذا صرفاً بهانه‌ای برای مدیریت جو حاکم، ایجاد رپورت (Rapport)، اعتمادسازی و پیشبرد اهداف تجاری است. میزبان همیشه باید کنترل نامحسوس فضا را در دست داشته باشد و مهمان را در آرامش کامل قرار دهد.</li>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۲. آناتومی کامل میز ضیافت و پروتکل‌های ظروف و کارد و چنگال</h3>
+استاد اسمعیلو با ترسیم دقیق جزئیات یک میز رسمی بین‌المللی، نحوه چیدمان و استفاده از اقلام پذیرایی را تشریح می‌کند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">بشقاب‌ها:</strong> بشقاب نان (Bread Plate) همیشه در سمت چپ بشقاب اصلی (Dinner Plate) قرار دارد. قانون کلیدی: «هرچه در سمت چپ است متعلق به شماست (مانند نان)، هرچه در سمت راست است متعلق به شماست (مانند لیوان‌ها و نوشیدنی‌ها).»</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">کارد و چنگال (Cutlery):</strong> قانون کلی در استفاده از کارد و چنگال‌ها <strong class="text-slate-900 font-bold">«از بیرون به سمت داخل» (Outside-In)</strong> است. اولین پیش‌غذا یا سوپ با دورترین ابزار از بشقاب خورده می‌شود و با پیشروی غذا به سمت غذای اصلی، به ابزارهای نزدیک‌تر به بشقاب می‌رسید.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">کارد کره (Butter Knife):</strong> مخصوص مالیدن کره روی نان در بشقاب نان است و نباید برای مالیدن کره روی استیک یا سایر غذاها از آن استفاده کرد.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">قاشق و چنگال دسر:</strong> معمولاً در بالای بشقاب اصلی (به صورت افقی) چیده می‌شوند.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">#### زبان ابزارها (Cutlery Language - سیگنال‌های بشقاب)
+استاد اسمعیلو به شدت بر تسلط بر زبان کارد و چنگال تأکید می‌کند تا گارسون و میزبان بدانند وضعیت غذای شما چیست:
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">حالت استراحت (Resting / Pausing):</strong> وقتی در حین غذا خوردن می‌خواهید صحبت کنید یا دست از غذا بکشید، کارد و چنگال را به شکل عدد ۷ یا هشتی (V شکل) داخل بشقاب قرار دهید؛ به طوری که نوک کارد و چنگال به سمت مرکز بشقاب باشد و دسته‌های آن روی لبه بشقاب قرار گیرد. این یعنی <strong class="text-slate-900 font-bold">«غذا تمام نشده است، بشقاب را نبرید»</strong>.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">حالت اتمام غذا (Finished / Completed):</strong> برای اعلام اتمام غذا، کارد و چنگال را به صورت موازی کنار هم (ساعت ۴:۲۰ یا به موازات هم) در سمت راست یا وسط بشقاب قرار دهید. این سیگنال به گارسون می‌فهماند که بشقاب قابل جمع‌آوری است.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">خطاهای مرگبار این بخش:</strong> هرگز کارد و چنگال استفاده‌شده را روی میز، سفره یا رومیزی نگذارید؛ این کار خطای فاحش تشریفاتی است. همچنین قرار دادن کارد و چنگال به صورت ضربدری (X) در بشقاب ممنوع است.</li></p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۳. اتیکت دستمال سفره (Napkin Etiquette)</h3>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">زمان باز کردن:</strong> دستمال سفره بلافاصله پس از نشستن سر میز و پس از اینکه میزبان یا فرد ارشد دستمال خود را باز کرد، باز می‌شود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">محل قرارگیری:</strong> دستمال سفره همیشه روی زانوها پهن می‌شود، نه دور گردن (بستن دور گردن مختص محیط‌های غیررسمی یا غذای کودکان است).</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">قاعده اورژانس (ترک موقت میز):</strong> اگر در طول ضیافت مجبور شدید برای لحظه‌ای میز را ترک کنید (مثلاً رفتن به دستشویی یا پاسخ به یک تماس اضطراری)، دستمال سفره را <strong class="text-slate-900 font-bold">روی صندلی (روی صندلی، نه روی تکیه‌گاه و نه روی میز)</strong> قرار دهید. این به گارسون و میزبان نشان می‌دهد که صندلی پر است و برمی‌گردید.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پایان ضیافت:</strong> در پایان غذا، دستمال سفره را بدون تا کردن خاصی (به صورت کاملاً نامنظم و طبیعی) در سمت چپ بشقاب روی میز قرار دهید. تا کردن بیش از حد و اتوکشیده دستمال در پایان، این سیگنال اشتباه را می‌دهد که گارسون متوجه کثیف شدن آن نشده و شاید بخواهد دوباره از آن استفاده کند!</li>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۴. پروتکل‌های پیشرفته میزبانی و دعوت (Hosting & Invitation Protocols)</h3>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">چه کسی دعوت می‌کند؟</strong> استاد اسمعیلو تأکید می‌کند: <strong class="text-slate-900 font-bold">«کسی که دعوت می‌کند، میزبان است و پرداخت‌کننده صورت‌حساب (Bill) نیز خواهد بود.»</strong> اگر شما دعوت‌کننده هستید، پیش از آمدن مهمان باید حساب را تسویه کنید یا کارت خود را به صورت محرمانه به مدیریت رستوران بدهید تا مهمان هرگز درگیر مسائل مالی صورت‌حساب نشود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">انتخاب رستوران:</strong> انتخاب رستوران باید با جایگاه مهمان و سنخیت جلسه همخوانی داشته باشد. رستوران‌های خیلی شلوغ، پر سر و صدا یا با خدمات کند برای جلسات تجاری جدی مناسب نیستند. میزبان باید پیش از جلسه، از منو، فضای نشستن و کیفیت سرویس‌دهی رستوران اطمینان حاصل کند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">صندلی‌چینی و جایگاه نشستن (Seating Arrangement):</strong> </li>
+  * مهمان ویژه (VIP) باید در بهترین جایگاه بنشیند (معمولاً صندلی با پشت به دیوار و رو به فضای باز یا چشم‌انداز خوب، یا صندلی دور از درب ورودی رستوران و سر و صدای سرویس‌دهی).
+  * میزبان باید مهمان را راهنمایی کند و بهترین صندلی را به او اختصاص دهد.
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۵. اتیکت‌های خاص غذایی و خوراکی‌ها (Specific Food Etiquette)</h3>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">سوپ:</strong> قاشق سوپ‌خوری را از داخل به سمت بیرون (Away from you) حرکت دهید و سوپ را هورت نکشید. از دمیدن در سوپ داغ خودداری کنید؛ صبر کنید تا کمی خنک شود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نان:</strong> نان را با چاقو برش نزنید، بلکه با دست تکه‌های کوچک به اندازه یک لقمه در حد کره خوردن از آن جدا کنید و هر بار یک تکه را کره بمالید و میل کنید.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">زیتون، هسته میوه و ضایعات:</strong> اگر هسته زیتون، استخوان ریز یا ضایعاتی درون دهان است، آن را با ظرافت تمام روی قاشق یا چنگال گذاشته و به آرامی به گوشه بشقاب منتقل کنید، یا دست را جلوی دهان بگیرید و خارج کنید (هرگز با دست مستقیم از دهان درآورده و روی میز نگذارید).</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مایع شستشوی دست (Finger Bowl):</strong> اگر کاسه حاوی آب و لیمو (یا گلبرگ) برای شستشوی انگشتان پس از غذایی مثل میگو یا ماهی سرو شد، آن را ننوشید! این آب فقط برای شستشوی نوک انگشتان است و پس از آن با دستمال پارچه‌ای دست را خشک می‌کنید.</li>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۶. کدهای پوشش حرفه‌ای (Dress Code)</h3>
+پوشش حرفه‌ای از نگاه استاد اسمعیلو، اولین لایه دفاعی و تهاجمی شما در بیزنس است. مخاطب در کمتر از ۷ ثانیه نخست، بر اساس ظاهر شما قضاوت اولیه را شکل می‌دهد. کدهای پوشش به دسته‌های زیر تقسیم می‌شوند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">الف) لباس رسمی کسب‌وکار (Business Formal):</strong></li>
+  * مخصوص جلسات هیئت مدیره، مذاکرات دیپلماتیک سطح بالا، دادگاه‌ها و سمینارهای رسمی بین‌المللی.
+  * برای آقایان: کت و شلوار تیره (سرمه‌ای تیره یا زغالی)، پیراهن مردانه سفید یا آبی بسیار روشن (آکسفورد یا ساده)، کراوات ابریشمی با طرح‌های اسلیمی یا راه‌راه محو (غیرجیغ و غیرفانتزی)، کفش چرمی بنددار مشکی یا قهوه‌ای تیره (واکس‌زده و تمیز)، جوراب تیره بلند به رنگ شلوار.
+  * برای بانوان: مانتو و شلوار رسمی متناسب با پروتکل‌های سازمانی یا کت و دامن/شلوار رسمی با رنگ‌های وقار (سرمه‌ای، مشکی، خاکستری تیره)، کفش چرمی رسمی با پاشنه استاندارد و متوسط، مقنعه یا روسری شیک و رسمی با رنگ‌های هماهنگ و بدون زرق و برق اضافی.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ب) لباس نیمه‌رسمی کسب‌وکار (Business Casual):</strong></li>
+  * مخصوص روزهای کاری عادی در دفتر، جلسات داخلی با تیم‌ها و بازدیدهای میدانی حرفه‌ای.
+  * ترکیبی از راحتی و رسمیت: شلوار کتان یا پارچه‌ای باکیفیت، پیراهن مردانه (بدون نیاز به کراوات، دکمه یقه بسته یا باز در حد استاندارد)، بلیزر یا کت تک اسپرت، کفش لوفر (Loafer) یا چرم اسپرت.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ج) استایل‌های مناسب ضیافت‌های عصر و شام (Semi-Formal / Cocktail):</strong></li>
+  * بسته به دعوت‌نامه و نوع رویداد، رعایت تعادل بین شیک‌پوشی و راحتی الزامی است. از پوشیدن لباس‌های ورزشی، کفش کتانی غیررسمی (Sneakers)، لباس‌های بسیار براق یا نامتعارف در ضیافت‌های تجاری اکیداً پرهیز کنید.
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">ظرایف رفتاری، خطاهای مرگبار تشریفاتی (Faux Pas) و پرونده‌های میدانی استاد اسمعیلو</h2>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو در این جلسه به پرونده‌های واقعی از خطاهای فاحش مدیران اشاره می‌کند که هزینه‌های سنگینی به سازمان‌ها تحمیل کرده است:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پرونده مدیرعامل و غذای چسبنده:</strong> در یک ضیافت بین‌المللی مهم برای جذب سرمایه‌گذار خارجی، مدیرعامل ایرانی یک شرکت بزرگ به دلیل عدم آشنایی با اتیکت خوردن مرغ یا استیک بدون استخوان، با دست و به صورت غیرحرفه‌ای سعی در جدا کردن گوشت از استخوان داشت که هم تمرکز جلسه را به هم زد و هم تصویر بسیار ضعیفی از پرستیژ مدیریتی خود ارائه داد. طرف خارجی پس از جلسه، این موضوع را به عنوان نشانه‌ای از «عدم انضباط در جزئیات» گزارش کرده بود.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فاجعه گوشی تلفن همراه روی میز:</strong> یکی از مهلک‌ترین خطاهای مرگبار (Faux Pas) در ضیافت‌ها، گذاشتن گوشی موبایل با صفحه رو به بالا روی میز غذاخوری است. استاد اسمعیلو با تأکید هشدار می‌دهد: <strong class="text-slate-900 font-bold">«وقتی گوشی را روی میز می‌گذارید، به مهمان یا طرف مذاکره عملاً دارید می‌گویید: کسی که پشت این خط است یا اتفاقی که در این صفحه می‌افتد، برای من مهم‌تر از توست.»</strong> گوشی باید در جیب یا کیف و در حالت بی‌صدا (Silent) باشد.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">برخورد نامناسب با پرسنل خدماتی (Garisons & Waitstaff):</strong> رفتار شما با گارسون‌ها، پیشخدمت‌ها و خدمه رستوران، آینه‌ای تمام‌نما از شخصیت واقعی شماست. مدیرانی که با پرسنل رستوران از موضع تحقیر، بی‌ادبی یا آمرانه صحبت می‌کنند، به شدت در نزد افراد حرفه‌ای بی‌اعتبار می‌شوند. استاد می‌فرماید: <strong class="text-slate-900 font-bold">«همیشه با گارسون با احترام، لبخند و با گفتن لطفاً و متشکرم برخورد کنید؛ این نشان‌دهنده هوش هیجانی بالای شماست.»</strong></li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">خطای بویایی و عطرهای تند در ضیافت‌ها:</strong> در ضیافت‌های شام، استفاده از عطرهای بسیار تند، غلیظ یا محرک ممنوع است. عطر تند شما نباید با عطر و طعم غذاهای سروشده تداخل پیدا کند و حس چشایی و بویایی مهمانان را آزار دهد.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">جدول ماتریسی پروتکل‌ها، استانداردها و بایدها و نبایدها</h2>
+<p class="text-slate-700 text-sm leading-relaxed my-2">| موقعیت / ابعاد تشریفاتی | بایدها (بایدها و رفتارهای ارجح) | نبایدها (خطاهای مرگبار / Faux Pas) |
+| :--- | :--- | :--- |
+| <strong class="text-slate-900 font-bold">ورود به رستوران و نشستن</strong> | میزبان جلوتر حرکت می‌کند، صندلی را برای مهمان می‌کشد یا راهنمایی می‌کند؛ صندلی VIP به مهمان داده می‌شود. | مهمان جلوتر راه بیفتد؛ نشستن بدون تعارف و هماهنگی میزبان. |
+| <strong class="text-slate-900 font-bold">استفاده از دستمال سفره</strong> | پهن کردن روی زانو بلافاصله پس از نشستن؛ گذاشتن روی صندلی هنگام ترک موقت میز. | بستن دور گردن مثل پیش‌بند؛ گذاشتن روی میز یا تکیه‌گاه صندلی هنگام ترک میز. |
+| <strong class="text-slate-900 font-bold">کار با کارد و چنگال</strong> | استفاده از بیرون به سمت داخل (Outside-In)؛ قرار دادن به شکل V (هشتی) هنگام استراحت و موازی (ساعت ۴:۲۰) هنگام اتمام. | گذاشتن ابزار استفاده‌شده روی رومیزی؛ ضربدری گذاشتن کارد و چنگال. |
+| <strong class="text-slate-900 font-bold">مدیریت تلفن همراه</strong> | قرار دادن در حالت بی‌صدا داخل کیف یا جیب؛ عدم چک کردن پیام‌ها سر میز. | گذاشتن گوشی روی میز غذاخوری (رو به بالا یا پایین)؛ پاسخ دادن به تلفن سر میز. |
+| <strong class="text-slate-900 font-bold">پرداخت صورت‌حساب (Bill)</strong> | تسویه قبلی محرمانه توسط میزبان یا هماهنگی پیش از جلسه بدون تنش. | بحث کردن سر میز درباره اینکه چه کسی پول بدهد؛ اجازه دادن به مهمان برای پرداخت در ضیافت رسمی. |
+| <strong class="text-slate-900 font-bold">پوشش حرفه‌ای (Business Formal)</strong> | کت و شلوار تیره (سرمه‌ای/زغالی)، پیراهن تمیز اتوکشیده، کفش چرمی واکس‌زده و تمیز. | پوشیدن لباس‌های اسپرت یا کتانی در جلسات رسمی؛ استفاده از رنگ‌های جیغ و نامتعارف در کراوات یا پوشش. |</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">جعبه‌ابزار و چک‌لیست کاربردی مدیران و رهبران کسب‌وکار (Actionable Protocol Playbook)</h2>
+<p class="text-slate-700 text-sm leading-relaxed my-2">این چک‌لیست عملیاتی بدون ابهام، نقشه راه گام‌به‌گام مدیران برای درخشش در ضیافت‌ها و میزبانی‌های تجاری است:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">آماده‌سازی پیش از ضیافت (Pre-Event Preparation):</strong></li>
+   * [ ] تحقیق کامل درباره منو، فضای داخلی و سطح خدمات رستوران مورد نظر.
+   * [ ] بررسی پیشینه، علایق غذایی یا محدودیت‌های رژیمی مهمان (مثلاً گیاه‌خوار بودن، حساسیت‌های غذایی یا مذهبی).
+   * [ ] هماهنگی محرمانه با مدیریت رستوران جهت تسویه حساب پیش از پایان جلسه (جلوگیری از هرگونه مکالمه مالی سر میز).
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدیریت حین ضیافت (During the Banquet):</strong></li>
+   * [ ] رعایت تقدم در ورود، راهنمایی مهمان به بهترین جایگاه نشستن و صبر کردن تا نشستن مهمان.
+   * [ ] پهن کردن منظم دستمال سفره روی زانو بلافاصله پس از نشستن.
+   * [ ] رعایت تعادل بین گفتگو و غذا خوردن؛ لقمه‌های کوچک برداشتن و هرگز با دهان پر صحبت نکردن.
+   * [ ] قرار دادن کارد و چنگال به شکل هشتی (V) در هنگام مکالمه و حالت موازی در پایان غذا.
+   * [ ] امتناع مطلق از چک کردن گوشی موبایل، تبلت یا ساعت مچی به صورت مکرر.
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ارتباطات غیرکلامی و ادب سازمانی:</strong></li>
+   * [ ] برخورد محترم، ملایم و حرفه‌ای با تمامی پرسنل و خدمة رستوران.
+   * [ ] حفظ ارتباط چشمی با مهمان و سایر حاضران در زمان صحبت کردن.
+   * [ ] تشکر رسمی از مهمان بابت حضور در ضیافت پس از پایان جلسه و بدرقه حرفه‌ای تا درب خروج یا وسیله نقلیه.
+          </div>
+        </div>
+        
+
+        <!-- Session Card: s5 -->
+        <div class="session-card bg-white rounded-3xl border border-stone-200 shadow-sm overflow-hidden mb-8 transition-all hover:shadow-md" data-session-id="s5">
+          <div class="p-6 md:p-8 bg-gradient-to-r from-stone-900 via-amber-950 to-neutral-900 text-white relative">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+              <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20">
+                <span>🚩</span>
+                <span>جلسه پنجم</span>
+              </span>
+              <span class="text-xs text-amber-200/90 bg-black/30 border border-amber-400/20 px-3 py-1 rounded-xl">مدت: ۳.۵ ساعت تدریس متمرکز</span>
+            </div>
+            <h2 class="text-xl md:text-2xl font-black mb-2 text-white leading-tight">تشریفات بین‌المللی و دیپلماتیک (Protocol)، تقدم پرچم‌ها، آداب هدایای تجاری و خودروی تشریفات</h2>
+            <p class="text-xs md:text-sm text-stone-200 leading-relaxed max-w-4xl">پروتکل‌های عالی تشریفات دیپلماتیک و روابط تجاری بین‌المللی؛ قوانین حقوقی اهتزاز، تقدم و چیدمان پرچم کشورها و پرچم‌های شرکتی؛ چیدمان استاندارد خودروی تشریفات و جایگاه سرنشینان ارشد؛ اصول اهدا و دریافت هدایای تجاری (Corporate Gifting)؛ تفاوت‌های فرهنگی و پرهیز از تابوهای تشریفاتی در مراودات با اروپا، چین و کشورهای عربی.</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              <span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#تشریفات دیپلماتیک</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#پروتکل پرچم‌ها</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#چیدمان خودروی تشریفات</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#هدایای شرکتی</span><span class="bg-black/25 backdrop-blur-sm text-amber-200 text-xs px-2.5 py-1 rounded-lg border border-amber-300/20 font-medium">#تفاوت‌های فرهنگی</span>
+            </div>
+          </div>
+          
+          <!-- Card Action Button -->
+          <div class="p-4 bg-stone-50 border-t border-stone-100 flex items-center justify-between">
+            <button onclick="toggleSession('s5')" id="btn-s5" class="inline-flex items-center gap-2 text-xs font-bold text-amber-900 bg-amber-100/80 hover:bg-amber-200 border border-amber-300/60 px-4 py-2 rounded-xl transition-all shadow-sm">
+              <span>📖 مشاهده متن کامل درسنامه و پروتکل‌ها</span>
+              <span id="arrow-s5" class="transition-transform duration-300">▼</span>
+            </button>
+            <span class="text-[11px] text-stone-500">منطبق بر بیانات استاد اسمعیلو • تدوین پارسا رضائی</span>
+          </div>
+
+          <!-- Collapsible Notes Container -->
+          <div id="notes-s5" class="hidden p-6 md:p-10 border-t border-stone-200 bg-white prose-custom">
+            <h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">شناسنامه رسمی جلسه</h1>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نام درس:</strong> بیزنس اتیکت و تشریفات تجاری  </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">عنوان جلسه:</strong> جلسه پنجم: تشریفات بین‌المللی و دیپلماتیک (Protocol)، تقدم پرچم‌ها، آداب هدایای تجاری و خودروی تشریفات  </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو  </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">د دوره:</strong> دوره عالی مدیریت کسب‌وکار (MBA - کد 0410)  </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">محل برگزاری:</strong> دانشکده اقتصاد دانشگاه تهران  </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی:</strong> پارسا رضائی  </li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">پیام کلیدی و ایده محوری جلسه (Executive Core Message)</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">دنیای تجارت مدرن، بستر تعاملات فرامرزی، شبکه‌سازی‌های بین‌المللی و مذاکرات چندجانبه است. در این عرصه، صلاحیت فنی، دارایی‌های مالی و مزیت‌های رقابتی محصولات، تنها زمانی به ثمر می‌نشینند که با <strong class="text-slate-900 font-bold">پروتکل‌های بین‌المللی (Protocol)</strong>، آداب دیپلماتیک و استانداردهای جهانی اتیکت هم‌سو باشند.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">جهان‌بینی و فلسفه تدریس استاد اسمعیلو بر این اصل بنیادین استوار است که «تشریفات، صرفاً یک‌سری تشریفات ظاهری، تشریفاتی و دست‌وپاگیر نیست؛ بلکه زبان بی‌کلام قدرت، احترام، اقتدار سازمانی و پایبندی به نظم نوین جهانی است.» کوچک‌ترین لغزش در تقدم پرچم‌ها، جانمایی صندلی‌ها در جلسات دوجانبه، بی‌توجهی به ارزش‌گذاری و قوانین گمرکی هدایای تجاری، یا ناآگاهی از آیین‌نامه خودروهای تشریفات و جایگاه‌گذاری مقامات، می‌تواند یک قرارداد کلان را در ثانیه‌های نخست با شکست مواجه کند. این جلسه، نقشه راه جامع، میدانی و تخصصی مدیران ارشد برای حرکت بی‌نقص در میادین دیپلماسی تجاری و بین‌المللی است.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">تشریح موشکافانه مفاهیم و مباحث علمی مطرح‌شده توسط استاد</h1>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۱. مبانی و فلسفه پروتکل (Protocol) و تشریفات بین‌المللی</h2>
+پروتکل در ادبیات کسب‌وکار و دیپلماسی، مجموعه قواعد، سنت‌ها، آیین‌نامه‌ها و توافقات بین‌المللی است که رفتار میان دولت‌ها، سازمان‌ها، سفرا، مقامات عالی‌رتبه و مدیران ارشد شرکت‌های چندملیتی را نظم می‌بخشد. 
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">تشریفات، تجلی ملموس دیسیپلین، اعتبار و کلاس سازمانی یک بنگاه اقتصادی است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">عدم رعایت پروتکل، در سطح بین‌المللی به معنای توهین تلقی شده و پیامدهای جبران‌ناپذیری بر جای می‌گذارد.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">تمامی حرکات، از نحوه دست دادن، ورود و خروج، معرفی افراد، تا نحوه نشستن و پذیرایی، تابع فرمول‌های دقیق ریاضی و حقوقی است.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۲. اصول کلیدی تشریفات در دیدارهای دوجانبه و چندجانبه (Bilateral & Multilateral Protocols)</h2>
+در تعاملات بین‌المللی، هرگز نباید به صورت شهودی و سلیقه‌ای عمل کرد. استاد اسمعیلو به صراحت تأکید می‌کنند که جلسات رسمی تابع سه اصل طلایی هستند:
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اصل تقدم (Precedence):</strong> شناخت دقیق جایگاه و رتبه افراد بر اساس پروتکل‌های رسمی سازمانی، دولتی یا بین‌المللی.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اصل تقارن و تعادل (Symmetry & Balance):</strong> در چینش فضاها، صندلی‌ها، هدایا و حتی نحوه پذیرایی، تعادل و تقارن باید رعایت شود تا هیچ‌یک از طرفین احساس تبعیض یا تحقیر نداشته باشند.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اصل احترام متقابل (Mutual Respect):</strong> انطباق رفتار با فرهنگ، مذهب، عرف و قوانین کشور یا سازمان میزبان و مهمان.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۳. قوانین تخصصی و ریاضیِ تقدم پرچم‌ها (Flag Protocols)</h2>
+یکی از حساس‌ترین ارکان تشریفات بین‌المللی، نحوه برافراشتن، جانمایی و تقدم پرچم‌ها در دفاتر مرکزی، اتاق‌های جلسات، کنفرانس‌های خبری و رویدادهای رسمی است. استاد اسمعیلو با ذکر جزئیات حقوقی و مهندسی این حوزه، قوانین زیر را تبیین می‌کنند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">تقدم پرچم میزبان:</strong> پرچم کشور یا سازمان میزبان همواره در بالاترین نقطه، در سمت راست (از دید ناظر بیرونی) یا در مرکز افتخار قرار می‌گیرد.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">تعداد پرچم‌ها:</strong> تعداد پرچم‌ها باید همواره زوج باشد (برای حفظ تقارن در دو طرف پرچم میزبان) یا اگر فرد است، پرچم میزبان در وسط قرار گیرد و سایر پرچم‌ها به ترتیب الفبای انگلیسی (یا الفبای رسمی سازمان‌های بین‌المللی مانند سازمان ملل) در طرفین چیده شوند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ارتفاع و هم‌ترازی:</strong> هیچ پرچمی نباید از نظر ارتفاع یا ابعاد، بالاتر یا بزرگ‌تر از پرچم میزبان باشد؛ پرچم‌ها باید کاملاً هم‌اندازه و در یک سطح افقی به اهتزاز درآیند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">حفظ منزلت پرچم:</strong> پرچم هرگز نباید با زمین تماس پیدا کند، کثیف باشد، یا در شرایط جوی نامناسب بدون حفاظ بماند. پرچم پاره یا رنگ‌ورورفته بلافاصله باید تعویض شود.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۴. مهندسی جایگاه‌ها و چیدمان صندلی‌ها در جلسات و مذاکرات (Seating Arrangements)</h2>
+چیدمان صندلی‌ها در اتاق مدیرعامل، اتاق جلسات هیئت‌مدیره یا میز مذاکره بین‌المللی، پیام‌های استراتژیک قدرتمندی ارسال می‌کند. استاد اسمعیلو مدل‌های مختلف چیدمان را تحلیل می‌کنند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدل رودررو یا متقابل (Opposite Arrangement):</strong> میزهای مستطیل‌شکل که رئیس هیئت ایرانی در مقابل رئیس هیئت خارجی می‌نشیند؛ این مدل نماد مذاکرات رسمی، چانه‌زنی و شفافیت است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدل پهلوسان یا مشارکتی (Side-by-Side Arrangement):</strong> نشستن در کنار یکدیگر روی مبل‌های راحتی یا در کنار میزهای گرد؛ نماد دوستی، توافق نهایی، هم‌افزایی و پروژه‌های مشترک.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">موقعیت صندلی قدرت (The Power Seat):</strong> صندلی‌ای که پشت به دیوار محکم (و نه پشت به درِ ورودی یا پنجره‌های باز) قرار دارد؛ این موقعیت تسلط کامل بر کل فضا، درب ورود و افراد حاضر را به مدیر اعطا می‌کند.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۵. آداب، ارزش‌گذاری و قوانین گمرکی هدایای تجاری (Corporate Gift-Giving Etiquette)</h2>
+هدایای تجاری در سطح بین‌المللی، ابزاری ظریف برای اعتمادسازی، تثبیت روابط و قدردانی است؛ اما اگر بدون رعایت اتیکت انجام شود، می‌تواند به اتهام رشوه، توهین فرهنگی یا بی‌احتیاطی مالی منجر شود. نکات کلیدی استاد در این حوزه عبارتند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ارزش پولی هدیه:</strong> هدیه تجاری نباید به گونه‌ای باشد که شائبه رشوه یا تلاش برای خرید نظر طرف مقابل را ایجاد کند. هدیه باید نفیس، دارای اصالت فرهنگی (مثل صنایع‌دستی فاخر، تابلوفرش، قلم‌کاری)، اما با ارزش ریالی معقول و استاندارد باشد.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پرهیز از تابوها و قوانین مذهبی/فرهنگی:</strong> </li>
+  * به عنوان مثال، هدیه‌دادن مشروبات الکلی، محصولات چرمی خوک در کشورهای اسلامی، اشیاء نوک‌تیز (چاقو یا قیچی به معنای بریدن روابط در فرهنگ شرق آسیا)، یا ساعت در برخی فرهنگ‌ها (به معنای شمارش معکوس مرگ یا پایان عمر در چین) ممنوع است.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">زمان و مکان تقدیم هدیه:</strong> هدیه معمولاً در پایان جلسات رسمی، در ضیافت‌های ناهار یا شام، و در حضور اعضای کلیدی تیم تقدیم می‌شود. نحوه باز کردن هدیه نیز تابع فرهنگ طرف مقابل است (در برخی فرهنگ‌ها بلافاصله باز می‌شود تا تشکر شود، در برخی دیگر برای جلوگیری از شرمندگی در خلوت باز می‌شود).</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۶. پروتکل‌های خودروی تشریفات و سوار و پیاده شدن (Chauffeur-Driven & Fleet Protocols)</h2>
+خودروی تشریفات، پیشانیِ استقبال از مهمانان ویژه، سفرا و مدیران ارشد است. رعایت دقیق پروتکل‌های خودرویی، نشانه حرفه‌ای‌گری تیم تشریفات است:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ترتیب نشستن در خودرو (Seating Order):</strong></li>
+  * <strong class="text-slate-900 font-bold">اگر خودرو راننده شخصی دارد (Chauffeur-driven):</strong> امن‌ترین و مهم‌ترین صندلی، صندلی عقب سمت راست (پشت سر راننده یا صندلی مقابل راننده بسته به جهت رانندگی) است. دومین جایگاه مهم، صندلی عقب سمت چپ است. صندلی وسط عقب، کم‌اهمیت‌ترین جایگاه است و صندلی جلو کنار راننده مطلقاً برای محافظان، مترجمان یا نفرات رده‌پایین‌تر است.
+  * <strong class="text-slate-900 font-bold">اگر خود مدیر رانندگی می‌کند:</strong> مهمان ویژه باید روی صندلی جلو کنار راننده بنشیند تا احساس کند همراه و هم‌سطح میزبان است.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">استقبال و بدرقه در خودرو:</strong> در هنگام سوار شدن، درِ خودرو توسط تیم تشریفات باز شده و مهمان هدایت می‌شود. مهم‌ترین فرد همواره آخرین نفری است که سوار می‌شود و اولین نفری است که پیاده می‌شود.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">ظرایف رفتاری، خطاهای مرگبار تشریفاتی (Faux Pas) و پرونده‌های میدانی استاد اسمعیلو</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو برای ملموس‌تر شدن مباحث، به تحلیل خطاهای رایج مدیران در سازمان‌های ایرانی پرداخته و پرونده‌های میدانی متعددی را مطرح می‌کنند:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">افتادگی پرچم ملی در جلسات رسمی:</strong> در یکی از شرکت‌های بزرگ صنعتی، به دلیل عدم استفاده از پایه‌های استاندارد و عدم تنظیم ارتفاع، پرچم ملی در جریان جلسه هیئت‌مدیره با مدیران خارجی روی زمین افتاد. این حادثه به قدری برای هیئت خارجی گران تمام شد که جلسه را به حالت تعلیق درآوردند و تا عذرخواهی رسمی کتبی، حاضر به مذاکره مجدد نشدند.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اشتباه مرگبار در هدیه‌دادن به شرکای تجاری چینی:</strong> مدیری ناآگاه به اتیکت بین‌المللی، به یک شرکای تجاری ارشد چینی در جریان یک قرارداد چندمیلیون‌دلاری، ساعت مچی هدیه داد. در فرهنگ چین، کلمه «ساعت دادن» هم‌آوا با عبارت «رفتن به مراسم تدفین» است! این هدیه به عنوان نفرین و بی‌احترامی تلقی شد و قرارداد امضا نشد.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نشستن روی صندلی اشتباه در خودروی تشریفات:</strong> در جریان سفر وزیر اقتصاد یک کشور خارجی به ایران، مدیر تشریفات داخلی به اشتباه مهمان را در صندلی جلو یا صندلی عقب سمت چپ نشاند. این خطای فاحش پروتکلی، موجب تکدر خاطر تیم دیپلماتیک مهمان و ارسال یادداشت اعتراضی رسمی شد.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">بی‌توجهی به حریم شخصی و جایگاه مدیران ارشد در بازدیدهای میدانی:</strong> مدیر جوانی که اصول تشریفات بازدیدهای صنعتی را نمی‌دانست، در جریان بازدید مدیرعامل هلدینگ از کارخانه، جلوتر از مدیرعامل راه افتاد و درهای کارخانه را به روی او باز نکرد. این حرکت به عنوان بی‌ادبی و خودمحوری تلقی شد و ارتقای شغلی آن مدیر را سال‌ها به تعویق انداخت.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جدول ماتریسی پروتکل‌ها، استانداردها و بایدها و نبایدها</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">| موقعیت / حوزه تشریفاتی | بایدها (Dos) | نبایدها (Don'ts) | رفتار ارجح / استاندارد طلایی |
+| :--- | :--- | :--- | :--- |
+| <strong class="text-slate-900 font-bold">جانمایی پرچم‌ها</strong> | هم‌ترازی ارتفاع، تقارن زوج، قرارگیری پرچم میزبان در سمت راست ناظر | استفاده از پرچم کهنه، کوچکتر بودن پرچم مهمان، تماس پرچم با زمین | پرچم میزبان در سمت راست (موقعیت افتخار)، سایر پرچم‌ها به ترتیب الفبا |
+| <strong class="text-slate-900 font-bold">چیدمان صندلی مذاکره</strong> | صندلی قدرت پشت به دیوار، دید کامل به در، تقارن صندلی‌های هیئت‌ها | قرار دادن مدیر پشت به پنجره باز یا درِ ورودی، عدم تقارن تعداد صندلی‌ها | رئیس هیئت در مرکز، معاونین در دو طرف به ترتیب رتبه و تقدم |
+| <strong class="text-slate-900 font-bold">هدایای تجاری</strong> | نفیس، دارای اصالت فرهنگی، ارزش معقول و سازگار با قوانین ضدفساد | هدیه گران‌قیمتِ شائبه‌برانگیز، اشیاء نوک‌تیز، الکل، ساعت برای چینی‌ها | صنایع‌دستی فاخر، تابلوفرش، خودکارهای کلکسیونیِ لوگودارِ ظریف |
+| <strong class="text-slate-900 font-bold">خودروی تشریفات</strong> | صندلی عقب سمت راست برای مهمان ویژه، باز کردن در توسط تشریفات | نشاندن مهمان ویژه در صندلی وسط عقب یا جلو (اگر راننده شخصی است) | باز کردن در، کمک به پیاده شدن، تقدم در سوار شدن و پیاده شدن |</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جعبه‌ابزار و چک‌لیست کاربردی مدیران و رهبران کسب‌وکار (Actionable Protocol Playbook)</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">این چک‌لیست، ابزار عملیاتی و گام‌به‌گام برای مدیران است تا پیش از برگزاری هر رویداد بین‌المللی یا جلسه رسمی، از انطباق کامل با پروتکل‌ها اطمینان حاصل کنند:</p>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">بررسی پیش از رویداد (Pre-Event Audit):</strong></li>
+  * آیا سمت‌وسوی پرچم‌ها، ابعاد و ارتفاع آن‌ها با استانداردهای رسمی هم‌خوانی دارد؟
+  * آیا تعداد و رتبه صندلی‌ها در اتاق جلسات بر اساس اصول «تقدم و رتبه» (Precedence) چیده شده است؟
+  * آیا موقعیت صندلی مدیرعامل و مهمان ویژه (Power Seat) به درستی جانمایی شده است؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">مدیریت ناوگان و خودروی تشریفات (Fleet & Chauffeur Check):</strong></li>
+  * آیا راننده لباس فرم کامل و رسمی به تن دارد؟
+  * آیا صندلی عقب سمت راست برای مهمان اصلی آماده‌سازی شده است؟
+  * آیا هماهنگی برای باز کردن درِ خودرو توسط تیم تشریفات انجام شده است؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">پروتکل هدایای تجاری (Gift Protocol Checklist):</strong></li>
+  * آیا هدیه انتخابی با فرهنگ، مذهب و قوانین کشور مبدأ/مقصد هم‌خوانی دارد؟
+  * آیا ارزش مالی هدیه در حد استاندارد سازمانی و به دور از شائبه رشوه است؟
+  * آیا نحوه بسته‌بندی هدیه (کادوپیچی در رنگ‌های محترم و پرهیز از رنگ‌های نامبارک در آن فرهنگ) بررسی شده است؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">رفتارشناسی و دیسیپلین فردی (Executive Presence):</strong></li>
+  * تسلط بر نحوه معرفی دیگران (معرفی فرد رده‌پایین‌تر به فرد رده‌بالاتر، معرفی فرد جوان‌تر به مسن‌تر).
+  * رعایت دقیق اصول دست دادن (با اجازه فرد ارشد، محکم، کوتاه و همراه با تماس چشمی).
+  * اجتناب از حرکات بدنی اضافی، ژست‌های تدافعی یا لمس کردن غیرضروری افراد در فرهنگ‌های حساس.
+          </div>
+        </div>
+        
+    </div>
+
+    <!-- Tab 2: Master Handbook -->
+    <div id="tab-content-handbook" class="tab-view hidden">
+      <div class="bg-white rounded-3xl border border-stone-200 shadow-sm p-8 md:p-12 prose-custom max-w-4xl mx-auto">
+        <h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">درسنامه جامع و راهنمای جامع بیزنس اتیکت و تشریفات تجاری</h1>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">مرجع کاربردی رفتار حرفه‌ای، آداب معاشرت تجاری و تشریفات بین‌المللی برای مدیران ارشد</h2>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">دوره عالی مدیریت کسب‌وکار (MBA - کد 0410) | دانشکده اقتصاد دانشگاه تهران</h3>
+<strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو  
+<strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی راهبردی:</strong> پارسا رضائی
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">فهرست فصول و نقشه‌ی کلان محتوا</h2>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فصل ۱:</strong> مبانی، تعاریف و اصول بنیادین اتیکت تجاری، استانداردهای رفتار حرفه‌ای و تصویر سازمانی</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فصل ۲:</strong> پروتکل‌های جلسات رسمی تجاری، آداب معارفه، تبادل کارت ویزیت و مراودات سازمانی</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فصل ۳:</strong> زبان بدن، ارتباطات غیرکلامی، پیام‌های ادراکی و اتیکت ارتباطات دیجیتال</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فصل ۴:</strong> اتیکت ضیافت‌های تجاری و میز غذا (Dining Etiquette) و کدهای پوشش حرفه‌ای (Dress Code)</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فصل ۵:</strong> تشریفات بین‌المللی و دیپلماتیک (Protocol)، تقدم پرچم‌ها، آداب هدایای تجاری و خودروی تشریفات</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پیوست ویژه:</strong> ماتریس جامع استانداردهای کدهای پوشش (Dress Code) و آداب ضیافت‌ها</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">فصل ۱: مبانی، تعاریف و اصول بنیادین اتیکت تجاری، رفتار حرفه‌ای و برند شخصی</h1>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">شناسنامه رسمی جلسه</h1>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">نام درس:</strong> بیزنس اتیکت و تشریفات تجاری</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">عنوان جلسه:</strong> جلسه اول: مبانی، تعاریف و اصول بنیادین اتیکت تجاری، استانداردهای رفتار حرفه‌ای و تصویر سازمانی</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">دوره:</strong> دوره عالی مدیریت کسب‌وکار (MBA - کد 0410) دانشکده اقتصاد دانشگاه تهران</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی:</strong> پارسا رضائی</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">پیام کلیدی و ایده محوری جلسه (Executive Core Message)</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">اتیکت تجاری (Business Etiquette) و تشریفات سازمانی، برخلاف تصور عموم، مجموعه‌ای از تشریفات خشک، ظاهری یا تشریفاتیِ بی‌اصالت نیستند؛ بلکه <strong class="text-slate-900 font-bold">ستون فقرات اعتبار تجاری، ابزار اصلی مهندسی اعتماد در سطح ملی و بین‌المللی، و کاتالیزور کلیدی در بستن قراردادهای کلان اقتصادی</strong> به شمار می‌روند. در فضای کسب‌وکار مدرن، دانش فنی (Hard Skills) و تخصص، تنها بلیت ورود به بازار است؛ اما آنچه تمایز ایجاد می‌کند، میزان تسلط بر رفتار حرفه‌ای، هنر حضور مؤثر، زبان بدن، اصول تقدم و تأخر، آداب معاشرت در جلسات و ساختن یک <strong class="text-slate-900 font-bold">تصویر سازمانی (Corporate Identity) و برند شخصی (Personal Branding)</strong> بی‌نقص است.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو با تأکید بر اینکه <strong class="text-slate-900 font-bold">«نظم و انضباط رفتاری، مقدم بر دانش فنی است»</strong>، یادآور می‌شوند که کوچک‌ترین خطای تشریفاتی در یک مذاکره سطح بالا، می‌تواند ماه‌ها تلاش بازاریابی و فروش را در کسری از ثانیه نابود کند. اتیکت، زبان مشترک حرفه‌ای‌هاست که به ما می‌آموزد چگونه در هر موقعیت شغلی، از یک احوال‌پرسی ساده تا مدیریت جلسات هیئت‌مدیره و ضیافت‌های بین‌المللی، با اقتدار، وقار، تسلط و احترام متقابل ظاهر شویم.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">تشریح موشکافانه مفاهیم و مباحث علمی</h1>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۱. تعریف جامع اتیکت تجاری و جایگاه آن در سازمان‌های پیشرو</h3>
+اتیکت تجاری عبارت است از مجموعه قوانین، اصول، هنجارها و کدهای رفتاری مکتوب و نامکتوبی که چارچوب تعاملات انسان‌ها را در سازمان‌ها، شرکت‌ها، جلسات مذاکره و مجامع حرفه‌ای تعیین می‌کند. این حوزه به مدیران و کارشناسان می‌آموزد که چگونه رفتارهای فردی خود را با استانداردهای جهانی تطبیق دهند تا بیشترین تأثیر مثبت را بر مخاطبان، شرکای تجاری و مشتریان بگذارند.
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۲. تقدم و تأخر در اتیکت سازمانی (Hierarchy & Precedence)</h3>
+یکی از ارکان بنیادین در تشریفات و بیزنس اتیکت، رعایت دقیق اصل «تقدم و تأخر» است. این اصل مشخص می‌کند که در موقعیت‌های مختلف (ورود به اتاق، خروج، نشستن، معرفی کردن، ارائه‌ها، حرکت در راهروها و آسانسورها)، چه کسی باید مقدم داشته شود.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">قاعده طلایی:</strong> در دنیای تجارت مدرن، اتیکت تجاری برخلاف سنت‌های قدیمی، مبتنی بر <strong class="text-slate-900 font-bold">موقعیت سازمانی، جایگاه شغلی، نقش میزبان و میهمان، و جنسیت</strong> تنظیم می‌شود؛ با این حال، احترام به ارشدیت سازمانی، سابقه و جایگاه حرفه‌ای همواره در اولویت است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">قواعد آسانسور:</strong> در جابجایی با آسانسور، فردی که به دکمه‌ها دسترسی دارد یا فرد دارای جایگاه پایین‌تر زودتر وارد می‌شود تا فضا را مدیریت کند، اما هنگام خروج، افراد ارشدتر یا بانوان مقدم هستند (البته بسته به شرایط ایمنی و نوع آسانسور).</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">قواعد راهروها و پله‌ها:</strong> در راهروها، فرد باارزش‌تر یا مهمان در سمت امن‌تر (معمولاً سمت دیوار یا سمت راست میزبان) حرکت می‌کند. هنگام بالا رفتن از پله‌ها، میزبان یا فرد راهنما یک پله جلوتر حرکت می‌کند تا مسیر را هدایت کند و هنگام پایین آمدن، برای حفاظت از فرد مهمان یا ارشد، یک پله پایین‌تر قرار می‌گیرد.</li>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۳. هنر معرفی و آداب دست دادن (Introduction & Handshaking Protocol)</h3>
+معرفی کردن افراد به یکدیگر در محیط‌های تجاری دارای فرمول‌های ریاضی‌گونه‌ای است که تخطی از آن‌ها بی‌ادبی تلقی می‌شود:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">اصل کلیدی در معرفی:</strong> همیشه فرد باجایگاه پایین‌تر یا فرد جدیدالورود به فرد ارشدتر یا میزبان معرفی می‌شود (یعنی نام فرد ارشد ابتدا برده می‌شود تا توجه او جلب شود).</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">دست دادن (The Professional Handshake):</strong> دست دادن اولین و قوی‌ترین ابزار انتقال انرژی و اقتدار در بیزنس است. ویژگی‌های یک دست دادن استاندارد تجاری:</li>
+    *   محکم، قاطع، اما نه له کننده.
+    *   مدت زمان: بین ۲ تا ۳ ثانیه همراه با تماس چشمی مستقیم (Eye Contact) و لبخند حرفه‌ای.
+    *   ابتکار عمل در دست دادن: همیشه حق تقدم با فرد ارشدتر، میزبان یا بانوان است (خانم‌ها در محیط کار می‌توانند پیش‌قدم شوند یا دست بدهند، اما منتظر ماندن برای تعیین تکلیف طرف مقابل نیز نشان‌دهنده تسلط بر تشریفات است).
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۴. زبان بدن، ظاهر و پوشش حرفه‌ای (Professional Appearance & Body Language)</h3>
+تصویر سازمانی یک شرکت، برآیند تک‌تک افراد آن سازمان است. ظاهر فرد، سفیر غیرمکتوب سازمان اوست:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">پوشش رسمی و بیزنس استندارد (Business Formal/Casual):</strong> لباس‌ها باید اتوکشیده، متناسب با فرم بدن، تمیز و با رنگ‌های رسمی (سرمه‌ای، خاکستری تیره، زغالی، سفید و آبی ملایم) باشند. استفاده از عطر و ادکلن باید بسیار ملایم و کنترل‌شده باشد؛ به گونه‌ای که تنها در فاصله بسیار نزدیک استشمام شود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">  <strong class="text-slate-900 font-bold">زبان بدن در جلسات:</strong> نشستن کاملاً صاف، متمایل به جلو (نشان‌دهنده اشتیاق و توجه)، خودداری از دست‌به‌سینه نشستن (حالت دفاعی)، کنترل حرکات دست و عدم استفاده بیش از حد از ابزارها (مانند خودکار یا گوشی) در حین صحبت دیگران.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">ظرایف رفتاری، خطاهای مرگبار تشریفاتی (Faux Pas) و پرونده‌های میدانی</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو در طول جلسه با ذکر پرونده‌های واقعی از شرکت‌های بزرگ و جلسات مذاکره بین‌المللی، خطاهای مهلکی را که مدیران مرتکب می‌شوند، واکاوی می‌کنند:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">خطای مرگبار عدم رعایت زمان‌بندی (Chronemics Faux Pas):</strong></li>
+    در بسیاری از شرکت‌های ایرانی، تأخیر در جلسات به یک هنجار تبدیل شده است؛ در حالی که در اتیکت بین‌المللی و بیزنس پیشرفته، <strong class="text-slate-900 font-bold">تأخیر یعنی بی‌رسمی شمردن وقت طرف مقابل و بی‌ارزش کردن قرارداد.</strong> استاد تأکید می‌کنند که رسیدن ۵ الی ۱۰ دقیقه پیش از شروع جلسه به محل، حداقلِ احترام به میزبان یا مشتری است.
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">اشتباهات فاحش در ضیافت‌های کاری (Business Dining Etiquette):</strong></li>
+    بسیاری از قراردادهای چندمیلیاردی در میزهای ناهار یا شام کاری منعقد یا فسخ می‌شوند. یکی از خطاهای رایج، شروع به خوردن غذا پیش از آنکه میزبان یا مهمان ویژه شروع کند، یا صحبت کردن با دهان پر، یا بدرفتاری با گارسون و پرسنل رستوران است. استاد اسمعیلو متذکر می‌شوند که <strong class="text-slate-900 font-bold">«رفتار شما با زیردستان و پرسنل خدماتی، آینه تمام‌نمای شخصیت حرفه‌ای شماست»</strong> و شرکای تجاری با دقت این رفتارها را زیر نظر دارند.
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">مدیریت تلفن همراه در جلسات رسمی:</strong></li>
+    گذاشتن گوشی روی میز (حتی با صفحه رو به پایین) پیامی منفی به مخاطب ارسال می‌کند با این مضمون که: *"شما در اولویت اول من نیستید و ممکن است اتفاق مهم‌تری رخ دهد."* پروتکل استاندارد این است که گوشی کاملاً سایلنت و داخل کیف یا جیب قرار گیرد.
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جدول ماتریسی پروتکل‌ها، استانداردها و بایدها و نبایدها</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">| موقعیت تجاری | رفتار ارجح و استاندارد (بایدها) | خطاهای رایج و ممنوعه (نبایدها) | تقدم / اولویت |
+| :--- | :--- | :--- | :--- |
+| <strong class="text-slate-900 font-bold">ورود به اتاق جلسه</strong> | میزبان جلوتر در مسیر راهرو راهنمایی می‌کند؛ در اتاق‌های مهم، در ابتدا توسط میزبان باز می‌شود. | ورود بی‌هماهنگ، نشستن پیش از تعارف میزبان. | حق تقدم ورود با مهمان و افراد ارشد است. |
+| <strong class="text-slate-900 font-bold">دست دادن در بیزنس</strong> | تماس چشمی، لبخند، فشردن قاطع و کوتاه (۲-۳ ثانیه). | دست دادن شل و بی‌روح، دست دادن دو دستی (مگر در دیپلماسی خاص)، امتناع از دست دادن بدون دلیل موجه پزشکی. | حق تقدم با فرد ارشد، میزبان یا بانوان است. |
+| <strong class="text-slate-900 font-bold">معرفی افراد</strong> | بردن نام فرد ارشد یا میزبان ابتدا، سپس معرفی فرد جدید. | معرفی با لحن عامیانه، استفاده از لقب‌های نامتعارف، فراموش کردن نام افراد کلیدی. | فرد پایین‌رتبه به فرد ارشد معرفی می‌شود. |
+| <strong class="text-slate-900 font-bold">پوشش و استایل</strong> | لباس رسمی متناسب با فرهنگ سازمان، کفش واکس‌زده، ناخن‌های مرتب. | لباس‌های بیش از حد اسپرت در جلسات رسمی، رنگ‌های تند و زننده، زیورآلات بیش از حد. | همواره متناسب با استانداردهای Corporate Identity. |
+| <strong class="text-slate-900 font-bold">آداب پذیرایی و رستوران</strong> | تشکر از میزبان، رعایت نحوه صحیح استفاده از کارد و چنگال، توجه به پرسنل. | آرنج روی میز، خلال کردن دندان سر میز، بلند کردن صدا در رستوران‌های شیک. | میزبان سفارش‌دهنده اول و پرداخت‌کننده نهایی است. |</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جعبه‌ابزار و چک‌لیست کاربردی مدیران و رهبران کسب‌وکار (Actionable Protocol Playbook)</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">برای پیاده‌سازی بی‌نقص اصول بیزنس اتیکت در سازمان، رعایت گام‌به‌گام چک‌لیست زیر الزامی است:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">آمادگی پیش از جلسه (Pre-Meeting Protocol):</strong></li>
+    *   بررسی دقیق لیست حاضران، سمت‌ها، و پیشینه شرکت‌های مقابل (جهت رعایت دقیق القاب و نام‌ها).
+    *   تنظیم لباس، ظاهر و اطمینان از به همراه داشتن کارت ویزیت استاندارد (تمیز، بدون خط‌خوردگی، دارای اطلاعات به‌روز).
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">پروتکل تبادل کارت ویزیت (Business Card Etiquette):</strong></li>
+    *   کارت ویزیت با هر دو دست و به گونه‌ای تقدیم شود که متن آن رو به روی گیرنده باشد تا بلافاصله بتواند آن را بخواند.
+    *   پس از دریافت کارت، چند ثانیه به آن نگاه کرده، نام فرد را به زبان بیاورید و آن را با احترام روی میز یا در جاکارتی مخصوص قرار دهید (هرگز کارت را بلافاصله در جیب پشت شلوار یا کیف بدون نگاه کردن قرار ندهید).
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">مدیریت ارتباطات کلامی و غیرکلامی در مذاکره:</strong></li>
+    *   استفاده از صدای رسا، لحن محترمانه و پرهیز از قطع کردن صحبت دیگران.
+    *   رعایت حریم شخصی (Personal Space)؛ فاصله استاندارد در بیزنس بین ۱.۲ تا ۲ متر است.
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"> <strong class="text-slate-900 font-bold">آداب خروج و پیگیری پس از جلسه (Post-Meeting Etiquette):</strong></li>
+    *   جمع‌آوری منظم وسایل، تشکر مجدد از میزبان/مهمان، و بدرقه تا درب خروج یا آسانسور.
+    *   ارسال ایمیل یا پیام تشکر رسمی (Follow-up) ظرف مدت ۲۴ ساعت آینده جهت تثبیت تصویر حرفه‌ای سازمان در ذهن مخاطب.
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">فصل ۲: پروتکل‌های جلسات رسمی تجاری، آداب معارفه، تبادل کارت ویزیت و مراودات سازمانی</h1>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950"><strong class="text-slate-900 font-bold">سند جامع آموزشی و پروتکل‌های اجرایی دوره MBA دانشکده اقتصاد دانشگاه تهران</strong></h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۱. شناسنامه رسمی جلسه</strong></h3>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نام درس:</strong> بیزنس اتیکت و تشریفات تجاری (Business Etiquette & Corporate Protocol)</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">عنوان جلسه:</strong> جلسه دوم: پروتکل‌های جلسات رسمی تجاری، آداب معارفه، تبادل کارت ویزیت و مراودات اداری</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">دوره:</strong> دوره عالی مدیریت کسب‌وکار (MBA - کد ۰۴۱۰)</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">محل برگزاری:</strong> دانشکده اقتصاد دانشگاه تهران</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی:</strong> پارسا رضائی</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۲. پیام کلیدی و ایده محوری جلسه (Executive Core Message)</strong></h3>
+<p class="text-slate-700 text-sm leading-relaxed my-2">در دنیای تجارت مدرن، محصولات عالی و برنامه‌های استراتژیک بی‌نقص، بدون پشتوانه «اتیکت حرفه‌ای» و «پروتکل‌های دقیق تشریفاتی»، محکوم به شکست یا حداقل عدم اعتماده‌سازی پایدار هستند. اتیکت تجاری در نگاه استاد اسمعیلو، مجموعه‌ای از تعارفات بی‌مورد یا قواعد دست‌وپاگیر نیست؛ بلکه <strong class="text-slate-900 font-bold">«زبان بدن سازمانی»، «معماریِ اعتبار در نگاه اول» و «سیستم دفاعی در برابر بحران‌های ارتباطی»</strong> است.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">ایده محوری جلسه بر این اصل استوار است که مدیران و مذاکره‌کنندگان ارشد، پیش از آنکه با کلام خود قضاوت شوند، با ظرایف رفتاری، نحوه ایستادن، ورود به اتاق جلسات، مکان‌یابی صندلی‌ها، نحوه تبادل کارت ویزیت و حتی نوع دست دادن خود قضاوت می‌شوند. عدم تسلط بر این پروتکل‌ها در سطح ملی و بین‌المللی می‌تواند منجر به از دست رفتن قراردادهای میلیون دلاری، تخریب وجهه سازمانی و ایجاد سوءتفاهم‌های جبران‌ناپذیر شود. بنابراین، تسلط بر اتیکت، یک مزیت رقابتی لوکس نیست، بلکه یک <strong class="text-slate-900 font-bold">«الزام حیاتی بقا و توسعه کسب‌وکار»</strong> است.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۳. تشریح موشکافانه مفاهیم و مباحث علمی مطرح‌شده توسط استاد</strong></h3>
+<p class="text-slate-700 text-sm leading-relaxed my-2">#### <strong class="text-slate-900 font-bold">الف) پروتکل ورود به جلسه، مکان‌یابی و میزبان‌شناسی</strong>
+یکی از نخستین چالش‌های مدیران در جلسات رسمی، نحوه ورود به اتاق جلسه و نشستن در جایگاه مناسب است. استاد اسمعیلو با طرح یک پرونده واقعی از دعوت‌نامه‌های رسمی تأکید می‌کند که پیش از برگزاری هر جلسه، باید مکان دقیق نشستن طرفین بر اساس دعوت‌نامه مشخص شده باشد. 
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فرآیند ورود و استقرار:</strong> وقتی به دَم درِ اتاق جلسات یا دفتر میزبان می‌رسید، نباید بلافاصله و با عجله وارد شوید یا بی‌گدار به آب بزنید. ابتدا باید منتظر بمانید تا میزبان شما را راهنمایی کند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">در زدن و ورود:</strong> در زدن به اتاق جلسات رسمی، قواعد خاص خود را دارد. ورود به اتاق میزبان نیازمند هماهنگی و تسلط بر فضای فیزیکی است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مکان‌یابی میزبان و مهمان:</strong> مهمان همیشه در سمتی می‌نشیند که تسلط بهتر و دید مناسب‌تری داشته باشد، اما صندلی ریاست یا صندلی اصلی متعلق به میزبان (یا فردی که دعوت‌کننده اصلی است) می‌باشد.</li></p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">#### <strong class="text-slate-900 font-bold">ب) پروتکل‌های استقبال و معارفه (Introduction & Greeting Protocols)</strong>
+آداب معارفه در سطح سازمانی از حساس‌ترین بخش‌های پروتکل تجاری است. استاد اسمعیلو در این بخش به تشریح رتبه‌بندی و هرم تقدم و تأخر در معارفه می‌پردازد:
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">قاعده طلایی تقدم در معرفی:</strong> در دنیای اتیکت تجاری، <strong class="text-slate-900 font-bold">«همیشه فردِ دارای مقامِ پایین‌تر به فردِ دارای مقامِ بالاتر معرفی می‌شود»</strong> یا به بیان دقیق‌تر، نام فرد دارای جایگاه ارشدتر ابتدا بر زبان آورده می‌شود تا به او ادای احترام گردد. (مثلاً: «جناب دکتر! اجازه دهید آقای مهندس رضائی، مدیر ارشد استراتژیک مجموعه را به حضورتان معرفی کنم»).</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدیریت توازن جنسیتی و سنی در معارفه رسمی:</strong> در محیط‌های مدرن تجاری بین‌المللی، اولویت مقام سازمانی بر جنسیت مقدم است؛ یعنی مدیر خانم یا آقایی که جایگاه سازمانی بالاتری دارد، ارشد محسوب می‌شود، مگر در پروتکل‌های دیپلماتیک خاص سنتی که احترام به سن و سال یا جنسیت مطرح باشد که در بیزنس مدرن، <strong class="text-slate-900 font-bold">«مقام سازمانی»</strong> حاکم مطلق است.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">آداب دست دادن (Handshake Protocol):</strong> </li>
+   * ابتکار عمل در دست دادن همیشه با <strong class="text-slate-900 font-bold">فردِ دارای مقام بالاتر، میزبان یا شخصِ دعوت‌کننده</strong> است. تا زمانی که فرد ارشد دست خود را جلو نیاورده است، نباید پیش‌دستی کنید.
+   * دست دادن باید محکم (Firm)، عمودی، بدون فشردن بیش از حد استخوان‌های دست و همراه با تماس چشمی (Eye Contact) باشد. دست دادنِ شل، بی‌روح و اصطلاحاً «ماهی مرده»، نشانه عدم اعتمادبه‌نفس یا عدم اشتیاق است.
+   * زمان دست دادن بین ۲ تا ۳ ثانیه است و همراه با یک لبخند حرفه‌ای و ملایم می‌باشد.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">#### <strong class="text-slate-900 font-bold">ج) پروتکل تبادل کارت ویزیت (Business Card Protocol - Meishi Exchange)</strong>
+تبادل کارت ویزیت در تجارت جهانی (به‌ویژه در فرهنگ‌های آسیایی و شرقی مانند ژاپن و کره، و همچنین در پروتکل‌های سطح بالای غربی) یک <strong class="text-slate-900 font-bold">«تشریفات مقدس و بازنمایی شخصیتِ حرفه‌ای فرد»</strong> است. استاد اسمعیلو نکات زیر را به عنوان خطوط قرمز این حوزه مطرح می‌کنند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نحوه ارائه کارت:</strong> کارت ویزیت هرگز نباید با یک دست، به‌صورت بی‌حوصله، چروک یا از جیب پشت شلوار خارج شود! کارت باید با <strong class="text-slate-900 font-bold">دو دست</strong> و از لبه‌های بالایی کارت گرفته شود، به‌گونه‌ای که نام و لوگوی شرکت رو به روی مخاطب باشد تا او بتواند بلافاصله آن را بخواند. همراه با ارائه کارت، باید کمی خم شوید (مخصوص پروتکل‌های شرقی یا احترام رسمی) و نام خود را به همراه سمت سازمانی به‌وضوح اعلام کنید.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نحوه دریافت کارت:</strong> کارت طرف مقابل را حتماً با <strong class="text-slate-900 font-bold">دو دست</strong> بگیرید. شست و انگشت اشاره هر دو دست باید لبه‌های کارت را لمس کند؛ مراقبت کنید انگشتتان روی لوگو یا نام مدیرعامل نیفتد! </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">بررسی و احترام به کارت دریافتی:</strong> پس از دریافت کارت، بلافاصله آن را در جیب خود پرتاب نکنید! حداقل ۵ تا ۱۰ ثانیه به اطلاعات آن نگاه کنید، نام طرف مقابل را با صدای آهسته یا در ذهن مرور کنید، و سپس آن را با احترام روی میز جلسه (در سمت راست خود یا روی جا کارتیِ چرمیِ اختصاصی) قرار دهید. در طول جلسه به هیچ عنوان روی کارت ویزیت یادداشت‌برداری نکنید؛ این کار از نظر اتیکت بین‌المللی معادل توهین به هویت حرفه‌ای طرف مقابل است.</li></p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">#### <strong class="text-slate-900 font-bold">د) لحن، زبان بدن و مراودات کلامی در جلسات اداری</strong>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">لحن کلام (Tone of Voice):</strong> تن صدا در جلسات رسمی باید کنترل‌شده، رسا، با ریتم متعادل و به دور از هیجان‌زدگی باشد. تن صدای بیش از حد بلند نشانه پرخاشگری و تن صدای بسیار پایین نشانه ضعف است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فاصله فرمی (Proxemics):</strong> رعایت حریم شخصی و فاصله فیزیکی در جلسات (بین ۴۵ تا ۱۲۰ سانتیمتر در فضای اداری رسمی) بسیار حیاتی است. تجاوز به این حریم بدون دعوت، ایجاد حس ناامنی می‌کند.</li></p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۴. ظرایف رفتاری، خطاهای مرگبار تشریفاتی (Faux Pas) و پرونده‌های میدانی استاد اسمعیلو</strong></h3>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو در این بخش با ذکر خاطرات و پرونده‌های واقعی از جلسات مشاوره خود به سازمان‌های بزرگ، به تحلیل خطاهای مرگباری می‌پردازند که مدیران ناآگاه مرتکب می‌شوند:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پرونده مدیرعامل بی‌مبالات در تبادل کارت ویزیت:</strong></li>
+   * <strong class="text-slate-900 font-bold">ماجرا:</strong> در یک جلسه مذاکره بین‌المللی میان یک هلدینگ ایرانی و شرکای اروپایی، مدیرعامل ایرانی برای صرفه‌جویی در زمان یا به دلیل عدم آموزش، کارت ویزیت طرف مقابل را با یک دست گرفت، نگاهی اجمالی به آن انداخت و بلافاصله آن را گذاشت توی جیب شلوارش و روی آن با خودکار یک عدد یادداشت کرد! 
+   * <strong class="text-slate-900 font-bold">نتیجه فاجعه‌بار:</strong> شریک تجاری اروپایی پس از جلسه، طی نامه‌ای رسمی به هیئت مدیره، اعلام کرد شخصیتی که به هویت تجاری طرف مقابل احترام نمی‌گذارد و کارت ویزیت را تحقیر می‌کند، شریک قابل اعتمادی برای قراردادهای بلندمدت نیست. معامله در نطفه خفه شد!
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">خطای مرگبار تقدم در ورود به اتاق:</strong></li>
+   * <strong class="text-slate-900 font-bold">ماجرا:</strong> در بازدید معاون وزیر از یک سازمان، مدیرکل میزبان به محض رسیدن به درِ اتاق جلسه، پیش‌دستی کرد و به عنوان صاحب‌خانه اول وارد شد و مهمان عالی‌رتبه را پشت سر خود نگه داشت!
+   * <strong class="text-slate-900 font-bold">تحلیل استاد:</strong> در پروتکل تشریفات، مهمان عالی‌رتبه و فرد ارشد <strong class="text-slate-900 font-bold">همیشه در ورود به اتاق (برای نخستین بار) یا خروج از آن، مقدم است</strong>، مگر اینکه میزبان بخواهد راه را نشان دهد (Guide کند) که در این صورت میزبان نیم قدم جلوتر و سمت راست حرکت می‌کند تا مسیر را هدایت نماید. پیش افتادن میزبان در ورود به سالن اصلی، یک خطای کلاسیک تشریفاتی است.
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">افتادن کارت ویزیت روی زمین:</strong></li>
+   * اگر به هر دلیلی کارت ویزیت طرف مقابل از دست شما روی زمین افتاد، این یک موقعیت بحرانی تشریفاتی (Faux Pas) است. شما نباید با بی‌حوصلگی با پا آن را شوت کنید یا دست‌پاچه شوید؛ بلکه باید بی‌درنگ خم شوید، با احترام کارت را بردارید، آن را تمیز کنید، عذرخواهی کنید و دوباره با دو دست تحویل بگیرید.
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۵. جدول ماتریسی پروتکل‌ها، استانداردها و بایدها و نبایدها</strong></h3>
+<p class="text-slate-700 text-sm leading-relaxed my-2">| موقعیت / سناریو | رفتار الزامی و حرفه‌ای (بایدها) | رفتار ممنوع و تخلف تشریفاتی (نبایدها) |
+| :--- | :--- | :--- |
+| <strong class="text-slate-900 font-bold">نحوه ارائه کارت ویزیت</strong> | استفاده از دو دست، زاویه دید رو به مخاطب، اعلام نام و سمت با صدای رسا | یک‌دست دادن، دادن کارت‌های کثیف، چروک یا خارج کردن از جیب پشت |
+| <strong class="text-slate-900 font-bold">دریافت کارت ویزیت</strong> | گرفتن با دو دست، مطالعه دقیق، احترام گذاشتن و قرار دادن روی میز کارتی | گرفتن با یک دست، نگاه نکردن، گذاشتن سریع در جیب، یادداشت‌برداری روی آن |
+| <strong class="text-slate-900 font-bold">شروع دست دادن</strong> | انتظار برای پیش‌قدم شدن فرد ارشد/میزبان، دست دادن محکم و کوتاه (۲ ثانیه) | پیش‌قدم شدن اجباری، دست دادن شل («ماهی مرده»)، فشردن بیش از حد دست |
+| <strong class="text-slate-900 font-bold">ورود به اتاق جلسه</strong> | تقدم مهمان بر میزبان (با هدایت میزبان)، صبر برای اجازه نشستن | هجوم به سمت صندلی‌ها، نشستن پیش از تعارف میزبان |
+| <strong class="text-slate-900 font-bold">لحن و کلام در جلسه</strong> | تن صدای کنترل‌شده، استفاده از ادبیات رسمی و محترمانه، رعایت سکوت در مواقع لزوم | قطع کردن صحبت دیگران، استفاده از اصطلاحات عامیانه کوچه و بازاری |</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5"><strong class="text-slate-900 font-bold">۶. جعبه‌ابزار و چک‌لیست کاربردی مدیران و رهبران کسب‌وکار (Actionable Protocol Playbook)</strong></h3>
+<p class="text-slate-700 text-sm leading-relaxed my-2">این چک‌لیست به عنوان دستورالعمل اجرایی در اختیار مدیران قرار می‌گیرد تا پیش از ورود به هر جلسه رسمی، سناریوی رفتاری خود را چک کنند:</p>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">پیش از جلسه:</strong></li>
+  * آیا جایگاه نشستن خود و طرف مقابل را بر اساس پروتکل میزبان/مهمان می‌دانید؟
+  * آیا کارت‌های ویزیت تمیز، به‌روز و به تعداد کافی در جا کارتیِ اختصاصی قرار داده شده است؟
+  * آیا لباس فرم یا پوشش رسمی (Formal/Business Attire) کاملاً اتو کشیده و متناسب با پروتکل جلسه انتخاب شده است؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">حین ورود و معارفه:</strong></li>
+  * آیا به محض ورود، لبخند حرفه‌ای بر لبان شماست و تماس چشمی برقرار است؟
+  * آیا هرم معرفی (معرفی فرد رشدتر به فرد ارشدتر) رعایت شده است؟
+  * آیا منتظر علامت میزبان برای دست دادن و نشستن مانده‌اید؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">هنگام تبادل کارت ویزیت:</strong></li>
+  * آیا کارت با دو دست رد و بدل شده است؟
+  * آیا حداقل ۵ ثانیه به کارت دریافتی نگاه احترام‌آمیز داشته‌اید؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">در طول مذاکره:</strong></li>
+  * آیا حریم فیزیکی و فاصله فرمی حفظ شده است؟
+  * آیا تن صدا در سطح حرفه‌ای و اداری مدیریت شده است؟
+<p class="text-slate-700 text-sm leading-relaxed my-2">---
+*پایان سند رسمی جلسه دوم | تنظیم و تدوین توسط پارسا رضائی | دانشکده اقتصاد دانشگاه تهران*</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">فصل ۳: زبان بدن، ارتباطات غیرکلامی، پیام‌های ادراکی و اتیکت ارتباطات دیجیتال</h1>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">شناسنامه رسمی جلسه</h1>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نام درس:</strong> بیزنس اتیکت و تشریفات تجاری</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">عنوان جلسه:</strong> جلسه سوم: زبان بدن، ارتباطات غیرکلامی، پیام‌های ادراکی و اتیکت ارتباطات دیجیتال</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">دوره:</strong> دوره عالی مدیریت کسب‌وکار (MBA - کد 0410) دانشکده اقتصاد دانشگاه تهران</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی:</strong> پارسا رضائی</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">پیام کلیدی و ایده محوری جلسه (Executive Core Message)</h1>
+بیزنس اتیکت در نگاه استاد اسمعیلو، چیزی فراتر از آداب‌ورسوم خشک یا تعارفات بی‌مبنای اجتماعی است؛ این حوزه در واقع <strong class="text-slate-900 font-bold">«مهندسی درک متقابل»، «مدیریت ادراک طرف مقابل (Perception Management)» و «خلق حریم محترمانه در مناسبات تجاری و دیپلماتیک»</strong> است. انسان‌ها در تعاملات حرفه‌ای، پیش از آنکه به منطق کلامی و استدلال‌های اقتصادی شما گوش فرادهند، پیام‌های صادرشده از <strong class="text-slate-900 font-bold">زبان بدن، پوشش، لحن، آداب نشستن، حضور فیزیکی و حتی تعاملات دیجیتال</strong> شما را رمزگشایی می‌کنند.
+<p class="text-slate-700 text-sm leading-relaxed my-2">اگر مدیری اصول پایه‌ای اتیکت را رعایت نکند، حتی با داشتن قوی‌ترین مدل‌های مالی و استراتژی‌های تجاری، ناخودآگاه نشانگان بی‌نزاکتی، بی‌تجربگی یا بی‌اعتنایی را به مخاطب مخابره می‌کند که نتیجه محتوم آن شکست در مذاکرات استراتژیک و تخریب اعتبار حرفه‌ای سازمان است. بنابراین، اتیکت تجاری یک مزیت رقابتی پایدار است که باید در کالبد تمامی فرآیندهای سازمانی دمیده شود.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">تشریح موشکافانه مفاهیم و مباحث علمی مطرح‌شده توسط استاد</h1>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۱. فلسفه ریشه‌دار اتیکت و تشریفات در فرهنگ و تجارت</h2>
+استاد اسمعیلو بحث را از ریشه‌شناسی مفاهیم آغاز می‌کنند: <strong class="text-slate-900 font-bold">اتیکت (Etiquette)</strong> ریشه در فرهنگ فرانسوی دارد و به معنای برچسب‌ها، دستورالعمل‌ها و قواعد رفتاری پذیرفته‌شده در یک جامعه یا صنف خاص است که چارچوب تعاملات ما را تعیین می‌کند. 
+در مقابل، <strong class="text-slate-900 font-bold">تشریفات (Protocol)</strong> مجموعه‌ای از تشکیلات، آیین‌ها، تقدم‌وتأخرها و قوانین خشک‌تر و فرمال‌تری است که عمدتاً در دیپلماسی بین‌الملل، روابط سازمانی عالی‌رتبه و رویدادهای دولتی یا شرکتی کلان اعمال می‌شود.
+<p class="text-slate-700 text-sm leading-relaxed my-2">برخلاف تصور عامه که این حوزه را تزئینی می‌پندارند، بیزنس اتیکت یک سیستم مهندسی‌شده ارتباطی است. ما لباس می‌پوشیم، می‌نشینیم، راه می‌رویم، دست می‌دهیم و ایمیل می‌زنیم تا به طرف مقابل نشان دهیم حضور او را به رسمیت شناخته و برایش احترام قائل هستیم. این احترام، ابزار اصلی ما در کاهش مقاومت روانی مشتریان، شرکای تجاری و رقبای حرفه‌ای است.</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۲. زبان بدن و ارتباطات غیرکلامی (Non-Verbal Communication)</h2>
+بخش عظیمی از پیامی که ما در یک جلسه مذاکره یا تعامل تجاری منتقل می‌کنیم، از مجرای کلمات عبور نمی‌کند، بلکه حاصل زبان بدن (Body Language) و ارتباطات غیرکلامی است. استاد اسمعیلو تأکید می‌کنند که مدیران حرفه‌ای باید بر اجزای زیر تسلط کامل داشته باشند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">حالت‌های چهره و تماس چشمی (Eye Contact):</strong> نگاه مستقیم، متعادل و معنادار، نشان‌دهنده اعتمادبه‌نفس، صداقت و تسلط است. نگاه‌های خیره یا فرار کردن از تماس چشمی، سیگنال‌های منفی اضطراب یا پنهان‌کاری را مخابره می‌کند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">حرکات دست و ژست‌ها (Gestures):</strong> دست‌ها در مذاکره باید کنترل‌شده باشند. استفاده بیش از حد از دست‌ها یا پنهان کردن آن‌ها در جیب یا زیر میز، حس بی‌اعتمادی ایجاد می‌کند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فاصله‌گذاری شخصی (Proxemics):</strong> رعایت حریم‌های فضا در فرهنگ‌های مختلف تجاری تفاوت دارد. ورود غیرمجاز به حریم شخصی دیگران در جلسات رسمی، تنش‌زا است.</li>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۳. پیام‌های ادراکی (Perceptual Messages)</h2>
+مخاطب شما در ثانیه‌های نخستین برخورد، بر اساس شواهد بصری، لحن صدا، نحوه ورود به اتاق، نوع دست دادن و حتی سکوت شما، یک تصویر ذهنی (Mental Map) از شما و سازمانتان می‌سازد. 
+پیام ادراکی یعنی آن چیزی که از شما <strong class="text-slate-900 font-bold">«برداشت می‌شود»</strong>، نه لزوماً آن چیزی که شما <strong class="text-slate-900 font-bold">«می‌گویید»</strong>. اگر مدیر ارشد یک شرکت با پوشش نامناسب، لحن نامطمئن و زبان بدن آشفته وارد جلسه شود، هرچقدر هم که آمار و ارقام شرکت دقیق باشد، ذهن مخاطب درگیر آشفتگی بصری او خواهد شد و ادراک منفی شکل‌گرفته به‌سختی قابل‌ترمیم است.
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۴. اتیکت ارتباطات دیجیتال (Digital Communication Etiquette)</h2>
+در دنیای مدرن کسب‌وکار و اقتصاد مبتنی بر فناوری، بخش عمده‌ای از تعاملات تجاری در بستر ابزارهای دیجیتال (ایمیل، پیام‌رسان‌ها، جلسات آنلاین تصویری) رخ می‌دهد. استاد اسمعیلو در این بخش به چند اصل کلیدی اشاره می‌کنند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اتیکت ایمیل‌های سازمانی (Email Etiquette):</strong> موضوع ایمیل (Subject) باید شفاف، دقیق و گویای محتوا باشد. استفاده از ادبیات محاوره‌ای در ایمیل‌های رسمی خط قرمز است. رعایت زمان‌بندی پاسخگویی به ایمیل‌های کاری (حداکثر ۲۴ ساعت کاری) نشان‌دهنده انضباط حرفه‌ای است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اتیکت جلسات آنلاین (Virtual Meeting Etiquette):</strong> در جلسات ویدئویی، روشن بودن دوربین یک ضرورت حرفه‌ای است (مگر در شرایط اضطراری فنی). پس‌زمینه تصویر باید خنثی، حرفه‌ای و به دور از شلوغی‌های منزل باشد. میکروفون زمانی که صحبت نمی‌کنید باید در حالت Mute باشد تا صداهای مزاحم محیط منتقل نشود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پیام‌رسان‌های فوری (Instant Messaging):</strong> ارسال پیام‌های کاری در ساعات غیرکاری (نصفه‌شب یا روزهای تعطیل) بی‌نزاکتی تلقی می‌شود، مگر در اورژانس‌های کسب‌وکار. ادبیات پیام باید مختصر، محترمانه و به دور از ایموجی‌های بیش از حد یا عامیانه باشد.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">ظرایف رفتاری، خطاهای مرگبار تشریفاتی (Faux Pas) و پرونده‌های میدانی استاد اسمعیلو</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو برای عینی‌سازی بحث‌ها، به تجربیات واقعی و کیس‌های میدانی متعددی اشاره می‌کنند که مرور آن‌ها برای هر مدیر اجرایی حیاتی است:</p>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">کیس مدیرعامل بی‌مبالات در ضیافت رسمی:</strong> مدیری در یک ضیافت شام تجاری بین‌المللی با شرکای خارجی، بدون توجه به اتیکت نشستن و نحوه استفاده از ظروف، پیش از میزبان شروع به خوردن کرد و با صدای بلند صحبت نمود. این رفتار ساده در ظاهر، منجر به لغو قرارداد چند میلیون دلاری شد؛ چرا که شریک تجاری خارجی به این نتیجه رسید که شرکتی که اصول اولیه نزاکت را رعایت نمی‌کند، در تعهدات مالی و فنی خود نیز قابل‌اعتماد نخواهد بود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">خطای فاحش در معرفی و تقدم‌وتأخر (Precedence):</strong> در یک بازدید صنعتی مهم، مدیر میزبان اشتباهاً ابتدا به مدیران رده‌پایین‌تر خود خیرمقدم گفت و مدیر ارشد مهمان را نادیده گرفت. این اشتباه تشریفاتی، غرور حرفه‌ای مهمان را جریحه‌دار کرد و فضای مذاکره را ازهمان ابتدا به سمت تنش هدایت نمود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فاجعه ایمیل‌های بدون موضوع و محاوره‌ای:</strong> کارمندی در یک شرکت تجاری معتبر، به یک مدیر ارشد بین‌المللی ایمیلی بدون موضوع و با ادبیات کوچه و بازاری ارسال کرده بود. این رفتار بلافاصله به‌عنوان عدم درک استانداردهای شرکتی گزارش شد و اعتبار کل تیم زیر سوال رفت.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جدول ماتریسی پروتکل‌ها، استانداردها و بایدها و نبایدها</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">| حوزه تعامل | رفتارها و پروتکل‌های ارجح (بایدها) | خطاهای مرگبار و ممنوعه (نبایدها) |
+| :--- | :--- | :--- |
+| <strong class="text-slate-900 font-bold">زبان بدن و ارتباطات غیرکلامی</strong> | حفظ تماس چشمی متعادل، لبخند حرفه‌ای، ایستادن و نشستن با پشت صاف، تسلط بر حرکات دست | دست‌به‌سینه نشستن (حالت دفاعی)، نگاه به ساعت مکرر، بازی با خودکار یا گوشی، خم شدن روی میز |
+| <strong class="text-slate-900 font-bold">ورود به جلسه و معرفی</strong> | رعایت تقدم‌وتأخر (ارشدترین فرد یا مهمان اول معرفی و تکریم می‌شود)، محکم و متعادل دست دادن | پیش‌دستی در دست دادن به مدیران رده‌بالا یا بانوان بدون اجازه، قطع کردن کلام دیگران |
+| <strong class="text-slate-900 font-bold">پوشش و ظاهر حرفه‌ای</strong> | آراستگی متناسب با صنعت، لباس اتوکشیده‌، رنگ‌های رسمی و شرکتی | پوشش‌های اسپرت غیرمتعارف در جلسات استراتژیک، عینک آفتابی روی سر، بوی تند عطر یا عدم رعایت بهداشت |
+| <strong class="text-slate-900 font-bold">اتیکت ارتباطات دیجیتال</strong> | نگارش ساختاریافته ایمیل، روشن بودن دوربین در وب‌کنفرانس، رعایت لحن رسمی | ارسال پیام‌های طولانی و مبهم در پیام‌رسان‌ها، بی‌توجهی به ایمیل‌ها، فرستادن ویس‌های طولانی کاری |
+| <strong class="text-slate-900 font-bold">رفتار در ضیافت‌ها و ناهارهای کاری</strong> | رعایت استفاده صحیح از کارد و چنگال (از بیرون به داخل)، جویدن با دهان بسته | صحبت کردن با دهان پر، گذاشتن گوشی روی میز غذا، درخواست جعبه برای باقی‌مانده غذا در جلسات رسمی |</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جعبه‌ابزار و چک‌لیست کاربردی مدیران و رهبران کسب‌وکار (Actionable Protocol Playbook)</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">برای پیاده‌سازی بی‌نقص استانداردهای این جلسه در سازمان خود، از چک‌لیست عملیاتی زیر استفاده کنید:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ارزیابی اولیه پیش از حضور در جلسات کلیدی:</strong></li>
+   * آیا زبان بدن شما (فرم ایستادن، نشستن و تماس چشمی) پیام اقتدار و احترام را مخابره می‌کند؟
+   * آیا پوشش شما با سطح اهمیت و پروتکل آن جلسه دقیقاً هم‌راستا است؟
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدیریت ارتباطات دیجیتال در سازمان:</strong></li>
+   * آیا پروتکل مدونی برای نگارش ایمیل‌ها و مکاتبات الکترونیک تدوین و به کارمندان ابلاغ شده است؟
+   * آیا در جلسات آنلاین، تمامی اعضا به رعایت اصول تصویر، پس‌زمینه حرفه‌ای و صوتی پایبند هستند؟
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">بازبینی آداب معاشرت در مناسبات فیزیکی:</strong></li>
+   * آیا قوانین تقدم‌وتأخر در ورود به اتاق جلسات، سوار شدن به خودرو و نشستن دور میز مذاکره به دقت تمرین شده است؟
+   * آیا تمامی مدیران میانی و ارشد با خطاهای مرگبار تشریفاتی (Faux Pas) آشنا هستند و از آن‌ها پرهیز می‌کنند؟
+<p class="text-slate-700 text-sm leading-relaxed my-2">---
+*این سند تفصیلی، بازتاباننده دقیق، آکادمیک و جامع مباحث مطروحه توسط استاد اسمعیلو در جلسه سوم دوره MBA دانشکده اقتصاد دانشگاه تهران است و تمامی استانداردهای علمی و ساختاری یک سند مدیریتی سطح‌بالا را پوشش می‌دهد.*</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">فصل ۴: اتیکت ضیافت‌های تجاری (Dining Etiquette) و کدهای پوشش حرفه‌ای (Dress Code)</h1>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">شناسنامه رسمی جلسه</h1>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نام درس:</strong> بیزنس اتیکت و تشریفات تجاری</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">عنوان جلسه:</strong> جلسه چهارم: اتیکت ضیافت‌ها و میزبانی تجاری (Dining Etiquette) و کدهای پوشش حرفه‌ای (Dress Code)</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">دوره:</strong> دوره عالی مدیریت کسب‌وکار (MBA - کد 0410) دانشکده اقتصاد دانشگاه تهران</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی:</strong> پارسا رضائی</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">پیام کلیدی و ایده محوری جلسه (Executive Core Message)</h2>
+<p class="text-slate-700 text-sm leading-relaxed my-2">جهان‌بینی استاد اسمعیلو در حوزه بیزنس اتیکت و تشریفات تجاری بر یک اصل استوار است: <strong class="text-slate-900 font-bold">«تشریفات، کارت ویزیت غیرکلامی شخصیت سازمانی شماست.»</strong> در دنیای مدرن تجارت و دیپلماسی، میزهای غذاخوری، ضیافت‌های رسمی، جلسات کاری و حتی نحوه پوشش و استایل ظاهری، میدان‌های مین‌گذاری‌شده‌ای هستند که می‌توانند قراردادهای چندمیلیون‌دلاری را منعقد کنند یا همکاری‌های استراتژیک را در یک ثانیه نابود سازند.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو با تأکید بر اینکه اتیکت در ضیافت‌ها (Dining Etiquette) صرفاً قواعد خشک میزبانی یا آداب چیدن کارد و چنگال نیست، آن را به‌عنوان یک <strong class="text-slate-900 font-bold">ابزار استراتژیک مذاکره، ارزیابی هوش هیجانی (EQ) طرف مقابل و سنجش اصالت فرهنگی</strong> معرفی می‌کند. از سوی دیگر، کدهای پوشش حرفه‌ای (Dress Code) ابزاری برای اعمال قدرت نرم، ایجاد اعتبار آنی و مهار ادراکات ذهنی مخاطب در ثانیه‌های اول تعامل است. در این جلسه، تمامی پروتکل‌های بین‌المللی ضیافت‌ها، خطاهای مرگبار تشریفاتی (Faux Pas)، استانداردهای پوشش در سطوح مختلف مدیریتی و نحوه مدیریت میزهای مذاکره پذیرایی به تفکیک و با جزئیات تام کلاسی کالبدشکافی شده‌اند.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">تشریح موشکافانه مفاهیم و مباحث علمی مطرح‌شده توسط استاد</h2>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۱. فلسفه و اهمیت استراتژیک میزبانی و ضیافت‌های تجاری</h3>
+در پروتکل‌های سازمانی، ضیافت‌ها (چه صبحانه کاری، چه ناهار و شام تجاری) یک تفریح یا استراحت نیستند، بلکه <strong class="text-slate-900 font-bold">ادامه میز مذاکره با ابزارهای غیرکلامی</strong> هستند. استاد اسمعیلو با صراحت تأکید می‌کند که هیئت‌های تجاری بین‌المللی و مدیران ارشد سازمان‌ها، رفتار شما در یک ضیافت (از نحوه برخورد با گارسون و پرسنل خدماتی گرفته تا تسلط بر کارد و چنگال و نحوه جویدن غذا) را معیاری مستقیم برای سنجش میزان پختگی، سطح تربیت اجتماعی، تسلط بر استرس و قابلیت‌های مدیریتی شما در شرایط پیچیده می‌دانند.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">قاعده طلایی استاد:</strong> در ضیافت‌های تجاری، تمرکز شما نباید صرفاً روی غذا باشد؛ غذا صرفاً بهانه‌ای برای مدیریت جو حاکم، ایجاد رپورت (Rapport)، اعتمادسازی و پیشبرد اهداف تجاری است. میزبان همیشه باید کنترل نامحسوس فضا را در دست داشته باشد و مهمان را در آرامش کامل قرار دهد.</li>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۲. آناتومی کامل میز ضیافت و پروتکل‌های ظروف و کارد و چنگال</h3>
+استاد اسمعیلو با ترسیم دقیق جزئیات یک میز رسمی بین‌المللی، نحوه چیدمان و استفاده از اقلام پذیرایی را تشریح می‌کند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">بشقاب‌ها:</strong> بشقاب نان (Bread Plate) همیشه در سمت چپ بشقاب اصلی (Dinner Plate) قرار دارد. قانون کلیدی: «هرچه در سمت چپ است متعلق به شماست (مانند نان)، هرچه در سمت راست است متعلق به شماست (مانند لیوان‌ها و نوشیدنی‌ها).»</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">کارد و چنگال (Cutlery):</strong> قانون کلی در استفاده از کارد و چنگال‌ها <strong class="text-slate-900 font-bold">«از بیرون به سمت داخل» (Outside-In)</strong> است. اولین پیش‌غذا یا سوپ با دورترین ابزار از بشقاب خورده می‌شود و با پیشروی غذا به سمت غذای اصلی، به ابزارهای نزدیک‌تر به بشقاب می‌رسید.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">کارد کره (Butter Knife):</strong> مخصوص مالیدن کره روی نان در بشقاب نان است و نباید برای مالیدن کره روی استیک یا سایر غذاها از آن استفاده کرد.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">قاشق و چنگال دسر:</strong> معمولاً در بالای بشقاب اصلی (به صورت افقی) چیده می‌شوند.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">#### زبان ابزارها (Cutlery Language - سیگنال‌های بشقاب)
+استاد اسمعیلو به شدت بر تسلط بر زبان کارد و چنگال تأکید می‌کند تا گارسون و میزبان بدانند وضعیت غذای شما چیست:
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">حالت استراحت (Resting / Pausing):</strong> وقتی در حین غذا خوردن می‌خواهید صحبت کنید یا دست از غذا بکشید، کارد و چنگال را به شکل عدد ۷ یا هشتی (V شکل) داخل بشقاب قرار دهید؛ به طوری که نوک کارد و چنگال به سمت مرکز بشقاب باشد و دسته‌های آن روی لبه بشقاب قرار گیرد. این یعنی <strong class="text-slate-900 font-bold">«غذا تمام نشده است، بشقاب را نبرید»</strong>.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">حالت اتمام غذا (Finished / Completed):</strong> برای اعلام اتمام غذا، کارد و چنگال را به صورت موازی کنار هم (ساعت ۴:۲۰ یا به موازات هم) در سمت راست یا وسط بشقاب قرار دهید. این سیگنال به گارسون می‌فهماند که بشقاب قابل جمع‌آوری است.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">خطاهای مرگبار این بخش:</strong> هرگز کارد و چنگال استفاده‌شده را روی میز، سفره یا رومیزی نگذارید؛ این کار خطای فاحش تشریفاتی است. همچنین قرار دادن کارد و چنگال به صورت ضربدری (X) در بشقاب ممنوع است.</li></p>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۳. اتیکت دستمال سفره (Napkin Etiquette)</h3>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">زمان باز کردن:</strong> دستمال سفره بلافاصله پس از نشستن سر میز و پس از اینکه میزبان یا فرد ارشد دستمال خود را باز کرد، باز می‌شود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">محل قرارگیری:</strong> دستمال سفره همیشه روی زانوها پهن می‌شود، نه دور گردن (بستن دور گردن مختص محیط‌های غیررسمی یا غذای کودکان است).</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">قاعده اورژانس (ترک موقت میز):</strong> اگر در طول ضیافت مجبور شدید برای لحظه‌ای میز را ترک کنید (مثلاً رفتن به دستشویی یا پاسخ به یک تماس اضطراری)، دستمال سفره را <strong class="text-slate-900 font-bold">روی صندلی (روی صندلی، نه روی تکیه‌گاه و نه روی میز)</strong> قرار دهید. این به گارسون و میزبان نشان می‌دهد که صندلی پر است و برمی‌گردید.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پایان ضیافت:</strong> در پایان غذا، دستمال سفره را بدون تا کردن خاصی (به صورت کاملاً نامنظم و طبیعی) در سمت چپ بشقاب روی میز قرار دهید. تا کردن بیش از حد و اتوکشیده دستمال در پایان، این سیگنال اشتباه را می‌دهد که گارسون متوجه کثیف شدن آن نشده و شاید بخواهد دوباره از آن استفاده کند!</li>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۴. پروتکل‌های پیشرفته میزبانی و دعوت (Hosting & Invitation Protocols)</h3>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">چه کسی دعوت می‌کند؟</strong> استاد اسمعیلو تأکید می‌کند: <strong class="text-slate-900 font-bold">«کسی که دعوت می‌کند، میزبان است و پرداخت‌کننده صورت‌حساب (Bill) نیز خواهد بود.»</strong> اگر شما دعوت‌کننده هستید، پیش از آمدن مهمان باید حساب را تسویه کنید یا کارت خود را به صورت محرمانه به مدیریت رستوران بدهید تا مهمان هرگز درگیر مسائل مالی صورت‌حساب نشود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">انتخاب رستوران:</strong> انتخاب رستوران باید با جایگاه مهمان و سنخیت جلسه همخوانی داشته باشد. رستوران‌های خیلی شلوغ، پر سر و صدا یا با خدمات کند برای جلسات تجاری جدی مناسب نیستند. میزبان باید پیش از جلسه، از منو، فضای نشستن و کیفیت سرویس‌دهی رستوران اطمینان حاصل کند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">صندلی‌چینی و جایگاه نشستن (Seating Arrangement):</strong> </li>
+  * مهمان ویژه (VIP) باید در بهترین جایگاه بنشیند (معمولاً صندلی با پشت به دیوار و رو به فضای باز یا چشم‌انداز خوب، یا صندلی دور از درب ورودی رستوران و سر و صدای سرویس‌دهی).
+  * میزبان باید مهمان را راهنمایی کند و بهترین صندلی را به او اختصاص دهد.
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۵. اتیکت‌های خاص غذایی و خوراکی‌ها (Specific Food Etiquette)</h3>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">سوپ:</strong> قاشق سوپ‌خوری را از داخل به سمت بیرون (Away from you) حرکت دهید و سوپ را هورت نکشید. از دمیدن در سوپ داغ خودداری کنید؛ صبر کنید تا کمی خنک شود.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نان:</strong> نان را با چاقو برش نزنید، بلکه با دست تکه‌های کوچک به اندازه یک لقمه در حد کره خوردن از آن جدا کنید و هر بار یک تکه را کره بمالید و میل کنید.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">زیتون، هسته میوه و ضایعات:</strong> اگر هسته زیتون، استخوان ریز یا ضایعاتی درون دهان است، آن را با ظرافت تمام روی قاشق یا چنگال گذاشته و به آرامی به گوشه بشقاب منتقل کنید، یا دست را جلوی دهان بگیرید و خارج کنید (هرگز با دست مستقیم از دهان درآورده و روی میز نگذارید).</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مایع شستشوی دست (Finger Bowl):</strong> اگر کاسه حاوی آب و لیمو (یا گلبرگ) برای شستشوی انگشتان پس از غذایی مثل میگو یا ماهی سرو شد، آن را ننوشید! این آب فقط برای شستشوی نوک انگشتان است و پس از آن با دستمال پارچه‌ای دست را خشک می‌کنید.</li>
+<h3 class="text-base font-black text-slate-800 mt-6 mb-2 border-r-4 border-amber-600 pr-2.5">۶. کدهای پوشش حرفه‌ای (Dress Code)</h3>
+پوشش حرفه‌ای از نگاه استاد اسمعیلو، اولین لایه دفاعی و تهاجمی شما در بیزنس است. مخاطب در کمتر از ۷ ثانیه نخست، بر اساس ظاهر شما قضاوت اولیه را شکل می‌دهد. کدهای پوشش به دسته‌های زیر تقسیم می‌شوند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">الف) لباس رسمی کسب‌وکار (Business Formal):</strong></li>
+  * مخصوص جلسات هیئت مدیره، مذاکرات دیپلماتیک سطح بالا، دادگاه‌ها و سمینارهای رسمی بین‌المللی.
+  * برای آقایان: کت و شلوار تیره (سرمه‌ای تیره یا زغالی)، پیراهن مردانه سفید یا آبی بسیار روشن (آکسفورد یا ساده)، کراوات ابریشمی با طرح‌های اسلیمی یا راه‌راه محو (غیرجیغ و غیرفانتزی)، کفش چرمی بنددار مشکی یا قهوه‌ای تیره (واکس‌زده و تمیز)، جوراب تیره بلند به رنگ شلوار.
+  * برای بانوان: مانتو و شلوار رسمی متناسب با پروتکل‌های سازمانی یا کت و دامن/شلوار رسمی با رنگ‌های وقار (سرمه‌ای، مشکی، خاکستری تیره)، کفش چرمی رسمی با پاشنه استاندارد و متوسط، مقنعه یا روسری شیک و رسمی با رنگ‌های هماهنگ و بدون زرق و برق اضافی.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ب) لباس نیمه‌رسمی کسب‌وکار (Business Casual):</strong></li>
+  * مخصوص روزهای کاری عادی در دفتر، جلسات داخلی با تیم‌ها و بازدیدهای میدانی حرفه‌ای.
+  * ترکیبی از راحتی و رسمیت: شلوار کتان یا پارچه‌ای باکیفیت، پیراهن مردانه (بدون نیاز به کراوات، دکمه یقه بسته یا باز در حد استاندارد)، بلیزر یا کت تک اسپرت، کفش لوفر (Loafer) یا چرم اسپرت.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ج) استایل‌های مناسب ضیافت‌های عصر و شام (Semi-Formal / Cocktail):</strong></li>
+  * بسته به دعوت‌نامه و نوع رویداد، رعایت تعادل بین شیک‌پوشی و راحتی الزامی است. از پوشیدن لباس‌های ورزشی، کفش کتانی غیررسمی (Sneakers)، لباس‌های بسیار براق یا نامتعارف در ضیافت‌های تجاری اکیداً پرهیز کنید.
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">ظرایف رفتاری، خطاهای مرگبار تشریفاتی (Faux Pas) و پرونده‌های میدانی استاد اسمعیلو</h2>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو در این جلسه به پرونده‌های واقعی از خطاهای فاحش مدیران اشاره می‌کند که هزینه‌های سنگینی به سازمان‌ها تحمیل کرده است:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پرونده مدیرعامل و غذای چسبنده:</strong> در یک ضیافت بین‌المللی مهم برای جذب سرمایه‌گذار خارجی، مدیرعامل ایرانی یک شرکت بزرگ به دلیل عدم آشنایی با اتیکت خوردن مرغ یا استیک بدون استخوان، با دست و به صورت غیرحرفه‌ای سعی در جدا کردن گوشت از استخوان داشت که هم تمرکز جلسه را به هم زد و هم تصویر بسیار ضعیفی از پرستیژ مدیریتی خود ارائه داد. طرف خارجی پس از جلسه، این موضوع را به عنوان نشانه‌ای از «عدم انضباط در جزئیات» گزارش کرده بود.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">فاجعه گوشی تلفن همراه روی میز:</strong> یکی از مهلک‌ترین خطاهای مرگبار (Faux Pas) در ضیافت‌ها، گذاشتن گوشی موبایل با صفحه رو به بالا روی میز غذاخوری است. استاد اسمعیلو با تأکید هشدار می‌دهد: <strong class="text-slate-900 font-bold">«وقتی گوشی را روی میز می‌گذارید، به مهمان یا طرف مذاکره عملاً دارید می‌گویید: کسی که پشت این خط است یا اتفاقی که در این صفحه می‌افتد، برای من مهم‌تر از توست.»</strong> گوشی باید در جیب یا کیف و در حالت بی‌صدا (Silent) باشد.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">برخورد نامناسب با پرسنل خدماتی (Garisons & Waitstaff):</strong> رفتار شما با گارسون‌ها، پیشخدمت‌ها و خدمه رستوران، آینه‌ای تمام‌نما از شخصیت واقعی شماست. مدیرانی که با پرسنل رستوران از موضع تحقیر، بی‌ادبی یا آمرانه صحبت می‌کنند، به شدت در نزد افراد حرفه‌ای بی‌اعتبار می‌شوند. استاد می‌فرماید: <strong class="text-slate-900 font-bold">«همیشه با گارسون با احترام، لبخند و با گفتن لطفاً و متشکرم برخورد کنید؛ این نشان‌دهنده هوش هیجانی بالای شماست.»</strong></li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">خطای بویایی و عطرهای تند در ضیافت‌ها:</strong> در ضیافت‌های شام، استفاده از عطرهای بسیار تند، غلیظ یا محرک ممنوع است. عطر تند شما نباید با عطر و طعم غذاهای سروشده تداخل پیدا کند و حس چشایی و بویایی مهمانان را آزار دهد.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">جدول ماتریسی پروتکل‌ها، استانداردها و بایدها و نبایدها</h2>
+<p class="text-slate-700 text-sm leading-relaxed my-2">| موقعیت / ابعاد تشریفاتی | بایدها (بایدها و رفتارهای ارجح) | نبایدها (خطاهای مرگبار / Faux Pas) |
+| :--- | :--- | :--- |
+| <strong class="text-slate-900 font-bold">ورود به رستوران و نشستن</strong> | میزبان جلوتر حرکت می‌کند، صندلی را برای مهمان می‌کشد یا راهنمایی می‌کند؛ صندلی VIP به مهمان داده می‌شود. | مهمان جلوتر راه بیفتد؛ نشستن بدون تعارف و هماهنگی میزبان. |
+| <strong class="text-slate-900 font-bold">استفاده از دستمال سفره</strong> | پهن کردن روی زانو بلافاصله پس از نشستن؛ گذاشتن روی صندلی هنگام ترک موقت میز. | بستن دور گردن مثل پیش‌بند؛ گذاشتن روی میز یا تکیه‌گاه صندلی هنگام ترک میز. |
+| <strong class="text-slate-900 font-bold">کار با کارد و چنگال</strong> | استفاده از بیرون به سمت داخل (Outside-In)؛ قرار دادن به شکل V (هشتی) هنگام استراحت و موازی (ساعت ۴:۲۰) هنگام اتمام. | گذاشتن ابزار استفاده‌شده روی رومیزی؛ ضربدری گذاشتن کارد و چنگال. |
+| <strong class="text-slate-900 font-bold">مدیریت تلفن همراه</strong> | قرار دادن در حالت بی‌صدا داخل کیف یا جیب؛ عدم چک کردن پیام‌ها سر میز. | گذاشتن گوشی روی میز غذاخوری (رو به بالا یا پایین)؛ پاسخ دادن به تلفن سر میز. |
+| <strong class="text-slate-900 font-bold">پرداخت صورت‌حساب (Bill)</strong> | تسویه قبلی محرمانه توسط میزبان یا هماهنگی پیش از جلسه بدون تنش. | بحث کردن سر میز درباره اینکه چه کسی پول بدهد؛ اجازه دادن به مهمان برای پرداخت در ضیافت رسمی. |
+| <strong class="text-slate-900 font-bold">پوشش حرفه‌ای (Business Formal)</strong> | کت و شلوار تیره (سرمه‌ای/زغالی)، پیراهن تمیز اتوکشیده، کفش چرمی واکس‌زده و تمیز. | پوشیدن لباس‌های اسپرت یا کتانی در جلسات رسمی؛ استفاده از رنگ‌های جیغ و نامتعارف در کراوات یا پوشش. |</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">جعبه‌ابزار و چک‌لیست کاربردی مدیران و رهبران کسب‌وکار (Actionable Protocol Playbook)</h2>
+<p class="text-slate-700 text-sm leading-relaxed my-2">این چک‌لیست عملیاتی بدون ابهام، نقشه راه گام‌به‌گام مدیران برای درخشش در ضیافت‌ها و میزبانی‌های تجاری است:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">آماده‌سازی پیش از ضیافت (Pre-Event Preparation):</strong></li>
+   * [ ] تحقیق کامل درباره منو، فضای داخلی و سطح خدمات رستوران مورد نظر.
+   * [ ] بررسی پیشینه، علایق غذایی یا محدودیت‌های رژیمی مهمان (مثلاً گیاه‌خوار بودن، حساسیت‌های غذایی یا مذهبی).
+   * [ ] هماهنگی محرمانه با مدیریت رستوران جهت تسویه حساب پیش از پایان جلسه (جلوگیری از هرگونه مکالمه مالی سر میز).
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدیریت حین ضیافت (During the Banquet):</strong></li>
+   * [ ] رعایت تقدم در ورود، راهنمایی مهمان به بهترین جایگاه نشستن و صبر کردن تا نشستن مهمان.
+   * [ ] پهن کردن منظم دستمال سفره روی زانو بلافاصله پس از نشستن.
+   * [ ] رعایت تعادل بین گفتگو و غذا خوردن؛ لقمه‌های کوچک برداشتن و هرگز با دهان پر صحبت نکردن.
+   * [ ] قرار دادن کارد و چنگال به شکل هشتی (V) در هنگام مکالمه و حالت موازی در پایان غذا.
+   * [ ] امتناع مطلق از چک کردن گوشی موبایل، تبلت یا ساعت مچی به صورت مکرر.
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ارتباطات غیرکلامی و ادب سازمانی:</strong></li>
+   * [ ] برخورد محترم، ملایم و حرفه‌ای با تمامی پرسنل و خدمة رستوران.
+   * [ ] حفظ ارتباط چشمی با مهمان و سایر حاضران در زمان صحبت کردن.
+   * [ ] تشکر رسمی از مهمان بابت حضور در ضیافت پس از پایان جلسه و بدرقه حرفه‌ای تا درب خروج یا وسیله نقلیه.
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">فصل ۵: تشریفات بین‌المللی و دیپلماتیک (Protocol)، تقدم پرچم‌ها و هدایای تجاری</h1>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">شناسنامه رسمی جلسه</h1>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نام درس:</strong> بیزنس اتیکت و تشریفات تجاری  </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">عنوان جلسه:</strong> جلسه پنجم: تشریفات بین‌المللی و دیپلماتیک (Protocol)، تقدم پرچم‌ها، آداب هدایای تجاری و خودروی تشریفات  </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدرس:</strong> استاد اسمعیلو  </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">د دوره:</strong> دوره عالی مدیریت کسب‌وکار (MBA - کد 0410)  </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">محل برگزاری:</strong> دانشکده اقتصاد دانشگاه تهران  </li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">گردآوری، تدوین و بازبینی:</strong> پارسا رضائی  </li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">پیام کلیدی و ایده محوری جلسه (Executive Core Message)</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">دنیای تجارت مدرن، بستر تعاملات فرامرزی، شبکه‌سازی‌های بین‌المللی و مذاکرات چندجانبه است. در این عرصه، صلاحیت فنی، دارایی‌های مالی و مزیت‌های رقابتی محصولات، تنها زمانی به ثمر می‌نشینند که با <strong class="text-slate-900 font-bold">پروتکل‌های بین‌المللی (Protocol)</strong>، آداب دیپلماتیک و استانداردهای جهانی اتیکت هم‌سو باشند.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">جهان‌بینی و فلسفه تدریس استاد اسمعیلو بر این اصل بنیادین استوار است که «تشریفات، صرفاً یک‌سری تشریفات ظاهری، تشریفاتی و دست‌وپاگیر نیست؛ بلکه زبان بی‌کلام قدرت، احترام، اقتدار سازمانی و پایبندی به نظم نوین جهانی است.» کوچک‌ترین لغزش در تقدم پرچم‌ها، جانمایی صندلی‌ها در جلسات دوجانبه، بی‌توجهی به ارزش‌گذاری و قوانین گمرکی هدایای تجاری، یا ناآگاهی از آیین‌نامه خودروهای تشریفات و جایگاه‌گذاری مقامات، می‌تواند یک قرارداد کلان را در ثانیه‌های نخست با شکست مواجه کند. این جلسه، نقشه راه جامع، میدانی و تخصصی مدیران ارشد برای حرکت بی‌نقص در میادین دیپلماسی تجاری و بین‌المللی است.</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">تشریح موشکافانه مفاهیم و مباحث علمی مطرح‌شده توسط استاد</h1>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۱. مبانی و فلسفه پروتکل (Protocol) و تشریفات بین‌المللی</h2>
+پروتکل در ادبیات کسب‌وکار و دیپلماسی، مجموعه قواعد، سنت‌ها، آیین‌نامه‌ها و توافقات بین‌المللی است که رفتار میان دولت‌ها، سازمان‌ها، سفرا، مقامات عالی‌رتبه و مدیران ارشد شرکت‌های چندملیتی را نظم می‌بخشد. 
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">تشریفات، تجلی ملموس دیسیپلین، اعتبار و کلاس سازمانی یک بنگاه اقتصادی است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">عدم رعایت پروتکل، در سطح بین‌المللی به معنای توهین تلقی شده و پیامدهای جبران‌ناپذیری بر جای می‌گذارد.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">تمامی حرکات، از نحوه دست دادن، ورود و خروج، معرفی افراد، تا نحوه نشستن و پذیرایی، تابع فرمول‌های دقیق ریاضی و حقوقی است.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۲. اصول کلیدی تشریفات در دیدارهای دوجانبه و چندجانبه (Bilateral & Multilateral Protocols)</h2>
+در تعاملات بین‌المللی، هرگز نباید به صورت شهودی و سلیقه‌ای عمل کرد. استاد اسمعیلو به صراحت تأکید می‌کنند که جلسات رسمی تابع سه اصل طلایی هستند:
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اصل تقدم (Precedence):</strong> شناخت دقیق جایگاه و رتبه افراد بر اساس پروتکل‌های رسمی سازمانی، دولتی یا بین‌المللی.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اصل تقارن و تعادل (Symmetry & Balance):</strong> در چینش فضاها، صندلی‌ها، هدایا و حتی نحوه پذیرایی، تعادل و تقارن باید رعایت شود تا هیچ‌یک از طرفین احساس تبعیض یا تحقیر نداشته باشند.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اصل احترام متقابل (Mutual Respect):</strong> انطباق رفتار با فرهنگ، مذهب، عرف و قوانین کشور یا سازمان میزبان و مهمان.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۳. قوانین تخصصی و ریاضیِ تقدم پرچم‌ها (Flag Protocols)</h2>
+یکی از حساس‌ترین ارکان تشریفات بین‌المللی، نحوه برافراشتن، جانمایی و تقدم پرچم‌ها در دفاتر مرکزی، اتاق‌های جلسات، کنفرانس‌های خبری و رویدادهای رسمی است. استاد اسمعیلو با ذکر جزئیات حقوقی و مهندسی این حوزه، قوانین زیر را تبیین می‌کنند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">تقدم پرچم میزبان:</strong> پرچم کشور یا سازمان میزبان همواره در بالاترین نقطه، در سمت راست (از دید ناظر بیرونی) یا در مرکز افتخار قرار می‌گیرد.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">تعداد پرچم‌ها:</strong> تعداد پرچم‌ها باید همواره زوج باشد (برای حفظ تقارن در دو طرف پرچم میزبان) یا اگر فرد است، پرچم میزبان در وسط قرار گیرد و سایر پرچم‌ها به ترتیب الفبای انگلیسی (یا الفبای رسمی سازمان‌های بین‌المللی مانند سازمان ملل) در طرفین چیده شوند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ارتفاع و هم‌ترازی:</strong> هیچ پرچمی نباید از نظر ارتفاع یا ابعاد، بالاتر یا بزرگ‌تر از پرچم میزبان باشد؛ پرچم‌ها باید کاملاً هم‌اندازه و در یک سطح افقی به اهتزاز درآیند.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">حفظ منزلت پرچم:</strong> پرچم هرگز نباید با زمین تماس پیدا کند، کثیف باشد، یا در شرایط جوی نامناسب بدون حفاظ بماند. پرچم پاره یا رنگ‌ورورفته بلافاصله باید تعویض شود.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۴. مهندسی جایگاه‌ها و چیدمان صندلی‌ها در جلسات و مذاکرات (Seating Arrangements)</h2>
+چیدمان صندلی‌ها در اتاق مدیرعامل، اتاق جلسات هیئت‌مدیره یا میز مذاکره بین‌المللی، پیام‌های استراتژیک قدرتمندی ارسال می‌کند. استاد اسمعیلو مدل‌های مختلف چیدمان را تحلیل می‌کنند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدل رودررو یا متقابل (Opposite Arrangement):</strong> میزهای مستطیل‌شکل که رئیس هیئت ایرانی در مقابل رئیس هیئت خارجی می‌نشیند؛ این مدل نماد مذاکرات رسمی، چانه‌زنی و شفافیت است.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">مدل پهلوسان یا مشارکتی (Side-by-Side Arrangement):</strong> نشستن در کنار یکدیگر روی مبل‌های راحتی یا در کنار میزهای گرد؛ نماد دوستی، توافق نهایی، هم‌افزایی و پروژه‌های مشترک.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">موقعیت صندلی قدرت (The Power Seat):</strong> صندلی‌ای که پشت به دیوار محکم (و نه پشت به درِ ورودی یا پنجره‌های باز) قرار دارد؛ این موقعیت تسلط کامل بر کل فضا، درب ورود و افراد حاضر را به مدیر اعطا می‌کند.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۵. آداب، ارزش‌گذاری و قوانین گمرکی هدایای تجاری (Corporate Gift-Giving Etiquette)</h2>
+هدایای تجاری در سطح بین‌المللی، ابزاری ظریف برای اعتمادسازی، تثبیت روابط و قدردانی است؛ اما اگر بدون رعایت اتیکت انجام شود، می‌تواند به اتهام رشوه، توهین فرهنگی یا بی‌احتیاطی مالی منجر شود. نکات کلیدی استاد در این حوزه عبارتند:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ارزش پولی هدیه:</strong> هدیه تجاری نباید به گونه‌ای باشد که شائبه رشوه یا تلاش برای خرید نظر طرف مقابل را ایجاد کند. هدیه باید نفیس، دارای اصالت فرهنگی (مثل صنایع‌دستی فاخر، تابلوفرش، قلم‌کاری)، اما با ارزش ریالی معقول و استاندارد باشد.</li>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">پرهیز از تابوها و قوانین مذهبی/فرهنگی:</strong> </li>
+  * به عنوان مثال، هدیه‌دادن مشروبات الکلی، محصولات چرمی خوک در کشورهای اسلامی، اشیاء نوک‌تیز (چاقو یا قیچی به معنای بریدن روابط در فرهنگ شرق آسیا)، یا ساعت در برخی فرهنگ‌ها (به معنای شمارش معکوس مرگ یا پایان عمر در چین) ممنوع است.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">زمان و مکان تقدیم هدیه:</strong> هدیه معمولاً در پایان جلسات رسمی، در ضیافت‌های ناهار یا شام، و در حضور اعضای کلیدی تیم تقدیم می‌شود. نحوه باز کردن هدیه نیز تابع فرهنگ طرف مقابل است (در برخی فرهنگ‌ها بلافاصله باز می‌شود تا تشکر شود، در برخی دیگر برای جلوگیری از شرمندگی در خلوت باز می‌شود).</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h2 class="text-lg font-black text-amber-950 mt-8 mb-4 pb-2 border-b border-amber-200">۶. پروتکل‌های خودروی تشریفات و سوار و پیاده شدن (Chauffeur-Driven & Fleet Protocols)</h2>
+خودروی تشریفات، پیشانیِ استقبال از مهمانان ویژه، سفرا و مدیران ارشد است. رعایت دقیق پروتکل‌های خودرویی، نشانه حرفه‌ای‌گری تیم تشریفات است:
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">ترتیب نشستن در خودرو (Seating Order):</strong></li>
+  * <strong class="text-slate-900 font-bold">اگر خودرو راننده شخصی دارد (Chauffeur-driven):</strong> امن‌ترین و مهم‌ترین صندلی، صندلی عقب سمت راست (پشت سر راننده یا صندلی مقابل راننده بسته به جهت رانندگی) است. دومین جایگاه مهم، صندلی عقب سمت چپ است. صندلی وسط عقب، کم‌اهمیت‌ترین جایگاه است و صندلی جلو کنار راننده مطلقاً برای محافظان، مترجمان یا نفرات رده‌پایین‌تر است.
+  * <strong class="text-slate-900 font-bold">اگر خود مدیر رانندگی می‌کند:</strong> مهمان ویژه باید روی صندلی جلو کنار راننده بنشیند تا احساس کند همراه و هم‌سطح میزبان است.
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">استقبال و بدرقه در خودرو:</strong> در هنگام سوار شدن، درِ خودرو توسط تیم تشریفات باز شده و مهمان هدایت می‌شود. مهم‌ترین فرد همواره آخرین نفری است که سوار می‌شود و اولین نفری است که پیاده می‌شود.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">ظرایف رفتاری، خطاهای مرگبار تشریفاتی (Faux Pas) و پرونده‌های میدانی استاد اسمعیلو</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">استاد اسمعیلو برای ملموس‌تر شدن مباحث، به تحلیل خطاهای رایج مدیران در سازمان‌های ایرانی پرداخته و پرونده‌های میدانی متعددی را مطرح می‌کنند:</p>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">افتادگی پرچم ملی در جلسات رسمی:</strong> در یکی از شرکت‌های بزرگ صنعتی، به دلیل عدم استفاده از پایه‌های استاندارد و عدم تنظیم ارتفاع، پرچم ملی در جریان جلسه هیئت‌مدیره با مدیران خارجی روی زمین افتاد. این حادثه به قدری برای هیئت خارجی گران تمام شد که جلسه را به حالت تعلیق درآوردند و تا عذرخواهی رسمی کتبی، حاضر به مذاکره مجدد نشدند.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">اشتباه مرگبار در هدیه‌دادن به شرکای تجاری چینی:</strong> مدیری ناآگاه به اتیکت بین‌المللی، به یک شرکای تجاری ارشد چینی در جریان یک قرارداد چندمیلیون‌دلاری، ساعت مچی هدیه داد. در فرهنگ چین، کلمه «ساعت دادن» هم‌آوا با عبارت «رفتن به مراسم تدفین» است! این هدیه به عنوان نفرین و بی‌احترامی تلقی شد و قرارداد امضا نشد.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">نشستن روی صندلی اشتباه در خودروی تشریفات:</strong> در جریان سفر وزیر اقتصاد یک کشور خارجی به ایران، مدیر تشریفات داخلی به اشتباه مهمان را در صندلی جلو یا صندلی عقب سمت چپ نشاند. این خطای فاحش پروتکلی، موجب تکدر خاطر تیم دیپلماتیک مهمان و ارسال یادداشت اعتراضی رسمی شد.</li>
+<li class="mr-4 list-decimal text-slate-700 text-sm my-1 leading-relaxed"><strong class="text-slate-900 font-bold">بی‌توجهی به حریم شخصی و جایگاه مدیران ارشد در بازدیدهای میدانی:</strong> مدیر جوانی که اصول تشریفات بازدیدهای صنعتی را نمی‌دانست، در جریان بازدید مدیرعامل هلدینگ از کارخانه، جلوتر از مدیرعامل راه افتاد و درهای کارخانه را به روی او باز نکرد. این حرکت به عنوان بی‌ادبی و خودمحوری تلقی شد و ارتقای شغلی آن مدیر را سال‌ها به تعویق انداخت.</li>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جدول ماتریسی پروتکل‌ها، استانداردها و بایدها و نبایدها</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">| موقعیت / حوزه تشریفاتی | بایدها (Dos) | نبایدها (Don'ts) | رفتار ارجح / استاندارد طلایی |
+| :--- | :--- | :--- | :--- |
+| <strong class="text-slate-900 font-bold">جانمایی پرچم‌ها</strong> | هم‌ترازی ارتفاع، تقارن زوج، قرارگیری پرچم میزبان در سمت راست ناظر | استفاده از پرچم کهنه، کوچکتر بودن پرچم مهمان، تماس پرچم با زمین | پرچم میزبان در سمت راست (موقعیت افتخار)، سایر پرچم‌ها به ترتیب الفبا |
+| <strong class="text-slate-900 font-bold">چیدمان صندلی مذاکره</strong> | صندلی قدرت پشت به دیوار، دید کامل به در، تقارن صندلی‌های هیئت‌ها | قرار دادن مدیر پشت به پنجره باز یا درِ ورودی، عدم تقارن تعداد صندلی‌ها | رئیس هیئت در مرکز، معاونین در دو طرف به ترتیب رتبه و تقدم |
+| <strong class="text-slate-900 font-bold">هدایای تجاری</strong> | نفیس، دارای اصالت فرهنگی، ارزش معقول و سازگار با قوانین ضدفساد | هدیه گران‌قیمتِ شائبه‌برانگیز، اشیاء نوک‌تیز، الکل، ساعت برای چینی‌ها | صنایع‌دستی فاخر، تابلوفرش، خودکارهای کلکسیونیِ لوگودارِ ظریف |
+| <strong class="text-slate-900 font-bold">خودروی تشریفات</strong> | صندلی عقب سمت راست برای مهمان ویژه، باز کردن در توسط تشریفات | نشاندن مهمان ویژه در صندلی وسط عقب یا جلو (اگر راننده شخصی است) | باز کردن در، کمک به پیاده شدن، تقدم در سوار شدن و پیاده شدن |</p>
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+<h1 class="text-xl font-black text-slate-900 mt-10 mb-6 text-center text-amber-950">جعبه‌ابزار و چک‌لیست کاربردی مدیران و رهبران کسب‌وکار (Actionable Protocol Playbook)</h1>
+<p class="text-slate-700 text-sm leading-relaxed my-2">این چک‌لیست، ابزار عملیاتی و گام‌به‌گام برای مدیران است تا پیش از برگزاری هر رویداد بین‌المللی یا جلسه رسمی، از انطباق کامل با پروتکل‌ها اطمینان حاصل کنند:</p>
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">بررسی پیش از رویداد (Pre-Event Audit):</strong></li>
+  * آیا سمت‌وسوی پرچم‌ها، ابعاد و ارتفاع آن‌ها با استانداردهای رسمی هم‌خوانی دارد؟
+  * آیا تعداد و رتبه صندلی‌ها در اتاق جلسات بر اساس اصول «تقدم و رتبه» (Precedence) چیده شده است؟
+  * آیا موقعیت صندلی مدیرعامل و مهمان ویژه (Power Seat) به درستی جانمایی شده است؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">مدیریت ناوگان و خودروی تشریفات (Fleet & Chauffeur Check):</strong></li>
+  * آیا راننده لباس فرم کامل و رسمی به تن دارد؟
+  * آیا صندلی عقب سمت راست برای مهمان اصلی آماده‌سازی شده است؟
+  * آیا هماهنگی برای باز کردن درِ خودرو توسط تیم تشریفات انجام شده است؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">پروتکل هدایای تجاری (Gift Protocol Checklist):</strong></li>
+  * آیا هدیه انتخابی با فرهنگ، مذهب و قوانین کشور مبدأ/مقصد هم‌خوانی دارد؟
+  * آیا ارزش مالی هدیه در حد استاندارد سازمانی و به دور از شائبه رشوه است؟
+  * آیا نحوه بسته‌بندی هدیه (کادوپیچی در رنگ‌های محترم و پرهیز از رنگ‌های نامبارک در آن فرهنگ) بررسی شده است؟
+<li class="mr-4 list-disc text-slate-700 text-sm my-1 leading-relaxed">[ ] <strong class="text-slate-900 font-bold">رفتارشناسی و دیسیپلین فردی (Executive Presence):</strong></li>
+  * تسلط بر نحوه معرفی دیگران (معرفی فرد رده‌پایین‌تر به فرد رده‌بالاتر، معرفی فرد جوان‌تر به مسن‌تر).
+  * رعایت دقیق اصول دست دادن (با اجازه فرد ارشد، محکم، کوتاه و همراه با تماس چشمی).
+  * اجتناب از حرکات بدنی اضافی، ژست‌های تدافعی یا لمس کردن غیرضروری افراد در فرهنگ‌های حساس.
+<p class="text-slate-700 text-sm leading-relaxed my-2">---</p>
+      </div>
+    </div>
+
+    <!-- Tab 3: Interactive Dining & Dress Code Protocol Matrix -->
+    <div id="tab-content-matrix" class="tab-view hidden">
+      <div class="bg-white rounded-3xl border border-stone-200 shadow-sm p-8 md:p-10 max-w-3xl mx-auto">
+        <div class="border-b border-stone-200 pb-6 mb-8 text-center">
+          <div class="w-14 h-14 bg-amber-100 text-amber-900 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3 shadow-inner">
+            👔
+          </div>
+          <h2 class="text-2xl font-black text-stone-900 mb-2">ماتریس هوشمند پروتکل کدهای پوشش و ضیافت‌های تجاری</h2>
+          <p class="text-xs text-stone-500 max-w-lg mx-auto leading-relaxed">
+            راهنمای تصمیم‌گیری هوشمند برای انتخاب بهینه کدهای پوشش (Dress Code)، چیدمان میز غذا، تقدم و ظرایف تشریفاتی متناسب با نوع رویداد تجاری
+          </p>
+        </div>
+
+        <!-- Event Selector -->
+        <div class="mb-8">
+          <label class="block text-xs font-bold text-stone-700 mb-2">نوع نشست، رویداد یا ضیافت تجاری را انتخاب کنید:</label>
+          <select id="eventSelector" onchange="updateMatrix()" class="w-full bg-stone-50 border border-stone-200 rounded-xl p-3.5 text-sm font-bold text-stone-800 focus:ring-2 focus:ring-amber-500 focus:outline-none">
+            <option value="formal_board">جلسه رسمی هیئت مدیره و مذاکره سنگین قراردادی (C-Level Board Meeting)</option>
+            <option value="diplomatic_dinner">ضیافت رسمی شام بین‌المللی یا دیپلماتیک (Formal State / Gala Dinner)</option>
+            <option value="working_lunch">ناهار کاری و جلسه پیگیری میان‌روزه (Business Working Lunch)</option>
+            <option value="cocktail_network">رویداد عصرانه شبکه‌سازی و پذیرایی ایستاده (Cocktail & Networking Event)</option>
+            <option value="industrial_site">بازدید میدانی از کارخانه، پروژه و سایت عملیاتی (Site & Factory Visit)</option>
+          </select>
+        </div>
+
+        <!-- Output Cards -->
+        <div id="matrixResults" class="space-y-6">
+          <!-- Populated by JS -->
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-stone-900 text-stone-400 py-10 px-6 border-t border-stone-800 text-center text-xs mt-auto">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-right">
+        <p class="font-bold text-stone-200">دانشگاه تهران • دانشکده اقتصاد • دوره MBA کد 0410</p>
+        <p class="text-[11px] text-stone-500 mt-0.5">درس بیزنس اتیکت و تشریفات تجاری • تدریس استاد اسمعیلو</p>
+      </div>
+      <div>
+        <div class="inline-flex items-center gap-2 mt-1"><span class="text-amber-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span><a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg><span>Parsa Rezaie</span></a></div>
+      </div>
+      <div class="text-left text-[11px] text-stone-500">
+        کلیه حقوق بازبینی و تدوین علمی متعلق به پارسا رضائی می‌باشد.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-view').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-slate-900', 'shadow-md', 'active');
+        btn.classList.add('bg-white/15', 'text-white');
+      });
+
+      const activeView = document.getElementById('tab-content-' + tabId);
+      if (activeView) activeView.classList.remove('hidden');
+
+      const activeBtn = document.getElementById('tab-btn-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-white/15', 'text-white');
+        activeBtn.classList.add('bg-white', 'text-slate-900', 'shadow-md', 'active');
+      }
+
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise();
+      }
+    }
+
+    function toggleSession(sessId) {
+      const notesEl = document.getElementById('notes-' + sessId);
+      const arrowEl = document.getElementById('arrow-' + sessId);
+      const btnEl = document.getElementById('btn-' + sessId);
+
+      if (notesEl.classList.contains('hidden')) {
+        notesEl.classList.remove('hidden');
+        arrowEl.style.transform = 'rotate(180deg)';
+        btnEl.classList.add('bg-amber-200');
+        if (window.MathJax && window.MathJax.typesetPromise) {
+          window.MathJax.typesetPromise([notesEl]);
+        }
+      } else {
+        notesEl.classList.add('hidden');
+        arrowEl.style.transform = 'rotate(0deg)';
+        btnEl.classList.remove('bg-amber-200');
+      }
+    }
+
+    const PROTOCOL_DATA = {
+      formal_board: {
+        dress_men: "کت‌وشلوار رسمی سرمه‌ای تیره، ذغالی یا خاکستری تیره (پرهیز مطلق از مشکی)، پیراهن سفید آهاردار ۱۰۰٪ پنبه، کراوات ابریشمی ساده با گره محکم، کفش چرم آکسفورد مشکی بنددار با جوراب ساق‌بلند هم‌رنگ شلوار، ساعت کلاسیک بند چرمی.",
+        dress_women: "مانتو شلوار فرم اداری با دوخت راسته و پارچه سنگین کرپ یا فاستونی، رنگ‌های خنثی (سرمه‌ای، طوسی دودی، مشکی)، مقنعه رسمی با ایستادگی کامل، کفش چرم پاشنه پهن استاندارد (۳ تا ۵ سانتیمتر)، آرایش کاملاً ملایم و رسمی.",
+        dining_table: "چنانچه در اتاق جلسه پذیرایی انجام شود: فقط آب معدنی در لیوان کریستال، چای یا قهوه تلخ با بیسکویت‌های کوچک بدون خرده‌ریزی (پرهیز از شیرینی‌های خامه‌ای یا تر). در صورت ناهار کاری رسمی: چیدمان کامل از بیرون به درون.",
+        meeting_entry: "ورود بر اساس سلسله‌مراتب سازمانی؛ مدیرعامل مهمان در ابتدا و به همراه مدیرعامل میزبان وارد می‌شود. رئیس جلسه در صدر میز و مقابل درب ورودی مستقر می‌گردد. کارت ویزیت در بدو نشست و پیش از نشستن با دو دست اهدا می‌شود.",
+        faux_pas: "پوشیدن کت‌وشلوار براق یا رنگ روشن، درآوردن کت پیش از اجازه میزبان ارشد، گذاشتن تلفن همراه روی میز مذاکره، نگاه کردن مداوم به ساعت، سخن گفتن هم‌زمان با توزیع پذیرایی."
+      },
+      diplomatic_dinner: {
+        dress_men: "کت‌وشلوار تاکسیدو (Black Tie) یا دارک سوت فوق‌العاده رسمی، پیراهن سفید با دکمه سردست (Cufflinks)، کراوات یا پاپیون ظریف، کفش ورنی یا آکسفورد واکس‌خورده مشکی اعلا.",
+        dress_women: "لباس رسمی شب متناسب با پروتکل دیپلماتیک یا مانتو مجلسی فاخر با وقار تشریفاتی، پارچه‌های ابریشمی یا ژاکارد تیره، شال یا روسری ابریشم خالص، زیورآلات ظریف و بدون سروصدا.",
+        dining_table: "چیدمان کامل ۶ تیکه‌ای: دستمال سفره روی زانو بلافاصله پس از نشستن، استفاده از قاشق و چنگال از بیرونی‌ترین به سمت درونی‌ترین، نان با دست تکه‌تکه شده و لقمه‌ای کره مالیده می‌شود (نه برش با چاقو)، سوپ با حرکت قاشق به سمت بیرون میل می‌شود.",
+        meeting_entry: "رعایت تقدم پرچم‌ها و تقدم سفرا/مقامات عالی بر اساس الفبای بین‌المللی یا تاریخ استوارنامه. همراهی مهمان عالی‌رتبه تا صندلی مخصوص؛ هیچ‌کس پیش از نشستن میزبان اصلی نمی‌نشیند.",
+        faux_pas: "فوت کردن به سوپ، صحبت کردن با دهان پر، نمک زدن به غذا پیش از چشیدن آن (توهین به سرآشپز و نماد پیش‌داوری)، قرار دادن دستمال استفاده‌شده در بشقاب (باید سمت چپ بشقاب گذاشته شود)."
+      },
+      working_lunch: {
+        dress_men: "کد Business Casual / Smart Casual: کت تک نیمه‌رسمی (بلیزر سرمه‌ای) با شلوار کتان تیره یا فاستونی، پیراهن راه‌راه ظریف یا آبی کم‌رنگ بدون کراوات، کفش دربی یا لوفر چرمی باکیفیت.",
+        dress_women: "مانتو شلوار اداری راحت‌تر، رنگ‌های ملایم سازمانی، روسری یا شال مرتب با بسته‌بندی محکم، کفش چرمی شیک تخت یا لژدار کوتاه.",
+        dining_table: "انتخاب غذاهایی که خوردن آن‌ها تمیز، بدون نیاز به ریخت‌وپاش دست و بدون بوی سیر و پیاز باشد (پرهیز از اسپاگتی، بال مرغ، خورشت‌های آبکی سنگین). تمرکز روی سالادهای پروتئینی یا استیک فیله.",
+        meeting_entry: "میزبان باید حداقل ۱۰ دقیقه زودتر در رستوران حاضر باشد و میز را از قبل رزرو کرده باشد. میزبان صورت‌حساب را بدون جلب توجه و از قبل یا کنار صندوق تسویه می‌کند؛ چانه‌زنی بر سر دُنگ در اتیکت تجاری ممنوع است.",
+        faux_pas: "سفارش گران‌ترین یا ارزان‌ترین غذای منو، پیشنهاد دادن برای تقسیم مساوی فاکتور توسط مهمان، استفاده از خلال دندان پای میز بدون پوشش دستمال."
+      },
+      cocktail_network: {
+        dress_men: "کت تک شیک، شلوار فاستونی یا کتان شیک، پیراهن خوش‌دوخت بدون کراوات، پوشت (دستمال جیب) رنگی با تا خوردن دقیق، ساعت شیک و کفش تمیز.",
+        dress_women: "پوشش مانتو و پالتوی مدرن و رسمی با ترکیب رنگی هارمونیک، کیف دستی کوچک رودوشی (Crossbody) تا دست‌ها برای پذیرایی آزاد باشند.",
+        dining_table: "غذاهای فینگر فود (Finger Food) یک‌لقمه‌ای. دست راست باید همواره خشک و آزاد باشد تا در صورت مواجهه با دیگران بتوان بلافاصله دست داد (لیوان نوشیدنی همواره در دست چپ نگه داشته می‌شود).",
+        meeting_entry: "آداب معرفی مثلثی: معرفی فرد با رتبه پایین‌تر به فرد با رتبه بالاتر؛ تبادل کارت ویزیت در پایان گفت‌وگوی ۲ تا ۳ دقیقه‌ای؛ پرهیز از چسبیدن به یک نفر بیش از ۵ دقیقه.",
+        faux_pas: "نگه داشتن لیوان سرد در دست راست و دست دادن با دست نمناک یا سرد، پر کردن بیش از حد بشقاب با فینگر فود، معرفی نکردن همراهان حاضر در جمع."
+      },
+      industrial_site: {
+        dress_men: "کد Industrial Smart: شلوار کتان ضخیم، پیراهن آستین‌بلند دکمه‌دار، کاپشن یا اورکت مهندسی مرتب، کفش ایمنی رسمی یا بوت چرمی با عاج ایمن، به همراه کلاه ایمنی سازمانی (Hard Hat).",
+        dress_women: "مانتو شلوار کارگاهی راحت با پارچه مقاوم، مقنعه محکم و بدون حاشیه رها، کفش ایمنی پنجه‌فولادی مخصوص بازدید صنعتی بدون پاشنه، عدم استفاده از شال آویزان به دلیل ریسک ماشین‌آلات.",
+        dining_table: "پذیرایی سبک در سالن کنفرانس کارخانه؛ احترام به فرهنگ کاری پرسنل و رعایت سادگی در پذیرایی.",
+        meeting_entry: "رعایت کامل پروتکل‌های HSE، حرکت در مسیرهای خط‌کشی‌شده زردرنگ، رعایت حق تقدم تجهیزات و کارگران در حال تردد.",
+        faux_pas: "پوشیدن کت‌وشلوار مجلسی ظریف با کفش ورنی در خط تولید، لمس قطعات و دکمه‌های ماشین‌آلات بدون هماهنگی، عدم رعایت هشدارهای ایمنی."
+      }
+    };
+
+    function updateMatrix() {
+      const val = document.getElementById('eventSelector').value;
+      const data = PROTOCOL_DATA[val];
+      const container = document.getElementById('matrixResults');
+
+      container.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Dress Code Men -->
+          <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+            <div class="flex items-center gap-2 mb-2 text-stone-900 font-bold text-sm">
+              <span>👔</span>
+              <span>کد پوشش آقایان (Dress Code - Men)</span>
+            </div>
+            <p class="text-xs text-stone-700 leading-relaxed">${data.dress_men}</p>
+          </div>
+
+          <!-- Dress Code Women -->
+          <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+            <div class="flex items-center gap-2 mb-2 text-stone-900 font-bold text-sm">
+              <span>👗</span>
+              <span>کد پوشش خانم‌ها (Dress Code - Women)</span>
+            </div>
+            <p class="text-xs text-stone-700 leading-relaxed">${data.dress_women}</p>
+          </div>
+        </div>
+
+        <!-- Dining & Table Etiquette -->
+        <div class="bg-amber-50/70 border border-amber-200 rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-2 text-amber-950 font-bold text-sm">
+            <span>🍽️</span>
+            <span>پروتکل میز غذا، ضیافت و پذیرایی (Dining Etiquette)</span>
+          </div>
+          <p class="text-xs text-stone-700 leading-relaxed">${data.dining_table}</p>
+        </div>
+
+        <!-- Meeting & Entry Protocol -->
+        <div class="bg-stone-50 border border-stone-200 rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-2 text-stone-900 font-bold text-sm">
+            <span>🚪</span>
+            <span>آداب ورود، تقدم افراد و معارفه (Protocol & Hierarchy)</span>
+          </div>
+          <p class="text-xs text-stone-700 leading-relaxed">${data.meeting_entry}</p>
+        </div>
+
+        <!-- Fatal Faux Pas -->
+        <div class="bg-red-50/70 border border-red-200 rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-2 text-red-900 font-bold text-sm">
+            <span>⚠️</span>
+            <span>خطاهای مرگبار تشریفاتی (Fatal Faux Pas - خط قرمزها)</span>
+          </div>
+          <p class="text-xs text-red-800 leading-relaxed">${data.faux_pas}</p>
+        </div>
+      `;
+    }
+
+    // Initial run
+    document.addEventListener('DOMContentLoaded', () => {
+      updateMatrix();
+    });
+  </script>
+</body>
+</html>

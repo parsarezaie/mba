@@ -57,7 +57,7 @@
             دانشنامه کاربردی و داشبورد تعاملی اقتصاد برای مدیران
           </h1>
           <p class="text-slate-300 text-xs md:text-sm font-light">
-            مدرس: <strong class="text-white font-semibold">دکتر علی سرزعیم</strong> | تحلیل اقتصادی خرد و کلان، تئوری تصمیم‌گیری، ساختار بازارها، موتور تورم و مدیریت ریسک ارزی در ایران
+            مدرسین: <strong class="text-white font-semibold">دکتر علی سرزعیم</strong> (جریان اصلی نئوکلاسیک) & <strong class="text-amber-300 font-semibold">دکتر علی دینی ترکمانی</strong> (مکتب نهادگرایی ساختاری)
           </p>
           <div class="inline-flex items-center gap-2 mt-1">
   <span class="text-indigo-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
@@ -70,8 +70,8 @@
 
         <div class="flex items-center gap-3">
           <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-4 py-2.5 text-center shadow-inner">
-            <div class="text-xs text-indigo-200 font-medium">حجم دوره و تدریس</div>
-            <div class="text-lg md:text-xl font-black text-amber-300 mt-0.5">۵ جلسه • ۲۰ ساعت</div>
+            <div class="text-xs text-indigo-200 font-medium">حجم تدریس و تحلیل تطبیقی</div>
+            <div class="text-lg md:text-xl font-black text-amber-300 mt-0.5">۱۰ جلسه • ۴۰ ساعت</div>
           </div>
         </div>
       </div>
@@ -79,31 +79,34 @@
       <!-- TABS NAVIGATION -->
       <nav class="border-t border-white/15 pt-4 flex flex-wrap gap-2 items-center">
         <a href="../" class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 px-4 py-2 rounded-lg text-xs md:text-sm font-extrabold shadow-md transition-all flex items-center gap-1.5 hover:scale-105">
-          <span>🏠 بازگشت به صفحه اصلی (انتخاب کلاس)</span>
+          <span>🏠 بازگشت به صفحه اصلی</span>
         </a>
-        <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn active bg-white text-slate-900 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-bold shadow transition">
+        <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn active bg-white text-slate-900 px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold shadow transition">
           📌 نمای کلی و دکترین
         </button>
-        <button onclick="switchTab('s1')" id="tab-s1" class="tab-btn bg-white/10 hover:bg-white/20 text-white px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition">
-          جلسه ۱: تفکر اقتصادی و بازار
+        <button onclick="switchTab('s1')" id="tab-s1" class="tab-btn bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-medium transition">
+          جلسه ۱: تفکر اقتصادی
         </button>
-        <button onclick="switchTab('s2')" id="tab-s2" class="tab-btn bg-white/10 hover:bg-white/20 text-white px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition">
-          جلسه ۲: کشش‌ها و قیمت‌گذاری
+        <button onclick="switchTab('s2')" id="tab-s2" class="tab-btn bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-medium transition">
+          جلسه ۲: کشش‌ها و قیمت
         </button>
-        <button onclick="switchTab('s3')" id="tab-s3" class="tab-btn bg-white/10 hover:bg-white/20 text-white px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition">
-          جلسه ۳: ساختار بازار و بهینه‌سازی سود
+        <button onclick="switchTab('s3')" id="tab-s3" class="tab-btn bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-medium transition">
+          جلسه ۳: ساختار بازار و سود
         </button>
-        <button onclick="switchTab('s4')" id="tab-s4" class="tab-btn bg-white/10 hover:bg-white/20 text-white px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition">
-          جلسه ۴: اقتصاد کلان و موتور تورم
+        <button onclick="switchTab('s4')" id="tab-s4" class="tab-btn bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-medium transition">
+          جلسه ۴: اقتصاد کلان و تورم
         </button>
-        <button onclick="switchTab('s5')" id="tab-s5" class="tab-btn bg-white/10 hover:bg-white/20 text-white px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-medium transition">
-          جلسه ۵: ارز و مدیریت عدم‌قطعیت
+        <button onclick="switchTab('s5')" id="tab-s5" class="tab-btn bg-white/10 hover:bg-white/20 text-white px-3 py-1.5 rounded-lg text-xs md:text-sm font-medium transition">
+          جلسه ۵: ارز و نااطمینانی
         </button>
-        <button onclick="switchTab('calc')" id="tab-calc" class="tab-btn bg-amber-500/30 hover:bg-amber-500/40 text-amber-200 border border-amber-400/40 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-1">
-          <span>🧮 ماشین‌حساب‌های اقتصادی</span>
+        <button onclick="switchTab('comparative')" id="tab-comparative" class="tab-btn bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white border border-purple-400/50 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-black shadow transition flex items-center gap-1.5">
+          <span>⚖️ دیدگاه‌های تکمیلی و تطبیقی (دکتر دینی ترکمانی)</span>
         </button>
-        <button onclick="switchTab('master')" id="tab-master" class="tab-btn bg-indigo-500/40 hover:bg-indigo-500/60 text-indigo-100 border border-indigo-400/40 px-3.5 py-1.5 rounded-lg text-xs md:text-sm font-bold transition">
-          📖 دانشنامه تجمیعی (Master Handbook)
+        <button onclick="switchTab('calc')" id="tab-calc" class="tab-btn bg-amber-500/30 hover:bg-amber-500/40 text-amber-200 border border-amber-400/40 px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold transition flex items-center gap-1">
+          <span>🧮 ماشین‌حساب‌ها</span>
+        </button>
+        <button onclick="switchTab('master')" id="tab-master" class="tab-btn bg-indigo-500/40 hover:bg-indigo-500/60 text-indigo-100 border border-indigo-400/40 px-3 py-1.5 rounded-lg text-xs md:text-sm font-bold transition">
+          📖 دانشنامه جامع
         </button>
       </nav>
     </div>
@@ -130,6 +133,25 @@
             </p>
           </div>
         </div>
+      </div>
+
+      <!-- SPOTLIGHT: COMPARATIVE MODULE BANNER -->
+      <div class="bg-gradient-to-r from-purple-900 to-indigo-950 text-white rounded-2xl p-6 shadow-md border border-purple-700/50 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-purple-500/40 border border-purple-400/40 text-purple-200 text-[11px] px-2.5 py-0.5 rounded-full font-bold">بخش ویژه و انحصاری داشبورد</span>
+            <span class="bg-amber-400/30 text-amber-300 text-[11px] px-2.5 py-0.5 rounded-full font-bold">دوئل مکاتب اقتصادی در ایران</span>
+          </div>
+          <h3 class="text-lg md:text-xl font-black text-white mb-1">
+            تحلیل تطبیقی: نئوکلاسیک (دکتر سرزعیم) در برابر نهادگرایی ساختاری (دکتر دینی ترکمانی)
+          </h3>
+          <p class="text-purple-200 text-xs md:text-sm font-light max-w-3xl leading-relaxed">
+            کالبدشکافی آموزه‌های هر ۵ جلسه استاد دینی ترکمانی، استخراج مفاهیم مازاد (شکست هماهنگی، قفل‌شدگی نهادی، تورم فشار هزینه، اقتصاد سیاسی ارز و سیاست صنعتی) و ماتریس مقایسه مستقیم برای تصمیم‌گیری مدیرعامل.
+          </p>
+        </div>
+        <button onclick="switchTab('comparative')" class="bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 px-5 py-2.5 rounded-xl text-xs md:text-sm font-black shadow-lg hover:scale-105 transition flex-shrink-0 flex items-center gap-1.5">
+          <span>مشاهده تحلیل تطبیقی ➔</span>
+        </button>
       </div>
 
       <!-- SESSIONS ROADMAP GRID -->
@@ -250,7 +272,6 @@
 
     <!-- SESSION 1 TAB (Two-Layer Architecture) -->
     <section id="content-s1" class="tab-content hidden space-y-6">
-      <!-- Layer 1: Visual Executive Summary Card -->
       <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
           <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه اول</span>
@@ -629,7 +650,6 @@ $$I_{\text{Net}} = I_{\text{Gross}} - \delta K$$<br />
 
     <!-- SESSION 2 TAB (Two-Layer Architecture) -->
     <section id="content-s2" class="tab-content hidden space-y-6">
-      <!-- Layer 1: Visual Executive Summary Card -->
       <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
           <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه دوم</span>
@@ -967,7 +987,6 @@ i_max │─────────────X────────── 
 
     <!-- SESSION 3 TAB (Two-Layer Architecture) -->
     <section id="content-s3" class="tab-content hidden space-y-6">
-      <!-- Layer 1: Visual Executive Summary Card -->
       <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
           <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه سوم</span>
@@ -1290,7 +1309,6 @@ i_max │─────────────X────────── 
 
     <!-- SESSION 4 TAB (Two-Layer Architecture) -->
     <section id="content-s4" class="tab-content hidden space-y-6">
-      <!-- Layer 1: Visual Executive Summary Card -->
       <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
           <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه چهارم</span>
@@ -1724,7 +1742,6 @@ P*├────────────┼────────────
 
     <!-- SESSION 5 TAB (Two-Layer Architecture) -->
     <section id="content-s5" class="tab-content hidden space-y-6">
-      <!-- Layer 1: Visual Executive Summary Card -->
       <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
         <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
           <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه پنجم</span>
@@ -2035,6 +2052,1341 @@ P_max ├───A─┼───B  &lt;--- (سقف قیمت دستوری)
       </div>
     </section>
 
+    <!-- TAB: COMPARATIVE & DINI TORKAMANI (The Special Paradigm Duel Module) -->
+    <section id="content-comparative" class="tab-content hidden space-y-6">
+      
+      <!-- Banner -->
+      <div class="bg-gradient-to-r from-purple-50 via-indigo-50 to-amber-50 border-r-4 border-purple-600 rounded-2xl p-6 shadow-sm">
+        <div class="flex items-start gap-4">
+          <div class="bg-purple-600 text-white p-3.5 rounded-xl shadow-md text-2xl flex-shrink-0">
+            ⚖️
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-bold bg-purple-100 text-purple-800 px-2.5 py-0.5 rounded-full">تحلیل تطبیقی و دیدگاه‌های دگراندیش</span>
+              <span class="text-xs text-slate-500">تدریس دکتر علی دینی ترکمانی در برابر دکتر علی سرزعیم</span>
+            </div>
+            <h2 class="text-lg md:text-xl font-extrabold text-slate-900 mb-2">
+              دوئل مکاتب اقتصادی در ایران: ارتدوکس نئوکلاسیک در برابر نهادگرایی ساختاری
+            </h2>
+            <p class="text-slate-700 text-xs md:text-sm leading-relaxed text-justify">
+              بنگاه‌های اقتصادی در ایران هم‌زمان در دو زمین بازی می‌کنند: «زمین اول، رقابت بازار، محاسبه قیمت و بهینه‌سازی عملیاتی» و «زمین دوم، اصطکاک‌های ساختاری، توزیع رانت، تعارض منافع گروه‌های ذی‌نفوذ و ناترازی‌های کلان انرژی و ارز». در حالی که آموزه‌های <strong>دکتر علی سرزعیم</strong> مدیر را به ابزارهای تصمیم‌گیری بر لبه نهایی ($MC=MR$)، کشش قیمتی و انضباط نقدی مجهز می‌کند، تحلیل‌های <strong>دکتر علی دینی ترکمانی</strong> لنز مکتب نهادگرایی را می‌گشاید و علل شکست هماهنگی، قفل‌شدگی ساختاری و ناکارآمدی آزادسازی‌های بدون اصلاح نهادی را تبیین می‌نماید.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MASTER COMPARATIVE PARADIGM MATRIX -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+          <h3 class="text-base font-extrabold text-slate-900 flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-purple-600"></span>
+            <span>ماتریس جامع مقایسه تطبیقی دو استاد (Comparative Paradigm Matrix)</span>
+          </h3>
+          <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full font-medium">۶ محور کلیدی استراتژی بنگاه</span>
+        </div>
+        
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-right border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-800 border-b border-slate-200 font-bold">
+                <th class="p-3 w-1/6">محور تحلیل اقتصادی</th>
+                <th class="p-3 w-5/12 bg-indigo-50/80 text-indigo-950 border-r border-indigo-200">رویکرد دکتر علی سرزعیم (جریان اصلی / نئوکلاسیک)</th>
+                <th class="p-3 w-5/12 bg-purple-50/80 text-purple-950 border-r border-purple-200">رویکرد دکتر علی دینی ترکمانی (مکتب نهادگرایی ساختاری)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">۱. متدولوژی و رفتار انسان</td>
+                <td class="p-3 text-slate-700 bg-indigo-50/20 leading-relaxed">فردگرایی روش‌شناختی؛ عقلانیت ابزاری حداکثرساز مطلوبیت (Homo Economicus)؛ بازار به عنوان ماشین خودتنظیم‌گر کشف قیمت و تخصیص بهینه منابع.</td>
+                <td class="p-3 text-slate-700 bg-purple-50/20 leading-relaxed">کل‌گرایی ساختاری؛ عقلانیت محدود و مقید به هنجارها و نهادها؛ بازار نهادی تعبیه‌شده (Embedded) در شبکه قدرت سیاسی، توزیع رانت و تعارض منافع.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">۲. منطق قیمت‌گذاری و بازار</td>
+                <td class="p-3 text-slate-700 bg-indigo-50/20 leading-relaxed">تعیین قیمت توسط تقاطع عرضه و تقاضا؛ فرمول حاشیه سود لرنر ($L=1/|E_d|$)؛ شرط بهینه‌سازی سود در $MC=MR$؛ محکومیت هرگونه کنترل دستوری قیمت.</td>
+                <td class="p-3 text-slate-700 bg-purple-50/20 leading-relaxed">قیمت‌گذاری مبتنی بر تعارض در تقسیم مازاد و چسبندگی نهادی؛ ناتوانی علامت‌دهی قیمت‌ها در شرایط شکست هماهنگی؛ ضرورت سیاست صنعتی و هدایت اعتبارات.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">۳. ریشه‌یابی تورم در ایران</td>
+                <td class="p-3 text-slate-700 bg-indigo-50/20 leading-relaxed">تورم پدیده‌ای صرفاً پولی ($MV=PY$) ناشی از کسری بودجه، استقراض دولت و خلق پول بی‌رویه شبکه بانکی؛ مهار تورم نیازمند انضباط پولی و آزادسازی نرخ بهره است.</td>
+                <td class="p-3 text-slate-700 bg-purple-50/20 leading-relaxed">تورم ناشی از فشار هزینه (Cost-Push)، مارپیچ نرخ ارز-دستمزد، افت بهره‌وری و شوک‌های برون‌زا؛ خلق پول معلول ناترازی‌های اقتصاد سیاسی است، نه علت اولیه.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">۴. بازار ارز و شوک‌های ارزی</td>
+                <td class="p-3 text-slate-700 bg-indigo-50/20 leading-relaxed">روند بلندمدت ارز بر پایه تفاضل تورم (PPP)؛ جهش‌های ارزی حاصل سرکوب طولانی‌مدت نرخ است؛ تک‌نرخی شدن بازارمحور تنها درمان علمی و پایدار است.</td>
+                <td class="p-3 text-slate-700 bg-purple-50/20 leading-relaxed">آزادسازی شتاب‌زده ارز در فقدان ارز پایدار به فرار سرمایه و تشدید تورم می‌انجامد؛ نظام چندنرخی معلول شوک است و مهار آن نیازمند مدیریت استراتژیک تجارت خارجی است.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">۵. انباشت سرمایه و توسعه صنعتی</td>
+                <td class="p-3 text-slate-700 bg-indigo-50/20 leading-relaxed">حاکمیت بخش خصوصی؛ حذف رانت‌ها و خروج دولت از بنگاه‌داری؛ اعتماد به رقابت آزاد برای شکل‌گیری بنگاه‌های چابک و صرفه به مقیاس خودجوش.</td>
+                <td class="p-3 text-slate-700 bg-purple-50/20 leading-relaxed">لزوم «دولت توسعه‌گرا» با اقتدار صنعتی؛ حل معضل «شکست هماهنگی» (Coordination Failure) و جلوگیری از پراکندگی سرمایه‌ها در واحدهای غیراقتصادی و نیمه‌کاره.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">۶. قطب‌نمای تصمیم‌گیری مدیرعامل</td>
+                <td class="p-3 text-slate-700 bg-indigo-50/20 leading-relaxed">محاسبه دقیق هزینه فرصت، حذف هزینه‌های غرق‌شده، چابک‌سازی نقدینگی، تطبیق سریع قیمت با کشش بازار و پرهیز از سرمایه‌گذاری متکی بر رانت.</td>
+                <td class="p-3 text-slate-700 bg-purple-50/20 leading-relaxed">شناسایی شبکه ذی‌نفوذان صنعت، محافظت از زنجیره تامین در برابر ناترازی انرژی و مواد اولیه، مدیریت ریسک شوک‌های ارزی فشار هزینه، و ایجاد اتحادهای استراتژیک نهادی.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- FIVE COMPARATIVE SESSIONS WITH COLLAPSIBLE DEEP NOTES -->
+      <div class="space-y-6">
+        <h3 class="text-base font-extrabold text-slate-900 flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+          <span>کالبدشکافی جلسات ۵ گانه دکتر دینی ترکمانی و مباحث مازاد بر دوره</span>
+        </h3>
+
+        <!-- Dini S1 Card -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="p-6 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-100">
+              <span class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-full">جلسه اول ترکمانی • فلسفه و روش‌شناسی</span>
+              <span class="text-xs text-slate-500">نقد فروض کلاسیک • عقلانیت محدود • شکست بازار در جهان سوم</span>
+            </div>
+            <h4 class="text-base font-black text-slate-900">فلسفه علم اقتصاد، متدولوژی نهادگرایی و نقد مدل انسان عقلایی</h4>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
+              دکتر دینی ترکمانی در این جلسه فرض بنیادی «انسان عقلایی محاسبه‌گر» در الگوی سرزعیم را به چالش می‌کشد. او استدلال می‌کند که رفتار انسان‌ها در جوامع در حال گذار، تحت تأثیر هنجارهای تاریخی، ناامنی حقوق مالکیت و رانت‌جویی شکل می‌گیرد. در حالی که سرزعیم بازار را کاراترین سازوکار می‌داند، ترکمانی نشان می‌دهد که بازارهای رهاشده در ساختار انحصاری و غیرشفاف ایران، به جای افزایش بهره‌وری، به مسابقه کسب رانت تبدیل می‌شوند.
+            </p>
+            <div class="p-3 bg-purple-50/50 rounded-xl border border-purple-100 text-xs text-purple-950">
+              <strong>💡 مباحث مازاد بر کلاس سرزعیم:</strong> مفهوم تعبیه اجتماعی بازار (Embeddedness)، تئوری انتخاب عمومی در کشورهای نفتی، و علل تاریخی ناکامی مکانیزم قیمت در ایجاد انباشت پایدار سرمایه در ایران.
+            </div>
+          </div>
+          <button onclick="toggleSection('full-dini-s1')" class="w-full p-4 bg-slate-50 hover:bg-slate-100 transition-colors flex items-center justify-between text-right border-t border-slate-100">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-lg bg-purple-700 text-white flex items-center justify-center font-bold text-xs">📖</span>
+              <div>
+                <strong class="text-xs font-bold text-slate-900 block">مشاهده متن کامل دانشنامه تطبیقی جلسه اول</strong>
+                <span class="text-[11px] text-slate-500">تحلیل موشکافانه ۳۳ هزار کاراکتری با ماتریس مقایسه مستقیم سرزعیم vs ترکمانی</span>
+              </div>
+            </div>
+            <span id="icon-full-dini-s1" class="text-xs font-bold text-purple-700">▼ باز کردن</span>
+          </button>
+          <div id="full-dini-s1" class="hidden p-6 md:p-8 border-t border-slate-100 prose-custom max-w-none">
+            <h1 id="-">اقتصاد برای مدیران (استاد دینی ترکمانی) - جلسه اول: فلسفه اقتصاد، متدولوژی نهادگرایی و نقد فروض کلاسیک</h1>
+<p><strong>مدرس:</strong> دکتر علی دینی ترکمانی<br />
+<strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA (کد 0410)<br />
+<strong>تنظیم و تدوین تطبیقی:</strong> پارسا رضائی (Parsa Rezaie)</p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی سازمانی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. جوهره، بینش کلیدی و پیام محوری</h3>
+<p>جلسه نخست درس «اقتصاد برای مدیران» با تدریس دکتر علی دینی ترکمانی، شالوده‌شکنی آگاهانه الگوهای ساده‌انگارانه اقتصاد نئوکلاسیک (جریان اصلی) و تبیین ماتریس تصمیم‌گیری مدیریتی بر پایه <strong>اقتصاد نهادگرا (Institutional Economics)</strong> و <strong>اقتصاد ساختارگرا (Structural Economics)</strong> است. پیام محوری استاد به مدیران ارشد این است: <strong>«قیمت‌ها در خلاء تعیین نمی‌شوند؛ سیگنال‌های قیمتی در اقتصاد ایران تحت سیطره گره‌های ساختاری، قفل‌شدگی‌های نهادی، توزیع رانت و ناهماهنگی‌های کلان عمل می‌کنند. اتکای محض به فرضیات خرد نئوکلاسیک مانند عقلانیت کامل، کارایی بازار و تعادل خودکار، شکست قطعی استراتژی‌های شرکتی را رقم خواهد زد.»</strong></p>
+<p>استاد با پیوند زدن تکنیک‌های ارزیابی طرح‌های اقتصادی (مانند ارزش فعلی خالص - NPV) به واقعیت‌های تورم ساختاری، نااطمینانی‌های تحریمی و شکست بازار، نشان می‌دهد که چگونه تصمیات بنگاه در سطح خرد، عمیقاً مقهور و متاثر از متغیرهای کلان و ترتیبات نهادی (Institutional Arrangements) است.</p>
+<pre><code>┌────────────────────────────────────────────────────────────────────────┐
+│                   پارادایم نهادگرایی و ساختارگرایی                    │
+│                        (دکتر دینی ترکمانی)                             │
+└────────────────────────────────────────────────────────────────────────┘
+                                   │
+        ┌──────────────────────────┴──────────────────────────┐
+        ▼                                                     ▼
+┌───────────────────────────────┐             ┌───────────────────────────────┐
+│     شکست هماهنگی کلان        │             │    تحریف سیگنال‌های قیمتی     │
+│   (Coordination Failure)      │             │     (Price Signal Distortion) │
+└───────────────────────────────┘             └───────────────────────────────┘
+        │                                                     │
+        └──────────────────────────┬──────────────────────────┘
+                                   ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│           الزام مدیران به اتخاذ استراتژی‌های محافظتی و نهادی          │
+│                (Institutional Risk Management)                         │
+└────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h3 id="_2">۱.۲. مقایسه فوری: دکتر دینی ترکمانی در برابر دکتر سرزعیم</h3>
+<ul>
+<li><strong>دیدگاه دکتر سرزعیم (جریان اصلی / نئوکلاسیک):</strong> بر اصل فردگرایی روش‌شناختی (Methodological Individualism)، عقلانیت عاملان اقتصادی (Homo Economicus)، تخصیص بهینه منابع در حاشیه (Marginal Analysis)، و قدرت تنظیم‌گری خودکار مکانیسم قیمت‌ها تاکید دارد. در این نگاه، مدیر باید بر کارایی داخلی و پاسخ به سیگنال‌های قیمت بازار تمرکز کند.</li>
+<li><strong>دیدگاه دکتر دینی ترکمانی (نهادگرا / دگراندیش):</strong> بر اصالت نهادها، تعارض منافع، شکست هماهنگی، ساختار انحصاری/رنتی بازارها، و عدم امکان عقلانیت کامل در شرایط نااطمینانی ساختاری تاکید دارد. از نظر او، قیمت‌ها در ایران نه منعکس‌کننده کارایی، بلکه برآمدِ جهش‌های نرخ ارز، تورم فشار هزینه، و بازتوزیع رانت هستند.</li>
+</ul>
+<h3 id="c-suite">۱.۳. سه تصمیم حیاتی برای مدیران ارشد (C-Suite)</h3>
+<ol>
+<li><strong>بازنگری در نرخ تنزیل (Discount Rate) پروژه‌ها:</strong> اعمال «پریمیوم ریسک نهادی-ساختاری» در ارزیابی پروژه‌های سرمایه‌گذاری (NPV) به جای استفاده از نرخ‌های سود بانکی یا تورم رسمی.</li>
+<li><strong>مدیریت سرمایه در گردش بر اساس تورم فشار هزینه:</strong> انتقال استراتژی خرید مواد اولیه از مدل «به‌موقع» (Just-In-Time) به مدل «ذخیره‌سازی استراتژیک» جهت خنثی‌سازی اثرات جهش ارز (Exchange Rate Pass-Through).</li>
+<li><strong>تنوع‌بخشی به سبد دارایی‌های بنگاه بر اساس تحلیل بازارهای موازی:</strong> خروج از سود موهومی ناشی از نقدینگی و ورود به دارایی‌های مولد با ارزش ذاتی یا دارایی‌های ثابت جهت حفظ قدرت خرید بنگاه در برابر مارپیچ تورم-ارز.</li>
+</ol>
+<hr />
+<h2 id="deep-theoretical-analysis">۲. کالبدشکافی موشکافانه تئوری‌ها و آموزه‌های دکتر دینی ترکمانی (Deep Theoretical Analysis)</h2>
+<h3 id="_3">۲.۱. ارزیابی مالی طرح‌ها و نرخ تنزیل در محیط نااطمینان</h3>
+<p>دکتر دینی ترکمانی بحث خود را با تکنیک‌های بودجه‌بندی سرمایه‌ای (Capital Budgeting) آغاز کرده و نشان می‌دهد که ریاضیات مالی بدون درک بستر نهادی، ابزاری گمراه‌کننده است. فرمول ریاضی ارزش فعلی خالص (Net Present Value - NPV) به شرح زیر است:</p>
+<p>$$NPV = \sum_{t=1}^{n} \frac{CF_t}{(1+k)^t} - C_0$$</p>
+<p>که در آن:<br />
+*   $CF_t$: جریان نقدینگی خالص در زمان $t$ (Net Cash Flow)<br />
+*   $C_0$: سرمایه‌گذاری اولیه (Initial Investment)<br />
+*   $k$: نرخ تنزیل یا هزینه سرمایه (Discount Rate / Cost of Capital)<br />
+*   $n$: طول عمر اقتصادی پروژه (Project Horizon)</p>
+<h4 id="mathph_9_end">تحلیل نهادی نرخ تنزیل ($k$)</h4>
+<p>در ادبیات نئوکلاسیک، $k$ نرخ تنزیل عادلانه بازار بر اساس هزینه فرصت سرمایه است. اما دینی ترکمانی اثبات می‌کند که در اقتصاد ساختارزده ایران، $k$ متغیری پیچیده و شامل مولفه‌های زیر است:</p>
+<p>$$k = r_f + \pi^e + \lambda_{inst} + \lambda_{currency}$$</p>
+<ul>
+<li>$r_f$: نرخ بهره بدون ریسک (Risk-Free Rate)</li>
+<li>$\pi^e$: تورم انتظاری (Expected Inflation)</li>
+<li>$\lambda_{inst}$: پریمیوم ریسک نااطمینانی نهادی و بی‌ثباتی قوانین (Institutional Risk Premium)</li>
+<li>$\lambda_{currency}$: ریسک جهش‌های ناگهانی نرخ ارز (Currency Shock Premium)</li>
+</ul>
+<p><strong>نتیجه مدیریتی:</strong> زمانی که بی‌ثباتی نهادی ($\lambda_{inst}$) و تورم انتظاری ($\pi^e$) بالا می‌رود، نرخ تنزیل ($k$) به شدت جهش یافته و مخرج کسر NPV بزرگ می‌شود. در نتیجه، پروژه‌های تولیدی دیربازده (با $n$ بالا) غیراقتصادی شده و سرمایه‌ها به سوی فعالیت‌های سوداگرانه، کوتاه‌مدت و با نقدشوندگی بالا هدایت می‌شوند.</p>
+<h3 id="_4">۲.۲. تورم ساختاری در برابر تورم پولی</h3>
+<p>استاد با نقد دیدگاه ساده‌انگارانه پولی (Monetarist) که تورم را صرفاً ناشی از رشد حجم پول ($M_2$) می‌داند، مدل ساختاری تورم در ایران را تبیین می‌کند:</p>
+<p>$$\Delta P = f\left( \Delta E, \Delta W, \frac{\Delta M_2}{\Delta Y}, \text{Bottlenecks} \right)$$</p>
+<ul>
+<li>$\Delta P$: نرخ تورم (Inflation Rate)</li>
+<li>$\Delta E$: نرخ جهش ارز (Exchange Rate Shock)</li>
+<li>$\Delta W$: نرخ رشد دستمزدها و هزینه‌های تولید (Cost-Push)</li>
+<li>$\frac{\Delta M_2}{\Delta Y}$: شکاف میان رشد نقدینگی و رشد تولید ناخالص داخلی</li>
+<li>$\text{Bottlenecks}$: تنگناهای ساختاری عرضه و انحصارات</li>
+</ul>
+<pre><code>                                  ┌───────────────────────────────┐
+                                  │   جهش نرخ ارز (Exchange Rate) │
+                                  └──────────────┬────────────────┘
+                                                 │
+                                                 ▼
+┌───────────────────────────────┐   ┌───────────────────────────────┐
+│   افزایش قیمت مواد اولیه و    │   │  انتظارات تورمی جامعه و بنگاه │
+│  کالاهای واسطه‌ای وارداتی    │   │     (Inflation Expectations)  │
+└──────────────┬────────────────┘   └──────────────┬────────────────┘
+               │                                   │
+               └─────────────────┬─────────────────┘
+                                 ▼
+                   ┌───────────────────────────────┐
+                   │    تورم فشار هزینه (Cost-Push) │
+                   └──────────────┬────────────────┘
+                                  │
+                                  ▼
+                   ┌───────────────────────────────┐
+                   │ فشار بر سیستم بانکی جهت تامینی │
+                   │  سرمایه در گردش و رشد نقدینگی │
+                   └───────────────────────────────┘
+</code></pre>
+<p><strong>تحلیل دینی ترکمانی:</strong> در ایران، نقدینگی علت تامّه تورم نیست، بلکه بخش عمده‌ای از خلق پول، <strong>معلول</strong> تورم فشار هزینه و جهش‌های نرخ ارز است. بنگاه‌ها برای حفظ تولید در قیمت‌های جدید، نیازمند سرمایه در گردش بیشتری هستند و بانک‌ها مجبور به خلق اعتبارات جدید می‌شوند.</p>
+<h3 id="_5">۲.۳. ساختار هزینه‌ها، ظرفیت اسمی و ظرفیت واقعی</h3>
+<p>دکتر دینی ترکمانی با تحلیل هیکل هزینه بنگاه‌ها، رابطه میان ظرفیت اسمی (Nominal Capacity) و ظرفیت واقعی (Real Capacity) را نقد می‌کند. </p>
+<p>فرمول هزینه کل متوسط (Average Total Cost - ATC):</p>
+<p>$$ATC = \frac{FC}{Q} + AVC$$</p>
+<ul>
+<li>$FC$: هزینه‌های ثابت (Fixed Costs) مانند استهلاک، اجاره، و کادر مدیریتی</li>
+<li>$VC$: هزینه‌های متغیر (Variable Costs)</li>
+<li>$Q$: تیراژ تولید واقعی (Actual Production Quantity)</li>
+<li>$AVC$: هزینه متغیر متوسط (Average Variable Cost)</li>
+</ul>
+<p><strong>اصلی‌ترین عارضه ساختاری بنگاه‌های ایرانی:</strong> به دلیل تحریم‌ها، کمبود مواد اولیه، عدم نقدینگی و ناهماهنگی‌های نهادی، بنگاه‌ها معمولاً در سطح $Q_{real} \ll Q_{nominal}$ عمل می‌کنند. وقتی $Q$ کاهش می‌یابد، سهم هزینه‌های ثابت به ازای هر واحد محصول ($\frac{FC}{Q}$) به شدت افزایش یافته و سرانه هزینه تولید به عرش می‌رسد. این امر به سرکوب رقابت‌پذیری بنگاه در بازارهای داخلی و صادراتی می‌انجامد.</p>
+<hr />
+<h2 id="extra-topics-not-covered-by-dr-sarzaeem">۳. مباحث مازاد و منحصربه‌فرد (Extra Topics Not Covered by Dr. Sarzaeem)</h2>
+<p>در این بخش، مفاهیمی که اختصاصاً توسط دکتر دینی ترکمانی مطرح شده و در ادبیات کلاسیک/نئوکلاسیک (از جمله تدریس دکتر سرزعیم) غایب یا کم‌رنگ هستند، تشریح می‌شوند:</p>
+<pre><code>┌────────────────────────────────────────────────────────────────────────┐
+│              مباحث منحصربه‌فرد نهادی (دکتر دینی ترکمانی)               │
+└────────────────────────────────────────────────────────────────────────┘
+                                   │
+     ┌─────────────────────────────┼─────────────────────────────┐
+     ▼                             ▼                             ▼
+┌────────────────────────┐  ┌────────────────────────┐  ┌────────────────────────┐
+│    شکست هماهنگی کلان   │  │   شاخص پیچیدگی اقتصادی │  │  توزیع رانت و قانون    │
+│  (Coordination Failure)│  │     (ECI &amp; TradeMap)   │  │ گرشام نهادی (Gresham)  │
+└────────────────────────┘  └────────────────────────┘  └────────────────────────┘
+</code></pre>
+<h3 id="coordination-failure-institutional-lock-in">۳.۱. تئوری شکست هماهنگی (Coordination Failure) و قفل‌شدگی نهادی (Institutional Lock-in)</h3>
+<p>دکتر دینی ترکمانی اثبات می‌کند که مکانیسم بازار و سیگنال قیمت‌ها قادر به ایجاد توسعه نیستند، زیرا بنگاه‌های اقتصادی دچار <strong>شکست هماهنگی</strong> هستند. <br />
+*   <strong>تبیین مفهوم:</strong> یک سرمایه‌گذار در بخش صنایع پایین‌دستی پتروشیمی زمانی سرمایه‌گذاری می‌کند که مطمئن باشد واحد بالادستی خوراک را با قیمت و زمان مناسب تامین می‌کند، و هم‌زمان صنایع بسته‌بندی و حمل‌ونقل نیز شکل گرفته‌اند. اگر بازار نتواند این حلقه‌ها را هم‌زمان ایجاد کند، هیچ‌کس سرمایه‌گذاری نکرده و اقتصاد در تله <strong>تعادل در سطح پایین (Low-Level Equilibrium Trap)</strong> قفل می‌شود.<br />
+*   <strong>نقد سرزعیم:</strong> در تحلیل سرزعیم، فرضیه بر این است که اگر قیمت خروجی جذاب باشد، دست مرئی و نامرئی بازار خودبه‌خود منابع را جلب می‌کند. دینی ترکمانی نشان می‌دهد که در غیاب <strong>دولت توسعه‌گرا (Developmental State)</strong> و سیاست صنعتی هدایت‌گر، قیمت‌ها فقط رانت‌جویی ایجاد می‌کنند نه سرمایه‌گذاری مولد.</p>
+<h3 id="eci-trademap-itc">۳.۲. شاخص پیچیدگی اقتصادی (ECI) و داده‌های TradeMap (ITC)</h3>
+<p>استاد برخلاف جریان اصلی که حجم تجارت را نشانه رشد می‌داند، بر <strong>کیفیت و پیچیدگی تجارت</strong> تاکید می‌کند.<br />
+*   <strong>ارزیابی ساختار صادرات ایران:</strong> با استناد به مرکز تجارت بین‌الملل (ITC) و شاخص پیچیدگی اقتصادی (Economic Complexity Index - ECI)، صادرات غیرنفتی ایران عمدتاً شامل «مواد خام و اولیه پایه نفتی و معدنی» (Petrochemicals and Mineral Raw Materials) با ارزش افزوده و پیچیدگی بسیار پایین است.<br />
+*   <strong>پیام مدیریتی:</strong> بنگاه‌های ایرانی که در زنجیره‌های خلق دانش و پیچیدگی ساختار محصول ورود نکنند، صرفاً صادرکننده رانت انرژی و مواد خام هستند و با کوچک‌ترین نوسان قیمت‌های جهانی یا تغییر مقررات زیست‌محیطی بین‌المللی نابود خواهند شد.</p>
+<h3 id="moral-hazard">۳.۳. مخاطره اخلاقی (Moral Hazard) و «قانون گرشام نهادی»</h3>
+<p>دکتر دینی ترکمانی مفاهیم تقارن اطلاعاتی را به نقد عملکرد کلی بازارها تعمیم می‌دهد:<br />
+*   <strong>انحراف نظام انگیزش:</strong> وقتی در یک اقتصاد، سود فعالیت‌های سوداگرانه (زمین، ارز، طلا) و رانتی بسیار بیشتر از فعالیت‌های مولد و مبتنی بر نوآوری است، «عاملان اقتصادی سالم و مولد» از گردونه خارج می‌شوند.<br />
+*   <strong>قانون گرشام نهادی (Institutional Gresham's Law):</strong> همان‌طور که پول بد، پول خوب را از بازار خارج می‌کند، در یک فضای نهادی فاسد و نا کارآمد، <strong>«انگیزه سوداگری و کارآفرینی مخرب (Destructive Entrepreneurship)، سرمایه‌گذاری مولد و کارآفرینی ایجادی را از صحنه اقتصاد بیرون می‌راند.»</strong></p>
+<hr />
+<h2 id="comparative-paradigm-matrix">۴. ماتریس مقایسه تطبیقی دو استاد (Comparative Paradigm Matrix)</h2>
+<p>جدول زیر رویکرد دکتر سرزعیم (اقتصاد نئوکلاسیک/ارتدوکس) را در برابر رویکرد دکتر دینی ترکمانی (اقتصاد نهادگرا/دگراندیش) بر اساس آموزه‌های جلسه اول قرار می‌دهد:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right; direction: rtl;">محور موضوعی</th>
+<th style="text-align: right; direction: rtl;">رویکرد و تحلیل دکتر علی سرزعیم (نئوکلاسیک / ارتدوکس)</th>
+<th style="text-align: right; direction: rtl;">رویکرد و تحلیل دکتر علی دینی ترکمانی (نهادگرا / ساختارگرا)</th>
+<th style="text-align: right; direction: rtl;">پیامد استراتژیک برای مدیر ارشد (C-Suite)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>روش‌شناسی پایه (Methodology)</strong></td>
+<td style="text-align: right; direction: rtl;">فردگرایی روش‌شناختی؛ تحلیل تصمیمات خرد عاملان عقلانی.</td>
+<td style="text-align: right; direction: rtl;">نهادگرایی و ساختارگرایی؛ اولویت تحلیل بر ترتیبات نهادی و تعارض منافع.</td>
+<td style="text-align: right; direction: rtl;">عدم دلخوشی به مدل‌های ساده خرد؛ لزوم رصد متغیرهای سیاسی و نهادی کلان.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>منشا تورم (Inflation Origin)</strong></td>
+<td style="text-align: right; direction: rtl;">پدیده‌ای کاملاً پولی؛ ناشی از رشد بی‌رویه نقدینگی و کسری بودجه.</td>
+<td style="text-align: right; direction: rtl;">پدیده‌ای ساختاری؛ ناشی از جهش ارز، تورم فشار هزینه و انحراف تخصیص نقدینگی.</td>
+<td style="text-align: right; direction: rtl;">مدیریت بودجه بر اساس تورم فشار هزینه؛ اتخاذ استراتژی خرید پیش‌دستانه مواد.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>کارکرد مکانیسم قیمت‌ها</strong></td>
+<td style="text-align: right; direction: rtl;">تخصیص‌دهنده بهینه منابع؛ انعکاس‌دهنده نهایی نایابی کالاها.</td>
+<td style="text-align: right; direction: rtl;">علامت‌دهنده نادرست به دلیل توزیع رانت، انحصار و عدم تقارن اطلاعات.</td>
+<td style="text-align: right; direction: rtl;">قیمت‌های بازار در ایران نشانه کارایی نیستند؛ نباید ملاک اصلی طرح توسعه باشند.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>مفهوم عقلانیت (Rationality)</strong></td>
+<td style="text-align: right; direction: rtl;">عقلانیت کامل (Full Rationality) و بهینه‌یابی در حاشیه.</td>
+<td style="text-align: right; direction: rtl;">عقلانیت محدود (Bounded Rationality) و رفتار تطبیقی در محیط نااطمینان.</td>
+<td style="text-align: right; direction: rtl;">اتخاذ استراتژی‌های محافظتی (Hedging) به جای دلخوش کردن به مدل‌های بهینه‌سازی محض.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>ارزیابی طرح‌ها (NPV &amp; IRR)</strong></td>
+<td style="text-align: right; direction: rtl;">فرمول مالی استاندارد با نرخ تنزیل مبتنی بر هزینه فرصت بازار.</td>
+<td style="text-align: right; direction: rtl;">نقد نرخ تنزیل؛ لزوم افزودن پریمیوم ریسک نهادی و ریسک ساختاری ارز.</td>
+<td style="text-align: right; direction: rtl;">پروژه‌های تولیدی طویل‌المدت با خطر شدید منفی شدن NPV واقعی روبه‌رو هستند.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>نقش دولت (State Role)</strong></td>
+<td style="text-align: right; direction: rtl;">اصلاح قیمت‌ها و آزادسازی بازار؛ حداقل مداخله تصدی‌گرایانه.</td>
+<td style="text-align: right; direction: rtl;">هدایتگری ساختاری، برنامه‌ریزی صنعتی و رفع شکست هماهنگی (Coordination).</td>
+<td style="text-align: right; direction: rtl;">لزوم لابی‌گری ساختارمند و هم‌راستایی استراتژی بنگاه با اولویت‌های پشتیبانی دولت.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>علت عدم توسعه صنعتی</strong></td>
+<td style="text-align: right; direction: rtl;">سرکوب سرکوب مالیشان و مداخلات قیمتی دولت در بازار.</td>
+<td style="text-align: right; direction: rtl;">شکست هماهنگی، قفل‌شدگی نهادی و پایین بودن شاخص پیچیدگی اقتصادی (ECI).</td>
+<td style="text-align: right; direction: rtl;">سرمایه‌گذاری باید به سمت ارتقای فناوری و پیچیدگی زنجیره ارزش سوق یابد.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="iranian-economy-case-studies">۵. تحلیل کیس‌استادی‌ها و مصادیق اقتصاد ایران (Iranian Economy Case Studies)</h2>
+<p>دکتر دینی ترکمانی در این جلسه برای ملموس ساختن مفاهیم نظری، مصادیق متعددی از اقتصاد ایران را کالبدشکافی می‌کند:</p>
+<pre><code>┌────────────────────────────────────────────────────────────────────────┐
+│                   مصادیق و کیس‌استادی‌های اقتصاد ایران                  │
+└────────────────────────────────────────────────────────────────────────┘
+                                   │
+     ┌─────────────────────────────┼─────────────────────────────┐
+     ▼                             ▼                             ▼
+┌────────────────────────┐  ┌────────────────────────┐  ┌────────────────────────┐
+│       بازار مسکن       │  │  بخش درمان و دندانپزشکی │  │ صنایع کشاورزی و غذایی  │
+│  (Real Estate Market)  │  │   (Healthcare Market)  │  │  (Food &amp; Agriculture)  │
+└────────────────────────┘  └────────────────────────┘  └────────────────────────┘
+</code></pre>
+<h3 id="_6">۵.۱. بازار مسکن: دارایی سرمایه‌ای در برابر کالای مصرفی</h3>
+<ul>
+<li><strong>تحلیل استاد:</strong> در اقتصاد ایران، مسکن از یک کالای مصرفی با دوام به اصلی‌ترین <strong>«پناهگاه حفظ ارزش دارایی»</strong> تبدیل شده است. سهم مسکن در سبد شاخص قیمت مصرف‌کننده (CPI) بین ۳۵ تا ۵۰ درصد است.</li>
+<li><strong>مکانیزم نهادی:</strong> به دلیل نرخ بهره حقیقی منفی در بانک‌ها، جریان نقدینگی خلق‌شده به سوی بازار مسکن هجوم می‌برد. این امر موجب افزایش هزینه اجاره و ملک شده و از طریق تورم فشار هزینه، سرانه هزینه تولید تمام صنایع را بالا می‌برد.</li>
+</ul>
+<h3 id="_7">۵.۲. بازار درمان و دندانپزشکی: عارضه تقارن اطلاعاتی و مخاطره اخلاقی</h3>
+<ul>
+<li><strong>تحلیل استاد:</strong> در حوزه درمان و خدمات دندانپزشکی، بیمار توانایی تشخیص نیاز واقعی خود را ندارد (اطلاعات نامتقارن). </li>
+<li><strong>مصداق اخلاقی:</strong> پزشک به عنوان نماینده بیمار و فروشنده خدمت، دچار <strong>تعارض منافع (Conflict of Interest)</strong> است. این ساختار باعث می‌شود پزشک خدمات غیرضروری، گران‌قیمت و مازاد بر نیاز را به بیمار تحمیل کند. این مصداق عینی شکست بازار در خدمات فوق‌تخصصی است که بدون نظارت نهادی مستقل، به استثمار مصرف‌کننده می‌انجامد.</li>
+</ul>
+<h3 id="_8">۵.۳. صنعت رب گوجه‌فرنگی و صنایع غذایی: نوسان قیمت مواد اولیه و ظرفیت اسمی</h3>
+<ul>
+<li><strong>تحلیل استاد:</strong> استاد با اشاره به صنایع پایش کشاورزی مانند تولید رب گوجه‌فرنگی، نشان می‌دهد که چگونه عدم هماهنگی میان بخش کشاورزی (تامین مواد اولیه) و بخش صنعتی (قوطی‌سازی و بسته‌بندی)، موجب کارکرد بنگاه‌ها زیر ظرفیت اسمی می‌شود.</li>
+<li><strong>عارضه:</strong> بنگاهی که خط تولیدش برای ۱۰۰ تن در روز طراحی شده، به دلیل عدم تامین گوجه‌فرنگی یا جهش قیمت ورق قوطی، با ۲۰ تن کار می‌کند. در نتیجه هزینه ثابت متوسط ($AFC$) جهش یافته و بنگاه زیان‌ده می‌شود.</li>
+</ul>
+<hr />
+<h2 id="ceo-strategic-playbook">۶. چک‌لیست و راهنمای تصمیم‌گیری مدیرعامل (CEO Strategic Playbook)</h2>
+<p>بر اساس آموزه‌های نهادگرایانه و ساختاری دکتر دینی ترکمانی، مدیران ارشد باید چک‌لیست اجرایی زیر را در دستور کار تصمیم‌گیری خود قرار دهند:</p>
+<pre><code>┌────────────────────────────────────────────────────────────────────────────┐
+│                  چک‌لیست استراتژیک مدیرعامل (CEO Playbook)                 │
+└────────────────────────────────────────────────────────────────────────────┘
+  [ ] ۱. بازنگری در مدل‌های مالی و افزودن نرخ ریسک نهادی به فرمول NPV
+  [ ] ۲. تغییر چرخه تامین مواد اولیه از Just-In-Time به ذخیره‌سازی استراتژیک
+  [ ] ۳. تحلیل ظرفیت اسمی در برابر واقعی و تعدیل هزینه‌های ثابت (AFC)
+  [ ] ۴. ارتقای موقعیت بنگاه در شاخص پیچیدگی اقتصادی (ECI) و زنجیره ارزش
+  [ ] ۵. طراحی سیستم‌های کنترل تعارض منافع و جلوگیری از مخاطره اخلاقی
+</code></pre>
+<h3 id="_9">گام ۱: تعدیل نرخ تنزیل در بودجه‌بندی سرمایه‌ای</h3>
+<ul>
+<li>[ ] هنگام محاسبه NPV پروژه‌ها، به نرخ بهره رسمی بانک اکتفا نکنید.</li>
+<li>[ ] فرمول نرخ تنزیل را بازسازی کرده و حداقل <strong>۱۰ الی ۱۵ درصد پریمیوم نااطمینانی نهادی و جهش ارز</strong> به مخرج کسر اضافه کنید.</li>
+<li>[ ] پروژه‌هایی را در اولویت قرار دهید که <strong>دوره بازگشت سرمایه (Payback Period)</strong> کوتاه‌تری دارند، حتی اگر NPV بلندمدت آن‌ها روی کاغذ کمتر باشد.</li>
+</ul>
+<h3 id="_10">گام ۲: مدیریت هوشمند سرمایه در گردش تحت تورم فشار هزینه</h3>
+<ul>
+<li>[ ] مانده وجوه نقد ریالی بنگاه را به حداقل ممکن برسانید؛ نقدینگی ریالی سریعاً دچار کاهش قدرت خرید می‌شود.</li>
+<li>[ ] سرمایه در گردش را به <strong>مواد اولیه و کالاهای واسطه‌ای با ماندگاری بالا</strong> تبدیل کنید (خرید پیش‌دستانه قبل از انعکاس جهش ارز).</li>
+</ul>
+<h3 id="mathph_34_end">گام ۳: کاهش هزینه‌های ثابت متوسط ($AFC$) از طریق ارتقای ظرفیت واقعی</h3>
+<ul>
+<li>[ ] ساختار هزینه‌های بنگاه را تفکیک کرده و سهم $FC$ (هزینه‌های ثابت) را مشخص کنید.</li>
+<li>[ ] اگر بنگاه زیر ظرفیت اسمی کار می‌کند، به جای توسعه خطوط جدید، استراتژی خود را بر <strong>«رفع گلوگاه‌های تامین و افزایش تولید فعلی»</strong> متمرکز کنید تا هزینه‌های ثابت بین واحد‌های بیشتری تقسیم شود ($ATC$ کاهش یابد).</li>
+</ul>
+<h3 id="eci">گام ۴: تحول در زنجیره ارزش بر اساس شاخص پیچیدگی (ECI)</h3>
+<ul>
+<li>[ ] محصولات بنگاه را بر اساس داده‌های TradeMap آنالیز کنید.</li>
+<li>[ ] از صادرات محصولات خام یا با ارزش افزوده پایین (که متکی بر رانت انرژی ارزان هستند) به سمت <strong>محصولات با پیچیدگی بالاتر و دانش‌بنیان</strong> حرکت کنید تا در برابر شوک‌های مقرراتی و تحریمی مقاوم شوید.</li>
+</ul>
+<h3 id="_11">گام ۵: مهار مخاطره اخلاقی و انحرافات نهادی درون سازمان</h3>
+<ul>
+<li>[ ] ساختارهای انگیزش، پاداش و ارزیابی عملکرد درون بنگاه را پایش کنید.</li>
+<li>[ ] مطمئن شوید که سیستم‌های پاداش، رفتارهای سوداگرانه و کوتاه‌مدت مدیران وسط را تشویق نمی‌کند و منافع مدیران با پایداری بلندمدت و مولد بنگاه گره خورده است (مهار قانون گرشام درون‌سازمانی).</li>
+</ul>
+          </div>
+        </div>
+
+        <!-- Dini S2 Card -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="p-6 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-100">
+              <span class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-full">جلسه دوم ترکمانی • ساختار بازار و بنگاه</span>
+              <span class="text-xs text-slate-500">اقتصاد سیاسی بنگاه‌ها • انباشت سرمایه • محدودیت‌های MC=MR</span>
+            </div>
+            <h4 class="text-base font-black text-slate-900">ساختار بازار، موانع انباشت سرمایه و اقتصاد سیاسی بنگاه‌ها</h4>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
+              دکتر سرزعیم رفتار بنگاه را در چارچوب حاشیه سود لرنر و تقاطع ریاضیاتی $MC=MR$ فرموله می‌کند؛ اما دکتر ترکمانی نشان می‌دهد که در اقتصاد ایران، سودآوری بنگاه‌های بزرگ بیش از آنکه وابسته به کشش تقاضا یا بهره‌وری نهایی باشد، ناشی از «دسترسی به خوراک ارزان، انرژی یارانه‌ای و اعتبارات بانکی ترجیحی» است. او نظریه تقسیم مازاد اقتصادی بین گروه‌های قدرت و موانع شکل‌گیری شرکت‌های مقیاس جهانی را تحلیل می‌کند.
+            </p>
+            <div class="p-3 bg-purple-50/50 rounded-xl border border-purple-100 text-xs text-purple-950">
+              <strong>💡 مباحث مازاد بر کلاس سرزعیم:</strong> مدل توزیع مازاد بارانوف، تحلیل چرخه عمر بنگاه‌های شبه‌دولتی (صولتی) در ایران، و علل ناتوانی صنایع داخلی در حرکت از صنایع مونتاژی به صنایع با عمق فناوری بالا.
+            </div>
+          </div>
+          <button onclick="toggleSection('full-dini-s2')" class="w-full p-4 bg-slate-50 hover:bg-slate-100 transition-colors flex items-center justify-between text-right border-t border-slate-100">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-lg bg-purple-700 text-white flex items-center justify-center font-bold text-xs">📖</span>
+              <div>
+                <strong class="text-xs font-bold text-slate-900 block">مشاهده متن کامل دانشنامه تطبیقی جلسه دوم</strong>
+                <span class="text-[11px] text-slate-500">تحلیل موشکافانه ۳۰ هزار کاراکتری با ماتریس مقایسه مستقیم سرزعیم vs ترکمانی</span>
+              </div>
+            </div>
+            <span id="icon-full-dini-s2" class="text-xs font-bold text-purple-700">▼ باز کردن</span>
+          </button>
+          <div id="full-dini-s2" class="hidden p-6 md:p-8 border-t border-slate-100 prose-custom max-w-none">
+            <h1 id="-">اقتصاد برای مدیران (استاد دینی ترکمانی) - جلسه دوم: ساختار بازار، انباشت سرمایه و اقتصاد سیاسی بنگاه‌ها</h1>
+<p><strong>مدرس:</strong> دکتر علی دینی ترکمانی<br />
+<strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA<br />
+<strong>تنظیم و تدوین تطبیقی:</strong> پارسا رضائی (Parsa Rezaie)</p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی سازمانی (Executive Summary)</h2>
+<h3 id="_1">جوهره و بینش کلیدی جلسه</h3>
+<p>در این جلسه، دکتر علی دینی ترکمانی پارادایم نئوکلاسیکِ مجرد و انتزاعی از رفتار بنگاه را کنار زده و رفتار استراتژیک بنگاه‌ها را در بستر <strong>اقتصاد سیاسی، ساختارهای نهادی و پویایی‌های کلان اقتصاد ایران</strong> تحلیل می‌کند. پیام محوری استاد این است که بنگاه‌ها در یک خلاء رقابتی متکی بر بهینه‌سازی محض قیمت و مقدار ($MC=MR$) عمل نمی‌کنند؛ بلکه عملکرد آن‌ها شدیداً تابع «درجه پیچیدگی و یکپارچگی سیستمیک زنجیره ارزش» (تئوری واشر حلقه-O)، «نحوه انباشت سرمایه و تخصیص رانت»، «تحریفات حسابداری ملی و نرخ ارز»، و «مکانیسم‌های غیرپولی تورم و نقدینگی در اقتصاد سیاسی ایران» است.</p>
+<h3 id="_2">مقایسه فوری: دکتر دینی ترکمانی در برابر دکتر سرزعیم</h3>
+<ul>
+<li><strong>دکتر علی سرزعیم (جریان اصلی / نئوکلاسیک):</strong> بنگاه را موجودیتی مستقل، حداکثرکننده سود با ابزار قیمت‌گذاری بر اساس کشش تقاضا ($L = 1/|E_d|$) و بهینه‌ساز نرخ مارجین می‌داند. در این دیدگاه، بازارها بر اساس نرخ تمرکز و تعداد بنگاه‌ها طبقه‌بندی می‌شوند و تورم، متغیری صرفاً پولی و برون‌زا برای تصمیمات تاکتیکی بنگاه است.</li>
+<li><strong>دکتر علی دینی ترکمانی (نهادگرا / دگراندیش):</strong> بنگاه را جزئی از یک سیستم پیچیده زیست‌بوم صنعتی می‌داند که اختلال در کوچک‌ترین اجزای زنجیره تامین آن (واشر O-Ring)، کل تولید را متوقف می‌سازد. وی سودآوری واقعی را از رانت‌های مالی/تراکم‌فروشی تفکیک کرده و نشان می‌دهد که چگونه ساختار بانکی بیمار و کسر بودجه ساختاری، تورم فشار هزینه تولید ایجاد کرده و محاسبات مالی بنگاه را مختل می‌کند.</li>
+</ul>
+<pre><code>+-----------------------------------------------------------------------------------+
+|                                 دومسیر استراتژیک                                  |
++-----------------------------------------------------------------------------------+
+| [رویکرد نئوکلاسیک - سرزعیم]   &lt;---&gt;  بهینه‌سازی بر اساس کشش قیمتی و حاشیه سود     |
+| [رویکرد نهادگرا - دینی ترکمانی] &lt;---&gt;  مدیریت ریسک‌های ساختاری، نهادی و زنجیره ارزش|
++-----------------------------------------------------------------------------------+
+</code></pre>
+<h3 id="c-level">۳ تصمیم حیاتی برای مدیران ارشد (C-Level):</h3>
+<ol>
+<li><strong>ممیزی ریسک واشر O-Ring در زنجیره تامین:</strong> شناسایی قطعات، خدمات یا مهارت‌های حیاتی غیرقابل جایگزین که نقص در آن‌ها کل ارزش‌آفرینی بنگاه را صفر می‌کند (مدیریت تاب‌آوری ناشی از تحریم و گلوگاه‌ها).</li>
+<li><strong>بازنگری در صورتهای مالی بر اساس ارزش افزوده واقعی ($VA$) نه رانت‌های تورمی:</strong> تفکیک سود ناشی از تجدید ارزیابی دارایی‌ها و نوسانات نرخ ارز از ارزش افزوده خالص عملیاتی.</li>
+<li><strong>مدیریت سرمایه در گردش بر اساس نرخ بهره واقعی منفی ($r = i - \pi$):</strong> احتراز از نقدینگی ریالی و جایگزینی آن با دارایی‌های مولد یا نهاده‌های استراتژیک قبل از بروز مارپیچ تورمی-ارزی.</li>
+</ol>
+<hr />
+<h2 id="_3">۲. کالبدشکافی موشکافانه تئوری‌ها و آموزه‌های دکتر دینی ترکمانی</h2>
+<h3 id="-o-ring-theory-of-economic-development">الف) تئوری توسعه اقتصادی «حلقه-او» (O-Ring Theory of Economic Development)</h3>
+<p>دکتر دینی ترکمانی با استناد به نظریه مایکل کرمر (Michael Kremer - برنده نوبل اقتصاد ۲۰۱۹)، فاجعه انفجار شاتل فضایی چلنجر در سال ۱۹۸۶ را به عنوان استعاره‌ای برای آسیب‌پذیری ساختارهای تولیدی مطرح می‌کند. در آن فاجعه، ناکارآمدی یک قطعه کوچک چند دلاری (واشر لاستیکی O-Ring) منجر به نابودی یک سیستم چند میلیارد دلاری شد.</p>
+<pre><code>تابع تولید کرمر (O-Ring Production Function):
+Y = K^alpha * (q_1 * q_2 * ... * q_n)
+</code></pre>
+<p>در این رابطه:<br />
+*   $Y$: کل تولید واقعی بنگاه یا اقتصاد.<br />
+*   $K$: سرمایه فیزیکی.<br />
+*   $q_i \in [0, 1]$: کیفیت یا ضریب اطمینان عملکرد هر بخش، قطعه یا نیروی انسانی در زنجیره ارزش ($n$ مرحله‌ای).</p>
+<h4 id="_4">تحلیل ساختاری بنگاه:</h4>
+<p>اگر در بنگاهی کیفیت ۹۹ بخش برابر با ۱ باشد ($q_1 = q_2 = ... = q_{99} = 1$) اما کیفیت بخش صدم یا یک قطعه کلیدی برابر با صفر گردد ($q_{100} = 0$)، کل خروجی بنگاه برابر با صفر خواهد شد:</p>
+<p>$$\prod_{i=1}^{n} q_i = 1 \times 1 \times ... \times 0 = 0 \implies Y = 0$$</p>
+<h5 id="_5">دلالت مدیریتی:</h5>
+<p>در صنایع پیشرفته، مکمل بودن مهارت‌ها (Skill Complementarity) حکم می‌کند که نیروهای کیفی بالا در کنار یکدیگر کار کنند. در ایران، گلوگاه‌های تولیدی معمولاً به دلیل قطعات کوچک وارداتی یا نیروهای خدماتی و کلیدی تحریم‌شده، کل خط تولید صنایع بزرگی چون خودرو یا پتروشیمی را متوقف می‌سازند.</p>
+<hr />
+<h3 id="_6">ب) حسابداری ملی، شاخص‌های کلان و انحرافات محاسباتی</h3>
+<p>استاد با کالبدشکافی شاخص‌های حسابداری ملی، نحوه ارزیابی درست اندازه اقتصاد و قدرت خرید را تبیین می‌کند:</p>
+<h4 id="value-added-mathph_15_end">۱. مفهوم ارزش افزوده (Value Added - $VA$):</h4>
+<p>ارزش افزوده عبارت است از تفاوت میان ارزش کل ستانده (Output) و ارزش نهاده‌های حد واسط (Intermediate Inputs):</p>
+<p>$$VA = \text{Gross Output} - \text{Intermediate Consumption}$$</p>
+<p>مجموع ارزش افزوده تمام بنگاه‌های یک کشور درون مرزها، تولید ناخالص داخلی (GDP) را می‌سازد.</p>
+<h4 id="gdp-gnp">۲. تفکیک GDP از تولید ناخالص ملی (GNP):</h4>
+<p>$$GNP = GDP + NFI$$</p>
+<p>که در آن $NFI$ (Net Foreign Factor Income) درآمد خالص عوامل تولید از خارج است. اگر مهاجرت نیروهای متخصص و فرار سرمایه رخ دهد، $NFI$ منفی شده و $GNP < GDP$ می‌گردد.</p>
+<h4 id="purchasing-power-parity-ppp">۳. انحراف نرخ ارز اسمی در برابر برابری قدرت خرید (Purchasing Power Parity - PPP):</h4>
+<ul>
+<li><strong>GDP اسمی (Nominal GDP):</strong> تبدیل تولید ناخالص داخلی بر اساس نرخ ارز اسمی بازار آزاد یا رسمی. این شاخص قدرت خرید بین‌المللی یک کشور و توان واردات تکنولوژی را نشان می‌دهد.</li>
+<li><strong>GDP بر اساس PPP:</strong> تعدیل تولید ناخالص داخلی بر اساس سبد کالای یکسان در داخل. کالاهای غیرقابل مبادله (Non-tradables) مانند مسکن و خدمات در کشورهای در حال توسعه ارزان‌ترند، لذا GDP بر اساس PPP اندازه اقتصاد این کشورها را بزرگ‌تر از حد واقعی تجارت بین‌المللی نشان می‌دهد.</li>
+</ul>
+<pre><code>+---------------------------------------------------------------------------------+
+|                  مقایسه GDP اسمی در برابر GDP بر اساس PPP                       |
++---------------------------------------------------------------------------------+
+| شاخص               | GDP اسمی (Nominal)          | GDP بر اساس PPP              |
++--------------------+-----------------------------+------------------------------+
+| مبنای محاسبه       | نرخ ارز بازار اسمی          | سبد کالای یکسان (International |
+|                    |                             | Dollar)                      |
++--------------------+-----------------------------+------------------------------+
+| کاربرد مدیریتی     | سنجش توان خرید بین‌المللی،  | سنجش رفاه نسبی داخلی و       |
+|                    | واردات ماشین‌آلات و جذب     | معیشت نیروی کار              |
+|                    | سرمایه‌گذاری خارجی          |                              |
++--------------------+-----------------------------+------------------------------+
+| آسیب تحلیل         | نادیده گرفتن ارزان بودن     | بزرگ‌نمایی توان صنعتی و      |
+|                    | خدمات و نیروی کار داخلی     | تکنولوژیک در مبادلات جهانی   |
++---------------------------------------------------------------------------------+
+</code></pre>
+<hr />
+<h3 id="_7">ج) مکانیسم‌های پولی، نرخ بهره و تورم فشار هزینه</h3>
+<p>دکتر دینی ترکمانی فرمول‌بندی نئوکلاسیک تورم را که صرفاً ناشی از حجم پول می‌داند، به چالش کشیده و معادله نرخ بهره واقعی را تحلیل می‌کند:</p>
+<p>$$r = i - \pi$$</p>
+<ul>
+<li>$r$: نرخ بهره واقعی (Real Interest Rate)</li>
+<li>$i$: نرخ بهره اسمی (Nominal Interest Rate)</li>
+<li>$\pi$: نرخ تورم (Inflation Rate)</li>
+</ul>
+<h4 id="_8">تحلیل مکانیسم در ایران:</h4>
+<p>زمانی که تورم ($\pi$) ۵۰٪ و نرخ بهره اسمی بانکی ($i$) ۲۳٪ است، نرخ بهره واقعی منفی است ($r = -۲۷\%$). </p>
+<h5 id="_9">دلالت بر رفتار بنگاه‌ها و بانک‌ها:</h5>
+<ol>
+<li><strong>بانک‌ها:</strong> به جای تسهیلات‌دهی به بخش تولید مولد، منابع را به سمت دارایی‌های موهوم، تراکم‌فروشی و خرید املاک سوق می‌دهند تا سود موهوم ایجاد کنند (مانند نمونه بانک آینده و پروژه ایران‌مال که در کلاس مطرح شد).</li>
+<li><strong>بنگاه‌ها:</strong> دریافت تسهیلات بانکی حتی با سپرده‌گذاری و سود اسمی بالا، نوعی دریافت رانت است، زیرا بدهی واقعی بنگاه در طول زمان توسط تورم آب می‌رود.</li>
+<li><strong>سیاست انقباض پولی بالا بردن نرخ بهره:</strong> در اقتصادهای ساختاری مانند ایران، افزایش نرخ بهره اسمی ($i$) منجر به کنترل تورم نمی‌شود، بلکه هزینه تامین مالی بنگاه‌ها را افزایش داده، تورم فشار هزینه (Cost-Push Inflation) ایجاد کرده و رکود تورمی (Stagflation) را تشدید می‌کند.</li>
+</ol>
+<hr />
+<h2 id="extra-topics-not-covered-by-dr-sarzaeem">۳. مباحث مازاد و منحصربه‌فرد (Extra Topics Not Covered by Dr. Sarzaeem)</h2>
+<p>این بخش شامل موضوعاتی است که منحصراً توسط دکتر دینی ترکمانی در این جلسه ارائه شد و در چارچوب تدریس دکتر سرزعیم غایب بود:</p>
+<pre><code>+----------------------------------------------------------------------------------+
+|               مباحث منحصربه‌فرد دکتر دینی ترکمانی در جلسه دوم                    |
++----------------------------------------------------------------------------------+
+| ۱. تئوری O-Ring کرمر      &lt;---&gt; تحلیل مکمل بودن مهارت‌ها و نقاط آسیب‌پذیر زنجیره |
+| ۲. اقتصاد سیاسی بانکداری   &lt;---&gt; خلق نقدینگی موهوم و رانت دارایی‌های سمی (بانک   |
+|                            |     آینده)                                          |
+| ۳. تحریفات حسابداری ملی   &lt;---&gt; مغالطه تحلیل قدرت بنگاه بر اساس GDP بر مبنای PPP|
+| ۴. شکست هماهنگی (Coord.)  &lt;---&gt; عدم تمایل بنگاه‌ها به سرمایه‌گذاری بدون حمایت    |
+|                            |     دولت                                            |
+| ۵. تورم فشار هزینه ساختاری &lt;---&gt; ناکارآمدی ابزار نرخ بهره نئوکلاسیک در کنترل تورم |
++----------------------------------------------------------------------------------+
+</code></pre>
+<h3 id="_10">۱. آسیب‌شناسی نهادی ساختار بانکی ایران و خلق نقدینگی موهوم</h3>
+<p>دکتر دینی ترکمانی با بررسی نمونه «بانک آینده» نشان می‌دهد که چگونه بانک‌های خصوصی یا شبه‌دولتی در ایران با ورود به پروژه‌های بزرگ مال‌سازی (مانند ایران‌مال)، نقدینگی موهوم خلق می‌کنند. این بانک‌ها با تجدید ارزیابی غیرواقعی دارایی‌ها، در دفاتر خود سود موهوم شناسایی کرده، پایه پولی را رشد داده و سپس ناترازی سود و اصل بدهی را به زیان همگانی و تورم جامعه تبدیل می‌کنند.</p>
+<h3 id="coordination-failure-institutional-lock-in">۲. شکست هماهنگی (Coordination Failure) و قفل‌شدگی نهادی (Institutional Lock-in)</h3>
+<p>بر خلاف دکتر سرزعیم که دست پنهان بازار را حل‌کننده تعادل می‌داند، دکتر دینی ترکمانی اثبات می‌کند که بنگاه‌های اقتصادی به تنهایی نمی‌توانند از تله توسعه‌نیافتگی خارج شوند. سرمایه‌گذاری یک بنگاه نیازمند سرمایه‌گذاری هم‌زمان سایر بنگاه‌ها در زنجیره تامین است. اگر دولت نقش «هماهنگ‌کننده بزرگ» (Big Push) را بازی نکند، تمام بنگاه‌ها در سطح پایین سرمایه‌گذاری قفل می‌شوند (تله تعادل در سطح پایین).</p>
+<h3 id="structural-cost-push-inflation">۳. تحلیل نقدینگی درگاه ساختاری (Structural Cost-Push Inflation)</h3>
+<p>در حالی که در تدریس سرزعیم، تورم حاصل رشد بی‌رویه نقدینگی بر اساس نظریه مقداری پول ($MV=PY$) است، دینی ترکمانی نشان می‌دهد در ایران:</p>
+<p>$$\uparrow \text{Exchange Rate} \implies \uparrow \text{Cost of Imported Intermediate Goods} \implies \uparrow \text{Working Capital Demand} \implies \uparrow \text{Bank Credit & Money Creation}$$</p>
+<p>این یعنی تورم ابتدا از ناحیه نرخ ارز و هزینه‌های تولید جهش یافته و سپس نقدینگی را به دنبال خود می‌کشد (پاسخ برون‌زای نقدینگی به فشار هزینه).</p>
+<hr />
+<h2 id="comparative-paradigm-matrix">۴. ماتریس مقایسه تطبیقی دو استاد (Comparative Paradigm Matrix)</h2>
+<p>جدول زیر رویکرد دو استاد را در خصوص مفاهیم کلیدی این جلسه رو در رو قرار می‌دهد:</p>
+<pre><code>+----------------------------------------------------------------------------------------------------------------------------------------+
+|                                  ماتریس تطبیقی: دکتر سرزعیم در برابر دکتر دینی ترکمانی                                                 |
++----------------------------------------------------------------------------------------------------------------------------------------+
+| محور موضوع            | رویکرد دکتر سرزعیم (نئوکلاسیک / ارتدوکس)      | رویکرد دکتر دینی ترکمانی (نهادگرا / دگراندیش)   | پیامد استراتژیک برای مدیر ارشد (CEO)     |
++-----------------------+-----------------------------------------------+-------------------------------------------------+------------------------------------------+
+| ۱. ساختار بازار و     | تعیین قیمت بر اساس حاشیه سود و کشش تقاضا      | تعیین قیمت تابع قدرت چانه‌زنی، هزینه‌های        | قیمت‌گذاری باید بر اساس نوسانات نرخ ارز   |
+| قیمت‌گذاری            | (شاخص لرنر: L = 1/|Ed|)                       | ساختاری و جهش نرخ ارز اسمی                      | و هزینه‌های تامین مالی تنظیم شود.         |
++-----------------------+-----------------------------------------------+-------------------------------------------------+------------------------------------------+
+| ۲. زنجیره تامین و     | فرض کارایی بازار در تامین نهاده‌ها؛ دسترسی   | تئوری O-Ring؛ آسیب‌پذیری شدید کل تولید به دلیل | ممیزی مداوم قطعات حیاتی غیرقابل جایگزین  |
+| تولید                 | آزاد به منابع بر اساس قیمت بازار              | نقص در یک قطعه/خدمت کوچک                       | و ایجاد ذخایر استراتژیک.                 |
++-----------------------+-----------------------------------------------+-------------------------------------------------+------------------------------------------+
+| ۳. سیستم بانکی و      | بانک به عنوان واسطه وجوه؛ تخصیص بهینه منابع   | نهاد خلق نقدینگی موهوم، رانت‌جویی و ایجاد       | عدم اتکا به تسهیلات بانکی خطی؛ بهره‌گیری |
+| تسهیلات               | بر اساس نرخ بهره تعادلی                       | دارایی‌های سمی (نمونه بانک آینده)              | از نرخ بهره واقعی منفی برای خرید دارایی. |
++-----------------------+-----------------------------------------------+-------------------------------------------------+------------------------------------------+
+| ۴. تورم و متغیرهای   | پدیده منحصراً پولی؛ تابع رشد پایه پولی و      | پدیده ساختاری؛ تابع جهش نرخ ارز، فشار هزینه    | پیش‌بینی تورم بر اساس نوسانات ارزی و     |
+| کلان                  | حجم پول                                       | و کسر بودجه ساختاری دولت                        | هزینه‌های واردات، نه صرفاً نقدینگی.       |
++-----------------------+-----------------------------------------------+-------------------------------------------------+------------------------------------------+
+| ۵. ارز و مقایسه‌های   | استفاده از نرخ ارز اسمی بازار برای تمام       | نقد برابری قدرت خرید (PPP) و تفکیک آن از        | ارزیابی توان صادراتی/وارداتی بر اساس     |
+| بین‌المللی            | تحلیل‌های اقتصادی و مبادلات                   | نرخ اسمی برای تحلیل واقعی رفاه و تجارت          | نرخ اسمی نه خروجی‌های تعدیل‌شده PPP.     |
++-----------------------+-----------------------------------------------+-------------------------------------------------+------------------------------------------+
+| ۶. تعادل و نقش دولت   | تعادل خودکار بازارها؛ دولت به عنوان اخلال‌گر  | شکست هماهنگی؛ ضرورت نقش هدایتگر دولت          | عدم انتظار شفافیت بازار؛ ضرورت برنامه‌ریزی|
+|                       | در مکانیسم قیمت‌ها                            | (Big Push) برای انباشت سرمایه صنعتی             | سناریومحور در بستر مداخله دولتی.         |
++----------------------------------------------------------------------------------------------------------------------------------------+
+</code></pre>
+<hr />
+<h2 id="iranian-economy-case-studies">۵. تحلیل کیس‌استادی‌ها و مصادیق اقتصاد ایران (Iranian Economy Case Studies)</h2>
+<h3 id="_11">کیس‌استادی ۱: پروژه ایران‌مال و بانک آینده (خلق نقدینگی و دارایی‌های سمی)</h3>
+<ul>
+<li><strong>تشریح مورد:</strong> بانک آینده مبالغ عظیمی از منابع مالی و نقدینگی خلق‌شده خود را صرف ساخت مجموعه ایران‌مال کرد.</li>
+<li><strong>تحلیل نهادگرایانه دکتر دینی ترکمانی:</strong> در شرایط تورمی، بانک با خلق نقدینگی موهوم دارایی فیزیکی (املاک) ایجاد کرده و با تجدید ارزیابی مداوم آن، سودهای ساختگی در صورت‌های مالی ثبت نمود. هنگامی که نقدشوندگی این دارایی در رکود مسکن به صفر رسید، ناترازی بانک عیان شد و بانک مرکزی مجبور به اضافه برداشت و چاپ پول گردید.</li>
+<li><strong>درس مدیریتی:</strong> مدیران مالی نباید سودهای ناشی از تجدید ارزیابی دارایی‌های غیرنقدشونده را به عنوان سود عملیاتی تلقی کنند، چرا که عواقب ناترازی آن کل بنگاه را ورشکسته می‌کند.</li>
+</ul>
+<pre><code>Moneymaking Spiral in Toxic Real Estate:
+[خلق نقدینگی موهوم] ──&gt; [خرید و ساخت املاک (ایران‌مال)] ──&gt; [تجدید ارزیابی غیرواقعی] ──&gt; [ثبت سود موهوم] ──&gt; [ناترازی و اضافه برداشت از بانک مرکزی] ──&gt; [تورم سراسری]
+</code></pre>
+<h3 id="o-ring">کیس‌استادی ۲: صنعت خودرو و گلوگاه O-Ring در زمان تحریم‌ها</h3>
+<ul>
+<li><strong>تشریح مورد:</strong> متوقف شدن هزاران خودرو در انبارهای ایران‌خودرو و سایپا به دلیل نقص یک قطعه الکترونیکی یا چیپ ساده (ای‌سی‌یو).</li>
+<li><strong>تحلیل نهادگرایانه دکتر دینی ترکمانی:</strong> این مصداق عینی تئوری O-Ring کرمر است. خودرو که مجموعه‌ای از هزاران قطعه است، به دلیل ارزش عمق ساخت داخل بالا ارزیابی می‌شد، اما به دلیل عدم تامین یک واشر یا چیپ کوچک ($q_k = 0$)، کل ارزش تولید ($Y$) صفر شد و خودروها قابل عرضه به بازار نبودند.</li>
+<li><strong>درس مدیریتی:</strong> زنجیره تامین باید بر اساس «آسیب‌پذیری قطعه گلوگاهی» طراحی شود، نه بر اساس ارزش مالی قطعه.</li>
+</ul>
+<h3 id="gdp-ppp">کیس‌استادی ۳: تحلیل سناریوی ترکیه در برابر ایران (GDP اسمی در برابر PPP)</h3>
+<ul>
+<li><strong>تشریح مورد:</strong> مقایسه خروجی GDP دو کشور در دهه گذشته.</li>
+<li><strong>تحلیل نهادگرایانه دکتر دینی ترکمانی:</strong> اگر اقتصاد ایران را بر اساس شاخص PPP بررسی کنیم، به دلیل ارزان بودن حامل‌های انرژی، مسکن و نیروی کار، حجم اقتصاد ایران نسبتاً بزرگ دیده می‌شود. اما در مبادلات اسمی بین‌المللی، جهش‌های پیاپی نرخ ارز قدرت خرید تکنولوژی و ماشین‌آلات بنگاه‌های ایرانی را نسبت به بنگاه‌های ترکیه‌ای به شدت تضعیف کرده است.</li>
+<li><strong>درس مدیریتی:</strong> برنامه‌ریزی توسعه بنگاه برای نوسازی ماشین‌آلات باید بر اساس GDP اسمی ارزی صورت گیرد، نه آمارهای دولتی متکی بر PPP.</li>
+</ul>
+<hr />
+<h2 id="ceo-strategic-playbook">۶. چک‌لیست و راهنمای تصمیم‌گیری مدیرعامل (CEO Strategic Playbook)</h2>
+<p>این دستورالعمل عملیاتی به مدیران ارشد اجرایی کمک می‌کند تا آموزه‌های دکتر دینی ترکمانی را در سازمان خود پیاده‌سازی کنند:</p>
+<pre><code>+-----------------------------------------------------------------------------------+
+|               چک‌لیست اجرایی مدیرعامل (دوشنبه صبح در سازمان)                     |
++-----------------------------------------------------------------------------------+
+| [ ] ۱. نقشه‌برداری O-Ring زنجیره تامین (شناسایی نهاده‌های بحرانی غیرقابل جایگزین)|
+| [ ] ۲. تفکیک سود سوداگرانه از ارزش افزوده خالص عملیاتی ($VA$)                    |
+| [ ] ۳. مدیریت بدهی بر اساس نرخ بهره واقعی منفی ($r = i - \pi$)                  |
+| [ ] ۴. محاسبه قیمت تمام‌شده متکی بر شاخص تورم فشار هزینه ارزی                   |
+| [ ] ۵. برنامه‌ریزی تامین سرمایه در گردش پیش از وقوع جهش‌های ارزی                |
++-----------------------------------------------------------------------------------+
+</code></pre>
+<h3 id="o-ring_1">۱. نقشه آسیب‌پذیری O-Ring سازمان خود را رسم کنید</h3>
+<ul>
+<li>تمامی نهاده‌ها، قطعات، نرم‌افزارها و نیروهای انسانی کلیدی را لیست کنید.</li>
+<li>برای هر عامل، ضریب جایگزینی سریع تعیین کنید. اگر عدم وجود یک عامل باعث توقف کل خط تولید یا خدمت می‌شود، آن عامل حکم «واشر O-Ring» را دارد.</li>
+<li><strong>اقدام:</strong> برای تمام عوامل O-Ring، ذخیره استراتژیک (Strategic Buffer) یا تامین‌کننده موازی (Redundant Supplier) تعریف کنید.</li>
+</ul>
+<h3 id="_12">۲. سود عملیاتی را از سود موهوم تورمی ایزوله کنید</h3>
+<ul>
+<li>در صورت‌های مالی سود و زیان، سود حاصل از تورم دارایی‌ها (تجدید ارزیابی زمین، ساختمان و موجودی انبار) را از سود حاصل از فروش عملیاتی جدا کنید.</li>
+<li><strong>اقدام:</strong> مبنای پاداش هیئت مدیره و تقسیم سود میان سهامداران را صرفاً «ارزش افزوده عملیاتی حقیقی» ($Real\ VA$) قرار دهید تا سازمان دچار توهم سودآوری و ناترازی مالی نشود.</li>
+</ul>
+<h3 id="_13">۳. استراتژی بدهی/دارایی بر اساس نرخ بهره واقعی منفی</h3>
+<ul>
+<li>با توجه به منفی بودن نرخ بهره واقعی ($r = i - \pi < 0$)، نگهداری نقدینگی ریالی در حساب‌های بانکی بالاترین نرخ سوزاندن سرمایه سازمان است.</li>
+<li><strong>اقدام:</strong> تا حد امکان بدهی‌های ریالی بلندمدت با نرخ اسمی ثابت ایجاد کرده و آن را بلافاصله به دارایی‌های فیزیکی مولد، ماشین‌آلات، یا مواد اولیه استراتژیک تبدیل کنید.</li>
+</ul>
+<h3 id="_14">۴. محاسبات قیمت‌گذاری را از مدل‌های استاتیک به مدل‌های دینامیک ارزی تغییر دهید</h3>
+<ul>
+<li>از فرمول‌های قیمت‌گذاری ثابت نئوکلاسیک متکی بر کشش تقاضا حتماً عبور کنید.</li>
+<li><strong>اقدام:</strong> قیمت‌گذاری محصولات خود را به فرمول «پیش‌بینی نرخ ارز اسمی آتی» گره بزنید، زیرا در اقتصاد ایران، جهش ارزی پیش‌راند تورم فشار هزینه است و تأخیر در قیمت‌گذاری باعث نابودی سرمایه در گردش بنگاه خواهد شد.</li>
+</ul>
+<h3 id="_15">۵. مدیریت تعارض منافع و رانت‌های ساختاری</h3>
+<ul>
+<li>کانال‌های توزیع رانت و تخصیص ارز دولتی/ترجیحی در حوزه فعالیت خود را تحلیل کنید.</li>
+<li><strong>اقدام:</strong> مدل کسب‌وکار سازمان را به گونه‌ای طراحی کنید که حیات مستمر آن متکی بر دریافت رانت‌های ناپایدار دولتی نباشد، زیرا تغییر سیاست‌های دولتی یا حذف رانت‌ها می‌تواند بنگاه‌های متکی به رانت را در یک شب به تعطیلی بکشاند.</li>
+</ul>
+          </div>
+        </div>
+
+        <!-- Dini S3 Card -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="p-6 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-100">
+              <span class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-full">جلسه سوم ترکمانی • توسعه صنعتی و شکست هماهنگی</span>
+              <span class="text-xs text-slate-500">شکست هماهنگی • تئوری رشد روزنشتاین-رودن • سیاست صنعتی</span>
+            </div>
+            <h4 class="text-base font-black text-slate-900">ناترازی‌های ساختاری، شکست هماهنگی و موانع توسعه صنعتی در ایران</h4>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
+              یکی از عمیق‌ترین تفاوت‌ها در این جلسه نمایان می‌شود: سرزعیم بر رقابت آزاد و انضباط قیمتی تاکید دارد، در حالی که ترکمانی نظریه کلاسیک «شکست هماهنگی (Coordination Failure)» را بازمی‌گشاید. او اثبات می‌کند سرمایه‌گذاری انفرادی در ایران به دلیل فقدان زیرساخت و حلقه‌های مکمل زنجیره تامین شکست می‌خورد؛ بنابراین توسعه نیازمند یک «فشار بزرگ (Big Push)» سازمان‌یافته توسط دولت توسعه‌گراست، نه رهاسازی کورکورانه بازارها.
+            </p>
+            <div class="p-3 bg-purple-50/50 rounded-xl border border-purple-100 text-xs text-purple-950">
+              <strong>💡 مباحث مازاد بر کلاس سرزعیم:</strong> مدل پیوندهای پسین و پیشین هرشمن، پاتولوژی طرح‌های صنعتی نیمه‌کاره در استان‌های کشور، و کالبدشکافی تجارب سیاست صنعتی کره جنوبی و ژاپن در مقایسه با شکست صنعتی ایران.
+            </div>
+          </div>
+          <button onclick="toggleSection('full-dini-s3')" class="w-full p-4 bg-slate-50 hover:bg-slate-100 transition-colors flex items-center justify-between text-right border-t border-slate-100">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-lg bg-purple-700 text-white flex items-center justify-center font-bold text-xs">📖</span>
+              <div>
+                <strong class="text-xs font-bold text-slate-900 block">مشاهده متن کامل دانشنامه تطبیقی جلسه سوم</strong>
+                <span class="text-[11px] text-slate-500">تحلیل موشکافانه ۳۱ هزار کاراکتری با ماتریس مقایسه مستقیم سرزعیم vs ترکمانی</span>
+              </div>
+            </div>
+            <span id="icon-full-dini-s3" class="text-xs font-bold text-purple-700">▼ باز کردن</span>
+          </button>
+          <div id="full-dini-s3" class="hidden p-6 md:p-8 border-t border-slate-100 prose-custom max-w-none">
+            <h1 id="-">اقتصاد برای مدیران (استاد دینی ترکمانی) - جلسه سوم: ناترازی‌های ساختاری، شکست هماهنگی و موانع توسعه صنعتی</h1>
+<p><strong>مدرس:</strong> دکتر علی دینی ترکمانی<br />
+<strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA (کد 0410)<br />
+<strong>تنظیم و تدوین تطبیقی:</strong> پارسا رضائی (Parsa Rezaie)</p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی سازمانی (Executive Summary)</h2>
+<h3 id="_1">جوهره و بینش کلیدی جلسه</h3>
+<p>در این جلسه، دکتر علی دینی ترکمانی با اتکا به مکتب <strong>اقتصاد نهادگرا (Institutional Economics)</strong> و <strong>ساختارگرایی (Structuralism)</strong>، به تبیین ناترازی‌های کهنه و عمیق اقتصاد ایران می‌پردازد. جوهره پویایی‌های اقتصادی ایران در این جلسه در چهار ضلع کلیدی تحلیل می‌شود:<br />
+۱. <strong>مارپیچ نرخ ارز-تورم</strong> و نحوه تعدیل خودکار نرخ ارز بر اساس مابه‌التفاوت تورم داخلی و خارجی.<br />
+۲. <strong>ناترازی‌های ساختاری شبکه بانکی و بودجه دولت</strong> که موجب خلق نقدینگی درون‌زا و فشار بر پایه پولی می‌شوند.<br />
+۳. <strong>تنگنای ظرفیت جذب (Absorptive Capacity)</strong> که مانع تبدیل منابع مالی به ثروت مولد شده و هرگونه تزریق نقدینگی را به حباب‌های قیمتی و سوداگری تبدیل می‌کند.<br />
+۴. <strong>شکست هماهنگی (Coordination Failure)</strong> و <strong>قفل‌شدگی نهادی (Institutional Lock-in)</strong> که موجب خروج سرمایه انسانی و فیزیکی از کشور می‌شود.</p>
+<h3 id="_2">مقایسه فوری پارادایمی (در یک نگاه)</h3>
+<p>در حالی که رویکرد <strong>دکتر علی سرزعیم (جریان اصلی / نئوکلاسیک)</strong> شکست‌های بازار را استثنا، تورم را صرفاً پدیده‌ای پولی ($M \cdot V = P \cdot Y$)، نرخ ارز را حاصل عرضه و تقاضای بازار آزاد و انحصار را ناشی از عدم کارایی تخصیصی می‌داند، <strong>دکتر دینی ترکمانی</strong> نشان می‌دهد که در اقتصادهای در حال توسعه مانند ایران، بازارها اساساً به دلیل «شکست هماهنگی ساختاری» و «ضعف ظرفیت جذب نهادی» قادر به تخصیص بهینه نیستند. تورم در دیدگاه دکتر دینی ترکمانی پدیده‌ای پولی-ساختاری است که از جهش نرخ ارز و ناترازی ترازنامه بانک‌ها تغذیه می‌کند و سرکوب یا آزادسازی قیمتی بدون اصلاح ساختار نهادی، فرجامی جز تعمیق رکود تورمی ندارد.</p>
+<h3 id="c-level-executives">۳ تصمیم حیاتی برای مدیران ارشد (C-Level Executives)</h3>
+<ol>
+<li><strong>تغییر مبنای تسعیر و ارزش‌گذاری دارایی‌ها از قیمت‌های اسمی به شاخص نرخ واقعی ارز (RER):</strong> عدم اتکا به نرخ ارز رسمی تثبیت‌شده و تنظیم بودجه شرکت بر اساس نرخ تعدیل‌شده با تفاوت تورم داخلی و بین‌المللی.</li>
+<li><strong>مدیریت ناترازی ترازنامه بنگاه در مواجهه با تورم ساختاری:</strong> پوشش ریسک ($Hedging$) بدهی‌های ارزی و اتخاذ استراتژی تبدیل نقدینگی مازاد به دارایی‌های ثابت ملموس یا تجدیدناپذیر جهت مصون ماندن از افت ارزش پولی ناشی از خلق نقدینگی درون‌زا در سیستم بانکی.</li>
+<li><strong>سرمایه‌گذاری بر روی سرمایه انسانی و ارتقای «ظرفیت جذب سازمانی»:</strong> ایجاد مشوق‌های کلیدی برای حفظ نخبگان در برابر موج خروج سرمایه انسانی و طراحی فرایندهای هماهنگی درون‌بنگاهی برای جلوگیری از شکست هماهنگی در پروژه‌های توسعه‌ای.</li>
+</ol>
+<hr />
+<h2 id="_3">۲. کالبدشکافی موشکافانه تئوری‌ها و آموزه‌های دکتر دینی ترکمانی</h2>
+<pre><code>                      [ شکاف تورم داخلی و خارجی ]
+                                   │
+                                   ▼
+                       [ جهش اسمی نرخ ارز (E) ]
+                                   │
+                                   ▼
+             [ افزایش قیمت کالاهای واسطه‌ای و وارداتی ]
+                                   │
+                                   ▼
+              [ فشار هزینه (Cost-Push) &amp; تورم ساختاری ]
+                                   │
+                                   ▼
+             [ کسری بودجه دولت + ناترازی شبکه بانکی ]
+                                   │
+                                   ▼
+             [ خلق نقدینگی درون‌زا (M3) &amp; رشد پایه پولی ]
+                                   │
+                                   └───────────────────────► (بازگشت به ابتدای چرخه)
+</code></pre>
+<h3 id="purchasing-power-parity-ppp">۱. مکانیسم نرخ ارز و نظریه برابری قدرت خرید (Purchasing Power Parity - PPP)</h3>
+<p>دکتر دینی ترکمانی بحث نرخ ارز را با تحلیل <strong>نظریه برابری قدرت خرید (PPP)</strong> و مفهوم <strong>نرخ واقعی ارز (Real Exchange Rate - RER)</strong> آغاز می‌کند. فرمول پایه نرخ واقعی ارز به صورت زیر تعریف می‌شود:</p>
+<p>$$\text{RER} = \frac{E \cdot P_f}{P_d}$$</p>
+<p>که در آن:<br />
+- $E$: نرخ اسمی ارز (تومان به ازای واحد ارز خارجی مانند دلار یا یورو).<br />
+- $P_f$: شاخص سطح قیمت‌های خارجی (تورم شرکای تجاری).<br />
+- $P_d$: شاخص سطح قیمت‌های داخلی (تورم ایران).</p>
+<h4 id="_4">تحلیل ساختاری جهش‌های ارزی در ایران:</h4>
+<p>چنانچه نرخ تورم داخلی ($P_d$) به‌طور مداوم و با فاصله‌ای معنی‌دار بیشتر از نرخ تورم خارجی ($P_f$) باشد، برای ثابت ماندن نرخ واقعی ارز ($\text{RER}$)، نرخ اسمی ارز ($E$) <strong>باید</strong> متناسب با تفاوت این دو تورم افزایش یابد:</p>
+<p>$$\% \Delta E \approx \% \Delta P_d - \% \Delta P_f$$</p>
+<p>اگر دولت با تزریق درآمدهای نفتی یا ارزپاشی سعی کند نرخ اسمی ارز ($E$) را ثابت نگه دارد (سیاست سرکوب ارزی)، نرخ واقعی ارز ($\text{RER}$) کاهش یافته و ارزش پول ملی به صورت مصنوعی بالا نگه داشته می‌شود (<strong>Overvaluation</strong>). </p>
+<p><strong>پیامد ساختاری سرکوب ارزی:</strong><br />
+- واردات کالاهای مصرفی و واسطه‌ای به‌شدت ارزان می‌شود.<br />
+- تولیدکننده داخلی قادر به رقابت با کالای وارداتی ارزان‌قیمت نخواهد بود (مانند واردات مبلمان و پوشاک از ترکیه).<br />
+- فنر ارزی فشرده شده و به محض کاهش درآمدهای ارزی دولت یا وقوع شوک‌های سیاسی، فنر رها شده و جهش ناگهانی و شدید نرخ ارز ($Devaluation\ Spikes$) رخ می‌دهد.</p>
+<hr />
+<h3 id="structural-inflation-vs-qtm">۲. تورم ساختاری در مقابل نظریه مقداری پول (Structural Inflation vs. QTM)</h3>
+<p>در دیدگاه اقتصاد جریان اصلی (نئوکلاسیک)، تورم حاصل رشد بی‌رویه حجم پول بر اساس <strong>نظریه مقداری پول (Quantity Theory of Money - QTM)</strong> است:</p>
+<p>$$M \cdot V = P \cdot Y \implies P = \frac{M \cdot V}{Y}$$</p>
+<p>دکتر دینی ترکمانی این نگاه را برای اقتصاد ایران تقلیل‌گرایانه می‌داند و الگوی <strong>تورم فشار هزینه (Cost-Push)</strong> و <strong>ناترازی‌های ساختاری</strong> را تبیین می‌کند:</p>
+<ol>
+<li><strong>محرک اول تورم در ایران؛ جهش نرخ ارز:</strong> وقتی نرخ ارز جهش می‌کند، هزینه واردات مواد اولیه، ماشین‌آلات و کالاهای واسطه‌ای افزایش می‌یابد. این افزایش، هزینه تمام‌شده تولید را بالا برده و تورم ساختاری ایجاد می‌کند.</li>
+<li><strong>ناترازی ترازنامه بانک‌ها و خلق پول درون‌زا:</strong> در ایران، رشد نقدینگی ($M_3$) صرفاً ناشی از چاپ اسکناس توسط بانک مرکزی (پایه پولی $B$) نیست، بلکه حاصل <strong>خلق پول درون‌زا</strong> توسط بانک‌های تجاری و خصیصه زیان‌دهی ترازنامه‌ای آن‌هاست:</li>
+</ol>
+<p>$$M_3 = m \cdot B \quad \text{where} \quad m = \frac{1 + c}{r + e + c}$$</p>
+<p>که در آن $m$ ضریب فزاینده پولی، $r$ نرخ ذخیره قانونی، $e$ نرخ ذخیره اضافی و $c$ نسبت اسکناس به سپرده است.</p>
+<h4 id="_5">مکانیسم ناترازی بانکی:</h4>
+<p>بانک‌ها به دلیل سرمایه‌گذاری در دارایی‌های انجمادی (املاک، پروژه‌های موهوم و بدهی‌های معوق شرکت‌های وابسته)، دچار عدم تعادل در نقدینگی می‌شوند. برای جبران این ناترازی و پرداخت سود سپرده‌ها، اقدام به اضافه‌برداشت از بانک مرکزی ($Overdraft$) می‌کنند. این اضافه‌برداشت مستقیم پایه پولی ($B$) را افزایش داده و تورم پولی را به تورم ساختاریِ قبلی تزریق می‌کند.</p>
+<hr />
+<h3 id="absorptive-capacity-o-o-ring-theory">۳. نظریه ظرفیت جذب (Absorptive Capacity) و نظریه حلقه O (O-Ring Theory)</h3>
+<p>یکی از اساسی‌ترین مباحث مطرح‌شده در جلسه، مفاهیم <strong>ظرفیت جذب (Absorptive Capacity)</strong> و <strong>تنگناهای ساختاری توسعه</strong> است.</p>
+<pre><code>[ تزریق منابع مالی / ارز نفتی ]
+               │
+               ▼
+   /─────────────────────────\
+  &lt; آیا ظرفیت جذب وجود دارد؟ &gt;
+   \─────────────────────────/
+        │               │
+     (خیر)             (بله)
+        │               │
+        ▼               ▼
+ [ حباب سوداگری، ]  [ تشکیل سرمایه ثابت، ]
+ [ رکود تورمی و  ]  [ رشد تولید صنعتی و  ]
+ [ رانت‌خواری    ]  [ ارتقای تکنولوژیک  ]
+</code></pre>
+<ul>
+<li><strong>تعریف ظرفیت جذب:</strong> توانایی یک سیستم اقتصادی یا بنگاه در بسترسازی نهادی، زیرساختی، مدیریتی و فنی برای تبدیل سرمایه‌های مالی و فیزیکی تزریق‌شده به «سرمایه ثابت مولد» بدون ایجاد تورم و اتلاف منابع.</li>
+<li><strong>تفسیر شکست تزریق مالی:</strong> اگر در کشوری که ظرفیت جذب پایین دارد میلیاردها دلار درآمد ارزی نفتی به اقتصاد تزریق شود، به دلیل فقدان زیرساخت‌های نهادی و نظام مدیریت پروژه پیشرفته، این پول صرف واردات بی‌رویه، مسکن سوداگرانه و رانت‌خواری شده و به تولید متصل نمی‌شود.</li>
+</ul>
+<h4 id="o-michael-kremers-o-ring-theory">تطبیق با نظریه حلقه O مایکل کرمر (Michael Kremer's O-Ring Theory):</h4>
+<p>دکتر دینی ترکمانی فرآیند تولید صنعتی و توسعه را مانند یک زنجیره پیچیده می‌داند که ارزش کل تولید متأثر از عملکرد ضعیف‌ترین حلقه آن است:</p>
+<p>$$Y = K^\alpha \cdot L^{1-\alpha} \prod_{i=1}^{n} q_i$$</p>
+<p>که در آن $q_i$ نشان‌دهنده کیفیت یا کارایی حلقه $i$ام از فرایند تولید است ($0 \leq q_i \leq 1$).<br />
+اگر فقط یک حلقه در زنجیره توسعه (مثلاً محیط حقوقی، ثبت مالکیت، تعاملات بانکی بین‌المللی، یا مدیریت پروژه) صفر یا بسیار پایین باشد ($q_k \to 0$)، کل خروجی سیستم ($Y$) به شدت افت کرده یا منهدم می‌شود.</p>
+<hr />
+<h3 id="institutional-lock-in">۴. قفل‌شدگی نهادی (Institutional Lock-in) و خروج سرمایه</h3>
+<p>دکتر دینی ترکمانی تشریح می‌کند که چگونه تعارض منافع، رانت‌جویی ساختاری و عدم اطمینان سیاسی، اقتصاد را در یک <strong>تله تعادلی سطح پایین (Low-Level Equilibrium Trap)</strong> قفل می‌کند.</p>
+<ul>
+<li><strong>پویایی خروج سرمایه:</strong> عدم امنیت سرمایه‌گذاری و نبود چشم‌انداز روشن سیاسی/اقتصادی موجب می‌شود سرمایه انسانی (فرار مغزها) و سرمایه فیزیکی (خروج ارز برای خرید ملک در خارج یا دارایی‌های نقدپذیر) از کشور خارج شوند.</li>
+<li><strong>چرخه شوم شکست:</strong> با خروج سرمایه انسانی و فیزیکی، «ظرفیت جذب» اقتصاد مجدداً افت می‌کند. افت ظرفیت جذب، شکست هماهنگی را تشدید کرده و به انباشت ناترازی‌ها منجر می‌شود؛ این امر دوباره محیط را ناامن‌تر کرده و به خروج بیشتر سرمایه می‌انجامد.</li>
+</ul>
+<hr />
+<h2 id="extra-topics-not-covered-by-dr-sarzaeem">۳. مباحث مازاد و منحصربه‌فرد (Extra Topics Not Covered by Dr. Sarzaeem)</h2>
+<p>در تدریس دکتر علی سرزعیم، فرضیه اصلی این است که اگر قیمت‌ها آزادسازی شوند و مداخله دولت (مانند سرکوب ارزی یا دستوری بودن قیمت‌ها) حذف گردد، تخصیص منابع توسط مکانیسم بازار بهینه خواهد شد. اما دکتر دینی ترکمانی مفاهیمی بنیادین مطرح می‌کند که در الگوی جریان اصلی دکتر سرزعیم اصلاً پوشش داده نمی‌شوند:</p>
+<pre><code>┌─────────────────────────────────────────────────────────────────────────┐
+│                      مباحث مازاد و منحصربه‌فرد                          │
+├─────────────────────────────────────────────────────────────────────────┤
+│ ۱. شکست هماهنگی (Coordination Failure) و تله عدم توسعه                 │
+│ ۲. مفهوم ظرفیت جذب (Absorptive Capacity) در مقابل کارایی تخصیصی          │
+│ ۳. ناترازی درون‌زای ترازنامه شبکه بانکی (Bank Balance Sheet Imbalance)   │
+│ ۴. قفل‌شدگی نهادی و فرار متقابل سرمایه انسانی و مالی                      │
+│ ۵. تحلیل ابعاد اخلاقی، مسئولیت اجتماعی و فلسفه رهبری (پایان‌بندی با شعر)  │
+└─────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h3 id="coordination-failure">۱. شکست هماهنگی (Coordination Failure) و تله عدم توسعه</h3>
+<p>دکتر سرزعیم مسئله را در سطح رفتار عاملان انفرادی و قیمت‌های نسبی بررسی می‌کند. در مقابل، دکتر دینی ترکمانی بر این باور است که بنگاه‌ها به‌تنهایی نمی‌توانند از تله عارضه عدم توسعه خارج شوند. <br />
+- <strong>مثال ساختاری:</strong> یک سرمایه‌گذار به تنهایی اقدام به احداث کارخانه خودروسازی پیشرفته نمی‌کند مگر اینکه مطمئن باشد همزمان سرمایه‌گذار دیگری کارخانه فولاد باکیفیت، دیگری شبکه قطعه‌سازی، و دیگری شبکه توزیع و انرژی مستمر را ایجاد خواهد کرد. <br />
+- این نیازمند <strong>دست هماهنگ‌کننده دولت (Big Push &amp; Industrial Policy)</strong> است. بدون این هماهنگی نهادی، کلیه سرمایه‌گذاران در تعادل ناکارآمد (Low-level equilibrium) باقی می‌مانند.</p>
+<h3 id="absorptive-capacity">۲. مفهوم ظرفیت جذب (Absorptive Capacity) در مقابل کارایی تخصیصی</h3>
+<p>در تحلیل‌های نئوکلاسیک، فرض بر این است که اگر سرمایه موجود باشد، خودبه‌خود در جایی که بالاترین بازدهی را دارد تخصیص می‌یابد. دکتر دینی ترکمانی ثابت می‌کند که نبود ظرفیت جذب موجب می‌شود منابع مالیِ تزریق‌شده (مانند تسهیلات تکلیفی یا صندوق توسعه ملی) به جای سرمایه‌گذاری مولد، صرف واردات کالای مصرفی یا سوداگری زمین شده و رکود تورمی را تعمیق بخشد.</p>
+<h3 id="bank-balance-sheet-imbalance">۳. ناترازی درون‌زای ترازنامه شبکه بانکی (Bank Balance Sheet Imbalance)</h3>
+<p>در کلاس دکتر سرزعیم، بانک مرکزی مسئول پایه پولی است و تورم نتیجه پولی شدن کسری بودجه است. دکتر دینی ترکمانی ساختار درون‌زای خلق پول توسط بانک‌های خصوصی و دولتی را تبیین می‌کند. بانک‌ها با شناسایی سودهای موهوم روی اموال غیرمنقول خود و انباشت مطالبات مشکوک‌الوصول (NPLs)، ناتراز شده و با اضافه‌برداشت لجام‌گسیخته، بانک مرکزی را «مجبور» به انفعال و چاپ پول می‌کنند.</p>
+<h3 id="_6">۴. قفل‌شدگی نهادی و فرار متقابل سرمایه انسانی و مالی</h3>
+<p>دکتر دینی ترکمانی فرار مغزها و خروج سرمایه را نه یک پدیده مجزا، بلکه معلول مستقیم افت کیفیت حکمرانی و قفل‌شدگی نهادی می‌داند. در این دیدگاه، سرمایه‌گذار به دلیل عدم شفافیت و تعارض منافع گروه‌های ذی‌نفوذ، افق برنامه‌ریزی خود را از چند سال به چند روز کاهش می‌دهد.</p>
+<h3 id="_7">۵. تحلیل ابعاد اخلاقی، مسئولیت اجتماعی و فلسفه رهبری</h3>
+<p>در بخش پایانی جلسه، دکتر دینی ترکمانی کلاس را با خواندن شعری از <strong>احمد شاملو</strong> («من به هیأت ما زاده شدم...») به پایان می‌برد. وی تأکید می‌کند که تحلیل اقتصادی مجزا از مسئولیت اخلاقی، تعهد اجتماعی و نگاه انسانی به توسعه نیست. مسئولیت مدیر ارشد صرفاً حداکثرسازی سود سهامداران ($Profit\ Maximization$) در کوتاه‌مدت نیست، بلکه درک نقش خود در زنجیره خلق ارزش ملی و حفظ ثروت‌های بنیادی جامعه است.</p>
+<hr />
+<h2 id="comparative-paradigm-matrix">۴. ماتریس مقایسه تطبیقی دو استاد (Comparative Paradigm Matrix)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right; direction: rtl;">محور موضوع</th>
+<th style="text-align: right; direction: rtl;">رویکرد و تحلیل دکتر سرزعیم (جریان اصلی / نئوکلاسیک)</th>
+<th style="text-align: right; direction: rtl;">رویکرد و تحلیل دکتر دینی ترکمانی (نهادگرا / ساختارگرا)</th>
+<th style="text-align: right; direction: rtl;">پیامد استراتژیک برای مدیران بنگاه</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>منشأ تورم</strong></td>
+<td style="text-align: right; direction: rtl;">پدیده‌ای کاملاً پولی ناشی از رشد بی‌رویه پایه پولی و کسری بودجه ($M \cdot V = P \cdot Y$).</td>
+<td style="text-align: right; direction: rtl;">پدیده‌ای ترکیبی و ساختاری؛ ناشی از فشار هزینه شوک ارزی و ناترازی ترازنامه بانک‌ها.</td>
+<td style="text-align: right; direction: rtl;">بودجه‌ریزی بنگاه باید بر اساس شاخص فشار هزینه و شوک ارزی باشد، نه صرفاً نرخ اعلامی بانک مرکزی.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>تعیین نرخ ارز</strong></td>
+<td style="text-align: right; direction: rtl;">نتیجه عرضه و تقاضا در بازار آزاد؛ سرکوب ارزی جرم و آزادسازی کامل درمان است.</td>
+<td style="text-align: right; direction: rtl;">نرخ اسمی تحت تأثیر شکاف تورم داخلی و خارجی است ($RER$); جهش ارزی معلول سرکوب ساختاری است.</td>
+<td style="text-align: right; direction: rtl;">پیش‌بینی جهش‌های ناگهانی ارزی (فنر ارزی) و پوشش ریسک بدهی‌های ارزی قبل از رهاسازی فنر.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>ساختار بازار و انحصار</strong></td>
+<td style="text-align: right; direction: rtl;">انحصار ناکارآمدی تخصیصی ایجاد می‌کند؛ راهکار: خصوصی‌سازی، آزادسازی و آزادسازی قیمت‌ها.</td>
+<td style="text-align: right; direction: rtl;">انحصار حاصل رانت ساختاری و قفل‌شدگی نهادی است؛ خصوصی‌سازی بدون اصلاح نهادی به انحصار خصوصی منجر می‌شود.</td>
+<td style="text-align: right; direction: rtl;">عدم ارزیابی بنگاه صرفاً بر اساس سودآوری مقطعی؛ تحلیل پایداری نهادی رانت‌ها و خروجی رقابتی.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>سرمایه‌گذاری و توسعه</strong></td>
+<td style="text-align: right; direction: rtl;">تخصیص بهینه منابع از طریق دست نامرئی بازار و نرخ‌های بهره واقعی مثبت.</td>
+<td style="text-align: right; direction: rtl;">نیازمند ایجاد «ظرفیت جذب» و هدایت هوشمندانه دولت برای حل «شکست هماهنگی».</td>
+<td style="text-align: right; direction: rtl;">ارزیابی توان جذب سازمانی قبل از توسعه پروژه‌ها؛ ایجاد شبکه‌های همکاری افقی و عمودی با سایر بنگاه‌ها.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>علت ناترازی بانکی</strong></td>
+<td style="text-align: right; direction: rtl;">مداخله دولت، نرخ بهره دستوری و تسهیلات تکلیفی.</td>
+<td style="text-align: right; direction: rtl;">ناترازی ساختاری، انباشت دارایی‌های منجمد، سودهای موهوم و خلق پول درون‌زا جهت بقای بانک.</td>
+<td style="text-align: right; direction: rtl;">ارزیابی دقیق سلامت مالی و کیفیت ترازنامه بانک‌های عامل پیش از اخذ تسهیلات یا سپرده‌گذاری سنگین.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>انگیزه عاملان اقتصادی</strong></td>
+<td style="text-align: right; direction: rtl;">عقلانیت کامل، حداکثرسازی مطلوبیت و سود شخصی ($Homo\ Economicus$).</td>
+<td style="text-align: right; direction: rtl;">عقلانیت محدود، تحت تأثیر ساختار قدرت، تعارض منافع، رانت‌جویی و ارزش‌های اخلاقی-نهادی.</td>
+<td style="text-align: right; direction: rtl;">طراحی سیستم‌های انگیزشی در بنگاه بر اساس نهادهای درون‌سازمانی و مسئولیت اجتماعی، نه فقط مشوق مالی.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_8">۵. تحلیل کیس‌استادی‌ها و مصادیق اقتصاد ایران</h2>
+<h3 id="-_1">۱. چرخه شوک ارزی - تورم وارداتی در صنعت ایران</h3>
+<ul>
+<li><strong>مصداق بررسی‌شده:</strong> جهش‌های ارزی سال‌های ۱۳۹۷، ۱۴۰۱ و ۱۴۰۲ در ایران.</li>
+<li><strong>تحلیل نهادگرایانه:</strong> هنگامی که دولت سنوات متمادی نرخ اسمی ارز ($E$) را علی‌رغم تورم ۴۰ درصدی داخلی ثبت می‌کرد، رقابت‌پذیری کالای ایرانی در برابر واردات ارزان (مانند پوشاک و لوازم خانگی) نابود شد. به محض بروز تحریم یا شوک ارزی، جهش ۳ برابری نرخ ارز رخ داد. این جهش، هزینه تامین سرمایه در گردش و مواد اولیه وارداتی بنگاه‌ها را به شدت افزایش داد و به تورم ساختاری سمت عرضه (Cost-Push) منجر شد.</li>
+<li><strong>درس مدیریتی:</strong> بنگاه نباید سودآوری ناشی از ارز سرکوب‌شده (واردات ارزان مواد اولیه) را پای پایداری مدل کسب‌وکار خود بگذارد.</li>
+</ul>
+<h3 id="_9">۲. ناترازی ترازنامه بانک‌ها (کیس‌اسپسیفیک: بانک آینده و بانک‌های دولتی)</h3>
+<ul>
+<li><strong>مصداق بررسی‌شده:</strong> اضافه‌برداشت‌های سنگین بانک‌های خصوصی و دولتی از بانک مرکزی (مانند بانک آینده در پروژه ایران‌مال یا بدهی‌های بانک ملی).</li>
+<li><strong>تحلیل ساختاری:</strong> بانک‌ها با انباشت املاک و مال‌سازی، دارایی غیرنقل‌پذیر ایجاد کرده و برای پرداخت سودهای بالا به سپرده‌گذاران دچار مجازات نقدینگی شدند. برای فرار از ورشکستگی، دست به اضافه‌برداشت از بانک مرکزی زدند. این پدیده، پایه پولی را منبسط کرد و تورم سنگینی را به کل جامعه تحمیل نمود.</li>
+<li><strong>درس مدیریتی:</strong> بنگاه‌ها باید عدم تعادل نقدینگی ($Asset-Liability\ Mismatch$) را در ترازنامه‌های خود رصد کرده و نقدینگی خود را در بانک‌های دارای ترازنامه سالم و ریسک سیستمی پایین نگه دارند.</li>
+</ul>
+<h3 id="_10">۳. بررسی پروژه شهرک اکباتان در مقایسه با پروژه‌های مدرن مسکن (ظرفیت جذب)</h3>
+<ul>
+<li><strong>مصداق بررسی‌شده:</strong> ساخت شهرک اکباتان در دهه ۱۳۵۰ در مقایسه با پروژه‌های مسکن مهر و مسکن ملی.</li>
+<li><strong>تحلیل نهادگرایانه:</strong> پروژه اکباتان نمونه‌ای از وجود <strong>ظرفیت جذب بالا</strong>، مدیریت زنجیره تامین جامع، و هماهنگی دقیق مهندسی و نهادی در زمان خود بود. در مقابل، پروژه‌های مسکن مهر به دلیل فقدان ظرفیت جذب، نبود زیرساخت‌های نهادی و شکست هماهنگی (ساخت مسکن بدون آب، برق، گاز، مدرسه و شبکه حمل‌ونقل) به پروژه‌های نیمه‌تمام و تورم‌زا تبدیل شدند.</li>
+</ul>
+<hr />
+<h2 id="ceo-strategic-playbook">۶. چک‌لیست و راهنمای تصمیم‌گیری مدیرعامل (CEO Strategic Playbook)</h2>
+<p>این چک‌لیست عملیاتی برای مدیران ارشد اجرایی تنظیم شده است تا بتوانند تصمیمات کلان بنگاه را با واقعیت‌های نهادی و ساختاری اقتصاد ایران تطبیق دهند:</p>
+<pre><code>[ارزیابی محیط نهادی] ──► [تعدیل بودجه بر اساس RER] ──► [اصلاح مدیریت نقدینگی] ──► [ارتقای ظرفیت جذب]
+</code></pre>
+<h3 id="_11">۱. ارزیابی ریسک‌های نرخ ارز و ساختار قیمت‌گذاری</h3>
+<ul>
+<li>[ ] <strong>محاسبه نرخ واقعی ارز اختصاصی بنگاه ($\text{RER}_{\text{Firm}}$):</strong> آیا قیمت محصولات یا مواد اولیه شما متناسب با تفاوت تورم داخلی و جهانی تعدیل می‌شود یا تحت سرکوب قیمتی دولت است؟</li>
+<li>[ ] <strong>سناریونویسی جهش ارزی:</strong> سناریوی جهش ۵۰ تا ۱۰۰ درصدی نرخ اسمی ارز را در مدل‌های مالی سالانه بنگاه لحاظ کرده و تأثیر آن را بر سرمایه در گردش ($Working\ Capital$) ارزیابی کنید.</li>
+<li>[ ] <strong>عدم اتکا به ارز ترجیحی/دستوری:</strong> استراتژی تامین مواد اولیه را به گونه‌ای طراحی کنید که در صورت حذف ناگهانی ارز حمایتی، حاشیه سود بنگاه منفی نشود.</li>
+</ul>
+<h3 id="_12">۲. مدیریت ناترازی مالی و تعامل با سیستم بانکی</h3>
+<ul>
+<li>[ ] <strong>پایش تعادل نقدینگی ترازنامه:</strong> از انجماد منابع بنگاه در دارایی‌های ثابت غیرمرتبط با هسته اصلی کسب‌وکار ($Non-Core\ Assets$) در شرایط رکود تورمی پرهیز کنید.</li>
+<li>[ ] <strong>اعتبارسنجی نهادی بانک‌های عامل:</strong> سپرده‌ها و خطوط اعتباری بنگاه را در بانک‌هایی تمرکز دهید که کمترین میزان اضافه‌برداشت از بانک مرکزی و پایین‌ترین نسبت مطالبات غیرجاری ($\text{NPL}$) را دارند.</li>
+<li>[ ] <strong>پوشش ریسک تورم ساختاری:</strong> بدهی‌های ریالی بلندمدت با نرخ بهره نامی پایین‌تر از تورم انتظاری ایجاد کرده و آن را به دارایی‌های مولد ارزآور یا استراتژیک تبدیل کنید.</li>
+</ul>
+<h3 id="mathph_40_end">۳. توسعه ظرفیت جذب سازمانی ($Organizational\ Absorptive\ Capacity$)</h3>
+<ul>
+<li>[ ] <strong>شناسایی حلقه‌های ضعیف زنجیره ارزش (تست حلقه O):</strong> فرایندهای عملیاتی بنگاه را تحلیل کرده و ضعیف‌ترین حلقه فنی، مدیریتی یا فناوری که کل خروجی را محدود کرده، بازسازی کنید.</li>
+<li>[ ] <strong>اجرای پروژه‌های پایلوت قبل از تزریق سرمایه سنگین:</strong> از تزریق یکباره منابع مالی بزرگ به پروژه‌های توسعه‌ای پیش از بومی‌سازی دانش فنی و ایجاد زیرساخت مدیریتی خودداری کنید.</li>
+<li>[ ] <strong>سازوکار نگهداشت نخبگان (حفظ سرمایه انسانی):</strong> برای مقابله با موج فرار مغزها، سیستم تعویض سود ($Profit\ Sharing$)، سهام تشویقی ($Stock\ Options$) و مشوق‌های ارزی/ارزش‌محور برای نیروهای کلیدی طراحی کنید.</li>
+</ul>
+<h3 id="_13">۴. رهبری اخلاقی و مسئولیت ساختاری</h3>
+<ul>
+<li>[ ] <strong>اتخاذ رویکرد ذی‌نفعان به جای صرفاً سهام‌داران:</strong> در شرلیط بحران‌های ساختاری، استراتژی‌های بنگاه را به‌گونه‌ای تنظیم کنید که مسئولیت اجتماعی، حفظ اشتغال و اخلاق حرفه‌ای فدای سودآوری مخرب کوتاه‌مدت نشود.</li>
+<li>[ ] <strong>پرهیز از رانت‌جویی ساختاری:</strong> مدل درآمدی بنگاه را بر پایه ارتقای بهره‌وری و نوآوری استوار کنید، نه اتکا به رانت توزیع انرژی، ارز یا تعرفه‌های حمایتی پایدارنشدنی.</li>
+</ul>
+          </div>
+        </div>
+
+        <!-- Dini S4 Card -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="p-6 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-100">
+              <span class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-full">جلسه چهارم ترکمانی • تئوری‌های تورم ساختاری</span>
+              <span class="text-xs text-slate-500">فشار هزینه • ناترازی ارزی-تولیدی • نقد ارتدوکس پولی</span>
+            </div>
+            <h4 class="text-base font-black text-slate-900">تورم ساختاری، تئوری‌های فشار هزینه و اقتصاد کلان نامتعارف</h4>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
+              تضاد آشکار در تبیین تورم: دکتر سرزعیم با استناد به رابطه فریدمن ($MV=PY$) تورم را «پدیده‌ای صرفاً پولی» ناشی از کسری بودجه و اضافه‌برداشت می‌داند. در نقطه مقابل، دکتر ترکمانی نظریه «تورم ساختاری و فشار هزینه (Cost-Push)» را شرح می‌دهد و اثبات می‌کند که رشد نقدینگی در ایران، در حقیقت «معلول انفعالی» شوک‌های جهش ارزی، افزایش بهای تمام‌شده و تلاش بخش واقعی برای تامین سرمایه در گردش است.
+            </p>
+            <div class="p-3 bg-purple-50/50 rounded-xl border border-purple-100 text-xs text-purple-950">
+              <strong>💡 مباحث مازاد بر کلاس سرزعیم:</strong> مدل تورم ساختاری آمریکای لاتین (پروبیش و فورتادو)، مارپیچ کاهش ارزش پول-تورم، و پیامدهای سیاست انقباض پولی کور در تعمیق رکود بنگاه‌های مولد.
+            </div>
+          </div>
+          <button onclick="toggleSection('full-dini-s4')" class="w-full p-4 bg-slate-50 hover:bg-slate-100 transition-colors flex items-center justify-between text-right border-t border-slate-100">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-lg bg-purple-700 text-white flex items-center justify-center font-bold text-xs">📖</span>
+              <div>
+                <strong class="text-xs font-bold text-slate-900 block">مشاهده متن کامل دانشنامه تطبیقی جلسه چهارم</strong>
+                <span class="text-[11px] text-slate-500">تحلیل موشکافانه ۲۷ هزار کاراکتری با ماتریس مقایسه مستقیم سرزعیم vs ترکمانی</span>
+              </div>
+            </div>
+            <span id="icon-full-dini-s4" class="text-xs font-bold text-purple-700">▼ باز کردن</span>
+          </button>
+          <div id="full-dini-s4" class="hidden p-6 md:p-8 border-t border-slate-100 prose-custom max-w-none">
+            <h1 id="-">اقتصاد برای مدیران (استاد دینی ترکمانی) - جلسه چهارم: تورم ساختاری، تئوری‌های فشار هزینه و اقتصاد کلان نامتعارف</h1>
+<p><strong>مدرس:</strong> دکتر علی دینی ترکمانی<br />
+<strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA (کد 0410)<br />
+<strong>تنظیم و تدوین تطبیقی:</strong> پارسا رضائی (Parsa Rezaie)</p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی سازمانی (Executive Summary)</h2>
+<h3 id="_1">جوهره و پیام محوری جلسه</h3>
+<p>جلسه چهارم درس «اقتصاد برای مدیران» توسط دکتر علی دینی ترکمانی، بر عبور از الگوهای ساده‌انگارانه پولیِ جریان اصلی (Mainstream/Monetarist) و تحلیل «تورم ساختاری» (Structural Inflation)، «تکانه‌های فشار هزینه» (Cost-Push Shocks) و «سازوکار خلق نقدینگی ساختاری» در اقتصاد ایران تمرکز دارد. پیام محوری استاد به مدیران ارشد اجرایی این است که تورم در اقتصاد ایران یک پدیده صرفاً پولی نیست؛ بلکه حاصل <strong>تلاش ساختاری اقتصاد برای ایجاد تعادل میان نقدینگی فزاینده و جهش‌های نرخ ارز با حجم تولید واقعی محصورسازی‌شده ($Q$)</strong> است. </p>
+<p>علاوه بر تحلیل‌های نظری، این جلسه با ورود عملیاتی به ابزارهای بین‌المللی داده‌کاوی تجاری (نظیر سایت ITC TradeMap و سیستم HS Code) پیوند میان نظریه اقتصاد کلان و استراتژی‌های صادراتی/وارداتی بنگاه را تبیین می‌کند.</p>
+<h3 id="_2">مقایسه فوری پارادایم‌ها (دکتر دینی ترکمانی در برابر دکتر سرزعیم)</h3>
+<ul>
+<li><strong>دیدگاه دکتر سرزعیم (مکتب پولی / جریان اصلی):</strong> تورم پدیده‌ای ۱۰۰٪ پولی است که مستقیماً از کسری بودجه، چاپ پول توسط بانک مرکزی و اضافه‌برداشت بانک‌ها نشأت می‌گیرد. راهکار: کنترل سخت‌گیرانه پایه پولی، رهاسازی قیمت‌ها تا حد تعادل بازار و انضباط مالی مطلق.</li>
+<li><strong>دیدگاه دکتر دینی ترکمانی (نهادگرایی / ساختارگرایی):</strong> تورم حاصل زنجیره‌ای از تعارضات توزیعی، تکانه‌های نرخ ارز (فشار هزینه)، کسری بودجه ساختاری ناشی از ناکارآمدی نهادی و قفل‌شدگی تولید ($Q$) است. رشد نقدینگی در اقتصاد ایران تا حد زیادی «درون‌زا» (Endogenous) بوده و پاسخ ناگزیر سیستم به تکانه‌های ساختاری و فشار هزینه است.</li>
+</ul>
+<pre><code>[تکانه نرخ ارز / کسری بودجه ساختاری] ──&gt; [افزایش هزینه‌های تولید / فشار هزینه]
+                                                 │
+                                                 ▼
+[رشد درون‌زای نقدینگی و جهش سرعت گردش پول] &lt;── [تلاش بنگاه و دولت برای تامین مال عامل‌ها]
+                                                 │
+                                                 ▼
+[توازن نامتعادل قیمت‌ها با تولید واقعی محصور (Q)] ──&gt; [تورم ساختاری مزمن]
+</code></pre>
+<h3 id="c-level-executives">۳ تصمیم حیاتی برای مدیران ارشد (C-Level Executives)</h3>
+<ol>
+<li><strong>بازآرایی ترکیب نقدینگی و خزانه بنگاه با رصد سرعت گردش پول ($V$):</strong> با مشاهده علامت تبدیل «شبه‌پول» به «M1» (سپرده‌های دیداری و اسکناس)، بنگاه باید بلافاصله سود بانکی ثابت را رها کرده و منابع مالی را به دارایی‌های سرمایه‌ای قابل نقدشوندگی سریع یا مواد اولیه تبدیل کند.</li>
+<li><strong>استفاده از هوش داده‌ای تجارت بین‌الملل (ITC TradeMap) جهت دور زدن تحریم‌ها:</strong> اتکا به کدهای HS شش‌رقمی و شناسایی بازارهای جایگزین و ظرفیت‌های بالفعل/بالقوه تجاری به‌جای تصمیم‌گیری حسی بر اساس بازار سنت‌زده داخلی.</li>
+<li><strong>مدیریت سبد محصولات بر اساس کشش درامدی تقاضا در شرایط رکود تورمی:</strong> کاهش تمرکز بر کالاهای لوکس با درجه کشش بالا و حرکت به سمت کالاهای ضروری یا ارائه ابزارهای مالی (مانند لیزینگ و اعتبار خرد) برای حفظ تقاضای موثر کالاهای با دوام.</li>
+</ol>
+<hr />
+<h2 id="_3">۲. کالبدشکافی موشکافانه تئوری‌ها و آموزه‌های دکتر دینی ترکمانی</h2>
+<h3 id="mathph_8_end">۱. معادلات تبادلی پولی و تبیین ساختارگرایانه ($MV = PQ$)</h3>
+<p>دکتر دینی ترکمانی در تحلیل معادلات بنیادی پول، معادله تبادلی فیشر را بازتعریف می‌کند:</p>
+<p>$$M \cdot V = P \cdot Q$$</p>
+<p>در نگرش پول‌گرایی نئوکلاسیک (مورد تاکید دکتر سرزعیم)، فرض بر این است که سرعت گردش پول ($V$) و تولید واقعی ($Q$) در کوتاه مدت و بلندمدت باثبات یا مستقل از حجم پول هستند؛ لذا تغییرات در حجم پول ($M$) مستقیماً و به نسبت یک‌بهیک وارد قیمت‌ها ($P$) می‌شود.</p>
+<p>اما دکتر دینی ترکمانی با نقد این فرض نئوکلاسیک نشان می‌دهد که در اقتصاد ایران:<br />
+*   <strong>تولید واقعی ($Q$) ساختاریافته و محصور است:</strong> به دلیل تحریم‌ها، عدم قطعیت‌های سرمایه‌گذاری، فرار سرمایه و مستهلک شدن زیرساخت‌ها، نرخ رشد تولید ساختاری ($Q$) ناچیز یا منفی است.<br />
+*   <strong>سرعت گردش پول ($V$) متغیری شدیداً نوسانی و انتظاراتی است:</strong> در شرایط انتظارات تورمی بالا، سرعت گردش پول به‌شدت جهش می‌یابد. در نتیجه، حتی اگر بانک مرکزی پایه پولی را کنترل کند، جهش $V$ اثر کنترل $M$ را خنثی کرده و به قیمت‌ها ($P$) فشار می‌آورد.</p>
+<h3 id="mathph_19_end-quasi-money">۲. ساختار نقدینگی: پول ($M1$) در برابر شبه‌پول (Quasi-Money)</h3>
+<p>نقدینگی کل ($M2$) شامل دو بخش اساسی است:</p>
+<p>$$M2 = M1 + \text{Quasi-Money}$$</p>
+<ol>
+<li><strong>پول ($M1$):</strong> شامل اسکناس و مسکوکات در دست مردم + سپرده‌های دیداری (جاری). نقدشوندگی مطلق دارد و بلافاصله وارد بازار دارایی‌ها یا کالاها می‌شود.</li>
+<li><strong>شبه‌پول (Quasi-Money):</strong> شامل سپرده‌های دیداری سرمایه‌گذاری مدت‌دار (کوتاه‌مدت و بلندمدت) در بانک‌ها.</li>
+</ol>
+<p><strong>بینش کلیدی دکتر دینی ترکمانی:</strong><br />
+در بازه‌هایی که انتظارات تورمی فروکش کرده است (مانند سال‌های ۱۳۹۲ تا ۱۳۹۶)، سهم شبه‌پول در ایران به بیش از ۸۵ درصد نقدینگی رسید؛ زیرا نرخ سود بانکی حقیقی مثبت بود. اما با وقوع تکانه‌های ارزی و انتظارات تورمی، شبه‌پول به‌سرعت سیال شده و تبدیل به $M1$ می‌شود. این جابه‌جایی، فشار جامانده از رشد نقدینگی سال‌های قبل را یک‌باره بر بازارهای طلا، ارز، مسکن و خودرو تخلیه می‌کند.</p>
+<h3 id="mathph_23_end-mathph_24_end">۳. ضریب فزاینده نقدینگی ($m$) و نرخ ذخیره قانونی ($r$)</h3>
+<p>سازوکار خلق پول در سیستم بانکی بر اساس رابطه پایه پولی ($B$) و نقدینگی ($M$) تحلیل می‌شود:</p>
+<p>$$M = m \cdot B$$</p>
+<p>ضریب فزاینده نقدینگی ($m$) در ساده‌ترین حالت بر اساس نرخ ذخیره قانونی ($r$) نزد بانک مرکزی تعیین می‌شود:</p>
+<p>$$m = \frac{1}{r}$$</p>
+<p>با در نظر گرفتن نرخ سپرده‌گذاری اسکناس نزد مردم ($c$) و نرخ ذخیره اضافی بانک‌ها ($e$)، فرمول کامل ضریب فزاینده عبارت است از:</p>
+<p>$$m = \frac{1 + c}{r + e + c}$$</p>
+<pre><code>[پایه پولی (B)] ──&gt; [سیستم بانکی (تسهیلات‌دهی)] ──&gt; [ضریب فزاینده (m)] ──&gt; [حجم نقدینگی کل (M2)]
+                         │
+                         ▼
+             [تاثیرپذیر از نرخ ذخیره قانونی (r)]
+</code></pre>
+<p>دکتر دینی ترکمانی با بررسی تاریخی دوره ۱۳۹۵ تا ۱۴۰۴ نشان می‌دهد که میانگین رشد سالانه نقدینگی در ایران حدود ۴۱.۵ درصد بوده است. در حالی که تورم میانگین ۴۱.۵ درصد ثبت شده، تولید واقعی تنها حدود ۱ درصد رشد کرده است. او استدلال می‌کند که پایین آوردن دستوری نرخ ذخیره قانونی توسط دولت‌ها برای اعطای تسهیلات تکلیف‌شده، ضریب فزاینده ($m$) را افزایش داده و توان خلق اعتبار بی‌ضابطه بانک‌های خصوصی ناکارآمد را تشدید کرده است.</p>
+<h3 id="_4">۴. کسری بودجه ساختاری و درون‌زایی پول</h3>
+<p>در تحلیل دکتر دینی ترکمانی، کسری بودجه دولت تنها یک بی‌انضباطی ساده نیست، بلکه ریشه در <strong>تعهدات ساختاری نامتناسب دولت، بوروکراسی فربه و عدم امکان تحقق درآمدهای نفتی و مالیاتی</strong> دارد. </p>
+<p>وقتی دولت با کسری مواجه می‌شود، از طریق:<br />
+1.  استقراض مستقیم از بانک مرکزی (افزایش $B$)<br />
+2.  عدم تسویه بدهی به بانک‌ها و اجبار بانک‌ها به اضافه‌برداشت از بانک مرکزی<br />
+3.  دستکاری نرخ ارز و تسعیر دارایی‌های خارجی</p>
+<p>عملاً پایه پولی را افزایش می‌دهد. بنابراین، حجم پول در اقتصاد ایران نه به دست بانک مرکزی (به عنوان متغیر برون‌زا)، بلکه به صورت <strong>درون‌زا (Endogenous)</strong> تحت فشار کسری ساختاری دولت و نیاز بنگاه‌ها به تامین سرمایه در گردش در شرایط تورمی انبساط می‌یابد.</p>
+<h3 id="_5">۵. قیمت به عنوان سازوکار تعدیل‌کننده ساختاری</h3>
+<p>یکی از نوآوری‌های مفهومی دکتر دینی ترکمانی در این جلسه، تعبیر قیمت‌ها ($P$) به عنوان <strong>«تعدیل‌کننده ناگزیر عدم‌توازن‌های بنیادی»</strong> است. وقتی رشد تولید محصور شده، اما فشارهای ساختاری کسری بودجه و جهش نرخ ارز وجود دارد، سیستم اقتصادی برای برقرار ماندن شرط identity در معادله $MV = PQ$، راهی جز جهش قیمت‌ها ($P$) ندارد. سطح قیمت‌ها در واقع «اسپنجی» است که فشار تکانه‌های پولی و ساختاری را جذب می‌کند.</p>
+<hr />
+<h2 id="extra-topics-not-covered-by-dr-sarzaeem">۳. مباحث مازاد و منحصربه‌فرد (Extra Topics Not Covered by Dr. Sarzaeem)</h2>
+<p>در کلاس دکتر سرزعیم، تورم و اقتصاد کلان به شکل کلاسیک در قالب بازار پول، منحنی فیلیپس، منحنی IS-LM و کسری بودجه پولی‌شده تدریس می‌شود. اما دکتر دینی ترکمانی مفاهیم مازاد و منحصربه‌فردی را وارد تحلیل می‌کند که کاملاً منطبق بر واقعیت‌های نهادی اقتصاد ایران است:</p>
+<h3 id="three-macro-scenarios-for-iran">۱. سناریونویسی سه گانه اقتصاد ایران (Three Macro-Scenarios for Iran)</h3>
+<p>دکتر دینی ترکمانی برخلاف الگوی ایستای اقتصاد کلان متعارف، آینده اقتصاد ایران را در قالب سه سناریوی دینامیک تحلیل می‌کند:</p>
+<pre><code>                  ┌──&gt; سناریوی ۱: تداوم وضعیت موجود (Status Quo)
+                  │    - رکود تورمی مزمن، فرار سرمایه، نرخ رشد تولید ~ ۱٪
+                  │
+سناریوهای آینده ──┼──&gt; سناریوی ۲: گشایش ساختاری و صلح (De-escalation)
+اقتصاد ایران      │    - جهش $Q$، ثبات ارزی، ورود سرمایه خارجی، کاهش تورم به زیر ۲۰٪
+                  │
+                  └──&gt; سناریوی ۳: تشدید منازعات و شوک‌های بیرونی (Escalation)
+                       - ابرتورم انتظاراتی، سقوط تراز پرداخت‌ها، انقباض شدید تولید
+</code></pre>
+<ul>
+<li><strong>سناریوی اول (تداوم وضعیت موجود / Status Quo):</strong> تداوم تحریم‌ها و کسری ساختاری بودجه. نتیجه: رکود تورمی (Stagflation) با تورم ۴۰ تا ۵۰ درصدی، رشد اقتصادی نزدیک به صفر یا ۱ درصد، فرار سالانه ۱۰ تا ۱۵ میلیارد دلار سرمایه، و خروج مستمر شبه‌پول به سمت $M1$.</li>
+<li><strong>سناریوی دوم (گشایش و رفع تحریم‌ها / De-escalation):</strong> رفع محدودیت‌های صادرات نفت و الحاق به FATF. نتیجه: جهش تولید ($Q$)، کاهش انتظارات تورمی، کاهش سرعت گردش پول ($V$)، تثبیت ارزی و فروکش کردن تورم به سطوح زیر ۲۰ درصد.</li>
+<li><strong>سناریوی سوم (تشدید منازعات و شوک بیرونی / Escalation):</strong> وقوع درگیری‌های منطقه‌ای یا فلج شدن کامل شریان‌های صادراتی. نتیجه: جهش فوق‌العاده سرعت گردش پول، گریز کامل از ریال، ابرتورم‌های مقطعی و انقباض شدیدتر سمت عرضه.</li>
+</ul>
+<h3 id="itc-trademap-hs-code">۲. کاربرد عملیاتی داده‌کاوی تجاری با ITC TradeMap و سیستم HS Code</h3>
+<p>دکتر دینی ترکمانی بخش قابل توجهی از جلسه را به آموزش کاربردی بستر TradeMap سازمان ملل/سازمان تجارت جهانی اختصاص می‌دهد؛ موضوعی که در جلسات نظری دکتر سرزعیم کلاً غایب است.<br />
+*   <strong>سیستم هماهنگ‌شده (HS Code):</strong> ساختار طبقه‌بندی کالاها در سطح بین‌المللی از ۲ رقمی (فصل)، ۴ رقمی (گروه)، ۶ رقمی (زیرگروه جهانی) تا ۸ یا ۱۰ رقمی (ملی).<br />
+*   <strong>ماتریس پتانسیل صادراتی (Export Potential Map):</strong> آموزش نحوه استخراج بازارهای هدف برای صادرات بنگاه بر اساس دو شاخص «پتانسیل بالفعل» و «ظرفیت مغفول‌مانده (Unrealized Potential)».<br />
+*   <strong>تحلیل جریان‌های تجاری:</strong> شناسایی رقبای منطقه‌ای، نرخ‌های تعرفه‌ای و موانع غیرتعرفه‌ای (Market Access Map) برای خنثی‌سازی اثر تحریم‌ها.</p>
+<h3 id="asymmetric-market-dynamics">۳. تحلیل رفتار ناهمگن بازارهای دارایی و کالایی (Asymmetric Market Dynamics)</h3>
+<p>دکتر دینی ترکمانی نحوه واکنش بازارهای مختلف را در شرایط رکود تورمی تحلیل می‌کند:<br />
+*   <strong>بازار مسکن:</strong> رکود در حجم معاملات (تعداد معاملات به شدت کاهش می‌یابد)، اما قیمت‌ها تحت تاثیر تورم ساختاری و رشد هزینه‌های ساخت بالا می‌روند (رکود تورمی مسکن).<br />
+*   <strong>بازار خودرو و کالاهای دوام‌دار:</strong> تقاضای سرمایه‌ای شدید به دلیل عدم نقدشوندگی مسکن برای سرمایه‌های کوچک‌تر. بنگاه‌ها در این شرایط باید از الگوی لیزینگ و فروش اعتباری برای جبران افت قدرت خرید واقعی استفاده کنند.<br />
+*   <strong>کالاهای لوکس در برابر ضروری:</strong> افت شدید کشش درآمدی تقاضا برای کالاهای لوکس و انتقال فشار تقاضا به سمت کالاهای اساس‌تر.</p>
+<hr />
+<h2 id="_6">۴. ماتریس مقایسه تطبیقی دو استاد</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right; direction: rtl;">محور موضوعی</th>
+<th style="text-align: right; direction: rtl;">رویکرد و تحلیل دکتر سرزعیم (جریان اصلی / نئوکلاسیک)</th>
+<th style="text-align: right; direction: rtl;">رویکرد و تحلیل دکتر دینی ترکمانی (نهادگرا / ساختارگرا)</th>
+<th style="text-align: right; direction: rtl;">پیامد استراتژیک برای مدیران ارشد بنگاه</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>ماهیت و ریشه تورم</strong></td>
+<td style="text-align: right; direction: rtl;">پدیده‌ای کاملاً پولی؛ حاصل رشد پایه پولی و کسری بودجه پولی‌شده ($MV=PY$).</td>
+<td style="text-align: right; direction: rtl;">پدیده‌ای ساختاری و چندعاملی؛ حاصل جهش نرخ ارز، تعارضات توزیعی و تولید محصور شده ($Q$).</td>
+<td style="text-align: right; direction: rtl;">در الگوی دینی ترکمانی، رصد نرخ ارز و سرنوشت سیاسی تحریم‌ها برای پیش‌بینی تورم اولویت دارد بر صرفاً رصد پایه پولی.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>نقش سرعت گردش پول ($V$)</strong></td>
+<td style="text-align: right; direction: rtl;">متغیری فرضاً ثابت یا دارای رفتار باثبات در بلندمدت.</td>
+<td style="text-align: right; direction: rtl;">متغیری نوسانی، تابع انتظارات تورمی و تعیین‌کننده اصلی شدت تخلیه تورم.</td>
+<td style="text-align: right; direction: rtl;">مدیریت تسویه بدهی‌ها و دریافت‌ها بر اساس شتاب سرعت گردش پول (سیال شدن شبه‌پول به $M1$).</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>عرضه پول و نقدینگی</strong></td>
+<td style="text-align: right; direction: rtl;">برون‌زا (Exogenous)؛ قابل کنترل توسط انضباط بانک مرکزی.</td>
+<td style="text-align: right; direction: rtl;">درون‌زا (Endogenous)؛ پاسخ سیستم اقتصادی به فشار هزینه و تعهدات دولت.</td>
+<td style="text-align: right; direction: rtl;">عدم اتکا به وعده‌های کنترل نقدینگی دولت؛ برنامه‌ریزی برای نرخ‌های تورم کف ۳۵ الی ۴۰ درصدی.</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>تعدیل بازار و قیمت‌ها</strong></td>
+<td style="text-align: right; direction: rtl;">سازوکار طبیعی علامت‌دهی برای تخصیص بهینه منابع در بازار آزاد.</td>
+<td style="text-align: right; direction: rtl;">اسپنج جذب‌کننده ناگزیر عدم‌توازن‌های ساختاری و فشار هزینه‌ها.</td>
+<td style="text-align: right; direction: rtl;">ارزش‌گذاری محصولات بر اساس قیمت تمام‌شده آتی جایگزین قیمت تمام‌شده تاریخی (Replacement Cost Pricing).</td>
+</tr>
+<tr>
+<td style="text-align: right; direction: rtl;"><strong>راهکار خروج از بحران</strong></td>
+<td style="text-align: right; direction: rtl;">آزادسازی قیمت‌ها، انقباض شدید پولی، حذف سوبسیدها و واقعی‌سازی نرخ‌ها.</td>
+<td style="text-align: right; direction: rtl;">اصلاح ساختار نهادی، مدیریت ارز، حل مسائل بین‌الملل جهت باز شدن قفل تولید ($Q$) و سیاست صنعتی.</td>
+<td style="text-align: right; direction: rtl;">برنامه‌ریزی سناریومحور تجاری (حالت تحریم/تداوم در برابر گشایش) و اتکا به ابزارهای بین‌المللی داده‌کاوی نظیر ITC.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_7">۵. تحلیل کیس‌استادی‌ها و مصادیق اقتصاد ایران</h2>
+<h3 id="-_1">کیس‌استادی ۱: چرخه سیال‌سازی نقدینگی و فروپاشی شبه‌پول در شبکه بانکی ایران (۱۳۹۵ - ۱۴۰۳)</h3>
+<ul>
+<li><strong>واقعیت تجربی:</strong> در دوره ۱۳۹۲ تا ۱۳۹۵، با اعطای نرخ‌های سود بانکی بالای ۲۰ درصد در شرایط افت تورم، سهم شبه‌پول از کل نقدینگی به بیش از ۸۵ درصد رسید. با خروج آمریکا از برجام در سال ۱۳۹۷ و جهش ارزی، این شبه‌پول عظیم به سرعت وارد فاز نقدشوندگی شد و $M1$ جهش یافت.</li>
+<li><strong>تحلیل دینی ترکمانی:</strong> عدم افزایش تولید ($Q$) باعث شد این نقدینگی متراکم شده مانند سدی بشکند و بازارهای طلا، ارز، مسکن و خودرو را یکی پس از دیگری درنوردد.</li>
+<li><strong>درس مدیریتی:</strong> مدیر ارشد مالی (CFO) نباید به بالا بودن حجم سپرده‌های بانکی در شرایط تثبیت نسبی مقطعی دلخوش باشد. به محض تغییر نسبت $M1$ به شبه‌پول، منابع باید از سپرده‌های بانکی خارج و به تسویه بدهی‌های ارزی یا خرید مواد اولیه تخصیص یابد.</li>
+</ul>
+<h3 id="_8">کیس‌استادی ۲: صنعت مبلمان و لوازم خانگی ایران در مواجهه با رکود تورمی</h3>
+<ul>
+<li><strong>واقعیت تجربی:</strong> با صعود تورم به کانال ۴۰ درصد و کاهش رشد درآمد واقعی سرانه به زیر ۱ درصد، تقاضای کالاهای دوام‌دار خانگی و مبلمان با افت شدید حجمی مواجه شد، اما قیمت این کالاها به دلیل جهش قیمت مواد اولیه چوبی و یراق‌آلات وارداتی افزایش یافت.</li>
+<li><strong>تحلیل دینی ترکمانی:</strong> این همان نمونه بارز فشار هزینه (Cost-Push) و انقباض سمت عرضه است که در مدل نئوکلاسیک که فرض را بر پر شدن ظرفیت تولید می‌گذارد، ناکارآمد تحلیل می‌شود.</li>
+<li><strong>درس مدیریتی:</strong> بنگاه‌های تولیدکننده مبلمان و لوازم خانگی برای بقا در این ساختار دو راهکار دارند:<ol>
+<li>تمرکز بر اعطای اعتبار و ایجاد مکانیزم‌های لیزینگ برای خریداران خرد.</li>
+<li>تغییر رده محصولات از لوکس به اقتصادی (Value-for-Money) جهت تطبیق با الگوی جدید درآمدی مردم.</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2 id="ceo-strategic-playbook">۶. چک‌لیست و راهنمای تصمیم‌گیری مدیرعامل (CEO Strategic Playbook)</h2>
+<p>این چک‌لیست عملیاتی بر اساس مباحث جلسه چهارم جهت اجرا در سطح هیئت‌مدیره تدوین شده است:</p>
+<pre><code>                                  چک‌لیست استراتژیک مدیرعامل
+                                              │
+      ┌───────────────────────────────┼───────────────────────────────┐
+      ▼                               ▼                               ▼
+[۱. مدیریت دارایی/بدهی]      [۲. تسعیر و قیمت‌گذاری]        [۳. بازاریابی تجاری]
+- رصد نسبت M1 به شبه‌پول       - قیمت‌گذاری جایگزینی          - استخراج کدهای HS
+- خروج از سپرده ثمره‌دار       - تعبیه بند تعدیل ارزی        - داده‌کاوی در TradeMap
+- خرید استراتژیک مواد         - کوتاه‌سازی دوره وصول        - تمرکز بر بازارهای همسایه
+</code></pre>
+<h3 id="asset-liability-management">۱. مدیریت دارایی‌ها و بدهی‌ها (Asset-Liability Management)</h3>
+<ul>
+<li>[ ] <strong>رصد شاخص‌های پیش‌نگر پولی:</strong> ماهانه نسبت $M1$ به شبه‌پول در گزارش‌های بانک مرکزی رصد شود. در صورت صعودی شدن روند $M1/Quasi\text{-}Money$، تمامی دارایی‌های نقدی بنگاه به کالاهای واسطه‌ای، مواد اولیه و دارایی‌های فیزیکی مولد تبدیل شود.</li>
+<li>[ ] <strong>مدیریت بدهی در تورم ساختاری:</strong> با توجه به نرخ سود تسهیلات بانکی واقعی منفی (نرخ سود مصوب در برابر تورم بالای ۴۰٪)، بنگاه باید حداکثر تسهیلات ممکن را اخذ کرده و تسویه بدهی‌ها را تا حد امکان طولانی کند، مشروط بر اینکه تسهیلات اخذشده صرف خرید دارایی حقیقی شود.</li>
+</ul>
+<h3 id="pricing-credit-control">۲. قیمت‌گذاری و سیاست فروش (Pricing &amp; Credit Control)</h3>
+<ul>
+<li>[ ] <strong>قیمت‌گذاری مبتنی بر هزینه جایگزینی (Replacement Cost Pricing):</strong> ابلاغ به بخش مالی برای ممنوعیت قیمت‌گذاری بر اساس «قیمت تمام‌شده تاریخی». سود واقعی بنگاه تنها زمانی محقق می‌شود که فروش جاری، توان جایگزینی مواد اولیه با نرخ ارز روز را تامین کند.</li>
+<li>[ ] <strong>کوتاه‌سازی دوره وصول مطالبات (DSO):</strong> در سرعت‌های گردش پول بالا ($V$)، هر روز تاخیر در وصول مطالبات برابر است با افت قدرت خرید منابع بنگاه. کاهش دوره پرداخت به مشتریان و ارائه تخفیف‌های نقدی پیش از موعد.</li>
+<li>[ ] <strong>استفاده از ابزارهای اعتباری و لیزینگ:</strong> جهت خنثی‌سازی رکود تقاضای ناشی از افت درآمد واقعی سرانه مشتریان، پیوند با لیزینگ‌ها و بانک‌ها برای فروش اقساطی کالاهای با دوام.</li>
+</ul>
+<h3 id="international-trade-intelligence">۳. توسعه تجارت بین‌الملل و نفوذ به بازارها (International Trade Intelligence)</h3>
+<ul>
+<li>[ ] <strong>استخراج کدهای HS شش‌رقمی محصولات بنگاه:</strong> واحد بازرگانی موظف شود تمامی محصولات و مواد اولیه وارداتی/صادرتی بنگاه را طبق دقیق‌ترین HS Code شناسایی کند.</li>
+<li>[ ] <strong>داده‌کاوی بازارها در ITC TradeMap:</strong><ul>
+<li>استخراج ۱۰ کشور اول واردکننده محصول بنگاه در سطح جهان و منطقه.</li>
+<li>بررسی نرخ‌های تعرفه‌ای و ترجیحی ایران با کشورهای همسایه (مانند اتحادیه اوراسیا یا عراق) در پایگاه Market Access Map.</li>
+<li>تمرکز بر بازارهایی با «پتانسیل صادراتی غیرفعال (Unrealized Export Potential)» جهت دور زدن فشارهای رکود داخلی.</li>
+</ul>
+</li>
+</ul>
+          </div>
+        </div>
+
+        <!-- Dini S5 Card -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="p-6 space-y-3">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-100">
+              <span class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-full">جلسه پنجم ترکمانی • اقتصاد سیاسی ارز و توسعه</span>
+              <span class="text-xs text-slate-500">نقد شوک‌درمانی • مدیریت بازرگانی • راهبرد ضدشکننده بنگاه</span>
+            </div>
+            <h4 class="text-base font-black text-slate-900">بازار ارز، نقد سیاست‌های تعدیل ساختاری و راهبرد بنگاه در عدم‌قطعیت نهادی</h4>
+            <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
+              در حالی که دکتر سرزعیم بر مبنای مدل PPP بر آزادسازی فوری نرخ ارز برای حذف رانت و کشف نرخ تعادلی پافشاری می‌کند، دکتر ترکمانی نسبت به فاجعه «شوک‌درمانی ارزی» بدون ثبات ارزی و بدون مهار فرار سرمایه هشدار می‌دهد. او نشان می‌دهد که آزادسازی‌های ارزی در گذشته، چگونه به انفجار بدهی ارزی کارخانجات، کاهش ظرفیت اسمی و تضعیف موقعیت بنگاه‌های خصوصی انجامیده است.
+            </p>
+            <div class="p-3 bg-purple-50/50 rounded-xl border border-purple-100 text-xs text-purple-950">
+              <strong>💡 مباحث مازاد بر کلاس سرزعیم:</strong> تحلیل تجارب برنامه تعدیل ساختاری (SAP)، پیمان‌سپاری ارزی در مدیریت ارزی نهادی، و استراتژی‌های محافظت از بنگاه در برابر شوک‌های برون‌زا و فروپاشی سرمایه در گردش.
+            </div>
+          </div>
+          <button onclick="toggleSection('full-dini-s5')" class="w-full p-4 bg-slate-50 hover:bg-slate-100 transition-colors flex items-center justify-between text-right border-t border-slate-100">
+            <div class="flex items-center gap-3">
+              <span class="w-7 h-7 rounded-lg bg-purple-700 text-white flex items-center justify-center font-bold text-xs">📖</span>
+              <div>
+                <strong class="text-xs font-bold text-slate-900 block">مشاهده متن کامل دانشنامه تطبیقی جلسه پنجم</strong>
+                <span class="text-[11px] text-slate-500">تحلیل موشکافانه ۲۸ هزار کاراکتری با ماتریس مقایسه مستقیم سرزعیم vs ترکمانی</span>
+              </div>
+            </div>
+            <span id="icon-full-dini-s5" class="text-xs font-bold text-purple-700">▼ باز کردن</span>
+          </button>
+          <div id="full-dini-s5" class="hidden p-6 md:p-8 border-t border-slate-100 prose-custom max-w-none">
+            <h1 id="-">اقتصاد برای مدیران (استاد دینی ترکمانی) - جلسه پنجم: بازار ارز، سیاست‌های صنعتی، بحران توسعه و راهبرد بنگاه در عدم‌قطعیت نهادی</h1>
+<p><strong>مدرس:</strong> دکتر علی دینی ترکمانی<br />
+<strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA (کد 0410)<br />
+<strong>تنظیم و تدوین تطبیقی:</strong> پارسا رضائی (Parsa Rezaie)</p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی سازمانی (Executive Summary)</h2>
+<h3 id="_1">جوهره و پیام محوری جلسه</h3>
+<p>جلسه پنجم درس «اقتصاد برای مدیران» با تدریس <strong>دکتر علی دینی ترکمانی</strong>، نقطه عطفی در گذار از نگاه ساده‌انگارانه «جریان اصلی (Neoclassical/Orthodox)» به اقتصاد و ورود به تحلیل‌های عمیق «نهادگرایی ساختارگرا (Institutional/Structuralist)» است. پیام محوری این جلسه خطاب به مدیران ارشد اجرایی (C-Suite) این است: </p>
+<blockquote>
+<p><strong>توسعه اقتصادی و جهش صادراتی بنگاه‌ها، حاصل تعدیل قیمتی نرخ ارز و رهاسازی بازارها نیست؛ بلکه معلول «پیچیدگی اقتصادی (Economic Complexity)»، «تراکم قابلیت‌های تکنولوژیک (Capability Accumulation)» و «ایجاد اعتماد و سرمایه نهادی» است.</strong></p>
+</blockquote>
+<p>دکتر دینی ترکمانی با نقد الگوی تعدیل ساختاری، نشان می‌دهد که تکیه صرف بر متغیرهای قیمتی (نظیر شوک‌درمانی ارزی) بدون توجه به «فضای محصول (Product Space)» و «فاصله تکنولوژیک (Technological Distance)»، تنها به تورم فشار هزینه، فرار سرمایه و تضعیف قابلیت‌های ساختاری بنگاه‌ها می‌انجامد.</p>
+<h3 id="_2">مقایسه فوری رویکرد دو استاد در موضوع جلسه</h3>
+<pre><code>+----------------------------------------------------------------------------------------------------+
+|                                  دیدگاه‌های متعارض در بازار ارز و توسعه                             |
++-------------------------------------------------+--------------------------------------------------+
+| رویکرد دکتر علی سرزعیم (جریان اصلی / نئوکلاسیک) | رویکرد دکتر علی دینی ترکمانی (نهادگرا / دگراندیش)  |
++-------------------------------------------------+--------------------------------------------------+
+| - نرخ ارز یک قیمت تعادلی بازار است.            | - نرخ ارز یک متغیر ساختاری و معلول پیچیدگی است. |
+| - آزادسازی نرخ ارز باعث جهش صادرات می‌شود.    | - بدون قابلیت تکنولوژیک، جهش ارزی تورم‌زاست.   |
+| - تاکید بر برابری قدرت خرید (PPP).              | - تاکید بر مزیت نسبی آشکارشده (RCA) و ECI.      |
+| - شکست بازار ناشی از مداخله دولت است.            | - شکست بازار ناشی از نقص نهادی و کژمنشی است.    |
++-------------------------------------------------+--------------------------------------------------+
+</code></pre>
+<h3 id="_3">۳ تصمیم حیاتی برای مدیران ارشد اجرایی</h3>
+<ol>
+<li><strong>ارتقای موقعیت بنگاه در فضای محصول (Product Space):</strong> به جای رقابت قیمتی متکی بر رانت انرژی یا ارز ارزان، سرمایه‌گذاری بنگاه را به سمت محصولات با «شاخص پیچیدگی بالا (PCI)» و «فاصله تکنولوژیک بهینه» هدایت کنید.</li>
+<li><strong>عبور از قیمت‌گذاری بر مبنای هزینه (Cost-Plus) به سمت مدیریت کشش تقاضا:</strong> با ایجاد وفاداری به برند و تمایز محصول، کشش قیمتی تقاضا ($\epsilon_p$) را کاهش داده و قدرت قیمت‌گذاری (Price-Making Power) بنگاه را افزایش دهید.</li>
+<li><strong>بازطراحی سیستم‌های کنترلی برای مهار کژمنشی (Moral Hazard):</strong> هزینه‌های مبادلاتی (Transaction Costs) بنگاه را از طریق ایجاد «شفافیت اطلاعاتی» و «اعتماد نهادی» در زنجیره تأمین کاهش دهید تا اثرات عدم‌قطعیت‌های کلان اقتصادی جبران شود.</li>
+</ol>
+<hr />
+<h2 id="deep-theoretical-analysis">۲. کالبدشکافی موشکافانه تئوری‌ها و آموزه‌های دکتر دینی ترکمانی (Deep Theoretical Analysis)</h2>
+<h3 id="_4">بخش اول: ابزارهای تحلیل تجارت بین‌الملل و طبقه‌بندی کالاها</h3>
+<p>دکتر دینی ترکمانی در این جلسه با معرفی عملیاتی ابزارهای مرکز تجارت بین‌الملل (ITC) از جمله <strong>Trade Map</strong>، نحوه رصد جریان‌های تجاری و اتخاذ تصمیمات استراتژیک صادراتی را تشریح می‌کند.</p>
+<pre><code>       [کدهای طبقه‌بندی بین‌المللی کالا و خدمات]
+                         │
+        ┌────────────────┴────────────────┐
+        ▼                                 ▼
+   [سیستم HS]                         [کد ISIC]
+(Harmonized System)            (International Standard
+  کد ۶ رقمی جهانی              Industrial Classification)
+  کد ۸ تا ۱۲ رقمی ملی           طبقه بندی فعالیت‌های صنعتی
+</code></pre>
+<ul>
+<li><strong>سیستم هماهنگ شماره‌گذاری کالا (HS Code - Harmonized System):</strong> کدهای استاندارد بین‌المللی برای طبقه‌بندی کالاها. کدهای ۲ رقمی نشان‌دهنده فصل (Sector)، ۴ رقمی نشان‌دهنده گروه (Heading) و ۶ رقمی نشان‌دهنده زیرگروه (Sub-heading) هستند. کدهای بالاتر از ۶ رقم (۸، ۱۰ یا ۱۲ رقمی) بر اساس بوم‌سازی گمرکی کشورها تعیین می‌شوند.</li>
+<li><strong>کد فعالیت‌های اقتصادی (ISIC):</strong> طبقه‌بندی استاندارد بین‌المللی کلیه فعالیت‌های اقتصادی که بنگاه‌ها را بر اساس رسته صنعتی/خدماتی تفکیک می‌کند.</li>
+<li><strong>کدگذاری GS1:</strong> کدهای بارکد ۱۳ رقمی که هویت یکتای هر محصول تجاری را در سطح خرد زنجیره تأمین مشخص می‌سازند.</li>
+</ul>
+<h3 id="economic-complexity-index-eci-product-space">بخش دوم: تئوری پیچیدگی اقتصادی (Economic Complexity Index - ECI) و فضای محصول (Product Space)</h3>
+<p>یکی از عمده‌ترین مباحث جلسه، تئوری <strong>پیچیدگی اقتصادی</strong> توسعه‌یافته توسط هاسمن (Ricardo Hausmann) و هیدالگو (César Hidalgo) در دانشگاه هاروارد و MIT است.</p>
+<pre><code>                           [پیچیدگی اقتصادی (ECI)]
+                                     │
+                    ┌────────────────┴────────────────┐
+                    ▼                                 ▼
+              تنوع (Diversity)                  نادربودن (Ubiquity)
+      تعداد کالاهای صادراتی یک کشور         تعداد کشورهای قادر به تولید آن کالا
+</code></pre>
+<ul>
+<li><strong>تنوع (Diversity):</strong> تعداد محصولات متعددی که یک کشور می‌تواند با کیفیت و مزیت صادر کند.</li>
+<li><strong>نادربودن / عدم همه‌جاحاضری (Ubiquity):</strong> تعداد کشورهایی که قادر به تولید و صادرات یک کالای خاص هستند. کالایی مانند هواپیما یا تجهیزات تصویربرداری پزشکی دارای نادربودن بالا (Ubiquity پایین) است، در حالی که کالایی مانند گندم یا نفت خام توسط کشورهای متعددی عرضه می‌شود.</li>
+</ul>
+<h4 id="hausmanns-monkey-forest-metaphor">استعاره «میمون‌ها و جنگل» (Hausmann's Monkey &amp; Forest Metaphor)</h4>
+<p>دکتر دینی ترکمانی با تبیین این الگوی مفهومی، نقشه فضای محصول را به جنگلی تشریح می‌کند که درختان آن نشان‌دهنده محصولات و قابلیت‌ها هستند:</p>
+<pre><code>[درختان متراکم / محصولات کم‌پیچیدگی] &lt;==== فاصله تکنولوژیک کوتاه ====&gt; [جهش امکان‌پذیر]
+(نفت، کشاورزی، نساجی)                                             (پتروشیمی اولیه)
+
+[درختان متراکم] &lt;============ فاصله تکنولوژیک طولانی ============&gt; [جهش پرریسک / ریسک بالایی دارد]
+(کشاورزی)                                                         (تجهیزات پزشکی / صنایع هوافضا)
+</code></pre>
+<ol>
+<li><strong>قابلیت‌ها (Capabilities):</strong> دانش نهادی، مهارت نیروی انسانی، زیرساخت‌ها و فناوری‌های موجود در یک کشور.</li>
+<li><strong>فاصله تکنولوژیک (Technological Distance / Proximity):</strong> میزان شباهت قابلیت‌های مورد نیاز برای تولید دو کالا.</li>
+<li><strong>مخاطره جهش‌های کور (High-Tech Gambling):</strong> اگر کشوری سعی کند از تولید محصولات کم‌پیچیدگی (مانند کشاورزی سنتی) ناگهان به تولید محصولات فوق پیشرفته (مانند توربین‌های نیروگاهی) جهش کند، به دلیل فاصله زیاد درختان، شکست خواهد خورد. توسعه صنعتی یک فرایند گام‌به‌گام و تکاملی مبتنی بر انباشت قابلیت‌هاست.</li>
+</ol>
+<h3 id="revealed-comparative-advantage-rca">بخش سوم: مزیت نسبی آشکارشده (Revealed Comparative Advantage - RCA)</h3>
+<p>برای اینکه یک کشور در نقشه فضای محصول، تولیدکننده یک کالا محسوب شود و گره (Node) آن محصول روشن گردد، باید شاخص RCA آن از عدد ۱ بزرگتر باشد.</p>
+<h4 id="rca">فرمول ریاضی RCA (شاخص بالاسا):</h4>
+<p>$$\text{RCA}_{i,j} = \frac{\frac{X_{i,j}}{\sum_k X_{i,k}}}{\frac{\sum_m X_{m,j}}{\sum_m \sum_k X_{m,k}}}$$</p>
+<p>که در آن:<br />
+*   $X_{i,j}$: صادرات کالای $j$ توسط کشور $i$<br />
+*   $\sum_k X_{i,k}$: کل صادرات کشور $i$<br />
+*   $\sum_m X_{m,j}$: کل صادرات جهانی کالای $j$<br />
+*   $\sum_m \sum_k X_{m,k}$: کل صادرات تجاری جهان</p>
+<p><strong>تحلیل استراتژیک:</strong> اگر $\text{RCA} > 1$ باشد، نشان می‌دهد که سهم کالای $j$ در سبد صادراتی کشور $i$ بزرگتر از سهم آن کالا در کل تجارت جهانی است؛ یعنی کشور در تولید این کالا دارای مزیت رقابتی آشکارشده است.</p>
+<h3 id="_5">بخش چهارم: کشش‌های خرد اقتصادی و استراتژی قیمت‌گذاری بنگاه</h3>
+<pre><code>                           [کشش‌های تقاضا در بنگاه]
+                                     │
+                    ┌────────────────┴────────────────┐
+                    ▼                                 ▼
+      کشش قیمتی تقاضا (E_p)                 کشش درآمدی تقاضا (E_y)
+  نسبت تغییرات تقاضا به تغییرات قیمت       نسبت تغییرات تقاضا به تغییرات درآمد
+</code></pre>
+<h4 id="price-elasticity-of-demand-mathph_15_end">۱. کشش قیمتی تقاضا (Price Elasticity of Demand - $\epsilon_p$):</h4>
+<p>$$\epsilon_p = \frac{\% \Delta Q}{\% \Delta P} = \frac{\partial Q}{\partial P} \times \frac{P}{Q}$$</p>
+<ul>
+<li><strong>کالاهای کم‌کشش ($\epsilon_p < 1$):</strong> تغییرات قیمت تأثیر کمی بر مقدار تقاضا دارد (مانند داروی سرطانی، نان، بنزین).</li>
+<li><strong>کالاهای باکشش ($\epsilon_p > 1$):</strong> با کوچک‌ترین افزایش قیمت، تقاضا شدیداً ریزش می‌کند (کالاهای لوکس و دارای جانشین زیاد).</li>
+</ul>
+<h4 id="price-discrimination">۲. قیمت‌گذاری تعبیضی (Price Discrimination):</h4>
+<p>تکونولوژی تمایز قیمت بر اساس کشش تقاضای گروه مختلف مشتریان:<br />
+*   <strong>درجه اول:</strong> دریافت حداکثر تمایل به پرداخت (Willingness to Pay) از هر مشتری (سفارشی‌سازی کامل).<br />
+*   <strong>درجه دوم:</strong> قیمت‌گذاری بر اساس حجم خرید (مانند تخفیف‌های عمده‌فروشی).<br />
+*   <strong>درجه سوم:</strong> تفکیک بازارها بر اساس کشش قیمتی (مانند نرخ متفاوت بلیط سینما برای دانشجویان و افراد عادی یا قیمت‌گذاری متفاوت صادراتی و داخلی).</p>
+<h4 id="income-elasticity-of-demand-mathph_18_end">۳. کشش درآمدی تقاضا (Income Elasticity of Demand - $\epsilon_y$):</h4>
+<p>$$\epsilon_y = \frac{\% \Delta Q}{\% \Delta Y}$$</p>
+<ul>
+<li>$\epsilon_y < 0$: کالای پست (Inferior Good) - با افزایش درآمد، مصرف آن کاهش می‌یابد.</li>
+<li>$0 < \epsilon_y < 1$: کالای ضروری (Essential Good).</li>
+<li>$\epsilon_y > 1$: کالای لوکس و پرپیچیده (Luxury/High-Tech Good).</li>
+</ul>
+<h3 id="moral-hazard">بخش پنجم: کژمنشی (Moral Hazard) و سرمایه نهادی</h3>
+<p>دکتر دینی ترکمانی تأکید می‌کند که بازارها بر بستر <strong>اعتماد نهادی (Institutional Trust)</strong> کار می‌کنند. در غیاب شفافیت و نهادهای ناظر، <strong>کژمنشی (Moral Hazard)</strong> رخ می‌دهد؛ یعنی طرفین مبادله به دلیل تقارن اطلاعاتی نابرابر، دست به رفتار فرصت‌طلبانه می‌زنند. این امر هزینه مبادله (Transaction Cost) را افزایش داده و ساختار قیمت‌گذاری را از تعادل خارج می‌سازد.</p>
+<hr />
+<h2 id="extra-topics-not-covered-by-dr-sarzaeem">۳. مباحث مازاد و منحصربه‌فرد (Extra Topics Not Covered by Dr. Sarzaeem)</h2>
+<p>در حالی که دکتر سرزعیم در جلسه ۵ خود، بازار ارز را صرفاً بر اساس متغیرهای پولی، تورم انتزاعی و نظریه برابری قدرت خرید (PPP) تحلیل می‌کند، دکتر دینی ترکمانی لایه‌های عمیق‌تر ساختاری را وارد تحلیل می‌سازد که در دروس ارتدوکس کاملاً غایب است:</p>
+<pre><code>[مباحث منحصربه‌فرد دکتر دینی ترکمانی در جلسه ۵]
+  ├── ۱. تئوری پیچیدگی اقتصادی (ECI) و الگوریتم هاسمن-هیدالگو
+  ├── ۲. تحلیل فضایی قابلیت‌ها (Product Space &amp; Capability Accumulation)
+  ├── ۳. تبیین شکست ساختاری سیاست تعدیل ارزی در اقتصادهای کم‌پیچیده
+  ├── ۴. نقش سرمایه نهادی و اعتماد در کارایی بازار و مهار کژمنشی
+  └── ۵. کاربرد عملیاتی ابزارهای Trade Map و ITC در ارزیابی قابلیت‌های صادراتی
+</code></pre>
+<h3 id="debunking-fx-devaluation-thesis">۱. توهم جهش صادراتی از طریق تضعیف پول ملی (Debunking FX Devaluation Thesis)</h3>
+<p>دکتر سرزعیم معتقد است با واقعی‌سازی (افزایش) نرخ ارز، صادرات جذاب شده و تعادل تراز پرداخت‌ها برقرار می‌شود. در مقابل، <strong>دکتر دینی ترکمانی</strong> نشان می‌دهد که این تئوری فقط در اقتصادهایی با <strong>پیچیدگی بالا (ECI بالا)</strong> و <strong>کشش‌پذیری بالای عرضه صادراتی</strong> صادق است. در کشوری مانند ایران که صادرات آن عمدتاً مواد خام، نفتی و پتروشیمی اولیه است (کالاهای کم‌پیچیده با RCA متمرکز بر منابع)، افزایش نرخ ارز:<br />
+*   توان تولیدی بنگاه‌ها را به دلیل وابستگی به واردات کالاهای واسطه‌ای و سرمایه‌ای تضعیف می‌کند.<br />
+*   موجب «تورم فشار هزینه (Cost-Push Inflation)» می‌شود.<br />
+*   صادرات را افزایش نمی‌دهد، زیرا ساختار تولید فاقد قابلیت‌های تکنولوژیک برای پاسخگویی به شوک‌های قیمتی است.</p>
+<h3 id="coordination-failure">۲. مفهوم عدم‌قطعیت نهادی و شکست هماهنگی (Coordination Failure)</h3>
+<p>دکتر دینی ترکمانی اثبات می‌کند که بنگاه‌ها در ایران نه با «ریسک اقتصادی محاسبه‌پذیر»، بلکه با <strong>«عدم‌قطعیت نهادی (Institutional Uncertainty)»</strong> مواجهند. زمانی که دولت نتواند هماهنگی بین‌بخشی در سیاست صنعتی ایجاد کند، سرمایه‌گذاری صادرات‌محور قفل می‌شود (Institutional Lock-in) و بنگاه‌ها به سمت فعالیت‌های دلالی و کوتاه مدتی سوق داده می‌شوند.</p>
+<hr />
+<h2 id="comparative-paradigm-matrix">۴. ماتریس مقایسه تطبیقی دو استاد (Comparative Paradigm Matrix)</h2>
+<pre><code>+---------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                      ماتریس مقایسه پارادایمی دو استاد در موضوع جلسه ۵                                                  |
++----------------------+----------------------------------------------------+----------------------------------------------------+------------------------+
+| محور موضوع           | رویکرد دکتر علی سرزعیم (ارتدوکس / جریان اصلی)       | رویکرد دکتر دینی ترکمانی (هترودوکس / نهادگرا)      | پیامد استراتژیک برای مدیر|
++----------------------+----------------------------------------------------+----------------------------------------------------+------------------------+
+| تعیّن نرخ ارز        | مکانیزم عرضه و تقاضای پول و برابری قدرت خرید (PPP). | پیچیدگی ساختاری، تراز تجاری غیرنفتی و توان تکنولوژیک| پیش‌بینی شوک‌های ارزی  |
+|                      |                                                    | .                                                  | با رصد ECI و تورم ساختاری|
++----------------------+----------------------------------------------------+----------------------------------------------------+------------------------+
+| استراتژی جهش صادرات  | تعدیل واقعی نرخ ارز و رفع سرکوب قیمتی.             | ارتقای شاخص ECI، کاهش فاصله در Product Space و RCA| عدم اتکا به ارز ارزان؛  |
+|                      |                                                    | .                                                  | ارتقای فناوری محصول.   |
++----------------------+----------------------------------------------------+----------------------------------------------------+------------------------+
+| قیمت‌گذاری بنگاه     | تعادل بازار، قیمت‌گذاری بر مبنای عرضه و تقاضا.     | قیمت‌گذاری تعبیضی مبتنی بر کشش تقاضا و قدرت برند.  | کاهش کشش قیمتی تقاضا با|
+|                      |                                                    |                                                    | ایجاد تمایز در محصول.  |
++----------------------+----------------------------------------------------+----------------------------------------------------+------------------------+
+| شکست بازار           | ناشی از مداخلات دولت و سرکوب قیمتی.                | ناشی از عدم‌قطعیت نهادی، کژمنشی و عدم‌وجود اعتماد.  | بازطراحی قراردادها برای|
+|                      |                                                    |                                                    | مهار هزینه‌های مبادله. |
++----------------------+----------------------------------------------------+----------------------------------------------------+------------------------+
+| سیاست صنعتی          | عدم مداخله؛ آزادسازی کامل و تخصیص بهینه بازار.     | هدایت دولتی، ایجاد شبکه قابلیت‌ها و انباشت دانش.  | رصد ابزارهای ITC و   |
+|                      |                                                    |                                                    | برنامه‌ریزی برای جهش تکاملی|
++----------------------+----------------------------------------------------+----------------------------------------------------+------------------------+
+</code></pre>
+<hr />
+<h2 id="iranian-economy-case-studies">۵. تحلیل کیس‌استادی‌ها و مصادیق اقتصاد ایران (Iranian Economy Case Studies)</h2>
+<h3 id="product-space-of-iran">کیس‌استادی ۱: جایگاه ایران در نقشه فضای محصول (Product Space of Iran)</h3>
+<p>بررسی داده‌های اطلس پیچیدگی اقتصادی برای ایران نشان می‌دهد که صادرات کشور در نقاط حاشیه‌ای و کم‌پیچیده فضای محصول (نفت خام، مشتقات اولیه نفتی، محصولات معدنی خام و فرآورده‌های کشاورزی نظیر پسته و زعفران) تمرکز یافته است.</p>
+<pre><code>                  [نقشه فضای محصول ایران]
+                            │
+       ┌────────────────────┴────────────────────┐
+       ▼                                         ▼
+[هسته مرکزی پیشرفته: خاموش]              [حاشیه کم‌پیچیده: روشن]
+(ماشین‌آلات، تجهیزات پزشکی،               (نفت خام، متانول، مس خام،
+ الکترونیک، تجهیزات نوری)                محصولات کشاورزی)
+       │                                         │
+       └────────────── RCA &lt; 1 ──────────────────┘
+</code></pre>
+<ul>
+<li><strong>چالش:</strong> تمام محصولات صادراتی روشن ایران دارای <strong>نادربودن پایین (High Ubiquity)</strong> و <strong>پیچیدگی پایین (Low PCI)</strong> هستند.</li>
+<li><strong>نتیجه استراتژیک:</strong> وارد آمدن شوک قیمتی ارز، ایران را قادر به صادرات محصولات هسته مرکزی (ماشین‌آلات و تجهیزات متراکم) نمی‌کند، زیرا قابلیت‌های پایه (Capabilities) موجود نیستند.</li>
+</ul>
+<h3 id="_6">کیس‌استادی ۲: صنعت خودرو ایران؛ پارادوکس قابلیت و کژمنشی</h3>
+<p>صنعت خودرو ایران نمونه بارزی از شکست در ارتقای پیچیدگی اقتصادی به دلیل عدم‌وجود سیاست صنعتی مقتدر و بروز کژمنشی است:<br />
+*   <strong>تحلیل:</strong> خودروسازی ایران سال‌ها از حمایت‌های تعرفه‌ای برخوردار بوده اما نتوانسته در فضای محصول از مونتاژ به سوی طراحی و صادرات قطعات متراکم (High PCI) جهش کند.<br />
+*   <strong>علت نهادی:</strong> ایجاد رانت‌های ساختاری، نبود انگیزه برای کاهش هزینه مبادله، و عدم اتکار به انباشت دانش فنی باعث شده خودروسازان ایران در حاشیه فضای محصول باقی بمانند و توان رقابت صادراتی بدون ارز حمایتی را نداشته باشند.</p>
+<hr />
+<h2 id="ceo-strategic-playbook">۶. چک‌لیست و راهنمای تصمیم‌گیری مدیرعامل (CEO Strategic Playbook)</h2>
+<p>این چک‌لیست اجرایی، آموزه‌های دکتر دینی ترکمانی را به دستورالعمل‌های فردا صبح برای مدیرعامل و اعضای هیئت مدیره تبدیل می‌کند:</p>
+<pre><code>                  [چک‌لیست استراتژیک مدیرعامل]
+                               │
+   ┌───────────────────────────┼───────────────────────────┐
+   ▼                           ▼                           ▼
+[۱. سنجش موقعیت تجاری]     [۲. معماری قیمت‌گذاری]      [۳. مدیریت نهادی]
+ - استخراج کدهای HS          - تعیین دقیق کشش تقاضا      - شفاف‌سازی زنجیره تأمین
+ - محاسبه شاخص RCA           - اجرای قیمت‌گذاری تعبیضی    - مهار رفتارهای کژمنشانه
+ - سنجش فاصله در جنگل        - کاهش کشش با تمایز برند   - انعطاف‌پذیری ارزی
+</code></pre>
+<h3 id="itc">مرحله اول: سنجش موقعیت تجاری بنگاه با ابزارهای ITC</h3>
+<ul>
+<li>[ ] <strong>استخراج کدهای HS محصولات بنگاه:</strong> کدهای ۶ رقمی و ۸ رقمی تمام سبد محصولات خود را استخراج کنید.</li>
+<li>[ ] <strong>تحلیل RCA صادراتی:</strong> با استفاده از داده‌های Trade Map، شاخص مزیت نسبی آشکارشده (RCA) محصولات خود را در بازارهای هدف محاسبه کنید.</li>
+<li>[ ] <strong>تعیین موقعیت در اطلس پیچیدگی:</strong> بررسی کنید که محصولات شما در چه فاصله‌ای از گره‌های پرپیچیده (High-Tech Nodes) قرار دارند. از سرمایه‌گذاری مستقیم روی محصولات بی‌ربط به قابلیت‌های فعلی بنگاه خودداری کنید (اجتناب از جهش‌های پرریسک).</li>
+</ul>
+<h3 id="_7">مرحله دوم: معماری استراتژی قیمت‌گذاری و مدیریت کشش</h3>
+<ul>
+<li>[ ] <strong>اندازه‌گیری کشش قیمتی تقاضا ($\epsilon_p$):</strong> با تحلیل حساسیت فروش به تغییرات قیمت، کشش قیمتی تقاضا برای محصولات مختلف بنگاه را تفکیک کنید.</li>
+<li>[ ] <strong>پیاده‌سازی قیمت‌گذاری تعبیضی (Price Discrimination):</strong> برای بخش‌هایی از بازار که کشش قیمتی کمتری دارند (مشتریان لوکس یا صادراتی به بازارهای خاص)، قیمت‌های بالاتری ثبت کنید.</li>
+<li>[ ] <strong>سرمایه‌گذاری روی برند و تمایز:</strong> با افزایش وفاداری مشتریان، کشش قیمتی تقاضای محصولات خود را به زیر عدد ۱ کاهش دهید تا در شرایط تورمی قدرت پاس‌دادن هزینه‌ها را داشته باشید.</li>
+</ul>
+<h3 id="_8">مرحله سوم: مدیریت نهادی و پوشش عدم‌قطعیت کلان</h3>
+<ul>
+<li>[ ] <strong>پوشش ریسک ارزی غیرقیمتی:</strong> به جای تکیه بر حدس و گمان در مورد نرخ ارز تعادلی، سبد ارزی صادرات و واردات واسطه‌ای بنگاه را همگام سازید.</li>
+<li>[ ] <strong>کاهش هزینه‌های مبادله با مهار کژمنشی:</strong> سیستم‌های نظارتی، ردیابی کالا (مانند کدهای GS1) و شفافیت قراردادی را در زنجیره تأمین تقویت کنید تا فرصت‌طلبی تأمین‌کنندگان در شرایط تورمی مهار شود.</li>
+<li>[ ] <strong>توسعه قابلیت‌های جانبی (Product Space Adjacent Jump):</strong> با نگاشت قابلیت‌های فنی فعلی، محصولات همسایه را که دارای ارزش افزوده و ECI بالاتری هستند شناسایی و خطوط تولید را به سمت آن‌ها توسعه دهید.</li>
+</ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CEO PLAYBOOK -->
+      <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-purple-950 text-white rounded-2xl p-6 shadow-md space-y-4">
+        <h3 class="text-base font-bold text-amber-300 flex items-center gap-2">
+          <span>🎯</span>
+          <span>مدل راهبری ترکیبی برای مدیران ارشد در ایران: چگونه از هر دو پارادایم بهره ببریم؟</span>
+        </h3>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          مدیران طراز اول در ایران نه تعصب نئوکلاسیک دارند و نه در دام نظریات غیرعملیاتی می‌افتند؛ آنها از یک «مدل تصمیم‌گیری دو سطحی» پیروی می‌کنند:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs leading-relaxed">
+          <div class="p-4 rounded-xl bg-white/10 border border-white/15 space-y-2">
+            <strong class="text-amber-200 block text-sm">۱. سطح عملیات و سودآوری روزمره (لنز سرزعیم):</strong>
+            <p class="text-slate-200">
+              قیمت‌گذاری را بر اساس کشش تقاضا ($E_d$) و حاشیه سود بهینه تنظیم کنید. سود حسابداری را مبنا قرار ندهید و هزینه فرصت سرمایه و انبارداری را محاسبه کنید. تصمیمات تولید را بر لبه نهایی ($MC=MR$) متوقف سازید و مانع از انجماد نقدینگی در دارایی‌های غیرمولد شوید.
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/10 border border-white/15 space-y-2">
+            <strong class="text-purple-200 block text-sm">۲. سطح بقای استراتژیک و زنجیره تامین (لنز دینی ترکمانی):</strong>
+            <p class="text-slate-200">
+              به توصیه‌های ساده‌انگارانه درباره بازگشت ثبات یا آرامش پایدار نرخ ارز با انضباط پولی تکیه نکنید. سناریوی شوک‌های جهش ارزی ناشی از بن‌بست‌های نهادی، قطعی انرژی در زمستان و تابستان، و تغییر دستوری قواعد بازی را در بودجه استراتژیک بنگاه وارد کرده و زنجیره تامین ضدشکننده بسازید.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
     <!-- CALCULATORS TAB -->
     <section id="content-calc" class="tab-content hidden space-y-6">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -2128,7 +3480,7 @@ P_max ├───A─┼───B  &lt;--- (سقف قیمت دستوری)
         <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
           <div>
             <h2 class="text-lg font-bold text-slate-900">دانشنامه جامع و مرجع اقتصاد برای مدیران</h2>
-            <p class="text-xs text-slate-500">متن تجمیعی و موشکافانه تمامی ۵ جلسه دوره عالی MBA</p>
+            <p class="text-xs text-slate-500">متن تجمیعی و موشکافانه تمامی ۵ جلسه دوره عالی MBA (دکتر سرزعیم)</p>
           </div>
           <button onclick="window.print()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg font-bold transition">
             🖨️ چاپ / ذخیره PDF
@@ -3703,7 +5055,7 @@ P_max ├───A─┼───B  &lt;--- (سقف قیمت دستوری)
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-right">
       <div>
         <div class="text-sm font-bold text-white mb-1">دانشنامه کاربردی اقتصاد برای مدیران • دانشکده اقتصاد دانشگاه تهران</div>
-        <div class="text-xs text-slate-400">طراحی و توسعه سیستم کانتکست پایدار و داشبوردهای تعاملی MBA</div>
+        <div class="text-xs text-slate-400">تحلیل تطبیقی آموزه‌های دکتر علی سرزعیم و دکتر علی دینی ترکمانی</div>
       </div>
       <div class="inline-flex flex-wrap items-center justify-center gap-3">
   <span class="text-slate-300 text-xs md:text-sm">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
@@ -3720,7 +5072,7 @@ P_max ├───A─┼───B  &lt;--- (سقف قیمت دستوری)
       document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
       document.querySelectorAll('.tab-btn').forEach(el => {
         el.classList.remove('active', 'bg-white', 'text-slate-900');
-        if (!el.id.includes('calc') && !el.id.includes('master')) {
+        if (!el.id.includes('calc') && !el.id.includes('master') && !el.id.includes('comparative')) {
           el.classList.add('bg-white/10', 'text-white');
         }
       });

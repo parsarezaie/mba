@@ -3,313 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>دانشنامه حقوق کسب و کار | دوره تخصصی MBA دانشکده اقتصاد دانشگاه تهران</title>
+  <title>دانشنامه کاربردی و داشبورد تعاملی حقوق کسب و کار | دانشکده اقتصاد دانشگاه تهران</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
   <style>
-    body {
-      font-family: 'Vazirmatn', sans-serif;
-      background-color: #f8fafc;
-      color: #0f172a;
-    }
-    .prose-custom {
-      color: #334155;
-      font-size: 0.95rem;
-      line-height: 1.9;
-    }
-    .prose-custom h1, .prose-custom h2, .prose-custom h3, .prose-custom h4 {
-      color: #0f172a;
-      font-weight: 800;
-      margin-top: 1.75rem;
-      margin-bottom: 0.75rem;
-    }
-    .prose-custom h1 { font-size: 1.6rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
-    .prose-custom h2 { font-size: 1.35rem; color: #1e3a8a; border-right: 4px solid #1e3a8a; padding-right: 0.6rem; }
-    .prose-custom h3 { font-size: 1.15rem; color: #334155; }
-    .prose-custom table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.25rem 0;
-      font-size: 0.875rem;
-      background-color: #ffffff;
-      border-radius: 0.75rem;
-      overflow: hidden;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    }
-    .prose-custom th, .prose-custom td {
-      padding: 0.75rem 1rem;
-      border: 1px solid #e2e8f0;
-      text-align: right !important;
-      direction: rtl !important;
-    }
-    .prose-custom th {
-      background-color: #f1f5f9;
-      color: #0f172a;
-      font-weight: 700;
-    }
-    .prose-custom tr:hover {
-      background-color: #f8fafc;
-    }
-    .math-eq {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      background: #f1f5f9;
-      padding: 0.2rem 0.5rem;
-      border-radius: 0.5rem;
-      border: 1px solid #cbd5e1;
-      direction: ltr !important;
-      unicode-bidi: isolate;
-      font-size: 0.85rem;
-    }
-    .math-var { font-weight: 700; color: #1e3a8a; }
-    .math-op { color: #64748b; }
-    .math-val { font-weight: 600; color: #0f172a; }
-    .math-frac {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      vertical-align: middle;
-      padding: 0 0.2rem;
-    }
-    .math-num { border-bottom: 1.5px solid #475569; padding-bottom: 1px; font-size: 0.8em; }
-    .math-den { padding-top: 1px; font-size: 0.8em; }
+    .gradient-header { background: linear-gradient(135deg, #1e1b4b 0%, #1e3a8a 50%, #0f172a 100%); }
+
+    body { font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .card-hover { transition: all 0.25s ease-in-out; }
+    .card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
+    
+    .prose-custom { font-size: 0.875rem; line-height: 1.8; color: #334155; }
+    .prose-custom h1 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-top: 1.5rem; margin-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+    .prose-custom h2 { font-size: 1.25rem; font-weight: 700; color: #1e293b; margin-top: 1.25rem; margin-bottom: 0.5rem; border-right: 4px solid #1e3a8a; padding-right: 0.6rem; }
+    .prose-custom h3 { font-size: 1.05rem; font-weight: 700; color: #334155; margin-top: 1rem; margin-bottom: 0.5rem; }
+    .prose-custom p { margin-bottom: 0.85rem; text-align: justify; }
+    .prose-custom ul { list-style-type: disc; margin-right: 1.5rem; margin-bottom: 0.85rem; }
+    .prose-custom ol { list-style-type: decimal; margin-right: 1.5rem; margin-bottom: 0.85rem; }
+    .prose-custom li { margin-bottom: 0.35rem; }
+    .prose-custom blockquote { border-right: 4px solid #3b82f6; background-color: #f8fafc; padding: 0.75rem 1rem; border-radius: 0.5rem; margin: 1rem 0; color: #1e40af; font-weight: 500; }
+    .prose-custom table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.8rem; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
+    .prose-custom th { background-color: #f1f5f9; padding: 0.6rem 0.75rem; font-weight: 700; border: 1px solid #cbd5e1; text-align: right !important; direction: rtl !important; }
+    .prose-custom td { padding: 0.6rem 0.75rem; border: 1px solid #e2e8f0; text-align: right !important; direction: rtl !important; }
+    .prose-custom th:has(.math-eq), .prose-custom td:has(.math-eq), .prose-custom th.text-center, .prose-custom td.text-center { text-align: center !important; }
+    .prose-custom pre { background-color: #0f172a; color: #f8fafc; padding: 1rem; border-radius: 0.75rem; overflow-x: auto; font-family: monospace; font-size: 0.8rem; margin: 1rem 0; direction: ltr; text-align: left; }
+    .prose-custom code { background-color: #f1f5f9; color: #0f172a; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-family: monospace; font-size: 0.825rem; }
+    .prose-custom pre code { background-color: transparent; color: inherit; padding: 0; }
+    
+    /* Mathematical Formulas & Fractions Styling */
+    .math-eq { display: inline-flex !important; align-items: center !important; gap: 5px !important; direction: ltr !important; font-family: Cambria, 'Times New Roman', serif !important; font-size: 0.95rem !important; font-weight: 700 !important; vertical-align: middle !important; color: #0f172a !important; margin: 3px 0 !important; }
+    .math-frac { display: inline-flex !important; flex-direction: column !important; align-items: center !important; vertical-align: middle !important; text-align: center !important; margin: 0 4px !important; }
+    .math-num { border-bottom: 2px solid #1e293b !important; padding: 1px 6px 3px 6px !important; color: #1d4ed8 !important; font-weight: 800 !important; width: 100% !important; text-align: center !important; font-size: 0.85rem !important; line-height: 1.2 !important; }
+    .math-den { padding: 3px 6px 1px 6px !important; color: #b91c1c !important; font-weight: 800 !important; width: 100% !important; text-align: center !important; font-size: 0.85rem !important; line-height: 1.2 !important; }
+    .math-op { font-size: 1.15rem !important; color: #475569 !important; font-weight: 900 !important; margin: 0 2px !important; }
+    .math-var { color: #0f172a !important; font-weight: 900 !important; }
+    .math-val { color: #047857 !important; font-weight: 900 !important; }
   </style>
 </head>
-<body class="min-h-screen flex flex-col">
+
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
 
   <!-- Header -->
-  <header class="bg-gradient-to-r from-slate-900 via-blue-950 to-indigo-950 text-white border-b border-indigo-900/60 shadow-xl">
-    <div class="max-w-7xl mx-auto px-6 py-8">
-      <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
-        <div class="flex items-center gap-3">
-          <span class="bg-indigo-600/30 text-indigo-300 text-xs px-3 py-1 rounded-full font-semibold border border-indigo-500/40">دانشکده اقتصاد دانشگاه تهران</span>
-          <span class="text-xs text-slate-300">دوره مدیریت کسب‌وکار (MBA 0410)</span>
-        </div>
-        <div class="flex items-center gap-3">
-          <a href="../" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-amber-300 px-3.5 py-1.5 rounded-xl text-xs font-bold border border-amber-300/30 shadow transition-all hover:scale-105">
-            <span>🏠 پرتال اصلی و انتخاب کلاس ➔</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="flex flex-wrap items-center justify-between gap-6">
+  <header class="gradient-header text-white py-9 px-6 shadow-xl relative overflow-hidden">
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <h1 class="text-2xl md:text-3xl font-black mb-2 flex items-center gap-3">
-            <span>حقوق کسب و کار</span>
-            <span class="text-indigo-400 text-lg font-normal">| دانشنامه جامع و راهنمای حقوقی مدیران ارشد</span>
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <div class="inline-flex items-center gap-2 bg-indigo-500/25 border border-indigo-400/40 rounded-full px-4 py-1 text-xs font-semibold">
+              <span>🎓 دانشکده اقتصاد دانشگاه تهران</span>
+              <span>•</span>
+              <span>دوره تخصصی MBA (کد 0410)</span>
+            </div>
+            <a href="../" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white border border-white/30 rounded-full px-3.5 py-1 text-xs font-bold transition-all shadow-sm hover:scale-105 backdrop-blur-md">
+              <span>🏠 پرتال اصلی و انتخاب کلاس</span>
+              <span class="text-xs">➔</span>
+            </a>
+          </div>
+          <h1 class="text-3xl md:text-4xl font-black tracking-tight mb-2">
+            دانشنامه کاربردی و داشبورد تعاملی حقوق کسب و کار
           </h1>
-          <p class="text-slate-300 text-xs md:text-sm mb-2">مدرس: <strong>استاد نصرالهی</strong> • مستشار و حقوق‌دان برجسته دعاوی تجاری و شرکت‌ها</p>
-          <div class="inline-flex items-center gap-2 mt-1">
-  <span class="text-indigo-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
+          <p class="text-blue-100 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
+            مجموعه تحلیلی، قراردادی و راهبردی ۴ جلسه کامل | مدرس: <strong class="text-white font-semibold">استاد نصرالهی</strong> | <div class="inline-flex items-center gap-2 mt-1">
+  <span class="text-blue-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
   <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
     <span>Parsa Rezaie</span>
   </a>
 </div>
+          </p>
         </div>
-
-        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 text-center min-w-[170px] shadow-lg">
-          <div class="text-2xl font-black text-amber-400">۴ جلسه</div>
-          <div class="text-xs text-slate-200 mt-1 font-bold">۱۶ ساعت تدریس فشرده</div>
+        <div class="flex items-center gap-3">
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3.5 text-center min-w-[120px]">
+            <div class="text-2xl font-black text-amber-300">۴ جلسه</div>
+            <div class="text-xs text-blue-100 font-medium">۱۶ ساعت تدریس</div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Navigation Tabs Bar -->
-    <div class="bg-slate-950/80 border-t border-indigo-900/40 px-6 backdrop-blur-md">
-      <div class="max-w-7xl mx-auto flex items-center gap-2 overflow-x-auto py-3 text-xs md:text-sm font-bold no-scrollbar">
-        <a href="../" class="shrink-0 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-400/30 px-3.5 py-2 rounded-xl transition-all flex items-center gap-1.5">
-          <span>🏠 صفحه اصلی</span>
+      <!-- Navigation Tabs -->
+      <div class="flex flex-wrap items-center gap-2 mt-7 border-t border-white/15 pt-4">
+        <a href="../" class="px-4 py-2.5 rounded-xl text-xs md:text-sm font-black transition-all bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-md flex items-center gap-2 hover:scale-105">
+          <span>🏠 بازگشت به صفحه اصلی (انتخاب کلاس)</span>
         </a>
-        <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn shrink-0 bg-indigo-600 text-white px-4 py-2 rounded-xl transition-all shadow-md">
-          نمای کلی و ارکان حقوقی
+        <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-bold transition-all bg-white text-slate-900 shadow-md">
+          📊 داشبورد کلان دوره
         </button>
-        <button onclick="switchTab('s1')" id="tab-s1" class="tab-btn shrink-0 bg-slate-800/80 hover:bg-slate-800 text-slate-300 px-4 py-2 rounded-xl transition-all">
+        <button onclick="switchTab('session1')" id="tab-session1" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           جلسه ۱: اصول قراردادها و شروط
         </button>
-        <button onclick="switchTab('s2')" id="tab-s2" class="tab-btn shrink-0 bg-slate-800/80 hover:bg-slate-800 text-slate-300 px-4 py-2 rounded-xl transition-all">
+        <button onclick="switchTab('session2')" id="tab-session2" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           جلسه ۲: حقوق شرکت‌ها و مدیران
         </button>
-        <button onclick="switchTab('s3')" id="tab-s3" class="tab-btn shrink-0 bg-slate-800/80 hover:bg-slate-800 text-slate-300 px-4 py-2 rounded-xl transition-all">
+        <button onclick="switchTab('session3')" id="tab-session3" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           جلسه ۳: حقوق کار و تأمین اجتماعی
         </button>
-        <button onclick="switchTab('s4')" id="tab-s4" class="tab-btn shrink-0 bg-slate-800/80 hover:bg-slate-800 text-slate-300 px-4 py-2 rounded-xl transition-all">
-          جلسه ۴: چک، اسناد تجاری و داوری
+        <button onclick="switchTab('session4')" id="tab-session4" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۴: اسناد تجاری، چک و داوری
         </button>
-        <button onclick="switchTab('calculator')" id="tab-calculator" class="tab-btn shrink-0 bg-slate-800/80 hover:bg-slate-800 text-slate-300 px-4 py-2 rounded-xl transition-all text-amber-300 border border-amber-400/20">
+        <button onclick="switchTab('calculator')" id="tab-calculator" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           ⚖️ ماشین‌حساب خسارت و چک صیاد
         </button>
-        <button onclick="switchTab('handbook')" id="tab-handbook" class="tab-btn shrink-0 bg-slate-800/80 hover:bg-slate-800 text-slate-300 px-4 py-2 rounded-xl transition-all">
-          دانشنامه کامل و یکپارچه
+        <button onclick="switchTab('handbook')" id="tab-handbook" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          📖 دانشنامه جامع متنی
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Main Content Area -->
-  <main class="max-w-7xl mx-auto px-6 py-8 flex-1 w-full">
+  <!-- Main Container -->
+  <main class="max-w-6xl mx-auto px-4 py-8 flex-1 w-full">
 
-    <!-- Tab 0: Overview -->
-    <section id="content-overview" class="space-y-8">
-      <!-- Master Doctrine Banner -->
-      <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-950 text-white p-8 rounded-3xl shadow-xl border border-indigo-900/50">
-        <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
-          <span class="bg-indigo-500/20 text-indigo-300 text-xs px-3 py-1 rounded-full font-bold border border-indigo-400/30">دکترین حقوقی کسب و کار دانشگاه تهران</span>
-          <span class="text-xs text-slate-300">تدریس: استاد نصرالهی</span>
-        </div>
-        <h2 class="text-2xl md:text-3xl font-black mb-3">حقوق برای مدیران؛ مصونیت استراتژیک، نه تشریفات اداری</h2>
-        <p class="text-slate-200 text-sm md:text-base leading-relaxed max-w-5xl">
-          یک مدیرعامل یا کارآفرین نباید وکیل باشد، اما باید <strong>نقاط آسیب‌پذیری مرگبار حقوقی شرکت</strong> را به دقت بشناسد. یک امضای نسنجیده در چک، یک بند ناقص در قرارداد تأمین‌کننده، یا یک سهل‌انگاری در بیمه پرسنل می‌تواند سال‌ها زحمت، ارزش ویژه برند و دارایی‌های شخصی مدیران را بر باد دهد. این دانشنامه فشرده، سپری آهنین برای مدیریت هوشمندانه دعاوی و صیانت از منافع شرکت است.
-        </p>
-      </div>
-
-      <!-- 4 Pillars Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
-          <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center font-black mb-4">۱</div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">اصول قراردادهای تجاری</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            ارکان صحت معاملات، شروط ضمن عقد، وجه التزام مقطوع، تحدید مسئولیت، فورس‌ماژور و تضمین اجرای تعهدات.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
-          <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center font-black mb-4">۲</div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">حقوق و حکمرانی شرکت‌ها</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            سهامی خاص در برابر مسئولیت محدود، اساسنامه، اختیارات مدیرعامل، هیئت مدیره، ماده ۱۲۹ و پیشگیری از ورشکستگی ماده ۱۴۱.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
-          <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center font-black mb-4">۳</div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">حقوق کار و تأمین اجتماعی</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            الزامات آمره ماده ۱۴۸ بیمه، قراردادهای مدت‌معین، دفاع در هیئت‌های تشخیص و حل اختلاف و تسویه‌حساب غیرقابل ابطال.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
-          <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center font-black mb-4">۴</div>
-          <h3 class="text-lg font-bold text-slate-900 mb-2">اسناد تجاری، چک و داوری</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            قانون جدید چک صیاد و صدور اجراییه مستقیم ماده ۲۳، ضمانت ظهر چک، موافقت‌نامه داوری تجاری و تصفیه دیون.
-          </p>
+    <!-- TAB: OVERVIEW -->
+    <section id="content-overview" class="tab-content space-y-8">
+      
+      <!-- Key Philosophy Banner -->
+      <div class="bg-gradient-to-r from-amber-50 to-orange-50 border-r-4 border-amber-500 p-5 rounded-2xl shadow-sm">
+        <div class="flex items-start gap-3.5">
+          <div class="p-3 bg-amber-500 text-white rounded-xl shadow-md text-xl">💡</div>
+          <div>
+            <h3 class="text-sm md:text-base font-extrabold text-amber-950 mb-1">دکترین محوری استاد نصرالهی در کل دوره:</h3>
+            <p class="text-xs md:text-sm text-amber-900 leading-relaxed text-justify">
+              «حقوق برای مدیرعامل و کارآفرین، تشریفات زائد اداری نیست؛ بلکه زره فولادی و سپر امنیتی کسب‌وکار است. بیش از ۸۰٪ ورشکستگی‌ها و بحران‌های مالی شرکت‌ها، ناشی از شروط مبهم قراردادی، تضامین نامعتبر، عدم تفکیک فسخ از انفساخ و بی‌توجهی به قواعد آمره بیمه و چک است. قرارداد خوب قراردادی است که نه در روزهای صلح، بلکه برای روزهای نزاع حقوقی تدوین شده باشد!»
+            </p>
+          </div>
         </div>
       </div>
 
-      <!-- Quick Session Cards -->
-      <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
-        <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-          <span class="w-3 h-3 rounded-full bg-indigo-600"></span>
-          <span>فهرست جلسات و ساختار آموزش ۴ مرحله‌ای</span>
+      <!-- Roadmap Grid (4 Sessions) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 card-hover shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm">۱</span>
+              <span class="text-[11px] font-bold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full">اصول قراردادها</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">اصول و شروط قراردادهای تجاری</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">ارکان چهارگانه صحت معاملات (ماده ۱۹۰ ق.م)، شروط ضمن عقد، وجه التزام مقطوع (ماده ۲۳۰ ق.م)، و تفکیک فسخ از انفساخ.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <button onclick="switchTab('session1')" class="w-full text-center text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors py-1">مشاهده خلاصه و جزئیات جلسه اول ➔</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 card-hover shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-sm">۲</span>
+              <span class="text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2.5 py-0.5 rounded-full">حقوق شرکت‌ها</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">حکمرانی شرکتی و مسئولیت مدیران</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">سهامی خاص در برابر با مسئولیت محدود، اساسنامه، اختیارات هیئت‌مدیره، تله معاملات ماده ۱۲۹ و پیشگیری از بحران ماده ۱۴۱.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <button onclick="switchTab('session2')" class="w-full text-center text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors py-1">مشاهده خلاصه و جزئیات جلسه دوم ➔</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 card-hover shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">۳</span>
+              <span class="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full">حقوق کارگری</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">حقوق کار و تأمین اجتماعی</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">قواعد آمره بیمه اجباری ماده ۱۴۸، تسویه‌حساب بانکی غیرقابل ابطال، قراردادهای کار مدت‌معین و صیانت از سفته حسن انجام کار.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <button onclick="switchTab('session3')" class="w-full text-center text-xs font-bold text-emerald-600 hover:text-emerald-800 transition-colors py-1">مشاهده خلاصه و جزئیات جلسه سوم ➔</button>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-5 border border-slate-200 card-hover shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">۴</span>
+              <span class="text-[11px] font-bold text-amber-600 bg-amber-50 px-2.5 py-0.5 rounded-full">اسناد تجاری</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">چک صیاد، داوری و ورشکستگی</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-3">انقلاب صدور اجراییه مستقیم ماده ۲۳ قانون جدید چک، ضمانت ظهر چک، موافقت‌نامه داوری اتاق بازرگانی و مدیریت ورشکستگی.</p>
+          </div>
+          <div class="pt-3 border-t border-slate-100">
+            <button onclick="switchTab('session4')" class="w-full text-center text-xs font-bold text-amber-600 hover:text-amber-800 transition-colors py-1">مشاهده خلاصه و جزئیات جلسه چهارم ➔</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Strategic Legal Principles -->
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+        <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+          <span>چهار اصل طلایی صیانت حقوقی در شرکت‌های تجاری ایران</span>
         </h3>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div onclick="switchTab('s1')" class="cursor-pointer bg-slate-50 hover:bg-indigo-50/50 p-5 rounded-2xl border border-slate-200 transition-all flex items-start gap-4">
-            <span class="bg-indigo-600 text-white font-black text-sm px-3 py-1.5 rounded-xl">جلسه ۱</span>
-            <div>
-              <h4 class="font-bold text-slate-900 text-sm mb-1">اصول و قواعد عمومی قراردادها، شروط و تضامین</h4>
-              <p class="text-xs text-slate-600">ارکان صحت، شروط ضمن عقد، وجه التزام ماده ۲۳۰، تفاوت فسخ و انفساخ و شرط داوری.</p>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+            <strong class="text-slate-900 block mb-1 text-sm">۱. درج وجه التزام مقطوع روزانه (ماده ۲۳۰ قانون مدنی)</strong>
+            <p class="text-slate-600 leading-relaxed">قاضی حق کاهش یا افزایش وجه التزام تصریح‌شده را ندارد. برای جلوگیری از بی‌ارزش شدن تعهدات به دلیل تورم، همیشه خسارت روزانه مقطوع را به همراه عبارت «علاوه بر انجام تعهد اصلی» درج کنید.</p>
           </div>
-
-          <div onclick="switchTab('s2')" class="cursor-pointer bg-slate-50 hover:bg-indigo-50/50 p-5 rounded-2xl border border-slate-200 transition-all flex items-start gap-4">
-            <span class="bg-indigo-600 text-white font-black text-sm px-3 py-1.5 rounded-xl">جلسه ۲</span>
-            <div>
-              <h4 class="font-bold text-slate-900 text-sm mb-1">حقوق شرکت‌های تجاری و مسئولیت‌های مدیران</h4>
-              <p class="text-xs text-slate-600">سهامی خاص vs با مسئولیت محدود، حدود اختیارات مدیران، معاملات ماده ۱۲۹ و انحلال ماده ۱۴۱.</p>
-            </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+            <strong class="text-slate-900 block mb-1 text-sm">۲. رعایت تشریفات معاملات هیئت‌مدیره (ماده ۱۲۹ لایحه اصلاحی)</strong>
+            <p class="text-slate-600 leading-relaxed">هرگونه معامله مدیرعامل یا اعضای هیئت‌مدیره با شرکت نیازمند تصویب قبلی هیئت مدیره و گزارش بازرس به مجمع است؛ در غیر این صورت معامله قابل ابطال و مستوجب مسئولیت کیفری است.</p>
           </div>
-
-          <div onclick="switchTab('s3')" class="cursor-pointer bg-slate-50 hover:bg-indigo-50/50 p-5 rounded-2xl border border-slate-200 transition-all flex items-start gap-4">
-            <span class="bg-indigo-600 text-white font-black text-sm px-3 py-1.5 rounded-xl">جلسه ۳</span>
-            <div>
-              <h4 class="font-bold text-slate-900 text-sm mb-1">حقوق کار و تأمین اجتماعی و دعاوی پرسنلی</h4>
-              <p class="text-xs text-slate-600">بیمه اجباری ماده ۱۴۸، تسویه‌حساب بانکی، قرارداد کار موقت، سفته حسن انجام کار و مراجع حل اختلاف.</p>
-            </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+            <strong class="text-slate-900 block mb-1 text-sm">۳. تسویه‌حساب بانکی مستند با پرسنل (ماده ۱۴۸ قانون کار)</strong>
+            <p class="text-slate-600 leading-relaxed">امضای کارگر پای برگه تسویه حتی در دفترخانه بدون ارائه رسید واریز بانکی به حساب او، در هیئت‌های اداره کار بی‌اعتبار است. مبالغ حقوق، اضافه کار و سنوات باید تفکیک و واریز شود.</p>
           </div>
-
-          <div onclick="switchTab('s4')" class="cursor-pointer bg-slate-50 hover:bg-indigo-50/50 p-5 rounded-2xl border border-slate-200 transition-all flex items-start gap-4">
-            <span class="bg-indigo-600 text-white font-black text-sm px-3 py-1.5 rounded-xl">جلسه ۴</span>
-            <div>
-              <h4 class="font-bold text-slate-900 text-sm mb-1">اسناد تجاری، چک جدید صیاد و داوری سازمانی</h4>
-              <p class="text-xs text-slate-600">اجراییه فوری ماده ۲۳ قانون چک، ضمانت ظهر چک، داوری اتاق بازرگانی و ورشکستگی تاجر.</p>
-            </div>
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+            <strong class="text-slate-900 block mb-1 text-sm">۴. بهره‌برداری از ماده ۲۳ قانون جدید چک صیاد</strong>
+            <p class="text-slate-600 leading-relaxed">با برگشت خوردن چک صیادی و ثبت گواهی عدم پرداخت، مستقیماً از دادگاه اجراییه بگیرید و حساب‌های بدهکار را مسدود کنید، بدون نیاز به طی کردن ۲ سال دادرسی و دادخواست عادی.</p>
           </div>
         </div>
       </div>
+
     </section>
 
-    <!-- Tab 1: Session 1 -->
-    <section id="content-s1" class="hidden space-y-8">
-      
-    <div class="space-y-6">
-      <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-950 text-white p-6 rounded-3xl shadow-md border border-indigo-900/40">
-        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-          <span class="bg-indigo-500/20 text-indigo-300 text-xs px-3 py-1 rounded-full font-bold border border-indigo-400/30">خلاصه مدیریتی جلسه اول</span>
-          <span class="text-xs text-slate-300">حقوق قراردادها • ارکان صحت • شروط ضمن عقد • وجه التزام</span>
+    <!-- TAB: SESSION 1 -->
+    <section id="content-session1" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
+          <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه اول</span>
+          <span class="text-xs text-slate-500">ارکان صحت • شروط ضمن عقد • وجه التزام • فسخ و انفساخ</span>
         </div>
-        <h3 class="text-xl md:text-2xl font-black mb-2">معماری حقوقی قراردادهای تجاری؛ مصون‌سازی شرکت از ریسک‌های ویرانگر</h3>
-        <p class="text-slate-200 text-xs md:text-sm leading-relaxed">
-          استاد نصرالهی در این جلسه شالوده قراردادهای بازرگانی را کالبدشکافی می‌کنند. بیش از ۸۰٪ ورشکستگی‌ها و بحران‌های نقدینگی شرکت‌ها ناشی از شروط مبهم، تضامین نامعتبر، عدم تفکیک فسخ از انفساخ و تعیین نادرست مرجع حل اختلاف است. قرارداد خوب قراردادی است که نه در روزهای دوستی، بلکه برای روزهای جنگ حقوقی نوشته شده باشد.
+        <h3 class="text-xl font-black text-slate-900">اصول و قواعد عمومی قراردادهای تجاری</h3>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
+          شالوده هر تعهد تجاری، قرارداد است. در این جلسه ارکان چهارگانه صحت معامله (ماده ۱۹۰ قانون مدنی)، تفاوت اساسی بطلان و عدم نفوذ، شروط سه‌گانه ضمن عقد (صفت، نتیجه و فعل)، ضمانت اجراهای قراردادی و چگونگی تنظیم شرط وجه التزام (ماده ۲۳۰) و شرط داوری تبیین گردید.
         </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-blue-600 block mb-1">ماده ۱۹۰ قانون مدنی</span>
+            <div class="text-sm font-black text-slate-900 mb-1">ارکان صحت معامله</div>
+            <p class="text-xs text-slate-600">قصد و رضای طرفین، اهلیت، موضوع معین و مشروعیت جهت. فقدان قصد موجب بطلان مطلق است.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-blue-600 block mb-1">ماده ۲۳۰ قانون مدنی</span>
+            <div class="text-sm font-black text-slate-900 mb-1">وجه التزام مقطوع</div>
+            <p class="text-xs text-slate-600">حاکم دادگاه حق کاهش یا افزایش وجه التزام تعیین‌شده را ندارد، حتی اگر خسارت واقعی متفاوت باشد.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-blue-600 block mb-1">انفساخ در برابر فسخ</span>
+            <div class="text-sm font-black text-slate-900 mb-1">شرط فاسخ خودکار</div>
+            <p class="text-xs text-slate-600">انفساخ به محض تخلف خودبه‌خود قرارداد را منحل می‌کند و نیازی به ارسال اظهارنامه و فسخ ندارد.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">ارکان چهارگانه صحت معامله</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Civil Code Art. 190</div>
-          <p class="text-xs text-slate-600 leading-relaxed">قصد و رضای طرفین، اهلیت، موضوع معین و مشروعیت جهت. فقدان قصد موجب بطلان مطلق و فقدان رضایت (اکراه) موجب عدم نفوذ است.</p>
-        </div>
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">وجه التزام مقطوع (ماده ۲۳۰)</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Liquidated Damages</div>
-          <p class="text-xs text-slate-600 leading-relaxed">قاضی دادگاه حق کاهش یا افزایش وجه التزام تصریح‌شده در قرارداد را ندارد؛ حتی اگر خسارت واقعی کمتر یا بیشتر از آن باشد.</p>
-        </div>
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">تفاوت حیاتی فسخ و انفساخ</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Termination vs Dissolution</div>
-          <p class="text-xs text-slate-600 leading-relaxed">فسخ نیازمند اراده و ارسال اظهارنامه است؛ اما انفساخ (شرط فاسخ) قرارداد را به صورت خودکار و قهری به محض وقوع تخلف منحل می‌کند.</p>
-        </div>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-        <h4 class="text-sm font-black text-slate-900 mb-3 flex items-center gap-2">
-          <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
-          <span>تصمیمات حیاتی C-Level در تنظیم قراردادها (استاد نصرالهی)</span>
-        </h4>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۱. شرط حل اختلاف و داوری سازمانی</strong>
-            <p class="text-slate-600">به جای ارجاع به دادگاه‌های عمومی با دادرسی ۲ ساله، داوری مرکز داوری اتاق بازرگانی ایران را شرط کنید که رأی قطعی و لازم‌الاجرا دارد.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۲. عبارت طلایی «علاوه بر اصل تعهد»</strong>
-            <p class="text-slate-600">همیشه در بند خسارت روزانه بنویسید: «مطالبه وجه التزام مانع از اجرای تعهد اصلی نبوده و متعهدله حق مطالبه هر دو را توأمان دارد».</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۳. تعیین نشانی اقامتگاه قانونی</strong>
-            <p class="text-slate-600">نشانی رسمی ثنا و اقامتگاه قراردادی طرفین را تثبیت کنید تا ابلاغ اظهارنامه و اوراق قضایی با ادعای تغییر مکان مسدود نشود.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8">
-        <button onclick="toggleSessionFull('s1')" class="w-full flex items-center justify-between gap-4 p-4 bg-slate-50 hover:bg-indigo-50/50 rounded-2xl border border-slate-200 transition-all text-right">
+      <!-- Collapsible Full Notes -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <button onclick="toggleSection('full-s1')" class="w-full p-4 bg-slate-50 hover:bg-slate-100 transition-colors flex items-center justify-between text-right">
           <div class="flex items-center gap-3">
-            <span class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">📖</span>
+            <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-sm">📖</span>
             <div>
-              <strong class="text-slate-900 text-sm block">مشاهده متن کامل دانشنامه و جزوه مشروح جلسه اول</strong>
-              <span class="text-slate-500 text-xs">۱۰۰٪ تئوری‌ها، مواد قانونی، کیس‌استادی‌ها و متن تفکیکی کلاس</span>
+              <strong class="text-sm font-bold text-slate-900 block">مشاهده متن کامل دانشنامه و جزوه مشروح جلسه اول</strong>
+              <span class="text-xs text-slate-500">متن ۲۵ هزار کاراکتری تفکیکی بدون کم‌وکاست به همراه پرونده‌ها و مواد قانونی</span>
             </div>
           </div>
-          <span id="icon-full-s1" class="text-indigo-600 font-bold text-sm">باز کردن ▼</span>
+          <span id="icon-full-s1" class="text-xs font-bold text-blue-600">▼ باز کردن</span>
         </button>
-        <div id="full-s1" class="hidden mt-6 pt-6 border-t border-slate-100 prose-custom max-w-none">
+        <div id="full-s1" class="hidden p-6 md:p-8 border-t border-slate-100 prose-custom max-w-none">
           <h1 id="-">حقوق کسب و کار - جلسه اول (اصول و قواعد عمومی قراردادها، ارکان صحت معاملات، شروط ضمن عقد، ریسک‌های حقوقی و تضامین قراردادی)</h1>
 <p><strong>مدرس:</strong> استاد نصرالهی<br />
 <strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA (کد 0410)<br />
@@ -667,73 +619,50 @@
       </div>
     </section>
 
-    <!-- Tab 2: Session 2 -->
-    <section id="content-s2" class="hidden space-y-8">
-      
-    <div class="space-y-6">
-      <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-950 text-white p-6 rounded-3xl shadow-md border border-indigo-900/40">
-        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-          <span class="bg-indigo-500/20 text-indigo-300 text-xs px-3 py-1 rounded-full font-bold border border-indigo-400/30">خلاصه مدیریتی جلسه دوم</span>
-          <span class="text-xs text-slate-300">حقوق شرکت‌ها • سهامی خاص در برابر مسئولیت محدود • مسئولیت مدیران</span>
+    <!-- TAB: SESSION 2 -->
+    <section id="content-session2" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
+          <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه دوم</span>
+          <span class="text-xs text-slate-500">سهامی خاص vs مسئولیت محدود • ماده ۱۲۹ • ماده ۱۴۱</span>
         </div>
-        <h3 class="text-xl md:text-2xl font-black mb-2">حکمرانی شرکتی و حدود اختیارات و مسئولیت‌های حقوقی و کیفری مدیران</h3>
-        <p class="text-slate-200 text-xs md:text-sm leading-relaxed">
-          استاد نصرالهی در جلسه دوم، قوانین حاکم بر شرکت‌های تجاری ایران را کالبدشکافی می‌کنند. تمایز میان شخصیت حقوقی شرکت و سهامداران، الزامات لایحه اصلاحی قانون تجارت ۱۳۴۷، خطرات معاملات مدیران با شرکت (ماده ۱۲۹) و زنگ خطر ورشکستگی و ماده ۱۴۱ از مباحث محوری این جلسه است.
+        <h3 class="text-xl font-black text-slate-900">حقوق شرکت‌های تجاری و مسئولیت مدیران</h3>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
+          قوانین حاکم بر شرکت‌های تجاری ایران، تفاوت ساختاری شرکت سهامی خاص با مسئولیت محدود، اساسنامه و تشریفات ثبت، حدود اختیارات هیئت‌مدیره و مدیرعامل، خطر معاملات ماده ۱۲۹ و الزامات ماده ۱۴۱ برای جلوگیری از انحلال و ورشکستگی تدریس شد.
         </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-indigo-600 block mb-1">سهامی خاص (PJSC)</span>
+            <div class="text-sm font-black text-slate-900 mb-1">ساختار مقیاس‌پذیر</div>
+            <p class="text-xs text-slate-600">حداقل ۳ سهامدار و ۲ بازرس. انتقال آسان سهام و بهترین ساختار برای جذب سرمایه‌گذار و وام بانکی.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-indigo-600 block mb-1">تله ماده ۱۲۹</span>
+            <div class="text-sm font-black text-slate-900 mb-1">معاملات مدیران با شرکت</div>
+            <p class="text-xs text-slate-600">معامله مدیر با شرکت بدون اجازه هیئت مدیره و گزارش بازرس، معامله را در معرض ابطال و شکایت قرار می‌دهد.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-indigo-600 block mb-1">زنگ خطر ماده ۱۴۱</span>
+            <div class="text-sm font-black text-slate-900 mb-1">زیان بیش از ۵۰٪ سرمایه</div>
+            <p class="text-xs text-slate-600">هیئت مدیره مکلف است مجمع فوق‌العاده دعوت کند تا درباره کاهش سرمایه یا انحلال شرکت تصمیم بگیرد.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">شرکت سهامی خاص (PJSC)</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Private Joint Stock</div>
-          <p class="text-xs text-slate-600 leading-relaxed">حداقل ۳ سهامدار و ۲ بازرس. سرمایه به سهام مساوی تقسیم شده و نقل و انتقال سهام آسان‌ترین ساختار برای جذب سرمایه‌گذار و VC است.</p>
-        </div>
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">شرکت با مسئولیت محدود (LLC)</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Limited Liability Co</div>
-          <p class="text-xs text-slate-600 leading-relaxed">حداقل ۲ شریک. سرمایه به سهم‌الشرکه نامساوی تقسیم می‌شود. انتقال سهم‌الشرکه نیازمند سند رسمی و موافقت اکثریت دارندگان سه‌چهارم سرمایه است.</p>
-        </div>
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">تله ماده ۱۲۹ قانون تجارت</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Related Party Transactions</div>
-          <p class="text-xs text-slate-600 leading-relaxed">انجام معامله مدیرعامل یا اعضای هیئت‌مدیره با شرکت بدون مجوز قبلی هیئت مدیره و تأیید مجمع عمومی، معامله را در معرض ابطال و ادعای خیانت قرار می‌دهد.</p>
-        </div>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-        <h4 class="text-sm font-black text-slate-900 mb-3 flex items-center gap-2">
-          <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
-          <span>راهبردهای صیانت از مدیران و سهامداران (استاد نصرالهی)</span>
-        </h4>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۱. نظارت بر زیان انباشته (ماده ۱۴۱)</strong>
-            <p class="text-slate-600">اگر بر اثر زیان‌های وارده حداقل نصف سرمایه شرکت از میان برود، هیئت مدیره مکلف است بلافاصله مجمع عمومی فوق‌العاده را برای کاهش سرمایه یا انحلال دعوت کند.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۲. تفکیک امضای تعهدآور از امضای اداری</strong>
-            <p class="text-slate-600">در روزنامه رسمی درج کنید که چک‌ها و قراردادهای بالای حد نصاب معین باید توأمان با امضای مدیرعامل و یکی از اعضای هیئت مدیره به همراه مهر شرکت باشد.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۳. اعتبار دوره تصدی هیئت‌مدیره</strong>
-            <p class="text-slate-600">مدت مدیریت حداکثر ۲ سال است؛ عدم تمدید رسمی و ثبت در اداره ثبت شرکت‌ها، انجام معاملات را با چالش بطلان یا مسئولیت شخصی مدیران مواجه می‌سازد.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8">
-        <button onclick="toggleSessionFull('s2')" class="w-full flex items-center justify-between gap-4 p-4 bg-slate-50 hover:bg-indigo-50/50 rounded-2xl border border-slate-200 transition-all text-right">
+      <!-- Collapsible Full Notes -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <button onclick="toggleSection('full-s2')" class="w-full p-4 bg-slate-50 hover:bg-slate-100 transition-colors flex items-center justify-between text-right">
           <div class="flex items-center gap-3">
-            <span class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">📖</span>
+            <span class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold text-sm">📖</span>
             <div>
-              <strong class="text-slate-900 text-sm block">مشاهده متن کامل دانشنامه و جزوه مشروح جلسه دوم</strong>
-              <span class="text-slate-500 text-xs">۱۰۰٪ تئوری‌ها، مواد قانونی، کیس‌استادی‌ها و متن تفکیکی کلاس</span>
+              <strong class="text-sm font-bold text-slate-900 block">مشاهده متن کامل دانشنامه و جزوه مشروح جلسه دوم</strong>
+              <span class="text-xs text-slate-500">متن ۳۱ هزار کاراکتری تفکیکی بدون کم‌وکاست به همراه پرونده‌ها و مواد قانونی</span>
             </div>
           </div>
-          <span id="icon-full-s2" class="text-indigo-600 font-bold text-sm">باز کردن ▼</span>
+          <span id="icon-full-s2" class="text-xs font-bold text-indigo-600">▼ باز کردن</span>
         </button>
-        <div id="full-s2" class="hidden mt-6 pt-6 border-t border-slate-100 prose-custom max-w-none">
+        <div id="full-s2" class="hidden p-6 md:p-8 border-t border-slate-100 prose-custom max-w-none">
           <h1 id="-">حقوق کسب و کار - جلسه دوم (حقوق شرکت‌های تجاری، انواع ساختارهای شرکتی، اساسنامه، مسئولیت‌های حقوقی و کیفری مدیران)</h1>
 <p><strong>مدرس:</strong> استاد نصرالهی<br />
 <strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA (کد 0410)<br />
@@ -1136,73 +1065,50 @@
       </div>
     </section>
 
-    <!-- Tab 3: Session 3 -->
-    <section id="content-s3" class="hidden space-y-8">
-      
-    <div class="space-y-6">
-      <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-950 text-white p-6 rounded-3xl shadow-md border border-indigo-900/40">
-        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-          <span class="bg-indigo-500/20 text-indigo-300 text-xs px-3 py-1 rounded-full font-bold border border-indigo-400/30">خلاصه مدیریتی جلسه سوم</span>
-          <span class="text-xs text-slate-300">حقوق کار • قانون تأمین اجتماعی • روابط کارگر و کارفرما • حل اختلاف</span>
+    <!-- TAB: SESSION 3 -->
+    <section id="content-session3" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
+          <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه سوم</span>
+          <span class="text-xs text-slate-500">بیمه اجباری ماده ۱۴۸ • تسویه‌حساب بانکی • سفته حسن انجام کار</span>
         </div>
-        <h3 class="text-xl md:text-2xl font-black mb-2">حقوق کار و تأمین اجتماعی؛ پیشگیری از جرائم سنگین و احکام یک‌طرفه اداره کار</h3>
-        <p class="text-slate-200 text-xs md:text-sm leading-relaxed">
-          قانون کار ایران ماهیتی کاملاً «حمایتی و آمره» دارد؛ یعنی هرگونه توافق کتبی با کارگر مبنی بر سلب حقوق قانونی (مثل بخشش سنوات یا عدم بیمه) حتی با اثر انگشت در دفترخانه اسناد رسمی، از نظر هیئت‌های تشخیص و حل اختلاف قانوناً باطل و بلااثر است!
+        <h3 class="text-xl font-black text-slate-900">حقوق کار و تأمین اجتماعی و دعاوی کارفرمایی</h3>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
+          قانون کار ایران ماهیتی کاملاً آمره و حمایتی دارد. هرگونه سلب حق قانونی کارگر باطل است. در این جلسه، تشریفات بیمه اجباری ماده ۱۴۸، نحوه نگارش قراردادهای کار مدت‌معین، دفاع در هیئت‌های تشخیص و حل اختلاف و استانداردهای تسویه‌حساب غیرقابل ابطال تشریح گردید.
         </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-emerald-600 block mb-1">ماده ۱۴۸ قانون کار</span>
+            <div class="text-sm font-black text-slate-900 mb-1">بیمه اجباری از روز اول</div>
+            <p class="text-xs text-slate-600">عدم بیمه کارگر حتی با رضایت کتبی او، جریمه سنگین ۲ تا ۸ برابری تأمین اجتماعی در پی دارد.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-emerald-600 block mb-1">تسویه‌حساب واقعی</span>
+            <div class="text-sm font-black text-slate-900 mb-1">رسید بانکی تفکیک‌شده</div>
+            <p class="text-xs text-slate-600">برگه تسویه‌حساب بدون فیش واریز بانکی به حساب کارگر، در اداره کار فاقد ارزش اثباتی است.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-emerald-600 block mb-1">سفته ضمانت پرسنل</span>
+            <div class="text-sm font-black text-slate-900 mb-1">قید شماره قرارداد و امانت</div>
+            <p class="text-xs text-slate-600">در متن سفته قید کنید: «صرفاً بابت حسن انجام کار موضوع قرارداد شماره... و به صورت امانت».</p>
+          </div>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">الزام بیمه اجباری (ماده ۱۴۸)</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Mandatory Social Security</div>
-          <p class="text-xs text-slate-600 leading-relaxed">کارفرما مکلف است کارگر را از اولین روز کاری بیمه کند. ادعای کارآموزی، آزمایشی یا رضایت کارگر مسموع نبوده و جریمه ۲ تا ۸ برابری دارد.</p>
-        </div>
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">تسویه‌حساب واقعی و واریزی بانکی</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Verifiable Payment Records</div>
-          <p class="text-xs text-slate-600 leading-relaxed">امضای کارگر پای برگه تسویه بدون ارائه فیش واریز بانکی به حساب کارگر هیچ ارزشی در اداره کار ندارد. پرداخت‌ها باید کاملاً مکانیزه و تفکیک‌شده باشد.</p>
-        </div>
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">قراردادهای موقت و تمدید ضمنی</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Fixed-Term Labor Contracts</div>
-          <p class="text-xs text-slate-600 leading-relaxed">قرارداد کار با مدت معین تنظیم کنید. انقضای مدت قرارداد معتبرترین راه پایان همکاری قانونی بدون ایجاد حق بازگشت به کار برای پرسنل است.</p>
-        </div>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-        <h4 class="text-sm font-black text-slate-900 mb-3 flex items-center gap-2">
-          <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
-          <span>چک‌لیست طلایی منابع انسانی برای مدیرعامل (استاد نصرالهی)</span>
-        </h4>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۱. تفکیک دقیق فیش حقوقی</strong>
-            <p class="text-slate-600">حق مسکن، بن خواروبار، حق اولاد، پایه سنوات و اضافه‌کاری را شفاف در فیش جدا کنید تا در محاسبه سنوات و اضافه‌کار با مزد ثابت دچار اضافه پرداخت نشوید.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۲. تضامین پرسنلی و سفته حسن انجام کار</strong>
-            <p class="text-slate-600">در سفته حسن انجام کار نام کارفرما، شماره قرارداد کار و عبارت «بابت حسن انجام کار و امانتی» را بنویسید و در قرارداد فرمت استرداد آن را مشخص کنید.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۳. ثبت مرخصی‌ها و سیستم حضور و غیاب</strong>
-            <p class="text-slate-600">گزارش کتبی مرخصی‌های استفاده‌شده و بازخرید مانده مرخصی را سالانه مستند و تسویه کنید تا کارگر پس از ۵ سال ادعای ۱۰۰ روز مرخصی مطالبه نکند.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8">
-        <button onclick="toggleSessionFull('s3')" class="w-full flex items-center justify-between gap-4 p-4 bg-slate-50 hover:bg-indigo-50/50 rounded-2xl border border-slate-200 transition-all text-right">
+      <!-- Collapsible Full Notes -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <button onclick="toggleSection('full-s3')" class="w-full p-4 bg-slate-50 hover:bg-slate-100 transition-colors flex items-center justify-between text-right">
           <div class="flex items-center gap-3">
-            <span class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">📖</span>
+            <span class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-sm">📖</span>
             <div>
-              <strong class="text-slate-900 text-sm block">مشاهده متن کامل دانشنامه و جزوه مشروح جلسه سوم</strong>
-              <span class="text-slate-500 text-xs">۱۰۰٪ تئوری‌ها، مواد قانونی، کیس‌استادی‌ها و متن تفکیکی کلاس</span>
+              <strong class="text-sm font-bold text-slate-900 block">مشاهده متن کامل دانشنامه و جزوه مشروح جلسه سوم</strong>
+              <span class="text-xs text-slate-500">متن ۲۲ هزار کاراکتری تفکیکی بدون کم‌وکاست به همراه پرونده‌ها و مواد قانونی</span>
             </div>
           </div>
-          <span id="icon-full-s3" class="text-indigo-600 font-bold text-sm">باز کردن ▼</span>
+          <span id="icon-full-s3" class="text-xs font-bold text-emerald-600">▼ باز کردن</span>
         </button>
-        <div id="full-s3" class="hidden mt-6 pt-6 border-t border-slate-100 prose-custom max-w-none">
+        <div id="full-s3" class="hidden p-6 md:p-8 border-t border-slate-100 prose-custom max-w-none">
           <h1 id="-">حقوق کسب و کار - جلسه سوم (تنظیم قراردادهای تجاری، اسناد تعهدآور، ریسک‌های حقوقی و الزامات مالی و بیمه‌ای)</h1>
 <p><strong>مدرس:</strong> استاد نصرالهی<br />
 <strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA (کد 0410)<br />
@@ -1452,73 +1358,50 @@ $$سند قانونی چک = برگه فیزیکی چک + ثبت ثبت‌نام
       </div>
     </section>
 
-    <!-- Tab 4: Session 4 -->
-    <section id="content-s4" class="hidden space-y-8">
-      
-    <div class="space-y-6">
-      <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-950 text-white p-6 rounded-3xl shadow-md border border-indigo-900/40">
-        <div class="flex flex-wrap items-center justify-between gap-3 mb-2">
-          <span class="bg-indigo-500/20 text-indigo-300 text-xs px-3 py-1 rounded-full font-bold border border-indigo-400/30">خلاصه مدیریتی جلسه چهارم</span>
-          <span class="text-xs text-slate-300">اسناد تجاری • چک صیاد • داوری بازرگانی • ورشکستگی و تصفیه</span>
+    <!-- TAB: SESSION 4 -->
+    <section id="content-session4" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
+          <span class="text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه چهارم</span>
+          <span class="text-xs text-slate-500">ماده ۲۳ قانون جدید چک • ضمانت ظهر چک • داوری سازمانی</span>
         </div>
-        <h3 class="text-xl md:text-2xl font-black mb-2">اسناد تجاری، قانون جدید چک و تکنیک‌های داوری تجاری و مدیریت بحران ورشکستگی</h3>
-        <p class="text-slate-200 text-xs md:text-sm leading-relaxed">
-          جلسه چهارم استاد نصرالهی به مهم‌ترین ابزارهای مالی و دفاعی تجارت اختصاص دارد: قانون جدید چک (سامانه صیاد) و تحول صدور اجراییه مستقیم بدون تشکیل دادگاه، تفاوت ضمانت چک با انتقال، ساختار موافقت‌نامه داوری و پیامدهای ورشکستگی به تقصیر یا تقلب.
+        <h3 class="text-xl font-black text-slate-900">اسناد تجاری، قانون جدید چک، داوری و ورشکستگی</h3>
+        <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
+          قانون جدید چک صیاد، امتیازات بی‌نظیر صدور اجراییه مستقیم ماده ۲۳ را به دارندگان چک اعطا کرده است. در این جلسه، تفاوت انتقال و ضمانت اسناد، مزایای داوری تجاری سازمانی در برابر دادگاه‌های عمومی و آثار حکم ورشکستگی تاجر کالبدشکافی شد.
         </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-amber-600 block mb-1">ماده ۲۳ قانون صدور چک</span>
+            <div class="text-sm font-black text-slate-900 mb-1">اجراییه فوری بدون دادگاه</div>
+            <p class="text-xs text-slate-600">صدور اجراییه مستقیم علیه صادرکننده با گواهی عدم پرداخت بدون نیاز به دادرسی ماهوی و هزینه دادرسی.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-amber-600 block mb-1">ضمانت ظهر چک</span>
+            <div class="text-sm font-black text-slate-900 mb-1">مسئولیت تضامنی مدیران</div>
+            <p class="text-xs text-slate-600">امضای پشت چک توسط مدیران با قید «به عنوان ضامن» مسئولیت تضامنی روی اموال شخصی آنها ایجاد می‌کند.</p>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="text-[11px] font-bold text-amber-600 block mb-1">داوری اتاق بازرگانی</span>
+            <div class="text-sm font-black text-slate-900 mb-1">سرعت بالا و رأی قطعی</div>
+            <p class="text-xs text-slate-600">رسیدگی تخصصی و محرمانه بدون اطاله دادرسی؛ رأی داور قطعی و مستقیماً در اجرای احکام اجرا می‌شود.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">انقلاب ماده ۲۳ قانون جدید چک</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Direct Judicial Enforcement</div>
-          <p class="text-xs text-slate-600 leading-relaxed">دارنده گواهی عدم پرداخت چک صیادی می‌تواند مستقیماً از دادگاه تقاضای صدور اجراییه علیه صادرکننده کند، بدون نیاز به طرح دعوای ماهوی و پرداخت هزینه دادرسی سنگین!</p>
-        </div>
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">داوری تجاری در برابر دادگاه</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Commercial Arbitration</div>
-          <p class="text-xs text-slate-600 leading-relaxed">رسیدگی تخصصی، محرمانه بودن اسرار تجاری و سرعت بالا. رأی داور قطعی و در اجرای احکام دادگستری ظرف چند روز به مرحله اجرا درمی‌آید.</p>
-        </div>
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-700 mb-1">ورشکستگی و توقف دیون</div>
-          <div class="text-base font-black text-slate-900 mb-2 font-mono" dir="ltr">Bankruptcy & Moratorium</div>
-          <p class="text-xs text-slate-600 leading-relaxed">تاجر از تاریخ توقف حق تصرف در اموال ندارد و خسارت تأخیر تأدیه به دیون او پس از توقف تعلق نمی‌گیرد؛ اما ورشکستگی به تقلب مجازات زندان سنگین دارد.</p>
-        </div>
-      </div>
-
-      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-        <h4 class="text-sm font-black text-slate-900 mb-3 flex items-center gap-2">
-          <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
-          <span>راهنمای تاکتیکی وصول مطالبات و امنیت اسناد (استاد نصرالهی)</span>
-        </h4>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۱. ثبت قطعی چک در سامانه صیاد</strong>
-            <p class="text-slate-600">چک کاغذی بدون ثبت در سامانه صیاد در حکم یک سند عادی بی‌ارزش است و مشمول هیچ‌یک از مزایای اسناد تجاری و صدور اجراییه نمی‌شود.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۲. امضای پشت چک به عنوان «ضامن»</strong>
-            <p class="text-slate-600">هنگام اخذ چک از شرکت، امضای مدیران یا سهامداران عمده را در ظهر چک با تصریح عبارت «به عنوان ضامن پرداخت» بگیرید تا مسئولیت تضامنی ایجاد شود.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <strong class="text-slate-900 block mb-1">۳. نگارش شرط داوری بی‌نقص</strong>
-            <p class="text-slate-600">از ارجاع داوری به اشخاص ناشناس یا مبهم بپرهیزید. بنویسید: «حل کلیه اختلافات ناشی از این قرارداد به مرکز داوری اتاق بازرگانی ایران ارجاع می‌شود».</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-8">
-        <button onclick="toggleSessionFull('s4')" class="w-full flex items-center justify-between gap-4 p-4 bg-slate-50 hover:bg-indigo-50/50 rounded-2xl border border-slate-200 transition-all text-right">
+      <!-- Collapsible Full Notes -->
+      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <button onclick="toggleSection('full-s4')" class="w-full p-4 bg-slate-50 hover:bg-slate-100 transition-colors flex items-center justify-between text-right">
           <div class="flex items-center gap-3">
-            <span class="w-8 h-8 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xs">📖</span>
+            <span class="w-8 h-8 rounded-lg bg-amber-600 text-white flex items-center justify-center font-bold text-sm">📖</span>
             <div>
-              <strong class="text-slate-900 text-sm block">مشاهده متن کامل دانشنامه و جزوه مشروح جلسه چهارم</strong>
-              <span class="text-slate-500 text-xs">۱۰۰٪ تئوری‌ها، مواد قانونی، کیس‌استادی‌ها و متن تفکیکی کلاس</span>
+              <strong class="text-sm font-bold text-slate-900 block">مشاهده متن کامل دانشنامه و جزوه مشروح جلسه چهارم</strong>
+              <span class="text-xs text-slate-500">متن ۲۶ هزار کاراکتری تفکیکی بدون کم‌وکاست به همراه پرونده‌ها و مواد قانونی</span>
             </div>
           </div>
-          <span id="icon-full-s4" class="text-indigo-600 font-bold text-sm">باز کردن ▼</span>
+          <span id="icon-full-s4" class="text-xs font-bold text-amber-600">▼ باز کردن</span>
         </button>
-        <div id="full-s4" class="hidden mt-6 pt-6 border-t border-slate-100 prose-custom max-w-none">
+        <div id="full-s4" class="hidden p-6 md:p-8 border-t border-slate-100 prose-custom max-w-none">
           <h1 id="-">حقوق کسب و کار - جلسه چهارم (اسناد تجاری چک و سفته، قوانین حل و فصل دعاوی، داوری تجاری، ورشکستگی و قراردادهای پیشرفته تجاری)</h1>
 <p><strong>مدرس:</strong> استاد نصرالهی<br />
 <strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - دوره MBA (کد 0410)<br />
@@ -1847,112 +1730,99 @@ $$سند قانونی چک = برگه فیزیکی چک + ثبت ثبت‌نام
       </div>
     </section>
 
-    <!-- Tab 5: Interactive Legal Calculator -->
-    <section id="content-calculator" class="hidden space-y-8">
-      <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-950 text-white p-8 rounded-3xl shadow-md border border-indigo-900/40">
-        <span class="bg-amber-500/20 text-amber-300 text-xs px-3 py-1 rounded-full font-bold border border-amber-400/30">ابزار تعاملی و هوشمند حقوقی</span>
-        <h3 class="text-2xl font-black mt-2 mb-2">ماشین‌حساب خسارت تأخیر، وجه التزام قراردادی و چک صیاد</h3>
-        <p class="text-slate-200 text-xs md:text-sm leading-relaxed">
-          محاسبه دقیق وجه التزام مقطوع روزانه (ماده ۲۳۰ قانون مدنی) در مقایسه با خسارت تأخیر تأدیه بر اساس شاخص تورمی بانک مرکزی (ماده ۵۲۲ قانون آیین دادرسی مدنی) و شروط مطالبه مستقیم چک از مراجع ثبتی و قضایی.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- Input Form -->
-        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm space-y-5">
-          <h4 class="font-bold text-slate-900 text-sm border-b pb-2 flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
-            <span>ورودی‌های قرارداد / سند بدهی</span>
-          </h4>
-
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">مبلغ اصل بدهی / تعهد (تومان):</label>
-            <input type="number" id="calc-principal" value="500000000" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-sm font-mono text-left font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-            <span class="text-[10px] text-slate-400 mt-1 block">مثال: ۵۰۰,۰۰۰,۰۰۰ تومان</span>
-          </div>
-
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">تعداد روزهای تأخیر از سررسید:</label>
-            <input type="number" id="calc-days" value="60" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-sm font-mono text-left font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-          </div>
-
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">وجه التزام قراردادی روزانه (درصد یا مبلغ):</label>
-            <div class="grid grid-cols-2 gap-2">
-              <div>
-                <span class="text-[10px] text-slate-500 block mb-0.5">درصد روزانه (٪):</span>
-                <input type="number" step="0.1" id="calc-rate-daily" value="0.5" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-sm font-mono text-left font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-              </div>
-              <div>
-                <span class="text-[10px] text-slate-500 block mb-0.5">یا مبلغ مقطوع روزانه (تومان):</span>
-                <input type="number" id="calc-fixed-daily" value="0" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-sm font-mono text-left font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-              </div>
-            </div>
-            <span class="text-[10px] text-slate-400 mt-1 block">معمولاً ۰.۵٪ تا ۱٪ روزانه برای جلوگیری از سوءاستفاده ناشی از تورم</span>
-          </div>
-
-          <div>
-            <label class="block text-xs font-bold text-slate-700 mb-1">نرخ تورم سالانه بانک مرکزی (ماده ۵۲۲):</label>
-            <input type="number" id="calc-inflation" value="45" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-sm font-mono text-left font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-            <span class="text-[10px] text-slate-400 mt-1 block">میانگین سالانه رسمی جهت محاسبه تأخیر تأدیه قانونی</span>
-          </div>
-
-          <button onclick="runLegalCalculation()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-xl text-xs transition-all shadow-md">
-            محاسبه خسارات و مقایسه حقوقی
-          </button>
+    <!-- TAB: CALCULATOR -->
+    <section id="content-calculator" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-6">
+        <div>
+          <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">ابزار تعاملی حقوقی</span>
+          <h3 class="text-xl font-black text-slate-900 mt-2 mb-1">ماشین‌حساب خسارت تأخیر تأدیه و وجه التزام قراردادی</h3>
+          <p class="text-xs md:text-sm text-slate-600 leading-relaxed">
+            محاسبه دقیق وجه التزام مقطوع روزانه (ماده ۲۳۰ قانون مدنی) در مقایسه با خسارت تأخیر تأدیه بر اساس شاخص تورمی بانک مرکزی (ماده ۵۲۲ قانون آیین دادرسی مدنی) و شروط مطالبه مستقیم چک از مراجع قضایی.
+          </p>
         </div>
 
-        <!-- Results Output -->
-        <div class="lg:col-span-2 space-y-5">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="bg-white p-5 rounded-2xl border-2 border-indigo-500 shadow-sm">
-              <span class="text-xs font-bold text-indigo-700 block mb-1">۱. خسارت وجه التزام قراردادی (ماده ۲۳۰ م.م)</span>
-              <div id="res-contractual" class="text-2xl font-black text-indigo-950 font-mono mb-2">۱۵۰,۰۰۰,۰۰۰ تومان</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                قاضی ملزم به صدور حکم دقیقاً به همین میزان است؛ تورم، تمکن مالی یا دفاع بدهکار نمی‌تواند این مبلغ را تعدیل کند.
-              </p>
-            </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Input Form -->
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-4">
+            <h4 class="font-bold text-slate-900 text-sm border-b pb-2">ورودی‌های قرارداد / سند بدهی</h4>
 
-            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-              <span class="text-xs font-bold text-slate-600 block mb-1">۲. خسارت تأخیر تأدیه قانونی (ماده ۵۲۲ ق.آ.د.م)</span>
-              <div id="res-statutory" class="text-2xl font-black text-slate-800 font-mono mb-2">۳۶,۹۸۶,۳۰۱ تومان</div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                در صورت عدم درج وجه التزام، دادگاه فقط این مبلغ را بر اساس شاخص تورم محاسبه می‌کند (که بسیار کمتر از بازدهی بازار است).
-              </p>
-            </div>
-          </div>
-
-          <!-- Total Recoverable -->
-          <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-md border border-slate-800 flex flex-wrap items-center justify-between gap-4">
             <div>
-              <span class="text-xs text-amber-300 font-bold block mb-1">مجموع مطالبات قابل وصول (اصل بدهی + وجه التزام):</span>
-              <div id="res-total" class="text-2xl md:text-3xl font-black font-mono text-white">۶۵۰,۰۰۰,۰۰۰ تومان</div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">مبلغ اصل بدهی / تعهد (تومان):</label>
+              <input type="number" id="calc-principal" value="500000000" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm font-mono text-left font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <span class="text-[10px] text-slate-400 mt-1 block">مثال: ۵۰۰,۰۰۰,۰۰۰ تومان</span>
             </div>
-            <div class="bg-white/10 px-4 py-2 rounded-xl text-xs border border-white/20 text-center">
-              <span class="text-slate-300 block">اختلاف با تأخیر قانونی:</span>
-              <span id="res-diff" class="text-amber-300 font-bold font-mono text-sm">+۱۱۳,۰۱۳,۶۹۹ تومان</span>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">تعداد روزهای تأخیر از سررسید:</label>
+              <input type="number" id="calc-days" value="60" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm font-mono text-left font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">وجه التزام قراردادی روزانه (درصد یا مبلغ):</label>
+              <div class="grid grid-cols-2 gap-2">
+                <div>
+                  <span class="text-[10px] text-slate-500 block mb-0.5">درصد روزانه (٪):</span>
+                  <input type="number" step="0.1" id="calc-rate-daily" value="0.5" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm font-mono text-left font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                  <span class="text-[10px] text-slate-500 block mb-0.5">یا مبلغ مقطوع روزانه (تومان):</span>
+                  <input type="number" id="calc-fixed-daily" value="0" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm font-mono text-left font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+              </div>
+              <span class="text-[10px] text-slate-400 mt-1 block">معمولاً ۰.۵٪ تا ۱٪ روزانه در عرف تجاری</span>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">نرخ تورم سالانه بانک مرکزی (ماده ۵۲۲):</label>
+              <input type="number" id="calc-inflation" value="45" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm font-mono text-left font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <button onclick="runLegalCalculation()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition-all shadow">
+              محاسبه و مقایسه حقوقی
+            </button>
           </div>
 
-          <!-- Legal Notes & Checklist -->
-          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-            <h5 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-              <span>نکات طلایی استاد نصرالهی در دادخواست و وصول مطالبات</span>
-            </h5>
-            <ul class="text-xs text-slate-600 space-y-2 list-disc list-inside leading-relaxed">
-              <li><strong>در چک صیاد:</strong> فوراً از بانک «گواهی عدم پرداخت با کد رهگیری» بگیرید. ماده ۲۳ قانون جدید چک به شما اجازه می‌دهد مستقیماً از اجرای احکام دادگاه بدون دادخواست و بدون نوبت رسیدگی اجراییه بگیرید.</li>
-              <li><strong>توقیف اموال قبل از اطلاع بدهکار:</strong> دادخواست «تأمین خواسته» بدون پرداخت خسارت احتمالی بدهید تا بلافاصله حساب‌های بانکی و پلاک ثبتی ملک متعهد مسدود شود.</li>
-              <li><strong>بند عدم اسقاط تعهد:</strong> اگر در قرارداد نوشته نشود «مطالبه وجه التزام علاوه بر اجرای تعهد اصلی است»، بدهکار می‌تواند با پرداخت وجه التزام، از تحویل کالا یا انجام کار شانه خالی کند!</li>
-            </ul>
+          <!-- Results -->
+          <div class="lg:col-span-2 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="bg-blue-50/50 p-5 rounded-2xl border border-blue-200">
+                <span class="text-xs font-bold text-blue-700 block mb-1">۱. خسارت وجه التزام قراردادی (ماده ۲۳۰ م.م)</span>
+                <div id="res-contractual" class="text-2xl font-black text-blue-950 font-mono mb-1">۱۵۰,۰۰۰,۰۰۰ تومان</div>
+                <p class="text-xs text-slate-600 leading-relaxed">قاضی ملزم به صدور حکم دقیقاً به همین میزان است و حق تعدیل ندارد.</p>
+              </div>
+
+              <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+                <span class="text-xs font-bold text-slate-600 block mb-1">۲. خسارت تأخیر قانونی (ماده ۵۲۲ ق.آ.د.م)</span>
+                <div id="res-statutory" class="text-2xl font-black text-slate-800 font-mono mb-1">۳۶,۹۸۶,۳۰۱ تومان</div>
+                <p class="text-xs text-slate-600 leading-relaxed">در صورت نبود شرط وجه التزام، دادگاه فقط این مبلغ را بر اساس تورم صادر می‌کند.</p>
+              </div>
+            </div>
+
+            <div class="bg-slate-900 text-white p-5 rounded-2xl flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <span class="text-xs text-amber-300 font-bold block mb-1">مجموع مطالبات قابل وصول (اصل + وجه التزام):</span>
+                <div id="res-total" class="text-2xl md:text-3xl font-black font-mono text-white">۶۵۰,۰۰۰,۰۰۰ تومان</div>
+              </div>
+              <div class="bg-white/10 px-4 py-2 rounded-xl text-xs border border-white/20 text-center">
+                <span class="text-slate-300 block">اختلاف با خسارت قانونی:</span>
+                <span id="res-diff" class="text-amber-300 font-bold font-mono text-sm">+۱۱۳,۰۱۳,۶۹۹ تومان</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-amber-50/80 border border-amber-200 text-xs text-amber-950 space-y-1 leading-relaxed">
+              <strong class="block font-bold">⚠️ ۳ نکته حیاتی استاد نصرالهی در دادخواست وصول مطالبات:</strong>
+              <div>• در چک صیادی، مستقیماً از اجرای احکام دادگاه بدون دادخواست ماهوی تقاضای «صدور اجراییه مستقیم» کنید.</div>
+              <div>• همیشه همزمان تقاضای «تأمین خواسته» بدون پرداخت خسارت احتمالی بدهید تا بلافاصله حساب‌ها مسدود گردد.</div>
+              <div>• عبارت «علاوه بر انجام تعهد اصلی» را حتماً در قرارداد ذکر کنید تا بدهکار با پرداخت جریمه از تعهد شانه خالی نکند.</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Tab 6: Master Handbook -->
-    <section id="content-handbook" class="hidden space-y-8">
-      <div class="bg-white p-8 md:p-10 rounded-3xl border border-slate-200 shadow-sm prose-custom max-w-none">
+    <!-- TAB: HANDBOOK -->
+    <section id="content-handbook" class="tab-content hidden space-y-6">
+      <div class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm prose-custom max-w-none">
         <h1 id="mba">دانشنامه جامع و راهنمای حقوق کسب و کار (MBA دانشکده اقتصاد دانشگاه تهران)</h1>
 <p><strong>مدرس:</strong> استاد نصرالهی<br />
 <strong>دوره:</strong> مدیریت کسب‌وکار (MBA) - درس حقوق کسب و کار (کد 0410)<br />
@@ -3288,13 +3158,9 @@ $$سند قانونی چک = برگه فیزیکی چک + ثبت ثبت‌نام
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-950 text-slate-400 border-t border-slate-800 py-8 px-6 mt-12">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
-      <div>
-        <span class="text-slate-200 font-bold">دانشنامه تخصصی حقوق کسب و کار (MBA 0410)</span>
-        <span class="mx-2">•</span>
-        <span>دانشکده اقتصاد دانشگاه تهران</span>
-      </div>
+  <footer class="bg-slate-900 text-slate-400 py-8 px-6 border-t border-slate-800 text-center text-xs mt-auto">
+    <div class="max-w-4xl mx-auto space-y-3">
+      <p class="text-slate-300 font-bold">دانشنامه کاربردی و داشبورد تعاملی حقوق کسب و کار | دوره تخصصی MBA دانشکده اقتصاد دانشگاه تهران</p>
       <div class="inline-flex flex-wrap items-center justify-center gap-3">
   <span class="text-slate-300 text-xs md:text-sm">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
   <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-3 py-1 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
@@ -3302,44 +3168,41 @@ $$سند قانونی چک = برگه فیزیکی چک + ثبت ثبت‌نام
     <span>Parsa Rezaie</span>
   </a>
 </div>
-      <div class="text-slate-500">
-        طراحی و توسعه با استانداردهای رسمی داشبوردهای مدیریتی
-      </div>
     </div>
   </footer>
 
   <script>
     function switchTab(tabId) {
-      const tabs = ['overview', 's1', 's2', 's3', 's4', 'calculator', 'handbook'];
-      tabs.forEach(t => {
-        const btn = document.getElementById('tab-' + t);
-        const sec = document.getElementById('content-' + t);
-        if (t === tabId) {
-          if (btn) {
-            btn.classList.add('bg-indigo-600', 'text-white', 'shadow-md');
-            btn.classList.remove('bg-slate-800/80', 'text-slate-300');
-          }
-          if (sec) sec.classList.remove('hidden');
-        } else {
-          if (btn) {
-            btn.classList.remove('bg-indigo-600', 'text-white', 'shadow-md');
-            btn.classList.add('bg-slate-800/80', 'text-slate-300');
-          }
-          if (sec) sec.classList.add('hidden');
-        }
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach(content => content.classList.add('hidden'));
+
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      tabBtns.forEach(btn => {
+        btn.classList.remove('bg-white', 'text-slate-900', 'shadow-md');
+        btn.classList.add('bg-white/15', 'text-white');
       });
+
+      const selectedContent = document.getElementById('content-' + tabId);
+      if (selectedContent) selectedContent.classList.remove('hidden');
+
+      const selectedBtn = document.getElementById('tab-' + tabId);
+      if (selectedBtn) {
+        selectedBtn.classList.remove('bg-white/15', 'text-white');
+        selectedBtn.classList.add('bg-white', 'text-slate-900', 'shadow-md');
+      }
+
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    function toggleSessionFull(sId) {
-      const container = document.getElementById('full-' + sId);
-      const icon = document.getElementById('icon-full-' + sId);
-      if (container.classList.contains('hidden')) {
-        container.classList.remove('hidden');
-        icon.innerText = 'بستن ▲';
+    function toggleSection(id) {
+      const sec = document.getElementById(id);
+      const icon = document.getElementById('icon-' + id);
+      if (sec.classList.contains('hidden')) {
+        sec.classList.remove('hidden');
+        if (icon) icon.innerText = '▲ بستن';
       } else {
-        container.classList.add('hidden');
-        icon.innerText = 'باز کردن ▼';
+        sec.classList.add('hidden');
+        if (icon) icon.innerText = '▼ باز کردن';
       }
     }
 
@@ -3357,7 +3220,6 @@ $$سند قانونی چک = برگه فیزیکی چک + ثبت ثبت‌نام
         contractual = principal * (dailyRate / 100) * days;
       }
 
-      // Statutory delay damage based on inflation index approximation
       const statutory = principal * (inflation / 100) * (days / 365);
       const total = principal + contractual;
       const diff = contractual - statutory;
@@ -3368,7 +3230,6 @@ $$سند قانونی چک = برگه فیزیکی چک + ثبت ثبت‌نام
       document.getElementById('res-diff').innerText = (diff >= 0 ? '+' : '') + Math.round(diff).toLocaleString('fa-IR') + ' تومان';
     }
 
-    // Initial calculation
     window.addEventListener('DOMContentLoaded', runLegalCalculation);
   </script>
 </body>

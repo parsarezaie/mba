@@ -44,9 +44,17 @@
 
   <!-- Main Content: Course Dashboard Cards -->
   <main class="max-w-6xl mx-auto px-6 py-12 flex-1 w-full">
-    <div class="text-center mb-10">
-      <h2 class="text-2xl font-black text-slate-900 mb-2">دوره‌های تخصصی</h2>
-      <p class="text-slate-600 text-sm">برای ورود به داشبورد تعاملی هر درس روی دکمه مربوطه کلیک کنید:</p>
+    <!-- Section 1 Header: Core Courses -->
+    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-8">
+      <div>
+        <div class="inline-flex items-center gap-2 bg-slate-200 text-slate-700 rounded-full px-3.5 py-1 text-xs font-bold mb-2">
+          <span>کد دوره: MBA04-10-1</span>
+          <span>•</span>
+          <span class="text-emerald-700 font-extrabold">✓ دوره عمومی کامل شده</span>
+        </div>
+        <h2 class="text-2xl font-black text-slate-900">بخش اول: دروس عمومی و پایه MBA</h2>
+      </div>
+      <span class="text-xs text-slate-500 bg-white border border-slate-200 px-3.5 py-1.5 rounded-xl shadow-sm font-medium">دانشکده اقتصاد دانشگاه تهران</span>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -276,6 +284,88 @@
         </div>
       </div>
 
+    </div>
+
+    <!-- Section 2: Specialized Strategic Management Courses -->
+    <div class="mt-16 pt-12 border-t-2 border-slate-200">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 pb-4 mb-8">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/30 text-indigo-700 rounded-full px-3.5 py-1 text-xs font-bold mb-2">
+            <span>کد دوره: mba-sm05--06-1</span>
+            <span>•</span>
+            <span class="text-amber-600 font-extrabold flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+              در حال برگزاری
+            </span>
+          </div>
+          <h2 class="text-2xl font-black text-indigo-950">بخش دوم: دروس تخصصی گرایش مدیریت استراتژیک (Strategic Management)</h2>
+        </div>
+        <div class="bg-indigo-950 text-white rounded-2xl px-4 py-2 text-center text-xs shadow-sm border border-indigo-900">
+          <span class="font-black text-amber-300">۳ درس تخصصی</span> • <span class="text-indigo-200">۲ درس فعال و در حال مستندسازی</span>
+        </div>
+      </div>
+
+      <div id="specialized-courses-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Specialized Course Card Placeholder 1 -->
+        <div class="card-hover bg-white rounded-3xl border-2 border-indigo-200 shadow-sm overflow-hidden flex flex-col">
+          <div class="bg-gradient-to-r from-indigo-900 via-blue-900 to-slate-900 p-6 text-white">
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-amber-400 text-slate-900 px-3 py-0.5 rounded-full text-xs font-black tracking-wide">درس تخصصی ۱ (فعال)</span>
+              <span class="text-xs text-indigo-200 bg-white/10 px-3 py-1 rounded-xl">در حال استخراج جلسات</span>
+            </div>
+            <h3 class="text-xl font-black mb-1">درس تخصصی اول (گرایش استراتژی)</h3>
+            <p class="text-indigo-200 text-xs">دانشکده اقتصاد دانشگاه تهران • کد دوره: mba-sm05--06-1</p>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-slate-600 text-xs leading-relaxed">
+              واکاوی تفصیلی مباحث تدریس‌شده جلسه اخیر؛ استخراج صوتی و تطبیق خط‌به‌خط بدون فوت وقت جهت پوشش کامل غیبت در کلاس.
+            </p>
+            <div class="inline-flex items-center justify-center gap-2 w-full bg-indigo-50 border border-indigo-200 text-indigo-800 py-3 px-4 rounded-2xl font-bold text-xs">
+              <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
+              <span>در حال بارگذاری و پردازش جلسات...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specialized Course Card Placeholder 2 -->
+        <div class="card-hover bg-white rounded-3xl border-2 border-indigo-200 shadow-sm overflow-hidden flex flex-col">
+          <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-purple-950 p-6 text-white">
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-amber-400 text-slate-900 px-3 py-0.5 rounded-full text-xs font-black tracking-wide">درس تخصصی ۲ (فعال)</span>
+              <span class="text-xs text-indigo-200 bg-white/10 px-3 py-1 rounded-xl">در حال استخراج جلسات</span>
+            </div>
+            <h3 class="text-xl font-black mb-1">درس تخصصی دوم (گرایش استراتژی)</h3>
+            <p class="text-indigo-200 text-xs">دانشکده اقتصاد دانشگاه تهران • کد دوره: mba-sm05--06-1</p>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-slate-600 text-xs leading-relaxed">
+              تحلیل و درسنامه تخصصی جلسه اخیر؛ تبدیل صوت، استخراج چارچوب‌ها و مدل‌های تصمیم‌گیری مدیریتی با وسواس و دقت حداکثری.
+            </p>
+            <div class="inline-flex items-center justify-center gap-2 w-full bg-indigo-50 border border-indigo-200 text-indigo-800 py-3 px-4 rounded-2xl font-bold text-xs">
+              <span class="w-2 h-2 rounded-full bg-indigo-600 animate-pulse"></span>
+              <span>در حال بارگذاری و پردازش جلسات...</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specialized Course Card 3: Upcoming -->
+        <div class="bg-slate-50/80 rounded-3xl border border-dashed border-slate-300 shadow-none overflow-hidden flex flex-col opacity-75">
+          <div class="bg-slate-200 p-6 text-slate-700">
+            <div class="flex items-center justify-between mb-3">
+              <span class="bg-slate-300 text-slate-700 px-3 py-0.5 rounded-full text-xs font-bold">درس تخصصی ۳</span>
+              <span class="text-xs text-slate-500">به‌زودی</span>
+            </div>
+            <h3 class="text-xl font-black mb-1 text-slate-700">درس تخصصی سوم (گرایش استراتژی)</h3>
+            <p class="text-slate-500 text-xs">دانشکده اقتصاد دانشگاه تهران</p>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-slate-500 text-xs leading-relaxed">
+              این درس در مراحل بعدی تقویم آموزشی برگزار و داشبورد تعاملی آن به این بخش اضافه خواهد شد.
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </main>
 

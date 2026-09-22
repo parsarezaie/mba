@@ -169,28 +169,28 @@
         </div>
 
         <!-- Layer 1: Interactive Executive Slide Deck (Horizontal Slider) -->
-        <div class="p-6 md:p-8 bg-slate-900 border-b border-slate-800 text-white relative">
+        <div class="p-6 md:p-8 bg-gradient-to-br from-indigo-50/40 via-white to-slate-50 border-b border-slate-200 text-slate-800 relative">
           <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
             <div class="flex items-center gap-2.5">
-              <span class="w-2.5 h-2.5 rounded-full bg-indigo-400 animate-pulse"></span>
-              <h3 class="text-sm md:text-base font-extrabold text-white flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-indigo-600 animate-pulse"></span>
+              <h3 class="text-sm md:text-base font-black text-slate-900 flex items-center gap-2">
                 <span>🎬</span>
                 <span>اسلایدهای راهبردی و خلاصه مدیریتی (C-Suite Executive Slide Deck)</span>
               </h3>
             </div>
             <div class="flex items-center gap-3">
-              <span class="text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-400/30 px-3 py-1 rounded-full">
+              <span class="text-xs font-extrabold bg-indigo-50 text-indigo-700 border border-indigo-200/80 px-3 py-1 rounded-full">
                 اسلاید <span id="st-slide-current">۱</span> از <span id="st-slide-total">۷</span>
               </span>
               <!-- Navigation Controls -->
               <div class="flex items-center gap-2" dir="ltr">
                 <!-- Left Arrow Button: Next Slide in RTL -->
-                <button onclick="stNextSlide()" id="btn-st-next" title="اسلاید بعدی (کلید فلش چپ)" class="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 active:scale-95 text-white flex items-center gap-1.5 font-bold text-xs shadow-md transition-all">
+                <button onclick="stNextSlide()" id="btn-st-next" title="اسلاید بعدی (کلید فلش چپ)" class="px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 active:scale-95 text-white flex items-center gap-1.5 font-bold text-xs shadow-sm transition-all hover:scale-105">
                   <span>بعدی</span>
                   <span class="text-sm">❮</span>
                 </button>
                 <!-- Right Arrow Button: Prev Slide in RTL -->
-                <button onclick="stPrevSlide()" id="btn-st-prev" title="اسلاید قبلی (کلید فلش راست)" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-300 hover:text-white border border-slate-700 flex items-center gap-1.5 font-bold text-xs shadow transition-all">
+                <button onclick="stPrevSlide()" id="btn-st-prev" title="اسلاید قبلی (کلید فلش راست)" class="px-3.5 py-1.5 rounded-xl bg-white hover:bg-slate-100 active:scale-95 text-slate-700 hover:text-slate-900 border border-slate-200 flex items-center gap-1.5 font-bold text-xs shadow-xs transition-all hover:scale-105">
                   <span class="text-sm">❯</span>
                   <span>قبلی</span>
                 </button>
@@ -199,54 +199,54 @@
           </div>
 
           <!-- Slider Viewport -->
-          <div class="overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/80 shadow-2xl relative" dir="ltr">
+          <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm relative" dir="ltr">
             <div id="st-slides-track" class="flex transition-transform duration-500 ease-out" style="transform: translateX(0%);">
               
               <!-- Slide 1 -->
               <div class="w-full flex-shrink-0 p-6 md:p-8" dir="rtl" style="text-align: right;">
                 <div class="flex items-center justify-between gap-2 mb-3">
-                  <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-400/20 px-3 py-1 rounded-full">
+                  <span class="text-xs font-extrabold text-indigo-700 bg-indigo-50 border border-indigo-200/70 px-3 py-1 rounded-full">
                     پارادایم‌های بنیادین و ماهیت استراتژی
                   </span>
-                  <span class="text-xs text-slate-400 font-medium">اسلاید ۱ از ۷</span>
+                  <span class="text-xs text-slate-400 font-semibold">اسلاید ۱ از ۷</span>
                 </div>
-                <h4 class="text-xl md:text-2xl font-black text-white mb-1">
+                <h4 class="text-xl md:text-2xl font-black text-slate-900 mb-1">
                   پایان توهم برنامه‌ریزی: استراتژی در مواجهه با پیچیدگی
                 </h4>
-                <p class="text-xs text-indigo-300/80 font-mono tracking-wider mb-5">
+                <p class="text-xs text-indigo-600 font-semibold font-mono tracking-wider mb-5">
                   The End of Planning Illusion: Strategy in Complexity
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-5">
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>📌</span>
                       <span>سندپراکنی vs تفکر</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       اسناد ۵ ساله قطور توهم کنترل ایجاد می‌کنند؛ در پیچیدگی مدرن، تقویم‌گرایی و فرم‌پرکنی جایگزین اندیشیدن شده است.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>🎯</span>
                       <span>استراتژی به مثابه انتخاب</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       استراتژی سندی در کشو نیست، بلکه چارچوب تصمیم‌گیری شجاعانه رهبران در شرایط نااطمینانی شدید و کمبود داده است.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>⚠️</span>
                       <span>قاعده قطعی شکست</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       استراتژی تضمین موفقیت نیست؛ اما فقدان تفکر استراتژیک، ضامن قطعی فروپاشی سازمان در طوفان‌های اقتصادی است.
                     </p>
                   </div>
                 </div>
-                <div class="bg-indigo-950/60 border-r-4 border-indigo-400 p-3.5 rounded-xl text-xs md:text-sm text-slate-200">
-                  <strong class="text-indigo-300 font-bold ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
+                <div class="bg-indigo-50/70 border-r-4 border-indigo-600 p-4 rounded-xl text-xs md:text-sm text-slate-800">
+                  <strong class="text-indigo-900 font-black ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
                   بقا در اقتصاد متلاطم ایران با پیش‌بینی گذشته به دست نمی‌آید؛ باید فرضیه‌های نو ساخت و با چابکی در عمل انطباق یافت.
                 </div>
               </div>
@@ -254,48 +254,48 @@
               <!-- Slide 2 -->
               <div class="w-full flex-shrink-0 p-6 md:p-8" dir="rtl" style="text-align: right;">
                 <div class="flex items-center justify-between gap-2 mb-3">
-                  <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-400/20 px-3 py-1 rounded-full">
+                  <span class="text-xs font-extrabold text-indigo-700 bg-indigo-50 border border-indigo-200/70 px-3 py-1 rounded-full">
                     مهندسی مفهومی و مرزبندی واژگانی
                   </span>
-                  <span class="text-xs text-slate-400 font-medium">اسلاید ۲ از ۷</span>
+                  <span class="text-xs text-slate-400 font-semibold">اسلاید ۲ از ۷</span>
                 </div>
-                <h4 class="text-xl md:text-2xl font-black text-white mb-1">
+                <h4 class="text-xl md:text-2xl font-black text-slate-900 mb-1">
                   تفکیک سه‌گانه: تفکر استراتژیک، برنامه‌ریزی و مدیریت
                 </h4>
-                <p class="text-xs text-indigo-300/80 font-mono tracking-wider mb-5">
+                <p class="text-xs text-indigo-600 font-semibold font-mono tracking-wider mb-5">
                   The Strategic Trichotomy: Thinking vs. Planning vs. Management
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-5">
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>💡</span>
                       <span>تفکر استراتژیک (Thinking)</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       بعد بصیرتی و خلاقانه؛ خلق ایده‌های سنتزشده، کشف ناشناخته‌ها و برهم‌زدن قواعد سنتی بازی در صنعت.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>📐</span>
                       <span>برنامه‌ریزی (Planning)</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       بعد تحلیلی و کمی‌سازی؛ تبدیل بینش حاصل از تفکر به اهداف عملیاتی، گام‌های زمان‌بندی‌شده و تخصیص منابع.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>👑</span>
                       <span>مدیریت (Management)</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       چتر اجرایی و هماهنگ‌کننده؛ همسوسازی ساختار، انگیزش کارکنان و طراحی سیستم‌های کنترل استراتژیک.
                     </p>
                   </div>
                 </div>
-                <div class="bg-indigo-950/60 border-r-4 border-indigo-400 p-3.5 rounded-xl text-xs md:text-sm text-slate-200">
-                  <strong class="text-indigo-300 font-bold ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
+                <div class="bg-indigo-50/70 border-r-4 border-indigo-600 p-4 rounded-xl text-xs md:text-sm text-slate-800">
+                  <strong class="text-indigo-900 font-black ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
                   بزرگ‌ترین خطای رهبر ارشد این است که برنامه‌ریزی تقویمی را جایگزین اندیشیدن کند. اول کشف بصیرت، سپس برنامه‌ریزی!
                 </div>
               </div>
@@ -303,48 +303,48 @@
               <!-- Slide 3 -->
               <div class="w-full flex-shrink-0 p-6 md:p-8" dir="rtl" style="text-align: right;">
                 <div class="flex items-center justify-between gap-2 mb-3">
-                  <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-400/20 px-3 py-1 rounded-full">
+                  <span class="text-xs font-extrabold text-indigo-700 bg-indigo-50 border border-indigo-200/70 px-3 py-1 rounded-full">
                     لایه‌های دانش و بینش C-Suite
                   </span>
-                  <span class="text-xs text-slate-400 font-medium">اسلاید ۳ از ۷</span>
+                  <span class="text-xs text-slate-400 font-semibold">اسلاید ۳ از ۷</span>
                 </div>
-                <h4 class="text-xl md:text-2xl font-black text-white mb-1">
+                <h4 class="text-xl md:text-2xl font-black text-slate-900 mb-1">
                   علوم کاربردی در برابر علوم کارکردی و انباشتی
                 </h4>
-                <p class="text-xs text-indigo-300/80 font-mono tracking-wider mb-5">
+                <p class="text-xs text-indigo-600 font-semibold font-mono tracking-wider mb-5">
                   Applied vs. Accumulative Knowledge for Senior Executives
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-5">
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>⏳</span>
                       <span>کهنگی علوم کاربردی</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       ابزارهای حسابداری، بازاریابی و مالی اگرچه لازمند، اما در شوک‌های کلان به سرعت کهنه و بی‌اثر می‌شوند.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>🏛️</span>
                       <span>۴ ستون علوم کارکردی</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       دانش‌های بی‌پایان: «تاریخ» (شناخت الگوها)، «جامعه‌شناسی» (فهم توده‌ها)، «ادبیات/فلسفه» (استدلال) و «هنر» (شهود).
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>🔮</span>
                       <span>تاب‌آوری در طوفان</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       مدیرعاملی که درک تاریخی و جامعه‌شناختی نداشته باشد، رفتار متغیرهای کلان و بحران‌ها را هرگز پیش‌بینی نخواهد کرد.
                     </p>
                   </div>
                 </div>
-                <div class="bg-indigo-950/60 border-r-4 border-indigo-400 p-3.5 rounded-xl text-xs md:text-sm text-slate-200">
-                  <strong class="text-indigo-300 font-bold ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
+                <div class="bg-indigo-50/70 border-r-4 border-indigo-600 p-4 rounded-xl text-xs md:text-sm text-slate-800">
+                  <strong class="text-indigo-900 font-black ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
                   فنون کاربردی شما را به مدیریت می‌رسانند، اما تنها ژرفای تاریخی و جامعه‌شناختی است که از شما یک استراتژیست می‌سازد.
                 </div>
               </div>
@@ -352,48 +352,48 @@
               <!-- Slide 4 -->
               <div class="w-full flex-shrink-0 p-6 md:p-8" dir="rtl" style="text-align: right;">
                 <div class="flex items-center justify-between gap-2 mb-3">
-                  <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-400/20 px-3 py-1 rounded-full">
+                  <span class="text-xs font-extrabold text-indigo-700 bg-indigo-50 border border-indigo-200/70 px-3 py-1 rounded-full">
                     مدل ساختاری جین لیدکا (Jeanne Liedtka)
                   </span>
-                  <span class="text-xs text-slate-400 font-medium">اسلاید ۴ از ۷</span>
+                  <span class="text-xs text-slate-400 font-semibold">اسلاید ۴ از ۷</span>
                 </div>
-                <h4 class="text-xl md:text-2xl font-black text-white mb-1">
+                <h4 class="text-xl md:text-2xl font-black text-slate-900 mb-1">
                   معماری تفکر استراتژیک: ارکان ۵ گانه لیدکا
                 </h4>
-                <p class="text-xs text-indigo-300/80 font-mono tracking-wider mb-5">
+                <p class="text-xs text-indigo-600 font-semibold font-mono tracking-wider mb-5">
                   Jeanne Liedtka's 5-Pillar Strategic Architecture
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-5">
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>🌐</span>
                       <span>نگاه سیستمی و نیت استراتژیک</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       فهم کل‌نگر زنجیره ارزش در کنار تمرکز بی‌امان انرژی سازمان بر یک رویای بزرگ فراتر از منابع فعلی.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>🔬</span>
                       <span>فرضیه‌سازی هوشمند</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       برخورد علمی با ایده‌ها؛ فرضیه‌سازی جسورانه، تست سریع با حداقل هزینه و یادگیری بدون تعصب سازمانی.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>⚡</span>
                       <span>هوشمندی و تفکر در زمان</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       انعطاف برای شکار فرصت‌های نوظهور همزمان با اتصال ریشه‌های گذشته به آینده (Time Pacing).
                     </p>
                   </div>
                 </div>
-                <div class="bg-indigo-950/60 border-r-4 border-indigo-400 p-3.5 rounded-xl text-xs md:text-sm text-slate-200">
-                  <strong class="text-indigo-300 font-bold ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
+                <div class="bg-indigo-50/70 border-r-4 border-indigo-600 p-4 rounded-xl text-xs md:text-sm text-slate-800">
+                  <strong class="text-indigo-900 font-black ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
                   سازمان زنده در مرز نظم و آشوب حرکت می‌کند؛ تعادل میان نیت شفاف با انعطاف فرضیه‌محور، راز ماندگاری است.
                 </div>
               </div>
@@ -401,48 +401,48 @@
               <!-- Slide 5 -->
               <div class="w-full flex-shrink-0 p-6 md:p-8" dir="rtl" style="text-align: right;">
                 <div class="flex items-center justify-between gap-2 mb-3">
-                  <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-400/20 px-3 py-1 rounded-full">
+                  <span class="text-xs font-extrabold text-indigo-700 bg-indigo-50 border border-indigo-200/70 px-3 py-1 rounded-full">
                     پویایی استراتژی و کیس سامسونگ
                   </span>
-                  <span class="text-xs text-slate-400 font-medium">اسلاید ۵ از ۷</span>
+                  <span class="text-xs text-slate-400 font-semibold">اسلاید ۵ از ۷</span>
                 </div>
-                <h4 class="text-xl md:text-2xl font-black text-white mb-1">
+                <h4 class="text-xl md:text-2xl font-black text-slate-900 mb-1">
                   استراتژی قصدشده در برابر نوظهور: درس مینتزبرگ
                 </h4>
-                <p class="text-xs text-indigo-300/80 font-mono tracking-wider mb-5">
+                <p class="text-xs text-indigo-600 font-semibold font-mono tracking-wider mb-5">
                   Deliberate vs. Emergent Strategy: The Samsung Paradigm
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-5">
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>📉</span>
                       <span>استراتژی تحقق‌نیافته</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       اصطکاک واقعیت بازار بخش زیادی از برنامه‌های روی کاغذ را در همان ماه‌های اول باطل و غیرقابل اجرا می‌کند.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>🌱</span>
                       <span>استراتژی نوظهور (Emergent)</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       فرصت‌هایی که از خط مقدم با مشتری خلق می‌شوند (تحول سامسونگ از ماهی و شکر به الکترونیک و نیمه‌هادی).
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>🔄</span>
                       <span>سنتز استراتژی محقق‌شده</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       پیوند هوشمندانه چشم‌انداز بالا به پایین رهبران با بازخوردهای واقعی و فرصت‌های خلق‌شده از پایین به بالا.
                     </p>
                   </div>
                 </div>
-                <div class="bg-indigo-950/60 border-r-4 border-indigo-400 p-3.5 rounded-xl text-xs md:text-sm text-slate-200">
-                  <strong class="text-indigo-300 font-bold ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
+                <div class="bg-indigo-50/70 border-r-4 border-indigo-600 p-4 rounded-xl text-xs md:text-sm text-slate-800">
+                  <strong class="text-indigo-900 font-black ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
                   استراتژیست برتر کسی نیست که لجوجانه به نقشه اولیه بچسبد، بلکه کسی است که سریع‌تر پدیده‌های نوظهور را به آغوش بکشد.
                 </div>
               </div>
@@ -450,48 +450,48 @@
               <!-- Slide 6 -->
               <div class="w-full flex-shrink-0 p-6 md:p-8" dir="rtl" style="text-align: right;">
                 <div class="flex items-center justify-between gap-2 mb-3">
-                  <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-400/20 px-3 py-1 rounded-full">
+                  <span class="text-xs font-extrabold text-indigo-700 bg-indigo-50 border border-indigo-200/70 px-3 py-1 rounded-full">
                     آسیب‌شناسی و روانشناسی تصمیم‌گیری
                   </span>
-                  <span class="text-xs text-slate-400 font-medium">اسلاید ۶ از ۷</span>
+                  <span class="text-xs text-slate-400 font-semibold">اسلاید ۶ از ۷</span>
                 </div>
-                <h4 class="text-xl md:text-2xl font-black text-white mb-1">
+                <h4 class="text-xl md:text-2xl font-black text-slate-900 mb-1">
                   تله‌های شناختی مدیران در زیست‌بوم اقتصاد ایران
                 </h4>
-                <p class="text-xs text-indigo-300/80 font-mono tracking-wider mb-5">
+                <p class="text-xs text-indigo-600 font-semibold font-mono tracking-wider mb-5">
                   Cognitive Traps & Macro Navigation in Iranian Ecosystem
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-5">
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>⚓</span>
                       <span>تله هزینه غرق‌شده (Sunk Cost)</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       اصرار مهلک بر ادامه پروژه‌های زیان‌ده صرفاً به این دلیل که منابع و آبروی زیادی برای آن خرج شده است.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>💸</span>
                       <span>توهم سود اسمی ریالی</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       ناتوانی در تفکیک سود اسمی دفتری از بازده واقعی دلاری تورم‌زدایی‌شده در شرایط رکود تورمی و سرکوب مالی.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>🪤</span>
                       <span>فرصت‌های کاذب و پراکندگی</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       ورود هیجانی به کسب‌وکارهای ناهمخوان با قابلیت‌های محوری شرکت که توان رقابتی بنگاه را هدر می‌دهد.
                     </p>
                   </div>
                 </div>
-                <div class="bg-indigo-950/60 border-r-4 border-indigo-400 p-3.5 rounded-xl text-xs md:text-sm text-slate-200">
-                  <strong class="text-indigo-300 font-bold ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
+                <div class="bg-indigo-50/70 border-r-4 border-indigo-600 p-4 rounded-xl text-xs md:text-sm text-slate-800">
+                  <strong class="text-indigo-900 font-black ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
                   شجاعت متوقف کردن یک پروژه ناموفق، بارها از جسارت آغاز آن برای حفظ حیات مالی شرکت تعیین‌کننده‌تر است.
                 </div>
               </div>
@@ -499,48 +499,48 @@
               <!-- Slide 7 -->
               <div class="w-full flex-shrink-0 p-6 md:p-8" dir="rtl" style="text-align: right;">
                 <div class="flex items-center justify-between gap-2 mb-3">
-                  <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 border border-indigo-400/20 px-3 py-1 rounded-full">
+                  <span class="text-xs font-extrabold text-indigo-700 bg-indigo-50 border border-indigo-200/70 px-3 py-1 rounded-full">
                     پروتکل عملیاتی و مانیفست اجرایی
                   </span>
-                  <span class="text-xs text-slate-400 font-medium">اسلاید ۷ از ۷</span>
+                  <span class="text-xs text-slate-400 font-semibold">اسلاید ۷ از ۷</span>
                 </div>
-                <h4 class="text-xl md:text-2xl font-black text-white mb-1">
+                <h4 class="text-xl md:text-2xl font-black text-slate-900 mb-1">
                   چک‌لیست طلایی شنبه ساعت ۷ صبح مدیرعامل
                 </h4>
-                <p class="text-xs text-indigo-300/80 font-mono tracking-wider mb-5">
+                <p class="text-xs text-indigo-600 font-semibold font-mono tracking-wider mb-5">
                   The Saturday 7:00 AM C-Suite Action Protocol
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 mb-5">
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>🔍</span>
                       <span>ممیزی فرضیات بنیادین</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       آیا مفروضات ما پیرامون تورم، رگولاتوری، و کشش تقاضای مشتریان هنوز معتبر است یا توسط بازار ابطال شده؟
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>✂️</span>
                       <span>هرس نامتقارن (Pruning)</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       توقف فوری حداقل یک فعالیت یا پروژه کم‌بازده که انرژی و تمرکز تیم مدیریتی را بیهوده می‌بلعد.
                     </p>
                   </div>
-                  <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800">
-                    <div class="text-indigo-400 font-bold text-xs mb-1.5 flex items-center gap-1.5">
+                  <div class="bg-slate-50/90 hover:bg-indigo-50/30 p-4 rounded-xl border border-slate-200/80 transition-all">
+                    <div class="text-indigo-900 font-extrabold text-xs mb-1.5 flex items-center gap-1.5">
                       <span>🛡️</span>
                       <span>سناریونویسی بقا</span>
                     </div>
-                    <p class="text-slate-300 text-xs leading-relaxed">
+                    <p class="text-slate-600 text-xs leading-relaxed">
                       آماده‌سازی ۲ اقدام پیش‌دستانه در برابر جهش احتمالی ارز، شوک‌های رگولاتوری یا زنجیره تامین برای ۳۰ روز آینده.
                     </p>
                   </div>
                 </div>
-                <div class="bg-indigo-950/60 border-r-4 border-indigo-400 p-3.5 rounded-xl text-xs md:text-sm text-slate-200">
-                  <strong class="text-indigo-300 font-bold ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
+                <div class="bg-indigo-50/70 border-r-4 border-indigo-600 p-4 rounded-xl text-xs md:text-sm text-slate-800">
+                  <strong class="text-indigo-900 font-black ml-1">🎯 پیام مدیرعامل (CEO Mandate):</strong>
                   تفکر استراتژیک یک رویداد سالانه نیست؛ نظم فکری مداومی است که هر شنبه صبح با پرسش از چرایی اقدامات آغاز می‌شود.
                 </div>
               </div>
@@ -553,8 +553,8 @@
             <div class="flex items-center gap-1.5" id="st-slide-dots">
               <!-- Rendered dynamically by JavaScript -->
             </div>
-            <div class="text-[11px] text-slate-400 font-medium">
-              💡 با کلیک روی دکمه <kbd class="bg-slate-800 border border-slate-700 px-1.5 py-0.5 rounded text-indigo-300">بعدی ❮</kbd> (یا کلیدهای جهت‌نمای کیبورد) ورق بزنید.
+            <div class="text-[11px] text-slate-500 font-medium">
+              💡 با کلیک روی دکمه <kbd class="bg-white border border-slate-200 px-1.5 py-0.5 rounded text-indigo-600 font-bold shadow-xs">بعدی ❮</kbd> (یا کلیدهای جهت‌نمای کیبورد) ورق بزنید.
             </div>
           </div>
         </div>
@@ -1333,9 +1333,9 @@
         <span>دانشکده اقتصاد دانشگاه تهران (گرایش مدیریت استراتژیک MBA)</span>
       </div>
       <div class="flex items-center gap-3">
-        <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-3 py-1.5 rounded-lg font-bold transition shadow">
+        <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
           <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          <span>Parsa Rezaie in LinkedIn</span>
+          <span>Parsa Rezaie</span>
         </a>
       </div>
     </div>
@@ -1450,8 +1450,8 @@
         const dot = document.createElement('button');
         dot.title = `اسلاید ${i + 1}`;
         dot.className = (i === stCurrentSlide)
-          ? 'h-2.5 w-7 rounded-full bg-indigo-400 transition-all shadow-sm'
-          : 'h-2.5 w-2.5 rounded-full bg-slate-700 hover:bg-slate-500 transition-all';
+          ? 'h-2.5 w-7 rounded-full bg-indigo-600 transition-all shadow-sm'
+          : 'h-2.5 w-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all';
         dot.onclick = () => stGoToSlide(i);
         dotsContainer.appendChild(dot);
       }

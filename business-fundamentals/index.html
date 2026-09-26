@@ -71,9 +71,9 @@
         <div>
           <div class="flex flex-wrap items-center gap-2 mb-3">
             <div class="inline-flex items-center gap-2 bg-indigo-500/20 border border-indigo-400/30 rounded-full px-4 py-1 text-xs font-semibold text-indigo-200">
-              <span>🎓 دانشکدگان مدیریت دانشگاه تهران</span>
+              <span>🎓 دانشکده اقتصاد دانشگاه تهران</span>
               <span>•</span>
-              <span>ماژول تخصصی مبانی مدیریت (کد mba-bf04-1)</span>
+              <span>دوره تخصصی MBA (کد 0410)</span>
             </div>
             <!-- THE ONLY BACK BUTTON -->
             <a href="../" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white border border-white/30 rounded-full px-3.5 py-1 text-xs font-bold transition-all shadow-sm hover:scale-105 backdrop-blur-md">
@@ -96,16 +96,28 @@
         </div>
       </div>
 
-      <!-- Navigation Tabs strictly inside Header, NO sticky nav! -->
+      <!-- Navigation Tabs strictly adhering to Reference Multi-Tab Architecture -->
       <div class="flex flex-wrap items-center gap-2 mt-7 border-t border-white/15 pt-4">
-        <button onclick="switchTab('sessions')" id="tab-btn-sessions" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-bold transition-all bg-white text-slate-900 shadow-md active">
-          📚 جلسات و خلاصه مدیریتی
+        <button onclick="switchTab('overview')" id="tab-btn-overview" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-bold transition-all bg-white text-slate-900 shadow-md active">
+          📊 داشبورد کلان دوره
         </button>
-        <button onclick="switchTab('handbook')" id="tab-btn-handbook" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
-          📖 هندبوک جامع و مرجع یکپارچه
+        <button onclick="switchTab('s01')" id="tab-btn-s01" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۱: سازمان و پارتو
+        </button>
+        <button onclick="switchTab('s02')" id="tab-btn-s02" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۲: مکاتب کلاسیک و POLC
+        </button>
+        <button onclick="switchTab('s03')" id="tab-btn-s03" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۳: روابط انسانی و انگیزش
+        </button>
+        <button onclick="switchTab('s04')" id="tab-btn-s04" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۴: ارتباطات و رهبری
         </button>
         <button onclick="switchTab('simulator')" id="tab-btn-simulator" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
-          🧭 ابزار تعاملی: شبیه‌ساز مهارت کاتز و رهبری بلیک-موتن
+          🧭 ابزار تعاملی: شبیه‌ساز رهبری و مهارت‌ها
+        </button>
+        <button onclick="switchTab('handbook')" id="tab-btn-handbook" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          📖 دانشنامه جامع متنی
         </button>
       </div>
     </div>
@@ -114,16 +126,121 @@
   <!-- Main Content Area -->
   <main class="max-w-6xl mx-auto px-6 py-10 flex-1 w-full">
 
-    <!-- Tab 1: Sessions View -->
-    <div id="tab-content-sessions" class="tab-view space-y-8">
+    <!-- Tab 1: Overview Tab (داشبورد کلان دوره) -->
+    <div id="tab-content-overview" class="tab-view space-y-8">
+      
+      <!-- Master Doctrine Banner -->
+      <div class="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-amber-50 to-orange-50 border-r-4 border-amber-500 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl">💡</span>
+            <span class="text-xs font-black uppercase tracking-wider text-amber-800">آموزه بنیادین دوره مبانی مدیریت (Core Doctrine)</span>
+          </div>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 leading-snug">
+            «سازمان ابزار است و انسان مقصود؛ مدیریت علمی زمانی ثمربخش است که ساختارهای عقلانی با درک عمیق انگیزه‌های انسانی پیوند بخورد.»
+          </h2>
+          <p class="text-xs md:text-sm text-slate-600 leading-relaxed max-w-3xl">
+            پیتر دراکر یادآور می‌شود که کارایی یعنی انجام درست کارها و اثربخشی یعنی انجام کارهای درست. بهره‌وری حاصل‌ضرب این دو است و رهبران هوشمند کسانی هستند که سبک هدایت خود را متناسب با سطح شایستگی و آمادگی پیروان تنظیم می‌کنند.
+          </p>
+        </div>
+        <button onclick="switchTab('s01')" class="shrink-0 bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs px-5 py-3 rounded-2xl shadow transition-all hover:scale-105">
+          شروع مطالعه از جلسه ۱ ➔
+        </button>
+      </div>
 
-      <!-- Session 01 Card -->
-      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden transition-all hover:shadow-md">
-        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white relative">
+      <!-- Roadmap Grid (4 Sessions) -->
+      <div>
+        <h3 class="text-lg font-black text-slate-900 mb-4 flex items-center gap-2">
+          <span>🗺️</span>
+          <span>نقشه راه ۴ جلسه تخصصی دوره</span>
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="w-8 h-8 rounded-xl bg-indigo-50 text-indigo-700 font-black flex items-center justify-center text-sm border border-indigo-100">۱</span>
+                <span class="text-[11px] text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg font-medium">۴ ساعت تدریس</span>
+              </div>
+              <h4 class="text-base font-black text-slate-900 mb-1.5">چیستی سازمان، سطوح مدیریت و اصل پارتو</h4>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                تفکیک کارایی و اثربخشی، هرم سطوح سه‌گانه مدیریت، ماتریس مهارت‌های رابرت کاتز، و عارضه‌یابی تخصیص منابع با قانون ۸۰/۲۰.
+              </p>
+            </div>
+            <button onclick="switchTab('s01')" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 flex items-center gap-1.5 pt-3 border-t border-slate-100">
+              <span>مشاهده خلاصه و جزئیات جلسه اول</span>
+              <span>➔</span>
+            </button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="w-8 h-8 rounded-xl bg-indigo-50 text-indigo-700 font-black flex items-center justify-center text-sm border border-indigo-100">۲</span>
+                <span class="text-[11px] text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg font-medium">۴ ساعت تدریس</span>
+              </div>
+              <h4 class="text-base font-black text-slate-900 mb-1.5">مکاتب کلاسیک: تیلور، فایول POLC و وبر</h4>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                مدیریت علمی و مطالعه زمان-حرکت تیلور، فرآیند چهارگانه POLC، اصول چهارده‌گانه فایول، بروکراسی عقلایی وبر و یکپارچه‌سازی تعارض فالت.
+              </p>
+            </div>
+            <button onclick="switchTab('s02')" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 flex items-center gap-1.5 pt-3 border-t border-slate-100">
+              <span>مشاهده خلاصه و جزئیات جلسه دوم</span>
+              <span>➔</span>
+            </button>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="w-8 h-8 rounded-xl bg-indigo-50 text-indigo-700 font-black flex items-center justify-center text-sm border border-indigo-100">۳</span>
+                <span class="text-[11px] text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg font-medium">۴ ساعت تدریس</span>
+              </div>
+              <h4 class="text-base font-black text-slate-900 mb-1.5">روابط انسانی و نظریات انگیزش</h4>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                آزمایش‌های هاثورن التون مایو، هرم نیازهای مازلو، تئوری X و Y مک‌گریگور، تفکیک بهداشت-انگیزش هرزبرگ و نیازهای سه‌گانه مک‌کللند.
+              </p>
+            </div>
+            <button onclick="switchTab('s03')" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 flex items-center gap-1.5 pt-3 border-t border-slate-100">
+              <span>مشاهده خلاصه و جزئیات جلسه سوم</span>
+              <span>➔</span>
+            </button>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="w-8 h-8 rounded-xl bg-indigo-50 text-indigo-700 font-black flex items-center justify-center text-sm border border-indigo-100">۴</span>
+                <span class="text-[11px] text-slate-500 bg-slate-100 px-2.5 py-1 rounded-lg font-medium">۴ ساعت تدریس</span>
+              </div>
+              <h4 class="text-base font-black text-slate-900 mb-1.5">فرآیند ارتباطات و مدل‌های رهبری موقعیتی</h4>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                چرخه ارتباطات و پنجره جوهری، شبکه مدیریت ۹×۹ بلیک و موتن، مدل اقتضایی فیدلر و تطبیق سبک‌های S1 تا S4 هرسی-بلانچارد با بلوغ پیروان.
+              </p>
+            </div>
+            <button onclick="switchTab('s04')" class="text-xs font-bold text-indigo-600 hover:text-indigo-800 flex items-center gap-1.5 pt-3 border-t border-slate-100">
+              <span>مشاهده خلاصه و جزئیات جلسه چهارم</span>
+              <span>➔</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tab 2: Session 01 View (Two-Layer) -->
+    <div id="tab-content-s01" class="tab-view hidden space-y-6">
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white">
           <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
             <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20 text-indigo-200">
               <span>💡</span>
-              <span>جلسه اول (مفاهیم پایه)</span>
+              <span>جلسه اول</span>
             </span>
             <span class="text-xs text-indigo-200 bg-white/10 px-3 py-1 rounded-lg border border-white/10 font-medium">
               ۴ ساعت تدریس • مهارت‌های کاتز، سطوح مدیریت و پارتو
@@ -134,8 +251,8 @@
             تفکیک کارایی و اثربخشی، هرم سطوح مدیریت، ماتریس سه‌بعدی مهارت‌های کاتز و کاربرد قانون پارتو (۸۰/۲۰) در عارضه‌یابی شرکتی.
           </p>
         </div>
-        <!-- Executive Summary Highlights -->
-        <div class="p-6 md:p-8 border-b border-slate-100 bg-slate-50/50">
+        <!-- Executive Highlights -->
+        <div class="p-6 md:p-8 bg-slate-50/50 border-b border-slate-200">
           <h3 class="text-sm font-black text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
             خلاصه نکات کلیدی و دستاوردهای مدیریتی جلسه
@@ -154,10 +271,9 @@
               ۸۰ درصد سود شرکت از ۲۰ درصد مشتریان کلیدی و ۸۰ درصد عیوب از ۲۰ درصد خطاهای ریشه‌ای ناشی می‌شود. تمرکز بر اقلیت حیاتی، جوهره بقاست.
             </div>
           </div>
-          <!-- Toggle Full Notes Button -->
           <div class="mt-6 flex justify-end">
             <button onclick="toggleSessionFull('s01')" id="btn-toggle-s01" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow transition-all hover:scale-105">
-              <span>📖 مشاهده متن کامل جزوه و فرمول‌ها</span>
+              <span>📖 مشاهده متن کامل جزوه تفصیلی جلسه اول</span>
               <span id="icon-toggle-s01">▼</span>
             </button>
           </div>
@@ -266,17 +382,50 @@
 <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۴. هرم سازمانی و سطوح سه‌گانه مدیریت</h3>
 سازمان‌ها برای توزیع بهینه اختیارات و کنترل، به سه لایه ساختاری تفکیک می‌شوند:
 
-<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>           / \
-          /   \     مدیریت عالی (Top Management)
-         /     \    افق زمانی: ۳ تا ۵ ساله | تمرکز: استراتژیک، جهت‌گیری کلان
-        /-------\
-       /         \  مدیریت میانی (Middle Management)
-      /           \ افق زمانی: ۱ ساله | تمرکز: تاکتیکی، ترجمه استراتژی به برنامه
-     /-------------\
-    /               \ مدیریت خط مقدم / عملیاتی (First-Line Management)
-   /                 \ افق زمانی: روزانه، هفتگی | تمرکز: عملیاتی، اجرای مستقیم
-  /-------------------\
-</code></pre>
+<div dir="rtl" style="text-align: right;" class="my-6 p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-500/30 text-white shadow-xl">
+  <div class="flex items-center justify-between mb-4 border-b border-indigo-500/20 pb-3">
+    <div class="flex items-center gap-2">
+      <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600 text-white text-xs font-bold">🏛️</span>
+      <span class="font-bold text-sm text-indigo-200">هرم سطوح سه‌گانه مدیریت و افق‌های تصمیم‌گیری</span>
+    </div>
+    <span class="text-[10px] px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">Organizational Hierarchy</span>
+  </div>
+  <div class="space-y-3">
+    <!-- Top Management -->
+    <div class="p-3.5 rounded-xl bg-indigo-900/60 border border-indigo-500/50 flex flex-col md:flex-row md:items-center justify-between gap-2">
+      <div>
+        <span class="text-xs font-black text-amber-300">۱. مدیریت عالی (Top Management - CEO & Board)</span>
+        <p class="text-[11px] text-slate-300 mt-0.5">تدوین چشم‌انداز، استراتژی‌های بقا و تعامل با اکوسیستم کلان</p>
+      </div>
+      <div class="flex items-center gap-2 text-[10px]">
+        <span class="bg-indigo-700/60 px-2 py-0.5 rounded text-indigo-200">افق ۳ تا ۵ ساله</span>
+        <span class="bg-amber-400/20 px-2 py-0.5 rounded text-amber-300 font-bold">۵۰٪ مهارت ادراکی</span>
+      </div>
+    </div>
+    <!-- Middle Management -->
+    <div class="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700 flex flex-col md:flex-row md:items-center justify-between gap-2">
+      <div>
+        <span class="text-xs font-black text-sky-300">۲. مدیریت میانی (Middle Management - مدیران دپارتمان‌ها)</span>
+        <p class="text-[11px] text-slate-300 mt-0.5">ترجمه استراتژی به برنامه‌های اجرایی و پیوند صف و ستاد</p>
+      </div>
+      <div class="flex items-center gap-2 text-[10px]">
+        <span class="bg-slate-700 px-2 py-0.5 rounded text-slate-200">افق سالانه</span>
+        <span class="bg-emerald-400/20 px-2 py-0.5 rounded text-emerald-300 font-bold">۴۰٪ مهارت انسانی</span>
+      </div>
+    </div>
+    <!-- First-Line Management -->
+    <div class="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/60 flex flex-col md:flex-row md:items-center justify-between gap-2">
+      <div>
+        <span class="text-xs font-black text-teal-300">۳. مدیریت خط مقدم / سرپرستی (First-Line / Operational)</span>
+        <p class="text-[11px] text-slate-300 mt-0.5">هدایت پرسنل عملیاتی، کنترل کیفیت لحظه‌ای و حل مسائل روزمره</p>
+      </div>
+      <div class="flex items-center gap-2 text-[10px]">
+        <span class="bg-slate-700 px-2 py-0.5 rounded text-slate-200">افق روزانه / هفتگی</span>
+        <span class="bg-teal-400/20 px-2 py-0.5 rounded text-teal-300 font-bold">۵۰٪ مهارت فنی</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت عالی (Top Managers):</strong> مدیرعامل (CEO)، اعضای هیئت مدیره، معاونان ارشد. وظیفه اصلی: تدوین چشم‌انداز، بقای بلندمدت سازمان، تعامل با محیط بیرونی و سهامداران.</span></li>
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت میانی (Middle Managers):</strong> مدیران کارخانه، مدیران دپارتمان‌ها (تولید، بازاریابی، مالی، R&D). وظیفه اصلی: شکستن اهداف کلان به برنامه‌های عملیاتی و میانجی‌گری میان استراتژی و اجرا.</span></li>
@@ -401,14 +550,16 @@
 
         </div>
       </div>
+    </div>
 
-      <!-- Session 02 Card -->
-      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden transition-all hover:shadow-md">
-        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white relative">
+    <!-- Tab 3: Session 02 View (Two-Layer) -->
+    <div id="tab-content-s02" class="tab-view hidden space-y-6">
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white">
           <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
             <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20 text-indigo-200">
               <span>⚙️</span>
-              <span>جلسه دوم (مکاتب کلاسیک)</span>
+              <span>جلسه دوم</span>
             </span>
             <span class="text-xs text-indigo-200 bg-white/10 px-3 py-1 rounded-lg border border-white/10 font-medium">
               ۴ ساعت تدریس • تیلور، فایول POLC، ماکس وبر و مری پارکر فالت
@@ -419,7 +570,7 @@
             مطالعه زمان و حرکت تیلور، کارکردهای چهارگانه فایول (برنامه‌ریزی، سازماندهی، رهبری، کنترل)، ویژگی‌های بروکراسی وبر و یکپارچه‌سازی تعارض فالت.
           </p>
         </div>
-        <div class="p-6 md:p-8 border-b border-slate-100 bg-slate-50/50">
+        <div class="p-6 md:p-8 bg-slate-50/50 border-b border-slate-200">
           <h3 class="text-sm font-black text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
             خلاصه نکات کلیدی و دستاوردهای مدیریتی جلسه
@@ -440,7 +591,7 @@
           </div>
           <div class="mt-6 flex justify-end">
             <button onclick="toggleSessionFull('s02')" id="btn-toggle-s02" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow transition-all hover:scale-105">
-              <span>📖 مشاهده متن کامل جزوه و فرمول‌ها</span>
+              <span>📖 مشاهده متن کامل جزوه تفصیلی جلسه دوم</span>
               <span id="icon-toggle-s02">▼</span>
             </button>
           </div>
@@ -522,16 +673,45 @@
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">رهبری / هدایت (Leading / Directing):</strong> انگیزش پرسنل، ارتباط مؤثر، هدایت تیم‌ها و حل تعارضات رفتاری.</span></li>
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">کنترل (Controlling):</strong> سنجش عملکرد واقعی در مقایسه با استانداردهای برنامه‌ریزی، تحلیل انحرافات و اعمال اقدامات اصلاحی.</span></li>
 
-<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>┌────────────────────────────────────────────────────────┐
-│               فرآیند جامع مدیریت (POLC)               │
-└────────────────────────────────────────────────────────┘
-       │                                          ▲
-       ▼                                          │
- ┌───────────┐      ┌───────────┐      ┌───────────┐      ┌───────────┐
- │Planning   │ ──►  │Organizing │ ──►  │Leading    │ ──►  │Controlling│
- │برنامه‌ریزی │      │سازماندهی   │      │رهبری و جهت │      │سنجش وکنترل │
- └───────────┘      └───────────┘      └───────────┘      └───────────┘
-</code></pre>
+<div dir="rtl" style="text-align: right;" class="my-6 p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-500/30 text-white shadow-xl">
+  <div class="flex items-center justify-between mb-4 border-b border-indigo-500/20 pb-3">
+    <div class="flex items-center gap-2">
+      <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600 text-white text-xs font-bold">🔄</span>
+      <span class="font-bold text-sm text-indigo-200">فرآیند پیوسته و چهارگانه مدیریت (POLC Framework)</span>
+    </div>
+    <span class="text-[10px] px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">Henri Fayol Core Functions</span>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+    <div class="p-3.5 rounded-xl bg-slate-800/90 border border-indigo-500/30 hover:border-indigo-400 transition-all">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-xs font-black text-indigo-300">۱. برنامه‌ریزی (P)</span>
+        <span class="text-[10px] text-indigo-400 font-mono">Planning</span>
+      </div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">تعیین چشم‌انداز، هدف‌گذاری کمی و تدوین نقشه‌های اقدام</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-slate-800/90 border border-indigo-500/30 hover:border-indigo-400 transition-all">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-xs font-black text-indigo-300">۲. سازماندهی (O)</span>
+        <span class="text-[10px] text-indigo-400 font-mono">Organizing</span>
+      </div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">تخصیص بهینه منابع، تقسیم وظایف و طراحی ساختار اختیارات</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-slate-800/90 border border-indigo-500/30 hover:border-indigo-400 transition-all">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-xs font-black text-indigo-300">۳. رهبری و هدایت (L)</span>
+        <span class="text-[10px] text-indigo-400 font-mono">Leading</span>
+      </div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">انگیزش، ارتباط مؤثر، حل تعارض و همسوسازی دل‌ها و ذهن‌ها</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-slate-800/90 border border-indigo-500/30 hover:border-indigo-400 transition-all">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-xs font-black text-indigo-300">۴. سنجش و کنترل (C)</span>
+        <span class="text-[10px] text-indigo-400 font-mono">Controlling</span>
+      </div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">پایش عملکرد با شاخص‌ها، کشف انحرافات و اصلاح بهنگام</p>
+    </div>
+  </div>
+</div>
 
 <h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">اصول چهارده‌گانه فایول (Fayol's 14 Principles):</h4>
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">تقسیم کار (Division of Work):</strong> تخصص‌گرایی سبب افزایش مهارت و کارایی می‌شود.</span></li>
@@ -646,14 +826,16 @@
 
         </div>
       </div>
+    </div>
 
-      <!-- Session 03 Card -->
-      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden transition-all hover:shadow-md">
-        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white relative">
+    <!-- Tab 4: Session 03 View (Two-Layer) -->
+    <div id="tab-content-s03" class="tab-view hidden space-y-6">
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white">
           <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
             <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20 text-indigo-200">
               <span>👥</span>
-              <span>جلسه سوم (روابط انسانی و انگیزش)</span>
+              <span>جلسه سوم</span>
             </span>
             <span class="text-xs text-indigo-200 bg-white/10 px-3 py-1 rounded-lg border border-white/10 font-medium">
               ۴ ساعت تدریس • هاثورن، مازلو، مک‌گریگور، هرزبرگ و مک‌کللند
@@ -664,7 +846,7 @@
             کشف سازمان غیررسمی در هاثورن، سلسله‌مراتب مازلو، اثر پیگمالیون در تئوری X/Y، تفکیک عوامل بهداشتی و انگیزشی هرزبرگ و نیازهای سه‌گانه مک‌کللند.
           </p>
         </div>
-        <div class="p-6 md:p-8 border-b border-slate-100 bg-slate-50/50">
+        <div class="p-6 md:p-8 bg-slate-50/50 border-b border-slate-200">
           <h3 class="text-sm font-black text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
             خلاصه نکات کلیدی و دستاوردهای مدیریتی جلسه
@@ -685,7 +867,7 @@
           </div>
           <div class="mt-6 flex justify-end">
             <button onclick="toggleSessionFull('s03')" id="btn-toggle-s03" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow transition-all hover:scale-105">
-              <span>📖 مشاهده متن کامل جزوه و فرمول‌ها</span>
+              <span>📖 مشاهده متن کامل جزوه تفصیلی جلسه سوم</span>
               <span id="icon-toggle-s03">▼</span>
             </button>
           </div>
@@ -752,22 +934,37 @@
 <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۳. سلسله‌مراتب نیازهای آبراهام مازلو (Maslow's Hierarchy of Needs)</h3>
 آبراهام مازلو در سال ۱۹۴۳ نظریه نیازهای انسانی را در قالب یک هرم پنج‌طبقه فرموله کرد.
 
-<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>                  /\
-                 /  \      خودشکوفایی (Self-Actualization)
-                /----\     تحقق حداکثر پتانسیل فردی، خلق ارزش و معنا
-               /      \
-              /--------\   نیاز به احترام و قدردانی (Esteem Needs)
-             /          \  منزلت اجتماعی، تقدیر، استقلال، حس کفایت
-            /------------\
-           /              \  نیازهای اجتماعی و عاطفی (Social & Belonging)
-          /----------------\ دوستی، پذیرش در گروه، تعلق، ارتباط صمیمانه
-         /                  \
-        /--------------------\ نیازهای امنیتی (Safety & Security Needs)
-       /                      \امنیت شغلی، ایمنی فیزیکی، بیمه، ثبات مالی
-      /------------------------\
-     /                          \نیازهای زیستی و فیزیولوژیک (Physiological)
-    /----------------------------\آب، غذا، خواب، مسکن، حقوق پایه معیشتی
-</code></pre>
+<div dir="rtl" style="text-align: right;" class="my-6 p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-500/30 text-white shadow-xl">
+  <div class="flex items-center justify-between mb-4 border-b border-indigo-500/20 pb-3">
+    <div class="flex items-center gap-2">
+      <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600 text-white text-xs font-bold">🔼</span>
+      <span class="font-bold text-sm text-indigo-200">سلسله‌مراتب پنج‌گانه نیازهای آبراهام مازلو</span>
+    </div>
+    <span class="text-[10px] px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">Maslow's Hierarchy</span>
+  </div>
+  <div class="space-y-2 max-w-xl mx-auto">
+    <div class="p-2.5 rounded-xl bg-indigo-500/30 border border-indigo-400/50 text-center">
+      <span class="text-xs font-black text-amber-300">۵. خودشکوفایی (Self-Actualization)</span>
+      <p class="text-[11px] text-slate-200">تحقق حداکثر پتانسیل درونی، معنابخشی و خلاقیت ناب</p>
+    </div>
+    <div class="p-2.5 rounded-xl bg-indigo-600/30 border border-indigo-500/40 text-center">
+      <span class="text-xs font-black text-indigo-200">۴. احترام و منزلت (Esteem Needs)</span>
+      <p class="text-[11px] text-slate-200">شأن اجتماعی، قدردانی واقعی، ارتقا و حس ارزشمندی</p>
+    </div>
+    <div class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-center">
+      <span class="text-xs font-black text-sky-300">۳. تعلق اجتماعی و عاطفی (Social & Belonging)</span>
+      <p class="text-[11px] text-slate-200">دوستی، پذیرش در گروه کاری، روابط صمیمانه و هویت جمعی</p>
+    </div>
+    <div class="p-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-center">
+      <span class="text-xs font-black text-teal-300">۲. امنیت و ثبات (Safety & Security)</span>
+      <p class="text-[11px] text-slate-200">امنیت شغلی، پوشش بیمه، ثبات درآمد و محیط کاری ایمن</p>
+    </div>
+    <div class="p-2.5 rounded-xl bg-slate-900 border border-slate-700/80 text-center">
+      <span class="text-xs font-black text-emerald-300">۱. نیازهای زیستی و فیزیولوژیک (Physiological)</span>
+      <p class="text-[11px] text-slate-200">خوراک، مسکن، حقوق پایه مکفی معیشت و شرایط فیزیکی کار</p>
+    </div>
+  </div>
+</div>
 
 <h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">دو اصل حاکم بر هرم مازلو:</h4>
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">اصل کمبود (Deficit Principle):</strong> نیاز ارضاشده دیگر برانگیزاننده نیست؛ تنها نیاز ارضانشده محرک رفتار است.</span></li>
@@ -832,11 +1029,37 @@
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">عوامل ماهوی و درونی کار:</strong> حس موفقیت و دستاورد (Achievement)، قدردانی واقعی از عملکرد، ماهیت چالش‌برانگیز و جذاب کار، مسئولیت و اختیارات، فرصت یادگیری و رشد فردی.</span></li>
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">کارکرد:</strong> این عوامل موتور محرک تعهد، خلاقیت و عملکرد فراتر از وظیفه هستند.</span></li>
 
-<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>[عوامل بهداشتی: حقوق، ایمنی، شرایط فیزیکی] ──► حرکت از «نارضایتی شدید» به «عدم نارضایتی (نقطه صفر)»
-                                                                      │
-                                                                      ▼
-[عوامل انگیزشی: ماهیت کار، پیشرفت، قدردانی] ──► حرکت از «نقطه صفر» به «رضایت و تعهد عمیق شغلی»
-</code></pre>
+<div dir="rtl" style="text-align: right;" class="my-6 p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-500/30 text-white shadow-xl">
+  <div class="flex items-center justify-between mb-4 border-b border-indigo-500/20 pb-3">
+    <div class="flex items-center gap-2">
+      <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600 text-white text-xs font-bold">⚖️</span>
+      <span class="font-bold text-sm text-indigo-200">مدل دو عاملی بهداشت و انگیزش فردریک هرزبرگ</span>
+    </div>
+    <span class="text-[10px] px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">Herzberg Dual-Factor</span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="p-4 rounded-xl bg-slate-800/80 border border-rose-500/30">
+      <div class="flex items-center justify-between mb-2 pb-1.5 border-b border-rose-500/20">
+        <span class="text-xs font-bold text-rose-300">عوامل بهداشتی (Hygiene Factors)</span>
+        <span class="text-[10px] bg-rose-500/20 text-rose-200 px-2 py-0.5 rounded">رفع نارضایتی</span>
+      </div>
+      <p class="text-[11px] text-slate-300 mb-2 leading-relaxed">شامل: حقوق، ایمنی، شرایط فیزیکی کار، قوانین اداری و روابط با همکاران.</p>
+      <div class="p-2 rounded-lg bg-slate-900/80 text-[10px] text-rose-200 border border-rose-500/20">
+        📌 <strong>کارکرد:</strong> تنها فرد را از «نارضایتی شدید» به «عدم نارضایتی (نقطه صفر و خنثی)» می‌رسانند اما تعهد عمیق خلق نمی‌کنند.
+      </div>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/80 border border-emerald-500/30">
+      <div class="flex items-center justify-between mb-2 pb-1.5 border-b border-emerald-500/20">
+        <span class="text-xs font-bold text-emerald-300">عوامل انگیزشی (Motivator Factors)</span>
+        <span class="text-[10px] bg-emerald-500/20 text-emerald-200 px-2 py-0.5 rounded">خلق رضایت واقعی</span>
+      </div>
+      <p class="text-[11px] text-slate-300 mb-2 leading-relaxed">شامل: پیشرفت، قدردانی، ماهیت چالش‌برانگیز شغل، استقلال و رشد فردی.</p>
+      <div class="p-2 rounded-lg bg-slate-900/80 text-[10px] text-emerald-200 border border-emerald-500/20">
+        🌟 <strong>کارکرد:</strong> فرد را از «نقطه خنثی صفر» به «رضایت عمیق، وفاداری، انگیزه درونی و عملکرد فراتر از وظیفه» می‌رسانند.
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -907,14 +1130,16 @@
 
         </div>
       </div>
+    </div>
 
-      <!-- Session 04 Card -->
-      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden transition-all hover:shadow-md">
-        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white relative">
+    <!-- Tab 5: Session 04 View (Two-Layer) -->
+    <div id="tab-content-s04" class="tab-view hidden space-y-6">
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white">
           <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
             <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20 text-indigo-200">
               <span>🎯</span>
-              <span>جلسه چهارم (ارتباطات و رهبری)</span>
+              <span>جلسه چهارم</span>
             </span>
             <span class="text-xs text-indigo-200 bg-white/10 px-3 py-1 rounded-lg border border-white/10 font-medium">
               ۴ ساعت تدریس • ارتباطات، پنجره جوهری، بلیک-موتن و هرسی-بلانچارد
@@ -925,7 +1150,7 @@
             کاهش پارازیت‌های ارتباطی، مدل پنجره جوهری، سبک‌های ۵‌گانه شبکه بلیک و موتن، و مدل رهبری موقعیتی هرسی-بلانچارد بر مبنای بلوغ پیروان.
           </p>
         </div>
-        <div class="p-6 md:p-8 border-b border-slate-100 bg-slate-50/50">
+        <div class="p-6 md:p-8 bg-slate-50/50 border-b border-slate-200">
           <h3 class="text-sm font-black text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
             خلاصه نکات کلیدی و دستاوردهای مدیریتی جلسه
@@ -946,7 +1171,7 @@
           </div>
           <div class="mt-6 flex justify-end">
             <button onclick="toggleSessionFull('s04')" id="btn-toggle-s04" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow transition-all hover:scale-105">
-              <span>📖 مشاهده متن کامل جزوه و فرمول‌ها</span>
+              <span>📖 مشاهده متن کامل جزوه تفصیلی جلسه چهارم</span>
               <span id="icon-toggle-s04">▼</span>
             </button>
           </div>
@@ -999,15 +1224,41 @@
 <h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۲. فرآیند جامع ارتباطات سازمانی (The Communication Process)</h3>
 ارتباطات، جریان دوطرفه تبادل اطلاعات، معانی و احساسات میان دو یا چند نفر است.
 
-<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>┌─────────┐      ┌──────────┐      ┌────────────┐      ┌──────────┐      ┌──────────┐
-│ فرستنده  │ ──►  │ کدگذاری  │ ──►  │ پیام و کانال│ ──►  │ رمزگشایی │ ──►  │ گیرنده   │
-│ Sender  │      │ Encoding │      │ Channel    │      │ Decoding │      │ Receiver │
-└─────────┘      └──────────┘      └────────────┘      └──────────┘      └──────────┘
-     ▲                                   │                                     │
-     │                           [پارازیت و نویز Noise]                        │
-     │                                   │                                     │
-     └─────────────────────────── [حلقه بازخورد Feedback] ◄────────────────────┘
-</code></pre>
+<div dir="rtl" style="text-align: right;" class="my-6 p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-500/30 text-white shadow-xl">
+  <div class="flex items-center justify-between mb-4 border-b border-indigo-500/20 pb-3">
+    <div class="flex items-center gap-2">
+      <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600 text-white text-xs font-bold">📡</span>
+      <span class="font-bold text-sm text-indigo-200">فرآیند جامع ارتباطات سازمانی و مدیریت نویز</span>
+    </div>
+    <span class="text-[10px] px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">Shannon-Weaver Model</span>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-2.5 text-center text-xs">
+    <div class="p-3 rounded-xl bg-slate-800/90 border border-slate-700">
+      <span class="font-bold text-sky-300 block mb-1">۱. فرستنده</span>
+      <span class="text-[10px] text-slate-300">طرح ایده ذهنی</span>
+    </div>
+    <div class="p-3 rounded-xl bg-slate-800/90 border border-slate-700">
+      <span class="font-bold text-indigo-300 block mb-1">۲. کدگذاری</span>
+      <span class="text-[10px] text-slate-300">تبدیل به کلمات/زبان بدن</span>
+    </div>
+    <div class="p-3 rounded-xl bg-amber-900/40 border border-amber-500/40">
+      <span class="font-bold text-amber-300 block mb-1">۳. کانال و پیام</span>
+      <span class="text-[10px] text-amber-200">در معرض پارازیت و نویز</span>
+    </div>
+    <div class="p-3 rounded-xl bg-slate-800/90 border border-slate-700">
+      <span class="font-bold text-purple-300 block mb-1">۴. رمزگشایی</span>
+      <span class="text-[10px] text-slate-300">تفسیر در ذهن مخاطب</span>
+    </div>
+    <div class="p-3 rounded-xl bg-slate-800/90 border border-slate-700">
+      <span class="font-bold text-emerald-300 block mb-1">۵. گیرنده</span>
+      <span class="text-[10px] text-slate-300">درک معنای نهایی</span>
+    </div>
+  </div>
+  <div class="mt-3 p-2.5 rounded-xl bg-slate-800/50 border border-indigo-500/20 flex items-center justify-between text-xs text-indigo-200">
+    <span>🔁 <strong>حلقه بازخورد (Feedback):</strong> سنجش میزان انطباق معنای دریافت‌شده با قصد اولیه فرستنده.</span>
+    <span class="text-[10px] text-slate-400">تضمین سلامت ارتباط</span>
+  </div>
+</div>
 
 <h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">عناصر کلیدی فرآیند ارتباطات:</h4>
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">فرستنده (Sender):</strong> دارنده ایده یا نیازی که قصد انتقال آن را دارد.</span></li>
@@ -1089,22 +1340,37 @@
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">توجه به تولید و نتیجه کار (Concern for Production) - محور افقی (۱ تا ۹)</strong></span></li>
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">توجه به افراد و روابط انسانی (Concern for People) - محور عمودی (۱ تا ۹)</strong></span></li>
 
-<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>توجه به افراد (Concern for People)
-  9 ┌───────────────────────────┬───────────────────────────┐
-    │  (۱،۹) مدیریت باشگاهی     │    (۹،۹) مدیریت تیمی      │
-    │  روابط صمیمی، توجه به رفاه │    تعهد بالا، اعتماد عمیق │
-    │  عدم تمرکز روی تولید و هدف│    بالاترین کارایی و انگیزه│
-    ├───────────────────────────┼───────────────────────────┤
-  5 │               (۵،۵) مدیریت میانه‌رو / بین‌راهی         │
-    │               تعادل نصفه‌نیمه، سازش، عملکرد متوسط       │
-    ├───────────────────────────┼───────────────────────────┤
-    │  (۱،۱) مدیریت بی‌تفاوت     │    (۹،۱) مدیریت وظیفه‌ای  │
-    │  حداقل تلاش، سلب مسئولیت   │    تمرکز شدید روی کار و هدف│
-  1 │  ترک صحنه و بی‌خاصیتی کامل│    بی‌توجهی به احساس و انسان│
-    └───────────────────────────┴───────────────────────────┘
-    1                             5                         9
-       توجه به تولید و نتایج کار (Concern for Production)
-</code></pre>
+<div dir="rtl" style="text-align: right;" class="my-6 p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-500/30 text-white shadow-xl">
+  <div class="flex items-center justify-between mb-4 border-b border-indigo-500/20 pb-3">
+    <div class="flex items-center gap-2">
+      <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600 text-white text-xs font-bold">🧭</span>
+      <span class="font-bold text-sm text-indigo-200">ماتریس سبک‌های ۵‌گانه شبکه مدیریت بلیک و موتن</span>
+    </div>
+    <span class="text-[10px] px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">Blake & Mouton Grid</span>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+    <div class="p-3.5 rounded-xl bg-amber-950/40 border border-amber-500/30">
+      <strong class="text-amber-300 block mb-1">مدیریت باشگاهی / روستایی (۱،۹ Country Club)</strong>
+      <p class="text-[11px] text-slate-300">توجه حداکثری به روابط و رفاه پرسنل به قیمت قربانی شدن اهداف تولیدی و انضباط شرکت.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-emerald-950/40 border border-emerald-500/40">
+      <strong class="text-emerald-300 block mb-1">مدیریت تیمی و مشارکتی (۹،۹ Team Management)</strong>
+      <p class="text-[11px] text-slate-300">سبک ایده‌آل؛ ایجاد تعهد درونی عمیق از طریق پیوند اهداف پرسنل با چشم‌انداز شرکت و بالاترین راندمان.</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-slate-800/80 border border-slate-700">
+      <strong class="text-slate-300 block mb-1">مدیریت بی‌تفاوت / تضعیف‌شده (۱،۱ Impoverished)</strong>
+      <p class="text-[11px] text-slate-400">حداقل تلاش ممکن؛ انفعال و رفع تکلیف کامل نسبت به اهداف شرکت و پرسنل (منطقه خطر).</p>
+    </div>
+    <div class="p-3.5 rounded-xl bg-rose-950/40 border border-rose-500/30">
+      <strong class="text-rose-300 block mb-1">مدیریت وظیفه‌ای / استبدادی (۹،۱ Task / Authority)</strong>
+      <p class="text-[11px] text-slate-300">نگاه ابزاری به انسان‌ها؛ کنترل آهنین و فشار تولید بدون توجه به احساسات و فرسودگی پرسنل.</p>
+    </div>
+  </div>
+  <div class="mt-3 p-3 rounded-xl bg-blue-950/40 border border-blue-500/30 text-xs text-center">
+    <strong class="text-blue-300 block mb-0.5">مدیریت میانه‌رو و بین‌راهی (۵،۵ Middle-of-the-Road)</strong>
+    <span class="text-[11px] text-slate-300">سازش مستمر میان تولید و روابط؛ عملکرد سازمان در حد متوسط می‌ماند و به رکوردهای تعالی دست نمی‌یابد.</span>
+  </div>
+</div>
 
 <h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">تحلیل ۵ سبک بنیادین شبکه مدیریت:</h4>
 <li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت بی‌تفاوت / تضعیف‌شده (۱،۱ Impoverished Management):</strong> مدیر نه دلش برای کار می‌سوزد و نه برای پرسنل؛ حالت انفعال و رفع تکلیف.</span></li>
@@ -1182,19 +1448,37 @@
 </tr>
 </tbody></table></div>
 
-<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>                       رفتار رابطه‌محور (حمایت)
-                              بالا
-                     ┌───────────────────┬───────────────────┐
-                     │   S3: مشارکتی     │   S2: اقناعی      │
-                     │  (مناسب برای R3)  │  (مناسب برای R2)  │
-                     │  همفکری و تسهیل   │  آموزش و تشویق    │
-                     ├───────────────────┼───────────────────┤
-                     │   S4: تفویضی      │   S1: دستوری      │
-                     │  (مناسب برای R4)  │  (مناسب برای R1)  │
-                     │  واگذاری کامل     │  دستور مستقیم     │
-                     └───────────────────┴───────────────────┘
-                              پایین      رفتار وظیفه‌محور (هدایت)      بالا
-</code></pre>
+<div dir="rtl" style="text-align: right;" class="my-6 p-5 rounded-2xl bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 border border-indigo-500/30 text-white shadow-xl">
+  <div class="flex items-center justify-between mb-4 border-b border-indigo-500/20 pb-3">
+    <div class="flex items-center gap-2">
+      <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-600 text-white text-xs font-bold">🎯</span>
+      <span class="font-bold text-sm text-indigo-200">ماتریس رهبری موقعیتی هرسی و بلانچارد (SLT)</span>
+    </div>
+    <span class="text-[10px] px-2.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">Situational Leadership</span>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+    <div class="p-3 rounded-xl bg-slate-800/90 border border-slate-700">
+      <span class="font-bold text-rose-300 block mb-1">S1: دستوری (Telling)</span>
+      <span class="text-[10px] bg-rose-500/20 text-rose-200 px-2 py-0.5 rounded inline-block mb-1.5 font-mono">مناسب R1</span>
+      <p class="text-[11px] text-slate-300">وظیفه بالا، رابطه پایین؛ هدایت گام‌به‌گام و نظارت مستمر بر نیروهای تازه‌کار</p>
+    </div>
+    <div class="p-3 rounded-xl bg-slate-800/90 border border-slate-700">
+      <span class="font-bold text-amber-300 block mb-1">S2: اقناعی (Selling)</span>
+      <span class="text-[10px] bg-amber-500/20 text-amber-200 px-2 py-0.5 rounded inline-block mb-1.5 font-mono">مناسب R2</span>
+      <p class="text-[11px] text-slate-300">وظیفه بالا، رابطه بالا؛ آموزش مهارت‌ها همراه با تشویق و تقویت انگیزه</p>
+    </div>
+    <div class="p-3 rounded-xl bg-slate-800/90 border border-slate-700">
+      <span class="font-bold text-sky-300 block mb-1">S3: مشارکتی (Participating)</span>
+      <span class="text-[10px] bg-sky-500/20 text-sky-200 px-2 py-0.5 rounded inline-block mb-1.5 font-mono">مناسب R3</span>
+      <p class="text-[11px] text-slate-300">وظیفه پایین، رابطه بالا؛ همفکری در تصمیم‌گیری و رفع تردیدهای پرسنل ماهر</p>
+    </div>
+    <div class="p-3 rounded-xl bg-emerald-950/60 border border-emerald-500/40">
+      <span class="font-bold text-emerald-300 block mb-1">S4: تفویضی (Delegating)</span>
+      <span class="text-[10px] bg-emerald-500/20 text-emerald-200 px-2 py-0.5 rounded inline-block mb-1.5 font-mono">مناسب R4</span>
+      <p class="text-[11px] text-slate-300">وظیفه پایین، رابطه پایین؛ واگذاری کامل اختیارات و عدم دخالت به نخبگان خودفرمان</p>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -1223,10 +1507,126 @@
 
         </div>
       </div>
+    </div>
+
+    <!-- Tab 6: Interactive Tool Simulator -->
+    <div id="tab-content-simulator" class="tab-view hidden space-y-8">
+      
+      <!-- Tool 1: Blake-Mouton Managerial Grid Simulator -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+        <div class="max-w-2xl mb-6">
+          <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-200">
+            🧭 ابزار تعاملی اول
+          </span>
+          <h2 class="text-2xl font-black text-slate-900 mt-2">شبیه‌ساز سبک رهبری شبکه مدیریت بلیک و موتن</h2>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            با حرکت دادن اسلایدرهای زیر، سطح توجه به تولید (اهداف/نتایج) و سطح توجه به افراد را تغییر دهید تا سبک رهبری خود و عوارض آن را در لحظه مشاهده کنید.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-6 bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-xs font-bold text-slate-800">توجه به تولید و نتایج کار (Concern for Production)</label>
+                <span id="val-prod" class="text-sm font-black text-indigo-600 bg-white px-2.5 py-0.5 rounded border border-indigo-200">9</span>
+              </div>
+              <input type="range" id="slider-prod" min="1" max="9" value="9" class="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-indigo-600" oninput="updateGrid()">
+              <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+                <span>۱: حداقل توجه</span>
+                <span>۵: متوسط</span>
+                <span>۹: حداکثر تمرکز روی هدف</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-xs font-bold text-slate-800">توجه به روابط و افراد (Concern for People)</label>
+                <span id="val-people" class="text-sm font-black text-emerald-600 bg-white px-2.5 py-0.5 rounded border border-emerald-200">9</span>
+              </div>
+              <input type="range" id="slider-people" min="1" max="9" value="9" class="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-emerald-600" oninput="updateGrid()">
+              <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+                <span>۱: بی‌تفاوتی به پرسنل</span>
+                <span>۵: تعادل سازشکارانه</span>
+                <span>۹: اوج احترام و همدلی</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Output Card -->
+          <div id="grid-result-box" class="p-6 rounded-2xl border transition-all bg-emerald-50 border-emerald-200 text-emerald-950">
+            <div class="flex items-center gap-2 mb-2">
+              <span id="grid-icon" class="text-2xl">🏆</span>
+              <h3 id="grid-style-title" class="text-lg font-black">مدیریت تیمی و مشارکتی (۹،۹ Team Management)</h3>
+            </div>
+            <p id="grid-desc" class="text-xs leading-relaxed text-emerald-900 mt-2">
+              ایده‌آل‌ترین سبک رهبری؛ همسوسازی اهداف فردی با چشم‌انداز شرکت، تکیه بر اعتماد متقابل، انگیزه درونی عمیق و دستیابی به بالاترین راندمان ممکن.
+            </p>
+            <div class="mt-4 pt-4 border-t border-emerald-200 text-xs">
+              <strong class="block font-bold mb-1">تناسب با مدل هرسی-بلانچارد:</strong>
+              <span id="grid-pairing">مناسب برای هدایت استعدادهای سطح R3 و R4 در پروژه‌های پیچیده و استراتژیک.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool 2: Robert Katz Skills Analyzer -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+        <div class="max-w-2xl mb-6">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full border border-indigo-200">
+            ⚖️ ابزار تعاملی دوم
+          </span>
+          <h2 class="text-2xl font-black text-slate-900 mt-2">عارضه‌یاب مهارت‌های سه‌گانه رابرت کاتز و سندروم پیتر</h2>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            سطح سازمانی خود را انتخاب کنید تا وزن استاندارد مهارت‌های فنی، انسانی و ادراکی نمایش داده شود.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-3 mb-6">
+          <button onclick="setKatzLevel('top')" id="btn-katz-top" class="px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow">
+            مدیریت عالی (Top Management)
+          </button>
+          <button onclick="setKatzLevel('middle')" id="btn-katz-middle" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">
+            مدیریت میانی (Middle Management)
+          </button>
+          <button onclick="setKatzLevel('firstline')" id="btn-katz-firstline" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">
+            مدیریت عملیاتی / سرپرستی (First-line)
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+            <span class="text-xs font-bold text-slate-500">مهارت ادراکی (Conceptual)</span>
+            <div class="text-2xl font-black text-indigo-600 mt-1" id="katz-val-c">۵۰٪</div>
+            <div class="w-full bg-slate-200 h-2 rounded-full mt-2 overflow-hidden">
+              <div id="katz-bar-c" class="bg-indigo-600 h-2 rounded-full transition-all duration-300" style="width: 50%;"></div>
+            </div>
+            <p class="text-[11px] text-slate-600 mt-2" id="katz-desc-c">بینش کلان، درک اکوسیستم و پیش‌بینی روندهای ۳ تا ۵ ساله بازار.</p>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+            <span class="text-xs font-bold text-slate-500">مهارت انسانی (Human)</span>
+            <div class="text-2xl font-black text-emerald-600 mt-1" id="katz-val-h">۴۰٪</div>
+            <div class="w-full bg-slate-200 h-2 rounded-full mt-2 overflow-hidden">
+              <div id="katz-bar-h" class="bg-emerald-600 h-2 rounded-full transition-all duration-300" style="width: 40%;"></div>
+            </div>
+            <p class="text-[11px] text-slate-600 mt-2" id="katz-desc-h">انگیزش، گوش دادن فعال، حل تعارض و ارتباط تیمی (ثابت در تمام سطوح).</p>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+            <span class="text-xs font-bold text-slate-500">مهارت فنی (Technical)</span>
+            <div class="text-2xl font-black text-amber-600 mt-1" id="katz-val-t">۱۰٪</div>
+            <div class="w-full bg-slate-200 h-2 rounded-full mt-2 overflow-hidden">
+              <div id="katz-bar-t" class="bg-amber-600 h-2 rounded-full transition-all duration-300" style="width: 10%;"></div>
+            </div>
+            <p class="text-[11px] text-slate-600 mt-2" id="katz-desc-t">دانش تخصصی کار با ابزارها و اجرای مستقیم فرآیندها.</p>
+          </div>
+        </div>
+      </div>
 
     </div>
 
-    <!-- Tab 2: Handbook View -->
+    <!-- Tab 7: Handbook View -->
     <div id="tab-content-handbook" class="tab-view hidden space-y-6">
       <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
         <div class="flex items-center justify-between pb-6 border-b border-slate-200 mb-6">
@@ -1480,130 +1880,13 @@
       </div>
     </div>
 
-    <!-- Tab 3: Interactive Tool Simulator -->
-    <div id="tab-content-simulator" class="tab-view hidden space-y-8">
-      
-      <!-- Tool 1: Blake-Mouton Managerial Grid Simulator -->
-      <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
-        <div class="max-w-2xl mb-6">
-          <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-200">
-            🧭 ابزار تعاملی اول
-          </span>
-          <h2 class="text-2xl font-black text-slate-900 mt-2">شبیه‌ساز سبک رهبری شبکه مدیریت بلیک و موتن</h2>
-          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-            با حرکت دادن اسلایدرهای زیر، سطح توجه به تولید (اهداف/نتایج) و سطح توجه به افراد را تغییر دهید تا سبک رهبری خود و عوارض آن را در لحظه مشاهده کنید.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          <div class="space-y-6 bg-slate-50 p-6 rounded-2xl border border-slate-200">
-            <div>
-              <div class="flex justify-between items-center mb-2">
-                <label class="text-xs font-bold text-slate-800">توجه به تولید و نتایج کار (Concern for Production)</label>
-                <span id="val-prod" class="text-sm font-black text-indigo-600 bg-white px-2.5 py-0.5 rounded border border-indigo-200">9</span>
-              </div>
-              <input type="range" id="slider-prod" min="1" max="9" value="9" class="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-indigo-600" oninput="updateGrid()">
-              <div class="flex justify-between text-[10px] text-slate-400 mt-1">
-                <span>۱: حداقل توجه</span>
-                <span>۵: متوسط</span>
-                <span>۹: حداکثر تمرکز روی هدف</span>
-              </div>
-            </div>
-
-            <div>
-              <div class="flex justify-between items-center mb-2">
-                <label class="text-xs font-bold text-slate-800">توجه به روابط و افراد (Concern for People)</label>
-                <span id="val-people" class="text-sm font-black text-emerald-600 bg-white px-2.5 py-0.5 rounded border border-emerald-200">9</span>
-              </div>
-              <input type="range" id="slider-people" min="1" max="9" value="9" class="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-emerald-600" oninput="updateGrid()">
-              <div class="flex justify-between text-[10px] text-slate-400 mt-1">
-                <span>۱: بی‌تفاوتی به پرسنل</span>
-                <span>۵: تعادل سازشکارانه</span>
-                <span>۹: اوج احترام و همدلی</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dynamic Output Card -->
-          <div id="grid-result-box" class="p-6 rounded-2xl border transition-all bg-emerald-50 border-emerald-200 text-emerald-950">
-            <div class="flex items-center gap-2 mb-2">
-              <span id="grid-icon" class="text-2xl">🏆</span>
-              <h3 id="grid-style-title" class="text-lg font-black">مدیریت تیمی و مشارکتی (۹،۹ Team Management)</h3>
-            </div>
-            <p id="grid-desc" class="text-xs leading-relaxed text-emerald-900 mt-2">
-              ایده‌آل‌ترین سبک رهبری؛ همسوسازی اهداف فردی با چشم‌انداز شرکت، تکیه بر اعتماد متقابل، انگیزه درونی عمیق و دستیابی به بالاترین راندمان ممکن.
-            </p>
-            <div class="mt-4 pt-4 border-t border-emerald-200 text-xs">
-              <strong class="block font-bold mb-1">تناسب با مدل هرسی-بلانچارد:</strong>
-              <span id="grid-pairing">مناسب برای هدایت استعدادهای سطح R3 و R4 در پروژه‌های پیچیده و استراتژیک.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tool 2: Robert Katz Skills Analyzer -->
-      <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
-        <div class="max-w-2xl mb-6">
-          <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full border border-indigo-200">
-            ⚖️ ابزار تعاملی دوم
-          </span>
-          <h2 class="text-2xl font-black text-slate-900 mt-2">عارضه‌یاب مهارت‌های سه‌گانه رابرت کاتز و سندروم پیتر</h2>
-          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-            سطح سازمانی خود را انتخاب کنید تا وزن استاندارد مهارت‌های فنی، انسانی و ادراکی نمایش داده شود.
-          </p>
-        </div>
-
-        <div class="flex flex-wrap gap-3 mb-6">
-          <button onclick="setKatzLevel('top')" id="btn-katz-top" class="px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow">
-            مدیریت عالی (Top Management)
-          </button>
-          <button onclick="setKatzLevel('middle')" id="btn-katz-middle" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">
-            مدیریت میانی (Middle Management)
-          </button>
-          <button onclick="setKatzLevel('firstline')" id="btn-katz-firstline" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">
-            مدیریت عملیاتی / سرپرستی (First-line)
-          </button>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-            <span class="text-xs font-bold text-slate-500">مهارت ادراکی (Conceptual)</span>
-            <div class="text-2xl font-black text-indigo-600 mt-1" id="katz-val-c">۵۰٪</div>
-            <div class="w-full bg-slate-200 h-2 rounded-full mt-2 overflow-hidden">
-              <div id="katz-bar-c" class="bg-indigo-600 h-2 rounded-full transition-all duration-300" style="width: 50%;"></div>
-            </div>
-            <p class="text-[11px] text-slate-600 mt-2" id="katz-desc-c">بینش کلان، درک اکوسیستم و پیش‌بینی روندهای ۳ تا ۵ ساله بازار.</p>
-          </div>
-
-          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-            <span class="text-xs font-bold text-slate-500">مهارت انسانی (Human)</span>
-            <div class="text-2xl font-black text-emerald-600 mt-1" id="katz-val-h">۴۰٪</div>
-            <div class="w-full bg-slate-200 h-2 rounded-full mt-2 overflow-hidden">
-              <div id="katz-bar-h" class="bg-emerald-600 h-2 rounded-full transition-all duration-300" style="width: 40%;"></div>
-            </div>
-            <p class="text-[11px] text-slate-600 mt-2" id="katz-desc-h">انگیزش، گوش دادن فعال، حل تعارض و ارتباط تیمی (ثابت در تمام سطوح).</p>
-          </div>
-
-          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
-            <span class="text-xs font-bold text-slate-500">مهارت فنی (Technical)</span>
-            <div class="text-2xl font-black text-amber-600 mt-1" id="katz-val-t">۱۰٪</div>
-            <div class="w-full bg-slate-200 h-2 rounded-full mt-2 overflow-hidden">
-              <div id="katz-bar-t" class="bg-amber-600 h-2 rounded-full transition-all duration-300" style="width: 10%;"></div>
-            </div>
-            <p class="text-[11px] text-slate-600 mt-2" id="katz-desc-t">دانش تخصصی کار با ابزارها و اجرای مستقیم فرآیندها.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
   </main>
 
   <!-- Footer strictly per standard with Parsa Rezaie branding -->
   <footer class="bg-slate-900 text-slate-400 py-8 px-6 border-t border-slate-800 text-center text-xs">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
-        <span>دانشکدگان مدیریت دانشگاه تهران • ماژول تخصصی مبانی مدیریت کسب و کار (کد mba-bf04-1)</span>
+        <span>دانشکده اقتصاد دانشگاه تهران • دوره تخصصی MBA (کد 0410)</span>
       </div>
       <div class="flex items-center gap-2">
         <span>تنظیم و تدوین جامع: <strong class="text-white font-bold">پارسا رضائی</strong></span>

@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مبانی مدیریت کسب و کار | دوره تخصصی MBA دانشگاه تهران</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Vazirmatn Font CDN -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+  <!-- MathJax Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    body {
+      font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .gradient-header {
+      background: linear-gradient(135deg, #090d16 0%, #111827 40%, #1e1b4b 100%);
+    }
+    .math-eq {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      padding: 0.25rem 0.6rem;
+      border-radius: 0.5rem;
+      font-family: monospace;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #0f172a;
+      direction: ltr;
+      margin: 0.4rem 0;
+    }
+    .math-frac {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      vertical-align: middle;
+      padding: 0 0.25rem;
+    }
+    .math-num {
+      border-bottom: 1.5px solid #0f172a;
+      padding-bottom: 1px;
+      font-size: 0.85em;
+    }
+    .math-den {
+      padding-top: 1px;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- Header strictly following DASHBOARD_UI_STANDARD.md -->
+  <header class="gradient-header text-white py-9 px-6 shadow-xl relative overflow-hidden border-b border-indigo-900/40">
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <div class="inline-flex items-center gap-2 bg-indigo-500/20 border border-indigo-400/30 rounded-full px-4 py-1 text-xs font-semibold text-indigo-200">
+              <span>🎓 دانشکدگان مدیریت دانشگاه تهران</span>
+              <span>•</span>
+              <span>ماژول تخصصی مبانی مدیریت (کد mba-bf04-1)</span>
+            </div>
+            <!-- THE ONLY BACK BUTTON -->
+            <a href="../" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white border border-white/30 rounded-full px-3.5 py-1 text-xs font-bold transition-all shadow-sm hover:scale-105 backdrop-blur-md">
+              <span>🏠 پرتال اصلی و انتخاب کلاس</span>
+              <span class="text-xs">➔</span>
+            </a>
+          </div>
+          <h1 class="text-3xl md:text-4xl font-black tracking-tight mb-2 text-white">
+            مبانی مدیریت کسب و کار (Business Fundamentals)
+          </h1>
+          <p class="text-indigo-200 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
+            مبانی سازمان، کارایی و اثربخشی، مکاتب کلاسیک، انگیزش و رهبری موقعیتی | مدرس: <strong class="text-white font-semibold">استاد فرزانه سلطانی</strong> | <div class="inline-flex items-center gap-2 mt-1"><span class="text-indigo-200 text-xs md:text-sm font-normal">تنظیم و تدوین جامع: <strong class="text-white font-bold">پارسا رضائی</strong></span><a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg><span>Parsa Rezaie</span></a></div>
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3.5 text-center min-w-[120px]">
+            <div class="text-2xl font-black text-indigo-300">۴ جلسه</div>
+            <div class="text-xs text-indigo-100 font-medium">۱۶ ساعت تدریس کاربردی</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs strictly inside Header, NO sticky nav! -->
+      <div class="flex flex-wrap items-center gap-2 mt-7 border-t border-white/15 pt-4">
+        <button onclick="switchTab('sessions')" id="tab-btn-sessions" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-bold transition-all bg-white text-slate-900 shadow-md active">
+          📚 جلسات و خلاصه مدیریتی
+        </button>
+        <button onclick="switchTab('handbook')" id="tab-btn-handbook" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          📖 هندبوک جامع و مرجع یکپارچه
+        </button>
+        <button onclick="switchTab('simulator')" id="tab-btn-simulator" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          🧭 ابزار تعاملی: شبیه‌ساز مهارت کاتز و رهبری بلیک-موتن
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="max-w-6xl mx-auto px-6 py-10 flex-1 w-full">
+
+    <!-- Tab 1: Sessions View -->
+    <div id="tab-content-sessions" class="tab-view space-y-8">
+
+      <!-- Session 01 Card -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden transition-all hover:shadow-md">
+        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white relative">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+            <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20 text-indigo-200">
+              <span>💡</span>
+              <span>جلسه اول (مفاهیم پایه)</span>
+            </span>
+            <span class="text-xs text-indigo-200 bg-white/10 px-3 py-1 rounded-lg border border-white/10 font-medium">
+              ۴ ساعت تدریس • مهارت‌های کاتز، سطوح مدیریت و پارتو
+            </span>
+          </div>
+          <h2 class="text-2xl font-black text-white mb-2">چیستی سازمان، سطوح مدیریت، مهارت‌های سه‌گانه کاتز و اصل پارتو</h2>
+          <p class="text-sm text-indigo-200 leading-relaxed">
+            تفکیک کارایی و اثربخشی، هرم سطوح مدیریت، ماتریس سه‌بعدی مهارت‌های کاتز و کاربرد قانون پارتو (۸۰/۲۰) در عارضه‌یابی شرکتی.
+          </p>
+        </div>
+        <!-- Executive Summary Highlights -->
+        <div class="p-6 md:p-8 border-b border-slate-100 bg-slate-50/50">
+          <h3 class="text-sm font-black text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+            خلاصه نکات کلیدی و دستاوردهای مدیریتی جلسه
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs leading-relaxed text-slate-600">
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۱. بهره‌وری = کارایی × اثربخشی</strong>
+              کارایی انجام درست کارها با حداقل اتلاف منابع است و اثربخشی انجام کارهای درست. مدیریت نیازمند دستیابی همزمان به هر دو است.
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۲. مهارت‌های رابرت کاتز</strong>
+              مهارت انسانی در تمام سطوح مدیریت وزنی پایدار (۴۰٪) دارد؛ با ارتقا به مدیریت عالی نیاز به مهارت ادراکی به ۵۰٪ می‌رسد و مهارت فنی به ۱۰٪ کاهش می‌یابد.
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۳. غربالگری پارتو (۸۰/۲۰)</strong>
+              ۸۰ درصد سود شرکت از ۲۰ درصد مشتریان کلیدی و ۸۰ درصد عیوب از ۲۰ درصد خطاهای ریشه‌ای ناشی می‌شود. تمرکز بر اقلیت حیاتی، جوهره بقاست.
+            </div>
+          </div>
+          <!-- Toggle Full Notes Button -->
+          <div class="mt-6 flex justify-end">
+            <button onclick="toggleSessionFull('s01')" id="btn-toggle-s01" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow transition-all hover:scale-105">
+              <span>📖 مشاهده متن کامل جزوه و فرمول‌ها</span>
+              <span id="icon-toggle-s01">▼</span>
+            </button>
+          </div>
+        </div>
+        <!-- Collapsible Full Notes Layer -->
+        <div id="full-notes-s01" class="hidden p-6 md:p-8 bg-white border-t border-slate-200 prose-custom leading-relaxed">
+          <h1 class="text-3xl font-black text-indigo-950 mt-4 mb-4">دانشنامه مبانی مدیریت کسب و کار - دانشگاه تهران</h1>
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">جلسه اول: چیستی سازمان، سطوح مدیریت، مهارت‌های سه‌گانه کاتز و اصل پارتو</h2>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">شناسنامه و متادیتای مرجع جلسه</h3>
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">مشخصه</th>
+<th class="border border-slate-200 px-3 py-2 text-right">شرح استاندارد</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">عنوان دوره</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مبانی مدیریت کسب و کار (Business Fundamentals)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مدرس</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">استاد فرزانه سلطانی (دانشکدگان مدیریت دانشگاه تهران)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">تنظیم و تدوین</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مهندس پارسا رضائی (Parsa Rezaie)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">پروفایل حرفه‌ای</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">[linkedin.com/in/parsarezaie](https://www.linkedin.com/in/parsarezaie/)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">تعداد کل جلسات دوره</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">۴ جلسه تخصصی (۱۶ ساعت آموزش کاربردی)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">موضوع جلسه اول</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">تعریف سازمان، سطوح مدیریت، مهارت‌های رابرت کاتز، بهره‌وری و تحلیل پارتو</td>
+</tr>
+</tbody></table></div>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۱. سیر منطقی و نقشه ذهنی جلسه</h3>
+جلسه اول مبانی مدیریت با تعریف ماهیت وجودی «سازمان» و تفکیک آن از تجمعات تصادفی آغاز می‌شود. سپس به تفکیک دو متغیر حیاتی «کارایی» و «اثربخشی» پرداخته و چگونگی ترکیب آن‌ها برای خلق «بهره‌وری» را تشریح می‌کند. در ادامه، ساختار هرم سازمانی و سطوح سه‌گانه مدیریت تبیین شده و به تناسب هر سطح، مدل مهارت‌های سه‌گانه رابرت کاتز به دقت تشریح می‌گردد. در پایان، اصل پارتو (۸۰/۲۰) به عنوان ابزار غربالگری تصمیمات مدیریتی و حل تعارضات تخصیص منابع معرفی می‌شود.
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۲. چیستی، هویت و مرزهای سازمان (Organization Identity & Boundaries)</h3>
+سازمان پدیده‌ای صرفاً فیزیکی یا حقوقی نیست، بلکه یک «نهاد اجتماعی هدفمند با مرزهای مشخص و ساختاری هماهنگ‌شده» است.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">ارکان چهارگانه تعریف رسمی سازمان:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">نهاد اجتماعی (Social Entity):</strong> سازمان پیش و بیش از ماشین‌آلات و ساختمان‌ها، از انسان‌ها و شبکه‌های تعاملی آنان تشکیل یافته است.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">هدف‌مندی (Goal-Directed):</strong> هر سازمانی برای دستیابی به خروجی یا غایتی مشخص (تولید ارزش، سودآوری، خدمت‌رسانی) گرد هم آمده است.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">ساختار و هماهنگی عمدی (Deliberately Structured & Coordinated):</strong> تقسیم کار، تخصیص نقش‌ها و سلسله‌مراتب در سازمان اتفاقی نیست، بلکه طراحی‌شده است.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مرزهای مشخص (Identifiable Boundaries):</strong> تفکیک مشخصی میان اعضای سازمان و محیط بیرونی وجود دارد؛ مرزهایی که از طریق قراردادها، نقش‌ها و فرآیندهای ورود و خروج تعریف می‌شوند.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۳. تثلیث طلایی عملکرد: کارایی، اثربخشی و بهره‌وری</h3>
+یکی از خطاهای بنیادین مدیران تازه‌کار، یکی انگاشتن مفهوم کارایی با اثربخشی است. پیتر دراکر تمایز این دو را به شفاف‌ترین شکل ممکن بیان کرده است:
+
+<div class="math-eq" dir="ltr">
+<span class="math-var">Efficiency</span>
+<span class="math-op">=</span>
+<span>Doing things right (انجام درست کارها)</span>
+</div>
+
+<div class="math-eq" dir="ltr">
+<span class="math-var">Effectiveness</span>
+<span class="math-op">=</span>
+<span>Doing the right things (انجام کارهای درست)</span>
+</div>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">ماتریس عملکرد دراکر (Drucker Performance Matrix):</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">اثربخش و کارا (موقعیت بهینه):</strong> انتخاب استراتژی و اهداف درست و دستیابی به آن‌ها با کمترین اتلاف منابع.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">اثربخش اما ناکارا:</strong> اهداف درستی برگزیده شده اما به دلیل ضایعات و هزینه بالا، سازمان دچار افت حاشیه سود می‌شود.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">غیراثر‌بخش اما کارا (باتلاق مدیریتی):</strong> سازمان با نهایت دقت و سرعت، محصولی را تولید می‌کند که هیچ خریداری در بازار ندارد!</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">غیراثر‌بخش و ناکارا (منطقه مرگ):</strong> ورشکستگی قطعی ناشی از تلف کردن منابع در مسیر اشتباه.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">رابطه ریاضی بهره‌وری (Productivity Formula):</h4>
+بهره‌وری تجلی هم‌افزایی کارایی و اثربخشی است:
+
+<div class="math-eq" dir="ltr">
+<span class="math-var">Productivity</span>
+<span class="math-op">=</span>
+<span class="math-frac">
+<span class="math-num">Total Output (خروجی واقعی محقق‌شده)</span>
+<span class="math-den">Total Input (مجموع منابع مصرف‌شده: زمان، مواد، انرژی، دستمزد)</span>
+</span>
+</div>
+
+در ادبیات تحلیلی، بهره‌وری حاصلضرب برداری این دو مؤلفه است:
+<div class="math-eq" dir="ltr">
+<span class="math-var">Productivity</span>
+<span class="math-op">=</span>
+<span class="math-var">Efficiency</span>
+<span class="math-op">×</span>
+<span class="math-var">Effectiveness</span>
+</div>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۴. هرم سازمانی و سطوح سه‌گانه مدیریت</h3>
+سازمان‌ها برای توزیع بهینه اختیارات و کنترل، به سه لایه ساختاری تفکیک می‌شوند:
+
+<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>           / \
+          /   \     مدیریت عالی (Top Management)
+         /     \    افق زمانی: ۳ تا ۵ ساله | تمرکز: استراتژیک، جهت‌گیری کلان
+        /-------\
+       /         \  مدیریت میانی (Middle Management)
+      /           \ افق زمانی: ۱ ساله | تمرکز: تاکتیکی، ترجمه استراتژی به برنامه
+     /-------------\
+    /               \ مدیریت خط مقدم / عملیاتی (First-Line Management)
+   /                 \ افق زمانی: روزانه، هفتگی | تمرکز: عملیاتی، اجرای مستقیم
+  /-------------------\
+</code></pre>
+
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت عالی (Top Managers):</strong> مدیرعامل (CEO)، اعضای هیئت مدیره، معاونان ارشد. وظیفه اصلی: تدوین چشم‌انداز، بقای بلندمدت سازمان، تعامل با محیط بیرونی و سهامداران.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت میانی (Middle Managers):</strong> مدیران کارخانه، مدیران دپارتمان‌ها (تولید، بازاریابی، مالی، R&D). وظیفه اصلی: شکستن اهداف کلان به برنامه‌های عملیاتی و میانجی‌گری میان استراتژی و اجرا.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت عملیاتی / سرپرستی (First-Line Managers):</strong> سرپرستان شیفت، سرپرستان کارگاه، مدیران فروش منطقه‌ای. وظیفه اصلی: هدایت روزمره پرسنل صف، کنترل کیفیت در لحظه و حل مسائل آنی تولید و فروش.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۵. مدل مهارت‌های سه‌گانه رابرت کاتز (Robert Katz Skills Model)</h3>
+رابرت کاتز در هاروارد بیزنس ریویو اثبات کرد موفقیت یک مدیر تابع شخصیت کاریزماتیک نیست، بلکه متکی بر توازن سه مهارت اکتسابی است:
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">۱. مهارت‌های فنی (Technical Skills):</h4>
+دانش تخصصی، تسلط بر فرآیندها، تکنیک‌ها، ابزارها و نرم‌افزارهای یک حوزه مشخص (نظیر نقشه‌کشی، برنامه‌نویسی، حسابداری، یا فرمولاسیون صنعتی).
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">۲. مهارت‌های انسانی / بین‌فردی (Human / Interpersonal Skills):</h4>
+توانایی درک، انگیزش، ارتباط مؤثر، حل تعارض و کار کردن با انسان‌ها چه به صورت فردی و چه در قالب تیم.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">۳. مهارت‌های ادراکی (Conceptual Skills):</h4>
+توانایی دیدن سازمان به صورت یک کل منسجم (کل‌نگری)، درک ارتباط متقابل اجزا، پیش‌بینی روندهای آینده بازار و تشخیص فرصت‌ها و تهدیدهای محیطی.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">جدول توزیع وزنی مهارت‌ها در سطوح سه‌گانه مدیریت:</h4>
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">سطح مدیریت</th>
+<th class="border border-slate-200 px-3 py-2 text-right">مهارت فنی</th>
+<th class="border border-slate-200 px-3 py-2 text-right">مهارت انسانی</th>
+<th class="border border-slate-200 px-3 py-2 text-right">مهارت ادراکی</th>
+<th class="border border-slate-200 px-3 py-2 text-right">منطق تمرکز</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مدیریت عالی</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">کم (۱۰٪)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">بسیار بالا (۴۰٪)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">حداکثر (۵۰٪)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">تصمیم‌گیری‌های مبهم و بلندمدت نیازمند بینش ادراکی است</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مدیریت میانی</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">متوسط (۳۰٪)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">بسیار بالا (۴۰٪)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">بالا (۳۰٪)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">ایجاد تعادل میان زبان فنی کارگاه و زبان استراتژیک مدیران ارشد</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مدیریت عملیاتی</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">حداکثر (۵۰٪)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">بسیار بالا (۴۰٪)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">کم (۱۰٪)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">درگیری مستقیم با ابزارها و حل مسائل فنی کارشناسان صف</td>
+</tr>
+</tbody></table></div>
+
+<blockquote class="border-r-4 border-amber-500 bg-amber-50/50 p-3 my-3 text-slate-700 rounded-l-lg text-sm"><strong class="font-bold text-slate-900">نکته کلیدی استاد سلطانی:</strong> مهارت انسانی تنها مهارتی است که در هر سه سطح مدیریت، وزنی ثابت و حیاتی (~۴۰٪) دارد. انسان‌ها با ورود به لایه‌های بالاتر مدیریت، نیاز به مهارت فنی‌شان کمتر می‌شود اما مهارت کار با انسان‌ها هرگز کم‌رنگ نمی‌گردد.</blockquote>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">سندروم پیتر (The Peter Principle):</h4>
+یکی از خطاهای مرگبار در شرکت‌های صنعتی، ارتقای بهترین کارشناس فنی (مثلاً بهترین مهندس مکانیک یا بهترین فروشنده) به جایگاه سرپرستی یا مدیریت میانی بدون آموزش مهارت‌های انسانی است. طبق قانون پیتر: «در هر سلسله‌مراتب، افراد تا سطح بی‌کفایتی خود ارتقا پیدا می‌کنند.»
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۶. اصل پارتو (Pareto Principle - قانون ۸۰/۲۰) در فرماندهی کسب‌وکار</h3>
+ویلفردو پارتو در سال ۱۹۰۶ کشف کرد که ۸۰ درصد زمین‌های ایتالیا متعلق به ۲۰ درصد جمعیت است. ژوزف جوران این اصل را وارد علم مدیریت کیفیت و تصمیم‌گیری کرد: «اقلیت حیاتی در برابر اکثریت ناچیز (The Vital Few and the Trivial Many)».
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">تجلی‌های عملیاتی پارتو در سازمان:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">فروش و بازاریابی:</strong> ۸۰ درصد درآمد شرکت از ۲۰ درصد مشتریان کلیدی (Key Accounts) حاصل می‌شود.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت موجودی و انبار:</strong> ۲۰ درصد از اقلام انبار، ۸۰ درصد ارزش مالی سرمایه در گردش را به خود اختصاص می‌دهند (تحلیل ABC).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت کیفیت و عارضه‌یابی:</strong> ۸۰ درصد شکایات مشتریان یا ضایعات خط تولید ناشی از ۲۰ درصد عیوب تکرارشونده است.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت زمان مدیران:</strong> ۸۰ درصد ارزش خلق‌شده توسط مدیران ناشی از ۲۰ درصد جلسات و تصمیمات استراتژیک آن‌هاست.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">گام‌های چهارگانه پیاده‌سازی تحلیل پارتو:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>ثبت دقیق داده‌های عددی (لیست مشتریان، خطاها یا اقلام انبار).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>مرتب‌سازی داده‌ها از بزرگ به کوچک بر اساس ارزش مالی یا فرکانس رخداد.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>محاسبه درصد سهم هر قلم و درصد تجمعی (Cumulative Percentage).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>شناسایی خط مرز ۸۰ درصد و تمرکز ۱۰۰ درصدی منابع مدیریتی بر اقلیت ۲۰ درصدی.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۷. اقتصاد و ریاضیات تصمیم‌گیری در کارایی و پارتو</h3>
+برای کنترل دقیق نسبت‌های مالی و ارزیابی اثربخشی، شاخص‌های زیر به صورت هفتگی اندازه‌گیری می‌شوند:
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">شاخص بازده ورودی‌ها (OEE - Overall Equipment Effectiveness):</h4>
+در واحدهای صنعتی و تولیدی، کارایی عملیاتی از حاصلضرب سه متغیر به دست می‌آید:
+
+<div class="math-eq" dir="ltr">
+<span class="math-var">OEE</span>
+<span class="math-op">=</span>
+<span class="math-var">Availability</span>
+<span class="math-op">×</span>
+<span class="math-var">Performance</span>
+<span class="math-op">×</span>
+<span class="math-var">Quality</span>
+</div>
+
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">در دسترس بودن (Availability):</strong> نسبت زمان واقعی کارکرد دستگاه به زمان برنامه‌ریزی‌شده.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">نرخ عملکرد (Performance):</strong> نسبت سرعت واقعی تولید قطعات به سرعت استاندارد طراحی خط.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">نرخ کیفیت (Quality):</strong> نسبت قطعات سالم و بدون عیب به کل قطعات تولیدشده.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۸. کیس‌استادی‌های واقعی و مصادیق بومی بازار ایران</h3>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">کیس ۱: شرکت تولیدی صنایع فلزی و ارتقای سرپرست تولید</h4>
+در یک شرکت تولید تجهیزات فلزی و صنعتی، مدیریت ارشد برای پاداش دادن به ماهرترین جوشکار و اپراتور پرس خود، او را به سرپرستی کارگاه منصوب کرد. در عرض سه ماه:
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>کیفیت جوشکاری شرکت افت کرد (چون ماهرترین دست خط تولید دیگر جوشکاری نمی‌کرد).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>تنش‌های کارگری در سالن به شدت افزایش یافت (زیرا فرد جدید فاقد مهارت‌های ارتباطی، گوش دادن فعال و بازخورددهی بود و صرفاً دستورهای تند و تنبیهی صادر می‌کرد).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>راهکار اصلاحی: بازتعریف مسیر شغلی دوگانه (Dual Career Ladder)؛ کارشناسان فنی می‌توانند بدون قبول مسئولیت مدیریت پرسنل، به رده‌های بالاتر ارتقای پایه حقوقی پیدا کنند؛ و کسانی وارد مسیر مدیریت شوند که دوره‌های فشرده مهارت‌های بین‌فردی را گذرانده باشند.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">کیس ۲: اجرای قانون پارتو در سبد مشتریان یک کارخانه قطعه‌سازی</h4>
+یک شرکت با ۴۵۰ مشتری فعال، با کمبود نقدینگی و تاخیر در تحویل مواجه بود. با اجرای تحلیل پارتو مشخص شد:
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>۳۸ مشتری (کمتر از ۹ درصد کل مشتریان) بیش از ۸۴ درصد سود ناخالص شرکت را تامین می‌کردند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>بیش از ۲۵۰ مشتری خرد، نه تنها سودآوری نداشتند بلکه به دلیل سفارش‌های با تیراژ بسیار کم، هزینه‌های سربار، بسته‌بندی و پیگیری مطالبات را مضاعف می‌کردند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>اقدام مدیرعامل: تعیین حداقل سقف سفارش (Minimum Order Quantity)، واگذاری مشتریان بسیار خرد به شبکه نمایندگان توزیع، و اختصاص تیم ویژه خدمات مشتریان (VIP Account Managers) به آن ۳۸ مشتری حیاتی. نتیجه: کاهش ۳۰ درصدی خواب انبار و جهش ۱۸ درصدی سود عملیاتی ظرف شش ماه.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۹. چک‌لیست دوشنبه صبح برای مدیران ارشد و میانی</h3>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] پایش ماتریس دراکر در تیم: آیا پروژه‌ای در جریان است که کارشناسان با سرعت بالا در حال انجام آن هستند اما در اولویت‌های استراتژیک ۳ ماهه شرکت جایگاهی ندارد؟ (توقف فوری پروژه‌های عقیم).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] ماتریس مهارت کاتز: ارزیابی سرپرستان تازه‌منصوب‌شده؛ چه تعداد از آنان در مهارت‌های بین‌فردی (بازخورد، حل تعارض) نیاز به منتورینگ دارند؟</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] نمودار پارتوی شکایات هفته گذشته: ۲۰ درصد علل تکراری که ۸۰ درصد نارضایتی مشتریان یا تاخیرات خط را پدید آورده‌اند کدامند؟ تمرکز فوری روی رفع آن دو علت ریشه‌ای.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] ثبت شاخص بهره‌وری نیروی کار و ماشین‌آلات (ساعت کار مفید به خروجی نهایی) در تابلوی کنترل کارگاه.</span></li>
+
+---
+<em class="italic text-slate-700">تنظیم و گردآوری: پارسا رضائی | دانشکدگان مدیریت دانشگاه تهران</em>
+
+        </div>
+      </div>
+
+      <!-- Session 02 Card -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden transition-all hover:shadow-md">
+        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white relative">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+            <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20 text-indigo-200">
+              <span>⚙️</span>
+              <span>جلسه دوم (مکاتب کلاسیک)</span>
+            </span>
+            <span class="text-xs text-indigo-200 bg-white/10 px-3 py-1 rounded-lg border border-white/10 font-medium">
+              ۴ ساعت تدریس • تیلور، فایول POLC، ماکس وبر و مری پارکر فالت
+            </span>
+          </div>
+          <h2 class="text-2xl font-black text-white mb-2">مکاتب کلاسیک مدیریت؛ مدیریت علمی، کارکردهای POLC، بروکراسی و تعارض سازنده</h2>
+          <p class="text-sm text-indigo-200 leading-relaxed">
+            مطالعه زمان و حرکت تیلور، کارکردهای چهارگانه فایول (برنامه‌ریزی، سازماندهی، رهبری، کنترل)، ویژگی‌های بروکراسی وبر و یکپارچه‌سازی تعارض فالت.
+          </p>
+        </div>
+        <div class="p-6 md:p-8 border-b border-slate-100 bg-slate-50/50">
+          <h3 class="text-sm font-black text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+            خلاصه نکات کلیدی و دستاوردهای مدیریتی جلسه
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs leading-relaxed text-slate-600">
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۱. مدیریت علمی تیلور</strong>
+              استانداردسازی علمی زمان و حرکت، تفکیک برنامه‌ریزی از اجرا، و دستمزد تشویقی برای افزایش راندمان کارگاهی.
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۲. چرخه POLC و وحدت فرماندهی</strong>
+              چهار کارکرد بنیادین مدیریت و اصل وحدت فرماندهی فایول (یک کارمند تنها از یک مافوق مستقیم دستور می‌گیرد) به همراه پل فایول.
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۳. یکپارچه‌سازی تعارض فالت</strong>
+              حل تعارضات از مسیر خلق راهکار یکپارچه (Integration) و برد-برد، به جای تحمیل اراده (سلطه) یا سازش ناقص.
+            </div>
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button onclick="toggleSessionFull('s02')" id="btn-toggle-s02" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow transition-all hover:scale-105">
+              <span>📖 مشاهده متن کامل جزوه و فرمول‌ها</span>
+              <span id="icon-toggle-s02">▼</span>
+            </button>
+          </div>
+        </div>
+        <div id="full-notes-s02" class="hidden p-6 md:p-8 bg-white border-t border-slate-200 prose-custom leading-relaxed">
+          <h1 class="text-3xl font-black text-indigo-950 mt-4 mb-4">دانشنامه مبانی مدیریت کسب و کار - دانشگاه تهران</h1>
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">جلسه دوم: مکاتب کلاسیک مدیریت؛ تیلور، فایول و POLC، ماکس وبر و مری پارکر فالت</h2>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">شناسنامه و متادیتای مرجع جلسه</h3>
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">مشخصه</th>
+<th class="border border-slate-200 px-3 py-2 text-right">شرح استاندارد</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">عنوان دوره</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مبانی مدیریت کسب و کار (Business Fundamentals)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مدرس</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">استاد فرزانه سلطانی (دانشکدگان مدیریت دانشگاه تهران)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">تنظیم و تدوین</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مهندس پارسا رضائی (Parsa Rezaie)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">پروفایل حرفه‌ای</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">[linkedin.com/in/parsarezaie](https://www.linkedin.com/in/parsarezaie/)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">تعداد کل جلسات دوره</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">۴ جلسه تخصصی (۱۶ ساعت آموزش کاربردی)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">موضوع جلسه دوم</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مکتب مدیریت کلاسیک: مدیریت علمی تیلور، نظریه اداری فایول، فرآیند POLC، بروکراسی ماکس وبر و تعارض سازنده مری پارکر فالت</td>
+</tr>
+</tbody></table></div>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۱. سیر منطقی و ریشه‌های تاریخی مکتب کلاسیک</h3>
+با وقوع انقلاب صنعتی در اواخر قرن نوزدهم، کارگاه‌های سنتی کوچک جای خود را به کارخانه‌های بزرگ با صدها کارگر دادند. در این برهه، هرج‌ومرج، اتلاف منابع، عدم وجود استانداردهای تولید و روش‌های تجربی نامنسجم (Rule of Thumb) سازمان‌ها را فلج کرده بود. مکتب کلاسیک در پاسخ به این بحران پدید آمد و بر سه ستون اصلی استوار شد:
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>بهبود بهره‌وری در سطح کارگاه و فرآیند تولید: <strong class="font-bold text-slate-900">مدیریت علمی فردریک تیلور</strong></span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>اصول ساختاری و هدایت کل سازمان: <strong class="font-bold text-slate-900">مدیریت اداری آنری فایول</strong></span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>ساختار حاکمیت عقلانی و انضباط سازمانی: <strong class="font-bold text-slate-900">بروکراسی ماکس وبر</strong></span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>تلفیق نگاه ساختاری با خرد انسانی: <strong class="font-bold text-slate-900">نظریات پیشرو مری پارکر فالت</strong></span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۲. مدیریت علمی فردریک وینسلو تیلور (Scientific Management)</h3>
+فردریک وینسلو تیلور در کتاب مشهور خود در سال ۱۹۱۱ استدلال کرد که دلیل پایین بودن راندمان کارگران، «تنبلی سیستماتیک (Soldiering)» ناشی از نبود استانداردهای علمی و عدم تناسب شغل با شاغل است.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">اصول چهارگانه تیلور:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">توسعه دانش علمی برای هر عنصر کار:</strong> جایگزینی روش‌های سنتی و تجربی با مطالعات دقیق علمی زمان و حرکت.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">انتخاب، آموزش و پرورش علمی کارکنان:</strong> بررسی استعدادهای فردی و آموزش روش‌های استاندارد به کارگران به جای رها کردن آن‌ها برای یادگیری تصادفی.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">همکاری صمیمانه مدیریت با کارگران:</strong> ایجاد انگیزه و اطمینان از اینکه کارها دقیقاً منطبق بر اصول علمی تدوین‌شده انجام می‌شوند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">تقسیم عادلانه کار و مسئولیت:</strong> مدیریت مسئولیت برنامه‌ریزی، طراحی و زمان‌بندی را می‌پذیرد و کارگران بر اجرای دقیق تمرکز می‌کنند (تفکیک قطعی مغز از بازو).</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">ابزارها و تکنیک‌های مکمل تیلوریسم:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">مطالعه زمان و سنجش حرکت (Time & Motion Study):</strong> فرانک و لیلیان گیلبرث با تجزیه حرکات دست و بدن کارگران به ۱۸ حرکت پایه ( موسوم به Therbligs)، حرکات اضافی را حذف کرده و زمان استاندارد هر سیکل کاری را استخراج کردند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">سیستم پاداش و دستمزد تشویقی (Differential Piece-Rate):</strong> کارگری که فراتر از استاندارد تولید کند، نه تنها برای قطعات اضافه بلکه برای تمام قطعاتش نرخ دستمزد بالاتری دریافت می‌کند؛ و اگر کمتر از حد استاندارد تولید کند، جریمه مالی می‌شود.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">نقد بنیادین تیلوریسم:</h4>
+نگاه مکانیکی و ابزاری به کارگر به مثابه یک پیچ و مهره در خط تولید (Economic Man)، نادیده گرفتن نیازهای اجتماعی و عاطفی، و ایجاد فرسودگی روانی و از خودبیگانگی شغلی (Alienation).
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۳. نظریه مدیریت اداری آنری فایول و کارکردهای POLC</h3>
+در حالی که تیلور از کف کارگاه به بالا نگاه می‌کرد، آنری فایول (مهندس معدن و مدیرعامل فرانسوی) از رأس سازمان به پایین نگریست. فایول نخستین کسی بود که مدیریت را یک مهارت مستقل و قابل آموزش تعریف کرد.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">کارکردهای بنیادین مدیریت (POLC Framework):</h4>
+فایول مدیریت را شامل ۵ وظیفه می‌دانست که امروزه در قالب ۴ کارکرد استاندارد آموزش داده می‌شود:
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">برنامه‌ریزی (Planning):</strong> تعیین اهداف، تحلیل محیط و تدوین نقشه‌های راه برای رسیدن به اهداف.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">سازماندهی (Organizing):</strong> تخصیص منابع، تعیین وظایف، گروه‌بندی فعالیت‌ها در قالب دپارتمان‌ها و طراحی ساختار اختیارات.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">رهبری / هدایت (Leading / Directing):</strong> انگیزش پرسنل، ارتباط مؤثر، هدایت تیم‌ها و حل تعارضات رفتاری.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">کنترل (Controlling):</strong> سنجش عملکرد واقعی در مقایسه با استانداردهای برنامه‌ریزی، تحلیل انحرافات و اعمال اقدامات اصلاحی.</span></li>
+
+<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>┌────────────────────────────────────────────────────────┐
+│               فرآیند جامع مدیریت (POLC)               │
+└────────────────────────────────────────────────────────┘
+       │                                          ▲
+       ▼                                          │
+ ┌───────────┐      ┌───────────┐      ┌───────────┐      ┌───────────┐
+ │Planning   │ ──►  │Organizing │ ──►  │Leading    │ ──►  │Controlling│
+ │برنامه‌ریزی │      │سازماندهی   │      │رهبری و جهت │      │سنجش وکنترل │
+ └───────────┘      └───────────┘      └───────────┘      └───────────┘
+</code></pre>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">اصول چهارده‌گانه فایول (Fayol's 14 Principles):</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">تقسیم کار (Division of Work):</strong> تخصص‌گرایی سبب افزایش مهارت و کارایی می‌شود.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">اختیار و مسئولیت (Authority & Responsibility):</strong> حق دستور دادن باید همراه با پاسخگویی نتایج باشد.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">انضباط (Discipline):</strong> احترام به توافقات و قوانین سازمان از طریق رهبری شفاف و مجازات‌های منصفانه.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">وحدت فرماندهی (Unity of Command):</strong> هر پرسنل باید فقط و فقط از یک مافوق مستقیم دستور بگیرد (حیاتی‌ترین اصل فایول).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">وحدت جهت (Unity of Direction):</strong> تمام فعالیت‌هایی که هدف یکسانی دارند باید تحت یک برنامه و با هدایت یک مدیر انجام شوند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">تبعیت منافع فردی از منافع جمعی (Subordination of Individual Interest):</strong> اهداف سازمان بر خواسته‌های شخصی تقدم دارد.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">پاداش منصفانه (Remuneration):</strong> جبران خدمات باید عادلانه و رضایت‌بخش برای شاغل و کارفرما باشد.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">تمرکززدایی / تمرکزگرایی (Centralization):</strong> یافتن نقطه تعادل بهینه متناسب با بلوغ سازمان.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">سلسله‌مراتب و زنجیره فرماندهی (Scalar Chain):</strong> خط پیوسته اختیارات از عالی‌ترین رده تا پایین‌ترین سطح.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">نظم (Order):</strong> هر چیز و هر کس در جایگاه مناسب و زمان مناسب (نظم فیزیکی و اجتماعی).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">انصاف (Equity):</strong> رفتار عادلانه، توأم با مهربانی و عدالت از سوی مدیران نسبت به کارکنان.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">ثبات شغلی پرسنل (Stability of Tenure):</strong> جابه‌جایی بیش از حد نیروی کار سبب اتلاف هزینه و کاهش یادگیری می‌شود.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">ابتکار عمل (Initiative):</strong> تشویق پرسنل به ارائه ایده‌ها و طرح‌های نوآورانه.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">روحیه تیمی (Esprit de Corps):</strong> ارتقای حس همبستگی، همدلی و هویت جمعی در میان اعضای سازمان.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">پل فایول (Fayol's Gangplank):</h4>
+برای حل معضل کندی و تشریفات فلج‌کننده سلسله‌مراتب عمودی، فایول پیشنهاد کرد در شرایط اضطراری، دو مدیر هم‌عرض در دو دپارتمان مختلف بتوانند مستقیماً با یکدیگر ارتباط برقرار کنند؛ مشروط بر آنکه مافوق‌های خود را در جریان تصمیمات بگذارند.
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۴. نظریه بروکراسی عقلایی-قانونی ماکس وبر (Max Weber)</h3>
+ماکس وبر، جامعه‌شناس آلمانی، بروکراسی را کارآمدترین و عقلانی‌ترین شکل سازماندهی برای جلوگیری از روابط فامیلی، تصمیمات سلیقه‌ای و فساد اداری معرفی کرد.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">ویژگی‌های شش‌گانه بروکراسی ایده‌آل وبر:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">شایسته‌سالاری و تخصص‌گرایی:</strong> استخدام و ارتقای افراد صرفاً بر مبنای صلاحیت‌های فنی و آزمون‌های تخصصی، نه وفاداری‌های قبیله‌ای و سلیقه فردی.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">سلسله‌مراتب شفاف اختیارات:</strong> تعریف هرم دقیق با سطوح مشخص نظارت و سرپرستی.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مقررات و ضوابط مدون و مکتوب:</strong> ثبت تمامی فرآیندها، دستورالعمل‌ها و آیین‌نامه‌ها برای تضمین پیش‌بینی‌پذیری رفتارها.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">روابط غیرشخصی (Impersonality):</strong> اجرای یکسان و بدون تبعیض قوانین بر همه افراد، بدون دخالت احساسات یا روابط خویشاوندی.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">تفکیک مالکیت از مدیریت:</strong> اموال و سرمایه‌های سازمان متعلق به جایگاه‌های سازمانی است، نه دارایی شخصی مدیران.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مسیر شغلی و استخدام بلندمدت:</strong> پرسنل حقوق ثابت دریافت کرده و مسیر ارتقای پلکانی برایشان روشن است.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">آسیب‌ها و بیماری‌های بروکراسی در عمل:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">قانون‌زدگی و جابه‌جایی هدف با ابزار (Goal Displacement):</strong> تبدیل شدن رعایت قوانین به هدف اصلی سازمان به جای حل مسائل مشتریان و نوآوری.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">انجماد ساختاری و عدم انعطاف در برابر تغییرات سریع محیطی.</strong></span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۵. دیدگاه‌های نوآورانه مری پارکر فالت (Mary Parker Follett)</h3>
+مری پارکر فالت در عصر اوج مکانیک‌گرایی، مفاهیمی را مطرح کرد که دهه‌ها بعد به هسته اصلی مدیریت مدرن تبدیل شدند.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">۱. نظریه تعارض سازنده (Constructive Conflict):</h4>
+فالت تعارض را نه پدیده‌ای مخرب، بلکه منبعی از انرژی فکری و فرصتی برای خلاقیت می‌دانست. او سه روش برخورد با تعارض را تفکیک کرد:
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">سلطه (Domination):</strong> تحمیل اراده یک طرف بر دیگری با زور (نتیجه: انباشت خشم و انتقام در آینده).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">مصالحه و سازش (Compromise):</strong> هر دو طرف از بخشی از خواسته‌های خود کوتاه می‌آیند (نتیجه: نارضایتی پنهان هر دو طرف و راهکارهای نصفه‌نیمه).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">یکپارچه‌سازی (Integration):</strong> بازتعریف مسئله به گونه‌ای که خواسته‌های واقعی و ریشه‌ای هر دو طرف بدون مصالحه تامین شود (رویکرد برد-برد واقعی).</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">۲. قدرت مشترک در برابر قدرت برتر:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">قدرت با دیگران (Power-With):</strong> توانمندسازی تیم، مشارکت و تولید قدرت جمعی از طریق تعامل مثبت.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">قدرت بر دیگران (Power-Over):</strong> اعمال کنترل فیزیکی و دستوردهی مبتنی بر مقام سلسله‌مراتبی.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">۳. قانون موقعیت (The Law of the Situation):</h4>
+دستورات نباید ناشی از تمایلات شخصی مدیر باشند، بلکه باید تابع اقتضائات عینی واقعیت و شرایط محیطی صادر شوند. هنگامی که پرسنل درک کنند موقعیت مستلزم این اقدام است، دستور بدون مقاومت اجرا می‌شود.
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۶. اقتصاد و ریاضیات تصمیم‌گیری در کارایی کلاسیک</h3>
+در مکتب مدیریت علمی، شاخص راندمان کارگری و زمان استاندارد از فرمول‌های زیر استخراج می‌شد:
+
+<div class="math-eq" dir="ltr">
+<span class="math-var">Standard Time (ST)</span>
+<span class="math-op">=</span>
+<span class="math-var">Observed Time (OT)</span>
+<span class="math-op">×</span>
+<span class="math-var">Rating Factor (RF)</span>
+<span class="math-op">×</span>
+<span class="math-op">(</span>
+<span>1</span>
+<span class="math-op">+</span>
+<span class="math-var">Allowances (استراحت و خستگی)</span>
+<span class="math-op">)</span>
+</div>
+
+محاسبه شاخص بهره‌وری دستمزد تشویقی تیلور:
+<div class="math-eq" dir="ltr">
+<span class="math-var">Labor Efficiency (%)</span>
+<span class="math-op">=</span>
+<span class="math-frac">
+<span class="math-num">Standard Hours Earned (ساعت استاندارد کار انجام‌شده)</span>
+<span class="math-den">Actual Hours Worked (ساعت واقعی صرف‌شده)</span>
+</span>
+<span class="math-op">×</span>
+<span>100</span>
+</div>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۷. کیس‌استادی‌های بومی و تجارب اجرایی در صنایع ایران</h3>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">کیس ۱: نقض وحدت فرماندهی فایول در شرکت‌های خانوادگی و هلدینگی ایران</h4>
+در یک مجموعه صنعتی تولید قطعات خودرو در جاده مخصوص کرج، مدیرعامل (سهامدار اصلی) مرتباً بدون هماهنگی با مدیر کارخانه، مستقیماً به سرپرستان خط تولید دستور تغییر قالب‌ها و شیفت‌ها را ابلاغ می‌کرد.
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>پیامد: سرپرستان دچار سردرگمی شدید شدند؛ مدیر تولید برنامه‌ریزی یک‌ماهه انجام می‌داد اما دستورات غیرمترقبه مدیرعامل آن را بر هم می‌زد و در نهایت در زمان کاهش راندمان، هیچ‌کس پاسخگو نبود.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>حل مسئله: بازگشت قطعی به اصل وحدت فرماندهی فایول؛ مقرر شد مدیرعامل کلیه تصمیمات و تغییرات را منحصراً از کانال مدیر کارخانه ابلاغ نماید و اختیارات اجرایی مدیران میانی محترم شمرده شود. راندمان خط ظرف دو ماه ۲۰ درصد افزایش یافت.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">کیس ۲: اجرای حل تعارض از طریق یکپارچه‌سازی مری پارکر فالت</h4>
+در یک کارخانه صنعتی، بین واحد فروش و واحد تولید تنش شدیدی وجود داشت:
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>واحد فروش اصرار داشت سفارش‌های اختصاصی و کوچک با تنوع رنگ و ابعاد مختلف در کمتر از ۳ روز تحویل شود.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>واحد تولید شاکی بود که تعویض مداوم قالب‌ها و رنگ‌ها، ضایعات را تا ۱۲ درصد بالا می‌برد و ظرفیت ماشین‌آلات را هدر می‌دهد.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>راهکار یکپارچه‌سازی (فالت): تشکیل جلسه مشترک برای شناسایی خواسته ریشه‌ای؛ خواسته فروش، راضی نگه داشتن مشتریان VIP بود و خواسته تولید، عدم تغییر ناگهانی خط. تیم راه‌حل جدیدی یافت: اختصاص یک خط کمکی انعطاف‌پذیر کوچک برای سفارش‌های خاص پرحاشیه با قیمت ۳۰ درصد بالاتر، و اختصاص خط اصلی پرتیراژ به تولید استاندارد بدون توقف. هر دو واحد برنده شدند.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۸. چک‌لیست دوشنبه صبح برای مدیران بر اساس مکتب کلاسیک</h3>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] بازبینی وحدت فرماندهی: آیا پرسنلی در سازمان وجود دارد که هم‌زمان به دو مدیر پاسخگو باشد؟ (حذف خطوط موازی دستوردهی).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] پل فایول در سازمان: آیا کارشناسان برای انتقال یک داده ضروری به واحد دیگر، مجبور به طی سلسله‌مراتب نامه‌نگاری تا سطح معاونت هستند؟ فعال‌سازی کانال‌های ارتباط عرضی قانون‌مند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] غربالگری بروکراسی: آیا فرم‌ها یا امضاهایی در سازمان وجود دارد که هیچ ارزش افزوده‌ای خلق نمی‌کنند و صرفاً از روی عادت تکمیل می‌شوند؟</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] الگوی تعارض فالت: بررسی آخرین تعارض میان دو دپارتمان؛ آیا به دنبال سازش موقت بوده‌اید یا خلق یک راهکار یکپارچه (Integration)؟</span></li>
+
+---
+<em class="italic text-slate-700">تنظیم و گردآوری: پارسا رضائی | دانشکدگان مدیریت دانشگاه تهران</em>
+
+        </div>
+      </div>
+
+      <!-- Session 03 Card -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden transition-all hover:shadow-md">
+        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white relative">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+            <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20 text-indigo-200">
+              <span>👥</span>
+              <span>جلسه سوم (روابط انسانی و انگیزش)</span>
+            </span>
+            <span class="text-xs text-indigo-200 bg-white/10 px-3 py-1 rounded-lg border border-white/10 font-medium">
+              ۴ ساعت تدریس • هاثورن، مازلو، مک‌گریگور، هرزبرگ و مک‌کللند
+            </span>
+          </div>
+          <h2 class="text-2xl font-black text-white mb-2">نهضت روابط انسانی، مطالعات هاثورن و نظریات بنیادین انگیزش</h2>
+          <p class="text-sm text-indigo-200 leading-relaxed">
+            کشف سازمان غیررسمی در هاثورن، سلسله‌مراتب مازلو، اثر پیگمالیون در تئوری X/Y، تفکیک عوامل بهداشتی و انگیزشی هرزبرگ و نیازهای سه‌گانه مک‌کللند.
+          </p>
+        </div>
+        <div class="p-6 md:p-8 border-b border-slate-100 bg-slate-50/50">
+          <h3 class="text-sm font-black text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+            خلاصه نکات کلیدی و دستاوردهای مدیریتی جلسه
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs leading-relaxed text-slate-600">
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۱. اثر هاثورن و سازمان غیررسمی</strong>
+              توجه و دیده شدن کارگران راندمان را ارتقا می‌دهد. هنجارهای نانوشته گروه‌های غیررسمی قدرتی فراتر از چارت اداری دارند.
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۲. دوگانه بهداشت-انگیزش هرزبرگ</strong>
+              حقوق و ایمنی فقط نارضایتی را خنثی می‌کنند؛ رشد درونی، قدردانی و ماهیت چالش‌برانگیز کار محرک‌های واقعی تعهد هستند.
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۳. پروفایل انگیزش مک‌کللند</strong>
+              تطبیق افراد با انگیزه‌های توفیق‌طلبی (nAch) در R&D و فروش، تعلق‌جویی (nAff) در پشتیبانی، و قدرت نهادی (nPow) در رهبری.
+            </div>
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button onclick="toggleSessionFull('s03')" id="btn-toggle-s03" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow transition-all hover:scale-105">
+              <span>📖 مشاهده متن کامل جزوه و فرمول‌ها</span>
+              <span id="icon-toggle-s03">▼</span>
+            </button>
+          </div>
+        </div>
+        <div id="full-notes-s03" class="hidden p-6 md:p-8 bg-white border-t border-slate-200 prose-custom leading-relaxed">
+          <h1 class="text-3xl font-black text-indigo-950 mt-4 mb-4">دانشنامه مبانی مدیریت کسب و کار - دانشگاه تهران</h1>
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">جلسه سوم: نهضت روابط انسانی، مطالعات هاثورن و نظریات بنیادین انگیزش</h2>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">شناسنامه و متادیتای مرجع جلسه</h3>
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">مشخصه</th>
+<th class="border border-slate-200 px-3 py-2 text-right">شرح استاندارد</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">عنوان دوره</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مبانی مدیریت کسب و کار (Business Fundamentals)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مدرس</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">استاد فرزانه سلطانی (دانشکدگان مدیریت دانشگاه تهران)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">تنظیم و تدوین</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مهندس پارسا رضائی (Parsa Rezaie)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">پروفایل حرفه‌ای</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">[linkedin.com/in/parsarezaie](https://www.linkedin.com/in/parsarezaie/)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">تعداد کل جلسات دوره</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">۴ جلسه تخصصی (۱۶ ساعت آموزش کاربردی)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">موضوع جلسه سوم</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">نهضت روابط انسانی، آزمایش‌های هاثورن، سلسله‌مراتب مازلو، تئوری X و Y مک‌گریگور، نظریه دوعاملی هرزبرگ و نیازهای سه‌گانه مک‌کللند</td>
+</tr>
+</tbody></table></div>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۱. سیر منطقی و چرخش پارادایم از ماشین به انسان</h3>
+در اوایل قرن بیستم، مکتب کلاسیک انسان را ابزاری منطقی می‌دانست که تنها با پول انگیزش می‌یابد. اما از سال ۱۹۲۷، تحقیقات تجربی نشان داد که عوامل اجتماعی، روانی و عاطفی نقش به مراتب بالاتری در بهره‌وری ایفا می‌کنند. جلسه سوم بر این چرخش بزرگ تاریخی متمرکز است و مهم‌ترین نظریات محتوایی انگیزش را که ستون فقرات رهبری سازمان‌ها هستند، موشکافی می‌کند.
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۲. مطالعات هاثورن و اثر هاثورن (The Hawthorne Studies)</h3>
+پژوهش‌های انجام‌شده در کارخانه هاثورن وسترن الکتریک شیکاگو (۱۹۲۴ تا ۱۹۳۲) زیر نظر التون مایو (Elton Mayo) و فریتز روتلیسبرگر، زلزله‌ای در علم مدیریت پدید آورد.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">مراحل آزمایش و شگفتی‌های پژوهشی:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">آزمایش روشنایی (Illumination Studies):</strong> پژوهشگران نور سالن را افزایش دادند؛ تولید بالا رفت. سپس نور را تا حد نور مهتاب کم کردند؛ تولید باز هم بالا رفت! نتیجه تکان‌دهنده بود: متغیر تعیین‌کننده نور فیزیکی نبود، بلکه «احساس دیده‌شدن، توجه و مورد توجه قرار گرفتن کارگران از سوی پژوهشگران و مدیران» بود. این پدیده امروزه <strong class="font-bold text-slate-900">اثر هاثورن (Hawthorne Effect)</strong> نامیده می‌شود.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">اتاق آزمایش اتصال رله (Relay Assembly Test Room):</strong> متغیرهایی نظیر ساعات کار، زمان استراحت و میان‌وعده تغییر کرد. نتیجه نشان داد تعلق به یک گروه کوچک خودفرمان و نبود سرپرستی پلیسی، روحیه و راندمان را جهش می‌دهد.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">اتاق مشاهده بانک سیم‌پیچی (Bank Wiring Observation Room):</strong> کارگران به صورت خودجوش سقفی برای تولید روزانه تعیین کرده بودند («نه خیلی زیاد که استاندارد بالا برود، نه خیلی کم که تنبیه شوند»). هر کارگری که فراتر از هنجار گروه کار می‌کرد به شدت توسط همکاران طرد و مجازات روانی می‌شد (پدیده هنجار گروهی).</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">دستاوردهای کلیدی مطالعات هاثورن:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>انسان موجودی صرفاً اقتصادی نیست؛ موجودی اجتماعی و عاطفی است.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>تولد <strong class="font-bold text-slate-900">سازمان غیررسمی (Informal Organization):</strong> شبکه‌ای نامرئی از روابط دوستانه، هنجارها و احساسات که قدرتی بسیار فراتر از چارت سازمانی مصوب هیئت مدیره دارد.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۳. سلسله‌مراتب نیازهای آبراهام مازلو (Maslow's Hierarchy of Needs)</h3>
+آبراهام مازلو در سال ۱۹۴۳ نظریه نیازهای انسانی را در قالب یک هرم پنج‌طبقه فرموله کرد.
+
+<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>                  /\
+                 /  \      خودشکوفایی (Self-Actualization)
+                /----\     تحقق حداکثر پتانسیل فردی، خلق ارزش و معنا
+               /      \
+              /--------\   نیاز به احترام و قدردانی (Esteem Needs)
+             /          \  منزلت اجتماعی، تقدیر، استقلال، حس کفایت
+            /------------\
+           /              \  نیازهای اجتماعی و عاطفی (Social & Belonging)
+          /----------------\ دوستی، پذیرش در گروه، تعلق، ارتباط صمیمانه
+         /                  \
+        /--------------------\ نیازهای امنیتی (Safety & Security Needs)
+       /                      \امنیت شغلی، ایمنی فیزیکی، بیمه، ثبات مالی
+      /------------------------\
+     /                          \نیازهای زیستی و فیزیولوژیک (Physiological)
+    /----------------------------\آب، غذا، خواب، مسکن، حقوق پایه معیشتی
+</code></pre>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">دو اصل حاکم بر هرم مازلو:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">اصل کمبود (Deficit Principle):</strong> نیاز ارضاشده دیگر برانگیزاننده نیست؛ تنها نیاز ارضانشده محرک رفتار است.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">اصل پیشرفت (Progression Principle):</strong> فرد تا زمانی که نیازهای طبقات پایین‌تر را در حد معقول تامین نکند، نیازهای سطوح بالاتر برایش اولویت اصلی نخواهند بود.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">نقد و تحلیل بومی در شرایط اقتصادی ایران:</h4>
+در اقتصادهای دچار تورم مزمن و عدم ثبات، مدیران نمی‌توانند بدون ترمیم سبد معیشت و امنیت شغلی (طبقات ۱ و ۲)، با شعارهای انگیزشی و بسته‌های معنوی (طبقات ۴ و ۵) از کارکنان انتظار وفاداری و تعهد حداکثری داشته باشند.
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۴. تئوری X و تئوری Y داگلاس مک‌گریگور (Douglas McGregor)</h3>
+مک‌گریگور در کتاب «جنبه انسانی سازمان» نشان داد نحوه رفتار مدیر با کارکنان، بازتابی از باورهای فلسفی او نسبت به ماهیت بشر است:
+
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">بعد مقایسه</th>
+<th class="border border-slate-200 px-3 py-2 text-right">تئوری X (مدیریت سنتی و بدبینانه)</th>
+<th class="border border-slate-200 px-3 py-2 text-right">تئوری Y (مدیریت مدرن و توانمندساز)</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">نگرش به کار</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">انسان ذاتاً از کار بیزار است و از آن می‌گریزد.</td>
+<td class="border border-slate-200 px-3 py-2 text-right">کار کردن برای انسان مانند بازی و استراحت، امری طبیعی است.</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مسئولیت‌پذیری</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">افراد ترجیح می‌دهند هدایت شوند و از مسئولیت فراری‌اند.</td>
+<td class="border border-slate-200 px-3 py-2 text-right">افراد تحت شرایط مناسب، مشتاق پذیرش مسئولیت‌اند.</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مکانیزم کنترل</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مستلزم نظارت شدید، پلیسی، اجبار و تهدید به تنبیه (میکرومنیجمنت).</td>
+<td class="border border-slate-200 px-3 py-2 text-right">افراد دارای خودکنترلی و خودهدایتی در مسیر اهداف هستند.</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">خلاقیت</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">خلاقیت صرفاً در انحصار مدیران عالی است.</td>
+<td class="border border-slate-200 px-3 py-2 text-right">استعداد و خلاقیت به طور گسترده در میان پرسنل توزیع شده است.</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">سبک مدیریت</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">دستوری، متمرکز، بی‌اعتماد، مبتنی بر کنترل فرآیندها.</td>
+<td class="border border-slate-200 px-3 py-2 text-right">تفویضی، مشارکتی، مبتنی بر نتایج و توانمندسازی افراد.</td>
+</tr>
+</tbody></table></div>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">پدیده پیگمالیون یا پیشگویی خودمحقق‌کننده (Pygmalion Effect):</h4>
+اگر مدیری به تیم خود به چشم افراد بی‌مسئولیت و تنبل نگاه کند (تئوری X)، با رفتارهای کنترلی شدید خود سبب می‌شود که تیم بعد از مدتی انگیزه ابتکار عمل را از دست داده و دقیقاً به موجوداتی تنبل و غیرپاسخگو تبدیل شوند! بالعکس، اعتماد و انتظارات مثبت مدیر (تئوری Y)، عملکرد پرسنل را به سطوح بالاتری ارتقا می‌دهد.
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۵. نظریه دوعاملی بهداشت-انگیزش فردریک هرزبرگ (Herzberg Two-Factor)</h3>
+فردریک هرزبرگ یکی از انقلابی‌ترین کشفیات روانشناسی صنعتی را مطرح کرد: «نقطه مقابل رضایت شغلی، نارضایتی نیست؛ بلکه عدم رضایت است! و نقطه مقابل نارضایتی، عدم نارضایتی است.»
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">تفکیک دو عامل بنیادین هرزبرگ:</h4>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">۱. عوامل بهداشتی یا حافظ وضع موجود (Hygiene Factors):</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">عوامل محیطی و بیرونی کار:</strong> حقوق و مزایا، شرایط فیزیکی محیط کار، خط‌مشی‌های اداری شرکت، امنیت شغلی، روابط با همکاران و سرپرست.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">کارکرد:</strong> این عوامل انگیزه درونی خلق نمی‌کنند! فقط مثل صابون عمل می‌کنند که مانع بیماری می‌شود اما ویتامین نیست. اگر نباشند، نارضایتی شدید ایجاد می‌کنند؛ اما اگر در بالاترین سطح هم باشند، صرفاً نارضایتی را به «صفر» می‌رسانند (حالت خنثی و بی‌تفاوتی).</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">۲. عوامل انگیزشی یا رشد درونی (Motivator Factors):</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">عوامل ماهوی و درونی کار:</strong> حس موفقیت و دستاورد (Achievement)، قدردانی واقعی از عملکرد، ماهیت چالش‌برانگیز و جذاب کار، مسئولیت و اختیارات، فرصت یادگیری و رشد فردی.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">کارکرد:</strong> این عوامل موتور محرک تعهد، خلاقیت و عملکرد فراتر از وظیفه هستند.</span></li>
+
+<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>[عوامل بهداشتی: حقوق، ایمنی، شرایط فیزیکی] ──► حرکت از «نارضایتی شدید» به «عدم نارضایتی (نقطه صفر)»
+                                                                      │
+                                                                      ▼
+[عوامل انگیزشی: ماهیت کار، پیشرفت، قدردانی] ──► حرکت از «نقطه صفر» به «رضایت و تعهد عمیق شغلی»
+</code></pre>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۶. نظریه نیازهای اکتسابی دیوید مک‌کللند (David McClelland)</h3>
+مک‌کللند معتقد بود انسان‌ها بر اساس تجربیات زندگی خود، سه نیاز انگیزشی عمده پیدا می‌کنند:
+
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">نیاز به توفیق و پیشرفت (nAch - Need for Achievement):</strong></span></li>
+   - میل به برتری، تسلط بر مهارت‌های دشوار، دستیابی به استانداردهای بالا.
+   - ویژگی‌ها: ترجیح دادن ریسک‌های متوسط و معقول، نیاز به بازخورد ملموس و مستمر از نتایج، علاقه به حل مستقل مسائل.
+   - شغل مناسب: کارآفرینی، فروش تخصصی، مدیریت پروژه‌های نوآوری و R&D.
+
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">نیاز به تعلق و پیوندجویی (nAff - Need for Affiliation):</strong></span></li>
+   - میل به ایجاد و حفظ روابط دوستانه و صمیمانه، اجتناب از تنش و طرد شدن.
+   - ویژگی‌ها: اولویت دادن به هماهنگی تیم بر پیشبرد سخت‌گیرانه کار، نامناسب بودن برای نقش‌هایی که نیازمند تصمیمات تلخ و جراحی‌های سازمانی است.
+   - شغل مناسب: پشتیبانی مشتریان، روابط عمومی، منتورینگ و میانجی‌گری منابع انسانی.
+
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">نیاز به قدرت (nPow - Need for Power):</strong></span></li>
+   - میل به اثرگذاری، نفوذ و کنترل بر دیگران و هدایت جریان‌ها.
+   - تفکیک دو نوع قدرت:
+     - <strong class="font-bold text-slate-900">قدرت شخصی (Personal Power):</strong> خودخواهانه، سلطه‌گرایانه و مخرب (من باید حاکم باشم).
+     - <strong class="font-bold text-slate-900">قدرت نهادی یا اجتماعی (Socialized/Institutional Power):</strong> سازنده، با هدف توانمندسازی سازمان و جهت‌دهی منابع به سوی موفقیت جمعی.
+   - شغل مناسب: مدیریت ارشد، مدیرعاملی و رهبری سیاسی/سازمانی.
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۷. اقتصاد و ریاضیات تصمیم‌گیری: هزینه ریزش و نرخ جابه‌جایی نخبگان</h3>
+بی‌توجهی به عوامل هرزبرگ و سبک رهبری مخرب، سبب افزایش ریزش استعدادها (Brain Drain داخلی) می‌شود.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">محاسبه نرخ ریزش داوطلبانه نیروی کار (Voluntary Turnover Rate):</h4>
+<div class="math-eq" dir="ltr">
+<span class="math-var">Turnover Rate (%)</span>
+<span class="math-op">=</span>
+<span class="math-frac">
+<span class="math-num">Number of Voluntary Separations (تعداد پرسنلی که داوطلبانه استعفا داده‌اند)</span>
+<span class="math-den">Average Total Employees (میانگین کل پرسنل در همان بازه)</span>
+</span>
+<span class="math-op">×</span>
+<span>100</span>
+</div>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">هزینه واقعی جایگزینی هر کارشناس متخصص:</h4>
+طبق محاسبات انجمن مدیریت منابع انسانی (SHRM)، هزینه از دست دادن یک نیروی ماهر شامل هزینه‌های جذب، آگهی، مصاحبه، زمان منتورینگ و افت بهره‌وری تا رسیدن نیروی جدید به نقطه تعادل، بین ۱ تا ۲ برابر حقوق سالانه آن فرد است!
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۸. کیس‌استادی‌های بومی و تجارب میدانی در بازار کار ایران</h3>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">کیس ۱: شکست پاداش مالی در مهار استعفای کارشناسان R&D</h4>
+در یک شرکت دانش‌بنیان فعال در حوزه فناوری، مدیرعامل با موجی از استعفای کارشناسان نخبه نرم‌افزار مواجه شد. در پاسخ، حقوق‌ها را ۳۵ درصد افزایش داد؛ اما دو ماه بعد، دوباره ۲ نفر از بهترین افراد استعفا دادند.
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>عارضه‌یابی با مدل هرزبرگ: حقوق عامل بهداشتی بود؛ کارشناسان در حد نرمال بازار حقوق می‌گرفتند. عامل اصلی استعفا، «میکرومنیجمنت شدید مدیرعامل، نادیده گرفتن ایده‌های نوآورانه آن‌ها، نبود مسیر رشد و عدم شفافیت در قدردانی (عوامل انگیزشی)» بود.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>اقدام اصلاحی: اعطای آزادی عمل و استقلال در انتخاب پروژه‌ها (تئوری Y)، معرفی سیستم ارزیابی دستاوردها و اختصاص ۱۰ درصد از وقت هفتگی به کارهای تحقیقاتی آزاد. نرخ استعفا ظرف یک سال به صفر میل کرد.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">کیس ۲: چیدمان غلط تیم بر اساس مدل مک‌کللند</h4>
+در یک شرکت بازرگانی، فردی با نیاز به تعلق بسیار بالا (nAff بالا) و نیاز به قدرت پایین (nPow پایین) به عنوان مدیر وصول مطالبات معوق منصوب شده بود.
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>نتیجه: او به دلیل ترس از بر هم خوردن روابط دوستانه با مشتریان بدهکار، توانایی پیگیری سخت‌گیرانه، تماس‌های قاطعانه و ارسال اخطارهای حقوقی را نداشت و حجم مطالبات مشکوک‌الوصول شرکت سر به فلک زد.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>اصلاح چیدمان: انتقال این شخص به واحد وفادارسازی مشتریان (Customer Retention) و انتصاب فردی با نیاز به توفیق و قدرت نهادی بالا در واحد وصول مطالبات؛ وصول نقدینگی شرکت در کمتر از ۴۵ روز به حد نرمال رسید.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۹. چک‌لیست دوشنبه صبح برای مدیران در سنجش انگیزش تیم</h3>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] تست آگاهی از فرضیات X و Y: در تعامل با زیردستان، آیا اولین فرض شما این است که اگر کنترل‌شان نکنید کار را خراب می‌کنند، یا به توانایی آن‌ها برای حل مسئله ایمان دارید؟</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] بازرسی عوامل بهداشتی هرزبرگ: آیا سیستم تهویه کارگاه، ارگونومی صندلی‌ها، زمان واریز حقوق و شفافیت بیمه در وضعیت استاندارد قرار دارند تا حداقل نارضایتی خنثی شود؟</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] چکاپ عوامل انگیزشی: آخرین باری که از یک دستاورد خاص و شایسته یکی از اعضای تیم صمیمانه و با ذکر جزئیات تشکر کردید کی بوده است؟</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] تطبیق شغل و شاغل مک‌کللند: آیا کارشناسان پروژه‌محور و چالش‌طلب (nAch بالا) درگیر کارهای روتین و اداری کسل‌کننده شده‌اند؟ تجدیدنظر در شرح وظایف.</span></li>
+
+---
+<em class="italic text-slate-700">تنظیم و گردآوری: پارسا رضائی | دانشکدگان مدیریت دانشگاه تهران</em>
+
+        </div>
+      </div>
+
+      <!-- Session 04 Card -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden transition-all hover:shadow-md">
+        <div class="p-6 md:p-8 bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white relative">
+          <div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+            <span class="bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-black tracking-wide flex items-center gap-1.5 border border-white/20 text-indigo-200">
+              <span>🎯</span>
+              <span>جلسه چهارم (ارتباطات و رهبری)</span>
+            </span>
+            <span class="text-xs text-indigo-200 bg-white/10 px-3 py-1 rounded-lg border border-white/10 font-medium">
+              ۴ ساعت تدریس • ارتباطات، پنجره جوهری، بلیک-موتن و هرسی-بلانچارد
+            </span>
+          </div>
+          <h2 class="text-2xl font-black text-white mb-2">فرآیند ارتباطات، شبکه مدیریت بلیک-موتن و مدل‌های رهبری موقعیتی</h2>
+          <p class="text-sm text-indigo-200 leading-relaxed">
+            کاهش پارازیت‌های ارتباطی، مدل پنجره جوهری، سبک‌های ۵‌گانه شبکه بلیک و موتن، و مدل رهبری موقعیتی هرسی-بلانچارد بر مبنای بلوغ پیروان.
+          </p>
+        </div>
+        <div class="p-6 md:p-8 border-b border-slate-100 bg-slate-50/50">
+          <h3 class="text-sm font-black text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+            خلاصه نکات کلیدی و دستاوردهای مدیریتی جلسه
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs leading-relaxed text-slate-600">
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۱. پنجره جوهری و شفافیت</strong>
+              توسعه اعتماد تیمی با کاهش نقاط کور از طریق دریافت بازخورد و کاهش نقاط پنهان از طریق شفافیت متقابل.
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۲. شبکه مدیریت بلیک و موتن</strong>
+              تلفیق توجه به کار و توجه به افراد؛ سبک (۹،۹) مدیریت تیمی برای بیشترین هم‌افزایی و انگیزه پایدار سازمانی.
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs">
+              <strong class="block text-indigo-950 font-bold mb-1.5 text-sm">۳. رهبری موقعیتی (SLT)</strong>
+              تنظیم هوشمندانه سبک رفتار رهبر از دستوری (S1) تا تفویضی (S4) متناسب با سطح شایستگی و تعهد پرسنل (R1 تا R4).
+            </div>
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button onclick="toggleSessionFull('s04')" id="btn-toggle-s04" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs px-4 py-2.5 rounded-xl shadow transition-all hover:scale-105">
+              <span>📖 مشاهده متن کامل جزوه و فرمول‌ها</span>
+              <span id="icon-toggle-s04">▼</span>
+            </button>
+          </div>
+        </div>
+        <div id="full-notes-s04" class="hidden p-6 md:p-8 bg-white border-t border-slate-200 prose-custom leading-relaxed">
+          <h1 class="text-3xl font-black text-indigo-950 mt-4 mb-4">دانشنامه مبانی مدیریت کسب و کار - دانشگاه تهران</h1>
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">جلسه چهارم: فرآیند ارتباطات، شبکه مدیریت بلیک-موتن و مدل‌های رهبری موقعیتی</h2>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">شناسنامه و متادیتای مرجع جلسه</h3>
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">مشخصه</th>
+<th class="border border-slate-200 px-3 py-2 text-right">شرح استاندارد</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">عنوان دوره</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مبانی مدیریت کسب و کار (Business Fundamentals)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مدرس</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">استاد فرزانه سلطانی (دانشکدگان مدیریت دانشگاه تهران)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">تنظیم و تدوین</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مهندس پارسا رضائی (Parsa Rezaie)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">پروفایل حرفه‌ای</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">[linkedin.com/in/parsarezaie](https://www.linkedin.com/in/parsarezaie/)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">تعداد کل جلسات دوره</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">۴ جلسه تخصصی (۱۶ ساعت آموزش کاربردی)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">موضوع جلسه چهارم</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">فرآیند ارتباطات سازمانی، پنجره جوهری، شبکه مدیریت بلیک و موتن، نظریه اقتضایی فیدلر و رهبری موقعیتی هرسی-بلانچارد</td>
+</tr>
+</tbody></table></div>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۱. سیر منطقی جلسه و پیوند ارتباطات با رهبری</h3>
+هیچ استراتژی، ساختار یا انگیزه‌ای بدون یک سیستم ارتباطی سالم و شفاف به مرحله عمل نمی‌رسد. مدیران بیش از ۷۰ درصد از ساعات کاری خود را صرف برقراری ارتباط با دیگران می‌کنند. در این جلسه ابتدا سازوکار انتقال پیام و پارازیت‌های ارتباطی تحلیل شده و سپس مدل‌های کلاسیک و موقعیتی رهبری، به ویژه تطبیق سبک رفتار مدیر با سطح بلوغ کارکنان بررسی می‌گردد.
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۲. فرآیند جامع ارتباطات سازمانی (The Communication Process)</h3>
+ارتباطات، جریان دوطرفه تبادل اطلاعات، معانی و احساسات میان دو یا چند نفر است.
+
+<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>┌─────────┐      ┌──────────┐      ┌────────────┐      ┌──────────┐      ┌──────────┐
+│ فرستنده  │ ──►  │ کدگذاری  │ ──►  │ پیام و کانال│ ──►  │ رمزگشایی │ ──►  │ گیرنده   │
+│ Sender  │      │ Encoding │      │ Channel    │      │ Decoding │      │ Receiver │
+└─────────┘      └──────────┘      └────────────┘      └──────────┘      └──────────┘
+     ▲                                   │                                     │
+     │                           [پارازیت و نویز Noise]                        │
+     │                                   │                                     │
+     └─────────────────────────── [حلقه بازخورد Feedback] ◄────────────────────┘
+</code></pre>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">عناصر کلیدی فرآیند ارتباطات:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">فرستنده (Sender):</strong> دارنده ایده یا نیازی که قصد انتقال آن را دارد.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">کدگذاری (Encoding):</strong> تبدیل ایده ذهنی به نمادهای زبانی، کلمات، اعداد، دیاگرام‌ها یا زبان بدن.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">پیام و کانال انتقال (Message & Channel):</strong> محتوای کدگذاری‌شده و مسیری که پیام از آن عبور می‌کند (جلسه حضوری، ایمیل، تماس، اتوماسیون اداری). غنای کانال (Channel Richness) در ارتباط حضوری حداکثر و در گزارش‌های عددی مکتوب حداقل است.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">گیرنده و رمزگشایی (Receiver & Decoding):</strong> دریافت پیام و تفسیر معنایی آن در ذهن گیرنده بر اساس سوابق و تجربیات ذهنی او.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">بازخورد (Feedback):</strong> بررسی اطمینان از اینکه پیام دریافت شده دقیقاً همان معنای مدنظر فرستنده را منتقل کرده است (حلقه تکمیل‌کننده ارتباط مؤثر).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">پارازیت و نویز (Noise):</strong> هر عاملی که وضوح پیام را مخدوش یا تحریف کند؛ شامل نویزهای فیزیکی (صدای دستگاه‌ها)، روانی (خستگی، خشم)، یا معنایی (ابهام در اصطلاحات فنی).</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">موانع ادراکی در ارتباطات:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">فیلترینگ (Filtering):</strong> دستکاری عمدی اطلاعات توسط زیردستان تا گزارش برای مافوق خوشایند جلوه کند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">ادراک انتخابی (Selective Perception):</strong> دیدن و شنیدن آنچه فرد تمایل دارد بر اساس منافع شخصی خود ببیند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">بار اضافی اطلاعات (Information Overload):</strong> حجم داده‌های ورودی فراتر از ظرفیت پردازش ذهنی فرد (فلج تحلیلی).</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۳. خودآگاهی و توسعه ارتباطات: مدل پنجره جوهری (Johari Window)</h3>
+جوزف لوفت و هری اینگهام مدلی چهارخانه‌ای برای ارزیابی سطح گشودگی و شناخت متقابل در تیم‌ها ابداع کردند:
+
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">وضعیت شناخت</th>
+<th class="border border-slate-200 px-3 py-2 text-right">برای خود فرد شناخته‌شده</th>
+<th class="border border-slate-200 px-3 py-2 text-right">برای خود فرد ناشناخته</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">برای دیگران شناخته‌شده</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">ناحیه عمومی یا آشکار (Open Arena):</strong> شفافیت کامل، اعتماد بالا، تعامل مؤثر</td>
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">ناحیه کور (Blind Spot):</strong> رفتارهایی که دیگران می‌بینند ولی خود فرد از آن بی‌خبر است</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">برای دیگران ناشناخته</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">ناحیه پنهان یا نما (Hidden Facade):</strong> رازها، اضطراب‌ها و نظراتی که فرد از دیگران مخفی می‌کند</td>
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">ناحیه ناشناخته (Unknown):</strong> استعدادها یا ضعف‌های مکتوم که هنوز کشف نشده‌اند</td>
+</tr>
+</tbody></table></div>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">راهبرد رهبر برای بهبود کار تیمی:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>افزایش ناحیه عمومی از طریق <strong class="font-bold text-slate-900">گوش دادن به بازخورد دیگران</strong> (کوچک کردن ناحیه کور).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>افزایش ناحیه عمومی از طریق <strong class="font-bold text-slate-900">افشاگری و شفافیت صادقانه</strong> (کوچک کردن ناحیه پنهان).</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۴. تفاوت بنیادین مدیریت در برابر رهبری (Management vs. Leadership)</h3>
+جان کاتر (استاد برجسته هاروارد) نشان داد که مدیریت و رهبری دو سامانه رفتاری کاملاً متمایز و مکمل هستند:
+
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">مشخصه</th>
+<th class="border border-slate-200 px-3 py-2 text-right">مدیریت (Management)</th>
+<th class="border border-slate-200 px-3 py-2 text-right">رهبری (Leadership)</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">هدف اصلی</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">ایجاد نظم، ثبات، پیش‌بینی‌پذیری و کارایی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">ایجاد تغییر، تحول سازنده، پویایی و نوآوری</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">جهت‌گیری</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">برنامه‌ریزی تفصیلی، بودجه‌بندی و کنترل خطرات</td>
+<td class="border border-slate-200 px-3 py-2 text-right">خلق چشم‌انداز الهام‌بخش و استراتژی‌های آینده</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">همسوسازی نیروها</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">سازماندهی ساختاری، تخصیص سمت‌ها، تفویض اختیار</td>
+<td class="border border-slate-200 px-3 py-2 text-right">الهام‌بخشی، همسوسازی قلب‌ها و ذهن‌ها در مسیر آرمان مشترک</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">حل مسئله</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">کنترل انحرافات، تحلیل واریانس و اقدامات انضباطی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">انگیزش درونی، رفع موانع احساسی و توانمندسازی افراد</td>
+</tr>
+</tbody></table></div>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۵. شبکه مدیریت بلیک و موتن (Blake & Mouton Managerial Grid)</h3>
+رابرت بلیک و جین موتن سبک‌های رهبری را در یک ماتریس ۹×۹ بر مبنای دو متغیر محوری ارزیابی کردند:
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">توجه به تولید و نتیجه کار (Concern for Production) - محور افقی (۱ تا ۹)</strong></span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">توجه به افراد و روابط انسانی (Concern for People) - محور عمودی (۱ تا ۹)</strong></span></li>
+
+<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>توجه به افراد (Concern for People)
+  9 ┌───────────────────────────┬───────────────────────────┐
+    │  (۱،۹) مدیریت باشگاهی     │    (۹،۹) مدیریت تیمی      │
+    │  روابط صمیمی، توجه به رفاه │    تعهد بالا، اعتماد عمیق │
+    │  عدم تمرکز روی تولید و هدف│    بالاترین کارایی و انگیزه│
+    ├───────────────────────────┼───────────────────────────┤
+  5 │               (۵،۵) مدیریت میانه‌رو / بین‌راهی         │
+    │               تعادل نصفه‌نیمه، سازش، عملکرد متوسط       │
+    ├───────────────────────────┼───────────────────────────┤
+    │  (۱،۱) مدیریت بی‌تفاوت     │    (۹،۱) مدیریت وظیفه‌ای  │
+    │  حداقل تلاش، سلب مسئولیت   │    تمرکز شدید روی کار و هدف│
+  1 │  ترک صحنه و بی‌خاصیتی کامل│    بی‌توجهی به احساس و انسان│
+    └───────────────────────────┴───────────────────────────┘
+    1                             5                         9
+       توجه به تولید و نتایج کار (Concern for Production)
+</code></pre>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">تحلیل ۵ سبک بنیادین شبکه مدیریت:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت بی‌تفاوت / تضعیف‌شده (۱،۱ Impoverished Management):</strong> مدیر نه دلش برای کار می‌سوزد و نه برای پرسنل؛ حالت انفعال و رفع تکلیف.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت باشگاهی / روستایی (۱،۹ Country Club Management):</strong> توجه افراطی به راضی نگه داشتن افراد به قیمت قربانی شدن اهداف و نظم شرکت (محیطی صمیمی اما ناکارآمد و سست).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت وظیفه‌ای / اقتدارگرا (۹،۱ Authority-Compliance):</strong> دیکتاتوری سازمانی؛ انسان‌ها صرفاً ابزار تولیدند و باید تحت انضباط آهنین کار کنند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت بین‌راهی / میانه‌رو (۵،۵ Middle-of-the-Road Management):</strong> محافظه‌کاری و سازش مستمر؛ عملکرد سازمان هرگز به حد عالی نمی‌رسد و همیشه متوسط می‌ماند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">مدیریت تیمی و مشارکتی (۹،۹ Team Management):</strong> سبک ایده‌آل؛ ایجاد تعهد درونی عمیق در پرسنل از طریق پیوند زدن اهداف شخصی افراد به مأموریت سازمان.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۶. نظریه اقتضایی فیدلر (Fiedler's Contingency Model)</h3>
+فرد فیدلر نخستین پژوهشگری بود که استدلال کرد هیچ سبک رهبری به تنهایی بهترین نیست؛ بلکه اثربخشی رهبر وابسته به «تناسب میان سبک شخصیتی او و موقعیت سازمانی» است.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">متغیرهای مدل فیدلر:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">سبک رهبر (سنجش با پرسشنامه LPC - همکار کمتر مورد علاقه):</strong></span></li>
+   - اگر امتیاز LPC بالا باشد: رهبر <strong class="font-bold text-slate-900">رابطه‌محور</strong> است (حتی با همکاران ضعیف هم نگاه انسانی دارد).
+   - اگر امتیاز LPC پایین باشد: رهبر <strong class="font-bold text-slate-900">وظیفه‌محور</strong> است (انسان‌ها را صرفاً بر مبنای کارآمدی می‌سنجد).
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">سه بعد موقعیتی (تسهیل‌کننده رهبری):</strong></span></li>
+   - <strong class="font-bold text-slate-900">روابط رهبر و اعضا (خوب یا ضعیف):</strong> میزان اعتماد و احترامی که تیم برای مدیر قائل است.
+   - <strong class="font-bold text-slate-900">ساختار وظیفه (بالا یا پایین):</strong> وضوح، شفافیت و گام‌به‌گام بودن دستورالعمل‌های کاری.
+   - <strong class="font-bold text-slate-900">قدرت مقام (قوی یا ضعیف):</strong> میزان اختیارات رسمی مدیر در پاداش و تنبیه.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">نتیجه‌گیری کلیدی فیدلر:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>رهبران <strong class="font-bold text-slate-900">وظیفه‌محور (Low LPC)</strong> در شرایط «بسیار مطلوب» یا «بسیار نامطلوب (بحران‌ها و هرج‌ومرج)» بالاترین اثربخشی را دارند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>رهبران <strong class="font-bold text-slate-900">رابطه‌محور (High LPC)</strong> در شرایط «متوسط و اعتدالی» بهترین عملکرد را بروز می‌دهند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>فیدلر معتقد بود سبک شخصیتی رهبر غیرقابل تغییر است؛ بنابراین اگر سبکی با موقعیت نخواند، باید موقعیت را تغییر داد (Job Engineering) یا مدیر دیگری انتخاب کرد.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۷. مدل رهبری موقعیتی هرسی و بلانچارد (Situational Leadership Theory - SLT)</h3>
+برخلاف فیدلر، پاول هرسی و کن بلانچارد معتقد بودند رهبران موفق کسانی هستند که می‌توانند رفتار خود را منعطف کرده و متناسب با «میزان آمادگی و بلوغ پیروان (Follower Readiness)» تنظیم نمایند.
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">ابعاد رفتار رهبر:</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">رفتار وظیفه‌محور (دستوردهی و هدایت):</strong> تعریف نقش‌ها، زمان‌بندی و تبیین چه چیزی، چگونه و کجا انجام شود.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span><strong class="font-bold text-slate-900">رفتار رابطه‌محور (حمایتگری و تشویق):</strong> گوش دادن فعال، توانمندسازی، همدلی و تسهیلگری.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">چهار سطح بلوغ کارکنان (Maturity Levels):</h4>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">R1 (آمادگی پایین):</strong> ناتوان و بی‌انگیزه / فاقد اعتماد به نفس (یا تازه‌وارد ناآشنا).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">R2 (آمادگی متوسط پایین):</strong> ناتوان اما مشتاق، باانگیزه و پرانرژی (نیاز به یادگیری دارد).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">R3 (آمادگی متوسط بالا):</strong> توانمند و ماهر، اما مردد، کم‌انگیزه یا محتاط.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">R4 (آمادگی کامل):</strong> بسیار ماهر، شایسته، خودفرمان و با اعتماد به نفس بالا.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">چهار سبک رهبری متناظر با سطوح بلوغ (مدل S1 تا S4):</h4>
+
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">سطح بلوغ پرسنل</th>
+<th class="border border-slate-200 px-3 py-2 text-right">سبک رهبری بهینه</th>
+<th class="border border-slate-200 px-3 py-2 text-right">بعد رفتاری</th>
+<th class="border border-slate-200 px-3 py-2 text-right">نحوه تعامل و فرماندهی مدیر</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">R1</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">S1: دستوری / هدایتی (Telling / Directing)</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">وظیفه بالا، رابطه پایین</td>
+<td class="border border-slate-200 px-3 py-2 text-right">ارائه دستورالعمل‌های بسیار دقیق، نظارت مستمر و تشریح گام‌به‌گام وظایف</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">R2</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">S2: اقناعی / مربی‌گری (Selling / Coaching)</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">وظیفه بالا، رابطه بالا</td>
+<td class="border border-slate-200 px-3 py-2 text-right">تشریح چرایی تصمیمات، آموزش مهارت‌ها همراه با تشویق و تقویت انگیزه</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">R3</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">S3: مشارکتی / حمایتی (Participating / Supporting)</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">وظیفه پایین، رابطه بالا</td>
+<td class="border border-slate-200 px-3 py-2 text-right">سهیم کردن کارشناس در تصمیم‌گیری‌ها، رفع موانع روانی، افزایش اعتمادبه‌نفس</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">R4</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">S4: تفویضی (Delegating)</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">وظیفه پایین، رابطه پایین</td>
+<td class="border border-slate-200 px-3 py-2 text-right">واگذاری کامل اختیارات و مسئولیت اجرای پروژه بدون نظارت روزمره میکرومنیجمنت</td>
+</tr>
+</tbody></table></div>
+
+<pre class="bg-slate-900 text-slate-100 p-4 rounded-xl text-xs overflow-x-auto my-4 text-left font-mono" dir="ltr"><code>                       رفتار رابطه‌محور (حمایت)
+                              بالا
+                     ┌───────────────────┬───────────────────┐
+                     │   S3: مشارکتی     │   S2: اقناعی      │
+                     │  (مناسب برای R3)  │  (مناسب برای R2)  │
+                     │  همفکری و تسهیل   │  آموزش و تشویق    │
+                     ├───────────────────┼───────────────────┤
+                     │   S4: تفویضی      │   S1: دستوری      │
+                     │  (مناسب برای R4)  │  (مناسب برای R1)  │
+                     │  واگذاری کامل     │  دستور مستقیم     │
+                     └───────────────────┴───────────────────┘
+                              پایین      رفتار وظیفه‌محور (هدایت)      بالا
+</code></pre>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۸. کیس‌استادی‌های بومی و تجارب میدانی در صنعت ایران</h3>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">کیس ۱: خطای اعمال سبک تفویضی (S4) برای کارشناس تازه استخدام‌شده (R1)</h4>
+در یک شرکت پیمانکاری نفت و گاز، یک مهندس مکانیک جوان به محض ورود به شرکت، مسئولیت کامل پروپوزال یک مناقصه ۵۰ میلیارد تومانی را بدون آموزش و بدون گام‌های هدایتی دریافت کرد (مدیر به گمان خود به او "اعتماد" کرده بود).
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>پیامد: کارشناس به دلیل عدم آشنایی با مقررات حقوقی مناقصات و ضرایب بالاسری، پروپوزال را با اشتباهات فاحش ارسال کرد و شرکت از مناقصه حذف شد. کارشناس نیز دچار سرخوردگی شدید شد و قصد استعفا داشت.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>تحلیل با مدل هرسی-بلانچارد: نیروی تازه‌وارد در این پروژه خاص R1 بود و مدیر باید در گام نخست از سبک دستوری (S1) و مربی‌گری (S2) استفاده می‌کرد. تفویض اختیار پیش از رسیدن نیرو به بلوغ شایستگی، یک خودکشی مدیریتی است.</span></li>
+
+<h4 class="text-lg font-bold text-slate-800 mt-4 mb-2">کیس ۲: سرخوردگی کارشناس کهنه‌کار (R4) با رفتار میکرومنیجمنت (S1)</h4>
+در یک کارخانه صنعتی، یک سرپرست باسابقه با ۱۵ سال تجربه تولید که تمامی زیروبم خطوط را می‌شناخت، با یک مدیر کارخانه جدید مواجه شد که اصرار داشت سرپرست هر روز صبح لیست ۵۰ قلم کار روزمره را مکتوب تایید بگیرد و هر دو ساعت گزارش کار بدهد.
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>پیامد: سرپرست که در سطح R4 قرار داشت، این رفتار را توهین به شرافت حرفه‌ای و تخصص خود تلقی کرد و ظرف سه ماه انگیزه کاری خود را از دست داد و به "ترک کار خاموش (Quiet Quitting)" روی آورد.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>اصلاح رفتار: مدیر کارخانه پس از جلسه عارضه‌یابی متوجه شد که پرسنل R4 نیازی به نظارت دستوری ندارند؛ تنها باید شاخص‌های کلیدی خروجی ماهانه (KPIs) با او توافق شده و اختیارات کامل عملیاتی تفویض شود (S4). پس از این تغییر، بهره‌وری شیفت وی ۲۵ درصد جهش کرد.</span></li>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۹. چک‌لیست دوشنبه صبح برای مدیران در تنظیم سبک رهبری</h3>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] سنجش غنای کانال ارتباطی: آیا مسائل حساس و تعارضات انسانی را از طریق پیام‌رسان‌های متنی حل می‌کنید؟ (ممنوعیت حل مسائل احساسی با پیامک و الزام به جلسه حضوری).</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] ارزیابی ماتریس هرسی-بلانچارد برای تک‌تک اعضای مستقیم تیم: هر یک از پرسنل شما در چه سطحی از بلوغ (R1 تا R4) قرار دارند؟ آیا سبک رفتاری شما متناسب با سطح آن‌هاست؟</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] تست میکرومنیجمنت: آیا زمان خود را صرف کارهایی می‌کنید که نیروهای R4 به راحتی و با کیفیت بالا قادر به انجام آن هستند؟</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span>[ ] شناسایی نقاط کور پنجره جوهری: برنامه‌ریزی یک جلسه بازخورد ۳۶۰ درجه غیررسمی با یکی از معاونان یا سرپرستان معتمد برای کشف رفتارهایی که شما متوجه آن نیستید.</span></li>
+
+---
+<em class="italic text-slate-700">تنظیم و گردآوری: پارسا رضائی | دانشکدگان مدیریت دانشگاه تهران</em>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Tab 2: Handbook View -->
+    <div id="tab-content-handbook" class="tab-view hidden space-y-6">
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+        <div class="flex items-center justify-between pb-6 border-b border-slate-200 mb-6">
+          <div>
+            <h2 class="text-2xl font-black text-slate-900">هندبوک جامع و دانشنامه مبانی مدیریت کسب و کار</h2>
+            <p class="text-xs text-slate-500 mt-1">نسخه کامل مرجع دانشگاه تهران • تدوین مهندس پارسا رضائی</p>
+          </div>
+          <span class="bg-indigo-50 text-indigo-700 font-bold px-3 py-1 rounded-full text-xs border border-indigo-100">
+            ۴ جلسه یکپارچه
+          </span>
+        </div>
+        <div class="prose-custom leading-relaxed">
+          <h1 class="text-3xl font-black text-indigo-950 mt-4 mb-4">دانشنامه مرجع و هندبوک جامع مبانی مدیریت کسب و کار (Business Fundamentals)</h1>
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">دانشکدگان مدیریت دانشگاه تهران - گرایش مدیریت کسب و کار MBA</h2>
+
+---
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">شناسنامه اثر و مشخصات متادیتای رسمی</h3>
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">مشخصه</th>
+<th class="border border-slate-200 px-3 py-2 text-right">شرح مرجع</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">عنوان اثر</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">هندبوک جامع و دانشنامه مبانی مدیریت کسب و کار</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مدرس دوره</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">استاد فرزانه سلطانی (دانشکدگان مدیریت دانشگاه تهران)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مولف و تدوین‌کننده</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مهندس پارسا رضائی (Parsa Rezaie)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">پروفایل حرفه‌ای</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">[linkedin.com/in/parsarezaie](https://www.linkedin.com/in/parsarezaie/)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">کد ماژول</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right"><code class="bg-slate-100 text-indigo-800 px-1.5 py-0.5 rounded text-xs font-mono border border-slate-200">mba-bf04-1</code></td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">پوشش دوره‌ای</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">۴ جلسه تفصیلی (۱۶ ساعت آموزش فشرده و کاربردی)</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">دامنه کاربرد</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">راهنمای ارشد مدیران عامل، مدیران کارخانه، سرپرستان و دانشجویان MBA</td>
+</tr>
+</tbody></table></div>
+
+---
+
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">فهرست فصول هندبوک</h2>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>[فصل اول: چیستی سازمان، سطوح مدیریت، مهارت‌های سه‌گانه کاتز و اصل پارتو](#فصل-اول-چیستی-سازمان-سطوح-مدیریت-مهارت‌های-سه‌گانه-کاتز-و-اصل-پارتو)</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>[فصل دوم: مکاتب کلاسیک مدیریت؛ تیلور، فایول و POLC، ماکس وبر و مری پارکر فالت](#فصل-دوم-مکاتب-کلاسیک-مدیریت-تیلور-فایول-و-polc-ماکس-وبر-و-مری-پارکر-فالت)</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>[فصل سوم: نهضت روابط انسانی، مطالعات هاثورن و نظریات بنیادین انگیزش](#فصل-سوم-نهضت-روابط-انسانی-مطالعات-هاثورن-و-نظریات-بنیادین-انگیزش)</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>[فصل چهارم: فرآیند ارتباطات، شبکه مدیریت بلیک-موتن و مدل‌های رهبری موقعیتی](#فصل-چهارم-فرآیند-ارتباطات-شبکه-مدیریت-بلیک-موتن-و-مدل‌های-رهبری-موقعیتی)</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed font-normal"><span class="text-indigo-600 mt-1 font-bold">▸</span><span>[فصل پنجم: ماتریس جامع سنتز و ابزارهای تصمیم‌گیری روزمره مدیران](#فصل-پنجم-ماتریس-جامع-سنتز-و-ابزارهای-تصمیم‌گیری-روزمره-مدیران)</span></li>
+
+---
+
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">فصل اول: چیستی سازمان، سطوح مدیریت، مهارت‌های سه‌گانه کاتز و اصل پارتو</h2>
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۱. ماهیت و ارکان سازمان</h3>
+سازمان یک نهاد اجتماعی هدفمند با ساختاری عمدی و مرزهای مشخص است. بدون تقسیم کار و هماهنگی هدایت‌شده، هر تجمعی صرفاً یک گردهمایی موقت است نه سازمان.
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۲. تفکیک سه‌گانه کارایی، اثربخشی و بهره‌وری</h3>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">کارایی (Efficiency):</strong> انجام درست کارها با حداقل اتلاف منابع و زمان.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">اثربخشی (Effectiveness):</strong> انتخاب اهداف و مسیرهای درست در پاسخ به نیازهای واقعی محیط.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">بهره‌وری (Productivity):</strong> نسبت خروجی مفید به ورودی مصرف‌شده. بهره‌وری حاصل‌ضرب برداری کارایی و اثربخشی است.</span></li>
+
+<div class="math-eq" dir="ltr">
+<span class="math-var">Productivity</span>
+<span class="math-op">=</span>
+<span class="math-var">Efficiency</span>
+<span class="math-op">×</span>
+<span class="math-var">Effectiveness</span>
+</div>
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۳. سطوح سه‌گانه مدیریت و مهارت‌های رابرت کاتز</h3>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">سطح عالی (Top):</strong> نیازمند ۵۰٪ مهارت ادراکی، ۴۰٪ مهارت انسانی، ۱۰٪ مهارت فنی. تمرکز بر افق ۳ تا ۵ ساله و بقای سیستم.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">سطح میانی (Middle):</strong> نیازمند ۳۰٪ مهارت ادراکی، ۴۰٪ مهارت انسانی، ۳۰٪ مهارت فنی. ترجمه استراتژی به برنامه‌های اجرایی.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">سطح عملیاتی (First-Line):</strong> نیازمند ۱۰٪ مهارت ادراکی، ۴۰٪ مهارت انسانی، ۵۰٪ مهارت فنی. درگیری مستقیم با فرآیند روزمره صف.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">قاعده طلایی کاتز:</strong> مهارت انسانی در تمام سطوح وزنی پایدار و حیاتی (~۴۰٪) دارد.</span></li>
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۴. اصل پارتو (۸۰/۲۰)</h3>
+۸۰ درصد نتایج، سودها یا مشکلات ناشی از ۲۰ درصد عوامل کلیدی است. تمرکز مدیر بر شناسایی ۲۰ درصد مشتریان پرسود (Key Accounts)، ۲۰ درصد خطاهای ریشه‌ای خط تولید، و تخصیص زمان به ۲۰ درصد وظایف پربازده استراتژیک است.
+
+---
+
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">فصل دوم: مکاتب کلاسیک مدیریت؛ تیلور، فایول و POLC، ماکس وبر و مری پارکر فالت</h2>
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۱. مدیریت علمی تیلور (Scientific Management)</h3>
+جایگزینی روش‌های سنتی حدس و گمان با اصول علمی، مطالعه دقیق زمان و حرکت، آموزش تخصصی کارکنان، و پرداخت دستمزد تشویقی برای ارتقای راندمان کارگاهی.
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۲. مدیریت اداری فایول و کارکردهای POLC</h3>
+فایول مدیریت را فرآیندی چهارگانه و پیوسته تعریف کرد:
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">برنامه‌ریزی (Planning):</strong> تدوین اهداف و استراتژی‌ها.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">سازماندهی (Organizing):</strong> ساختاردهی، تخصیص منابع و تعیین نقش‌ها.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">رهبری (Leading):</strong> هدایت، انگیزش و همسوسازی پرسنل.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">کنترل (Controlling):</strong> سنجش خروجی واقعی با استاندارد و اصلاح انحرافات.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">اصول طلایی فایول:</strong> وحدت فرماندهی (یک رئیس مستقیم برای هر فرد)، زنجیره عددی (سلسله‌مراتب)، و پل فایول برای ارتباط مستقیم عرضی در مواقع اضطراری.</span></li>
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۳. بروکراسی عقلایی-قانونی ماکس وبر</h3>
+ساختاری ایده‌آل مبتنی بر شایسته‌سالاری در استخدام، قوانین مکتوب، اختیارات مشخص، رفتار غیرشخصی و تفکیک قاطع اموال شخصی از دارایی‌های سازمانی جهت حذف پارتی‌بازی و فساد اداری.
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۴. نظریات یکپارچه‌ساز مری پارکر فالت</h3>
+حل تعارض از طریق «یکپارچه‌سازی (Integration)» به جای تسلیم یا مصالحه؛ ایجاد قدرت با دیگران (Power-With) به جای تحمیل قدرت بر دیگران (Power-Over)؛ و صدور دستورات بر مبنای منطق عینی و مقتضیات موقعیت (Law of the Situation).
+
+---
+
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">فصل سوم: نهضت روابط انسانی، مطالعات هاثورن و نظریات بنیادین انگیزش</h2>
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۱. مطالعات هاثورن التون مایو</h3>
+کشف «اثر هاثورن»؛ افزایش تولید زمانی رخ داد که کارگران متوجه شدند مدیریت به آن‌ها اهمیت می‌دهد و دیده می‌شوند. همچنین اثبات وجود قدرتمند «سازمان غیررسمی» و هنجارهای گروهی که از دستورات رسمی هیئت مدیره اثرگذارتر است.
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۲. سلسله‌مراتب نیازهای مازلو</h3>
+هرم ۵ طبقه: فیزیولوژیک -> امنیت -> تعلق اجتماعی -> احترام و منزلت -> خودشکوفایی. در محیط‌های پرتلاطم، تا زمانی که پایه‌های معیشتی و امنیت شغلی تامین نشود، شعارهای خودشکوفایی اثر برانگیزاننده ندارند.
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۳. تئوری X و تئوری Y مک‌گریگور</h3>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">تئوری X:</strong> باور به تنبلی ذاتی انسان -> سبک کنترل پلیسی و میکرومنیجمنت.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">تئوری Y:</strong> باور به رشد، خلاقیت و تعهد ذاتی انسان -> سبک توانمندساز و مشارکتی.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">اثر پیگمالیون:</strong> انتظارات مدیر به حقیقت بدل می‌شود؛ با هر دیدگاهی به پرسنل بنگرید، آن‌ها در همان قالب رفتار خواهند کرد.</span></li>
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۴. تئوری دوعاملی هرزبرگ (Motivation-Hygiene)</h3>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">عوامل بهداشتی (حقوق، ایمنی، شرایط فیزیکی):</strong> فقط مانع نارضایتی می‌شوند؛ رضایت عمیق نمی‌آورند.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">عوامل انگیزشی (پیشرفت، قدردانی، ماهیت چالش‌برانگیز شغل، استقلال):</strong> محرک‌های واقعی تعهد و تعالی فردی.</span></li>
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۵. نیازهای سه‌گانه مک‌کللند</h3>
+توفیق‌طلبی (nAch) برای کارآفرینان و مدیران R&D؛ تعلق‌جویی (nAff) برای پشتیبانی و روابط عمومی؛ و قدرت نهادی و اجتماعی (nPow) برای مدیران ارشد و رهبران استراتژیک.
+
+---
+
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">فصل چهارم: فرآیند ارتباطات، شبکه مدیریت بلیک-موتن و مدل‌های رهبری موقعیتی</h2>
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۱. چرخه ارتباطات و پنجره جوهری</h3>
+فرآیند انتقال پیام از فرستنده به گیرنده از طریق کدگذاری و رمزگشایی در بستر نویز. مدل پنجره جوهری نشان می‌دهد با دریافت بازخورد (کاهش نقطه کور) و افشاگری صادقانه (کاهش نقطه پنهان)، ناحیه عمومی و اعتماد متقابل تیمی حداکثر می‌شود.
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۲. شبکه مدیریت بلیک و موتن</h3>
+ماتریس ۹×۹ از ترکیب توجه به کار و توجه به افراد. سبک ایده‌آل (۹،۹) مدیریت تیمی است که بیشترین انگیزه و بالاترین راندمان را خلق می‌کند؛ در برابر سبک‌های معیوب ۱،۱ (بی‌تفاوت)، ۱،۹ (باشگاهی)، و ۹،۱ (مستبدانه).
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۳. نظریه اقتضایی فیدلر</h3>
+اثربخشی رهبر وابسته به تطابق سبک او (LPC) با میزان مطلوبیت موقعیت (روابط، ساختار وظیفه، قدرت مقام) است. رهبران وظیفه‌محور در شرایط بحرانی یا بسیار ایده‌آل موفق‌ترند.
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">۴. رهبری موقعیتی هرسی و بلانچارد (SLT)</h3>
+رهبر ماهر کسی است که سبک رفتاری خود را با سطح بلوغ و آمادگی پرسنل تنظیم کند:
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">R1 (ناتوان و بی‌انگیزه/ناآشنا):</strong> سبک <strong class="font-bold text-slate-900">S1 دستوری (Telling)</strong>.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">R2 (ناتوان اما مشتاق و پرانرژی):</strong> سبک <strong class="font-bold text-slate-900">S2 اقناعی و مربی‌گری (Selling)</strong>.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">R3 (توانمند اما مردد یا کم‌انگیزه):</strong> سبک <strong class="font-bold text-slate-900">S3 مشارکتی و حمایتی (Participating)</strong>.</span></li>
+<li class="flex items-start gap-2 text-slate-700 leading-relaxed"><span class="text-indigo-600 mt-1 font-bold">▪</span><span><strong class="font-bold text-slate-900">R4 (بسیار ماهر، شایسته و خودانگیخته):</strong> سبک <strong class="font-bold text-slate-900">S4 تفویضی (Delegating)</strong>.</span></li>
+
+---
+
+<h2 class="text-2xl font-black text-slate-900 mt-8 mb-4 border-b border-slate-200 pb-2">فصل پنجم: ماتریس جامع سنتز و ابزارهای تصمیم‌گیری روزمره مدیران</h2>
+
+<h3 class="text-xl font-bold text-slate-900 mt-6 mb-3 border-r-4 border-indigo-600 pr-3">جدول جامع تطبیق مکاتب، صاحب‌نظران و کاربرد عملیاتی در شرکت‌ها</h3>
+<div class="overflow-x-auto my-6"><table class="w-full border-collapse border border-slate-200 text-sm">
+<thead class="bg-slate-100 font-bold text-slate-900"><tr>
+<th class="border border-slate-200 px-3 py-2 text-right">نظریه‌پرداز / مدل</th>
+<th class="border border-slate-200 px-3 py-2 text-right">مکتب فکری</th>
+<th class="border border-slate-200 px-3 py-2 text-right">متغیر کلیدی</th>
+<th class="border border-slate-200 px-3 py-2 text-right">خطای رایج در اجرای سازمانی</th>
+<th class="border border-slate-200 px-3 py-2 text-right">اقدام اصلاحی مدیر ارشد</th>
+</tr></thead><tbody>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">فردریک تیلور</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مدیریت علمی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">زمان و حرکت، دستمزد تشویقی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">تبدیل کارمند به ماشین و حذف کرامت انسانی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">استانداردسازی فرآیند با حفظ محیط محترمانه</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">آنری فایول</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مدیریت اداری</td>
+<td class="border border-slate-200 px-3 py-2 text-right">کارکردهای POLC، وحدت فرماندهی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">ابلاغ دستور از چند کانال موازی به یک پرسنل</td>
+<td class="border border-slate-200 px-3 py-2 text-right">شفاف‌سازی زنجیره فرماندهی و تفویض اختیارات</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">ماکس وبر</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">بروکراسی عقلایی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">ضوابط مدون، شایسته‌سالاری</td>
+<td class="border border-slate-200 px-3 py-2 text-right">قانون‌زدگی و فلج تصمیم‌گیری به خاطر بوروکراسی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">حذف امضاهای زاید و فرآیندهای بدون ارزش افزوده</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">مری پارکر فالت</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">روابط انسانی اولیه</td>
+<td class="border border-slate-200 px-3 py-2 text-right">حل تعارض یکپارچه، قدرت مشترک</td>
+<td class="border border-slate-200 px-3 py-2 text-right">اجبار به مصالحه تحمیلی و سرکوب یکی از طرفین</td>
+<td class="border border-slate-200 px-3 py-2 text-right">بازتعریف مسئله و یافتن راهکار برد-برد نوآورانه</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">التون مایو</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">روابط انسانی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">اثر هاثورن و سازمان غیررسمی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">نادیده گرفتن رهبران فکری غیررسمی در کارخانه</td>
+<td class="border border-slate-200 px-3 py-2 text-right">شناسایی لیدرها و مشارکت دادن آنان در تحولات</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">آبراهام مازلو</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">مکتب انگیزش</td>
+<td class="border border-slate-200 px-3 py-2 text-right">هرم سلسله‌مراتب نیازها</td>
+<td class="border border-slate-200 px-3 py-2 text-right">انتظار خودشکوفایی بدون تامین پایه معیشتی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">بسته‌های جبران خدمات متناسب با تورم</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">فردریک هرزبرگ</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">روانشناسی کار</td>
+<td class="border border-slate-200 px-3 py-2 text-right">عوامل بهداشتی vs انگیزشی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">تصور حل بی‌انگیزگی فقط با افزایش اضافه کار</td>
+<td class="border border-slate-200 px-3 py-2 text-right">غنی‌سازی شغل، استقلال و بازخورد دستاوردها</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">داگلاس مک‌گریگور</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">نظریات رفتار</td>
+<td class="border border-slate-200 px-3 py-2 text-right">فرضیات X و Y، اثر پیگمالیون</td>
+<td class="border border-slate-200 px-3 py-2 text-right">میکرومنیجمنت شدید و پلیس‌بازی مدیران</td>
+<td class="border border-slate-200 px-3 py-2 text-right">اعتماد سنجیده و ارزیابی بر مبنای خروجی نهایی</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">دیوید مک‌کللند</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">روانشناسی انگیزش</td>
+<td class="border border-slate-200 px-3 py-2 text-right">نیازهای سه‌گانه (توفیق، قدرت، تعلق)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">گماردن افراد صلح‌طلب (nAff) در پست‌های چالش‌برانگیز</td>
+<td class="border border-slate-200 px-3 py-2 text-right">چیدمان شغل متناسب با الگوی انگیزش درونی فرد</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">بلیک و موتن</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">سبک‌های رهبری</td>
+<td class="border border-slate-200 px-3 py-2 text-right">شبکه ۹،۹ (تولید و افراد)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">رها کردن اهداف به نفع روابط صمیمی (باشگاهی)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">همسوسازی تعالی سازمانی با منافع و شأن پرسنل</td>
+</tr>
+<tr class="hover:bg-slate-50">
+<td class="border border-slate-200 px-3 py-2 text-right"><strong class="font-bold text-slate-900">هرسی و بلانچارد</strong></td>
+<td class="border border-slate-200 px-3 py-2 text-right">رهبری موقعیتی</td>
+<td class="border border-slate-200 px-3 py-2 text-right">انطباق سبک (S1-S4) با بلوغ (R1-R4)</td>
+<td class="border border-slate-200 px-3 py-2 text-right">تفویض به پرسنل تازه‌کار یا کنترل شدید نخبه‌ها</td>
+<td class="border border-slate-200 px-3 py-2 text-right">تنظیم منعطف رفتار متناسب با سطح شایستگی هر فرد</td>
+</tr>
+</tbody></table></div>
+
+---
+<em class="italic text-slate-700">تنظیم و گردآوری: پارسا رضائی | دانشکدگان مدیریت دانشگاه تهران</em>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Interactive Tool Simulator -->
+    <div id="tab-content-simulator" class="tab-view hidden space-y-8">
+      
+      <!-- Tool 1: Blake-Mouton Managerial Grid Simulator -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+        <div class="max-w-2xl mb-6">
+          <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-200">
+            🧭 ابزار تعاملی اول
+          </span>
+          <h2 class="text-2xl font-black text-slate-900 mt-2">شبیه‌ساز سبک رهبری شبکه مدیریت بلیک و موتن</h2>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            با حرکت دادن اسلایدرهای زیر، سطح توجه به تولید (اهداف/نتایج) و سطح توجه به افراد را تغییر دهید تا سبک رهبری خود و عوارض آن را در لحظه مشاهده کنید.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <div class="space-y-6 bg-slate-50 p-6 rounded-2xl border border-slate-200">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-xs font-bold text-slate-800">توجه به تولید و نتایج کار (Concern for Production)</label>
+                <span id="val-prod" class="text-sm font-black text-indigo-600 bg-white px-2.5 py-0.5 rounded border border-indigo-200">9</span>
+              </div>
+              <input type="range" id="slider-prod" min="1" max="9" value="9" class="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-indigo-600" oninput="updateGrid()">
+              <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+                <span>۱: حداقل توجه</span>
+                <span>۵: متوسط</span>
+                <span>۹: حداکثر تمرکز روی هدف</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-xs font-bold text-slate-800">توجه به روابط و افراد (Concern for People)</label>
+                <span id="val-people" class="text-sm font-black text-emerald-600 bg-white px-2.5 py-0.5 rounded border border-emerald-200">9</span>
+              </div>
+              <input type="range" id="slider-people" min="1" max="9" value="9" class="w-full h-2 bg-slate-300 rounded-lg appearance-none cursor-pointer accent-emerald-600" oninput="updateGrid()">
+              <div class="flex justify-between text-[10px] text-slate-400 mt-1">
+                <span>۱: بی‌تفاوتی به پرسنل</span>
+                <span>۵: تعادل سازشکارانه</span>
+                <span>۹: اوج احترام و همدلی</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Output Card -->
+          <div id="grid-result-box" class="p-6 rounded-2xl border transition-all bg-emerald-50 border-emerald-200 text-emerald-950">
+            <div class="flex items-center gap-2 mb-2">
+              <span id="grid-icon" class="text-2xl">🏆</span>
+              <h3 id="grid-style-title" class="text-lg font-black">مدیریت تیمی و مشارکتی (۹،۹ Team Management)</h3>
+            </div>
+            <p id="grid-desc" class="text-xs leading-relaxed text-emerald-900 mt-2">
+              ایده‌آل‌ترین سبک رهبری؛ همسوسازی اهداف فردی با چشم‌انداز شرکت، تکیه بر اعتماد متقابل، انگیزه درونی عمیق و دستیابی به بالاترین راندمان ممکن.
+            </p>
+            <div class="mt-4 pt-4 border-t border-emerald-200 text-xs">
+              <strong class="block font-bold mb-1">تناسب با مدل هرسی-بلانچارد:</strong>
+              <span id="grid-pairing">مناسب برای هدایت استعدادهای سطح R3 و R4 در پروژه‌های پیچیده و استراتژیک.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tool 2: Robert Katz Skills Analyzer -->
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+        <div class="max-w-2xl mb-6">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded-full border border-indigo-200">
+            ⚖️ ابزار تعاملی دوم
+          </span>
+          <h2 class="text-2xl font-black text-slate-900 mt-2">عارضه‌یاب مهارت‌های سه‌گانه رابرت کاتز و سندروم پیتر</h2>
+          <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+            سطح سازمانی خود را انتخاب کنید تا وزن استاندارد مهارت‌های فنی، انسانی و ادراکی نمایش داده شود.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-3 mb-6">
+          <button onclick="setKatzLevel('top')" id="btn-katz-top" class="px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow">
+            مدیریت عالی (Top Management)
+          </button>
+          <button onclick="setKatzLevel('middle')" id="btn-katz-middle" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">
+            مدیریت میانی (Middle Management)
+          </button>
+          <button onclick="setKatzLevel('firstline')" id="btn-katz-firstline" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200">
+            مدیریت عملیاتی / سرپرستی (First-line)
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+            <span class="text-xs font-bold text-slate-500">مهارت ادراکی (Conceptual)</span>
+            <div class="text-2xl font-black text-indigo-600 mt-1" id="katz-val-c">۵۰٪</div>
+            <div class="w-full bg-slate-200 h-2 rounded-full mt-2 overflow-hidden">
+              <div id="katz-bar-c" class="bg-indigo-600 h-2 rounded-full transition-all duration-300" style="width: 50%;"></div>
+            </div>
+            <p class="text-[11px] text-slate-600 mt-2" id="katz-desc-c">بینش کلان، درک اکوسیستم و پیش‌بینی روندهای ۳ تا ۵ ساله بازار.</p>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+            <span class="text-xs font-bold text-slate-500">مهارت انسانی (Human)</span>
+            <div class="text-2xl font-black text-emerald-600 mt-1" id="katz-val-h">۴۰٪</div>
+            <div class="w-full bg-slate-200 h-2 rounded-full mt-2 overflow-hidden">
+              <div id="katz-bar-h" class="bg-emerald-600 h-2 rounded-full transition-all duration-300" style="width: 40%;"></div>
+            </div>
+            <p class="text-[11px] text-slate-600 mt-2" id="katz-desc-h">انگیزش، گوش دادن فعال، حل تعارض و ارتباط تیمی (ثابت در تمام سطوح).</p>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200">
+            <span class="text-xs font-bold text-slate-500">مهارت فنی (Technical)</span>
+            <div class="text-2xl font-black text-amber-600 mt-1" id="katz-val-t">۱۰٪</div>
+            <div class="w-full bg-slate-200 h-2 rounded-full mt-2 overflow-hidden">
+              <div id="katz-bar-t" class="bg-amber-600 h-2 rounded-full transition-all duration-300" style="width: 10%;"></div>
+            </div>
+            <p class="text-[11px] text-slate-600 mt-2" id="katz-desc-t">دانش تخصصی کار با ابزارها و اجرای مستقیم فرآیندها.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer strictly per standard with Parsa Rezaie branding -->
+  <footer class="bg-slate-900 text-slate-400 py-8 px-6 border-t border-slate-800 text-center text-xs">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span>دانشکدگان مدیریت دانشگاه تهران • ماژول تخصصی مبانی مدیریت کسب و کار (کد mba-bf04-1)</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span>تنظیم و تدوین جامع: <strong class="text-white font-bold">پارسا رضائی</strong></span>
+        <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          <span>Parsa Rezaie</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-view').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-slate-900', 'shadow-md', 'active');
+        btn.classList.add('bg-white/15', 'text-white');
+      });
+      
+      const targetView = document.getElementById('tab-content-' + tabId);
+      const targetBtn = document.getElementById('tab-btn-' + tabId);
+      if (targetView) targetView.classList.remove('hidden');
+      if (targetBtn) {
+        targetBtn.classList.add('bg-white', 'text-slate-900', 'shadow-md', 'active');
+        targetBtn.classList.remove('bg-white/15', 'text-white');
+      }
+
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise();
+      }
+    }
+
+    function toggleSessionFull(sessionId) {
+      const el = document.getElementById('full-notes-' + sessionId);
+      const icon = document.getElementById('icon-toggle-' + sessionId);
+      if (el) {
+        if (el.classList.contains('hidden')) {
+          el.classList.remove('hidden');
+          if (icon) icon.innerText = '▲';
+          if (window.MathJax && window.MathJax.typesetPromise) {
+            window.MathJax.typesetPromise();
+          }
+        } else {
+          el.classList.add('hidden');
+          if (icon) icon.innerText = '▼';
+        }
+      }
+    }
+
+    function updateGrid() {
+      const prod = parseInt(document.getElementById('slider-prod').value);
+      const people = parseInt(document.getElementById('slider-people').value);
+      document.getElementById('val-prod').innerText = prod;
+      document.getElementById('val-people').innerText = people;
+
+      const box = document.getElementById('grid-result-box');
+      const icon = document.getElementById('grid-icon');
+      const title = document.getElementById('grid-style-title');
+      const desc = document.getElementById('grid-desc');
+      const pairing = document.getElementById('grid-pairing');
+
+      box.className = "p-6 rounded-2xl border transition-all ";
+
+      if (prod >= 7 && people >= 7) {
+        box.classList.add("bg-emerald-50", "border-emerald-200", "text-emerald-950");
+        icon.innerText = "🏆";
+        title.innerText = "مدیریت تیمی و مشارکتی (۹،۹ Team Management)";
+        desc.innerText = "ایده‌آل‌ترین سبک رهبری؛ ایجاد تعهد درونی عمیق در پرسنل، اعتماد متقابل و بالاترین راندمان ممکن با حفظ کرامت انسانی.";
+        pairing.innerText = "هم‌افزایی حداکثری با پرسنل شایسته سطوح R3 و R4 در پروژه‌های تحول‌آفرین.";
+      } else if (prod <= 3 && people >= 7) {
+        box.classList.add("bg-amber-50", "border-amber-200", "text-amber-950");
+        icon.innerText = "☕";
+        title.innerText = "مدیریت باشگاهی / روستایی (۱،۹ Country Club)";
+        desc.innerText = "توجه افراطی به راضی نگه داشتن افراد و فضای صمیمی به قیمت قربانی شدن اهداف تولیدی و سودآوری سازمان (محیطی لوس و بدون انضباط).";
+        pairing.innerText = "هشدار: کاهش راندمان؛ نیازمند تزریق انضباط هدف‌محور.";
+      } else if (prod >= 7 && people <= 3) {
+        box.classList.add("bg-rose-50", "border-rose-200", "text-rose-950");
+        icon.innerText = "⚡";
+        title.innerText = "مدیریت وظیفه‌ای و اقتدارگرا (۹،۱ Task Management)";
+        desc.innerText = "نگاه ابزاری محض به انسان‌ها؛ تمرکز آهنین روی تیراژ تولید، بی‌توجهی به احساسات، خستگی و فرسودگی پرسنل (دیکتاتوری سازمانی).";
+        pairing.innerText = "تنها در بحران‌های فوق حاد اثربخش است؛ در بلندمدت سبب شورش و استعفای نخبگان می‌شود.";
+      } else if (prod <= 3 && people <= 3) {
+        box.classList.add("bg-slate-100", "border-slate-300", "text-slate-800");
+        icon.innerText = "💤";
+        title.innerText = "مدیریت بی‌تفاوت / تضعیف‌شده (۱،۱ Impoverished)";
+        desc.innerText = "حداقل تلاش ممکن؛ مدیر نه به سرنوشت اهداف شرکت اهمیت می‌دهد و نه به پرسنل. حالت انفعال و رفع تکلیف کامل.";
+        pairing.innerText = "منطقه خطر؛ سازمان در آستانه انحلال یا بحران جدی قرار دارد.";
+      } else {
+        box.classList.add("bg-blue-50", "border-blue-200", "text-blue-950");
+        icon.innerText = "⚖️";
+        title.innerText = "مدیریت میانه‌رو و بین‌راهی (۵،۵ Middle-of-the-Road)";
+        desc.innerText = "تعادل نصفه‌نیمه از طریق سازش مداوم؛ کارایی در حد متوسط حفظ می‌شود اما سازمان هرگز به تعالی و رکوردهای برتر دست نمی‌یابد.";
+        pairing.innerText = "وضعیت امن اما بدون نوآوری؛ مناسب سازمان‌های سنتی و کم‌ریسک.";
+      }
+    }
+
+    function setKatzLevel(level) {
+      const btnTop = document.getElementById('btn-katz-top');
+      const btnMid = document.getElementById('btn-katz-middle');
+      const btnFirst = document.getElementById('btn-katz-firstline');
+
+      [btnTop, btnMid, btnFirst].forEach(b => {
+        b.className = "px-4 py-2 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200";
+      });
+
+      if (level === 'top') {
+        btnTop.className = "px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow";
+        document.getElementById('katz-val-c').innerText = "۵۰٪";
+        document.getElementById('katz-bar-c').style.width = "50%";
+        document.getElementById('katz-val-h').innerText = "۴۰٪";
+        document.getElementById('katz-bar-h').style.width = "40%";
+        document.getElementById('katz-val-t').innerText = "۱۰٪";
+        document.getElementById('katz-bar-t').style.width = "10%";
+      } else if (level === 'middle') {
+        btnMid.className = "px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow";
+        document.getElementById('katz-val-c').innerText = "۳۰٪";
+        document.getElementById('katz-bar-c').style.width = "30%";
+        document.getElementById('katz-val-h').innerText = "۴۰٪";
+        document.getElementById('katz-bar-h').style.width = "40%";
+        document.getElementById('katz-val-t').innerText = "۳۰٪";
+        document.getElementById('katz-bar-t').style.width = "30%";
+      } else {
+        btnFirst.className = "px-4 py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow";
+        document.getElementById('katz-val-c').innerText = "۱۰٪";
+        document.getElementById('katz-bar-c').style.width = "10%";
+        document.getElementById('katz-val-h').innerText = "۴۰٪";
+        document.getElementById('katz-bar-h').style.width = "40%";
+        document.getElementById('katz-val-t').innerText = "۵۰٪";
+        document.getElementById('katz-bar-t').style.width = "50%";
+      }
+    }
+  </script>
+</body>
+</html>

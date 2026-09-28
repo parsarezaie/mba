@@ -14,33 +14,33 @@
   </script>
   <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>
-    .gradient-header { background: linear-gradient(135deg, #0f172a 0%, #312e81 50%, #4338ca 100%); }
+    .gradient-header { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4338ca 75%, #0f172a 100%); }
     body { font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif; }
     .card-hover { transition: all 0.25s ease-in-out; }
     .card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
     
-    .prose-custom { font-size: 0.875rem; line-height: 1.85; color: #334155; }
-    .prose-custom h1 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-top: 1.75rem; margin-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
-    .prose-custom h2 { font-size: 1.25rem; font-weight: 700; color: #1e293b; margin-top: 1.5rem; margin-bottom: 0.6rem; border-right: 4px solid #4f46e5; padding-right: 0.6rem; }
-    .prose-custom h3 { font-size: 1.05rem; font-weight: 700; color: #334155; margin-top: 1.25rem; margin-bottom: 0.5rem; }
-    .prose-custom p { margin-bottom: 0.85rem; text-align: justify; }
-    .prose-custom ul { list-style-type: disc; margin-right: 1.5rem; margin-bottom: 0.85rem; }
-    .prose-custom ol { list-style-type: decimal; margin-right: 1.5rem; margin-bottom: 0.85rem; }
-    .prose-custom li { margin-bottom: 0.35rem; }
-    .prose-custom blockquote { border-right: 4px solid #4f46e5; background-color: #eef2ff; padding: 0.85rem 1.15rem; border-radius: 0.5rem; margin: 1.25rem 0; color: #3730a3; font-weight: 500; }
-    .prose-custom table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.825rem; border-radius: 0.5rem; overflow: hidden; }
-    .prose-custom th { background-color: #f1f5f9; padding: 0.65rem 0.85rem; font-weight: 700; border: 1px solid #cbd5e1; text-align: right !important; direction: rtl !important; }
-    .prose-custom td { padding: 0.65rem 0.85rem; border: 1px solid #e2e8f0; text-align: right !important; direction: rtl !important; }
-    .prose-custom pre { background-color: #0f172a; color: #f8fafc; padding: 1rem; border-radius: 0.75rem; overflow-x: auto; font-family: monospace; font-size: 0.8rem; margin: 1rem 0; direction: ltr; text-align: left; }
-    .prose-custom code { background-color: #f1f5f9; color: #0f172a; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-family: monospace; font-size: 0.825rem; }
+    .prose-custom { font-size: 0.925rem; line-height: 2.1; color: #334155; }
+    .prose-custom h1 { font-size: 1.55rem; font-weight: 800; color: #0f172a; margin-top: 2rem; margin-bottom: 0.85rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+    .prose-custom h2 { font-size: 1.3rem; font-weight: 700; color: #1e293b; margin-top: 1.75rem; margin-bottom: 0.75rem; border-right: 4px solid #4f46e5; padding-right: 0.75rem; }
+    .prose-custom h3 { font-size: 1.1rem; font-weight: 700; color: #334155; margin-top: 1.4rem; margin-bottom: 0.6rem; }
+    .prose-custom p { margin-bottom: 1.15rem; text-align: justify; }
+    .prose-custom ul { list-style-type: disc; margin-right: 1.75rem; margin-bottom: 1.15rem; }
+    .prose-custom ol { list-style-type: decimal; margin-right: 1.75rem; margin-bottom: 1.15rem; }
+    .prose-custom li { margin-bottom: 0.45rem; }
+    .prose-custom blockquote { border-right: 4px solid #4f46e5; background-color: #eef2ff; padding: 0.95rem 1.25rem; border-radius: 0.5rem; margin: 1.35rem 0; color: #3730a3; font-weight: 500; }
+    .prose-custom table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.85rem; border-radius: 0.5rem; overflow: hidden; }
+    .prose-custom th { background-color: #f1f5f9; padding: 0.75rem 0.9rem; font-weight: 700; border: 1px solid #cbd5e1; text-align: right !important; direction: rtl !important; }
+    .prose-custom td { padding: 0.75rem 0.9rem; border: 1px solid #e2e8f0; text-align: right !important; direction: rtl !important; }
+    .prose-custom pre { background-color: #0f172a; color: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; overflow-x: auto; font-family: monospace; font-size: 0.85rem; margin: 1.25rem 0; direction: ltr; text-align: left; }
+    .prose-custom code { background-color: #f1f5f9; color: #0f172a; padding: 0.2rem 0.45rem; border-radius: 0.3rem; font-family: monospace; font-size: 0.85rem; }
     .prose-custom pre code { background-color: transparent; color: inherit; padding: 0; }
   </style>
 </head>
 
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
 
-  <!-- Header -->
-  <header class="gradient-header text-white py-9 px-6 shadow-xl relative overflow-hidden">
+  <!-- Header Section -->
+  <header class="gradient-header text-white pt-8 pb-6 px-4 md:px-8 shadow-xl relative overflow-hidden">
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="flex flex-wrap items-center justify-between gap-4">
         <div>
@@ -50,6 +50,7 @@
               <span>•</span>
               <span>دوره تخصصی MBA (کد 0410)</span>
             </div>
+            <!-- Single Back Button -->
             <a href="../" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white border border-white/30 rounded-full px-3.5 py-1 text-xs font-bold transition-all shadow-sm hover:scale-105 backdrop-blur-md">
               <span>🏠 پرتال اصلی و انتخاب کلاس</span>
               <span class="text-xs">➔</span>
@@ -60,7 +61,7 @@
           </h1>
           <p class="text-indigo-100 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
             مجموعه تحلیلی و راهبردی ۲ جلسه کامل | مدرس: <strong class="text-white font-semibold">استاد صدقیانی‌فر</strong> | <div class="inline-flex items-center gap-2 mt-1">
-  <span class="text-indigo-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
+  <span class="text-blue-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
   <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
     <span>Parsa Rezaie</span>
@@ -82,13 +83,13 @@
           📊 داشبورد کلان دوره
         </button>
         <button onclick="switchTab('session1')" id="tab-session1" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
-          جلسه ۱: مبانی، تمایزها و مدل لیدکا
+          جلسه ۱: مبانی، مدل لیدکا و اقتصاد مسکن
         </button>
         <button onclick="switchTab('session2')" id="tab-session2" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           جلسه ۲: تفکر در زمان، نوستالژی و تفکر سیستمی
         </button>
         <button onclick="switchTab('simulator')" id="tab-simulator" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
-          🧭 شبیه‌ساز پنج رکن تفکر لیدکا
+          🧭 ارزیاب بلوغ لیدکا و خطاهای شناختی
         </button>
         <button onclick="switchTab('handbook')" id="tab-handbook" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           📖 دانشنامه جامع متنی
@@ -107,13 +108,13 @@
       <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div class="space-y-2">
           <div class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full">
-            <span>🏛️ بازآفرینی پارادایم اندیشه استراتژیک در ایران</span>
+            <span>💡 بازآفرینی پارادایم تصمیم‌گیری در شرایط عدم‌قطعیت ایران</span>
           </div>
           <h2 class="text-xl md:text-2xl font-black text-slate-900">
-            نقشه راهبردی تفکر استراتژیک در تراز رهبری ارشد کسب‌وکار
+            گذر از برنامه‌ریزی صلب به شهود عقلانی و بصیرت استراتژیک
           </h2>
           <p class="text-xs md:text-sm text-slate-600 max-w-2xl leading-relaxed">
-            تفکر استراتژیک هنر کشف فرصت‌ها، فهم پیوندهای سیستمی، و پل زدن میان گذشته، حال و آینده است. این دوره ذهن مدیران را از دام برنامه‌ریزی صلب و توهم کنترل به سمت شهود عقلانی، انعطاف فرضیه‌محور و معماری آینده هدایت می‌کند.
+            استراتژی یک سند سالانه در کتابخانه نیست؛ بلکه یک «انتخاب آگاهانه در بستر زمان» است. این داشبورد تمامی آموزه‌های کلاس استاد صدقیانی‌فر را از تحلیل علوم رسوبی و مدل پنج‌رکن لیدکا تا واکاوی بازار مسکن، تفکر در زمان و مهار نوستالژی سازمانی در دسترس مدیران ارشد قرار می‌دهد.
           </p>
         </div>
         <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -132,11 +133,11 @@
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-sm">۱</span>
-              <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-full">جلسه اول • ۳.۰ ساعت</span>
+              <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-2.5 py-1 rounded-full">جلسه اول • ۲.۷ ساعت</span>
             </div>
-            <h4 class="text-base font-extrabold text-slate-900 mb-2">مبانی، تمایزها و مدل پنج‌گانه جین لیدکا</h4>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">مبانی تفکر، تمایز استراتژی و برنامه‌ریزی و مدل لیدکا</h4>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              تمایز جوهری استراتژی، برنامه‌ریزی و مدیریت استراتژیک، علوم کاربردی در برابر رسوبی، ارکان ۵‌گانه مدل لیدکا (دید سیستمی، تمرکز بر هدف، تفکر در زمان، فرضیه‌محوری، فرصت‌جویی هوشمندانه) و تحلیل بازار مسکن و صنعت خودرو ایران.
+              خطای تقلیل استراتژی به برنامه‌ریزی صلب، تفکیک علوم کاربردی و رسوبی، ارکان ۵‌گانه لیدکا و واکاوی روندهای کلان اقتصادی، بازار مسکن و صنعت خودروی ایران.
             </p>
           </div>
           <button onclick="switchTab('session1')" class="w-full text-center text-xs font-bold text-indigo-700 hover:text-indigo-900 pt-3 border-t border-slate-100">
@@ -149,11 +150,11 @@
           <div>
             <div class="flex items-center justify-between mb-4">
               <span class="w-8 h-8 rounded-lg bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-sm">۲</span>
-              <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2.5 py-1 rounded-full">جلسه دوم • ۲.۸ ساعت</span>
+              <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2.5 py-1 rounded-full">جلسه دوم • ۳.۱ ساعت</span>
             </div>
             <h4 class="text-base font-extrabold text-slate-900 mb-2">تفکر در زمان، نوستالژی سازمانی و تفکر سیستمی</h4>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              رکن چهارم لیدکا (Thinking in Time)، مدل نوستات-می، تله نوستالژی سازمانی و وابستگی به مسیر (Path Dependency)، تفکیک بنیادین تفکر سیستمی از سیستم‌سازی اداری، و آسیب‌شناسی استراتژی‌های مداخله در سیستم‌های پیچیده.
+              رکن چهارم لیدکا بر پایه مدل نوستات و می، ریشه‌یابی تاریخی صفویه و قاجار، دام نوستالژی سازمانی (ارج و آزمایش) و تمایز تفکر سیستمی با سیستم‌سازی اداری.
             </p>
           </div>
           <button onclick="switchTab('session2')" class="w-full text-center text-xs font-bold text-purple-700 hover:text-purple-900 pt-3 border-t border-slate-100">
@@ -167,24 +168,24 @@
       <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
         <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
           <span class="w-3 h-3 rounded-full bg-indigo-600"></span>
-          <span>ارکان پنج‌گانه تفکر استراتژیک (مدل پروفسور جین لیدکا - Jeanne Liedtka)</span>
+          <span>ارکان پنج‌گانه تفکر استراتژیک (مدل جین لیدکا - Jeanne Liedtka)</span>
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۱. نگرش سیستمی (System Perspective)</strong>
-            <p class="text-slate-600 leading-relaxed">دیدن کل تصویر سازمان و تعامل دینامیک با زنجیره تامین، رقبا و محیط کلان؛ پرهیز از بهینه‌سازی موضعی.</p>
+            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۱. نگاه سیستمی (System Perspective)</strong>
+            <p class="text-slate-600 leading-relaxed">دیدن کل تصویر سازمان و زنجیره ارزش؛ درک اثر متقابل متغیرهای داخلی با تلاطم‌های محیط بیرونی.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۲. تمرکز بر هدف (Intent Focused)</strong>
-            <p class="text-slate-600 leading-relaxed">ایجاد جهت‌گیری پایدار و مقاومت در برابر حواس‌پرتی‌های کوتاه‌مدت؛ همسو کردن تمام انرژی سازمانی با غایت نهایی.</p>
+            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۲. تمرکز بر قصد استراتژیک (Intent-Focused)</strong>
+            <p class="text-slate-600 leading-relaxed">ایجاد جهت‌گیری بلندپروازانه و هم‌راستا کردن تمام انرژی‌های سازمان روی نقطه تمرکز محوری.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۳. فرصت‌جویی هوشمندانه (Intelligent Opportunism)</strong>
-            <p class="text-slate-600 leading-relaxed">گشودگی نسبت به فرصت‌های نوظهور و قابلیت انطباق سریع در صورت تغییر بازی بدون از دست رفتن قصد استراتژیک.</p>
+            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۳. هوشمندی فرصت‌طلبانه (Intelligent Opportunism)</strong>
+            <p class="text-slate-600 leading-relaxed">توانایی شناسایی و شکار سریع فرصت‌های نوظهور در بازار، بدون گم کردن قطب‌نمای اصلی شرکت.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
             <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۴. تفکر در زمان (Thinking in Time)</strong>
-            <p class="text-slate-600 leading-relaxed">پیوند ارگانیک گذشته، حال و آینده. گذشته درس‌آموز و آینده مقصدی است که از بستر حال خلق می‌شود.</p>
+            <p class="text-slate-600 leading-relaxed">پل زدن مداوم میان گذشته، حال و آینده؛ استفاده از الگوهای پیشین برای فهم افق‌های محتمل فردا.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
             <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۵. پیش‌روی فرضیه‌محور (Hypothesis-Driven)</strong>
@@ -203,60 +204,121 @@
     <!-- TAB: SESSION 1 -->
     <section id="content-session1" class="tab-content hidden space-y-6">
       
-      <!-- Layer 1: Executive Summary -->
-      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
-        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
-          <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه اول</span>
-          <span class="text-xs text-slate-500">تمایز استراتژی و برنامه‌ریزی • علوم کاربردی در برابر رسوبی • ارکان ۵‌گانه لیدکا</span>
+      <!-- Tab Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">جلسه اول • ۲.۷ ساعت تدریس</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">مبانی اندیشه استراتژیک، شکست برنامه‌ریزی صلب و مدل لیدکا</h2>
         </div>
-        <h3 class="text-xl font-black text-slate-900">مبانی اندیشه استراتژیک، شکست برنامه‌ریزی صلب و مدل لیدکا</h3>
-        <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-indigo-600 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+      </div>
+
+      <!-- TOP LAYER: Executive Visual Summary -->
+      <div class="bg-indigo-50/60 border border-indigo-200 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">🎯</span>
+          <h3 class="text-base md:text-lg font-black text-indigo-950">خلاصه اجرایی و مدیریتی جلسه اول: پارادایم تفکر در برابر دام برنامه‌ریزی صلب</h3>
+        </div>
+        <p class="text-xs md:text-sm text-indigo-900 leading-relaxed mb-5 text-justify">
           در این جلسه استاد صدقیانی‌فر بنیان‌های تفکر استراتژیک را کالبدشکافی کردند: چرا برنامه‌ریزی صلب در شرایط عدم‌قطعیت ایران محکوم به شکست است؟ تفاوت علوم کاربردی (Applied) که تاریخ‌مصرف دارند با علوم رسوبی (Accumulative) که حکمت کسب‌وکار را می‌سازند، و معرفی ارکان پنج‌گانه مدل لیدکا همراه با تحلیل عمیق بازار مسکن و صنعت خودرو.
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-indigo-700 block mb-1">استراتژی در برابر برنامه‌ریزی</span>
-            <div class="text-sm font-black text-slate-900 mb-1">تفکر در برابر روتین</div>
-            <p class="text-xs text-slate-600">برنامه‌ریزی صلب توهم کنترل می‌آفریند؛ تفکر استراتژیک هنر درک عدم‌قطعیت و خلق قواعد بازی جدید است.</p>
+        <!-- 3 Highlight Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+          <div class="bg-white p-4 rounded-xl border border-indigo-100 shadow-sm">
+            <div class="text-xs font-bold text-indigo-700 mb-1 flex items-center gap-1.5">
+              <span>🧠</span>
+              <span>استراتژی در برابر برنامه‌ریزی</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">برنامه‌ریزی، خط‌کشی و بهینه‌سازی روتین‌ها برای آینده‌ای قابل‌پیش‌بینی است؛ استراتژی هنر خلق قواعد بازی و بقای خلاقانه در دل تلاطم و ابهام مطلق است.</p>
           </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-indigo-700 block mb-1">مدل ارکان ۵‌گانه لیدکا</span>
-            <div class="text-sm font-black text-slate-900 mb-1">شهود عقلانی و یادگیری مداوم</div>
-            <p class="text-xs text-slate-600">دید سیستمی، جهت‌گیری راهبردی، فرصت‌جویی هوشمندانه، آزمون فرضیه‌ها و پل زدن میان زمان‌ها پنج ستون تصمیم‌گیری‌اند.</p>
+          <div class="bg-white p-4 rounded-xl border border-indigo-100 shadow-sm">
+            <div class="text-xs font-bold text-indigo-700 mb-1 flex items-center gap-1.5">
+              <span>📚</span>
+              <span>علوم کاربردی در برابر علوم رسوبی</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">علوم کاربردی (حسابداری، سئو، کدنویسی) تاریخ مصرف دارند؛ اما علوم رسوبی (تاریخ، فلسفه، روانشناسی) بینش و عقلانیت عمیق استراتژیست را شکل می‌دهند.</p>
           </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-indigo-700 block mb-1">درس‌آموخته بومی اقتصاد ایران</span>
-            <div class="text-sm font-black text-slate-900 mb-1">ساختار مسکن و صنعت خودرو</div>
-            <p class="text-xs text-slate-600">واکاوی جریان‌های رانتی، خطای محاسبه تورم ملکی در ایران و ضرورت تجهیز مدیران عامل به تحلیل داده‌های کلان.</p>
+          <div class="bg-white p-4 rounded-xl border border-indigo-100 shadow-sm">
+            <div class="text-xs font-bold text-indigo-700 mb-1 flex items-center gap-1.5">
+              <span>🏘️</span>
+              <span>کالبدشکافی بومی بازار مسکن</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">اشتباه مرگبار استراتژیست‌های ایرانی در نگاه صرفاً تورمی به ملک بدون در نظر گرفتن هرم جمعیتی، نرخ تشکیل خانوار، سرانه درآمد و رکود معاملاتی حاکم بر بازار.</p>
           </div>
         </div>
+
+        <!-- Comparison Table: Strategy vs Planning -->
+        <div class="bg-white rounded-xl border border-indigo-200 overflow-hidden shadow-sm mb-5">
+          <table class="w-full text-xs text-right">
+            <thead class="bg-indigo-100 text-indigo-950 font-bold">
+              <tr>
+                <th class="p-3">شاخص مقایسه</th>
+                <th class="p-3 text-indigo-900">تفکر استراتژیک (Strategic Thinking)</th>
+                <th class="p-3 text-slate-700">برنامه‌ریزی استراتژیک صلب (Strategic Planning)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-indigo-100 text-slate-700">
+              <tr>
+                <td class="p-3 font-bold text-indigo-900 bg-slate-50">پارادایم حاکم</td>
+                <td class="p-3 font-semibold text-indigo-950">اکتشافی، شهودی، ترکیبی و کل‌نگر (سنتز و خلق قواعد جدید).</td>
+                <td class="p-3">تحلیلی، مکانیکی، فرمول‌محور و خطی (تجزیه گذشته به اجزا).</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-indigo-900 bg-slate-50">مواجهه با آینده</td>
+                <td class="p-3 font-semibold text-indigo-950">آینده را غیرقابل‌پیش‌بینی می‌داند؛ سناریوسازی چابک و آزمون فرضیه.</td>
+                <td class="p-3">آینده را امتداد خطی گذشته فرض می‌کند و بر پیش‌بینی‌های عددی صلب تکیه دارد.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-indigo-900 bg-slate-50">فرجام در بازار ایران</td>
+                <td class="p-3 bg-emerald-50/70 text-emerald-900 font-semibold">بقا، کشف پنجره‌های سودآور در بحران و چابکی در برابر شوک‌ها.</td>
+                <td class="p-3 bg-rose-50/70 text-rose-900 font-semibold">تولید اسناد کاغذی قطور، سرخوردگی مدیران و فلج شدن سازمان در اولین شوک ارزی.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Liedtka 5-Pillar Snapshot -->
+        <div class="bg-white p-4 rounded-xl border border-indigo-200 shadow-sm">
+          <div class="text-xs font-bold text-indigo-900 mb-2">🏛️ پنج رکن مدل جین لیدکا در یک نگاه:</div>
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-2 text-center text-xs">
+            <div class="p-2.5 rounded-lg bg-indigo-50/60 font-semibold text-indigo-900">۱. دیدگاه سیستمی</div>
+            <div class="p-2.5 rounded-lg bg-indigo-50/60 font-semibold text-indigo-900">۲. تمرکز بر قصد</div>
+            <div class="p-2.5 rounded-lg bg-indigo-50/60 font-semibold text-indigo-900">۳. فرصت‌جویی هوشمند</div>
+            <div class="p-2.5 rounded-lg bg-indigo-50/60 font-semibold text-indigo-900">۴. تفکر در زمان</div>
+            <div class="p-2.5 rounded-lg bg-indigo-50/60 font-semibold text-indigo-900">۵. رویکرد فرضیه‌محور</div>
+          </div>
+        </div>
+
       </div>
 
-      <!-- Layer 2: Collapsible Full Notes -->
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-        <button onclick="toggleNotes('s1')" class="w-full p-4 md:p-5 text-right font-extrabold text-slate-800 hover:bg-slate-50 transition-colors flex items-center justify-between border-b border-slate-100">
-          <span class="flex items-center gap-2">
-            <span>📖</span>
-            <span class="text-sm md:text-base">مشاهده متن کامل و درسنامه تفصیلی جلسه اول (کلیک کنید)</span>
-          </span>
-          <span id="s1-icon" class="text-slate-400 text-sm transition-transform">▼ باز کردن</span>
+      <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+      <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+        <div>
+          <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه اول</h3>
+          <p class="text-xs text-slate-400">شامل دیالوگ‌های کلاسی، ریشه‌یابی خطاهای شناختی، تحلیل مکاتب پورتر و مینتزبرگ و تحلیل‌های اقتصادی استاد صدقیانی‌فر</p>
+        </div>
+        <button onclick="toggleSessionFull('s1')" id="btn-toggle-s1" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+          <span>مطالعه متن کامل و تفصیلی جلسه</span>
+          <span id="icon-toggle-s1">▼</span>
         </button>
-        <div id="s1-notes" class="p-6 md:p-8 bg-white border-t border-slate-100 space-y-6 prose-custom">
-          <h1>تفکر استراتژیک - جلسه اول: مبانی، تمایزهای مفهومی و پارادایم‌های حاکم بر اندیشه استراتژیک</h1>
+      </div>
+
+      <div id="full-s1" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+        <div class="prose-custom"><h1 id="-">تفکر استراتژیک - جلسه اول: مبانی، تمایزهای مفهومی و پارادایم‌های حاکم بر اندیشه استراتژیک</h1>
 <p><strong>مدرس:</strong> استاد صدقیانی‌فر<br />
 <strong>مرجع علمی و آکادمیک:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>تاریخ برگزاری:</strong> ۲۶ شهریور ۱۴۰۵<br />
 <strong>تنظیم، تدوین ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
 <strong>پروفایل حرفه‌ای:</strong> <a href="https://www.linkedin.com/in/parsarezaie/">linkedin.com/in/parsarezaie</a></p>
 <hr />
-<h2>۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
-<h3>۱.۱. جوهره، فلسفه محوری و مانیفست بنیادین تدریس استاد صدقیانی‌فر</h3>
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. جوهره، فلسفه محوری و مانیفست بنیادین تدریس استاد صدقیانی‌فر</h3>
 <p>نخستین جلسه از دوره «تفکر استراتژیک» به رهبری استاد صدقیانی‌فر در دانشکده اقتصاد دانشگاه تهران، با هدف <strong>ساختارشکنی ریشه‌ای پیرامون برداشت‌های ناصحیح، تقلیل‌گرایانه و کلیشه‌ای از مقوله استراتژی</strong> برگزار گردید. جوهره اصلی تدریس استاد بر این اصل استوار است که استراتژی نه یک سند مجلل ماتریسی با جدول‌های توخالی، بلکه <strong>«یک انتخاب آگاهانه، شجاعانه، هوشمندانه و جهت‌ساز در بستر زمان و در مواجهه با نااطمینانی‌های غیرقابل پیش‌بینی»</strong> است.</p>
 <p>استراتژی به خودی خود تضمین‌کننده موفقیت قطعی هیچ سازمانی نیست، اما نادیده گرفتن یا فقدان تفکر استراتژیک، <strong>تضمین‌کننده قطعی شکست، انفعال و فروپاشی سازمان</strong> در کوران رقابت‌های مدرن است.</p>
 <p>استاد صدقیانی‌فر با نقد صریح ادبیات رایج مشاوره مدیریت در ایران، جابه‌جایی مفهومی میان «ابزار» و «ماهیت» استراتژی را عارضه مهلک سازمان‌ها دانستند. ابزارهایی چون ماتریس‌های SWOT، تحلیل نیروهای پنج‌گانه پورتر یا مدل‌های BCG تنها چارچوب‌هایی برای نظم‌بخشی به داده‌ها هستند؛ اما آنچه به این ابزارها جان می‌بخشد و جهت خلق مزیت رقابتی پایدار را تعیین می‌کند، <strong>«قوه تمیز، شهود عقلانی و تفکر استراتژیک رهبران»</strong> است. استراتژی ابزاری برای تصمیم‌گیری آگاهانه مدیرعامل و هیئت‌مدیره است، نه محملی برای سلب مسئولیت و پنهان شدن پشت واژگان پرطمطراق مشاوران.</p>
 <hr />
-<h3>۱.۲. پارادوکس مرگبار سازمان‌ها: سندپراکنی در برابر فقدان تفکر استراتژیک</h3>
+<h3 id="_2">۱.۲. پارادوکس مرگبار سازمان‌ها: سندپراکنی در برابر فقدان تفکر استراتژیک</h3>
 <p>بزرگ‌ترین پارادوکس سازمان‌های امروزی (به‌ویژه در اکوسیستم کسب‌وکار ایران) در این نکته نهفته است که شرکت‌ها سالانه صدها میلیون تومان صرف تدوین اسناد ۵ ساله و ۱۰ ساله برنامه‌ریزی جامع استراتژیک، ماتریس‌های متعدد و شاخص‌های متورم KPI می‌کنند؛ اما در نخستین مواجهه با تکانه‌های نرخ ارز، تحولات رگولاتوری، شوک‌های زنجیره تأمین یا جهش‌های تکنولوژیک، تمام آن اسناد را بایگانی کرده و دچار بهت و فلج تصمیم‌گیری می‌شوند.</p>
 <p>علت بنیادین این ناکامی، خلط مبحث و عدم درک تفاوت جوهری میان <strong>«داشتن سند صلب برنامه‌ریزی»</strong> و <strong>«برخورداری از ذهنیت و انضباط فکری استراتژیک»</strong> است. برنامه‌ریزی سنتی بر فرض پیش‌بینی‌پذیری خطی گذشته استوار است؛ اما در دنیای واقعی با پدیده‌های آشوبناک، دینامیک‌های غیرخطی و قوی‌های سیاه روبرو هستیم که بقا در آن تنها با ذهنیت یادگیرنده، چابک و انطباق‌پذیر تضمین می‌گردد.</p>
 <div class="overflow-x-auto my-6">
@@ -289,7 +351,7 @@
 </div>
 
 <hr />
-<h2>۲. کالبدشکافی سه‌گانه بنیادین: استراتژی، برنامه‌ریزی، مدیریت استراتژیک</h2>
+<h2 id="_3">۲. کالبدشکافی سه‌گانه بنیادین: استراتژی، برنامه‌ریزی، مدیریت استراتژیک</h2>
 <p>یکی از درخشان‌ترین بخش‌های تدریس استاد صدقیانی‌فر، تفکیک موشکافانه سه مفهوم به ظاهر مشابه اما ماهوی متفاوت بود:</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6 text-right">
   <div class="p-5 rounded-2xl border border-indigo-500/40 bg-indigo-950/20 shadow-sm">
@@ -327,7 +389,7 @@
 </div>
 
 <hr />
-<h3>۲.۱. جدول ماتریسی مقایسه تطبیقی ارکان سه‌گانه</h3>
+<h3 id="_4">۲.۱. جدول ماتریسی مقایسه تطبیقی ارکان سه‌گانه</h3>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
     <thead class="bg-slate-800 text-sky-300">
@@ -374,7 +436,7 @@
 </div>
 
 <hr />
-<h2>۳. ریشه‌شناسی علوم: تمایز علوم کاربردی (Applied) و علوم کارکردی/رسوبی (Functional/Accumulative)</h2>
+<h2 id="applied-functionalaccumulative">۳. ریشه‌شناسی علوم: تمایز علوم کاربردی (Applied) و علوم کارکردی/رسوبی (Functional/Accumulative)</h2>
 <p>استاد صدقیانی‌فر در یکی از عمیق‌ترین مباحث آکادمیک خود، ریشه ناتوانی بسیاری از فارغ‌التحصیلان و مدیران اجرایی را در سوگیری نظام آموزشی به سمت علوم کاربردی و غفلت از علوم کارکردی تشریح نمودند:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6 text-right">
   <div class="p-5 rounded-2xl border border-sky-500/40 bg-sky-950/20">
@@ -409,7 +471,7 @@
 </div>
 
 <hr />
-<h3>۳.۱. کالبدشکافی ارکان چهارگانه علوم کارکردی در اندیشه رهبران کسب‌وکار</h3>
+<h3 id="_5">۳.۱. کالبدشکافی ارکان چهارگانه علوم کارکردی در اندیشه رهبران کسب‌وکار</h3>
 <ol>
 <li><strong>تاریخ (History) - ریشه‌یابی و درک وابستگی به مسیر (Path Dependency):</strong></li>
 <li>
@@ -433,7 +495,7 @@
 <li>یک برند برجسته محصولی فنی نیست، بلکه روایتی عمیق، معنابخش و نمادین در ذهن مشتری است. هنر به رهبر سازمان قدرت تمایز، حساسیت به جزئیات ظریف تجربی، توان الهام‌بخشی به هزاران پرسنل و زبان اقناع‌گری می‌بخشد. بدون درک زیبایی‌شناسی، محصولات شرکت تبدیل به کالاهای عام (Commodity) فاقد ارزش حاشیه‌ای بالا خواهند شد.</li>
 </ol>
 <hr />
-<h2>۴. مقایسه تطبیقی مکاتب عقلانی-موقعیتی با مکاتب نوظهور-فرآیندی استراتژی</h2>
+<h2 id="-_1">۴. مقایسه تطبیقی مکاتب عقلانی-موقعیتی با مکاتب نوظهور-فرآیندی استراتژی</h2>
 <p>استاد صدقیانی‌فر برای تعمیق درک دانشجویان از تطور تاریخی اندیشه استراتژیک، دو قطب بزرگ علم استراتژی را در برابر هم قرار دادند:</p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
@@ -480,7 +542,7 @@
 </div>
 
 <hr />
-<h2>۵. مدل پنج‌گانه ارکان تفکر استراتژیک (جین لیدکا - Jeanne Liedtka)</h2>
+<h2 id="-jeanne-liedtka">۵. مدل پنج‌گانه ارکان تفکر استراتژیک (جین لیدکا - Jeanne Liedtka)</h2>
 <p>یکی از معتبرترین فریم‌ورک‌های استاندارد دانشگاهی در سراسر جهان، مدل پروفسور جین لیدکا از دانشکده کسب‌وکار داردن است که توسط استاد صدقیانی‌فر برای بستر ایران بومی‌سازی شد:</p>
 <div class="grid grid-cols-1 md:grid-cols-5 gap-3 my-6 text-right text-xs">
   <div class="p-4 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-amber-400 transition-all">
@@ -535,7 +597,7 @@
 </div>
 
 <hr />
-<h3>۵.۱. تشریح عملیاتی ارکان پنج‌گانه در میدان کسب‌وکار ایران</h3>
+<h3 id="_6">۵.۱. تشریح عملیاتی ارکان پنج‌گانه در میدان کسب‌وکار ایران</h3>
 <ol>
 <li><strong>نگرش سیستمی (Systemic Perspective):</strong></li>
 <li>
@@ -565,7 +627,7 @@
 <li>استراتژی حدس‌های علمی پیرامون آینده است. یک استراتژیست هرگز نمی‌گوید «من مطمئنم این طرح موفق می‌شود»؛ بلکه می‌گوید «فرضیه ما این است که اگر این ارزش پیشنهادی را ارائه دهیم، ۳۰ درصد بازار هدف جذب خواهند شد؛ بیایید با راه‌اندازی آزمایشی در یک منطقه کوچک صحت این فرض را در عمل بسنجیم».</li>
 </ol>
 <hr />
-<h2>۶. تله‌های شناختی و خطاهای ادراکی مدیران ایرانی در تصمیم‌گیری استراتژیک</h2>
+<h2 id="_7">۶. تله‌های شناختی و خطاهای ادراکی مدیران ایرانی در تصمیم‌گیری استراتژیک</h2>
 <p>استاد صدقیانی‌فر بخش مهمی از کلاس را به تحلیل روان‌شناختی شکست‌های مدیریتی اختصاص دادند. ریشه اصلی تصمیمات نابخردانه، نه کمبود داده، بلکه سوگیری‌های شناختی (Cognitive Biases) ذهن تصمیم‌گیرندگان است:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 text-right text-xs">
   <div class="p-4 rounded-xl border border-rose-500/30 bg-rose-950/20">
@@ -622,20 +684,20 @@
 </div>
 
 <hr />
-<h2>۷. پرونده‌های کاوی واقعی و درس‌آموخته‌های بومی در بازار ایران</h2>
-<h3>۷.۱. آسیب‌شناسی ساختاری بحران مسکن در ایران (تحلیل استراتژیک از دهه ۵۰ تا ۱۴۰۵)</h3>
-<p>استاد صدقیانی‌فر بحران مسکن را نه یک موضوع صرفاً عمرانی، بلکه گواهی تاریخی بر شکست تفکر استراتژیک در حکمرانی اقتصادی کشور معرفی کردند:<br />
-- در دهه ۱۳۵۰ خورشیدی، زمان متوسط انتظار یک خانوار برای خرید مسکن با درآمد متوسط حدود ۷ تا ۱۰ سال بود. در دهه ۱۴۰۵، این شاخص در کلان‌شهرها به بالای ۶۰ تا ۸۰ سال رسیده است!<br />
-- <strong>تحلیل ریشه‌ای استراتژیست:</strong> این فاجعه ناشی از ناتوانی در تفکر در زمان و حاکمیت سیاست‌های رانتی و سفته‌بازانه بر بخش مولد اقتصاد است. زمین به عنوان کالایی غیرقابل بازتولید، تمام مازاد سرمایه ملی را بلعیده و توان رقابت بخش‌های دانش‌بنیان، تکنولوژی و تولید صنعتی را خفه کرده است.<br />
+<h2 id="_8">۷. پرونده‌های کاوی واقعی و درس‌آموخته‌های بومی در بازار ایران</h2>
+<h3 id="_9">۷.۱. آسیب‌شناسی ساختاری بحران مسکن در ایران (تحلیل استراتژیک از دهه ۵۰ تا ۱۴۰۵)</h3>
+<p>استاد صدقیانی‌فر بحران مسکن را نه یک موضوع صرفاً عمرانی، بلکه گواهی تاریخی بر شکست تفکر استراتژیک در حکمرانی اقتصادی کشور معرفی کردند:
+- در دهه ۱۳۵۰ خورشیدی، زمان متوسط انتظار یک خانوار برای خرید مسکن با درآمد متوسط حدود ۷ تا ۱۰ سال بود. در دهه ۱۴۰۵، این شاخص در کلان‌شهرها به بالای ۶۰ تا ۸۰ سال رسیده است!
+- <strong>تحلیل ریشه‌ای استراتژیست:</strong> این فاجعه ناشی از ناتوانی در تفکر در زمان و حاکمیت سیاست‌های رانتی و سفته‌بازانه بر بخش مولد اقتصاد است. زمین به عنوان کالایی غیرقابل بازتولید، تمام مازاد سرمایه ملی را بلعیده و توان رقابت بخش‌های دانش‌بنیان، تکنولوژی و تولید صنعتی را خفه کرده است.
 - <strong>پیامد شرکتی:</strong> بنگاه‌های اقتصادی به جای تمرکز بر بهره‌وری عملیاتی، ناچار شده‌اند دارایی‌های خود را به صورت املاک دپو کنند تا از گزند تورم در امان بمانند؛ وضعیتی که جریان نقدینگی عملیاتی را قفل کرده و سازمان‌ها را به غول‌های ملکی بدهکار بدل ساخته است.</p>
 <hr />
-<h3>۷.۲. درس‌آموخته تطبیقی سامسونگ در برابر تویوتا</h3>
+<h3 id="_10">۷.۲. درس‌آموخته تطبیقی سامسونگ در برابر تویوتا</h3>
 <ul>
 <li><strong>تویوتا (کایزن و بهبود تدریجی مستمر):</strong> تویوتا نماد تفکر استراتژیک مبتنی بر انضباط، بهبود گام‌به‌گام و حذف اصطکاک بود. اما در دوران گذار به خودروهای برقی و نرم‌افزارمحور، تمرکز بیش از حد بر بهینه‌سازی گذشته موجب عقب‌ماندگی از تحولات تسلا و خودروسازان چینی شد.</li>
 <li><strong>سامسونگ (چرخش‌های رادیکال و شجاعت تغییر بستر):</strong> سامسونگ در سال ۱۹۳۸ کار خود را با تجارت سبزیجات و ماهی خشک آغاز کرد، در دهه ۱۹۵۰ به پالایش شکر و نساجی وارد شد، در دهه ۱۹۷۰ به پتروشیمی و لوازم خانگی جهش کرد و در دهه ۱۹۹۰ رهبر جهانی چیپ‌های حافظه و اسمارت‌فون شد. سامسونگ مظهر پایبندی به «قصد استراتژیک» در عین شجاعت ترک محصولات گذشته است.</li>
 </ul>
 <hr />
-<h2>۸. چک‌لیست طلایی شنبه ساعت ۷ صبح مدیرعامل (CEO Saturday Action Protocol)</h2>
+<h2 id="ceo-saturday-action-protocol">۸. چک‌لیست طلایی شنبه ساعت ۷ صبح مدیرعامل (CEO Saturday Action Protocol)</h2>
 <p>استاد صدقیانی‌فر در پایان جلسه نخست، مدیران عامل را به اجرای این پروتکل منظم فکری در آغاز هر هفته فراخواندند:</p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
@@ -683,15 +745,14 @@
 </div>
 
 <hr />
-<h2>۹. پیوندهای مرتبط و مراجع تکمیلی</h2>
+<h2 id="_11">۹. پیوندهای مرتبط و مراجع تکمیلی</h2>
 <ul>
 <li><strong>پرونده تفصیلی جلسه دوم:</strong> [[Session_02_Notes]]</li>
 <li><strong>هندبوک جامع دوره:</strong> [[MBA_Strategic_Thinking_Master_Handbook]]</li>
 <li><strong>نقشه دانش دوره (MOC):</strong> [[00_MBA_Strategic_Thinking_MOC]]</li>
 <li><strong>داشبورد تعاملی وب:</strong> <a href="https://parsarezaie.github.io/mba/strategic-thinking/">پرتال آنلاین تفکر استراتژیک</a></li>
 <li><strong>پروفایل مؤلف:</strong> <a href="https://www.linkedin.com/in/parsarezaie/">پارسا رضائی در لینکدین</a></li>
-</ul>
-        </div>
+</ul></div>
       </div>
 
     </section>
@@ -699,61 +760,134 @@
     <!-- TAB: SESSION 2 -->
     <section id="content-session2" class="tab-content hidden space-y-6">
       
-      <!-- Layer 1: Executive Summary -->
-      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
-        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
-          <span class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه دوم</span>
-          <span class="text-xs text-slate-500">تفکر در زمان • مدل نوستات-می • نوستالژی سازمانی • تفکر سیستمی در برابر سیستم‌سازی</span>
+      <!-- Tab Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold text-purple-700 bg-purple-50 px-3 py-1 rounded-full">جلسه دوم • ۳.۱ ساعت تدریس</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">تفکر در زمان (مدل نوستات و می)، نوستالژی سازمانی و تفکیک تفکر سیستمی از سیستم‌سازی</h2>
         </div>
-        <h3 class="text-xl font-black text-slate-900">تفکر در زمان، واکاوی نوستالژی سازمانی و تفکیک تفکر سیستمی از سیستم‌سازی</h3>
-        <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
-          در این جلسه رکن چهارم لیدکا (Thinking in Time) بر پایه مدل ریچارد نوستات و ارنست می تحلیل شد. تله مرگبار نوستالژی سازمانی و چسبندگی به موفقیت‌های گذشته که سبب سقوط غول‌های صنعتی می‌شود واکاوی گردید. همچنین تمایز جوهری «تفکر سیستمی» (Systemic Thinking) از «سیستم‌سازی اداری و بوروکراتیک» (Systematization) و نحوه مواجهه با پیچیدگی در کسب‌وکارهای ایرانی تدریس شد.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-purple-700 block mb-1">تفکر در زمان (Thinking in Time)</span>
-            <div class="text-sm font-black text-slate-900 mb-1">مدل نوستات و می</div>
-            <p class="text-xs text-slate-600">پیوند ارگانیک گذشته، حال و آینده. گذشته منبع استخراج الگوهاست، نه پناهگاهی برای فرار از عدم‌قطعیت‌های حال.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-purple-700 block mb-1">تله نوستالژی و وابستگی به مسیر</span>
-            <div class="text-sm font-black text-slate-900 mb-1">غرور ناشی از افتخارات پیشین</div>
-            <p class="text-xs text-slate-600">اصرار بر تکرار الگوهای پیروزمند گذشته در شرایط تغییر پارادایم، علت‌العلل ورشکستگی برندهای پیشکسوت ایرانی است.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-purple-700 block mb-1">تفکر سیستمی در برابر سیستم‌سازی</span>
-            <div class="text-sm font-black text-slate-900 mb-1">پرهیز از بوروکراسی صلب</div>
-            <p class="text-xs text-slate-600">تفکر سیستمی دیدن روابط پویای بازخوردی است؛ در حالی که سیستم‌سازی افراطی سازمان را به ساختاری صلب و ناتوان تبدیل می‌کند.</p>
-          </div>
-        </div>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-purple-700 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
       </div>
 
-      <!-- Layer 2: Collapsible Full Notes -->
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-        <button onclick="toggleNotes('s2')" class="w-full p-4 md:p-5 text-right font-extrabold text-slate-800 hover:bg-slate-50 transition-colors flex items-center justify-between border-b border-slate-100">
-          <span class="flex items-center gap-2">
-            <span>📖</span>
-            <span class="text-sm md:text-base">مشاهده متن کامل و درسنامه تفصیلی جلسه دوم (کلیک کنید)</span>
-          </span>
-          <span id="s2-icon" class="text-slate-400 text-sm transition-transform">▼ باز کردن</span>
+      <!-- TOP LAYER: Executive Visual Summary -->
+      <div class="bg-purple-50/60 border border-purple-200 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">⏳</span>
+          <h3 class="text-base md:text-lg font-black text-purple-950">خلاصه اجرایی و مدیریتی جلسه دوم: هنر تفکر در زمان، مهار غرور و بینش سیستمی</h3>
+        </div>
+        <p class="text-xs md:text-sm text-purple-900 leading-relaxed mb-5 text-justify">
+          در این جلسه رکن چهارم لیدکا (Thinking in Time) بر پایه مدل ریچارد نوستات و ارنست می تحلیل شد. تله مرگبار نوستالژی سازمانی و چسبندگی به افتخارات گذشته که سبب سقوط غول‌های صنعتی ایران (ارج و آزمایش) شد واکاوی گردید. همچنین تمایز جوهری «تفکر سیستمی» (Systemic Thinking) از «سیستم‌سازی اداری و بوروکراتیک» (Systematization) تدریس شد.
+        </p>
+
+        <!-- 3 Highlight Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+          <div class="bg-white p-4 rounded-xl border border-purple-100 shadow-sm">
+            <div class="text-xs font-bold text-purple-700 mb-1 flex items-center gap-1.5">
+              <span>🕰️</span>
+              <span>تفکر در زمان (Thinking in Time)</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">مدل نوستات-می: اتصال گذشته به عنوان آزمایشگاه تجربی، حال به عنوان صحنه عمل و آینده به عنوان افق سناریوها. آینده بدون ریشه‌یابی گذشته توهم است.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-purple-100 shadow-sm">
+            <div class="text-xs font-bold text-purple-700 mb-1 flex items-center gap-1.5">
+              <span>🏚️</span>
+              <span>تله نوستالژی سازمانی</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">چسبندگی عاطفی به فرمول‌های موفقیت ۲۰ سال قبل و غرور ناشی از سابقه درخشان؛ علت‌العلل سقوط برندهای بزرگی چون ارج و آزمایش و ظهور رقبای پلتفرمی.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-purple-100 shadow-sm">
+            <div class="text-xs font-bold text-purple-700 mb-1 flex items-center gap-1.5">
+              <span>⚙️</span>
+              <span>تفکر سیستمی در برابر سیستم‌سازی</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">تفکر سیستمی دیدن حلقه‌های بازخورد و نقاط اهرمی است؛ در حالی که سیستم‌سازی افراطی سازمان را به زندانی از آیین‌نامه‌ها و فرم‌های صلب تبدیل می‌کند.</p>
+          </div>
+        </div>
+
+        <!-- Historical Case Study Matrix: Safavid vs Qajar -->
+        <div class="bg-white rounded-xl border border-purple-200 overflow-hidden shadow-sm mb-5">
+          <div class="bg-purple-100 px-4 py-2.5 text-xs font-bold text-purple-950 flex items-center justify-between">
+            <span>📜 درس تاریخی تفکر در زمان در تدریس استاد صدقیانی‌فر: صفویه در برابر قاجار</span>
+            <span class="text-[11px] text-purple-700 font-normal">تفاوت فرمانروایی استراتژیک با غفلت از تحولات عصر</span>
+          </div>
+          <table class="w-full text-xs text-right">
+            <thead class="bg-slate-50 text-slate-700 font-bold border-b border-slate-200">
+              <tr>
+                <th class="p-3">عصر تاریخی</th>
+                <th class="p-3 text-purple-950">شاه عباس صفوی (تفکر استراتژیک در زمان)</th>
+                <th class="p-3 text-slate-700">دوره قاجار (انفعال و بی‌زمانی)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">فهم ژئوپلیتیک و زمانه</td>
+                <td class="p-3 font-semibold text-purple-950">انتقال پایتخت به اصفهان، تسلط بر کریدور ابریشم و خلیج فارس، ایجاد زیرساخت کاروانسراها و پیوند با قدرت‌های اروپایی.</td>
+                <td class="p-3">غفلت از انقلاب صنعتی در غرب، درک نکردن معادلات مدرن، و واگذاری امتیازات استراتژیک کشور در ازای وام‌های سفر شاهانه.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">درس‌آموخته برای CEO</td>
+                <td class="p-3 bg-emerald-50/70 text-emerald-950 font-semibold">مدیرعامل باید جریان‌های کلان تکنولوژی و ژئوپلیتیک را پیش‌دستی کند و دارایی‌های راهبردی خلق نماید.</td>
+                <td class="p-3 bg-rose-50/70 text-rose-950 font-semibold">اگر زمانه عوض شود و رهبر کسب‌وکار در توهم عظمت گذشته بماند، تار و پود بنگاه توسط بازیگران جدید از هم پاشیده می‌شود.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Comparison Table: Systemic Thinking vs Bureaucratic Systematization -->
+        <div class="bg-white rounded-xl border border-purple-200 overflow-hidden shadow-sm">
+          <table class="w-full text-xs text-right">
+            <thead class="bg-purple-100 text-purple-950 font-bold">
+              <tr>
+                <th class="p-3">شاخص تمایز</th>
+                <th class="p-3 text-purple-900">تفکر سیستمی (Systemic Thinking)</th>
+                <th class="p-3 text-slate-700">سیستم‌سازی اداری (Bureaucratic Systematization)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-purple-100 text-slate-700">
+              <tr>
+                <td class="p-3 font-bold text-purple-900 bg-slate-50">هدف غایی</td>
+                <td class="p-3 font-semibold text-purple-950">درک تعاملات، الگوهای تکرارشونده و کشف نقاط اهرمی پربازده.</td>
+                <td class="p-3">استانداردسازی وظایف، مستندسازی صلب و ثبت رویه‌های روتین.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-purple-900 bg-slate-50">پاسخ به خطا و بحران</td>
+                <td class="p-3 font-semibold text-purple-950">کشف بازخوردهای ساختاری و ریشه‌یابی غیرخطی علت مشکل.</td>
+                <td class="p-3 text-rose-700">افزودن فرم جدید، اضافه کردن امضای تایید و کندتر کردن فرآیند تصمیم‌گیری.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+      <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+        <div>
+          <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه دوم</h3>
+          <p class="text-xs text-slate-400">شامل تمامی مباحث کلاسی، مدل نوستات و می، تحلیل برندهای پیشکسوت و واکاوی روانشناسی تصمیم‌گیری استراتژیک</p>
+        </div>
+        <button onclick="toggleSessionFull('s2')" id="btn-toggle-s2" class="bg-purple-600 hover:bg-purple-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+          <span>مطالعه متن کامل و تفصیلی جلسه</span>
+          <span id="icon-toggle-s2">▼</span>
         </button>
-        <div id="s2-notes" class="p-6 md:p-8 bg-white border-t border-slate-100 space-y-6 prose-custom">
-          <h1>تفکر استراتژیک - جلسه دوم: تفکر در زمان، واکاوی نوستالژی سازمانی و تفکیک تفکر سیستمی از سیستم‌سازی</h1>
+      </div>
+
+      <div id="full-s2" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+        <div class="prose-custom"><h1 id="-">تفکر استراتژیک - جلسه دوم: تفکر در زمان، واکاوی نوستالژی سازمانی و تفکیک تفکر سیستمی از سیستم‌سازی</h1>
 <p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>مدرس دوره:</strong> استاد صدقیانی‌فر<br />
 <strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
 <strong>تاریخ تدریس:</strong> ۰۲ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۲ ساعت و ۴۸ دقیقه<br />
 <strong>موضوع محوری:</strong> رکن چهارم لیدکا (Thinking in Time)، تله نوستالژی سازمانی، و تبارشناسی تفکر سیستمی در اقتصاد ایران</p>
 <hr />
-<h2>۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
-<h3>۱.۱. جوهره و مانیفست محوری تدریس استاد صدقیانی‌فر</h3>
-<p>در جلسه دوم درس تفکر استراتژیک، استاد صدقیانی‌فر کالبدشکافی عمیقی از <strong>رکن چهارم مدل جین لیدکا: تفکر در زمان (Thinking in Time)</strong> ارائه دادند. پیام بنیادین این جلسه رهایی ذهن مدیران از دو تله ویرانگر بود:<br />
-1. <strong>تله نوستالژی سازمانی و وابستگی به مسیر (Path Dependency):</strong> افتخار به پیروزی‌های گذشته و تکرار لجوجانه الگوهای منسوخ در مواجهه با تکانه‌های نوین محیطی.<br />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. جوهره و مانیفست محوری تدریس استاد صدقیانی‌فر</h3>
+<p>در جلسه دوم درس تفکر استراتژیک، استاد صدقیانی‌فر کالبدشکافی عمیقی از <strong>رکن چهارم مدل جین لیدکا: تفکر در زمان (Thinking in Time)</strong> ارائه دادند. پیام بنیادین این جلسه رهایی ذهن مدیران از دو تله ویرانگر بود:
+1. <strong>تله نوستالژی سازمانی و وابستگی به مسیر (Path Dependency):</strong> افتخار به پیروزی‌های گذشته و تکرار لجوجانه الگوهای منسوخ در مواجهه با تکانه‌های نوین محیطی.
 2. <strong>خلط تفکر سیستمی با سیستم‌سازی اداری:</strong> تبدیل سازمان به انبوهی از آیین‌نامه‌ها، فرآیندهای صلب و بروکراسی کاذب به جای ایجاد نگرش پویای درک روابط علت و معلولی.</p>
 <p>استاد صدقیانی‌فر با پیوند زدن مباحث تئوریک به تبارشناسی تاریخی ایران (از شکوه تجاری صفویه در میدان نقش‌جهان تا قحطی بزرگ اصفهان در عهد قاجار) و رفتار مصرف‌کننده معاصر، نشان دادند که تفکر استراتژیک بیش از آنکه یک ابزار تحلیلی باشد، <strong>یک بلوغ ذهنی و رهایی از کوته‌بینی زمانی</strong> است.</p>
 <hr />
-<h3>۱.۲. چه زمانی سازمان به «استراتژی مدون» نیاز پیدا می‌کند؟</h3>
+<h3 id="_2">۱.۲. چه زمانی سازمان به «استراتژی مدون» نیاز پیدا می‌کند؟</h3>
 <p>استاد صدقیانی‌فر این فرض رایج را که «هر کسب‌وکاری از روز نخست نیازمند یک سند قطور استراتژیک است» به چالش کشیدند. استراتژی همواره در ذهن و عمل بنیان‌گذاران جریان دارد؛ اما <strong>نگارش سند استراتژی مدون</strong> تنها در صورت تحقق ۳ پیش‌شرط حیاتی الزام‌آور می‌شود:</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
   <div class="p-5 rounded-2xl bg-indigo-50 border border-indigo-200">
@@ -786,8 +920,8 @@
 </div>
 
 <hr />
-<h2>۲. کالبدشکافی رکن چهارم لیدکا: تفکر در زمان (Thinking in Time)</h2>
-<h3>۲.۱. مدل ریچارد نوستات و ارنست می (Neustadt &amp; May Framework)</h3>
+<h2 id="thinking-in-time">۲. کالبدشکافی رکن چهارم لیدکا: تفکر در زمان (Thinking in Time)</h2>
+<h3 id="neustadt-may-framework">۲.۱. مدل ریچارد نوستات و ارنست می (Neustadt &amp; May Framework)</h3>
 <p>تفکر در زمان به معنای تقویم‌نگاری یا وقایع‌نگاری خطی نیست؛ بلکه <strong>هنر پیوند زدن ارگانیک گذشته، حال و آینده</strong> است:</p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
@@ -822,7 +956,7 @@
 <p><strong>گزاره محوری استاد صدقیانی‌فر:</strong> «استراتژیست ارشد کسی نیست که گذشته را دور بریزد یا در آن غرق شود؛ او گذشته را شخم می‌زند تا ریشه‌های جریان‌های فعلی را بشناسد، و با اتکا به درک این روند، آینده را زودتر از رقبا پیش‌بینی و معماری کند.»</p>
 </blockquote>
 <hr />
-<h3>۲.۲. تعامل تفکر در زمان با چهار رکن دیگر مدل جین لیدکا</h3>
+<h3 id="_3">۲.۲. تعامل تفکر در زمان با چهار رکن دیگر مدل جین لیدکا</h3>
 <p>استاد صدقیانی‌فر با رسم ماتریس ۵ عاملی لیدکا روی تخته، چگونگی پیوند تفکر در زمان را با سایر ارکان کالبدشکافی کردند:</p>
 <ol>
 <li><strong>پیوند با نگرش سیستمی (System Perspective):</strong> سیستم‌ها در زمان تکامل می‌یابند. یک استراتژیست ارشد تأخیرهای زمانی (Time Delays) میان علت و معلول را می‌شناسد و می‌داند سیاستی که امروز در بازاریابی اجرا می‌شود، ۶ ماه بعد در خط تولید و جریان نقد اثر می‌گذارد.</li>
@@ -831,30 +965,30 @@
 <li><strong>پیوند با فرصت‌جویی هوشمندانه (Intelligent Opportunism):</strong> فرصت‌جو بدون تفکر در زمان، یک ماجراجوی قمارباز است؛ اما با تفکر در زمان، روندها را می‌شناسد و فرصت‌هایی را شکار می‌کند که همسو با آینده محتمل بازار باشند.</li>
 </ol>
 <hr />
-<h2>۳. روان‌شناسی نوستالژی سازمانی و وابستگی به مسیر (Path Dependency)</h2>
-<h3>۳.۱. تله روانی گذشته‌گرایی در بنگاه‌های ایرانی</h3>
-<p>نوستالژی در ادبیات روان‌شناسی نوعی پناه بردن به خاطرات امن پیشین در هنگام مواجهه با اضطراب شدید حال است. در سطح بنگاه‌های ایران، بحران‌های اقتصادی، تورم ساختاری و تحریم‌ها، اضطراب سنگینی به مدیران تحمیل می‌کند. در این شرایط، بسیاری از مدیران به <strong>تله نوستالژی سازمانی</strong> پناه می‌برند:<br />
-- <em>«ما همان شرکتی هستیم که در دهه ۷۰ لیدر مطلق بازار بودیم...»</em><br />
+<h2 id="path-dependency">۳. روان‌شناسی نوستالژی سازمانی و وابستگی به مسیر (Path Dependency)</h2>
+<h3 id="_4">۳.۱. تله روانی گذشته‌گرایی در بنگاه‌های ایرانی</h3>
+<p>نوستالژی در ادبیات روان‌شناسی نوعی پناه بردن به خاطرات امن پیشین در هنگام مواجهه با اضطراب شدید حال است. در سطح بنگاه‌های ایران، بحران‌های اقتصادی، تورم ساختاری و تحریم‌ها، اضطراب سنگینی به مدیران تحمیل می‌کند. در این شرایط، بسیاری از مدیران به <strong>تله نوستالژی سازمانی</strong> پناه می‌برند:
+- <em>«ما همان شرکتی هستیم که در دهه ۷۰ لیدر مطلق بازار بودیم...»</em>
 - <em>«پدر ما این شرکت را با فلان فرمول به اوج رساند و ما هم همان مسیر را ادامه می‌دهیم...»</em></p>
 <p>این طرز فکر منجر به پدیده‌ای به نام <strong>وابستگی به مسیر (Path Dependency)</strong> می‌شود؛ وضعیتی که در آن سازمان حتی با علم به ناکارآمدی فرآیندهای موجود، به دلیل هزینه‌های روانی و مادی تغییر، همچنان در همان ریل قدیمی به سمت پرتگاه حرکت می‌کند.</p>
-<h3>۳.۲. پرونده‌های تاریخی سقوط غول‌های صنعتی ایران در تله نوستالژی</h3>
+<h3 id="_5">۳.۲. پرونده‌های تاریخی سقوط غول‌های صنعتی ایران در تله نوستالژی</h3>
 <p>استاد صدقیانی‌فر نمونه‌های واقعی و تکان‌دهنده‌ای از قربانیان نوستالژی در اقتصاد معاصر ایران را بازخوانی کردند:</p>
 <ol>
-<li><strong>پرونده ارج و آزمایش در لوازم خانگی:</strong><br />
+<li><strong>پرونده ارج و آزمایش در لوازم خانگی:</strong>
    کارخانجاتی که روزگاری نماد صنعتی‌سازی نوین ایران بودند و یخچال و کولرهای آنان در تمام خاورمیانه صادر می‌شد. اما اصرار لجوجانه بر موتورها، طراحی‌های ظاهری و فرآیندهای تولید دهه‌های ۴۰ و ۵۰، و نادیده گرفتن ورود نسل‌های جدید یخچال‌های فریزر بدون برفک (No-Frost) کره‌ای و تغییر سلیقه بانوان ایرانی، آنها را به ورطه ورشکستگی، انبارداری کالاهای فروش‌نرفته و تعطیلی کامل کشاند.</li>
-<li><strong>پرونده کفش ملی و کفش بلا در صنعت پای‌پوش:</strong><br />
+<li><strong>پرونده کفش ملی و کفش بلا در صنعت پای‌پوش:</strong>
    بزرگ‌ترین زنجیره خرده‌فروشی کفش در خاورمیانه با صدها شعبه فعال، به جای بازآفرینی سبد محصولات و همگامی با ظهور کتانی‌های ورزشی، سبک زندگی نسل جوان و مواد مصنوعی مدرن، در نوستالژی کفش‌های چرمی رسمی و قالب‌های صلب ۵۰ سال پیش خود باقی ماند و سهم بازار را به رقبای چابک خرد و واردات واگذار کرد.</li>
-<li><strong>درس‌آموخته فرار از تله: گروه صنعتی گلرنگ و پاکشو:</strong><br />
+<li><strong>درس‌آموخته فرار از تله: گروه صنعتی گلرنگ و پاکشو:</strong>
    در نقطه مقابل، استاد به رویکرد استاد حاج محمدکریم فضلی و جانشینانش اشاره کردند که هرگز اسیر برند نوستالژیک «گلرنگ» نماندند؛ بلکه با خلق برندهای متنوع و جوان‌پسند (اوه‌، سافتلن، فامیلا، اکتیو) و تأسیس فروشگاه‌های زنجیره‌ای افق کوروش، خود را با الزامات زمان حال بازآفرینی نمودند.</li>
 </ol>
-<h3>۳.۳. مفهوم «افشاگری استراتژیک» (Strategic Disclosure)</h3>
-<p>استاد صدقیانی‌فر تأکید کردند که غلبه بر نوستالژی نیازمند <strong>افشاگری استراتژیک</strong> در بالاترین سطح هیئت‌مدیره است:<br />
+<h3 id="strategic-disclosure">۳.۳. مفهوم «افشاگری استراتژیک» (Strategic Disclosure)</h3>
+<p>استاد صدقیانی‌فر تأکید کردند که غلبه بر نوستالژی نیازمند <strong>افشاگری استراتژیک</strong> در بالاترین سطح هیئت‌مدیره است:
 شهامت صریح مدیرعامل در اعتراف به این واقعیت تلخ که:</p>
 <blockquote>
 <p><em>«آنچه ما را به نقطه موفقیت فعلی رسانده است، قطعاً قادر نخواهد بود ما را به نقطه امن بعدی برساند. افتخارات پیشین ما، امروز بزرگ‌ترین مانع بقای ما هستند.»</em></p>
 </blockquote>
 <hr />
-<h2>۴. تفکیک بنیادین: تفکر سیستمی (Systemic Thinking) در برابر سیستم‌سازی (Systematization)</h2>
+<h2 id="systemic-thinking-systematization">۴. تفکیک بنیادین: تفکر سیستمی (Systemic Thinking) در برابر سیستم‌سازی (Systematization)</h2>
 <p>یکی از درخشان‌ترین بخش‌های تدریس استاد صدقیانی‌فر، پاکسازی یک سوءتفاهم ویرانگر در ادبیات مدیریتی کشور بود:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
   <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-200">
@@ -885,32 +1019,32 @@
   </div>
 </div>
 
-<h3>۴.۱. تمایز پیچیدگی (Complexity) با شلوغی کاذب اداری (Complication)</h3>
+<h3 id="complexity-complication">۴.۱. تمایز پیچیدگی (Complexity) با شلوغی کاذب اداری (Complication)</h3>
 <ul>
 <li><strong>پیچیدگی (Complexity):</strong> ماهیت بازارها، تغییرات نرخ بهره، رفتار غیرقابل‌پیش‌بینی رقبا و زنجیره تأمین جهانی است. سازمان باید با افزایش چابکی و دید سیستمی این پیچیدگی را مهار کند.</li>
 <li><strong>شلوغی کاذب (Complication):</strong> دست‌پخت خود مدیران است؛ جلسات طولانی و بی‌حاصل، تداخل وظایف صف و ستاد، و الزام کارکنان به پاس کردن ده‌ها چک‌لیست بی‌ارزش که صرفاً سازمان را فرسوده و کرخت می‌سازد.</li>
 </ul>
-<h3>۴.۲. پدیده ساختارهای نامرئی و مادون‌قرمز سازمانی (Infrared Structures)</h3>
-<p>استاد صدقیانی‌فر در تشریح روابط واقعی قدرت به مفهوم «ساختارهای مادون‌قرمز» اشاره کردند:<br />
+<h3 id="infrared-structures">۴.۲. پدیده ساختارهای نامرئی و مادون‌قرمز سازمانی (Infrared Structures)</h3>
+<p>استاد صدقیانی‌فر در تشریح روابط واقعی قدرت به مفهوم «ساختارهای مادون‌قرمز» اشاره کردند:
 در چارت رسمی سازمانی، سلسله‌مراتب عمودی مشخص است؛ اما جریان واقعی تصمیم‌گیری و اجرا در بستر شبکه‌های نامرئی دوستی‌ها، نسبت‌های فامیلی، لابی‌های غیررسمی و منافع پنهان جریان دارد. رهبر سیستمی این شبکه نامرئی (Infrared) را به رسمیت می‌شناسد و با آن تعامل می‌کند، در حالی که مدیر سیستم‌ساز خشک، در توهم چارت مقوایی خود باقی می‌ماند.</p>
 <hr />
-<h2>۵. تبارشناسی تاریخی و جامعه‌شناختی تفکر استراتژیک در ایران</h2>
+<h2 id="_6">۵. تبارشناسی تاریخی و جامعه‌شناختی تفکر استراتژیک در ایران</h2>
 <p>استاد صدقیانی‌فر برای اثبات اینکه «ریشه‌های نگاه کوتاه‌مدت مدیران ایرانی در جبر تاریخی جامعه ما نهفته است»، دو مقطع تاریخی عبرت‌آموز را تشریح کردند:</p>
-<h3>۵.۱. عصر صفویه: اصفهان به عنوان هاب تجاری شبکه جهانی</h3>
-<p>در دوران شاه عباس صفوی، میدان نقش‌جهان اصفهان صرفاً یک اثر معماری نبود؛ بلکه <strong>یک مگا‌پروژه استراتژیک و کانون لجستیک و تجارت بین‌المللی</strong> بود:<br />
-- اتصال زنجیره تأمین ابریشم گیلان به هاب تجاری اصفهان و سپس صادرات به اروپا و هند.<br />
-- ایجاد زیرساخت‌های حقوقی، ضرابخانه‌ها، کاروانسراهای زنجیره‌ای و امنیت راه‌ها.<br />
+<h3 id="_7">۵.۱. عصر صفویه: اصفهان به عنوان هاب تجاری شبکه جهانی</h3>
+<p>در دوران شاه عباس صفوی، میدان نقش‌جهان اصفهان صرفاً یک اثر معماری نبود؛ بلکه <strong>یک مگا‌پروژه استراتژیک و کانون لجستیک و تجارت بین‌المللی</strong> بود:
+- اتصال زنجیره تأمین ابریشم گیلان به هاب تجاری اصفهان و سپس صادرات به اروپا و هند.
+- ایجاد زیرساخت‌های حقوقی، ضرابخانه‌ها، کاروانسراهای زنجیره‌ای و امنیت راه‌ها.
 - تفکر در زمان در این عصر به اوج رسید؛ تصمیمی که برای دهه‌ها رفاه، ثروت پایدار و قدرت ژئوپلیتیک خلق کرد.</p>
-<h3>۵.۲. عصر قاجار: تراژدی قحطی بزرگ اصفهان (سال‌های ۱۲۶۴ تا ۱۲۶۸ خورشیدی)</h3>
-<p>در نقطه مقابل، در دوران ناصرالدین‌شاه قاجار، به دلیل فقدان دید سیستمی، سوءمدیریت ساختاری، احتکار غلات و نگاه کوتاه‌مدت حکمرانان، پایتخت اقتصادی و انبار غله ایران (اصفهان) گرفتار قحطی هولناکی شد:<br />
-- فروپاشی کامل امنیت غذایی و زنجیره توزیع به مدت ۴ سال.<br />
+<h3 id="_8">۵.۲. عصر قاجار: تراژدی قحطی بزرگ اصفهان (سال‌های ۱۲۶۴ تا ۱۲۶۸ خورشیدی)</h3>
+<p>در نقطه مقابل، در دوران ناصرالدین‌شاه قاجار، به دلیل فقدان دید سیستمی، سوءمدیریت ساختاری، احتکار غلات و نگاه کوتاه‌مدت حکمرانان، پایتخت اقتصادی و انبار غله ایران (اصفهان) گرفتار قحطی هولناکی شد:
+- فروپاشی کامل امنیت غذایی و زنجیره توزیع به مدت ۴ سال.
 - شکل‌گیری غریزه صِرف «تنازع برای بقای روزمره» در ناخودآگاه جمعی جامعه ایران.</p>
 <blockquote>
 <p><strong>درس استاد صدقیانی‌فر برای مدیران C-Suite:</strong> «وقتی جامعه‌ای قرن‌ها طعم قحطی، ناامنی مالکیت و تکانه‌های پیش‌بینی‌نشده را چشیده باشد، تفکر استراتژیک بلندمدت در آن دچار جهش منفی شده و جای خود را به غریزه سوداگری کوتاه‌مدت می‌دهد. مدیر امروز باید آگاه باشد که ذهن او و تیمش به صورت تاریخی به سمت کوتاه‌مدت‌نگری متمایل است؛ بنابراین پیاده‌سازی تفکر در زمان، نیازمند یک مبارزه آگاهانه و مستمر با این الگوی ذهنی رسوب‌کرده است.»</p>
 </blockquote>
 <hr />
-<h2>۶. بسترهای تصمیم‌گیری تحت ریسک، عدم‌قطعیت و ترجیحات استراتژیک</h2>
-<h3>۶.۱. واکاوی تصمیم‌گیری در فضای چندگزینه‌ای (گزینه‌های A، B و C)</h3>
+<h2 id="_9">۶. بسترهای تصمیم‌گیری تحت ریسک، عدم‌قطعیت و ترجیحات استراتژیک</h2>
+<h3 id="a-b-c">۶.۱. واکاوی تصمیم‌گیری در فضای چندگزینه‌ای (گزینه‌های A، B و C)</h3>
 <p>استاد صدقیانی‌فر تأکید کردند که تصمیم استراتژیک، انتخاب میان خوب و بد نیست؛ بلکه <strong>انتخاب میان چند گزینه خوب است که هرکدام بهای فرصت (Opportunity Cost) مشخصی دارند:</strong></p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm text-xs">
@@ -945,26 +1079,26 @@
   </table></div>
 </div>
 
-<h3>۶.۲. مفهوم «تعارض استراتژیک» (Strategic Conflict)</h3>
-<p>تعارض در سازمان‌ها همواره ناشی از مسائل اخلاقی یا لجبازی شخصی نیست. تعارض واقعی در سطح ارشد ناشی از <strong>تضاد در ترجیحات بنیادین زمانی و تخصیص منابع</strong> است:<br />
-- واحد بازاریابی گزینه A را می‌خواهد چون افق نگاهش فتح بازار است.<br />
-- واحد مالی گزینه C را می‌خواهد چون نگران نکول تعهدات بانکی و حفظ جریان نقد است.<br />
-- واحد تولید گزینه B را می‌طلبد چون به دنبال ثبات عملیاتی است.<br />
+<h3 id="strategic-conflict">۶.۲. مفهوم «تعارض استراتژیک» (Strategic Conflict)</h3>
+<p>تعارض در سازمان‌ها همواره ناشی از مسائل اخلاقی یا لجبازی شخصی نیست. تعارض واقعی در سطح ارشد ناشی از <strong>تضاد در ترجیحات بنیادین زمانی و تخصیص منابع</strong> است:
+- واحد بازاریابی گزینه A را می‌خواهد چون افق نگاهش فتح بازار است.
+- واحد مالی گزینه C را می‌خواهد چون نگران نکول تعهدات بانکی و حفظ جریان نقد است.
+- واحد تولید گزینه B را می‌طلبد چون به دنبال ثبات عملیاتی است.
 وظیفه رهبر استراتژیک، سرکوب این تعارضات نیست؛ بلکه ایجاد یک <strong>سنتز عقلانی</strong> بر اساس شرایط کلان اقتصاد است.</p>
 <hr />
 <hr />
-<h2>۷. آسیب‌شناسی بنیادین فرار سرمایه‌ها به بخش مسکن و مستغلات در ایران</h2>
+<h2 id="_10">۷. آسیب‌شناسی بنیادین فرار سرمایه‌ها به بخش مسکن و مستغلات در ایران</h2>
 <p>یکی از محوری‌ترین مثال‌های میدانی استاد صدقیانی‌فر در تبیین غیبت تفکر در زمان در اقتصاد ایران، <strong>تحلیل رفتار تاریخی سرمایه در بازار مسکن و زمین</strong> بود:</p>
-<h3>۷.۱. پارادوکس انجماد سرمایه در دارایی‌های غیرمولد</h3>
-<p>در ۵۰ سال گذشته در ایران، به دلیل تورم‌های مزمن و ناامنی فضای تولید، سرمایه‌ها به جای حرکت به سمت R&amp;D، فناوری و توسعه بازارهای صادراتی، به سوی خرید زمین و مسکن هجوم برده‌اند. این رفتار از دید سرمایه‌گذار فردی کاملاً عقلانی و سوداگرانه است؛ اما از منظر تفکر سیستمی و تفکر در زمان در تراز کلان:<br />
-- <strong>انجماد منابع:</strong> سرمایه‌های عظیمی که باید در ماشین‌آلات پیشرفته، توسعه محصول و نوآوری به گردش درمی‌آمدند، در بتن و آجر منجمد شده‌اند.<br />
-- <strong>تضعیف توان رقابت بین‌المللی:</strong> بنگاه‌های تولیدی با افزایش شدید بهای زمین و هزینه‌های سربار روبرو شده و توان رقابت قیمتی با رقبای منطقه‌ای (ترکیه، امارات، چین) را از دست داده‌اند.<br />
+<h3 id="_11">۷.۱. پارادوکس انجماد سرمایه در دارایی‌های غیرمولد</h3>
+<p>در ۵۰ سال گذشته در ایران، به دلیل تورم‌های مزمن و ناامنی فضای تولید، سرمایه‌ها به جای حرکت به سمت R&amp;D، فناوری و توسعه بازارهای صادراتی، به سوی خرید زمین و مسکن هجوم برده‌اند. این رفتار از دید سرمایه‌گذار فردی کاملاً عقلانی و سوداگرانه است؛ اما از منظر تفکر سیستمی و تفکر در زمان در تراز کلان:
+- <strong>انجماد منابع:</strong> سرمایه‌های عظیمی که باید در ماشین‌آلات پیشرفته، توسعه محصول و نوآوری به گردش درمی‌آمدند، در بتن و آجر منجمد شده‌اند.
+- <strong>تضعیف توان رقابت بین‌المللی:</strong> بنگاه‌های تولیدی با افزایش شدید بهای زمین و هزینه‌های سربار روبرو شده و توان رقابت قیمتی با رقبای منطقه‌ای (ترکیه، امارات، چین) را از دست داده‌اند.
 - <strong>ایجاد توهم ثروت:</strong> افزایش قیمت اسمی املاک در ترازنامه شرکت‌ها، ضعف‌های وحشتناک در بهره‌وری و حاشیه سود عملیاتی را پنهان کرده است.</p>
 <blockquote>
 <p><strong>گزاره استاد صدقیانی‌فر:</strong> «مدیر عاملی که تفکر در زمان دارد، رشد شرکت خود را با تجدید ارزیابی دارایی‌های ساختمانی اندازه نمی‌گیرد؛ او می‌داند اگر جریان نقدینگی حاصل از فروش نوآورانه محصولات کاهش یابد، حتی مالکیت گران‌ترین برج‌های تهران نیز مانع فروپاشی هسته کسب‌وکار او نخواهد شد.»</p>
 </blockquote>
 <hr />
-<h2>۸. خطاهای شناختی کشنده که تفکر در زمان را مختل می‌کنند</h2>
+<h2 id="_12">۸. خطاهای شناختی کشنده که تفکر در زمان را مختل می‌کنند</h2>
 <p>استاد صدقیانی‌فر به سه خطای شناختی حاکم بر اتاق‌های جلسات اشاره کردند که مانع اجرای تفکر در زمان می‌شوند:</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
   <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
@@ -987,34 +1121,34 @@
   </div>
 </div>
 
-<h2>۹. تغییرات رفتاری بازار و اقتصاد نوستالژی در جامعه امروز ایران</h2>
-<h3>۷.۱. واکاوی تغییر سبک مصرف: از اقتصاد فله‌ای به هویت برند</h3>
-<p>استاد صدقیانی‌فر به عنوان نمونه‌ای ملموس از تغییرات زمانی در بازار ایران به الگوی خرید خانواده‌ها اشاره کردند:<br />
-در گذشته، خانوارهای ایرانی مایحتاج سالانه خود (مانند پنبه، زعفران، زردچوبه، پسته و گردو) را به صورت فله‌ای، فصلی و بر اساس اعتماد سنتی به بازاریان سرشناس تهیه می‌کردند. اما امروز:<br />
-- نسل جدید تمایلی به انبار کردن کالا در خانه ندارد؛ مصرف به تقاضای آنی و آنلاین تبدیل شده است.<br />
+<h2 id="_13">۹. تغییرات رفتاری بازار و اقتصاد نوستالژی در جامعه امروز ایران</h2>
+<h3 id="_14">۷.۱. واکاوی تغییر سبک مصرف: از اقتصاد فله‌ای به هویت برند</h3>
+<p>استاد صدقیانی‌فر به عنوان نمونه‌ای ملموس از تغییرات زمانی در بازار ایران به الگوی خرید خانواده‌ها اشاره کردند:
+در گذشته، خانوارهای ایرانی مایحتاج سالانه خود (مانند پنبه، زعفران، زردچوبه، پسته و گردو) را به صورت فله‌ای، فصلی و بر اساس اعتماد سنتی به بازاریان سرشناس تهیه می‌کردند. اما امروز:
+- نسل جدید تمایلی به انبار کردن کالا در خانه ندارد؛ مصرف به تقاضای آنی و آنلاین تبدیل شده است.
 - بسته‌بندی‌های شکیل، نشان استاندارد، بهداشت، راحتی مصرف و داستان برند (Brand Story) جایگزین روابط سنتی بازار شده است.</p>
 <blockquote>
 <p><strong>توصیه استاد:</strong> «بنگاه‌هایی که بر مدل‌های کسب‌وکار سنتی خود اصرار ورزیدند و تغییر سبک زندگی نسل‌های جدید را ندیدند، محکوم به انقراض شدند. نوستالژی بازار سنتی نمی‌تواند شرکت‌ها را در عصر زنجیره‌های توزیع مدرن و سوپرمارکت‌های آنلاین نجات دهد.»</p>
 </blockquote>
 <hr />
-<h2>۱۰. گفت‌وگوها، چالش‌ها و دیالوگ‌های زنده کلاس</h2>
-<h3>چالش اول: چگونه تعصب بنیان‌گذاران نسبت به گذشته را بشکنیم؟</h3>
+<h2 id="_15">۱۰. گفت‌وگوها، چالش‌ها و دیالوگ‌های زنده کلاس</h2>
+<h3 id="_16">چالش اول: چگونه تعصب بنیان‌گذاران نسبت به گذشته را بشکنیم؟</h3>
 <ul>
 <li><strong>پرسش دانشجویان:</strong> «استاد، در بسیاری از شرکت‌های خانوادگی و هلدینگ‌های سنتی ایران، سهامداران عمده یا بنیان‌گذاران عاشق خطوط تولید قدیمی خود هستند و هرگونه تغییر را خیانت به میراث گذشته می‌دانند. با این تعصب نوستالژیک چه باید کرد؟»</li>
 <li><strong>پاسخ استاد صدقیانی‌فر:</strong> «شما با بحث نظری نمی‌توانید تعصب عاطفی را بشکنید. تنها زبان مشترک با این مدیران، زبان <strong>هزینه فرصت (Opportunity Cost)</strong> و صورت‌های مالی عریان است. به آنها نشان دهید که چسبیدن به این خط تولید نوستالژیک، ماهانه چند صد میلیون تومان از سود خالص شرکت را می‌بلعد و چه بازارهایی را دودستی به رقبا واگذار کرده است. عدد و رقم عریان، بهترین پادزهر نوستالژی است.»</li>
 </ul>
-<h3>چالش دوم: مرز میان تفکر در زمان و رویاپردازی چیست؟</h3>
+<h3 id="_17">چالش دوم: مرز میان تفکر در زمان و رویاپردازی چیست؟</h3>
 <ul>
 <li><strong>پرسش دانشجویان:</strong> «آیا ترسیم آینده‌های دوردست در محیط پرنوسان ایران نوعی توهم و رویاپردازی نیست؟»</li>
 <li><strong>پاسخ استاد صدقیانی‌فر:</strong> «تفکر در زمان یعنی سناریونویسی بر پایه روندها، نه خیال‌بافی بدون پشتوانه. اگر سناریوی شما گذشته را نبیند و ظرفیت منابع جاری را محاسبه نکند، بله رویاپردازی است. اما اگر بدانید که در ۴۰ سال گذشته شوک‌های ارزی در چه فواصل زمانی رخ داده‌اند، اثر تورم بر قدرت خرید طبقه متوسط چه بوده، و روند جمعیتی به چه سمتی می‌رود، این پیش‌بینی نیست؛ این آمادگی برای بقا و پیروزی است.»</li>
 </ul>
-<h3>چالش سوم: تضاد نسلی مدیران جوان با بدنه کهنه‌کار سازمان</h3>
+<h3 id="_18">چالش سوم: تضاد نسلی مدیران جوان با بدنه کهنه‌کار سازمان</h3>
 <ul>
 <li><strong>پرسش دانشجویان:</strong> «مدیران جوانی که تازه سکان شرکت‌های سنتی را به دست می‌گیرند چگونه می‌توانند مقاومت لایه‌های قدیمی را در برابر نوسازی فرآیندها مدیریت کنند؟»</li>
 <li><strong>پاسخ استاد صدقیانی‌فر:</strong> «با احترام به گذشته و تفکیک احترام انسانی از اصرار بر روش‌های ناکارآمد. اگر به بدنه کهنه‌کار این حس را بدهید که آمده‌اید کل تاریخ شرکت را نفی کنید، در برابر شما دیوار مقاومت می‌کشند. تفکر در زمان یعنی به آنها بگویید: "ما میراث شما را ارج می‌نهیم و دقیقاً برای اینکه ثمره عمر شما نابود نشود، ناچاریم ابزارهایمان را با بازار جدید همگام کنیم."»</li>
 </ul>
 <hr />
-<h2>۱۱. منشور اقدامات دوشنبه صبح مدیرعامل (CEO Monday Action Protocol)</h2>
+<h2 id="ceo-monday-action-protocol">۱۱. منشور اقدامات دوشنبه صبح مدیرعامل (CEO Monday Action Protocol)</h2>
 <p>استاد صدقیانی‌فر این جلسه را با ابلاغ پنج گام حیاتی برای شروع هفته کاری مدیران ارشد به پایان رساندند:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
   <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-700">
@@ -1044,14 +1178,13 @@
 </div>
 
 <hr />
-<h2>۱۲. پیوندها و گام‌های بعدی در نقشه راه دوره</h2>
+<h2 id="_19">۱۲. پیوندها و گام‌های بعدی در نقشه راه دوره</h2>
 <ul>
 <li><strong>پرونده تفصیلی جلسه اول:</strong> [[Session_01_Notes]]</li>
 <li><strong>هندبوک جامع دوره:</strong> [[MBA_Strategic_Thinking_Master_Handbook]]</li>
 <li><strong>نقشه دانش کلان (MOC):</strong> [[00_MBA_Strategic_Thinking_MOC]]</li>
 <li><strong>پیش‌درآمد جلسه سوم:</strong> رکن پنجم تفکر استراتژیک (پیش‌روی فرضیه‌محور)، متدولوژی طراحی فرضیات جسورانه و آزمون چابک در شرایط ابهام بالا.</li>
-</ul>
-        </div>
+</ul></div>
       </div>
 
     </section>
@@ -1061,85 +1194,80 @@
       <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-10">
         <div class="max-w-3xl mb-8">
           <div class="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-200 rounded-full px-4 py-1 text-xs font-bold text-indigo-700 mb-3">
-            <span>🧭 ابزار تشخیصی C-Suite</span>
+            <span>🧭 ابزار تشخیصی تفکر استراتژیک</span>
             <span>•</span>
-            <span>بر اساس مدل معتبر پروفسور جین لیدکا (Jeanne Liedtka)</span>
+            <span>سنجش ارکان پنج‌گانه لیدکا و تشخیص خطاهای شناختی</span>
           </div>
           <h2 class="text-2xl md:text-3xl font-black text-slate-900 mb-2">
-            ارزیاب بلوغ تفکر استراتژیک سازمان و تیم رهبری
+            شبیه‌ساز و ارزیاب بلوغ تفکر استراتژیک در رهبری سازمانی
           </h2>
           <p class="text-slate-600 text-sm leading-relaxed">
-            با تنظیم ۵ لغزنده زیر بر اساس واقعیت‌های جاری سازمان خود، نمره بلوغ اندیشه استراتژیک، شکاف‌های بحرانی و دستورالعمل اجرایی اختصاصی هیئت‌مدیره را دریافت کنید.
+            با تنظیم لغزنده‌های زیر بر اساس عملکرد واقعی تیم رهبری، سطح بلوغ تفکر استراتژیک سازمان و آسیب‌پذیری در برابر خطاهای شناختی را مشاهده نمایید.
           </p>
         </div>
 
         <!-- Interactive Sliders -->
         <div class="space-y-6 bg-slate-50 p-6 rounded-2xl border border-slate-200">
           
-          <!-- Pillar 1 -->
           <div>
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
-                <span>۱. نگاه سیستمی (System Perspective)</span>
-                <span class="text-xs font-normal text-slate-500">(درک زنجیره ارزش کل سازمان و پیوند با محیط بیرونی)</span>
+                <span>۱. تفکر سیستمی (System Perspective)</span>
+                <span class="text-xs font-normal text-slate-500">(درک روابط متقابل واحدها و محیط کلان)</span>
               </label>
-              <span id="val-p1" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۵۰٪ (متوسط)</span>
+              <span id="val-p1" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۴۰٪ (متوسط)</span>
             </div>
-            <input type="range" id="range-p1" min="0" max="100" value="50" oninput="calculateLiedtka()" class="w-full accent-indigo-600 cursor-pointer">
+            <input type="range" id="range-p1" min="0" max="100" value="40" oninput="calculateMaturity()" class="w-full accent-indigo-600 cursor-pointer">
           </div>
 
-          <!-- Pillar 2 -->
           <div>
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
-                <span>۲. تمرکز بر هدف و قصد استراتژیک (Intent Focused)</span>
-                <span class="text-xs font-normal text-slate-500">(پایداری انرژی سازمانی روی غایت نهایی و مهار حواس‌پرتی)</span>
+                <span>۲. تمرکز بر قصد استراتژیک (Strategic Intent)</span>
+                <span class="text-xs font-normal text-slate-500">(هم‌جهتی انرژی تمام بخش‌ها حول آرمان محوری)</span>
               </label>
               <span id="val-p2" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۵۰٪ (متوسط)</span>
             </div>
-            <input type="range" id="range-p2" min="0" max="100" value="50" oninput="calculateLiedtka()" class="w-full accent-indigo-600 cursor-pointer">
+            <input type="range" id="range-p2" min="0" max="100" value="50" oninput="calculateMaturity()" class="w-full accent-indigo-600 cursor-pointer">
           </div>
 
-          <!-- Pillar 3 -->
           <div>
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
                 <span>۳. تفکر در زمان (Thinking in Time)</span>
-                <span class="text-xs font-normal text-slate-500">(پیوند عبرت‌های گذشته با تصمیمات حال برای خلق آینده مطلوب)</span>
+                <span class="text-xs font-normal text-slate-500">(استفاده از درس‌های گذشته برای افق‌های آینده بدون نوستالژی)</span>
               </label>
-              <span id="val-p3" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۵۰٪ (متوسط)</span>
+              <span id="val-p3" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۳۰٪ (ضعیف)</span>
             </div>
-            <input type="range" id="range-p3" min="0" max="100" value="50" oninput="calculateLiedtka()" class="w-full accent-indigo-600 cursor-pointer">
+            <input type="range" id="range-p3" min="0" max="100" value="30" oninput="calculateMaturity()" class="w-full accent-indigo-600 cursor-pointer">
           </div>
 
-          <!-- Pillar 4 -->
           <div>
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
-                <span>۴. پیش‌روی فرضیه‌محور (Hypothesis-Driven)</span>
-                <span class="text-xs font-normal text-slate-500">(آزمایش فرضیه‌ها به جای برنامه‌ریزی قطعی صلب در عدم‌قطعیت)</span>
+                <span>۴. هوشمندی فرصت‌طلبانه (Intelligent Opportunism)</span>
+                <span class="text-xs font-normal text-slate-500">(انعطاف و شکار پنجره‌های نوظهور در بحران)</span>
               </label>
-              <span id="val-p4" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۵۰٪ (متوسط)</span>
+              <span id="val-p4" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۴۵٪ (متوسط)</span>
             </div>
-            <input type="range" id="range-p4" min="0" max="100" value="50" oninput="calculateLiedtka()" class="w-full accent-indigo-600 cursor-pointer">
+            <input type="range" id="range-p4" min="0" max="100" value="45" oninput="calculateMaturity()" class="w-full accent-indigo-600 cursor-pointer">
           </div>
 
-          <!-- Pillar 5 -->
           <div>
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
-                <span>۵. فرصت‌جویی هوشمندانه (Intelligent Opportunism)</span>
-                <span class="text-xs font-normal text-slate-500">(شناسایی و تصاحب سریع فرصت‌های نوظهور محیطی بدون گم کردن جهت)</span>
+                <span>۵. رویکرد فرضیه‌محور (Hypothesis-Driven)</span>
+                <span class="text-xs font-normal text-slate-500">(آزمون سریع ایده‌ها به جای برنامه‌ریزی قطعی)</span>
               </label>
-              <span id="val-p5" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۵۰٪ (متوسط)</span>
+              <span id="val-p5" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۳۵٪ (ضعیف)</span>
             </div>
-            <input type="range" id="range-p5" min="0" max="100" value="50" oninput="calculateLiedtka()" class="w-full accent-indigo-600 cursor-pointer">
+            <input type="range" id="range-p5" min="0" max="100" value="35" oninput="calculateMaturity()" class="w-full accent-indigo-600 cursor-pointer">
           </div>
 
         </div>
 
         <!-- Output Diagnostic Box -->
-        <div id="sim-result-box" class="mt-8 p-6 rounded-2xl border transition-all">
+        <div id="maturity-result-box" class="mt-8 p-6 rounded-2xl border transition-all">
           <!-- Dynamically populated via JS -->
         </div>
 
@@ -1149,17 +1277,17 @@
     <!-- TAB: HANDBOOK -->
     <section id="content-handbook" class="tab-content hidden space-y-6">
       <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-10 space-y-8 prose-custom">
-        <h1>دانشنامه جامع و راهنمای مرجع استراتژیک (Master Handbook)</h1>
-<h2>تفکر استراتژیک در تراز رهبری ارشد کسب‌وکار (Strategic Thinking for C-Suite Executives)</h2>
+        <h1 id="master-handbook">دانشنامه جامع و راهنمای مرجع استراتژیک (Master Handbook)</h1>
+<h2 id="strategic-thinking-for-c-suite-executives">تفکر استراتژیک در تراز رهبری ارشد کسب‌وکار (Strategic Thinking for C-Suite Executives)</h2>
 <p><strong>مرجع علمی و آکادمیک:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>مدرس دوره:</strong> استاد صدقیانی‌فر<br />
 <strong>طراحی، تدوین ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
 <strong>نسخه سند:</strong> ۲.۰ (پاییز ۱۴۰۵ - تجمیع تحلیلی جلسات ۰۱ و ۰۲)</p>
 <hr />
-<h1>بخش اول: مانیفست بنیادین و ارکان پنج‌گانه تفکر استراتژیک (مدل جین لیدکا)</h1>
-<h2>۱. رهایی از توهم برنامه‌ریزی صلب در شرایط عدم‌قطعیت ایران</h2>
+<h1 id="_1">بخش اول: مانیفست بنیادین و ارکان پنج‌گانه تفکر استراتژیک (مدل جین لیدکا)</h1>
+<h2 id="_2">۱. رهایی از توهم برنامه‌ریزی صلب در شرایط عدم‌قطعیت ایران</h2>
 <p>تفکر استراتژیک یک قالب یا فرمول مکانیکی نیست؛ بلکه یک «طرز تلقی ذهنی» است که مدیر را قادر می‌سازد در میان انبوه آشفتگی‌ها و تلاطم‌های اقتصادی، روندهای پنهان را کشف کرده و برای سازمان خود جایگاهی متمایز و دفاع‌پذیر بسازد.</p>
-<h3>ارکان پنج‌گانه مدل جین لیدکا (Jeanne Liedtka):</h3>
+<h3 id="jeanne-liedtka">ارکان پنج‌گانه مدل جین لیدکا (Jeanne Liedtka):</h3>
 <ol>
 <li><strong>دید سیستمی (System Perspective):</strong> درک زنجیره ارزش کل سازمان و اثر متقابل آن با محیط کلان.</li>
 <li><strong>تمرکز بر هدف و قصد استراتژیک (Intent Focused):</strong> ایجاد جهت‌گیری تسلیم‌ناپذیر و تمرکز انرژی کل سازمان بر غایت نهایی.</li>
@@ -1168,21 +1296,21 @@
 <li><strong>پیش‌روی فرضیه‌محور (Hypothesis-Driven):</strong> آزمایش سریع فرضیه‌ها در میدان عمل به جای طراحی برنامه‌های صلب غیرقابل‌انطباق.</li>
 </ol>
 <hr />
-<h1>بخش دوم: دانشنامه تفصیلی جلسه اول (مبانی، تمایزها و مدل لیدکا)</h1>
-<h1>تفکر استراتژیک - جلسه اول: مبانی، تمایزهای مفهومی و پارادایم‌های حاکم بر اندیشه استراتژیک</h1>
+<h1 id="_3">بخش دوم: دانشنامه تفصیلی جلسه اول (مبانی، تمایزها و مدل لیدکا)</h1>
+<h1 id="-">تفکر استراتژیک - جلسه اول: مبانی، تمایزهای مفهومی و پارادایم‌های حاکم بر اندیشه استراتژیک</h1>
 <p><strong>مدرس:</strong> استاد صدقیانی‌فر<br />
 <strong>مرجع علمی و آکادمیک:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>تاریخ برگزاری:</strong> ۲۶ شهریور ۱۴۰۵<br />
 <strong>تنظیم، تدوین ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
 <strong>پروفایل حرفه‌ای:</strong> <a href="https://www.linkedin.com/in/parsarezaie/">linkedin.com/in/parsarezaie</a></p>
 <hr />
-<h2>۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
-<h3>۱.۱. جوهره، فلسفه محوری و مانیفست بنیادین تدریس استاد صدقیانی‌فر</h3>
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_4">۱.۱. جوهره، فلسفه محوری و مانیفست بنیادین تدریس استاد صدقیانی‌فر</h3>
 <p>نخستین جلسه از دوره «تفکر استراتژیک» به رهبری استاد صدقیانی‌فر در دانشکده اقتصاد دانشگاه تهران، با هدف <strong>ساختارشکنی ریشه‌ای پیرامون برداشت‌های ناصحیح، تقلیل‌گرایانه و کلیشه‌ای از مقوله استراتژی</strong> برگزار گردید. جوهره اصلی تدریس استاد بر این اصل استوار است که استراتژی نه یک سند مجلل ماتریسی با جدول‌های توخالی، بلکه <strong>«یک انتخاب آگاهانه، شجاعانه، هوشمندانه و جهت‌ساز در بستر زمان و در مواجهه با نااطمینانی‌های غیرقابل پیش‌بینی»</strong> است.</p>
 <p>استراتژی به خودی خود تضمین‌کننده موفقیت قطعی هیچ سازمانی نیست، اما نادیده گرفتن یا فقدان تفکر استراتژیک، <strong>تضمین‌کننده قطعی شکست، انفعال و فروپاشی سازمان</strong> در کوران رقابت‌های مدرن است.</p>
 <p>استاد صدقیانی‌فر با نقد صریح ادبیات رایج مشاوره مدیریت در ایران، جابه‌جایی مفهومی میان «ابزار» و «ماهیت» استراتژی را عارضه مهلک سازمان‌ها دانستند. ابزارهایی چون ماتریس‌های SWOT، تحلیل نیروهای پنج‌گانه پورتر یا مدل‌های BCG تنها چارچوب‌هایی برای نظم‌بخشی به داده‌ها هستند؛ اما آنچه به این ابزارها جان می‌بخشد و جهت خلق مزیت رقابتی پایدار را تعیین می‌کند، <strong>«قوه تمیز، شهود عقلانی و تفکر استراتژیک رهبران»</strong> است. استراتژی ابزاری برای تصمیم‌گیری آگاهانه مدیرعامل و هیئت‌مدیره است، نه محملی برای سلب مسئولیت و پنهان شدن پشت واژگان پرطمطراق مشاوران.</p>
 <hr />
-<h3>۱.۲. پارادوکس مرگبار سازمان‌ها: سندپراکنی در برابر فقدان تفکر استراتژیک</h3>
+<h3 id="_5">۱.۲. پارادوکس مرگبار سازمان‌ها: سندپراکنی در برابر فقدان تفکر استراتژیک</h3>
 <p>بزرگ‌ترین پارادوکس سازمان‌های امروزی (به‌ویژه در اکوسیستم کسب‌وکار ایران) در این نکته نهفته است که شرکت‌ها سالانه صدها میلیون تومان صرف تدوین اسناد ۵ ساله و ۱۰ ساله برنامه‌ریزی جامع استراتژیک، ماتریس‌های متعدد و شاخص‌های متورم KPI می‌کنند؛ اما در نخستین مواجهه با تکانه‌های نرخ ارز، تحولات رگولاتوری، شوک‌های زنجیره تأمین یا جهش‌های تکنولوژیک، تمام آن اسناد را بایگانی کرده و دچار بهت و فلج تصمیم‌گیری می‌شوند.</p>
 <p>علت بنیادین این ناکامی، خلط مبحث و عدم درک تفاوت جوهری میان <strong>«داشتن سند صلب برنامه‌ریزی»</strong> و <strong>«برخورداری از ذهنیت و انضباط فکری استراتژیک»</strong> است. برنامه‌ریزی سنتی بر فرض پیش‌بینی‌پذیری خطی گذشته استوار است؛ اما در دنیای واقعی با پدیده‌های آشوبناک، دینامیک‌های غیرخطی و قوی‌های سیاه روبرو هستیم که بقا در آن تنها با ذهنیت یادگیرنده، چابک و انطباق‌پذیر تضمین می‌گردد.</p>
 <div class="overflow-x-auto my-6">
@@ -1215,7 +1343,7 @@
 </div>
 
 <hr />
-<h2>۲. کالبدشکافی سه‌گانه بنیادین: استراتژی، برنامه‌ریزی، مدیریت استراتژیک</h2>
+<h2 id="_6">۲. کالبدشکافی سه‌گانه بنیادین: استراتژی، برنامه‌ریزی، مدیریت استراتژیک</h2>
 <p>یکی از درخشان‌ترین بخش‌های تدریس استاد صدقیانی‌فر، تفکیک موشکافانه سه مفهوم به ظاهر مشابه اما ماهوی متفاوت بود:</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6 text-right">
   <div class="p-5 rounded-2xl border border-indigo-500/40 bg-indigo-950/20 shadow-sm">
@@ -1253,7 +1381,7 @@
 </div>
 
 <hr />
-<h3>۲.۱. جدول ماتریسی مقایسه تطبیقی ارکان سه‌گانه</h3>
+<h3 id="_7">۲.۱. جدول ماتریسی مقایسه تطبیقی ارکان سه‌گانه</h3>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
     <thead class="bg-slate-800 text-sky-300">
@@ -1300,7 +1428,7 @@
 </div>
 
 <hr />
-<h2>۳. ریشه‌شناسی علوم: تمایز علوم کاربردی (Applied) و علوم کارکردی/رسوبی (Functional/Accumulative)</h2>
+<h2 id="applied-functionalaccumulative">۳. ریشه‌شناسی علوم: تمایز علوم کاربردی (Applied) و علوم کارکردی/رسوبی (Functional/Accumulative)</h2>
 <p>استاد صدقیانی‌فر در یکی از عمیق‌ترین مباحث آکادمیک خود، ریشه ناتوانی بسیاری از فارغ‌التحصیلان و مدیران اجرایی را در سوگیری نظام آموزشی به سمت علوم کاربردی و غفلت از علوم کارکردی تشریح نمودند:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6 text-right">
   <div class="p-5 rounded-2xl border border-sky-500/40 bg-sky-950/20">
@@ -1335,7 +1463,7 @@
 </div>
 
 <hr />
-<h3>۳.۱. کالبدشکافی ارکان چهارگانه علوم کارکردی در اندیشه رهبران کسب‌وکار</h3>
+<h3 id="_8">۳.۱. کالبدشکافی ارکان چهارگانه علوم کارکردی در اندیشه رهبران کسب‌وکار</h3>
 <ol>
 <li><strong>تاریخ (History) - ریشه‌یابی و درک وابستگی به مسیر (Path Dependency):</strong></li>
 <li>
@@ -1359,7 +1487,7 @@
 <li>یک برند برجسته محصولی فنی نیست، بلکه روایتی عمیق، معنابخش و نمادین در ذهن مشتری است. هنر به رهبر سازمان قدرت تمایز، حساسیت به جزئیات ظریف تجربی، توان الهام‌بخشی به هزاران پرسنل و زبان اقناع‌گری می‌بخشد. بدون درک زیبایی‌شناسی، محصولات شرکت تبدیل به کالاهای عام (Commodity) فاقد ارزش حاشیه‌ای بالا خواهند شد.</li>
 </ol>
 <hr />
-<h2>۴. مقایسه تطبیقی مکاتب عقلانی-موقعیتی با مکاتب نوظهور-فرآیندی استراتژی</h2>
+<h2 id="-_1">۴. مقایسه تطبیقی مکاتب عقلانی-موقعیتی با مکاتب نوظهور-فرآیندی استراتژی</h2>
 <p>استاد صدقیانی‌فر برای تعمیق درک دانشجویان از تطور تاریخی اندیشه استراتژیک، دو قطب بزرگ علم استراتژی را در برابر هم قرار دادند:</p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
@@ -1406,7 +1534,7 @@
 </div>
 
 <hr />
-<h2>۵. مدل پنج‌گانه ارکان تفکر استراتژیک (جین لیدکا - Jeanne Liedtka)</h2>
+<h2 id="-jeanne-liedtka">۵. مدل پنج‌گانه ارکان تفکر استراتژیک (جین لیدکا - Jeanne Liedtka)</h2>
 <p>یکی از معتبرترین فریم‌ورک‌های استاندارد دانشگاهی در سراسر جهان، مدل پروفسور جین لیدکا از دانشکده کسب‌وکار داردن است که توسط استاد صدقیانی‌فر برای بستر ایران بومی‌سازی شد:</p>
 <div class="grid grid-cols-1 md:grid-cols-5 gap-3 my-6 text-right text-xs">
   <div class="p-4 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-amber-400 transition-all">
@@ -1461,7 +1589,7 @@
 </div>
 
 <hr />
-<h3>۵.۱. تشریح عملیاتی ارکان پنج‌گانه در میدان کسب‌وکار ایران</h3>
+<h3 id="_9">۵.۱. تشریح عملیاتی ارکان پنج‌گانه در میدان کسب‌وکار ایران</h3>
 <ol>
 <li><strong>نگرش سیستمی (Systemic Perspective):</strong></li>
 <li>
@@ -1491,7 +1619,7 @@
 <li>استراتژی حدس‌های علمی پیرامون آینده است. یک استراتژیست هرگز نمی‌گوید «من مطمئنم این طرح موفق می‌شود»؛ بلکه می‌گوید «فرضیه ما این است که اگر این ارزش پیشنهادی را ارائه دهیم، ۳۰ درصد بازار هدف جذب خواهند شد؛ بیایید با راه‌اندازی آزمایشی در یک منطقه کوچک صحت این فرض را در عمل بسنجیم».</li>
 </ol>
 <hr />
-<h2>۶. تله‌های شناختی و خطاهای ادراکی مدیران ایرانی در تصمیم‌گیری استراتژیک</h2>
+<h2 id="_10">۶. تله‌های شناختی و خطاهای ادراکی مدیران ایرانی در تصمیم‌گیری استراتژیک</h2>
 <p>استاد صدقیانی‌فر بخش مهمی از کلاس را به تحلیل روان‌شناختی شکست‌های مدیریتی اختصاص دادند. ریشه اصلی تصمیمات نابخردانه، نه کمبود داده، بلکه سوگیری‌های شناختی (Cognitive Biases) ذهن تصمیم‌گیرندگان است:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6 text-right text-xs">
   <div class="p-4 rounded-xl border border-rose-500/30 bg-rose-950/20">
@@ -1548,20 +1676,20 @@
 </div>
 
 <hr />
-<h2>۷. پرونده‌های کاوی واقعی و درس‌آموخته‌های بومی در بازار ایران</h2>
-<h3>۷.۱. آسیب‌شناسی ساختاری بحران مسکن در ایران (تحلیل استراتژیک از دهه ۵۰ تا ۱۴۰۵)</h3>
-<p>استاد صدقیانی‌فر بحران مسکن را نه یک موضوع صرفاً عمرانی، بلکه گواهی تاریخی بر شکست تفکر استراتژیک در حکمرانی اقتصادی کشور معرفی کردند:<br />
-- در دهه ۱۳۵۰ خورشیدی، زمان متوسط انتظار یک خانوار برای خرید مسکن با درآمد متوسط حدود ۷ تا ۱۰ سال بود. در دهه ۱۴۰۵، این شاخص در کلان‌شهرها به بالای ۶۰ تا ۸۰ سال رسیده است!<br />
-- <strong>تحلیل ریشه‌ای استراتژیست:</strong> این فاجعه ناشی از ناتوانی در تفکر در زمان و حاکمیت سیاست‌های رانتی و سفته‌بازانه بر بخش مولد اقتصاد است. زمین به عنوان کالایی غیرقابل بازتولید، تمام مازاد سرمایه ملی را بلعیده و توان رقابت بخش‌های دانش‌بنیان، تکنولوژی و تولید صنعتی را خفه کرده است.<br />
+<h2 id="_11">۷. پرونده‌های کاوی واقعی و درس‌آموخته‌های بومی در بازار ایران</h2>
+<h3 id="_12">۷.۱. آسیب‌شناسی ساختاری بحران مسکن در ایران (تحلیل استراتژیک از دهه ۵۰ تا ۱۴۰۵)</h3>
+<p>استاد صدقیانی‌فر بحران مسکن را نه یک موضوع صرفاً عمرانی، بلکه گواهی تاریخی بر شکست تفکر استراتژیک در حکمرانی اقتصادی کشور معرفی کردند:
+- در دهه ۱۳۵۰ خورشیدی، زمان متوسط انتظار یک خانوار برای خرید مسکن با درآمد متوسط حدود ۷ تا ۱۰ سال بود. در دهه ۱۴۰۵، این شاخص در کلان‌شهرها به بالای ۶۰ تا ۸۰ سال رسیده است!
+- <strong>تحلیل ریشه‌ای استراتژیست:</strong> این فاجعه ناشی از ناتوانی در تفکر در زمان و حاکمیت سیاست‌های رانتی و سفته‌بازانه بر بخش مولد اقتصاد است. زمین به عنوان کالایی غیرقابل بازتولید، تمام مازاد سرمایه ملی را بلعیده و توان رقابت بخش‌های دانش‌بنیان، تکنولوژی و تولید صنعتی را خفه کرده است.
 - <strong>پیامد شرکتی:</strong> بنگاه‌های اقتصادی به جای تمرکز بر بهره‌وری عملیاتی، ناچار شده‌اند دارایی‌های خود را به صورت املاک دپو کنند تا از گزند تورم در امان بمانند؛ وضعیتی که جریان نقدینگی عملیاتی را قفل کرده و سازمان‌ها را به غول‌های ملکی بدهکار بدل ساخته است.</p>
 <hr />
-<h3>۷.۲. درس‌آموخته تطبیقی سامسونگ در برابر تویوتا</h3>
+<h3 id="_13">۷.۲. درس‌آموخته تطبیقی سامسونگ در برابر تویوتا</h3>
 <ul>
 <li><strong>تویوتا (کایزن و بهبود تدریجی مستمر):</strong> تویوتا نماد تفکر استراتژیک مبتنی بر انضباط، بهبود گام‌به‌گام و حذف اصطکاک بود. اما در دوران گذار به خودروهای برقی و نرم‌افزارمحور، تمرکز بیش از حد بر بهینه‌سازی گذشته موجب عقب‌ماندگی از تحولات تسلا و خودروسازان چینی شد.</li>
 <li><strong>سامسونگ (چرخش‌های رادیکال و شجاعت تغییر بستر):</strong> سامسونگ در سال ۱۹۳۸ کار خود را با تجارت سبزیجات و ماهی خشک آغاز کرد، در دهه ۱۹۵۰ به پالایش شکر و نساجی وارد شد، در دهه ۱۹۷۰ به پتروشیمی و لوازم خانگی جهش کرد و در دهه ۱۹۹۰ رهبر جهانی چیپ‌های حافظه و اسمارت‌فون شد. سامسونگ مظهر پایبندی به «قصد استراتژیک» در عین شجاعت ترک محصولات گذشته است.</li>
 </ul>
 <hr />
-<h2>۸. چک‌لیست طلایی شنبه ساعت ۷ صبح مدیرعامل (CEO Saturday Action Protocol)</h2>
+<h2 id="ceo-saturday-action-protocol">۸. چک‌لیست طلایی شنبه ساعت ۷ صبح مدیرعامل (CEO Saturday Action Protocol)</h2>
 <p>استاد صدقیانی‌فر در پایان جلسه نخست، مدیران عامل را به اجرای این پروتکل منظم فکری در آغاز هر هفته فراخواندند:</p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
@@ -1609,7 +1737,7 @@
 </div>
 
 <hr />
-<h2>۹. پیوندهای مرتبط و مراجع تکمیلی</h2>
+<h2 id="_14">۹. پیوندهای مرتبط و مراجع تکمیلی</h2>
 <ul>
 <li><strong>پرونده تفصیلی جلسه دوم:</strong> [[Session_02_Notes]]</li>
 <li><strong>هندبوک جامع دوره:</strong> [[MBA_Strategic_Thinking_Master_Handbook]]</li>
@@ -1618,22 +1746,22 @@
 <li><strong>پروفایل مؤلف:</strong> <a href="https://www.linkedin.com/in/parsarezaie/">پارسا رضائی در لینکدین</a></li>
 </ul>
 <hr />
-<h1>بخش سوم: دانشنامه تفصیلی جلسه دوم (تفکر در زمان، نوستالژی سازمانی و تفکر سیستمی)</h1>
-<h1>تفکر استراتژیک - جلسه دوم: تفکر در زمان، واکاوی نوستالژی سازمانی و تفکیک تفکر سیستمی از سیستم‌سازی</h1>
+<h1 id="_15">بخش سوم: دانشنامه تفصیلی جلسه دوم (تفکر در زمان، نوستالژی سازمانی و تفکر سیستمی)</h1>
+<h1 id="-_2">تفکر استراتژیک - جلسه دوم: تفکر در زمان، واکاوی نوستالژی سازمانی و تفکیک تفکر سیستمی از سیستم‌سازی</h1>
 <p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>مدرس دوره:</strong> استاد صدقیانی‌فر<br />
 <strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
 <strong>تاریخ تدریس:</strong> ۰۲ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۲ ساعت و ۴۸ دقیقه<br />
 <strong>موضوع محوری:</strong> رکن چهارم لیدکا (Thinking in Time)، تله نوستالژی سازمانی، و تبارشناسی تفکر سیستمی در اقتصاد ایران</p>
 <hr />
-<h2>۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
-<h3>۱.۱. جوهره و مانیفست محوری تدریس استاد صدقیانی‌فر</h3>
-<p>در جلسه دوم درس تفکر استراتژیک، استاد صدقیانی‌فر کالبدشکافی عمیقی از <strong>رکن چهارم مدل جین لیدکا: تفکر در زمان (Thinking in Time)</strong> ارائه دادند. پیام بنیادین این جلسه رهایی ذهن مدیران از دو تله ویرانگر بود:<br />
-1. <strong>تله نوستالژی سازمانی و وابستگی به مسیر (Path Dependency):</strong> افتخار به پیروزی‌های گذشته و تکرار لجوجانه الگوهای منسوخ در مواجهه با تکانه‌های نوین محیطی.<br />
+<h2 id="executive-summary_1">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_16">۱.۱. جوهره و مانیفست محوری تدریس استاد صدقیانی‌فر</h3>
+<p>در جلسه دوم درس تفکر استراتژیک، استاد صدقیانی‌فر کالبدشکافی عمیقی از <strong>رکن چهارم مدل جین لیدکا: تفکر در زمان (Thinking in Time)</strong> ارائه دادند. پیام بنیادین این جلسه رهایی ذهن مدیران از دو تله ویرانگر بود:
+1. <strong>تله نوستالژی سازمانی و وابستگی به مسیر (Path Dependency):</strong> افتخار به پیروزی‌های گذشته و تکرار لجوجانه الگوهای منسوخ در مواجهه با تکانه‌های نوین محیطی.
 2. <strong>خلط تفکر سیستمی با سیستم‌سازی اداری:</strong> تبدیل سازمان به انبوهی از آیین‌نامه‌ها، فرآیندهای صلب و بروکراسی کاذب به جای ایجاد نگرش پویای درک روابط علت و معلولی.</p>
 <p>استاد صدقیانی‌فر با پیوند زدن مباحث تئوریک به تبارشناسی تاریخی ایران (از شکوه تجاری صفویه در میدان نقش‌جهان تا قحطی بزرگ اصفهان در عهد قاجار) و رفتار مصرف‌کننده معاصر، نشان دادند که تفکر استراتژیک بیش از آنکه یک ابزار تحلیلی باشد، <strong>یک بلوغ ذهنی و رهایی از کوته‌بینی زمانی</strong> است.</p>
 <hr />
-<h3>۱.۲. چه زمانی سازمان به «استراتژی مدون» نیاز پیدا می‌کند؟</h3>
+<h3 id="_17">۱.۲. چه زمانی سازمان به «استراتژی مدون» نیاز پیدا می‌کند؟</h3>
 <p>استاد صدقیانی‌فر این فرض رایج را که «هر کسب‌وکاری از روز نخست نیازمند یک سند قطور استراتژیک است» به چالش کشیدند. استراتژی همواره در ذهن و عمل بنیان‌گذاران جریان دارد؛ اما <strong>نگارش سند استراتژی مدون</strong> تنها در صورت تحقق ۳ پیش‌شرط حیاتی الزام‌آور می‌شود:</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
   <div class="p-5 rounded-2xl bg-indigo-50 border border-indigo-200">
@@ -1666,8 +1794,8 @@
 </div>
 
 <hr />
-<h2>۲. کالبدشکافی رکن چهارم لیدکا: تفکر در زمان (Thinking in Time)</h2>
-<h3>۲.۱. مدل ریچارد نوستات و ارنست می (Neustadt &amp; May Framework)</h3>
+<h2 id="thinking-in-time">۲. کالبدشکافی رکن چهارم لیدکا: تفکر در زمان (Thinking in Time)</h2>
+<h3 id="neustadt-may-framework">۲.۱. مدل ریچارد نوستات و ارنست می (Neustadt &amp; May Framework)</h3>
 <p>تفکر در زمان به معنای تقویم‌نگاری یا وقایع‌نگاری خطی نیست؛ بلکه <strong>هنر پیوند زدن ارگانیک گذشته، حال و آینده</strong> است:</p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
@@ -1702,7 +1830,7 @@
 <p><strong>گزاره محوری استاد صدقیانی‌فر:</strong> «استراتژیست ارشد کسی نیست که گذشته را دور بریزد یا در آن غرق شود؛ او گذشته را شخم می‌زند تا ریشه‌های جریان‌های فعلی را بشناسد، و با اتکا به درک این روند، آینده را زودتر از رقبا پیش‌بینی و معماری کند.»</p>
 </blockquote>
 <hr />
-<h3>۲.۲. تعامل تفکر در زمان با چهار رکن دیگر مدل جین لیدکا</h3>
+<h3 id="_18">۲.۲. تعامل تفکر در زمان با چهار رکن دیگر مدل جین لیدکا</h3>
 <p>استاد صدقیانی‌فر با رسم ماتریس ۵ عاملی لیدکا روی تخته، چگونگی پیوند تفکر در زمان را با سایر ارکان کالبدشکافی کردند:</p>
 <ol>
 <li><strong>پیوند با نگرش سیستمی (System Perspective):</strong> سیستم‌ها در زمان تکامل می‌یابند. یک استراتژیست ارشد تأخیرهای زمانی (Time Delays) میان علت و معلول را می‌شناسد و می‌داند سیاستی که امروز در بازاریابی اجرا می‌شود، ۶ ماه بعد در خط تولید و جریان نقد اثر می‌گذارد.</li>
@@ -1711,30 +1839,30 @@
 <li><strong>پیوند با فرصت‌جویی هوشمندانه (Intelligent Opportunism):</strong> فرصت‌جو بدون تفکر در زمان، یک ماجراجوی قمارباز است؛ اما با تفکر در زمان، روندها را می‌شناسد و فرصت‌هایی را شکار می‌کند که همسو با آینده محتمل بازار باشند.</li>
 </ol>
 <hr />
-<h2>۳. روان‌شناسی نوستالژی سازمانی و وابستگی به مسیر (Path Dependency)</h2>
-<h3>۳.۱. تله روانی گذشته‌گرایی در بنگاه‌های ایرانی</h3>
-<p>نوستالژی در ادبیات روان‌شناسی نوعی پناه بردن به خاطرات امن پیشین در هنگام مواجهه با اضطراب شدید حال است. در سطح بنگاه‌های ایران، بحران‌های اقتصادی، تورم ساختاری و تحریم‌ها، اضطراب سنگینی به مدیران تحمیل می‌کند. در این شرایط، بسیاری از مدیران به <strong>تله نوستالژی سازمانی</strong> پناه می‌برند:<br />
-- <em>«ما همان شرکتی هستیم که در دهه ۷۰ لیدر مطلق بازار بودیم...»</em><br />
+<h2 id="path-dependency">۳. روان‌شناسی نوستالژی سازمانی و وابستگی به مسیر (Path Dependency)</h2>
+<h3 id="_19">۳.۱. تله روانی گذشته‌گرایی در بنگاه‌های ایرانی</h3>
+<p>نوستالژی در ادبیات روان‌شناسی نوعی پناه بردن به خاطرات امن پیشین در هنگام مواجهه با اضطراب شدید حال است. در سطح بنگاه‌های ایران، بحران‌های اقتصادی، تورم ساختاری و تحریم‌ها، اضطراب سنگینی به مدیران تحمیل می‌کند. در این شرایط، بسیاری از مدیران به <strong>تله نوستالژی سازمانی</strong> پناه می‌برند:
+- <em>«ما همان شرکتی هستیم که در دهه ۷۰ لیدر مطلق بازار بودیم...»</em>
 - <em>«پدر ما این شرکت را با فلان فرمول به اوج رساند و ما هم همان مسیر را ادامه می‌دهیم...»</em></p>
 <p>این طرز فکر منجر به پدیده‌ای به نام <strong>وابستگی به مسیر (Path Dependency)</strong> می‌شود؛ وضعیتی که در آن سازمان حتی با علم به ناکارآمدی فرآیندهای موجود، به دلیل هزینه‌های روانی و مادی تغییر، همچنان در همان ریل قدیمی به سمت پرتگاه حرکت می‌کند.</p>
-<h3>۳.۲. پرونده‌های تاریخی سقوط غول‌های صنعتی ایران در تله نوستالژی</h3>
+<h3 id="_20">۳.۲. پرونده‌های تاریخی سقوط غول‌های صنعتی ایران در تله نوستالژی</h3>
 <p>استاد صدقیانی‌فر نمونه‌های واقعی و تکان‌دهنده‌ای از قربانیان نوستالژی در اقتصاد معاصر ایران را بازخوانی کردند:</p>
 <ol>
-<li><strong>پرونده ارج و آزمایش در لوازم خانگی:</strong><br />
+<li><strong>پرونده ارج و آزمایش در لوازم خانگی:</strong>
    کارخانجاتی که روزگاری نماد صنعتی‌سازی نوین ایران بودند و یخچال و کولرهای آنان در تمام خاورمیانه صادر می‌شد. اما اصرار لجوجانه بر موتورها، طراحی‌های ظاهری و فرآیندهای تولید دهه‌های ۴۰ و ۵۰، و نادیده گرفتن ورود نسل‌های جدید یخچال‌های فریزر بدون برفک (No-Frost) کره‌ای و تغییر سلیقه بانوان ایرانی، آنها را به ورطه ورشکستگی، انبارداری کالاهای فروش‌نرفته و تعطیلی کامل کشاند.</li>
-<li><strong>پرونده کفش ملی و کفش بلا در صنعت پای‌پوش:</strong><br />
+<li><strong>پرونده کفش ملی و کفش بلا در صنعت پای‌پوش:</strong>
    بزرگ‌ترین زنجیره خرده‌فروشی کفش در خاورمیانه با صدها شعبه فعال، به جای بازآفرینی سبد محصولات و همگامی با ظهور کتانی‌های ورزشی، سبک زندگی نسل جوان و مواد مصنوعی مدرن، در نوستالژی کفش‌های چرمی رسمی و قالب‌های صلب ۵۰ سال پیش خود باقی ماند و سهم بازار را به رقبای چابک خرد و واردات واگذار کرد.</li>
-<li><strong>درس‌آموخته فرار از تله: گروه صنعتی گلرنگ و پاکشو:</strong><br />
+<li><strong>درس‌آموخته فرار از تله: گروه صنعتی گلرنگ و پاکشو:</strong>
    در نقطه مقابل، استاد به رویکرد استاد حاج محمدکریم فضلی و جانشینانش اشاره کردند که هرگز اسیر برند نوستالژیک «گلرنگ» نماندند؛ بلکه با خلق برندهای متنوع و جوان‌پسند (اوه‌، سافتلن، فامیلا، اکتیو) و تأسیس فروشگاه‌های زنجیره‌ای افق کوروش، خود را با الزامات زمان حال بازآفرینی نمودند.</li>
 </ol>
-<h3>۳.۳. مفهوم «افشاگری استراتژیک» (Strategic Disclosure)</h3>
-<p>استاد صدقیانی‌فر تأکید کردند که غلبه بر نوستالژی نیازمند <strong>افشاگری استراتژیک</strong> در بالاترین سطح هیئت‌مدیره است:<br />
+<h3 id="strategic-disclosure">۳.۳. مفهوم «افشاگری استراتژیک» (Strategic Disclosure)</h3>
+<p>استاد صدقیانی‌فر تأکید کردند که غلبه بر نوستالژی نیازمند <strong>افشاگری استراتژیک</strong> در بالاترین سطح هیئت‌مدیره است:
 شهامت صریح مدیرعامل در اعتراف به این واقعیت تلخ که:</p>
 <blockquote>
 <p><em>«آنچه ما را به نقطه موفقیت فعلی رسانده است، قطعاً قادر نخواهد بود ما را به نقطه امن بعدی برساند. افتخارات پیشین ما، امروز بزرگ‌ترین مانع بقای ما هستند.»</em></p>
 </blockquote>
 <hr />
-<h2>۴. تفکیک بنیادین: تفکر سیستمی (Systemic Thinking) در برابر سیستم‌سازی (Systematization)</h2>
+<h2 id="systemic-thinking-systematization">۴. تفکیک بنیادین: تفکر سیستمی (Systemic Thinking) در برابر سیستم‌سازی (Systematization)</h2>
 <p>یکی از درخشان‌ترین بخش‌های تدریس استاد صدقیانی‌فر، پاکسازی یک سوءتفاهم ویرانگر در ادبیات مدیریتی کشور بود:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
   <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-200">
@@ -1765,32 +1893,32 @@
   </div>
 </div>
 
-<h3>۴.۱. تمایز پیچیدگی (Complexity) با شلوغی کاذب اداری (Complication)</h3>
+<h3 id="complexity-complication">۴.۱. تمایز پیچیدگی (Complexity) با شلوغی کاذب اداری (Complication)</h3>
 <ul>
 <li><strong>پیچیدگی (Complexity):</strong> ماهیت بازارها، تغییرات نرخ بهره، رفتار غیرقابل‌پیش‌بینی رقبا و زنجیره تأمین جهانی است. سازمان باید با افزایش چابکی و دید سیستمی این پیچیدگی را مهار کند.</li>
 <li><strong>شلوغی کاذب (Complication):</strong> دست‌پخت خود مدیران است؛ جلسات طولانی و بی‌حاصل، تداخل وظایف صف و ستاد، و الزام کارکنان به پاس کردن ده‌ها چک‌لیست بی‌ارزش که صرفاً سازمان را فرسوده و کرخت می‌سازد.</li>
 </ul>
-<h3>۴.۲. پدیده ساختارهای نامرئی و مادون‌قرمز سازمانی (Infrared Structures)</h3>
-<p>استاد صدقیانی‌فر در تشریح روابط واقعی قدرت به مفهوم «ساختارهای مادون‌قرمز» اشاره کردند:<br />
+<h3 id="infrared-structures">۴.۲. پدیده ساختارهای نامرئی و مادون‌قرمز سازمانی (Infrared Structures)</h3>
+<p>استاد صدقیانی‌فر در تشریح روابط واقعی قدرت به مفهوم «ساختارهای مادون‌قرمز» اشاره کردند:
 در چارت رسمی سازمانی، سلسله‌مراتب عمودی مشخص است؛ اما جریان واقعی تصمیم‌گیری و اجرا در بستر شبکه‌های نامرئی دوستی‌ها، نسبت‌های فامیلی، لابی‌های غیررسمی و منافع پنهان جریان دارد. رهبر سیستمی این شبکه نامرئی (Infrared) را به رسمیت می‌شناسد و با آن تعامل می‌کند، در حالی که مدیر سیستم‌ساز خشک، در توهم چارت مقوایی خود باقی می‌ماند.</p>
 <hr />
-<h2>۵. تبارشناسی تاریخی و جامعه‌شناختی تفکر استراتژیک در ایران</h2>
+<h2 id="_21">۵. تبارشناسی تاریخی و جامعه‌شناختی تفکر استراتژیک در ایران</h2>
 <p>استاد صدقیانی‌فر برای اثبات اینکه «ریشه‌های نگاه کوتاه‌مدت مدیران ایرانی در جبر تاریخی جامعه ما نهفته است»، دو مقطع تاریخی عبرت‌آموز را تشریح کردند:</p>
-<h3>۵.۱. عصر صفویه: اصفهان به عنوان هاب تجاری شبکه جهانی</h3>
-<p>در دوران شاه عباس صفوی، میدان نقش‌جهان اصفهان صرفاً یک اثر معماری نبود؛ بلکه <strong>یک مگا‌پروژه استراتژیک و کانون لجستیک و تجارت بین‌المللی</strong> بود:<br />
-- اتصال زنجیره تأمین ابریشم گیلان به هاب تجاری اصفهان و سپس صادرات به اروپا و هند.<br />
-- ایجاد زیرساخت‌های حقوقی، ضرابخانه‌ها، کاروانسراهای زنجیره‌ای و امنیت راه‌ها.<br />
+<h3 id="_22">۵.۱. عصر صفویه: اصفهان به عنوان هاب تجاری شبکه جهانی</h3>
+<p>در دوران شاه عباس صفوی، میدان نقش‌جهان اصفهان صرفاً یک اثر معماری نبود؛ بلکه <strong>یک مگا‌پروژه استراتژیک و کانون لجستیک و تجارت بین‌المللی</strong> بود:
+- اتصال زنجیره تأمین ابریشم گیلان به هاب تجاری اصفهان و سپس صادرات به اروپا و هند.
+- ایجاد زیرساخت‌های حقوقی، ضرابخانه‌ها، کاروانسراهای زنجیره‌ای و امنیت راه‌ها.
 - تفکر در زمان در این عصر به اوج رسید؛ تصمیمی که برای دهه‌ها رفاه، ثروت پایدار و قدرت ژئوپلیتیک خلق کرد.</p>
-<h3>۵.۲. عصر قاجار: تراژدی قحطی بزرگ اصفهان (سال‌های ۱۲۶۴ تا ۱۲۶۸ خورشیدی)</h3>
-<p>در نقطه مقابل، در دوران ناصرالدین‌شاه قاجار، به دلیل فقدان دید سیستمی، سوءمدیریت ساختاری، احتکار غلات و نگاه کوتاه‌مدت حکمرانان، پایتخت اقتصادی و انبار غله ایران (اصفهان) گرفتار قحطی هولناکی شد:<br />
-- فروپاشی کامل امنیت غذایی و زنجیره توزیع به مدت ۴ سال.<br />
+<h3 id="_23">۵.۲. عصر قاجار: تراژدی قحطی بزرگ اصفهان (سال‌های ۱۲۶۴ تا ۱۲۶۸ خورشیدی)</h3>
+<p>در نقطه مقابل، در دوران ناصرالدین‌شاه قاجار، به دلیل فقدان دید سیستمی، سوءمدیریت ساختاری، احتکار غلات و نگاه کوتاه‌مدت حکمرانان، پایتخت اقتصادی و انبار غله ایران (اصفهان) گرفتار قحطی هولناکی شد:
+- فروپاشی کامل امنیت غذایی و زنجیره توزیع به مدت ۴ سال.
 - شکل‌گیری غریزه صِرف «تنازع برای بقای روزمره» در ناخودآگاه جمعی جامعه ایران.</p>
 <blockquote>
 <p><strong>درس استاد صدقیانی‌فر برای مدیران C-Suite:</strong> «وقتی جامعه‌ای قرن‌ها طعم قحطی، ناامنی مالکیت و تکانه‌های پیش‌بینی‌نشده را چشیده باشد، تفکر استراتژیک بلندمدت در آن دچار جهش منفی شده و جای خود را به غریزه سوداگری کوتاه‌مدت می‌دهد. مدیر امروز باید آگاه باشد که ذهن او و تیمش به صورت تاریخی به سمت کوتاه‌مدت‌نگری متمایل است؛ بنابراین پیاده‌سازی تفکر در زمان، نیازمند یک مبارزه آگاهانه و مستمر با این الگوی ذهنی رسوب‌کرده است.»</p>
 </blockquote>
 <hr />
-<h2>۶. بسترهای تصمیم‌گیری تحت ریسک، عدم‌قطعیت و ترجیحات استراتژیک</h2>
-<h3>۶.۱. واکاوی تصمیم‌گیری در فضای چندگزینه‌ای (گزینه‌های A، B و C)</h3>
+<h2 id="_24">۶. بسترهای تصمیم‌گیری تحت ریسک، عدم‌قطعیت و ترجیحات استراتژیک</h2>
+<h3 id="a-b-c">۶.۱. واکاوی تصمیم‌گیری در فضای چندگزینه‌ای (گزینه‌های A، B و C)</h3>
 <p>استاد صدقیانی‌فر تأکید کردند که تصمیم استراتژیک، انتخاب میان خوب و بد نیست؛ بلکه <strong>انتخاب میان چند گزینه خوب است که هرکدام بهای فرصت (Opportunity Cost) مشخصی دارند:</strong></p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm text-xs">
@@ -1825,26 +1953,26 @@
   </table></div>
 </div>
 
-<h3>۶.۲. مفهوم «تعارض استراتژیک» (Strategic Conflict)</h3>
-<p>تعارض در سازمان‌ها همواره ناشی از مسائل اخلاقی یا لجبازی شخصی نیست. تعارض واقعی در سطح ارشد ناشی از <strong>تضاد در ترجیحات بنیادین زمانی و تخصیص منابع</strong> است:<br />
-- واحد بازاریابی گزینه A را می‌خواهد چون افق نگاهش فتح بازار است.<br />
-- واحد مالی گزینه C را می‌خواهد چون نگران نکول تعهدات بانکی و حفظ جریان نقد است.<br />
-- واحد تولید گزینه B را می‌طلبد چون به دنبال ثبات عملیاتی است.<br />
+<h3 id="strategic-conflict">۶.۲. مفهوم «تعارض استراتژیک» (Strategic Conflict)</h3>
+<p>تعارض در سازمان‌ها همواره ناشی از مسائل اخلاقی یا لجبازی شخصی نیست. تعارض واقعی در سطح ارشد ناشی از <strong>تضاد در ترجیحات بنیادین زمانی و تخصیص منابع</strong> است:
+- واحد بازاریابی گزینه A را می‌خواهد چون افق نگاهش فتح بازار است.
+- واحد مالی گزینه C را می‌خواهد چون نگران نکول تعهدات بانکی و حفظ جریان نقد است.
+- واحد تولید گزینه B را می‌طلبد چون به دنبال ثبات عملیاتی است.
 وظیفه رهبر استراتژیک، سرکوب این تعارضات نیست؛ بلکه ایجاد یک <strong>سنتز عقلانی</strong> بر اساس شرایط کلان اقتصاد است.</p>
 <hr />
 <hr />
-<h2>۷. آسیب‌شناسی بنیادین فرار سرمایه‌ها به بخش مسکن و مستغلات در ایران</h2>
+<h2 id="_25">۷. آسیب‌شناسی بنیادین فرار سرمایه‌ها به بخش مسکن و مستغلات در ایران</h2>
 <p>یکی از محوری‌ترین مثال‌های میدانی استاد صدقیانی‌فر در تبیین غیبت تفکر در زمان در اقتصاد ایران، <strong>تحلیل رفتار تاریخی سرمایه در بازار مسکن و زمین</strong> بود:</p>
-<h3>۷.۱. پارادوکس انجماد سرمایه در دارایی‌های غیرمولد</h3>
-<p>در ۵۰ سال گذشته در ایران، به دلیل تورم‌های مزمن و ناامنی فضای تولید، سرمایه‌ها به جای حرکت به سمت R&amp;D، فناوری و توسعه بازارهای صادراتی، به سوی خرید زمین و مسکن هجوم برده‌اند. این رفتار از دید سرمایه‌گذار فردی کاملاً عقلانی و سوداگرانه است؛ اما از منظر تفکر سیستمی و تفکر در زمان در تراز کلان:<br />
-- <strong>انجماد منابع:</strong> سرمایه‌های عظیمی که باید در ماشین‌آلات پیشرفته، توسعه محصول و نوآوری به گردش درمی‌آمدند، در بتن و آجر منجمد شده‌اند.<br />
-- <strong>تضعیف توان رقابت بین‌المللی:</strong> بنگاه‌های تولیدی با افزایش شدید بهای زمین و هزینه‌های سربار روبرو شده و توان رقابت قیمتی با رقبای منطقه‌ای (ترکیه، امارات، چین) را از دست داده‌اند.<br />
+<h3 id="_26">۷.۱. پارادوکس انجماد سرمایه در دارایی‌های غیرمولد</h3>
+<p>در ۵۰ سال گذشته در ایران، به دلیل تورم‌های مزمن و ناامنی فضای تولید، سرمایه‌ها به جای حرکت به سمت R&amp;D، فناوری و توسعه بازارهای صادراتی، به سوی خرید زمین و مسکن هجوم برده‌اند. این رفتار از دید سرمایه‌گذار فردی کاملاً عقلانی و سوداگرانه است؛ اما از منظر تفکر سیستمی و تفکر در زمان در تراز کلان:
+- <strong>انجماد منابع:</strong> سرمایه‌های عظیمی که باید در ماشین‌آلات پیشرفته، توسعه محصول و نوآوری به گردش درمی‌آمدند، در بتن و آجر منجمد شده‌اند.
+- <strong>تضعیف توان رقابت بین‌المللی:</strong> بنگاه‌های تولیدی با افزایش شدید بهای زمین و هزینه‌های سربار روبرو شده و توان رقابت قیمتی با رقبای منطقه‌ای (ترکیه، امارات، چین) را از دست داده‌اند.
 - <strong>ایجاد توهم ثروت:</strong> افزایش قیمت اسمی املاک در ترازنامه شرکت‌ها، ضعف‌های وحشتناک در بهره‌وری و حاشیه سود عملیاتی را پنهان کرده است.</p>
 <blockquote>
 <p><strong>گزاره استاد صدقیانی‌فر:</strong> «مدیر عاملی که تفکر در زمان دارد، رشد شرکت خود را با تجدید ارزیابی دارایی‌های ساختمانی اندازه نمی‌گیرد؛ او می‌داند اگر جریان نقدینگی حاصل از فروش نوآورانه محصولات کاهش یابد، حتی مالکیت گران‌ترین برج‌های تهران نیز مانع فروپاشی هسته کسب‌وکار او نخواهد شد.»</p>
 </blockquote>
 <hr />
-<h2>۸. خطاهای شناختی کشنده که تفکر در زمان را مختل می‌کنند</h2>
+<h2 id="_27">۸. خطاهای شناختی کشنده که تفکر در زمان را مختل می‌کنند</h2>
 <p>استاد صدقیانی‌فر به سه خطای شناختی حاکم بر اتاق‌های جلسات اشاره کردند که مانع اجرای تفکر در زمان می‌شوند:</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
   <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
@@ -1867,34 +1995,34 @@
   </div>
 </div>
 
-<h2>۹. تغییرات رفتاری بازار و اقتصاد نوستالژی در جامعه امروز ایران</h2>
-<h3>۷.۱. واکاوی تغییر سبک مصرف: از اقتصاد فله‌ای به هویت برند</h3>
-<p>استاد صدقیانی‌فر به عنوان نمونه‌ای ملموس از تغییرات زمانی در بازار ایران به الگوی خرید خانواده‌ها اشاره کردند:<br />
-در گذشته، خانوارهای ایرانی مایحتاج سالانه خود (مانند پنبه، زعفران، زردچوبه، پسته و گردو) را به صورت فله‌ای، فصلی و بر اساس اعتماد سنتی به بازاریان سرشناس تهیه می‌کردند. اما امروز:<br />
-- نسل جدید تمایلی به انبار کردن کالا در خانه ندارد؛ مصرف به تقاضای آنی و آنلاین تبدیل شده است.<br />
+<h2 id="_28">۹. تغییرات رفتاری بازار و اقتصاد نوستالژی در جامعه امروز ایران</h2>
+<h3 id="_29">۷.۱. واکاوی تغییر سبک مصرف: از اقتصاد فله‌ای به هویت برند</h3>
+<p>استاد صدقیانی‌فر به عنوان نمونه‌ای ملموس از تغییرات زمانی در بازار ایران به الگوی خرید خانواده‌ها اشاره کردند:
+در گذشته، خانوارهای ایرانی مایحتاج سالانه خود (مانند پنبه، زعفران، زردچوبه، پسته و گردو) را به صورت فله‌ای، فصلی و بر اساس اعتماد سنتی به بازاریان سرشناس تهیه می‌کردند. اما امروز:
+- نسل جدید تمایلی به انبار کردن کالا در خانه ندارد؛ مصرف به تقاضای آنی و آنلاین تبدیل شده است.
 - بسته‌بندی‌های شکیل، نشان استاندارد، بهداشت، راحتی مصرف و داستان برند (Brand Story) جایگزین روابط سنتی بازار شده است.</p>
 <blockquote>
 <p><strong>توصیه استاد:</strong> «بنگاه‌هایی که بر مدل‌های کسب‌وکار سنتی خود اصرار ورزیدند و تغییر سبک زندگی نسل‌های جدید را ندیدند، محکوم به انقراض شدند. نوستالژی بازار سنتی نمی‌تواند شرکت‌ها را در عصر زنجیره‌های توزیع مدرن و سوپرمارکت‌های آنلاین نجات دهد.»</p>
 </blockquote>
 <hr />
-<h2>۱۰. گفت‌وگوها، چالش‌ها و دیالوگ‌های زنده کلاس</h2>
-<h3>چالش اول: چگونه تعصب بنیان‌گذاران نسبت به گذشته را بشکنیم؟</h3>
+<h2 id="_30">۱۰. گفت‌وگوها، چالش‌ها و دیالوگ‌های زنده کلاس</h2>
+<h3 id="_31">چالش اول: چگونه تعصب بنیان‌گذاران نسبت به گذشته را بشکنیم؟</h3>
 <ul>
 <li><strong>پرسش دانشجویان:</strong> «استاد، در بسیاری از شرکت‌های خانوادگی و هلدینگ‌های سنتی ایران، سهامداران عمده یا بنیان‌گذاران عاشق خطوط تولید قدیمی خود هستند و هرگونه تغییر را خیانت به میراث گذشته می‌دانند. با این تعصب نوستالژیک چه باید کرد؟»</li>
 <li><strong>پاسخ استاد صدقیانی‌فر:</strong> «شما با بحث نظری نمی‌توانید تعصب عاطفی را بشکنید. تنها زبان مشترک با این مدیران، زبان <strong>هزینه فرصت (Opportunity Cost)</strong> و صورت‌های مالی عریان است. به آنها نشان دهید که چسبیدن به این خط تولید نوستالژیک، ماهانه چند صد میلیون تومان از سود خالص شرکت را می‌بلعد و چه بازارهایی را دودستی به رقبا واگذار کرده است. عدد و رقم عریان، بهترین پادزهر نوستالژی است.»</li>
 </ul>
-<h3>چالش دوم: مرز میان تفکر در زمان و رویاپردازی چیست؟</h3>
+<h3 id="_32">چالش دوم: مرز میان تفکر در زمان و رویاپردازی چیست؟</h3>
 <ul>
 <li><strong>پرسش دانشجویان:</strong> «آیا ترسیم آینده‌های دوردست در محیط پرنوسان ایران نوعی توهم و رویاپردازی نیست؟»</li>
 <li><strong>پاسخ استاد صدقیانی‌فر:</strong> «تفکر در زمان یعنی سناریونویسی بر پایه روندها، نه خیال‌بافی بدون پشتوانه. اگر سناریوی شما گذشته را نبیند و ظرفیت منابع جاری را محاسبه نکند، بله رویاپردازی است. اما اگر بدانید که در ۴۰ سال گذشته شوک‌های ارزی در چه فواصل زمانی رخ داده‌اند، اثر تورم بر قدرت خرید طبقه متوسط چه بوده، و روند جمعیتی به چه سمتی می‌رود، این پیش‌بینی نیست؛ این آمادگی برای بقا و پیروزی است.»</li>
 </ul>
-<h3>چالش سوم: تضاد نسلی مدیران جوان با بدنه کهنه‌کار سازمان</h3>
+<h3 id="_33">چالش سوم: تضاد نسلی مدیران جوان با بدنه کهنه‌کار سازمان</h3>
 <ul>
 <li><strong>پرسش دانشجویان:</strong> «مدیران جوانی که تازه سکان شرکت‌های سنتی را به دست می‌گیرند چگونه می‌توانند مقاومت لایه‌های قدیمی را در برابر نوسازی فرآیندها مدیریت کنند؟»</li>
 <li><strong>پاسخ استاد صدقیانی‌فر:</strong> «با احترام به گذشته و تفکیک احترام انسانی از اصرار بر روش‌های ناکارآمد. اگر به بدنه کهنه‌کار این حس را بدهید که آمده‌اید کل تاریخ شرکت را نفی کنید، در برابر شما دیوار مقاومت می‌کشند. تفکر در زمان یعنی به آنها بگویید: "ما میراث شما را ارج می‌نهیم و دقیقاً برای اینکه ثمره عمر شما نابود نشود، ناچاریم ابزارهایمان را با بازار جدید همگام کنیم."»</li>
 </ul>
 <hr />
-<h2>۱۱. منشور اقدامات دوشنبه صبح مدیرعامل (CEO Monday Action Protocol)</h2>
+<h2 id="ceo-monday-action-protocol">۱۱. منشور اقدامات دوشنبه صبح مدیرعامل (CEO Monday Action Protocol)</h2>
 <p>استاد صدقیانی‌فر این جلسه را با ابلاغ پنج گام حیاتی برای شروع هفته کاری مدیران ارشد به پایان رساندند:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
   <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-700">
@@ -1924,7 +2052,7 @@
 </div>
 
 <hr />
-<h2>۱۲. پیوندها و گام‌های بعدی در نقشه راه دوره</h2>
+<h2 id="_34">۱۲. پیوندها و گام‌های بعدی در نقشه راه دوره</h2>
 <ul>
 <li><strong>پرونده تفصیلی جلسه اول:</strong> [[Session_01_Notes]]</li>
 <li><strong>هندبوک جامع دوره:</strong> [[MBA_Strategic_Thinking_Master_Handbook]]</li>
@@ -1950,7 +2078,7 @@
       <div>
         <div class="inline-flex flex-wrap items-center justify-center gap-3">
   <span class="text-slate-300 text-xs md:text-sm">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
-  <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
+  <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-3 py-1 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
     <span>Parsa Rezaie</span>
   </a>
@@ -1980,53 +2108,60 @@
       if (window.MathJax && window.MathJax.typesetPromise) {
         window.MathJax.typesetPromise();
       }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Toggle notes accordion
-    function toggleNotes(sessionId) {
-      const container = document.getElementById(sessionId + '-notes');
-      const icon = document.getElementById(sessionId + '-icon');
+    // Toggle full lecture notes
+    function toggleSessionFull(sessionId) {
+      const container = document.getElementById('full-' + sessionId);
+      const icon = document.getElementById('icon-toggle-' + sessionId);
+      const btn = document.getElementById('btn-toggle-' + sessionId);
+      
+      if (!container) return;
+
       if (container.classList.contains('hidden')) {
         container.classList.remove('hidden');
-        icon.innerText = '▲ بستن';
+        if (icon) icon.innerText = '▲';
+        if (btn) btn.querySelector('span:first-child').innerText = 'بستن متن کامل و تفصیلی';
         if (window.MathJax && window.MathJax.typesetPromise) {
           window.MathJax.typesetPromise();
         }
       } else {
         container.classList.add('hidden');
-        icon.innerText = '▼ باز کردن';
+        if (icon) icon.innerText = '▼';
+        if (btn) btn.querySelector('span:first-child').innerText = 'مطالعه متن کامل و تفصیلی جلسه';
       }
     }
 
-    // Simulator calculations
-    function calculateLiedtka() {
+    // Maturity calculations
+    function calculateMaturity() {
       const p1 = parseInt(document.getElementById('range-p1').value);
       const p2 = parseInt(document.getElementById('range-p2').value);
       const p3 = parseInt(document.getElementById('range-p3').value);
       const p4 = parseInt(document.getElementById('range-p4').value);
       const p5 = parseInt(document.getElementById('range-p5').value);
 
-      document.getElementById('val-p1').innerText = p1 + '% ' + (p1 < 35 ? '(ضعیف)' : p1 < 70 ? '(متوسط)' : '(عالی)');
-      document.getElementById('val-p2').innerText = p2 + '% ' + (p2 < 35 ? '(ضعیف)' : p2 < 70 ? '(متوسط)' : '(عالی)');
-      document.getElementById('val-p3').innerText = p3 + '% ' + (p3 < 35 ? '(ضعیف)' : p3 < 70 ? '(متوسط)' : '(عالی)');
-      document.getElementById('val-p4').innerText = p4 + '% ' + (p4 < 35 ? '(ضعیف)' : p4 < 70 ? '(متوسط)' : '(عالی)');
-      document.getElementById('val-p5').innerText = p5 + '% ' + (p5 < 35 ? '(ضعیف)' : p5 < 70 ? '(متوسط)' : '(عالی)');
+      document.getElementById('val-p1').innerText = p1 + '% ' + (p1 < 35 ? '(ضعیف)' : p1 < 70 ? '(متوسط)' : '(ایده‌آل)');
+      document.getElementById('val-p2').innerText = p2 + '% ' + (p2 < 35 ? '(ضعیف)' : p2 < 70 ? '(متوسط)' : '(ایده‌آل)');
+      document.getElementById('val-p3').innerText = p3 + '% ' + (p3 < 35 ? '(ضعیف)' : p3 < 70 ? '(متوسط)' : '(ایده‌آل)');
+      document.getElementById('val-p4').innerText = p4 + '% ' + (p4 < 35 ? '(ضعیف)' : p4 < 70 ? '(متوسط)' : '(ایده‌آل)');
+      document.getElementById('val-p5').innerText = p5 + '% ' + (p5 < 35 ? '(ضعیف)' : p5 < 70 ? '(متوسط)' : '(ایده‌آل)');
 
       const totalScore = Math.round((p1 + p2 + p3 + p4 + p5) / 5);
 
-      const box = document.getElementById('sim-result-box');
-      let statusColor = 'border-rose-300 bg-rose-50 text-rose-900';
-      let statusTitle = 'سطح ۱: تفکر واکنشی و عملیاتی (Reactive / Operational)';
-      let recommendation = 'سازمان در اسارت اطفای حریق‌های روزمره و برنامه‌ریزی‌های صلب است. نگاه سیستمی و تفکر در زمان غایب است. دستور کار فوری: مدیرعامل باید بلافاصله جلسات استراتژیک هفتگی را از جلسات جاری تفکیک کند.';
+      const box = document.getElementById('maturity-result-box');
+      let statusColor = 'border-amber-300 bg-amber-50 text-amber-900';
+      let statusTitle = 'بلوغ میانی: تکیه افراطی بر برنامه‌ریزی سنتی و ضعف در تفکر در زمان';
+      let recommendation = 'سازمان نیازمند رهایی از دام نوستالژی سازمانی است. تجارب گذشته را صرفاً به عنوان الگو بازخوانی کنید و فرضیه‌سازی سریع را جایگزین بودجه‌بندی‌های صلب سالانه نمایید.';
 
-      if (totalScore >= 75) {
+      if (totalScore >= 70) {
         statusColor = 'border-emerald-300 bg-emerald-50 text-emerald-900';
-        statusTitle = 'سطح ۳: بلوغ استراتژیک پیشرفته و رهبری بازی (Strategic Mastery)';
-        recommendation = 'سازمان از بلوغ فکری عالی برخوردار است. تیم رهبری قادر به درک پیوندهای پیچیده، فرضیه‌سازی و بهره‌برداری سریع از فرصت‌هاست. اولویت جاری: حفظ فرهنگ تفکر انتقادی و پرهیز از تله نوستالژی سازمانی.';
-      } else if (totalScore >= 45) {
-        statusColor = 'border-amber-300 bg-amber-50 text-amber-900';
-        statusTitle = 'سطح ۲: تفکر استراتژیک نوظهور و مقطعی (Emerging / Inconsistent)';
-        recommendation = 'نگاه استراتژیک به شکل جزیره‌ای در برخی مدیران وجود دارد اما سیستماتیک نیست. رکن تفکر در زمان و پیش‌روی فرضیه‌محور نیازمند تقویت جدی است تا سازمان در برابر شوک‌های محیطی غافلگیر نشود.';
+        statusTitle = 'بلوغ عالی: رهبری استراتژیک شهودی و چابکی بالا (Strategic Mastery)';
+        recommendation = 'تیم رهبری توانایی استثنایی در پیوند زدن زمان‌ها و بهره‌برداری از فرصت‌های نوظهور در تلاطم بازار ایران دارد.';
+      } else if (totalScore < 40) {
+        statusColor = 'border-rose-300 bg-rose-50 text-rose-900';
+        statusTitle = 'بلوغ بحرانی: انجماد پارادایمی و خطر انحلال در تغییرات محیطی (High Vulnerability)';
+        recommendation = 'سازمان اسیر روتین‌های صلب و تفکر جزیره‌ای است. تصمیمات بر پایه تعصب به فرمول‌های منسوخ پیشین اتخاذ می‌شود. بازنگری فوری در ارکان ۵‌گانه لیدکا الزامی است.';
       }
 
       box.className = 'mt-8 p-6 rounded-2xl border transition-all ' + statusColor;
@@ -2041,17 +2176,17 @@
         <p class="text-xs md:text-sm leading-relaxed mb-4">${recommendation}</p>
         <div class="grid grid-cols-2 md:grid-cols-5 gap-2 pt-3 border-t border-black/10 text-xs">
           <div>دید سیستمی: <strong>${p1}%</strong></div>
-          <div>تمرکز بر هدف: <strong>${p2}%</strong></div>
+          <div>قصد استراتژیک: <strong>${p2}%</strong></div>
           <div>تفکر در زمان: <strong>${p3}%</strong></div>
-          <div>فرضیه‌محوری: <strong>${p4}%</strong></div>
-          <div>فرصت‌جویی: <strong>${p5}%</strong></div>
+          <div>فرصت‌جویی: <strong>${p4}%</strong></div>
+          <div>فرضیه‌محوری: <strong>${p5}%</strong></div>
         </div>
       `;
     }
 
     // Initialize
     window.addEventListener('DOMContentLoaded', () => {
-      calculateLiedtka();
+      calculateMaturity();
     });
   </script>
 

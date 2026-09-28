@@ -19,37 +19,38 @@
     .card-hover { transition: all 0.25s ease-in-out; }
     .card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
     
-    .prose-custom { font-size: 0.875rem; line-height: 1.85; color: #334155; }
-    .prose-custom h1 { font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-top: 1.75rem; margin-bottom: 0.75rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
-    .prose-custom h2 { font-size: 1.25rem; font-weight: 700; color: #1e293b; margin-top: 1.5rem; margin-bottom: 0.6rem; border-right: 4px solid #0284c7; padding-right: 0.6rem; }
-    .prose-custom h3 { font-size: 1.05rem; font-weight: 700; color: #334155; margin-top: 1.25rem; margin-bottom: 0.5rem; }
-    .prose-custom p { margin-bottom: 0.85rem; text-align: justify; }
-    .prose-custom ul { list-style-type: disc; margin-right: 1.5rem; margin-bottom: 0.85rem; }
-    .prose-custom ol { list-style-type: decimal; margin-right: 1.5rem; margin-bottom: 0.85rem; }
-    .prose-custom li { margin-bottom: 0.35rem; }
-    .prose-custom blockquote { border-right: 4px solid #0284c7; background-color: #f0f9ff; padding: 0.85rem 1.15rem; border-radius: 0.5rem; margin: 1.25rem 0; color: #0369a1; font-weight: 500; }
-    .prose-custom table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.825rem; border-radius: 0.5rem; overflow: hidden; }
-    .prose-custom th { background-color: #f1f5f9; padding: 0.65rem 0.85rem; font-weight: 700; border: 1px solid #cbd5e1; text-align: right !important; direction: rtl !important; }
-    .prose-custom td { padding: 0.65rem 0.85rem; border: 1px solid #e2e8f0; text-align: right !important; direction: rtl !important; }
-    .prose-custom pre { background-color: #0f172a; color: #f8fafc; padding: 1rem; border-radius: 0.75rem; overflow-x: auto; font-family: monospace; font-size: 0.8rem; margin: 1rem 0; direction: ltr; text-align: left; }
-    .prose-custom code { background-color: #f1f5f9; color: #0f172a; padding: 0.15rem 0.4rem; border-radius: 0.25rem; font-family: monospace; font-size: 0.825rem; }
+    .prose-custom { font-size: 0.925rem; line-height: 2.1; color: #334155; }
+    .prose-custom h1 { font-size: 1.55rem; font-weight: 800; color: #0f172a; margin-top: 2rem; margin-bottom: 0.85rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+    .prose-custom h2 { font-size: 1.3rem; font-weight: 700; color: #1e293b; margin-top: 1.75rem; margin-bottom: 0.75rem; border-right: 4px solid #0284c7; padding-right: 0.75rem; }
+    .prose-custom h3 { font-size: 1.1rem; font-weight: 700; color: #334155; margin-top: 1.4rem; margin-bottom: 0.6rem; }
+    .prose-custom p { margin-bottom: 1.15rem; text-align: justify; }
+    .prose-custom ul { list-style-type: disc; margin-right: 1.75rem; margin-bottom: 1.15rem; }
+    .prose-custom ol { list-style-type: decimal; margin-right: 1.75rem; margin-bottom: 1.15rem; }
+    .prose-custom li { margin-bottom: 0.45rem; }
+    .prose-custom blockquote { border-right: 4px solid #0284c7; background-color: #f0f9ff; padding: 0.95rem 1.25rem; border-radius: 0.5rem; margin: 1.35rem 0; color: #0369a1; font-weight: 500; }
+    .prose-custom table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.85rem; border-radius: 0.5rem; overflow: hidden; }
+    .prose-custom th { background-color: #f1f5f9; padding: 0.75rem 0.9rem; font-weight: 700; border: 1px solid #cbd5e1; text-align: right !important; direction: rtl !important; }
+    .prose-custom td { padding: 0.75rem 0.9rem; border: 1px solid #e2e8f0; text-align: right !important; direction: rtl !important; }
+    .prose-custom pre { background-color: #0f172a; color: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; overflow-x: auto; font-family: monospace; font-size: 0.85rem; margin: 1.25rem 0; direction: ltr; text-align: left; }
+    .prose-custom code { background-color: #f1f5f9; color: #0f172a; padding: 0.2rem 0.45rem; border-radius: 0.3rem; font-family: monospace; font-size: 0.85rem; }
     .prose-custom pre code { background-color: transparent; color: inherit; padding: 0; }
   </style>
 </head>
 
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
 
-  <!-- Header -->
-  <header class="gradient-header text-white py-9 px-6 shadow-xl relative overflow-hidden">
+  <!-- Header Section -->
+  <header class="gradient-header text-white pt-8 pb-6 px-4 md:px-8 shadow-xl relative overflow-hidden">
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="flex flex-wrap items-center justify-between gap-4">
         <div>
           <div class="flex flex-wrap items-center gap-2 mb-3">
-            <div class="inline-flex items-center gap-2 bg-blue-500/25 border border-blue-400/40 rounded-full px-4 py-1 text-xs font-semibold">
+            <div class="inline-flex items-center gap-2 bg-indigo-500/25 border border-indigo-400/40 rounded-full px-4 py-1 text-xs font-semibold">
               <span>🎓 دانشکده اقتصاد دانشگاه تهران</span>
               <span>•</span>
               <span>دوره تخصصی MBA (کد 0410)</span>
             </div>
+            <!-- Single Back Button -->
             <a href="../" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white border border-white/30 rounded-full px-3.5 py-1 text-xs font-bold transition-all shadow-sm hover:scale-105 backdrop-blur-md">
               <span>🏠 پرتال اصلی و انتخاب کلاس</span>
               <span class="text-xs">➔</span>
@@ -113,7 +114,7 @@
             نقشه راهبردی اجرا و مهار شکاف استراتژی-عملکرد (Strategy-to-Execution Gap)
           </h2>
           <p class="text-xs md:text-sm text-slate-600 max-w-2xl leading-relaxed">
-            بیش از ۸۵ درصد استراتژی‌های سازمانی نه به دلیل ضعف تحلیل، بلکه به دلیل اجرای ضعیف، مقاومت پنهان رفتاری و تضاد منافع ناکام می‌مانند. این داشبورد تمامی آموزه‌های کلاس استاد خطیبی و اسلایدهای ۱ تا ۵۱ را به جعبه‌ابزاری قطعی برای مدیران عامل تبدیل کرده است.
+            بیش از ۸۵ درصد استراتژی‌های سازمانی نه به دلیل ضعف تحلیل، بلکه به دلیل اجرای ضعیف، مقاومت پنهان رفتاری و تضاد منافع ناکام می‌مانند. این داشبورد تمامی آموزه‌های کلاس استاد خطیبی و اسلایدهای ۱ تا ۵۱ را به جعبه‌ابزاری قطعی برای مدیران ارشد تبدیل کرده است.
           </p>
         </div>
         <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -194,54 +195,108 @@
     <!-- TAB: SESSION 1 -->
     <section id="content-session1" class="tab-content hidden space-y-6">
       
-      <!-- Layer 1: Executive Summary -->
-      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
-        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
-          <span class="text-xs font-bold text-blue-700 bg-blue-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه اول</span>
-          <span class="text-xs text-slate-500">شکاف استراتژی-عملکرد • موانع ۴‌گانه کاپلان-نورتون • سیستم‌های کنترل ۴‌گانه</span>
+      <!-- Tab Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">جلسه اول • ۳.۳ ساعت تدریس</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">چالش‌های بنیادین پیاده‌سازی، موانع ۴‌گانه کاپلان-نورتون و سیستم‌های کنترل</h2>
         </div>
-        <h3 class="text-xl font-black text-slate-900">چالش‌های بنیادین اجرا و کالبدشکافی موانع پیاده‌سازی</h3>
-        <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
-          در این جلسه مانیفست محوری شکست استراتژی‌ها بررسی شد: چرا سازمان‌های ایرانی استراتژی‌های درخشان روی کاغذ دارند اما در عمل فلج می‌شوند؟ تفاوت ماهوی فرمولاسیون با پیاده‌سازی، چهار مانع کاپلان-نورتون و سازوکار کنترل فرضیات، نظارت استراتژیک، کنترل پیاده‌سازی و هشدارهای ویژه کالبدشکافی شد.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-blue-700 block mb-1">شکاف استراتژی-عملکرد</span>
-            <div class="text-sm font-black text-slate-900 mb-1">شکست ۸۵ درصدی اجرا</div>
-            <p class="text-xs text-slate-600">تدوین امری تحلیلی در اتاق فکر است اما اجرا فرآیندی رفتاری، فرسایشی و روانی در بدنه سازمان است.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-blue-700 block mb-1">موانع ۴‌گانه پیاده‌سازی</span>
-            <div class="text-sm font-black text-slate-900 mb-1">چشم‌انداز، انگیزه، رهبری و بودجه</div>
-            <p class="text-xs text-slate-600">استراتژی زمانی محقق می‌شود که کارکنان آن را بفهمند، پاداش‌ها با آن همسو باشد و بودجه StratEx جدا شود.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-blue-700 block mb-1">سیستم‌های چهارگانه کنترل</span>
-            <div class="text-sm font-black text-slate-900 mb-1">کنترل فرضیات و هشدار ویژه</div>
-            <p class="text-xs text-slate-600">پایش پیوسته معتبر بودن فرضیات بازار، رصد سیگنال‌های ضعیف محیطی و واکنش ضربتی به شوک‌های ارزی و سیاسی.</p>
-          </div>
-        </div>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-blue-600 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
       </div>
 
-      <!-- Layer 2: Collapsible Full Notes -->
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-        <button onclick="toggleNotes('s1')" class="w-full p-4 md:p-5 text-right font-extrabold text-slate-800 hover:bg-slate-50 transition-colors flex items-center justify-between border-b border-slate-100">
-          <span class="flex items-center gap-2">
-            <span>📖</span>
-            <span class="text-sm md:text-base">مشاهده متن کامل و درسنامه تفصیلی جلسه اول (کلیک کنید)</span>
-          </span>
-          <span id="s1-icon" class="text-slate-400 text-sm transition-transform">▼ باز کردن</span>
+      <!-- TOP LAYER: Executive Visual Summary -->
+      <div class="bg-blue-50/60 border border-blue-200 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">🎯</span>
+          <h3 class="text-base md:text-lg font-black text-blue-950">خلاصه اجرایی و مدیریتی جلسه اول: کالبدشکافی شکاف اجرا و معماری سیستم‌های کنترل</h3>
+        </div>
+        <p class="text-xs md:text-sm text-blue-900 leading-relaxed mb-5 text-justify">
+          در این جلسه مانیفست محوری شکست استراتژی‌ها بررسی شد: چرا سازمان‌های ایرانی استراتژی‌های درخشان روی کاغذ دارند اما در عمل فلج می‌شوند؟ تفاوت ماهوی تدوین با پیاده‌سازی، چهار مانع کاپلان-نورتون و سازوکار کنترل فرضیات، نظارت استراتژیک، کنترل پیاده‌سازی و هشدارهای ویژه کالبدشکافی شد.
+        </p>
+
+        <!-- 3 Highlight Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+          <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+            <div class="text-xs font-bold text-blue-700 mb-1 flex items-center gap-1.5">
+              <span>⚠️</span>
+              <span>شکاف استراتژی-عملکرد</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">بیش از ۸۵٪ شکست‌ها ناشی از اجرای ضعیف است نه تدوین غلط. فرمولاسیون حاصل تحلیل در اتاق فکر است، اما پیاده‌سازی نیازمند تغییر رفتار و فرهنگ در خط مقدم است.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+            <div class="text-xs font-bold text-blue-700 mb-1 flex items-center gap-1.5">
+              <span>🧱</span>
+              <span>موانع ۴‌گانه کاپلان-نورتون</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">چهار سد اصلی: چشم‌انداز (درک زیر ۵٪)، افراد و مشوق‌ها (همسویی پاداش ۲۵٪)، مدیریت (زمان هفتگی زیر ۱ ساعت) و منابع (فقدان بودجه استراتژیک StratEx مستقل از OpEx).</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
+            <div class="text-xs font-bold text-blue-700 mb-1 flex items-center gap-1.5">
+              <span>🛡️</span>
+              <span>سیستم‌های چهارگانه کنترل</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">کنترل پیش‌فرض‌ها (Premise Control)، نظارت استراتژیک (Strategic Surveillance)، کنترل اجرا (Implementation Control) و هشدارهای ویژه (Special Alert) برای مهار بحران‌ها.</p>
+          </div>
+        </div>
+
+        <!-- Matrix Table: Formulation vs Implementation -->
+        <div class="bg-white rounded-xl border border-blue-200 overflow-hidden shadow-sm mb-5">
+          <table class="w-full text-xs text-right">
+            <thead class="bg-blue-100 text-blue-950 font-bold">
+              <tr>
+                <th class="p-3">ماتریس کیفیت تدوین / اجرا</th>
+                <th class="p-3">کیفیت تدوین: عالی (Good Formulation)</th>
+                <th class="p-3">کیفیت تدوین: ضعیف (Poor Formulation)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-blue-100 text-slate-700">
+              <tr>
+                <td class="p-3 font-bold text-blue-900 bg-slate-50">کیفیت اجرای عالی (Good Implementation)</td>
+                <td class="p-3 bg-emerald-50/70 text-emerald-900 font-semibold">🏆 موفقیت پایدار (Success): استراتژی درست با انضباط سازمانی به حداکثر سودآوری و رهبری بازار می‌رسد.</td>
+                <td class="p-3 bg-amber-50/70 text-amber-900 font-semibold">🎲 قمار / نجات موقت (Roulette): اجرای بی‌نظیر استراتژی غلط ممکن است موقتاً شرکت را نجات دهد یا سقوط را تسریع کند.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-blue-900 bg-slate-50">کیفیت اجرای ضعیف (Poor Implementation)</td>
+                <td class="p-3 bg-rose-50/70 text-rose-900 font-semibold">💥 فاجعه در اجرا (Execution Ruin): رایج‌ترین دام در ایران! برنامه بی‌نقص روی کاغذ به دلیل ضعف ساختار و انگیزش خاک می‌خورد.</td>
+                <td class="p-3 bg-red-100/70 text-red-950 font-semibold">☠️ شکست قطعی (Failure): فقدان جهت‌گیری درست همراه با ناتوانی در عمل؛ نابودی حتمی در کمتر از ۲ سال.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Class Metaphors Card -->
+        <div class="bg-white p-4 rounded-xl border border-blue-200 shadow-sm">
+          <div class="text-xs font-bold text-blue-800 mb-2">🚗 سه استعاره راهبردی تدریس استاد خطیبی در تفهیم پیاده‌سازی:</div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-slate-600">
+            <div class="p-2.5 rounded-lg bg-blue-50/50"><strong>۱. خودرو، جاده و سیستم تعلیق:</strong> استراتژی نقشه سفر است اما عبور از دست‌اندازهای کف بازار نیازمند سلامت موتور، بدنه و فنربندی سازمان است.</div>
+            <div class="p-2.5 rounded-lg bg-blue-50/50"><strong>۲. گاردریل‌های استراتژیک:</strong> ارزش‌های محوری و شاخص‌های کنترلی مانع سقوط سازمان در پیچ‌های تند شوک‌های اقتصادی و ارزی هستند.</div>
+            <div class="p-2.5 rounded-lg bg-blue-50/50"><strong>۳. کاروانسراها:</strong> اهداف فصلی ایستگاه‌های استراحت، تجدید قوا و سنجش آذوقه‌اند؛ آنها را هرگز با مقصد نهایی اشتباه نگیرید.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+      <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+        <div>
+          <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه اول</h3>
+          <p class="text-xs text-slate-400">شامل دیالوگ‌های کلاسی، سوالات دانشجویان، تشریح موانع ۴‌گانه، پروتکل‌های کنترلی و تحلیل‌های عمیق سازمانی</p>
+        </div>
+        <button onclick="toggleSessionFull('s1')" id="btn-toggle-s1" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+          <span>مطالعه متن کامل و تفصیلی جلسه</span>
+          <span id="icon-toggle-s1">▼</span>
         </button>
-        <div id="s1-notes" class="p-6 md:p-8 bg-white border-t border-slate-100 space-y-6 prose-custom">
-          <h1>اجرا و کنترل استراتژیک - جلسه اول: چالش‌های بنیادین اجرا، شکاف استراتژی-عملکرد و معماری پیاده‌سازی</h1>
+      </div>
+
+      <div id="full-s1" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+        <div class="prose-custom"><h1 id="-">اجرا و کنترل استراتژیک - جلسه اول: چالش‌های بنیادین اجرا، شکاف استراتژی-عملکرد و معماری پیاده‌سازی</h1>
 <p><strong>مدرس:</strong> استاد خطیبی<br />
 <strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: mba-sm05--06-1)<br />
 <strong>تاریخ برگزاری:</strong> ۲۶ شهریور ۱۴۰۵<br />
 <strong>تنظیم و تدوین جامع:</strong> پارسا رضائی (Parsa Rezaie)</p>
 <hr />
-<h2>۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
-<h3>۱.۱. جوهره و مانیفست بنیادین تدریس استاد خطیبی</h3>
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. جوهره و مانیفست بنیادین تدریس استاد خطیبی</h3>
 <p>جلسه نخست درس «اجرا و کنترل استراتژیک» در دانشکده اقتصاد دانشگاه تهران، نقطه‌عطفی در تنظیم دوبارهٔ ذهنیت دانش‌پژوهان گرایش مدیریت استراتژیک MBA نسبت به واقعیت‌های دنیای کسب‌وکار است. پیام محوری استاد خطیبی در این جلسه در یک گزاره کلیدی خلاصه می‌شود: <strong>«ایده‌ها و سندهای استراتژیک ارزانند؛ این قابلیت بی‌نقص در اجراست که ارزش‌آفرینی واقعی، ثروت و مزیت رقابتی پایدار می‌سازد.»</strong></p>
 <p>در تفکر سنتی مدیریت، تمرکز اصلی بر فاز تدوین (Strategy Formulation) و ابزارهای تحلیلی پیچیده بود. اما تجربه بیش از دو دهه تدریس آکادمیک و مشاوره عالی استاد خطیبی در بزرگ‌ترین هولدینگ‌ها و گروه‌های صنعتی ایران (نظیر عظام، داروپخش، سرمایه‌گذاری غدیر، خوشگوار، علوم سبز، چوپان، پرنان‌سوز یزد و...) نشان می‌دهد که فرآیند استراتژی یک سه‌گانه پیوسته و تفکیک‌ناپذیر است: <strong>تدوین (Formulation)، اجرا (Implementation) و کنترل (Control)</strong>.</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
@@ -250,9 +305,9 @@
   <div>(تفکر، تحلیل، انتخاب)         (عمل، تغییر، همسوسازی)         (پایش، بازخورد، اصلاح)</div>
 </div>
 
-<h3>۱.۲. پارادوکس اجرای استراتژی و شکاف عملکرد (Strategy-to-Performance Gap)</h3>
-<p>تحقیقات تجربی تجاربی متعددی نشان می‌دهند که بین ۶۰ تا ۹۰ درصد استراتژی‌های جامع و درخشان سازمان‌ها در مرحله پیاده‌سازی با شکست مواجه می‌شوند یا به کمتر از ۵۰ درصد اهداف خود دست می‌یابند. این پدیده که به <strong>«شکاف استراتژی-عملکرد»</strong> شهرت دارد، ناشی از یک پارادوکس بنیادین در مدیریت است:<br />
-- <strong>تدوین استراتژی:</strong> فرآیندی عمدتاً تحلیلی، فکری، متمرکز بر عدد و رقم، و متعلق به اتاق‌های فکر و سطوح ارشد مدیریتی است (کار ذهن).<br />
+<h3 id="strategy-to-performance-gap">۱.۲. پارادوکس اجرای استراتژی و شکاف عملکرد (Strategy-to-Performance Gap)</h3>
+<p>تحقیقات تجربی تجاربی متعددی نشان می‌دهند که بین ۶۰ تا ۹۰ درصد استراتژی‌های جامع و درخشان سازمان‌ها در مرحله پیاده‌سازی با شکست مواجه می‌شوند یا به کمتر از ۵۰ درصد اهداف خود دست می‌یابند. این پدیده که به <strong>«شکاف استراتژی-عملکرد»</strong> شهرت دارد، ناشی از یک پارادوکس بنیادین در مدیریت است:
+- <strong>تدوین استراتژی:</strong> فرآیندی عمدتاً تحلیلی، فکری، متمرکز بر عدد و رقم، و متعلق به اتاق‌های فکر و سطوح ارشد مدیریتی است (کار ذهن).
 - <strong>اجرای استراتژی:</strong> فرآیندی عمیقاً رفتاری، جامعه‌شناختی، انگیزشی، عملیاتی و نیازمند همراهی و درگیرسازی تمام لایه‌های انسانی سازمان است (کار دل و دست).</p>
 <p>شکست در اجرا معمولاً ناشی از بی‌کیفیتی طرح استراتژیک نیست، بلکه حاصل عجز سازمان در ترجمهٔ مفاهیم انتزاعی به رفتارهای روزمره عملیاتی است.</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
@@ -266,18 +321,18 @@
   <div>ثروت و زمان تلف‌شده            | (Instant Death)</div>
 </div>
 
-<h3>۱.۳. گذار ساختاری از تدوین به اجرا</h3>
-<p>استاد خطیبی تأکید کردند که فاز اجرا، نیازمند تغییر ابزارها و لغات مدیریتی است. اگر در فاز تدوین با «ماتریس SWOT»، «پنج نیروی پورتر»، «ماتریس BCG» و «تحلیل VRIO» سر و کار داشتیم، در فاز اجرا باید بر موارد زیر متمرکز شویم:<br />
-1. <strong>ترجمه استراتژی به نقشه راه عملیاتی:</strong> (استفاده از فریم‌ورک‌های Balanced Scorecard و OKR).<br />
-2. <strong>همسوسازی ساختار و فرهنگ (Organizational Alignment):</strong> بازطراحی چیدمان قدرت، سیستم‌های پاداش و ارزیابی عملکرد.<br />
+<h3 id="_2">۱.۳. گذار ساختاری از تدوین به اجرا</h3>
+<p>استاد خطیبی تأکید کردند که فاز اجرا، نیازمند تغییر ابزارها و لغات مدیریتی است. اگر در فاز تدوین با «ماتریس SWOT»، «پنج نیروی پورتر»، «ماتریس BCG» و «تحلیل VRIO» سر و کار داشتیم، در فاز اجرا باید بر موارد زیر متمرکز شویم:
+1. <strong>ترجمه استراتژی به نقشه راه عملیاتی:</strong> (استفاده از فریم‌ورک‌های Balanced Scorecard و OKR).
+2. <strong>همسوسازی ساختار و فرهنگ (Organizational Alignment):</strong> بازطراحی چیدمان قدرت، سیستم‌های پاداش و ارزیابی عملکرد.
 3. <strong>رهبری تغییر (Change Leadership):</strong> مدیریت مقاومت‌های رفتاری و ایجاد اشتیاق سازمانی.</p>
-<h3>۱.۴. ۳ اولویت حیاتی مدیرعامل فردا صبح برای ارزیابی قابلیت اجرا</h3>
-<p>استاد خطیبی ۳ اولویت کلیدی را برای هر مدیرعاملی که قصد دارد از فردا صبح قابلیت اجرای سازمان خود را بسنجد، مطرح کردند:<br />
-۱. <strong>سنجش میزان فهم و درک عمومی از استراتژی:</strong> آیا بدنه عملیاتی و مدیران میانی دقیقاً می‌دانند استراتژی سازمان چیست و نقش روزمره آن‌ها در تحقق آن چگونه تعریف شده است؟<br />
-۲. <strong>بازبینی اتصال بودجه و سیستم پاداش به اهداف استراتژیک:</strong> آیا منابع مالی به اولویت‌های استراتژیک تخصیص یافته‌اند یا بر اساس روال‌های تاریخی سنتی؟ آیا پاداش افراد بر اساس تحقق اهداف استراتژیک است یا صرفاً انجام وظایف جاری؟<br />
+<h3 id="_3">۱.۴. ۳ اولویت حیاتی مدیرعامل فردا صبح برای ارزیابی قابلیت اجرا</h3>
+<p>استاد خطیبی ۳ اولویت کلیدی را برای هر مدیرعاملی که قصد دارد از فردا صبح قابلیت اجرای سازمان خود را بسنجد، مطرح کردند:
+۱. <strong>سنجش میزان فهم و درک عمومی از استراتژی:</strong> آیا بدنه عملیاتی و مدیران میانی دقیقاً می‌دانند استراتژی سازمان چیست و نقش روزمره آن‌ها در تحقق آن چگونه تعریف شده است؟
+۲. <strong>بازبینی اتصال بودجه و سیستم پاداش به اهداف استراتژیک:</strong> آیا منابع مالی به اولویت‌های استراتژیک تخصیص یافته‌اند یا بر اساس روال‌های تاریخی سنتی؟ آیا پاداش افراد بر اساس تحقق اهداف استراتژیک است یا صرفاً انجام وظایف جاری؟
 ۳. <strong>بررسی سیستم‌های پایش و کنترل استراتژیک:</strong> آیا سازمان دارای داشبورد مدیریتی مکانیزه برای رصد لحظه‌ای پیشرفت شاخص‌ها است یا کنترل‌ها صرفاً پس از وقوع انحرافات مالی و عملیاتی (بعد از مرگ سهراب) صورت می‌گیرند؟</p>
 <hr />
-<h2>۲. نقشه مفهومی و سیر منطقی تدریس (Lecture Flow &amp; Conceptual Roadmap)</h2>
+<h2 id="lecture-flow-conceptual-roadmap">۲. نقشه مفهومی و سیر منطقی تدریس (Lecture Flow &amp; Conceptual Roadmap)</h2>
 <p>کلاس جلسه اول استاد خطیبی بر اساس یک سیر آموزشی ۵ مرحله‌ای طراحی شد تا دانشجویان گرایش استراتژیک، از بدو ورود به فضای کلاس، نگارش و فهم عمیقی از فلسفه دوره پیدا کنند.</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>سیر منطقی جلسات و مباحث کلاس</div>
@@ -288,35 +343,35 @@
   <div>مرحله ۵: استعاره‌های تجسمی       --->  مدل خورشید، کاروان‌سرا، جاده و گاردریل</div>
 </div>
 
-<h3>۲.۱. مرحله ۱: آغاز کلاس، معارفه شبکه دانشجویان و ساختار کلاس</h3>
-<p>جلسه با معرفی تک‌تک دانشجویان حضوری و آنلاین شروع شد. این مرحله صرفاً یک معارفه ساده نبود، بلکه تعمداً برای شبکه سازی و ایجاد تنوع در تجارب تخصصی طراحی شد. تنوع حوزه‌های کاری دانشجویان حاضر در کلاس عبارت بود از:<br />
-- <strong>شغایق فتحی (TA کلاس):</strong> کارشناس ارشد مترجمی زبان انگلیسی از دانشگاه قزوین/بین‌المللی امام خمینی، فعال در حوزه بازرگانی خارجی، واردات و صادرات تجهیزات صنعتی، لوازم خانگی و قطعات پتروشیمی (شرکت تاجران برق و صنعت).<br />
-- <strong>نرگس نعمتی‌پور:</strong> دکتری معماری از دانشگاه دولتی تبریز، فعال در حوزه معماری بازرگانی، صادرات و واردات متریال‌های تخصصی ساختمان.<br />
-- <strong>مهلیا سیمایی:</strong> مهندسی شیمی و طراح لباس با ۱۰ سال سابقه در صنعت فشن، مدیر خلاقیت سابق برند انجلاتیا (برند کانادایی)، و مستشار فعلی استراتژی برندهای فشن.<br />
-- <strong>مریم سپهری:</strong> کارشناسی مدیریت بازرگانی از دانشگاه تبریز، تحلیل‌گر بازارهای مالی، مربی روانشناسی معامله‌گری و بنیان‌گذار برند پارایول.<br />
-- <strong>علی سبزعلی جماعت:</strong> مدیریت اداری، بنیان‌گذار اپلیکیشن سه‌بعدی دکوراسیون و مبلمان «دیدار».<br />
-- <strong>مهدیس ایمانی:</strong> کارشناسی شیمی کاربردی، ارشد اقتصاد از دانشگاه تهران، معاون مدرسه و فعال آموزشی.<br />
-- <strong>آقای خندان:</strong> تحصیل‌کرده فلسفه و منطق غرب از دانشگاه تهران، واردکننده مواد شیمیایی، تولیدکننده پارکت و مبلمان.<br />
-- <strong>علی عشایری:</strong> فعال صنعت آسانسور (تولید، فروش، نصب، خدمات و بازرسی فنی).<br />
-- <strong>سجاد وحیدی:</strong> کارشناسی زمین‌شناسی از دانشگاه شهید بهشتی، مدیرعامل روزنامه تجارت/شط‌آسیا، مشاور استراتژی آفتاب‌خودرو و شرکت‌های صنعتی.<br />
-- <strong>سیما ضیاخواه:</strong> تحصیل‌کرده شهرسازی از دانشگاه شهید بهشتی، با ۲۰ سال سابقه مدیریت پروژه‌های شهری و عمرانی.<br />
-- <strong>میلاد ولی‌زاده:</strong> مهندسی برق، فعال در هولدینگ همراه اول (برج همراه، شرکت‌های زیرمجموعه) و بنیان‌گذار استارتاپ بین‌المللی.<br />
-- <strong>سینا طلوعی:</strong> کارشناسی و ارشد مهندسی انرژی از دانشگاه امیرکبیر، هماهنگ‌کننده پروژه‌های خرید هولدینگ‌های معدنی و لاستیک‌سازی (گهرزمین، بارز).<br />
-- <strong>غزاله یوسف‌زاده:</strong> ورود ورودی ۸۱ مهندسی مواد گرم‌ساز، سابقه کار در دانشکده سروش و صداوسیما، فعال کسب‌وکارهای هنری و دست‌سازه‌ها.<br />
-- <strong>مهدی حمزه:</strong> مهندسی صنایع از دانشگاه علم و صنعت، ۲۳ سال سابقه اجرایی در ایران‌خودرو و مهندسی و ساخت تأسیسات دریایی ایران (IOEC).<br />
-- <strong>ندا درویشی:</strong> کارشناسی اقتصاد، فعال در واردات چوب از روسیه و صادرات میوه/خشکبار به روسیه، دارای برند تخصصی چوب.<br />
-- <strong>سو / سوء صوفیادیان:</strong> تحصیل‌کرده علوم سیاسی از دانشگاه تهران، آموزشگاه‌دار زبان، مولف کتاب‌های انگلیسی، بنیان‌گذار انتشارات «مومنتوم».<br />
+<h3 id="_4">۲.۱. مرحله ۱: آغاز کلاس، معارفه شبکه دانشجویان و ساختار کلاس</h3>
+<p>جلسه با معرفی تک‌تک دانشجویان حضوری و آنلاین شروع شد. این مرحله صرفاً یک معارفه ساده نبود، بلکه تعمداً برای شبکه سازی و ایجاد تنوع در تجارب تخصصی طراحی شد. تنوع حوزه‌های کاری دانشجویان حاضر در کلاس عبارت بود از:
+- <strong>شغایق فتحی (TA کلاس):</strong> کارشناس ارشد مترجمی زبان انگلیسی از دانشگاه قزوین/بین‌المللی امام خمینی، فعال در حوزه بازرگانی خارجی، واردات و صادرات تجهیزات صنعتی، لوازم خانگی و قطعات پتروشیمی (شرکت تاجران برق و صنعت).
+- <strong>نرگس نعمتی‌پور:</strong> دکتری معماری از دانشگاه دولتی تبریز، فعال در حوزه معماری بازرگانی، صادرات و واردات متریال‌های تخصصی ساختمان.
+- <strong>مهلیا سیمایی:</strong> مهندسی شیمی و طراح لباس با ۱۰ سال سابقه در صنعت فشن، مدیر خلاقیت سابق برند انجلاتیا (برند کانادایی)، و مستشار فعلی استراتژی برندهای فشن.
+- <strong>مریم سپهری:</strong> کارشناسی مدیریت بازرگانی از دانشگاه تبریز، تحلیل‌گر بازارهای مالی، مربی روانشناسی معامله‌گری و بنیان‌گذار برند پارایول.
+- <strong>علی سبزعلی جماعت:</strong> مدیریت اداری، بنیان‌گذار اپلیکیشن سه‌بعدی دکوراسیون و مبلمان «دیدار».
+- <strong>مهدیس ایمانی:</strong> کارشناسی شیمی کاربردی، ارشد اقتصاد از دانشگاه تهران، معاون مدرسه و فعال آموزشی.
+- <strong>آقای خندان:</strong> تحصیل‌کرده فلسفه و منطق غرب از دانشگاه تهران، واردکننده مواد شیمیایی، تولیدکننده پارکت و مبلمان.
+- <strong>علی عشایری:</strong> فعال صنعت آسانسور (تولید، فروش، نصب، خدمات و بازرسی فنی).
+- <strong>سجاد وحیدی:</strong> کارشناسی زمین‌شناسی از دانشگاه شهید بهشتی، مدیرعامل روزنامه تجارت/شط‌آسیا، مشاور استراتژی آفتاب‌خودرو و شرکت‌های صنعتی.
+- <strong>سیما ضیاخواه:</strong> تحصیل‌کرده شهرسازی از دانشگاه شهید بهشتی، با ۲۰ سال سابقه مدیریت پروژه‌های شهری و عمرانی.
+- <strong>میلاد ولی‌زاده:</strong> مهندسی برق، فعال در هولدینگ همراه اول (برج همراه، شرکت‌های زیرمجموعه) و بنیان‌گذار استارتاپ بین‌المللی.
+- <strong>سینا طلوعی:</strong> کارشناسی و ارشد مهندسی انرژی از دانشگاه امیرکبیر، هماهنگ‌کننده پروژه‌های خرید هولدینگ‌های معدنی و لاستیک‌سازی (گهرزمین، بارز).
+- <strong>غزاله یوسف‌زاده:</strong> ورود ورودی ۸۱ مهندسی مواد گرم‌ساز، سابقه کار در دانشکده سروش و صداوسیما، فعال کسب‌وکارهای هنری و دست‌سازه‌ها.
+- <strong>مهدی حمزه:</strong> مهندسی صنایع از دانشگاه علم و صنعت، ۲۳ سال سابقه اجرایی در ایران‌خودرو و مهندسی و ساخت تأسیسات دریایی ایران (IOEC).
+- <strong>ندا درویشی:</strong> کارشناسی اقتصاد، فعال در واردات چوب از روسیه و صادرات میوه/خشکبار به روسیه، دارای برند تخصصی چوب.
+- <strong>سو / سوء صوفیادیان:</strong> تحصیل‌کرده علوم سیاسی از دانشگاه تهران، آموزشگاه‌دار زبان، مولف کتاب‌های انگلیسی، بنیان‌گذار انتشارات «مومنتوم».
 - <strong>آیدا رجب‌لاریجانی:</strong> جوان‌ترین عضو کلاس (متولد ۱۳۸۳)، ریاضی کاربردی دانشگاه الزهرا، مربی شنا و نقاش.</p>
-<h3>۲.۲. مرحله ۲: تبیین ۵ رکن آموزشی دوره</h3>
-<p>استاد خطیبی ۵ چارچوب محوری دوره را به شرح زیر ریل‌گذاری نمودند:<br />
-۱. <strong>آشنایی و متناسب‌سازی ذهنیت (Alignment):</strong> یکسان‌سازی ادبیات استراتژیک دانشجویان بر مبنای تجارب متنوعشان.<br />
-۲. <strong>طرح درس و ساختار فرآیند سه‌گانه:</strong> بررسی ۵ گام کلیدی از هدف‌گذاری تا کنترل.<br />
-۳. <strong>نظام ارزیابی کلاسی و تشکیل گروه‌های کاری:</strong> ارزیابی مستمر از طریق گروه‌های کاری تلگرامی، سناریوهای هفتگی، مشارکت در کلاس آنلاین/حضوری بدون اتکا بر امتحان کتبی محض.<br />
-۴. <strong>معرفی مراجع و منبع‌شناسی تخصصی:</strong> بررسی جامع کتاب‌های مرجع داخلی و بین‌المللی.<br />
+<h3 id="_5">۲.۲. مرحله ۲: تبیین ۵ رکن آموزشی دوره</h3>
+<p>استاد خطیبی ۵ چارچوب محوری دوره را به شرح زیر ریل‌گذاری نمودند:
+۱. <strong>آشنایی و متناسب‌سازی ذهنیت (Alignment):</strong> یکسان‌سازی ادبیات استراتژیک دانشجویان بر مبنای تجارب متنوعشان.
+۲. <strong>طرح درس و ساختار فرآیند سه‌گانه:</strong> بررسی ۵ گام کلیدی از هدف‌گذاری تا کنترل.
+۳. <strong>نظام ارزیابی کلاسی و تشکیل گروه‌های کاری:</strong> ارزیابی مستمر از طریق گروه‌های کاری تلگرامی، سناریوهای هفتگی، مشارکت در کلاس آنلاین/حضوری بدون اتکا بر امتحان کتبی محض.
+۴. <strong>معرفی مراجع و منبع‌شناسی تخصصی:</strong> بررسی جامع کتاب‌های مرجع داخلی و بین‌المللی.
 ۵. <strong>درس و ورود به هسته سخت موضوعات:</strong> کالبدشکافی ارکان جهت‌ساز و شکاف اجرا.</p>
 <hr />
-<h2>۳. کالبدشکافی تئوریک: شکاف استراتژی-عملکرد و ریشه‌یابی موانع پیاده‌سازی (Theoretical Foundations)</h2>
-<h3>۳.۱. تحلیل عمیق شکاف استراتژی-عملکرد (Strategy-to-Performance Gap)</h3>
+<h2 id="-theoretical-foundations">۳. کالبدشکافی تئوریک: شکاف استراتژی-عملکرد و ریشه‌یابی موانع پیاده‌سازی (Theoretical Foundations)</h2>
+<h3 id="-strategy-to-performance-gap">۳.۱. تحلیل عمیق شکاف استراتژی-عملکرد (Strategy-to-Performance Gap)</h3>
 <p>شکاف استراتژی-عملکرد، تفاوت میان میزان ارزش تخمین‌زده‌شده در سند استراتژی و ارزش واقعی تحقق‌یافته در صورت‌های مالی و سهم بازار سازمان است. استاد خطیبی با اشاره به تحقیقات رابرت کاپلان و دیوید نورتون (بنیان‌گذاران BSC) و همچنین مطالعات موسسه مک‌کینزی، موانع چهارگانه مهلک در پیاده‌سازی استراتژی را تبیین کردند:</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>۴ مانع مهلک در اجرای استراتژی (کاپلان و نورتون)</div>
@@ -326,15 +381,15 @@
   <div>۴. مانع منابع (Resource Barrier)     | ۶۰٪ از سازمان‌ها بودجه مالی را به استراتژی متصل نمی‌کنند.</div>
 </div>
 
-<h4>۱. مانع چشم‌انداز (The Vision Barrier)</h4>
+<h4 id="the-vision-barrier">۱. مانع چشم‌انداز (The Vision Barrier)</h4>
 <p>تنها حدود ۵ درصد از بدنه عملیاتی سازمان‌ها، استراتژی و چشم‌انداز ارشد را می‌فهمند. بیانیه‌های استراتژیک در غالب سازمان‌ها به لغات کلیشه‌ای، لوکس و مبهم تبدیل می‌شوند که هیچ دلالت رفتاری برای یک کارگر خط تولید، کارشناس فروش یا مسئول پشتیبانی ندارد.</p>
-<h4>۲. مانع افراد و انگیزش (The People Barrier)</h4>
+<h4 id="the-people-barrier">۲. مانع افراد و انگیزش (The People Barrier)</h4>
 <p>در بیش از ۷۵ درصد سازمان‌ها، شاخص‌های کلیدی عملکرد (KPI) و پاداش‌های دریافتی افراد هیچ ارتباطی با تحقق اهداف استراتژیک ندارد. فرد برای انجام کارهای روزمره و روتین پاداش می‌گیرد، نه برای تلاش در جهت تحقق اهداف تحول‌آفرین استراتژیک.</p>
-<h4>۳. مانع ارزیابی و تمرکز مدیریتی (The Management Barrier)</h4>
+<h4 id="the-management-barrier">۳. مانع ارزیابی و تمرکز مدیریتی (The Management Barrier)</h4>
 <p>بیش از ۸۵ درصد از تیم‌های مدیریتی، در جلسات ماهانه خود کمتر از یک ساعت را به بحث و بررسی استراتژی تخصیص می‌دهند. باقی زمان صرف اطفای حریق‌های روزمره (Firefighting)، حل بحران‌های جاری و بررسی انحرافات بودجه عملیاتی می‌شود.</p>
-<h4>۴. مانع منابع (The Resource Barrier)</h4>
+<h4 id="the-resource-barrier">۴. مانع منابع (The Resource Barrier)</h4>
 <p>در بیش از ۶۰ درصد سازمان‌ها، فرآیند بودجه‌ریزی سالانه مالی هیچ ارتباطی با سند استراتژی ندارد. بودجه بر اساس چانه‌زنی‌های سیاسی واحدهای مختلف و روال سنتی سال قبل (علاوه بر درصد تورم) توزیع می‌شود، نه بر اساس اولویت‌های برنامه راهبردی.</p>
-<h3>۳.۲. فرآیند ۶ گام مدیریت استراتژیک</h3>
+<h3 id="_6">۳.۲. فرآیند ۶ گام مدیریت استراتژیک</h3>
 <p>برای درک جایگاه اجرا، استاد خطیبی فرآیند جامع مدیریت استراتژیک را در ۶ گام و ۱۵ سند خروجی تفکیک کردند:</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>فرآیند ۶ گام مدیریت استراتژیک</div>
@@ -348,7 +403,7 @@
 </div>
 
 <hr />
-<h2>۴. کالبدشکافی عمیق ارکان جهت‌ساز (Goal Setting &amp; Directional Fundamentals)</h2>
+<h2 id="goal-setting-directional-fundamentals">۴. کالبدشکافی عمیق ارکان جهت‌ساز (Goal Setting &amp; Directional Fundamentals)</h2>
 <p>استاد خطیبی بخش عمده‌ای از زمان آموزشی جلسه اول را به بازخوانی، اصلاح بدفهمی‌ها و کالبدشکافی عمیق گام اول (ارکان جهت‌ساز یا MVs: Mission, Vision, Values) اختصاص دادند. فهم صحیح این ارکان، پیش‌شرط الزامی طراحی سیستم اجرا و کنترل است.</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>مقایسه تحلیلی ارکان جهت‌ساز سازمان (MVs)</div>
@@ -360,14 +415,14 @@
   <div>**استعاره راهبردی**| خورشید در افق بی‌انتها        | قله کوه / کاروان‌سرا    | گاردریل‌های جاده</div>
 </div>
 
-<h3>۴.۱. بیانیه ماموریت (Mission Statement / رسالت)</h3>
+<h3 id="mission-statement">۴.۱. بیانیه ماموریت (Mission Statement / رسالت)</h3>
 <p>ماموریت، پاسخ دقیق سازمان به این سوال وجودی است: <strong>«چرا هستیم؟ (Why do we exist?)»</strong>. ماموریت فلسفه وجودی، دلیل تاسیس (علةالتأسیس) و علت بقای سازمان است.</p>
-<h4>ویژگی‌های بنیادی ماموریت:</h4>
+<h4 id="_7">ویژگی‌های بنیادی ماموریت:</h4>
 <ol>
 <li><strong>افق زمانی بی‌انتها:</strong> ماموریت تاریخ انقضا ندارد؛ تا زمانی که سازمان زنده است، ماموریت برقرار است.</li>
 <li><strong>ماهیت کیفی:</strong> ماموریت به هیچ عنوان دارای اعداد، ارقام، درصد یا تاریخ نیست.</li>
 <li><strong>دست‌نیافتنی بودن مطلق در عین هدایت‌گری:</strong> مانند خورشید است؛ شما به سمت خورشید حرکت می‌کنید، از نور آن جهت می‌گیرید، اما هرگز به خود خورشید نمی‌رسید و آن را در جیب خود نمی‌گذارید!</li>
-<li><strong>ریشه‌دوانی در نیازهای آفرینش و جامعه:</strong><br />
+<li><strong>ریشه‌دوانی در نیازهای آفرینش و جامعه:</strong>
    استاد خطیبی تمایز دقیق و مفصلی میان سه مفهوم اقتصادی/بازاریابی قائل شدند:</li>
 <li><strong>نیاز (Need):</strong> امر ذاتی، فطری، کشف‌شدنی و غیرقابل خلق توسط بشر (مانند نیاز به غذا، امنیت، ارتباط، جابه‌جایی).</li>
 <li><strong>خواسته (Want):</strong> تجلی و شکل برآورده ساختن نیاز بر اساس فرهنگ و تکنولوژی (مانند خواستهٔ چلوکباب برای نیاز به غذا، یا خواستهٔ خودرو برای نیاز به جابه‌جایی).</li>
@@ -377,7 +432,7 @@
        (غیرقابل خلق)                       (قابل طراحی)                        (هدف بازار)
 </code></pre>
 <p>سازمانی که ماموریت خود را بر پایه یک <strong>«خواسته»</strong> یا <strong>«محصول خاص»</strong> تعریف کند، با تغییر تکنولوژی نابود می‌شود (بازاریابی کور یا Marketing Myopia). اما سازمانی که ماموریت خود را بر پایه <strong>«نیاز بنیادین»</strong> تعریف کند، جاویدان خواهد بود.</p>
-<h4>عناصر ۵ گانه بیانیه ماموریت استاندارد (4W + 1H):</h4>
+<h4 id="4w-1h">عناصر ۵ گانه بیانیه ماموریت استاندارد (4W + 1H):</h4>
 <ul>
 <li><strong>Who We Are:</strong> ما کیستیم؟ (هویت سازمان)</li>
 <li><strong>What We Do:</strong> چه ارزش یا محصولی ارائه می‌دهیم؟ (نیاز پاسخ‌داده‌شده)</li>
@@ -390,15 +445,15 @@
   <div>[کیستیم؟]  +  [چه می‌دهیم؟]  +  [به که می‌دهیم؟]  +  [کجا؟]  +  [چگونه/تمایز ما چیست؟]</div>
 </div>
 
-<h3>۴.۲. بیانیه چشم‌انداز (Vision Statement / آرمان)</h3>
+<h3 id="vision-statement">۴.۲. بیانیه چشم‌انداز (Vision Statement / آرمان)</h3>
 <p>چشم‌انداز، تصویر آینده مطلوب و ملموس سازمان در یک افق زمانی مشخص است: <strong>«به کجا می‌خواهیم برسیم؟ (Where do we want to be?)»</strong>.</p>
-<h4>ویژگی‌های بنیادی چشم‌انداز:</h4>
+<h4 id="_8">ویژگی‌های بنیادی چشم‌انداز:</h4>
 <ol>
 <li><strong>افق زمانی محدود و مشخص:</strong> چشم‌انداز حتماً دارای زمان است (معمولاً ۳ تا ۵ ساله در شرایط بی‌ثبات، و تا ۱۰ ساله در شرایط پایدار).</li>
 <li><strong>قابل راستی‌آزمایی و سنجش (Measurable/Verifiable):</strong> چشم‌انداز حاوی شاخص‌های کمّی یا حالات کیفیِ کاملاً ملموس است که در پایان افق زمانی می‌توان گفت «رسیده‌ایم» یا «نرسیده‌ایم».</li>
 <li><strong>تحقق‌پذیر و انگیزشی:</strong> چشم‌انداز باید چالش‌برانگیز اما در دسترس باشد (مثل رسیدن به یک قله کوه یا کاروان‌سرای مشخص در مسیر حرکت به سمت خورشید).</li>
 </ol>
-<h4>کیس‌استادی‌های بین‌المللی بیانیه چشم‌انداز (توضیح کامل استاد خطیبی):</h4>
+<h4 id="_9">کیس‌استادی‌های بین‌المللی بیانیه چشم‌انداز (توضیح کامل استاد خطیبی):</h4>
 <ul>
 <li><strong>هنری فورد (ابتدای قرن بیستم):</strong> «همگانی کردن خودرو (Democratize the automobile)؛ تولید خودرویی که هر خانواده طبقه متوسط آمریکایی بتواند با درآمد خود یک دستگاه از آن را به قیمت زیر ۷۰۰ دلار بخرد.» (کمّی، مشخص، تحقق‌یافته).</li>
 <li><strong>سونی (پس از جنگ جهانی دوم):</strong> «تبدیل شدن به برندی که تصویر جهانی کالاهای ژاپنی را از محصولات بی‌کیفیت به برترین کیفیت در دنیا تغییر دهد.»</li>
@@ -406,9 +461,9 @@
 <li><strong>جنرال الکتریک (دوران جک ولش در دهه ۱۹۸۰):</strong> «کسب رتبه اول یا دوم در هر بازاری که در آن فعالیت می‌کنیم؛ در غیر این صورت، آن کسب‌وکار را اصلاح می‌کنیم، می‌فروشیم یا تعطیل می‌کنیم!» (Fix, Sell, or Close).</li>
 <li><strong>آمازون:</strong> «تبدیل شدن به مشتری‌مدارترین شرکت روی کره زمین.»</li>
 </ul>
-<h3>۴.۳. بیانیه ارزش‌های محوری (Core Values)</h3>
+<h3 id="core-values">۴.۳. بیانیه ارزش‌های محوری (Core Values)</h3>
 <p>ارزش‌ها، خطوط قرمز اخلاقی، اصول رفتاری غیرقابل معامله و قواعد بازی در سازمان هستند. ارزش‌ها تعیین می‌کنند که سازمان برای رسیدن به چشم‌انداز خود، مجاز به انجام چه کارهایی هست و چه کارهایی را هرگز نباید انجام دهد.</p>
-<h4>استعاره گاردریل (Guardrails)</h4>
+<h4 id="guardrails">استعاره گاردریل (Guardrails)</h4>
 <p>استاد خطیبی ارزش‌ها را به گاردریل‌های جاده تشبیه کردند. اگر جاده همان استراتژی باشد و ماشین سازمان با سرعت به سمت چشم‌انداز حرکت کند، ارزش‌ها گاردریل‌هایی هستند که اجازه نمی‌دهند ماشین به دره اخلاقی، قانونی یا تخریب برند سقوط کند. (مثلاً: «ما به رشد ۳۰ درصدی فروش می‌رسیم، اما هرگز با کم‌فروشی، فریب مشتری یا آسیب به محیط‌زیست این کار را نخواهیم کرد»).</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>استعاره جامع منظومه استراتژیک سازمان</div>
@@ -421,8 +476,8 @@
 </div>
 
 <hr />
-<h2>۵. فریم‌ورک‌ها، مدل‌های اجرایی و ساختار کنترل استراتژیک (Frameworks &amp; Execution Models)</h2>
-<h3>۵.۱. فریم‌ورک‌های مرجع جاری‌سازی استراتژی</h3>
+<h2 id="frameworks-execution-models">۵. فریم‌ورک‌ها، مدل‌های اجرایی و ساختار کنترل استراتژیک (Frameworks &amp; Execution Models)</h2>
+<h3 id="_10">۵.۱. فریم‌ورک‌های مرجع جاری‌سازی استراتژی</h3>
 <p>استاد خطیبی مراجع و فریم‌ورک‌های اصلی جاری‌سازی و کنترل استراتژی را در قالب کتاب‌ها و مدل‌های استاندارد جهانی معرفی نمودند:</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>نقشه مراجع تئوریک و اجرایی درس</div>
@@ -440,7 +495,7 @@
   <div>مک‌چسنی، کووی، هولینگ        | ۴ انضباط اجرا (4DX)           | تمرکز بر اهداف حیاتی و شاخص‌های پیش‌رو</div>
 </div>
 
-<h3>۵.۲. مدل McKinsey 7S در پیاده‌سازی استراتژی</h3>
+<h3 id="mckinsey-7s">۵.۲. مدل McKinsey 7S در پیاده‌سازی استراتژی</h3>
 <p>یکی از فریم‌ورک‌های کلاسیک و بسیار کارآمد در ارزیابی آمادگی اجرای استراتژی، مدل ۷S مک‌کینزی است که استاد خطیبی بر نقش اضلاع سخت (Hard S) و نرم (Soft S) آن در ایجاد همسوسازی سازمانی تاکید کردند:</p>
 <ul>
 <li><strong>عناصر سخت (Hard Elements):</strong> آسان‌تر قابل تعریف و شناسایی هستند و مدیریت مستقیم‌تر بر آن‌ها اثر می‌گذارد.</li>
@@ -469,7 +524,7 @@
   <div>[Skills]---------+</div>
 </div>
 
-<h3>۵.۳. ۴ اهرم کنترل استراتژیک (مدل رابرت سیمونز)</h3>
+<h3 id="_11">۵.۳. ۴ اهرم کنترل استراتژیک (مدل رابرت سیمونز)</h3>
 <p>کنترل استراتژیک با کنترل عملیاتی سنتی (که صرفاً مالی و پسینی است) متفاوت است. بر اساس چارچوب رابرت سیمونز در کتاب <em>Levers of Control</em>، ارکان کنترل استراتژیک عبارتند از:</p>
 <ol>
 <li><strong>سیستم‌های کنترل عقیدتی (Belief Systems):</strong> جاری‌سازی ارزش‌ها و ماموریت برای هدایت جستجوی فرصت‌ها.</li>
@@ -484,34 +539,34 @@
 </div>
 
 <hr />
-<h2>۵. کیس‌استادی‌ها، شکست‌ها و موفقیت‌های اجرای استراتژی در صنعت و بازار ایران (Case Studies &amp; Iranian Context)</h2>
+<h2 id="case-studies-iranian-context">۵. کیس‌استادی‌ها، شکست‌ها و موفقیت‌های اجرای استراتژی در صنعت و بازار ایران (Case Studies &amp; Iranian Context)</h2>
 <p>در طول جلسه، استاد خطیبی و دانشجویان پرونده‌ها و مثال‌های عملی متعددی را از صنایع مختلف ایران و جهان تحلیل کردند که آسیب‌شناسی اختصاصی محیط ایران را ارائه می‌دهد:</p>
-<h3>۵.۱. پرونده صنایع غذایی و لبنی (چوپان، خوشگوار، میهن)</h3>
+<h3 id="_12">۵.۱. پرونده صنایع غذایی و لبنی (چوپان، خوشگوار، میهن)</h3>
 <ul>
 <li><strong>ماموریت چوپان:</strong> تولید محصولات غذایی سالم و تازه بر پایه شیر برای ارتقای سلامت جامعه. چوپان با مانور بر «تازگی و عدم استفاده از مواد نگهدارنده» توانست سهم بازار موثری در برابر غول‌های لبنی ایجاد کند.</li>
 <li><strong>تنوع‌گرایی یا تمرکز بر ماموریت:</strong> تجارب شرکت‌های لبنی نشان می‌دهد هنگامی که شرکت‌ها از ماموریت اصلی خود (سلامت پایه لبنی) فاصله گرفته و وارد بازارهای غیرمرتبط می‌شوند، سیستم کنترل و توزیع آنها دچار افت کیفیت می‌شود.</li>
 </ul>
-<h3>۵.۲. پرونده صنعت خودرو (ایران‌خودرو، سایپا، آفتاب‌خودرو)</h3>
+<h3 id="_13">۵.۲. پرونده صنعت خودرو (ایران‌خودرو، سایپا، آفتاب‌خودرو)</h3>
 <ul>
 <li><strong>بررسی تجربه مهدی حمزه (۲۳ سال سابقه ایران‌خودرو):</strong> در خودروسازی ایران، بین اهداف کیفی در سند استراتژی و سیستم پاداش عملیاتی در خطوط تولید شکاف عمیقی وجود دارد. وقتی پاداش مدیران سالن بر اساس «تیراژ تولید روزانه» محاسبه می‌شود، هرگونه شاخص کیفی استراتژیک در فاز اجرا قربانی تیراژ خواهد شد.</li>
 <li><strong>کیس فورد در برابر خودروسازان ایرانی:</strong> چشم‌انداز فورد کمّی، ملموس و متصل به توان خرید جامعه بود، اما چشم‌اندازهای خودروسازان داخلی غالباً شعاری، فاقد زمان‌بندی دقیق و بدون اتصال به الزامات ارتقای کیفیت و رقابت‌پذیری بین‌المللی است.</li>
 </ul>
-<h3>۵.۳. پرونده صنعت نفت، گاز و پتروشیمی (تأسیسات دریایی - IOEC)</h3>
+<h3 id="-ioec">۵.۳. پرونده صنعت نفت، گاز و پتروشیمی (تأسیسات دریایی - IOEC)</h3>
 <ul>
 <li>پروژه‌های لوله‌گذاری و نصب پلتفرم‌های دریایی نیازمند ساختار کنترل استراتژیک تعاملی (Interactive Control) هستند، زیرا نااطمینانی‌های محیطی (تحریم، آب‌وهوا، تأمین تجهیزات) بسیار بالاست. عدم انعطاف در ساختار کنترل منجر به تاخیرهای چندساله در بهره‌برداری از فازهای پارس جنوبی شده است.</li>
 </ul>
-<h3>۵.۴. پرونده تجارت خارجی و واردات/صادرات (چوب روسیه، خشکبار، محصولات صنعتی)</h3>
+<h3 id="_14">۵.۴. پرونده تجارت خارجی و واردات/صادرات (چوب روسیه، خشکبار، محصولات صنعتی)</h3>
 <ul>
 <li><strong>تحلیل ندا درویشی و شقایق فتحی:</strong> بی‌ثباتی نرخ ارز، تغییرات ناگهانی بخشنامه‌های گمرکی و عدم ثبات سیاست‌های تجاری در ایران، افق چشم‌انداز شرکت‌های بازرگانی را از ۵ سال به چند ماه کاهش داده است. در این شرایط، کنترل فرضیات (Premise Control) و مانیتورینگ لحظه‌ای خطرات محیطی جایگزین برنامه‌ریزی‌های بلندمدت ایستا شده است.</li>
 </ul>
-<h3>۵.۵. پرونده صنعت فشن و پوشاک (انجلاتیا، برندهای داخلی)</h3>
+<h3 id="_15">۵.۵. پرونده صنعت فشن و پوشاک (انجلاتیا، برندهای داخلی)</h3>
 <ul>
 <li><strong>تحلیل مهلیا سیمایی:</strong> در صنعت فشن، ارزش‌های محوری برند (Brand Core Values) مانند حامی محیط‌زیست بودن، کیفیت پارچه یا اصالت طرح، شکننده‌ترین بخش در فاز اجرا هستند. فشار مالی برای کاهش هزینه تولید معمولاً زنجیره ارزش را به سمت استفاده از متریال نامرغوب سوق می‌دهد که باعث نابودی برچسب قیمتی و پرستیژ برند می‌شود.</li>
 </ul>
 <hr />
-<h2>۶. جعبه‌ابزار رهبری اجرا و رفع موانع رفتاری (Execution &amp; Change Leadership Toolkit)</h2>
+<h2 id="execution-change-leadership-toolkit">۶. جعبه‌ابزار رهبری اجرا و رفع موانع رفتاری (Execution &amp; Change Leadership Toolkit)</h2>
 <p>اجرای استراتژی مستلزم مدیریت تغییر (Change Management) و غلبه بر مقاومت‌های رفتاری سازمان است. استاد خطیبی ابزارهای زیر را برای غلبه بر موانع اجرایی تبیین نمودند:</p>
-<h3>۶.۱. ماتریس سنجش آمادگی سازمانی برای تغییر (Change Readiness)</h3>
+<h3 id="change-readiness">۶.۱. ماتریس سنجش آمادگی سازمانی برای تغییر (Change Readiness)</h3>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>ماتریس سنجش آمادگی تغییر</div>
   <div>میزان آمادگی رفتاری      | انگیزه و تمایل به تغییر (Willingness) | انگیزه بالا (High)</div>
@@ -522,13 +577,13 @@
   <div>نیاز به انگیزش و متناسب‌سازی KPIها  | رهبران میانی عملیات و اهرم‌های اجرای سریع</div>
 </div>
 
-<h3>۶.۲. ابزارهای جلب همراهی مدیران میانی (Middle Management Buy-in)</h3>
-<p>مدیران میانی به عنوان «گلوگاه واقعی اجرا» شناخته می‌شوند. برای جلب همراهی آن‌ها ابزارهای زیر ضروری است:<br />
-۱. <strong>مشارکت در تدوین (Involvement in Formulation):</strong> مدیر میانی که در تدوین اهداف نقشی نداشته باشد، در اجرا هیچ تعهدی نخواهد داشت.<br />
-۲. <strong>ترجمه اهداف به برنامه‌های اقدام ملموس (Action Plans):</strong> تبدیل اهداف کلان به پروژه‌های کاری مشخص با زمان‌بندی و مسئول واضح.<br />
+<h3 id="middle-management-buy-in">۶.۲. ابزارهای جلب همراهی مدیران میانی (Middle Management Buy-in)</h3>
+<p>مدیران میانی به عنوان «گلوگاه واقعی اجرا» شناخته می‌شوند. برای جلب همراهی آن‌ها ابزارهای زیر ضروری است:
+۱. <strong>مشارکت در تدوین (Involvement in Formulation):</strong> مدیر میانی که در تدوین اهداف نقشی نداشته باشد، در اجرا هیچ تعهدی نخواهد داشت.
+۲. <strong>ترجمه اهداف به برنامه‌های اقدام ملموس (Action Plans):</strong> تبدیل اهداف کلان به پروژه‌های کاری مشخص با زمان‌بندی و مسئول واضح.
 ۳. <strong>تسهیلگری و رفع موانع ساختاری (Barrier Removal):</strong> مدیرعامل باید موانع ساختاری، بوروکراتیک و بودجه‌ای را از پیش پای مدیران میانی بردارد.</p>
 <hr />
-<h2>۷. چک‌لیست اقدامات فوری مدیرعامل (CEO Monday Morning Action Checklist)</h2>
+<h2 id="ceo-monday-morning-action-checklist">۷. چک‌لیست اقدامات فوری مدیرعامل (CEO Monday Morning Action Checklist)</h2>
 <p>این چک‌لیست عملیاتی بر اساس مباحث استاد خطیبی، ابزاری کاربردی برای ارزیابی و قفل‌گشایی از اجرای استراتژی در سازمان توسط مدیرعامل در اولین روز کاری هفته (صبح دوشنبه/شنبه) است:</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>چک‌لیست ۵ اقدام فوری مدیرعامل برای قفل‌گشایی از اجرا</div>
@@ -545,15 +600,14 @@
   <div>بازبینی عدم وجود اعداد در ماموریت و زمان‌دار بودن چشم‌انداز| [ ] خلط مفاهیم رخ داده (نیازمند اصلاح)</div>
 </div>
 
-<h3>۵ نشانه هشداردهنده زودهنگام (Red Flags) که نشان می‌دهد استراتژی روی کاغذ مانده است:</h3>
+<h3 id="red-flags">۵ نشانه هشداردهنده زودهنگام (Red Flags) که نشان می‌دهد استراتژی روی کاغذ مانده است:</h3>
 <ul>
 <li>🚩 <strong>نشانه اول:</strong> پرسنل سازمان از پاسخ به این سوال که «استراتژی امسال سازمان چیست؟» عاجزند یا پاسخ‌های کاملاً متناقض می‌دهند.</li>
 <li>🚩 <strong>نشانه دوم:</strong> پروژه های جدید استراتژیک به سازمان اضافه شده‌اند، اما هیچ پروژه قدیمی یا کم‌بازدهی تعطیل یا حذف نشده است (فشار کار مضاعف بدون حذف زوائد).</li>
 <li>🚩 <strong>نشانه سوم:</strong> شاخص‌های ارزیابی مدیران ارشد همگی سبز هستند، اما سودآوری یا سهم بازار سازمان رو به افول است (شاخص‌های نادرست یا فریبنده).</li>
 <li>🚩 <strong>نشانه چهارم:</strong> بودجه مالی سازمان مستقل از سند استراتژی و توسط واحد مالی بر اساس فرمول‌های سنواتی تنظیم می‌شود.</li>
 <li>🚩 <strong>نشانه پنجم:</strong> مدیران میانی برای انجام کارهای استراتژیک نیازمند اخذ مجوزهای متعدد بوروکراتیک از سطوح بالاتر هستند و اختیارات کافی ندارند.</li>
-</ul>
-        </div>
+</ul></div>
       </div>
 
     </section>
@@ -561,59 +615,134 @@
     <!-- TAB: SESSION 2 -->
     <section id="content-session2" class="tab-content hidden space-y-6">
       
-      <!-- Layer 1: Executive Summary -->
-      <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
-        <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
-          <span class="text-xs font-bold text-sky-700 bg-sky-50 px-3 py-1 rounded-full">خلاصه مدیریتی جلسه دوم</span>
-          <span class="text-xs text-slate-500">ارکان جهت‌ساز • ماتریس‌های EFE/IFE/CPM • IEM نه خانه‌ای • ماتریس QSPM (اسلایدهای ۱ تا ۵۱)</span>
+      <!-- Tab Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold text-sky-700 bg-sky-50 px-3 py-1 rounded-full">جلسه دوم • ۳.۱ ساعت تدریس (اسلایدهای ۱ تا ۵۱)</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">ارکان جهت‌ساز، ماتریس‌های موقعیت (EFE/IFE/CPM/IEM) و تصمیم‌گیری کمی (QSPM)</h2>
         </div>
-        <h3 class="text-xl font-black text-slate-900">ارکان جهت‌ساز، ماتریس‌های ارزیابی موقعیت و انتخاب کمی استراتژی</h3>
-        <p class="text-xs md:text-sm text-slate-600 leading-relaxed text-justify">
-          در این جلسه استاد خطیبی طبق جزوه شماره یک (اسلایدهای ۱ تا ۵۱) به کالبدشکافی ارکان جهت‌ساز پرداختند: تفاوت ماموریت (کیستیم، برای چه مشتری، چه نیازی و با چه مزیت رقابتی) با چشم‌انداز (آرمان الهام‌بخش ۵ تا ۱۰ ساله) و ارزش‌ها. سپس زنجیره ماتریس‌های تحلیلی را از ماتریس ارزیابی خارجی (EFE) و داخلی (IFE) تا ماتریس رقابتی (CPM)، ماتریس ۹ خانه‌ای IEM، ماتریس گرند استراتژی، SWOT و ماتریس برنامه‌ریزی استراتژیک کمی (QSPM) با کیس‌های کاربردی تدریس نمودند.
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-sky-700 block mb-1">ارکان جهت‌ساز و تمایز کاله و میهن</span>
-            <div class="text-sm font-black text-slate-900 mb-1">چشم‌انداز کیفی در برابر کمی</div>
-            <p class="text-xs text-slate-600">میهن هدف را ظرفیت تولید و ماشین‌آلات مدرن (کمی) گذاشت؛ کاله آرمان را تبدیل لبنیات ایران به لیدر خاورمیانه و جایگاه برند در سفره مردم تعریف کرد.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-sky-700 block mb-1">زنجیره ماتریس‌های ارزیابی</span>
-            <div class="text-sm font-black text-slate-900 mb-1">EFE, IFE, CPM و IEM</div>
-            <p class="text-xs text-slate-600">سنجش فرصت/تهدیدهای بیرونی و قوت/ضعف‌های درونی در مقیاس ۱ تا ۴، و تقاطع آنها در ماتریس ۹ خانه‌ای IEM برای تعیین استراتژی رشد، حفظ یا برداشت.</p>
-          </div>
-          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
-            <span class="text-[11px] font-bold text-sky-700 block mb-1">ماتریس انتخاب کمی (QSPM)</span>
-            <div class="text-sm font-black text-slate-900 mb-1">اولویت‌بندی علمی با نمره جذابیت</div>
-            <p class="text-xs text-slate-600">تخصیص نمره جذابیت (AS: 1-4) به گزینه‌های استراتژیک بر اساس تک‌تک عوامل داخلی و خارجی برای مهار سوگیری‌های سلیقه‌ای مدیران ارشد.</p>
-          </div>
-        </div>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-sky-700 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
       </div>
 
-      <!-- Layer 2: Collapsible Full Notes -->
-      <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-        <button onclick="toggleNotes('s2')" class="w-full p-4 md:p-5 text-right font-extrabold text-slate-800 hover:bg-slate-50 transition-colors flex items-center justify-between border-b border-slate-100">
-          <span class="flex items-center gap-2">
-            <span>📖</span>
-            <span class="text-sm md:text-base">مشاهده متن کامل و درسنامه تفصیلی جلسه دوم (کلیک کنید)</span>
-          </span>
-          <span id="s2-icon" class="text-slate-400 text-sm transition-transform">▼ باز کردن</span>
+      <!-- TOP LAYER: Executive Visual Summary -->
+      <div class="bg-sky-50/60 border border-sky-200 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">📊</span>
+          <h3 class="text-base md:text-lg font-black text-sky-950">خلاصه اجرایی و مدیریتی جلسه دوم: از ارکان جهت‌ساز تا اولویت‌بندی کمی استراتژی</h3>
+        </div>
+        <p class="text-xs md:text-sm text-sky-900 leading-relaxed mb-5 text-justify">
+          در این جلسه استاد خطیبی طبق جزوه شماره یک دوره (اسلایدهای ۱ تا ۵۱) به کالبدشکافی ارکان جهت‌ساز پرداختند: ۵ پرسش طلایی مأموریت، تفکیک چشم‌انداز کیفی کاله از چشم‌انداز کمی میهن، و زنجیره تحلیلی ماتریس‌های ارزیابی موقعیت (EFE/IFE/CPM)، ماتریس ۹ خانه‌ای IEM و اولویت‌بندی با ماتریس برنامه‌ریزی استراتژیک کمی (QSPM).
+        </p>
+
+        <!-- 3 Highlight Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+          <div class="bg-white p-4 rounded-xl border border-sky-100 shadow-sm">
+            <div class="text-xs font-bold text-sky-700 mb-1 flex items-center gap-1.5">
+              <span>🎯</span>
+              <span>۵ سؤال طلایی بیانیه مأموریت</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">۱. ما کیستیم؟ ۲. مشتریان ما کیستند؟ ۳. چه نیازی را رفع می‌کنیم؟ ۴. با چه تکنولوژی و مهارتی؟ ۵. تمایز و مزیت رقابتی ما چیست؟ (بررسی موردی دقیق‌صنعت اسلاید ۱۵).</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-sky-100 shadow-sm">
+            <div class="text-xs font-bold text-sky-700 mb-1 flex items-center gap-1.5">
+              <span>📐</span>
+              <span>زنجیره ماتریس‌های تحلیلی</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">ترکیب ماتریس عوامل خارجی (EFE) و داخلی (IFE) در ماتریس ۹ خانه‌ای IEM برای تعیین یکی از سه موضع استراتژیک: «رشد و ساخت»، «حفظ و نگهداری» یا «برداشت و واگذاری».</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-sky-100 shadow-sm">
+            <div class="text-xs font-bold text-sky-700 mb-1 flex items-center gap-1.5">
+              <span>⚖️</span>
+              <span>ماتریس انتخاب کمی (QSPM)</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">مهار سلیقه‌های فردی در اتاق مدیریت با ضرب وزن هر عامل در نمره جذابیت (AS: 1-4) و مقایسه مجموع جذابیت کل (TAS) گزینه‌های استراتژیک رقیب.</p>
+          </div>
+        </div>
+
+        <!-- Case Study Matrix: Kalleh vs Mihan -->
+        <div class="bg-white rounded-xl border border-sky-200 overflow-hidden shadow-sm mb-5">
+          <div class="bg-sky-100 px-4 py-2.5 text-xs font-bold text-sky-950 flex items-center justify-between">
+            <span>🥛 تقابل راهبردی دو غول صنعت لبنیات ایران در تدریس استاد خطیبی</span>
+            <span class="text-[11px] text-sky-700 font-normal">بررسی موردی چشم‌انداز کیفی در برابر چشم‌انداز کمی</span>
+          </div>
+          <table class="w-full text-xs text-right">
+            <thead class="bg-slate-50 text-slate-700 font-bold border-b border-slate-200">
+              <tr>
+                <th class="p-3">عنصر راهبردی</th>
+                <th class="p-3 text-blue-900">رویکرد شرکت کاله (غلامعلی سلیمانی)</th>
+                <th class="p-3 text-emerald-900">رویکرد گروه میهن (حاج ایوب پایداری)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">ماهیت چشم‌انداز</td>
+                <td class="p-3 font-semibold text-blue-950">کیفی، آرمانی و الهام‌بخش: «تبدیل برند ایرانی به برترین انتخاب سفره غذایی منطقه و حضور در بین ۱۰ برند برتر لبنی جهان».</td>
+                <td class="p-3 font-semibold text-emerald-950">کمی، فیزیکی و ظرفیت‌محور: «رسیدن به تناژ تولید روزانه X هزار تن بستنی و لبنیات و توسعه ناوگان حمل با ۵۰۰۰ دستگاه کامیون».</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">موتور محرک رشد</td>
+                <td class="p-3">نوآوری در سبد محصول (پنیرهای تخصصی، دسرها، نوشیدنی‌های فراسودمند) و نفوذ عمیق به قفسه فروشگاه.</td>
+                <td class="p-3">صرفه‌جویی مقیاس، سرمایه‌گذاری سنگین در خطوط پیشرفته اروپایی و کنترل مطلق شبکه توزیع مویرگی سردخانه‌ای.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">ریسک اجرایی</td>
+                <td class="p-3 text-rose-700">پیچیدگی فوق‌العاده در مدیریت صدها SKU متنوع و نیاز مبرم به R&D مداوم در نوسانات ارزی.</td>
+                <td class="p-3 text-amber-700">تله چسبندگی به ماشین‌آلات و دارایی ثابت سنگین در صورت تغییر ناگهانی الگوی مصرف یا رکود تقاضا.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- IEM 9-Cell Infographic Framework -->
+        <div class="bg-white p-4 rounded-xl border border-sky-200 shadow-sm">
+          <div class="text-xs font-bold text-sky-900 mb-2 flex items-center justify-between">
+            <span>🗺️ راهنمای اقدام در ماتریس ۹ خانه‌ای داخلی-خارجی (IEM):</span>
+            <span class="text-[11px] text-slate-500">تقاطع نمرات IFE و EFE (دامنه ۱.۰ تا ۴.۰)</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
+            <div class="p-3 rounded-lg bg-emerald-50 border border-emerald-200">
+              <div class="font-bold text-emerald-900 mb-1">🟢 خانه‌های I و II و IV: رشد و ساخت (Grow & Build)</div>
+              <p class="text-emerald-800 leading-relaxed text-[11px]">موقعیت قدرتمند؛ استراتژی‌های تهاجمی: رسوخ در بازار، توسعه بازار و توسعه محصول. سرمایه‌گذاری سنگین با بودجه StratEx مستقل.</p>
+            </div>
+            <div class="p-3 rounded-lg bg-amber-50 border border-amber-200">
+              <div class="font-bold text-amber-900 mb-1">🟡 خانه‌های III و V و VII: حفظ و نگهداری (Hold & Maintain)</div>
+              <p class="text-amber-800 leading-relaxed text-[11px]">موقعیت خنثی؛ استراتژی‌های محافظه‌کارانه: بهبود بهره‌وری فرآیندها، حفظ مشتریان فعلی و نفوذ کنترل‌شده با حداقل ریسک مالی.</p>
+            </div>
+            <div class="p-3 rounded-lg bg-rose-50 border border-rose-200">
+              <div class="font-bold text-rose-900 mb-1">🔴 خانه‌های VI و VIII و IX: برداشت یا واگذاری (Harvest & Divest)</div>
+              <p class="text-rose-800 leading-relaxed text-[11px]">موقعیت بحرانی؛ استراتژی‌های تدافعی: مهار هزینه‌ها، انحلال خطوط زیان‌ده، فروش دارایی‌های مازاد و تمرکز بقا در بازار اصلی.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+      <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+        <div>
+          <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه دوم</h3>
+          <p class="text-xs text-slate-400">تدوین عمیق بر پایه اسلایدهای ۱ تا ۵۱ جزوه شماره ۱، نمونه‌های عددی EFE/IFE/CPM/QSPM و مباحث کلاسی استاد خطیبی</p>
+        </div>
+        <button onclick="toggleSessionFull('s2')" id="btn-toggle-s2" class="bg-sky-600 hover:bg-sky-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+          <span>مطالعه متن کامل و تفصیلی جلسه</span>
+          <span id="icon-toggle-s2">▼</span>
         </button>
-        <div id="s2-notes" class="p-6 md:p-8 bg-white border-t border-slate-100 space-y-6 prose-custom">
-          <h1>اجرا و کنترل استراتژیک - جلسه دوم: ارکان جهت‌ساز، ماتریس‌های ارزیابی موقعیت و انتخاب کمی استراتژی (QSPM)</h1>
+      </div>
+
+      <div id="full-s2" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+        <div class="prose-custom"><h1 id="-qspm">اجرا و کنترل استراتژیک - جلسه دوم: ارکان جهت‌ساز، ماتریس‌های ارزیابی موقعیت و انتخاب کمی استراتژی (QSPM)</h1>
 <p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>مدرس دوره:</strong> استاد خطیبی<br />
 <strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
 <strong>تاریخ تدریس:</strong> ۰۲ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۳ ساعت و ۱۰ دقیقه<br />
 <strong>منبع اسلایدهای پشتیبان:</strong> جزوه شماره ۱ دوره (اسلایدهای ۱ تا ۵۱)</p>
 <hr />
-<h2>۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
-<h3>۱.۱. جوهره و مانیفست محوری تدریس استاد خطیبی</h3>
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. جوهره و مانیفست محوری تدریس استاد خطیبی</h3>
 <p>جلسه دوم درس اجرا و کنترل استراتژیک با تبیین این اصل بنیادی آغاز شد که <strong>تدوین استراتژی بدون در نظر گرفتن ظرفیت‌ها، زیرساخت‌ها و فرهنگ بدنه سازمان، صرفاً توهم روی کاغذ است.</strong> استاد خطیبی با بهره‌گیری از استعاره‌های میدانی قدرتمند (ماشین، جاده و گاردریل) روشن ساختند که اسناد استراتژیک زمانی به مرحله اجرا می‌رسند که ارکان جهت‌ساز (مأموریت، چشم‌انداز و ارزش‌ها) با تمامیت سازمانی (Integrity) عجین شده و سپس از طریق زنجیره ماتریس‌های تحلیلی (EFE, IFE, CPM, IEM, Grand Strategy, SWOT) به تصمیم‌گیری کمی در ماتریس QSPM منتهی شوند.</p>
 <p>استاد خطیبی تأکید کردند که استراتژیست ارشد نباید اسیر اصطلاحات وارداتی و مُدهای مدیریتی شود؛ استراتژی باید بازتاب‌دهنده واقعیت‌های عریان کف بازار ایران، کشش واقعی تقاضا، و توان تیم‌های عملیاتی باشد.</p>
 <hr />
-<h3>۱.۲. سه فرمان طلایی نگارش و اجرای استراتژی از زبان استاد خطیبی</h3>
+<h3 id="_2">۱.۲. سه فرمان طلایی نگارش و اجرای استراتژی از زبان استاد خطیبی</h3>
 <p>در آغاز جلسه، استاد خطیبی سه خط قرمز صریح را برای هرگونه نگارش سند استراتژیک در بنگاه‌های ایرانی ترسیم کردند:</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
   <div class="p-5 rounded-2xl bg-amber-50 border border-amber-200">
@@ -646,15 +775,15 @@
 </div>
 
 <hr />
-<h3>۱.۳. زیان‌های سه‌گانه عدم همسوسازی ساختار با استراتژی</h3>
-<p>عدم انطباق میان تدوین و صحنه عمل، شرکت را با ۳ آسیب مهلک مواجه می‌سازد:<br />
-1. <strong>زیان اعتباری (Reputational Loss):</strong> فروپاشی وجهه برند در نزد مشتریان و بیزاری درونی کارکنان به دلیل ادعاهای توخالی مدیران.<br />
-2. <strong>زیان زمانی (Temporal Loss):</strong> از دست رفتن پنجره‌های طلایی بازار به واسطه سردرگمی واحدهای عملیاتی میان وظایف جاری و پروژه‌های استراتژیک.<br />
+<h3 id="_3">۱.۳. زیان‌های سه‌گانه عدم همسوسازی ساختار با استراتژی</h3>
+<p>عدم انطباق میان تدوین و صحنه عمل، شرکت را با ۳ آسیب مهلک مواجه می‌سازد:
+1. <strong>زیان اعتباری (Reputational Loss):</strong> فروپاشی وجهه برند در نزد مشتریان و بیزاری درونی کارکنان به دلیل ادعاهای توخالی مدیران.
+2. <strong>زیان زمانی (Temporal Loss):</strong> از دست رفتن پنجره‌های طلایی بازار به واسطه سردرگمی واحدهای عملیاتی میان وظایف جاری و پروژه‌های استراتژیک.
 3. <strong>زیان مالی و منابع (Financial Loss):</strong> هدررفت سنگین سرمایه در پروژه‌هایی که فاقد کشش بازار یا حمایت زنجیره تأمین بوده‌اند.</p>
 <hr />
-<h2>۲. استعاره‌های بنیادین کلاس: تجسم فرآیند اجرا در ذهن مدیر</h2>
+<h2 id="_4">۲. استعاره‌های بنیادین کلاس: تجسم فرآیند اجرا در ذهن مدیر</h2>
 <p>استاد خطیبی در طول تدریس، برای شکستن دیوارهای خشک تئوریک، از سه استعاره تصویری ماندگار استفاده کردند که درک فرآیند اجرا را در ذهن مدیران نهادینه می‌سازد:</p>
-<h3>۲.۱. استعاره اتومبیل، جاده و سیستم تعلیق</h3>
+<h3 id="_5">۲.۱. استعاره اتومبیل، جاده و سیستم تعلیق</h3>
 <blockquote>
 <p><strong>«استراتژی نقشه سفر است، اما رسیدن به مقصد مشروط به سلامت خودرو و مهارت راننده است.»</strong></p>
 </blockquote>
@@ -663,14 +792,14 @@
 <li><strong>راننده:</strong> تیم رهبری و مدیرعامل که باید با هوشیاری، چابکی و درک موقعیت فرمان را کنترل کنند.</li>
 <li><strong>موتور و سیستم تعلیق اتومبیل:</strong> معماری سازمانی، ساختار، سیستم‌های پاداش و منابع انسانی. اگر سیستم تعلیق معیوب باشد، حتی اگر بهترین نقشه و راننده را داشته باشید، در اولین دست‌انداز چرخ‌های خودرو کنده خواهد شد.</li>
 </ul>
-<h3>۲.۲. استعاره گاردریل‌های استراتژیک (Strategic Guardrails)</h3>
+<h3 id="strategic-guardrails">۲.۲. استعاره گاردریل‌های استراتژیک (Strategic Guardrails)</h3>
 <p>گاردریل‌ها همان خط قرمزها، ارزش‌های محوری، بودجه‌بندی‌های سخت‌گیرانه و سیستم‌های کنترل استراتژیک هستند. گاردریل مانع سقوط ماشین به دره ورشکستگی در پیچ‌های تند تصمیم‌گیری می‌شود. اگر سازمان فاقد گاردریل باشد، اولین شوک ارزی یا تغییر تعرفه گمرکی شرکت را به قعر دره پرتاب می‌کند.</p>
-<h3>۲.۳. استعاره کاروانسرا (The Caravanserai Metaphor)</h3>
+<h3 id="the-caravanserai-metaphor">۲.۳. استعاره کاروانسرا (The Caravanserai Metaphor)</h3>
 <p>در مسیرهای تجاری تاریخی، کاروانسراها ایستگاه‌های تجدید قوا، پایش آذوقه و بازنگری نقشه‌ها بودند. مدیران استراتژیک نباید کاروانسرا را با مقصد نهایی اشتباه بگیرند. اهداف میان‌مدت و دستاوردهای فصلی کاروانسراهایی هستند که باید در آنها سیستم‌ها را ارزیابی و برای پیمودن بقیه راه انرژی ذخیره کرد.</p>
 <hr />
-<h2>۳. کالبدشکافی ارکان جهت‌ساز: مأموریت، چشم‌انداز و ارزش‌ها</h2>
+<h2 id="_6">۳. کالبدشکافی ارکان جهت‌ساز: مأموریت، چشم‌انداز و ارزش‌ها</h2>
 <p>ارکان جهت‌ساز فونداسیون هر برنامه‌ریزی استراتژیک هستند. بدون این ارکان، تمام ماتریس‌های بعدی بی‌معنی و فاقد قطب‌نما خواهند بود.</p>
-<h3>۳.۱. بیانیه مأموریت (Mission Statement) و ۵ سؤال طلایی</h3>
+<h3 id="mission-statement">۳.۱. بیانیه مأموریت (Mission Statement) و ۵ سؤال طلایی</h3>
 <p>مأموریت پاسخ به چرایی وجودی سازمان در زمان حال است. استاد خطیبی تصریح کردند که یک مأموریت استاندارد و اجرایی باید به ۵ پرسش محوری بدون هیچگونه ابهام پاسخ دهد:</p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
@@ -712,52 +841,52 @@
 </div>
 
 <hr />
-<h3>۳.۲. چشم‌انداز (Vision): تقابل چشم‌انداز کمی در برابر چشم‌انداز کیفی</h3>
+<h3 id="vision">۳.۲. چشم‌انداز (Vision): تقابل چشم‌انداز کمی در برابر چشم‌انداز کیفی</h3>
 <p>چشم‌انداز آرمان ۵ تا ۱۰ ساله سازمان و جایگاهی است که می‌خواهد در ذهن مشتریان و صنعت تسخیر کند.</p>
-<h4>پرونده مقایسه‌ای دو غول لبنیات ایران: میهن (ایوب پایداری) در برابر کاله (غلامعلی سلیمانی)</h4>
+<h4 id="_7">پرونده مقایسه‌ای دو غول لبنیات ایران: میهن (ایوب پایداری) در برابر کاله (غلامعلی سلیمانی)</h4>
 <p>استاد خطیبی با واکاوی پرونده تأسیس و رقابت دو برند نامدار صنایع غذایی، درس تاریخی بزرگی را به مدیران گوشزد کردند:</p>
 <ul>
-<li><strong>رویکرد حاج ایوب پایداری در میهن (تمرکز بر چشم‌انداز کمی و ظرفیت تولید):</strong><br />
+<li><strong>رویکرد حاج ایوب پایداری در میهن (تمرکز بر چشم‌انداز کمی و ظرفیت تولید):</strong>
   میهن چشم‌انداز خود را عمدتاً بر «بزرگ‌ترین کارخانه»، «بیشترین تعداد خطوط تولید تتراپک و بستنی»، «خرید پیشرفته‌ترین ناوگان توزیع یخچال‌دار» و «تجهیزات مدرن آلمانی» تعریف کرد. این رویکرد ماشین‌آلات و ظرفیت فیزیکی را به عنوان هسته قدرت دید.</li>
-<li><strong>رویکرد غلامعلی سلیمانی در کاله (تمرکز بر چشم‌انداز کیفی و رهبری بازار):</strong><br />
+<li><strong>رویکرد غلامعلی سلیمانی در کاله (تمرکز بر چشم‌انداز کیفی و رهبری بازار):</strong>
   کاله چشم‌انداز خود را نه بر آهن و ماشین‌آلات، بلکه بر «تبدیل لبنیات و پنیر ایران به لیدر خاورمیانه»، «فتح بازارهای صادراتی منطقه»، «ورود به سفره روزمره مردم از طریق خلق ارزش در دسته‌های جدید (پنیر آمل، ماست سون، لبنیات ورزشی پورو)» و «برندسازی عاطفی» متمرکز ساخت.</li>
 </ul>
 <blockquote>
 <p><strong>گزاره استاد خطیبی:</strong> «ماشین‌آلات را با پول و اعتبار بانکی می‌توان خرید، اما جایگاه تسخیرشده در قلب و ذهن مشتری، شایستگی‌های بازاریابی و فرهنگ سازمانی را نمی‌توان در گمرک ترخیص کرد. چشم‌اندازی ماندگار است که کیفی، الهام‌بخش و معطوف به تسخیر بازار باشد، نه صرفاً انبار کردن ماشین‌آلات.»</p>
 </blockquote>
 <hr />
-<h3>۳.۳. ارزش‌های سازمانی، مسئولیت اجتماعی (CSR) و کیفیت زندگی کاری (QWL)</h3>
-<p>ارزش‌ها چارچوب اخلاقی و رفتاری حاکم بر تصمیم‌گیری‌ها هستند:<br />
-- <strong>کیفیت زندگی کاری (QWL - Quality of Work Life):</strong> اگر محیط کار منزلت‌آمیز، ایمن و مبتنی بر رشد نباشد، سازمان بهترین استعدادهای خود را از دست داده و دچار خروج نخبگان خواهد شد.<br />
+<h3 id="csr-qwl">۳.۳. ارزش‌های سازمانی، مسئولیت اجتماعی (CSR) و کیفیت زندگی کاری (QWL)</h3>
+<p>ارزش‌ها چارچوب اخلاقی و رفتاری حاکم بر تصمیم‌گیری‌ها هستند:
+- <strong>کیفیت زندگی کاری (QWL - Quality of Work Life):</strong> اگر محیط کار منزلت‌آمیز، ایمن و مبتنی بر رشد نباشد، سازمان بهترین استعدادهای خود را از دست داده و دچار خروج نخبگان خواهد شد.
 - <strong>مسئولیت اجتماعی شرکتی (CSR):</strong> پایداری درازمدت سودآوری در گرو حفظ منافع جامعه و حفظ محیط زیست است (بررسی نمونه‌های کوکاکولا و مهندسین مشاور صنعتی ایران).</p>
 <hr />
-<h2>۴. کالبدشکافی ساختار رقابتی و زنجیره ارزش پورتر در فاز اجرا</h2>
-<h3>۴.۱. تفاوت حیاتی «رقیب» با «محصول جانشین» (Substitute)</h3>
-<p>استاد خطیبی در تبیین مدل ۵ نیروی پورتر بر خطای رایج مدیران ارشد انگشت گذاشتند:<br />
-- <strong>رقیب (Competitor):</strong> بازیگری است که محصولی با ویژگی‌ها، ظاهر و کارکرد کاملاً مشابه به بازار ارائه می‌دهد (مانند پپسی در برابر کوکاکولا، یا دیجی‌کالا در برابر اسنپ‌مارکت در کالای تندمصرف).<br />
-- <strong>محصول جانشین (Substitute):</strong> محصولی است که <strong>ماهیت، ظاهر، فرمولاسیون و فناوری ساخت متفاوتی دارد، اما دقیقاً همان «نیاز بنیادین» مشتری را برطرف می‌کند.</strong><br />
-  * <em>مثال:</em> آب‌معدنی جانشین نوشابه است (نیاز: رفع تشنگی).<br />
+<h2 id="_8">۴. کالبدشکافی ساختار رقابتی و زنجیره ارزش پورتر در فاز اجرا</h2>
+<h3 id="substitute">۴.۱. تفاوت حیاتی «رقیب» با «محصول جانشین» (Substitute)</h3>
+<p>استاد خطیبی در تبیین مدل ۵ نیروی پورتر بر خطای رایج مدیران ارشد انگشت گذاشتند:
+- <strong>رقیب (Competitor):</strong> بازیگری است که محصولی با ویژگی‌ها، ظاهر و کارکرد کاملاً مشابه به بازار ارائه می‌دهد (مانند پپسی در برابر کوکاکولا، یا دیجی‌کالا در برابر اسنپ‌مارکت در کالای تندمصرف).
+- <strong>محصول جانشین (Substitute):</strong> محصولی است که <strong>ماهیت، ظاهر، فرمولاسیون و فناوری ساخت متفاوتی دارد، اما دقیقاً همان «نیاز بنیادین» مشتری را برطرف می‌کند.</strong>
+  * <em>مثال:</em> آب‌معدنی جانشین نوشابه است (نیاز: رفع تشنگی).
   * <em>مثال:</em> پلتفرم‌های تماشای آنلاین (فیلیمو/نماوا) جانشین سینما و DVD فیزیکی هستند (نیاز: سرگرمی).</p>
-<h3>۴.۲. افت تقاضا، پدیده منسوخ شدن فناوری و استراتژی انحلال</h3>
+<h3 id="_9">۴.۲. افت تقاضا، پدیده منسوخ شدن فناوری و استراتژی انحلال</h3>
 <p>استاد خطیبی با ذکر یک مثال ملموس تاریخی هشدار دادند:</p>
 <blockquote>
 <p><strong>«وقتی یک فناوری یا نیاز منسوخ می‌شود، با هیچ تبلیغات و بازاریابی پرخرجی نمی‌توان جلوی مرگ آن را گرفت. شما امروز با پیشرفته‌ترین کمپین‌های تبلیغاتی هم نمی‌توانید چراغ نفتی علاءالدین یا کپسول گاز پیک‌نیکی را در آپارتمان‌های تهران به فروش برسانید! گاز شهری و شوفاژ جانشین کل آن ساختار شده است.»</strong></p>
 </blockquote>
-<p>در این وضعیت، بنگاه از نقطه سربه‌سر (Break-even Point) عبور کرده و وارد زیان‌دهی مستمر می‌شود. در اینجا استراتژیست ارشد باید شجاعت تصمیم‌گیری داشته باشد:<br />
-1. <strong>استراتژی کاهش و واگذاری (Retrenchment):</strong> کاهش خطوط، واگذاری دارایی‌های مازاد و تمرکز بر هسته سودآور.<br />
+<p>در این وضعیت، بنگاه از نقطه سربه‌سر (Break-even Point) عبور کرده و وارد زیان‌دهی مستمر می‌شود. در اینجا استراتژیست ارشد باید شجاعت تصمیم‌گیری داشته باشد:
+1. <strong>استراتژی کاهش و واگذاری (Retrenchment):</strong> کاهش خطوط، واگذاری دارایی‌های مازاد و تمرکز بر هسته سودآور.
 2. <strong>استراتژی انحلال (Liquidation):</strong> بستن خطوط تولید زیان‌ده قبل از بلعیده شدن تمام دارایی‌ها؛ مشابه تصمیماتی که ایران‌خودرو برای توقف خط تولید پیکان و پژو ۴۰۵ گرفت، یا شرکت اپل برای توقف نسل‌های قدیمی آیفون اعمال می‌کند.</p>
 <hr />
-<h3>۴.۳. زنجیره ارزش پورتر: تفکیک صف و ستاد در معماری اجرا (اسلاید ۳۷)</h3>
-<p>یکی از دلایل شکست استراتژی‌ها، درگیری بی‌پایان میان لایه‌های صف و ستاد است:<br />
-- <strong>فعالیت‌های اصلی / صف (Line Activities):</strong> تدارکات ورودی (Inbound Logistics)، عملیات تولید (Operations)، تدارکات خروجی (Outbound Logistics)، بازاریابی و فروش (Marketing &amp; Sales)، و خدمات پس از فروش (Service).<br />
+<h3 id="_10">۴.۳. زنجیره ارزش پورتر: تفکیک صف و ستاد در معماری اجرا (اسلاید ۳۷)</h3>
+<p>یکی از دلایل شکست استراتژی‌ها، درگیری بی‌پایان میان لایه‌های صف و ستاد است:
+- <strong>فعالیت‌های اصلی / صف (Line Activities):</strong> تدارکات ورودی (Inbound Logistics)، عملیات تولید (Operations)، تدارکات خروجی (Outbound Logistics)، بازاریابی و فروش (Marketing &amp; Sales)، و خدمات پس از فروش (Service).
 - <strong>فعالیت‌های پشتیبانی / ستاد (Staff Activities):</strong> زیرساخت شرکت، مدیریت منابع انسانی (HRM)، تحقیق و توسعه (R&amp;D)، و خرید و تدارکات استراتژیک.</p>
 <blockquote>
 <p><strong>هشدار استاد خطیبی به هلدینگ‌ها:</strong> اگر مدیریت منابع انسانی در سطح هلدینگ به جای سیاست‌گذاری و توسعه شایستگی‌های استراتژیک، بخواهد در امور روزمره استخدامی شرکت‌های تابعه دخالت کند، زنجیره ارزش فلج خواهد شد. ستاد باید پشتیبان و هم‌سوساز صف باشد، نه گلوگاه توقف کار.</p>
 </blockquote>
 <hr />
-<h2>۵. زنجیره ماتریس‌های ارزیابی موقعیت و تولید استراتژی</h2>
+<h2 id="_11">۵. زنجیره ماتریس‌های ارزیابی موقعیت و تولید استراتژی</h2>
 <p>استاد خطیبی تأکید کردند که ماتریس‌ها ابزارهایی برای سامان‌بخشی به ذهن مدیر هستند، نه بت‌هایی که جای قضاوت انسانی را بگیرند.</p>
-<h3>۵.۱. ماتریس ارزیابی عوامل خارجی (EFE Matrix) - ۵ گام استاندارد</h3>
+<h3 id="efe-matrix-">۵.۱. ماتریس ارزیابی عوامل خارجی (EFE Matrix) - ۵ گام استاندارد</h3>
 <p>این ماتریس نحوه پاسخ‌دهی بنگاه به فرصت‌ها (Opportunities) و تهدیدهای (Threats) محیط کلان و صنعت را ارزیابی می‌کند:</p>
 <ol>
 <li><strong>گام ۱:</strong> استخراج ۱۵ تا ۲۰ عامل کلیدی خارجی (فرصت‌ها و تهدیدها).</li>
@@ -772,22 +901,22 @@
 </ol>
 <p><em>(تحلیل نمونه EFE نتفلیکس در اسلاید ۳۶: واکنش به رشد پهنای باند و تهدید رقابت دیزنی).</em></p>
 <hr />
-<h3>۵.۲. ماتریس ارزیابی عوامل داخلی (IFE Matrix) - ۵ گام استاندارد</h3>
-<p>این ماتریس قوت‌ها (Strengths) و ضعف‌های (Weaknesses) داخلی سازمان را در بخش‌های مالی، تولید، بازاریابی و منابع انسانی می‌سنجد:<br />
-- قواعد وزن‌دهی مشابه EFE است (مجموع وزن‌ها = ۱.۰۰).<br />
-- قواعد رتبه‌دهی:<br />
-  - رتبه ۴: قوت اساسی (Major Strength).<br />
-  - رتبه ۳: قوت جزئی (Minor Strength).<br />
-  - رتبه ۲: ضعف جزئی (Minor Weakness).<br />
-  - رتبه ۱: ضعف اساسی (Major Weakness).<br />
+<h3 id="ife-matrix-">۵.۲. ماتریس ارزیابی عوامل داخلی (IFE Matrix) - ۵ گام استاندارد</h3>
+<p>این ماتریس قوت‌ها (Strengths) و ضعف‌های (Weaknesses) داخلی سازمان را در بخش‌های مالی، تولید، بازاریابی و منابع انسانی می‌سنجد:
+- قواعد وزن‌دهی مشابه EFE است (مجموع وزن‌ها = ۱.۰۰).
+- قواعد رتبه‌دهی:
+  - رتبه ۴: قوت اساسی (Major Strength).
+  - رتبه ۳: قوت جزئی (Minor Strength).
+  - رتبه ۲: ضعف جزئی (Minor Weakness).
+  - رتبه ۱: ضعف اساسی (Major Weakness).
 - نمره کل زیر ۲.۵ نشان‌دهنده غلبه ضعف‌های درونی بر قوت‌های سازمان است (تحلیل نمونه IFE نتفلیکس در اسلاید ۳۹).</p>
 <hr />
-<h3>۵.۳. ماتریس بررسی رقابتی (CPM - Competitive Profile Matrix)</h3>
-<p>این ماتریس جایگاه استراتژیک شرکت را در برابر رقبای اصلی بر اساس <strong>عوامل حیاتی موفقیت (CSF - Critical Success Factors)</strong> ارزیابی می‌کند:<br />
-- وزن‌دهی بر اساس اهمیت صنعت.<br />
+<h3 id="cpm-competitive-profile-matrix">۵.۳. ماتریس بررسی رقابتی (CPM - Competitive Profile Matrix)</h3>
+<p>این ماتریس جایگاه استراتژیک شرکت را در برابر رقبای اصلی بر اساس <strong>عوامل حیاتی موفقیت (CSF - Critical Success Factors)</strong> ارزیابی می‌کند:
+- وزن‌دهی بر اساس اهمیت صنعت.
 - مقایسه امتیازدهی شرکت خودی در برابر رقبای A و B (بررسی نمونه شرکت افق داده‌ها در اسلاید ۴۱).</p>
 <hr />
-<h3>۵.۴. ماتریس داخلی و خارجی (IEM - Internal-External Matrix)</h3>
+<h3 id="iem-internal-external-matrix">۵.۴. ماتریس داخلی و خارجی (IEM - Internal-External Matrix)</h3>
 <p>ماتریس ۹ خانه‌ای IEM از تقاطع نمره نهایی IFE (محور افقی) و EFE (محور عمودی) تشکیل می‌شود:</p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-center border border-slate-700 rounded-lg overflow-hidden text-xs">
@@ -828,22 +957,22 @@
 <li><strong>منطقه ۳ (خانه‌های VI, VIII, IX): برداشت و واگذاری (Harvest or Divest):</strong> استراتژی‌های کاهش مقیاس، انحلال یا فروش واحد کسب‌وکار.</li>
 </ul>
 <hr />
-<h3>۵.۵. استراتژی‌های کلان یکپارچگی در سطح هلدینگ‌ها (Integration Strategies)</h3>
-<p>استاد خطیبی با بررسی سبد سرمایه‌گذاری هلدینگ‌های غدیر، شستا، بنیاد و سامسونگ، مسیرهای سه‌گانه یکپارچگی را تشریح کردند:<br />
-1. <strong>یکپارچگی رو به جلو (Forward Integration):</strong> تملک یا کنترل کانال‌های توزیع و فروشگاه‌ها توسط تولیدکننده (مثال: افتتاح شعب فروشگاهی توسط چرم مشهد یا کاله).<br />
-2. <strong>یکپارچگی رو به عقب (Backward Integration):</strong> تملک منابع تأمین مواد اولیه (مثال: احداث مزارع دامداری و تولید علوفه توسط کارخانجات لبنی، یا تملک معادن توسط فولادسازان).<br />
+<h3 id="integration-strategies">۵.۵. استراتژی‌های کلان یکپارچگی در سطح هلدینگ‌ها (Integration Strategies)</h3>
+<p>استاد خطیبی با بررسی سبد سرمایه‌گذاری هلدینگ‌های غدیر، شستا، بنیاد و سامسونگ، مسیرهای سه‌گانه یکپارچگی را تشریح کردند:
+1. <strong>یکپارچگی رو به جلو (Forward Integration):</strong> تملک یا کنترل کانال‌های توزیع و فروشگاه‌ها توسط تولیدکننده (مثال: افتتاح شعب فروشگاهی توسط چرم مشهد یا کاله).
+2. <strong>یکپارچگی رو به عقب (Backward Integration):</strong> تملک منابع تأمین مواد اولیه (مثال: احداث مزارع دامداری و تولید علوفه توسط کارخانجات لبنی، یا تملک معادن توسط فولادسازان).
 3. <strong>یکپارچگی افقی (Horizontal Integration):</strong> خرید، ادغام یا تملک رقبای مستقیم برای افزایش سهم بازار و صرفه‌جویی ناشی از مقیاس (مثال: خرید برندهای رقیب توسط هلدینگ‌های بهداشتی و شوینده).</p>
 <hr />
-<h3>۵.۶. ماتریس SWOT و تولید استراتژی‌های چهارگانه</h3>
-<p>در این مرحله، عوامل ماتریس IFE و EFE با هم تقاطع داده می‌شوند تا ۴ سناریوی عملیاتی خلق شود:<br />
-- <strong>استراتژی‌های تهاجمی (SO):</strong> استفاده از قوت‌های داخلی برای شکار فرصت‌های خارجی.<br />
-- <strong>استراتژی‌های رقابتی / انطباقی (ST):</strong> استفاده از قوت‌های سازمان برای مهار تهدیدهای محیطی.<br />
-- <strong>استراتژی‌های بازنگری / تغییر مسیر (WO):</strong> بهره‌برداری از فرصت‌های خارجی جهت برطرف کردن ضعف‌های درونی.<br />
+<h3 id="swot">۵.۶. ماتریس SWOT و تولید استراتژی‌های چهارگانه</h3>
+<p>در این مرحله، عوامل ماتریس IFE و EFE با هم تقاطع داده می‌شوند تا ۴ سناریوی عملیاتی خلق شود:
+- <strong>استراتژی‌های تهاجمی (SO):</strong> استفاده از قوت‌های داخلی برای شکار فرصت‌های خارجی.
+- <strong>استراتژی‌های رقابتی / انطباقی (ST):</strong> استفاده از قوت‌های سازمان برای مهار تهدیدهای محیطی.
+- <strong>استراتژی‌های بازنگری / تغییر مسیر (WO):</strong> بهره‌برداری از فرصت‌های خارجی جهت برطرف کردن ضعف‌های درونی.
 - <strong>استراتژی‌های تدافعی (WT):</strong> تلاش برای کاهش ضعف‌های داخلی و پرهیز از تهدیدهای خارجی (حالت بقا).</p>
 <hr />
-<h2>۶. انتخاب نهایی استراتژی با ماتریس برنامه‌ریزی کمی (QSPM)</h2>
+<h2 id="qspm">۶. انتخاب نهایی استراتژی با ماتریس برنامه‌ریزی کمی (QSPM)</h2>
 <p>ماتریس QSPM (Quantitative Strategic Planning Matrix) گام نهایی است که جذابیت نسبی هر یک از استراتژی‌های پیشنهادی SWOT را به صورت ریاضی ارزیابی می‌کند تا از تصمیم‌گیری‌های سلیقه‌ای، سیاسی و شهودی مدیران جلوگیری شود.</p>
-<h3>۶.۱. پنج گام اجرای ماتریس QSPM (اسلایدهای ۴۸ تا ۵۱)</h3>
+<h3 id="qspm_1">۶.۱. پنج گام اجرای ماتریس QSPM (اسلایدهای ۴۸ تا ۵۱)</h3>
 <ol>
 <li><strong>درج عوامل:</strong> ثبت دقیق تمامی قوت‌ها، ضعف‌ها، فرصت‌ها و تهدیدهای استخراج‌شده از EFE و IFE در ستون اول.</li>
 <li><strong>تخصیص وزن‌ها:</strong> درج دقیق وزن‌های تعیین‌شده در مراحل قبل (مجموع وزن‌ها در EFE و IFE).</li>
@@ -863,24 +992,24 @@
 </ol>
 <p><em>(تحلیل پرونده شرکت مهندسین مشاور صنعتی ایران در اسلاید ۵۱: مقایسه استراتژی توسعه بازارهای منطقه‌ای با استراتژی تنوع خدمات مهندسی).</em></p>
 <hr />
-<h2>۷. گفت‌وگوهای زنده کلاسی، چالش‌ها و دیالوگ‌های دانشجویان</h2>
-<h3>پرسش و پاسخ اول: راز شکست استراتژی‌های درخشان</h3>
+<h2 id="_12">۷. گفت‌وگوهای زنده کلاسی، چالش‌ها و دیالوگ‌های دانشجویان</h2>
+<h3 id="_13">پرسش و پاسخ اول: راز شکست استراتژی‌های درخشان</h3>
 <ul>
 <li><strong>پرسش شقایق:</strong> «استاد، چرا بسیاری از شرکت‌های ایرانی اسناد استراتژیک بسیار حجیم و چشم‌اندازهای درخشانی دارند اما در صحنه عمل هیچ اثری از آن دیده نمی‌شود و سازمان فلج است؟»</li>
 <li><strong>پاسخ استاد خطیبی:</strong> «چون مدیران فکر می‌کنند نوشتن استراتژی یعنی استخدام یک تیم مشاوره و بستن یک سند قطور! شکست استراتژی بیش از ۸۵ درصد ناشی از اجرای غلط و عدم همسوسازی ساختار و فرهنگ است. اگر ساختار پاداش شما همچنان به کارمندی که هیچ تلاشی برای استراتژی نکرده مثل بقیه پاداش بدهد، و اگر بودجه شرکت هنوز بر اساس چانه‌زنی سنتی توزیع شود نه اهداف استراتژیک، آن سند در قفسه خاک خواهد خورد.»</li>
 </ul>
-<h3>پرسش و پاسخ دوم: پیتر دراکر و پارادوکس فرهنگ سازمانی</h3>
+<h3 id="_14">پرسش و پاسخ دوم: پیتر دراکر و پارادوکس فرهنگ سازمانی</h3>
 <ul>
 <li><strong>پرسش نرگس:</strong> «آیا واقعاً طبق گزاره پیتر دراکر که می‌گوید "Culture eats strategy for breakfast"، فرهنگ همیشه استراتژی را می‌بلعد؟ آیا ما نمی‌توانیم فرهنگ را سریعاً با استراتژی جدید هماهنگ کنیم؟»</li>
 <li><strong>پاسخ استاد خطیبی:</strong> «فرهنگ لایه‌ای رسوبی از عادات، باورها و منافع پنهان انسانی در سازمان است. شما نمی‌توانید با یک بخشنامه اداری فرهنگ را یک‌شبه تغییر دهید. اگر فرهنگ موجود در تضاد با استراتژی باشد، بله! استراتژی را در صبحانه می‌بلعد! راهکار چیست؟ مدیرعامل باید از تغییر رفتارهای کوچک، اصلاح معیارهای تشویق و ارتقا، و الگو بودن لایه‌های ارشد آغاز کند تا طی ماه‌ها و سال‌ها، فرهنگ سازمان در خدمت استراتژی درآید.»</li>
 </ul>
-<h3>پرسش و پاسخ سوم: جایگاه واقعی منابع انسانی (HR) در هلدینگ‌ها</h3>
+<h3 id="hr">پرسش و پاسخ سوم: جایگاه واقعی منابع انسانی (HR) در هلدینگ‌ها</h3>
 <ul>
 <li><strong>پرسش مهلیا:</strong> «نقش معاونت منابع انسانی در اجرای استراتژی چیست؟ آیا باید یک واحد صف باشد یا ستاد؟»</li>
 <li><strong>پاسخ استاد خطیبی:</strong> «منابع انسانی در تراز استراتژیک، دروازه‌بان شایستگی‌هاست. اگر استراتژی شما حرکت به سمت دیجیتالیزاسیون یا صادرات است اما واحد HR شما هنوز با معیارهای ۱۰ سال پیش مصاحبه می‌کند و افراد بی‌انگیزه را استخدام می‌نماید، استراتژی پیش از تولد مرده است. HR در هلدینگ باید یک ستاد راهبردی باشد که ماتریس شایستگی‌ها را با چشم‌انداز شرکت همسو می‌سازد.»</li>
 </ul>
 <hr />
-<h2>۸. منشور اقدامات دوشنبه صبح مدیرعامل (CEO Execution Mandate)</h2>
+<h2 id="ceo-execution-mandate">۸. منشور اقدامات دوشنبه صبح مدیرعامل (CEO Execution Mandate)</h2>
 <p>استاد خطیبی کلاس را با چهار فرمان اجرایی و فوری برای مدیران عامل خاتمه دادند:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
   <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-700">
@@ -910,14 +1039,13 @@
 </div>
 
 <hr />
-<h2>۹. پیوندها و گام‌های بعدی در نقشه راه دوره</h2>
+<h2 id="_15">۹. پیوندها و گام‌های بعدی در نقشه راه دوره</h2>
 <ul>
 <li><strong>پرونده تفصیلی جلسه اول:</strong> [[Session_01_Notes]]</li>
 <li><strong>هندبوک جامع دوره:</strong> [[MBA_Strategy_Implementation_Master_Handbook]]</li>
 <li><strong>نقشه دانش کلان (MOC):</strong> [[00_MBA_Strategy_Implementation_MOC]]</li>
 <li><strong>پیش‌درآمد جلسه سوم:</strong> طراحی شاخص‌های کلیدی عملکرد (KPI)، ساختار کارت امتیازی متوازن (BSC)، و سیستم‌های مانیتورینگ عملکرد.</li>
-</ul>
-        </div>
+</ul></div>
       </div>
 
     </section>
@@ -958,8 +1086,8 @@
           <div>
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
-                <span>۲. همسوسازی پاداش و مشوق‌ها (Incentive Alignment)</span>
-                <span class="text-xs font-normal text-slate-500">(درصد مدیرانی که پاداش آنان مستقیماً به استراتژی متصل است)</span>
+                <span>۲. همسوسازی پاداش‌ها و مشوق‌ها (Incentive Alignment)</span>
+                <span class="text-xs font-normal text-slate-500">(درصد مدیرانی که پاداش آنان مستقیماً به اهداف استراتژیک متصل است)</span>
               </label>
               <span id="val-b2" class="text-xs font-black text-blue-700 bg-blue-100 px-2 py-0.5 rounded">۲۵٪ (ضعیف)</span>
             </div>
@@ -1003,22 +1131,22 @@
     <!-- TAB: HANDBOOK -->
     <section id="content-handbook" class="tab-content hidden space-y-6">
       <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-10 space-y-8 prose-custom">
-        <h1>دانشنامه جامع و راهنمای مرجع اجرایی (Master Handbook)</h1>
-<h2>اجرا و کنترل استراتژیک در تراز رهبری ارشد کسب‌وکار (Strategy Implementation &amp; Strategic Control)</h2>
+        <h1 id="master-handbook">دانشنامه جامع و راهنمای مرجع اجرایی (Master Handbook)</h1>
+<h2 id="strategy-implementation-strategic-control">اجرا و کنترل استراتژیک در تراز رهبری ارشد کسب‌وکار (Strategy Implementation &amp; Strategic Control)</h2>
 <p><strong>مرجع علمی و آکادمیک:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>مدرس دوره:</strong> استاد خطیبی<br />
 <strong>طراحی، تدوین ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
 <strong>نسخه سند:</strong> ۲.۰ (پاییز ۱۴۰۵ - تجمیع تحلیلی جلسات ۰۱ و ۰۲)</p>
 <hr />
-<h1>بخش اول: مانیفست بنیادین و چهارچوب اجرایی کاپلان و نورتون</h1>
-<h2>۱. عبور از شکاف استراتژی-عملکرد (Strategy-to-Execution Gap)</h2>
+<h1 id="_1">بخش اول: مانیفست بنیادین و چهارچوب اجرایی کاپلان و نورتون</h1>
+<h2 id="-strategy-to-execution-gap">۱. عبور از شکاف استراتژی-عملکرد (Strategy-to-Execution Gap)</h2>
 <p>بسیاری از سازمان‌ها سالانه مبالغ سنگینی صرف تدوین اسناد پرزرق‌وبرق می‌کنند، اما در مرحله پیاده‌سازی با بن‌بست مواجه می‌شوند. پژوهش‌های مدرسه کسب‌وکار هاروارد و گزاره محوری استاد خطیبی نشان می‌دهد که:</p>
 <blockquote>
 <p><strong>«بین ۷۰ تا ۹۰ درصد استراتژی‌ها در دستیابی به اهداف از پیش تعیین‌شده خود شکست می‌خورند؛ و علت این ناکامی در بیش از ۸۵ درصد موارد، نه استراتژی غلط، بلکه اجرای عقیم، ناهماهنگی ساختاری، تضاد مشوق‌ها و مقاومت‌های پنهان سازمانی است.»</strong></p>
 </blockquote>
 <p>تدوین استراتژی فعالیتی تحلیلی، عقلانی و متمرکز در سطح نخبگان است؛ اما <strong>اجرا یک فرآیند پیچیده رفتاری، گسترده، فرسایشی و روان‌شناختی</strong> است که مستلزم همسویی قلب و ذهن تک‌تک سطوح عملیاتی است.</p>
 <hr />
-<h2>۲. چهار مانع مهلک اجرای استراتژی (مدل رابرت کاپلان و دیوید نورتون)</h2>
+<h2 id="_2">۲. چهار مانع مهلک اجرای استراتژی (مدل رابرت کاپلان و دیوید نورتون)</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
   <div class="p-4 rounded-xl bg-slate-800/80 border border-amber-500/30">
     <div class="text-amber-400 font-bold text-sm mb-1">۱. مانع چشم‌انداز (Vision Barrier)</div>
@@ -1039,15 +1167,15 @@
 </div>
 
 <hr />
-<h1>بخش دوم: دانشنامه تفصیلی جلسه اول (چالش‌های بنیادین، موانع ۴‌گانه و سیستم‌های کنترل)</h1>
-<h1>اجرا و کنترل استراتژیک - جلسه اول: چالش‌های بنیادین اجرا، شکاف استراتژی-عملکرد و معماری پیاده‌سازی</h1>
+<h1 id="_3">بخش دوم: دانشنامه تفصیلی جلسه اول (چالش‌های بنیادین، موانع ۴‌گانه و سیستم‌های کنترل)</h1>
+<h1 id="-">اجرا و کنترل استراتژیک - جلسه اول: چالش‌های بنیادین اجرا، شکاف استراتژی-عملکرد و معماری پیاده‌سازی</h1>
 <p><strong>مدرس:</strong> استاد خطیبی<br />
 <strong>مرجع:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: mba-sm05--06-1)<br />
 <strong>تاریخ برگزاری:</strong> ۲۶ شهریور ۱۴۰۵<br />
 <strong>تنظیم و تدوین جامع:</strong> پارسا رضائی (Parsa Rezaie)</p>
 <hr />
-<h2>۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
-<h3>۱.۱. جوهره و مانیفست بنیادین تدریس استاد خطیبی</h3>
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_4">۱.۱. جوهره و مانیفست بنیادین تدریس استاد خطیبی</h3>
 <p>جلسه نخست درس «اجرا و کنترل استراتژیک» در دانشکده اقتصاد دانشگاه تهران، نقطه‌عطفی در تنظیم دوبارهٔ ذهنیت دانش‌پژوهان گرایش مدیریت استراتژیک MBA نسبت به واقعیت‌های دنیای کسب‌وکار است. پیام محوری استاد خطیبی در این جلسه در یک گزاره کلیدی خلاصه می‌شود: <strong>«ایده‌ها و سندهای استراتژیک ارزانند؛ این قابلیت بی‌نقص در اجراست که ارزش‌آفرینی واقعی، ثروت و مزیت رقابتی پایدار می‌سازد.»</strong></p>
 <p>در تفکر سنتی مدیریت، تمرکز اصلی بر فاز تدوین (Strategy Formulation) و ابزارهای تحلیلی پیچیده بود. اما تجربه بیش از دو دهه تدریس آکادمیک و مشاوره عالی استاد خطیبی در بزرگ‌ترین هولدینگ‌ها و گروه‌های صنعتی ایران (نظیر عظام، داروپخش، سرمایه‌گذاری غدیر، خوشگوار، علوم سبز، چوپان، پرنان‌سوز یزد و...) نشان می‌دهد که فرآیند استراتژی یک سه‌گانه پیوسته و تفکیک‌ناپذیر است: <strong>تدوین (Formulation)، اجرا (Implementation) و کنترل (Control)</strong>.</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
@@ -1056,9 +1184,9 @@
   <div>(تفکر، تحلیل، انتخاب)         (عمل، تغییر، همسوسازی)         (پایش، بازخورد، اصلاح)</div>
 </div>
 
-<h3>۱.۲. پارادوکس اجرای استراتژی و شکاف عملکرد (Strategy-to-Performance Gap)</h3>
-<p>تحقیقات تجربی تجاربی متعددی نشان می‌دهند که بین ۶۰ تا ۹۰ درصد استراتژی‌های جامع و درخشان سازمان‌ها در مرحله پیاده‌سازی با شکست مواجه می‌شوند یا به کمتر از ۵۰ درصد اهداف خود دست می‌یابند. این پدیده که به <strong>«شکاف استراتژی-عملکرد»</strong> شهرت دارد، ناشی از یک پارادوکس بنیادین در مدیریت است:<br />
-- <strong>تدوین استراتژی:</strong> فرآیندی عمدتاً تحلیلی، فکری، متمرکز بر عدد و رقم، و متعلق به اتاق‌های فکر و سطوح ارشد مدیریتی است (کار ذهن).<br />
+<h3 id="strategy-to-performance-gap">۱.۲. پارادوکس اجرای استراتژی و شکاف عملکرد (Strategy-to-Performance Gap)</h3>
+<p>تحقیقات تجربی تجاربی متعددی نشان می‌دهند که بین ۶۰ تا ۹۰ درصد استراتژی‌های جامع و درخشان سازمان‌ها در مرحله پیاده‌سازی با شکست مواجه می‌شوند یا به کمتر از ۵۰ درصد اهداف خود دست می‌یابند. این پدیده که به <strong>«شکاف استراتژی-عملکرد»</strong> شهرت دارد، ناشی از یک پارادوکس بنیادین در مدیریت است:
+- <strong>تدوین استراتژی:</strong> فرآیندی عمدتاً تحلیلی، فکری، متمرکز بر عدد و رقم، و متعلق به اتاق‌های فکر و سطوح ارشد مدیریتی است (کار ذهن).
 - <strong>اجرای استراتژی:</strong> فرآیندی عمیقاً رفتاری، جامعه‌شناختی، انگیزشی، عملیاتی و نیازمند همراهی و درگیرسازی تمام لایه‌های انسانی سازمان است (کار دل و دست).</p>
 <p>شکست در اجرا معمولاً ناشی از بی‌کیفیتی طرح استراتژیک نیست، بلکه حاصل عجز سازمان در ترجمهٔ مفاهیم انتزاعی به رفتارهای روزمره عملیاتی است.</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
@@ -1072,18 +1200,18 @@
   <div>ثروت و زمان تلف‌شده            | (Instant Death)</div>
 </div>
 
-<h3>۱.۳. گذار ساختاری از تدوین به اجرا</h3>
-<p>استاد خطیبی تأکید کردند که فاز اجرا، نیازمند تغییر ابزارها و لغات مدیریتی است. اگر در فاز تدوین با «ماتریس SWOT»، «پنج نیروی پورتر»، «ماتریس BCG» و «تحلیل VRIO» سر و کار داشتیم، در فاز اجرا باید بر موارد زیر متمرکز شویم:<br />
-1. <strong>ترجمه استراتژی به نقشه راه عملیاتی:</strong> (استفاده از فریم‌ورک‌های Balanced Scorecard و OKR).<br />
-2. <strong>همسوسازی ساختار و فرهنگ (Organizational Alignment):</strong> بازطراحی چیدمان قدرت، سیستم‌های پاداش و ارزیابی عملکرد.<br />
+<h3 id="_5">۱.۳. گذار ساختاری از تدوین به اجرا</h3>
+<p>استاد خطیبی تأکید کردند که فاز اجرا، نیازمند تغییر ابزارها و لغات مدیریتی است. اگر در فاز تدوین با «ماتریس SWOT»، «پنج نیروی پورتر»، «ماتریس BCG» و «تحلیل VRIO» سر و کار داشتیم، در فاز اجرا باید بر موارد زیر متمرکز شویم:
+1. <strong>ترجمه استراتژی به نقشه راه عملیاتی:</strong> (استفاده از فریم‌ورک‌های Balanced Scorecard و OKR).
+2. <strong>همسوسازی ساختار و فرهنگ (Organizational Alignment):</strong> بازطراحی چیدمان قدرت، سیستم‌های پاداش و ارزیابی عملکرد.
 3. <strong>رهبری تغییر (Change Leadership):</strong> مدیریت مقاومت‌های رفتاری و ایجاد اشتیاق سازمانی.</p>
-<h3>۱.۴. ۳ اولویت حیاتی مدیرعامل فردا صبح برای ارزیابی قابلیت اجرا</h3>
-<p>استاد خطیبی ۳ اولویت کلیدی را برای هر مدیرعاملی که قصد دارد از فردا صبح قابلیت اجرای سازمان خود را بسنجد، مطرح کردند:<br />
-۱. <strong>سنجش میزان فهم و درک عمومی از استراتژی:</strong> آیا بدنه عملیاتی و مدیران میانی دقیقاً می‌دانند استراتژی سازمان چیست و نقش روزمره آن‌ها در تحقق آن چگونه تعریف شده است؟<br />
-۲. <strong>بازبینی اتصال بودجه و سیستم پاداش به اهداف استراتژیک:</strong> آیا منابع مالی به اولویت‌های استراتژیک تخصیص یافته‌اند یا بر اساس روال‌های تاریخی سنتی؟ آیا پاداش افراد بر اساس تحقق اهداف استراتژیک است یا صرفاً انجام وظایف جاری؟<br />
+<h3 id="_6">۱.۴. ۳ اولویت حیاتی مدیرعامل فردا صبح برای ارزیابی قابلیت اجرا</h3>
+<p>استاد خطیبی ۳ اولویت کلیدی را برای هر مدیرعاملی که قصد دارد از فردا صبح قابلیت اجرای سازمان خود را بسنجد، مطرح کردند:
+۱. <strong>سنجش میزان فهم و درک عمومی از استراتژی:</strong> آیا بدنه عملیاتی و مدیران میانی دقیقاً می‌دانند استراتژی سازمان چیست و نقش روزمره آن‌ها در تحقق آن چگونه تعریف شده است؟
+۲. <strong>بازبینی اتصال بودجه و سیستم پاداش به اهداف استراتژیک:</strong> آیا منابع مالی به اولویت‌های استراتژیک تخصیص یافته‌اند یا بر اساس روال‌های تاریخی سنتی؟ آیا پاداش افراد بر اساس تحقق اهداف استراتژیک است یا صرفاً انجام وظایف جاری؟
 ۳. <strong>بررسی سیستم‌های پایش و کنترل استراتژیک:</strong> آیا سازمان دارای داشبورد مدیریتی مکانیزه برای رصد لحظه‌ای پیشرفت شاخص‌ها است یا کنترل‌ها صرفاً پس از وقوع انحرافات مالی و عملیاتی (بعد از مرگ سهراب) صورت می‌گیرند؟</p>
 <hr />
-<h2>۲. نقشه مفهومی و سیر منطقی تدریس (Lecture Flow &amp; Conceptual Roadmap)</h2>
+<h2 id="lecture-flow-conceptual-roadmap">۲. نقشه مفهومی و سیر منطقی تدریس (Lecture Flow &amp; Conceptual Roadmap)</h2>
 <p>کلاس جلسه اول استاد خطیبی بر اساس یک سیر آموزشی ۵ مرحله‌ای طراحی شد تا دانشجویان گرایش استراتژیک، از بدو ورود به فضای کلاس، نگارش و فهم عمیقی از فلسفه دوره پیدا کنند.</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>سیر منطقی جلسات و مباحث کلاس</div>
@@ -1094,35 +1222,35 @@
   <div>مرحله ۵: استعاره‌های تجسمی       --->  مدل خورشید، کاروان‌سرا، جاده و گاردریل</div>
 </div>
 
-<h3>۲.۱. مرحله ۱: آغاز کلاس، معارفه شبکه دانشجویان و ساختار کلاس</h3>
-<p>جلسه با معرفی تک‌تک دانشجویان حضوری و آنلاین شروع شد. این مرحله صرفاً یک معارفه ساده نبود، بلکه تعمداً برای شبکه سازی و ایجاد تنوع در تجارب تخصصی طراحی شد. تنوع حوزه‌های کاری دانشجویان حاضر در کلاس عبارت بود از:<br />
-- <strong>شغایق فتحی (TA کلاس):</strong> کارشناس ارشد مترجمی زبان انگلیسی از دانشگاه قزوین/بین‌المللی امام خمینی، فعال در حوزه بازرگانی خارجی، واردات و صادرات تجهیزات صنعتی، لوازم خانگی و قطعات پتروشیمی (شرکت تاجران برق و صنعت).<br />
-- <strong>نرگس نعمتی‌پور:</strong> دکتری معماری از دانشگاه دولتی تبریز، فعال در حوزه معماری بازرگانی، صادرات و واردات متریال‌های تخصصی ساختمان.<br />
-- <strong>مهلیا سیمایی:</strong> مهندسی شیمی و طراح لباس با ۱۰ سال سابقه در صنعت فشن، مدیر خلاقیت سابق برند انجلاتیا (برند کانادایی)، و مستشار فعلی استراتژی برندهای فشن.<br />
-- <strong>مریم سپهری:</strong> کارشناسی مدیریت بازرگانی از دانشگاه تبریز، تحلیل‌گر بازارهای مالی، مربی روانشناسی معامله‌گری و بنیان‌گذار برند پارایول.<br />
-- <strong>علی سبزعلی جماعت:</strong> مدیریت اداری، بنیان‌گذار اپلیکیشن سه‌بعدی دکوراسیون و مبلمان «دیدار».<br />
-- <strong>مهدیس ایمانی:</strong> کارشناسی شیمی کاربردی، ارشد اقتصاد از دانشگاه تهران، معاون مدرسه و فعال آموزشی.<br />
-- <strong>آقای خندان:</strong> تحصیل‌کرده فلسفه و منطق غرب از دانشگاه تهران، واردکننده مواد شیمیایی، تولیدکننده پارکت و مبلمان.<br />
-- <strong>علی عشایری:</strong> فعال صنعت آسانسور (تولید، فروش، نصب، خدمات و بازرسی فنی).<br />
-- <strong>سجاد وحیدی:</strong> کارشناسی زمین‌شناسی از دانشگاه شهید بهشتی، مدیرعامل روزنامه تجارت/شط‌آسیا، مشاور استراتژی آفتاب‌خودرو و شرکت‌های صنعتی.<br />
-- <strong>سیما ضیاخواه:</strong> تحصیل‌کرده شهرسازی از دانشگاه شهید بهشتی، با ۲۰ سال سابقه مدیریت پروژه‌های شهری و عمرانی.<br />
-- <strong>میلاد ولی‌زاده:</strong> مهندسی برق، فعال در هولدینگ همراه اول (برج همراه، شرکت‌های زیرمجموعه) و بنیان‌گذار استارتاپ بین‌المللی.<br />
-- <strong>سینا طلوعی:</strong> کارشناسی و ارشد مهندسی انرژی از دانشگاه امیرکبیر، هماهنگ‌کننده پروژه‌های خرید هولدینگ‌های معدنی و لاستیک‌سازی (گهرزمین، بارز).<br />
-- <strong>غزاله یوسف‌زاده:</strong> ورود ورودی ۸۱ مهندسی مواد گرم‌ساز، سابقه کار در دانشکده سروش و صداوسیما، فعال کسب‌وکارهای هنری و دست‌سازه‌ها.<br />
-- <strong>مهدی حمزه:</strong> مهندسی صنایع از دانشگاه علم و صنعت، ۲۳ سال سابقه اجرایی در ایران‌خودرو و مهندسی و ساخت تأسیسات دریایی ایران (IOEC).<br />
-- <strong>ندا درویشی:</strong> کارشناسی اقتصاد، فعال در واردات چوب از روسیه و صادرات میوه/خشکبار به روسیه، دارای برند تخصصی چوب.<br />
-- <strong>سو / سوء صوفیادیان:</strong> تحصیل‌کرده علوم سیاسی از دانشگاه تهران، آموزشگاه‌دار زبان، مولف کتاب‌های انگلیسی، بنیان‌گذار انتشارات «مومنتوم».<br />
+<h3 id="_7">۲.۱. مرحله ۱: آغاز کلاس، معارفه شبکه دانشجویان و ساختار کلاس</h3>
+<p>جلسه با معرفی تک‌تک دانشجویان حضوری و آنلاین شروع شد. این مرحله صرفاً یک معارفه ساده نبود، بلکه تعمداً برای شبکه سازی و ایجاد تنوع در تجارب تخصصی طراحی شد. تنوع حوزه‌های کاری دانشجویان حاضر در کلاس عبارت بود از:
+- <strong>شغایق فتحی (TA کلاس):</strong> کارشناس ارشد مترجمی زبان انگلیسی از دانشگاه قزوین/بین‌المللی امام خمینی، فعال در حوزه بازرگانی خارجی، واردات و صادرات تجهیزات صنعتی، لوازم خانگی و قطعات پتروشیمی (شرکت تاجران برق و صنعت).
+- <strong>نرگس نعمتی‌پور:</strong> دکتری معماری از دانشگاه دولتی تبریز، فعال در حوزه معماری بازرگانی، صادرات و واردات متریال‌های تخصصی ساختمان.
+- <strong>مهلیا سیمایی:</strong> مهندسی شیمی و طراح لباس با ۱۰ سال سابقه در صنعت فشن، مدیر خلاقیت سابق برند انجلاتیا (برند کانادایی)، و مستشار فعلی استراتژی برندهای فشن.
+- <strong>مریم سپهری:</strong> کارشناسی مدیریت بازرگانی از دانشگاه تبریز، تحلیل‌گر بازارهای مالی، مربی روانشناسی معامله‌گری و بنیان‌گذار برند پارایول.
+- <strong>علی سبزعلی جماعت:</strong> مدیریت اداری، بنیان‌گذار اپلیکیشن سه‌بعدی دکوراسیون و مبلمان «دیدار».
+- <strong>مهدیس ایمانی:</strong> کارشناسی شیمی کاربردی، ارشد اقتصاد از دانشگاه تهران، معاون مدرسه و فعال آموزشی.
+- <strong>آقای خندان:</strong> تحصیل‌کرده فلسفه و منطق غرب از دانشگاه تهران، واردکننده مواد شیمیایی، تولیدکننده پارکت و مبلمان.
+- <strong>علی عشایری:</strong> فعال صنعت آسانسور (تولید، فروش، نصب، خدمات و بازرسی فنی).
+- <strong>سجاد وحیدی:</strong> کارشناسی زمین‌شناسی از دانشگاه شهید بهشتی، مدیرعامل روزنامه تجارت/شط‌آسیا، مشاور استراتژی آفتاب‌خودرو و شرکت‌های صنعتی.
+- <strong>سیما ضیاخواه:</strong> تحصیل‌کرده شهرسازی از دانشگاه شهید بهشتی، با ۲۰ سال سابقه مدیریت پروژه‌های شهری و عمرانی.
+- <strong>میلاد ولی‌زاده:</strong> مهندسی برق، فعال در هولدینگ همراه اول (برج همراه، شرکت‌های زیرمجموعه) و بنیان‌گذار استارتاپ بین‌المللی.
+- <strong>سینا طلوعی:</strong> کارشناسی و ارشد مهندسی انرژی از دانشگاه امیرکبیر، هماهنگ‌کننده پروژه‌های خرید هولدینگ‌های معدنی و لاستیک‌سازی (گهرزمین، بارز).
+- <strong>غزاله یوسف‌زاده:</strong> ورود ورودی ۸۱ مهندسی مواد گرم‌ساز، سابقه کار در دانشکده سروش و صداوسیما، فعال کسب‌وکارهای هنری و دست‌سازه‌ها.
+- <strong>مهدی حمزه:</strong> مهندسی صنایع از دانشگاه علم و صنعت، ۲۳ سال سابقه اجرایی در ایران‌خودرو و مهندسی و ساخت تأسیسات دریایی ایران (IOEC).
+- <strong>ندا درویشی:</strong> کارشناسی اقتصاد، فعال در واردات چوب از روسیه و صادرات میوه/خشکبار به روسیه، دارای برند تخصصی چوب.
+- <strong>سو / سوء صوفیادیان:</strong> تحصیل‌کرده علوم سیاسی از دانشگاه تهران، آموزشگاه‌دار زبان، مولف کتاب‌های انگلیسی، بنیان‌گذار انتشارات «مومنتوم».
 - <strong>آیدا رجب‌لاریجانی:</strong> جوان‌ترین عضو کلاس (متولد ۱۳۸۳)، ریاضی کاربردی دانشگاه الزهرا، مربی شنا و نقاش.</p>
-<h3>۲.۲. مرحله ۲: تبیین ۵ رکن آموزشی دوره</h3>
-<p>استاد خطیبی ۵ چارچوب محوری دوره را به شرح زیر ریل‌گذاری نمودند:<br />
-۱. <strong>آشنایی و متناسب‌سازی ذهنیت (Alignment):</strong> یکسان‌سازی ادبیات استراتژیک دانشجویان بر مبنای تجارب متنوعشان.<br />
-۲. <strong>طرح درس و ساختار فرآیند سه‌گانه:</strong> بررسی ۵ گام کلیدی از هدف‌گذاری تا کنترل.<br />
-۳. <strong>نظام ارزیابی کلاسی و تشکیل گروه‌های کاری:</strong> ارزیابی مستمر از طریق گروه‌های کاری تلگرامی، سناریوهای هفتگی، مشارکت در کلاس آنلاین/حضوری بدون اتکا بر امتحان کتبی محض.<br />
-۴. <strong>معرفی مراجع و منبع‌شناسی تخصصی:</strong> بررسی جامع کتاب‌های مرجع داخلی و بین‌المللی.<br />
+<h3 id="_8">۲.۲. مرحله ۲: تبیین ۵ رکن آموزشی دوره</h3>
+<p>استاد خطیبی ۵ چارچوب محوری دوره را به شرح زیر ریل‌گذاری نمودند:
+۱. <strong>آشنایی و متناسب‌سازی ذهنیت (Alignment):</strong> یکسان‌سازی ادبیات استراتژیک دانشجویان بر مبنای تجارب متنوعشان.
+۲. <strong>طرح درس و ساختار فرآیند سه‌گانه:</strong> بررسی ۵ گام کلیدی از هدف‌گذاری تا کنترل.
+۳. <strong>نظام ارزیابی کلاسی و تشکیل گروه‌های کاری:</strong> ارزیابی مستمر از طریق گروه‌های کاری تلگرامی، سناریوهای هفتگی، مشارکت در کلاس آنلاین/حضوری بدون اتکا بر امتحان کتبی محض.
+۴. <strong>معرفی مراجع و منبع‌شناسی تخصصی:</strong> بررسی جامع کتاب‌های مرجع داخلی و بین‌المللی.
 ۵. <strong>درس و ورود به هسته سخت موضوعات:</strong> کالبدشکافی ارکان جهت‌ساز و شکاف اجرا.</p>
 <hr />
-<h2>۳. کالبدشکافی تئوریک: شکاف استراتژی-عملکرد و ریشه‌یابی موانع پیاده‌سازی (Theoretical Foundations)</h2>
-<h3>۳.۱. تحلیل عمیق شکاف استراتژی-عملکرد (Strategy-to-Performance Gap)</h3>
+<h2 id="-theoretical-foundations">۳. کالبدشکافی تئوریک: شکاف استراتژی-عملکرد و ریشه‌یابی موانع پیاده‌سازی (Theoretical Foundations)</h2>
+<h3 id="-strategy-to-performance-gap">۳.۱. تحلیل عمیق شکاف استراتژی-عملکرد (Strategy-to-Performance Gap)</h3>
 <p>شکاف استراتژی-عملکرد، تفاوت میان میزان ارزش تخمین‌زده‌شده در سند استراتژی و ارزش واقعی تحقق‌یافته در صورت‌های مالی و سهم بازار سازمان است. استاد خطیبی با اشاره به تحقیقات رابرت کاپلان و دیوید نورتون (بنیان‌گذاران BSC) و همچنین مطالعات موسسه مک‌کینزی، موانع چهارگانه مهلک در پیاده‌سازی استراتژی را تبیین کردند:</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>۴ مانع مهلک در اجرای استراتژی (کاپلان و نورتون)</div>
@@ -1132,15 +1260,15 @@
   <div>۴. مانع منابع (Resource Barrier)     | ۶۰٪ از سازمان‌ها بودجه مالی را به استراتژی متصل نمی‌کنند.</div>
 </div>
 
-<h4>۱. مانع چشم‌انداز (The Vision Barrier)</h4>
+<h4 id="the-vision-barrier">۱. مانع چشم‌انداز (The Vision Barrier)</h4>
 <p>تنها حدود ۵ درصد از بدنه عملیاتی سازمان‌ها، استراتژی و چشم‌انداز ارشد را می‌فهمند. بیانیه‌های استراتژیک در غالب سازمان‌ها به لغات کلیشه‌ای، لوکس و مبهم تبدیل می‌شوند که هیچ دلالت رفتاری برای یک کارگر خط تولید، کارشناس فروش یا مسئول پشتیبانی ندارد.</p>
-<h4>۲. مانع افراد و انگیزش (The People Barrier)</h4>
+<h4 id="the-people-barrier">۲. مانع افراد و انگیزش (The People Barrier)</h4>
 <p>در بیش از ۷۵ درصد سازمان‌ها، شاخص‌های کلیدی عملکرد (KPI) و پاداش‌های دریافتی افراد هیچ ارتباطی با تحقق اهداف استراتژیک ندارد. فرد برای انجام کارهای روزمره و روتین پاداش می‌گیرد، نه برای تلاش در جهت تحقق اهداف تحول‌آفرین استراتژیک.</p>
-<h4>۳. مانع ارزیابی و تمرکز مدیریتی (The Management Barrier)</h4>
+<h4 id="the-management-barrier">۳. مانع ارزیابی و تمرکز مدیریتی (The Management Barrier)</h4>
 <p>بیش از ۸۵ درصد از تیم‌های مدیریتی، در جلسات ماهانه خود کمتر از یک ساعت را به بحث و بررسی استراتژی تخصیص می‌دهند. باقی زمان صرف اطفای حریق‌های روزمره (Firefighting)، حل بحران‌های جاری و بررسی انحرافات بودجه عملیاتی می‌شود.</p>
-<h4>۴. مانع منابع (The Resource Barrier)</h4>
+<h4 id="the-resource-barrier">۴. مانع منابع (The Resource Barrier)</h4>
 <p>در بیش از ۶۰ درصد سازمان‌ها، فرآیند بودجه‌ریزی سالانه مالی هیچ ارتباطی با سند استراتژی ندارد. بودجه بر اساس چانه‌زنی‌های سیاسی واحدهای مختلف و روال سنتی سال قبل (علاوه بر درصد تورم) توزیع می‌شود، نه بر اساس اولویت‌های برنامه راهبردی.</p>
-<h3>۳.۲. فرآیند ۶ گام مدیریت استراتژیک</h3>
+<h3 id="_9">۳.۲. فرآیند ۶ گام مدیریت استراتژیک</h3>
 <p>برای درک جایگاه اجرا، استاد خطیبی فرآیند جامع مدیریت استراتژیک را در ۶ گام و ۱۵ سند خروجی تفکیک کردند:</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>فرآیند ۶ گام مدیریت استراتژیک</div>
@@ -1154,7 +1282,7 @@
 </div>
 
 <hr />
-<h2>۴. کالبدشکافی عمیق ارکان جهت‌ساز (Goal Setting &amp; Directional Fundamentals)</h2>
+<h2 id="goal-setting-directional-fundamentals">۴. کالبدشکافی عمیق ارکان جهت‌ساز (Goal Setting &amp; Directional Fundamentals)</h2>
 <p>استاد خطیبی بخش عمده‌ای از زمان آموزشی جلسه اول را به بازخوانی، اصلاح بدفهمی‌ها و کالبدشکافی عمیق گام اول (ارکان جهت‌ساز یا MVs: Mission, Vision, Values) اختصاص دادند. فهم صحیح این ارکان، پیش‌شرط الزامی طراحی سیستم اجرا و کنترل است.</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>مقایسه تحلیلی ارکان جهت‌ساز سازمان (MVs)</div>
@@ -1166,14 +1294,14 @@
   <div>**استعاره راهبردی**| خورشید در افق بی‌انتها        | قله کوه / کاروان‌سرا    | گاردریل‌های جاده</div>
 </div>
 
-<h3>۴.۱. بیانیه ماموریت (Mission Statement / رسالت)</h3>
+<h3 id="mission-statement">۴.۱. بیانیه ماموریت (Mission Statement / رسالت)</h3>
 <p>ماموریت، پاسخ دقیق سازمان به این سوال وجودی است: <strong>«چرا هستیم؟ (Why do we exist?)»</strong>. ماموریت فلسفه وجودی، دلیل تاسیس (علةالتأسیس) و علت بقای سازمان است.</p>
-<h4>ویژگی‌های بنیادی ماموریت:</h4>
+<h4 id="_10">ویژگی‌های بنیادی ماموریت:</h4>
 <ol>
 <li><strong>افق زمانی بی‌انتها:</strong> ماموریت تاریخ انقضا ندارد؛ تا زمانی که سازمان زنده است، ماموریت برقرار است.</li>
 <li><strong>ماهیت کیفی:</strong> ماموریت به هیچ عنوان دارای اعداد، ارقام، درصد یا تاریخ نیست.</li>
 <li><strong>دست‌نیافتنی بودن مطلق در عین هدایت‌گری:</strong> مانند خورشید است؛ شما به سمت خورشید حرکت می‌کنید، از نور آن جهت می‌گیرید، اما هرگز به خود خورشید نمی‌رسید و آن را در جیب خود نمی‌گذارید!</li>
-<li><strong>ریشه‌دوانی در نیازهای آفرینش و جامعه:</strong><br />
+<li><strong>ریشه‌دوانی در نیازهای آفرینش و جامعه:</strong>
    استاد خطیبی تمایز دقیق و مفصلی میان سه مفهوم اقتصادی/بازاریابی قائل شدند:</li>
 <li><strong>نیاز (Need):</strong> امر ذاتی، فطری، کشف‌شدنی و غیرقابل خلق توسط بشر (مانند نیاز به غذا، امنیت، ارتباط، جابه‌جایی).</li>
 <li><strong>خواسته (Want):</strong> تجلی و شکل برآورده ساختن نیاز بر اساس فرهنگ و تکنولوژی (مانند خواستهٔ چلوکباب برای نیاز به غذا، یا خواستهٔ خودرو برای نیاز به جابه‌جایی).</li>
@@ -1183,7 +1311,7 @@
        (غیرقابل خلق)                       (قابل طراحی)                        (هدف بازار)
 </code></pre>
 <p>سازمانی که ماموریت خود را بر پایه یک <strong>«خواسته»</strong> یا <strong>«محصول خاص»</strong> تعریف کند، با تغییر تکنولوژی نابود می‌شود (بازاریابی کور یا Marketing Myopia). اما سازمانی که ماموریت خود را بر پایه <strong>«نیاز بنیادین»</strong> تعریف کند، جاویدان خواهد بود.</p>
-<h4>عناصر ۵ گانه بیانیه ماموریت استاندارد (4W + 1H):</h4>
+<h4 id="4w-1h">عناصر ۵ گانه بیانیه ماموریت استاندارد (4W + 1H):</h4>
 <ul>
 <li><strong>Who We Are:</strong> ما کیستیم؟ (هویت سازمان)</li>
 <li><strong>What We Do:</strong> چه ارزش یا محصولی ارائه می‌دهیم؟ (نیاز پاسخ‌داده‌شده)</li>
@@ -1196,15 +1324,15 @@
   <div>[کیستیم؟]  +  [چه می‌دهیم؟]  +  [به که می‌دهیم؟]  +  [کجا؟]  +  [چگونه/تمایز ما چیست؟]</div>
 </div>
 
-<h3>۴.۲. بیانیه چشم‌انداز (Vision Statement / آرمان)</h3>
+<h3 id="vision-statement">۴.۲. بیانیه چشم‌انداز (Vision Statement / آرمان)</h3>
 <p>چشم‌انداز، تصویر آینده مطلوب و ملموس سازمان در یک افق زمانی مشخص است: <strong>«به کجا می‌خواهیم برسیم؟ (Where do we want to be?)»</strong>.</p>
-<h4>ویژگی‌های بنیادی چشم‌انداز:</h4>
+<h4 id="_11">ویژگی‌های بنیادی چشم‌انداز:</h4>
 <ol>
 <li><strong>افق زمانی محدود و مشخص:</strong> چشم‌انداز حتماً دارای زمان است (معمولاً ۳ تا ۵ ساله در شرایط بی‌ثبات، و تا ۱۰ ساله در شرایط پایدار).</li>
 <li><strong>قابل راستی‌آزمایی و سنجش (Measurable/Verifiable):</strong> چشم‌انداز حاوی شاخص‌های کمّی یا حالات کیفیِ کاملاً ملموس است که در پایان افق زمانی می‌توان گفت «رسیده‌ایم» یا «نرسیده‌ایم».</li>
 <li><strong>تحقق‌پذیر و انگیزشی:</strong> چشم‌انداز باید چالش‌برانگیز اما در دسترس باشد (مثل رسیدن به یک قله کوه یا کاروان‌سرای مشخص در مسیر حرکت به سمت خورشید).</li>
 </ol>
-<h4>کیس‌استادی‌های بین‌المللی بیانیه چشم‌انداز (توضیح کامل استاد خطیبی):</h4>
+<h4 id="_12">کیس‌استادی‌های بین‌المللی بیانیه چشم‌انداز (توضیح کامل استاد خطیبی):</h4>
 <ul>
 <li><strong>هنری فورد (ابتدای قرن بیستم):</strong> «همگانی کردن خودرو (Democratize the automobile)؛ تولید خودرویی که هر خانواده طبقه متوسط آمریکایی بتواند با درآمد خود یک دستگاه از آن را به قیمت زیر ۷۰۰ دلار بخرد.» (کمّی، مشخص، تحقق‌یافته).</li>
 <li><strong>سونی (پس از جنگ جهانی دوم):</strong> «تبدیل شدن به برندی که تصویر جهانی کالاهای ژاپنی را از محصولات بی‌کیفیت به برترین کیفیت در دنیا تغییر دهد.»</li>
@@ -1212,9 +1340,9 @@
 <li><strong>جنرال الکتریک (دوران جک ولش در دهه ۱۹۸۰):</strong> «کسب رتبه اول یا دوم در هر بازاری که در آن فعالیت می‌کنیم؛ در غیر این صورت، آن کسب‌وکار را اصلاح می‌کنیم، می‌فروشیم یا تعطیل می‌کنیم!» (Fix, Sell, or Close).</li>
 <li><strong>آمازون:</strong> «تبدیل شدن به مشتری‌مدارترین شرکت روی کره زمین.»</li>
 </ul>
-<h3>۴.۳. بیانیه ارزش‌های محوری (Core Values)</h3>
+<h3 id="core-values">۴.۳. بیانیه ارزش‌های محوری (Core Values)</h3>
 <p>ارزش‌ها، خطوط قرمز اخلاقی، اصول رفتاری غیرقابل معامله و قواعد بازی در سازمان هستند. ارزش‌ها تعیین می‌کنند که سازمان برای رسیدن به چشم‌انداز خود، مجاز به انجام چه کارهایی هست و چه کارهایی را هرگز نباید انجام دهد.</p>
-<h4>استعاره گاردریل (Guardrails)</h4>
+<h4 id="guardrails">استعاره گاردریل (Guardrails)</h4>
 <p>استاد خطیبی ارزش‌ها را به گاردریل‌های جاده تشبیه کردند. اگر جاده همان استراتژی باشد و ماشین سازمان با سرعت به سمت چشم‌انداز حرکت کند، ارزش‌ها گاردریل‌هایی هستند که اجازه نمی‌دهند ماشین به دره اخلاقی، قانونی یا تخریب برند سقوط کند. (مثلاً: «ما به رشد ۳۰ درصدی فروش می‌رسیم، اما هرگز با کم‌فروشی، فریب مشتری یا آسیب به محیط‌زیست این کار را نخواهیم کرد»).</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>استعاره جامع منظومه استراتژیک سازمان</div>
@@ -1227,8 +1355,8 @@
 </div>
 
 <hr />
-<h2>۵. فریم‌ورک‌ها، مدل‌های اجرایی و ساختار کنترل استراتژیک (Frameworks &amp; Execution Models)</h2>
-<h3>۵.۱. فریم‌ورک‌های مرجع جاری‌سازی استراتژی</h3>
+<h2 id="frameworks-execution-models">۵. فریم‌ورک‌ها، مدل‌های اجرایی و ساختار کنترل استراتژیک (Frameworks &amp; Execution Models)</h2>
+<h3 id="_13">۵.۱. فریم‌ورک‌های مرجع جاری‌سازی استراتژی</h3>
 <p>استاد خطیبی مراجع و فریم‌ورک‌های اصلی جاری‌سازی و کنترل استراتژی را در قالب کتاب‌ها و مدل‌های استاندارد جهانی معرفی نمودند:</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>نقشه مراجع تئوریک و اجرایی درس</div>
@@ -1246,7 +1374,7 @@
   <div>مک‌چسنی، کووی، هولینگ        | ۴ انضباط اجرا (4DX)           | تمرکز بر اهداف حیاتی و شاخص‌های پیش‌رو</div>
 </div>
 
-<h3>۵.۲. مدل McKinsey 7S در پیاده‌سازی استراتژی</h3>
+<h3 id="mckinsey-7s">۵.۲. مدل McKinsey 7S در پیاده‌سازی استراتژی</h3>
 <p>یکی از فریم‌ورک‌های کلاسیک و بسیار کارآمد در ارزیابی آمادگی اجرای استراتژی، مدل ۷S مک‌کینزی است که استاد خطیبی بر نقش اضلاع سخت (Hard S) و نرم (Soft S) آن در ایجاد همسوسازی سازمانی تاکید کردند:</p>
 <ul>
 <li><strong>عناصر سخت (Hard Elements):</strong> آسان‌تر قابل تعریف و شناسایی هستند و مدیریت مستقیم‌تر بر آن‌ها اثر می‌گذارد.</li>
@@ -1275,7 +1403,7 @@
   <div>[Skills]---------+</div>
 </div>
 
-<h3>۵.۳. ۴ اهرم کنترل استراتژیک (مدل رابرت سیمونز)</h3>
+<h3 id="_14">۵.۳. ۴ اهرم کنترل استراتژیک (مدل رابرت سیمونز)</h3>
 <p>کنترل استراتژیک با کنترل عملیاتی سنتی (که صرفاً مالی و پسینی است) متفاوت است. بر اساس چارچوب رابرت سیمونز در کتاب <em>Levers of Control</em>، ارکان کنترل استراتژیک عبارتند از:</p>
 <ol>
 <li><strong>سیستم‌های کنترل عقیدتی (Belief Systems):</strong> جاری‌سازی ارزش‌ها و ماموریت برای هدایت جستجوی فرصت‌ها.</li>
@@ -1290,34 +1418,34 @@
 </div>
 
 <hr />
-<h2>۵. کیس‌استادی‌ها، شکست‌ها و موفقیت‌های اجرای استراتژی در صنعت و بازار ایران (Case Studies &amp; Iranian Context)</h2>
+<h2 id="case-studies-iranian-context">۵. کیس‌استادی‌ها، شکست‌ها و موفقیت‌های اجرای استراتژی در صنعت و بازار ایران (Case Studies &amp; Iranian Context)</h2>
 <p>در طول جلسه، استاد خطیبی و دانشجویان پرونده‌ها و مثال‌های عملی متعددی را از صنایع مختلف ایران و جهان تحلیل کردند که آسیب‌شناسی اختصاصی محیط ایران را ارائه می‌دهد:</p>
-<h3>۵.۱. پرونده صنایع غذایی و لبنی (چوپان، خوشگوار، میهن)</h3>
+<h3 id="_15">۵.۱. پرونده صنایع غذایی و لبنی (چوپان، خوشگوار، میهن)</h3>
 <ul>
 <li><strong>ماموریت چوپان:</strong> تولید محصولات غذایی سالم و تازه بر پایه شیر برای ارتقای سلامت جامعه. چوپان با مانور بر «تازگی و عدم استفاده از مواد نگهدارنده» توانست سهم بازار موثری در برابر غول‌های لبنی ایجاد کند.</li>
 <li><strong>تنوع‌گرایی یا تمرکز بر ماموریت:</strong> تجارب شرکت‌های لبنی نشان می‌دهد هنگامی که شرکت‌ها از ماموریت اصلی خود (سلامت پایه لبنی) فاصله گرفته و وارد بازارهای غیرمرتبط می‌شوند، سیستم کنترل و توزیع آنها دچار افت کیفیت می‌شود.</li>
 </ul>
-<h3>۵.۲. پرونده صنعت خودرو (ایران‌خودرو، سایپا، آفتاب‌خودرو)</h3>
+<h3 id="_16">۵.۲. پرونده صنعت خودرو (ایران‌خودرو، سایپا، آفتاب‌خودرو)</h3>
 <ul>
 <li><strong>بررسی تجربه مهدی حمزه (۲۳ سال سابقه ایران‌خودرو):</strong> در خودروسازی ایران، بین اهداف کیفی در سند استراتژی و سیستم پاداش عملیاتی در خطوط تولید شکاف عمیقی وجود دارد. وقتی پاداش مدیران سالن بر اساس «تیراژ تولید روزانه» محاسبه می‌شود، هرگونه شاخص کیفی استراتژیک در فاز اجرا قربانی تیراژ خواهد شد.</li>
 <li><strong>کیس فورد در برابر خودروسازان ایرانی:</strong> چشم‌انداز فورد کمّی، ملموس و متصل به توان خرید جامعه بود، اما چشم‌اندازهای خودروسازان داخلی غالباً شعاری، فاقد زمان‌بندی دقیق و بدون اتصال به الزامات ارتقای کیفیت و رقابت‌پذیری بین‌المللی است.</li>
 </ul>
-<h3>۵.۳. پرونده صنعت نفت، گاز و پتروشیمی (تأسیسات دریایی - IOEC)</h3>
+<h3 id="-ioec">۵.۳. پرونده صنعت نفت، گاز و پتروشیمی (تأسیسات دریایی - IOEC)</h3>
 <ul>
 <li>پروژه‌های لوله‌گذاری و نصب پلتفرم‌های دریایی نیازمند ساختار کنترل استراتژیک تعاملی (Interactive Control) هستند، زیرا نااطمینانی‌های محیطی (تحریم، آب‌وهوا، تأمین تجهیزات) بسیار بالاست. عدم انعطاف در ساختار کنترل منجر به تاخیرهای چندساله در بهره‌برداری از فازهای پارس جنوبی شده است.</li>
 </ul>
-<h3>۵.۴. پرونده تجارت خارجی و واردات/صادرات (چوب روسیه، خشکبار، محصولات صنعتی)</h3>
+<h3 id="_17">۵.۴. پرونده تجارت خارجی و واردات/صادرات (چوب روسیه، خشکبار، محصولات صنعتی)</h3>
 <ul>
 <li><strong>تحلیل ندا درویشی و شقایق فتحی:</strong> بی‌ثباتی نرخ ارز، تغییرات ناگهانی بخشنامه‌های گمرکی و عدم ثبات سیاست‌های تجاری در ایران، افق چشم‌انداز شرکت‌های بازرگانی را از ۵ سال به چند ماه کاهش داده است. در این شرایط، کنترل فرضیات (Premise Control) و مانیتورینگ لحظه‌ای خطرات محیطی جایگزین برنامه‌ریزی‌های بلندمدت ایستا شده است.</li>
 </ul>
-<h3>۵.۵. پرونده صنعت فشن و پوشاک (انجلاتیا، برندهای داخلی)</h3>
+<h3 id="_18">۵.۵. پرونده صنعت فشن و پوشاک (انجلاتیا، برندهای داخلی)</h3>
 <ul>
 <li><strong>تحلیل مهلیا سیمایی:</strong> در صنعت فشن، ارزش‌های محوری برند (Brand Core Values) مانند حامی محیط‌زیست بودن، کیفیت پارچه یا اصالت طرح، شکننده‌ترین بخش در فاز اجرا هستند. فشار مالی برای کاهش هزینه تولید معمولاً زنجیره ارزش را به سمت استفاده از متریال نامرغوب سوق می‌دهد که باعث نابودی برچسب قیمتی و پرستیژ برند می‌شود.</li>
 </ul>
 <hr />
-<h2>۶. جعبه‌ابزار رهبری اجرا و رفع موانع رفتاری (Execution &amp; Change Leadership Toolkit)</h2>
+<h2 id="execution-change-leadership-toolkit">۶. جعبه‌ابزار رهبری اجرا و رفع موانع رفتاری (Execution &amp; Change Leadership Toolkit)</h2>
 <p>اجرای استراتژی مستلزم مدیریت تغییر (Change Management) و غلبه بر مقاومت‌های رفتاری سازمان است. استاد خطیبی ابزارهای زیر را برای غلبه بر موانع اجرایی تبیین نمودند:</p>
-<h3>۶.۱. ماتریس سنجش آمادگی سازمانی برای تغییر (Change Readiness)</h3>
+<h3 id="change-readiness">۶.۱. ماتریس سنجش آمادگی سازمانی برای تغییر (Change Readiness)</h3>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>ماتریس سنجش آمادگی تغییر</div>
   <div>میزان آمادگی رفتاری      | انگیزه و تمایل به تغییر (Willingness) | انگیزه بالا (High)</div>
@@ -1328,13 +1456,13 @@
   <div>نیاز به انگیزش و متناسب‌سازی KPIها  | رهبران میانی عملیات و اهرم‌های اجرای سریع</div>
 </div>
 
-<h3>۶.۲. ابزارهای جلب همراهی مدیران میانی (Middle Management Buy-in)</h3>
-<p>مدیران میانی به عنوان «گلوگاه واقعی اجرا» شناخته می‌شوند. برای جلب همراهی آن‌ها ابزارهای زیر ضروری است:<br />
-۱. <strong>مشارکت در تدوین (Involvement in Formulation):</strong> مدیر میانی که در تدوین اهداف نقشی نداشته باشد، در اجرا هیچ تعهدی نخواهد داشت.<br />
-۲. <strong>ترجمه اهداف به برنامه‌های اقدام ملموس (Action Plans):</strong> تبدیل اهداف کلان به پروژه‌های کاری مشخص با زمان‌بندی و مسئول واضح.<br />
+<h3 id="middle-management-buy-in">۶.۲. ابزارهای جلب همراهی مدیران میانی (Middle Management Buy-in)</h3>
+<p>مدیران میانی به عنوان «گلوگاه واقعی اجرا» شناخته می‌شوند. برای جلب همراهی آن‌ها ابزارهای زیر ضروری است:
+۱. <strong>مشارکت در تدوین (Involvement in Formulation):</strong> مدیر میانی که در تدوین اهداف نقشی نداشته باشد، در اجرا هیچ تعهدی نخواهد داشت.
+۲. <strong>ترجمه اهداف به برنامه‌های اقدام ملموس (Action Plans):</strong> تبدیل اهداف کلان به پروژه‌های کاری مشخص با زمان‌بندی و مسئول واضح.
 ۳. <strong>تسهیلگری و رفع موانع ساختاری (Barrier Removal):</strong> مدیرعامل باید موانع ساختاری، بوروکراتیک و بودجه‌ای را از پیش پای مدیران میانی بردارد.</p>
 <hr />
-<h2>۷. چک‌لیست اقدامات فوری مدیرعامل (CEO Monday Morning Action Checklist)</h2>
+<h2 id="ceo-monday-morning-action-checklist">۷. چک‌لیست اقدامات فوری مدیرعامل (CEO Monday Morning Action Checklist)</h2>
 <p>این چک‌لیست عملیاتی بر اساس مباحث استاد خطیبی، ابزاری کاربردی برای ارزیابی و قفل‌گشایی از اجرای استراتژی در سازمان توسط مدیرعامل در اولین روز کاری هفته (صبح دوشنبه/شنبه) است:</p>
 <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-700 my-4 text-right text-xs leading-relaxed text-slate-200">
   <div>چک‌لیست ۵ اقدام فوری مدیرعامل برای قفل‌گشایی از اجرا</div>
@@ -1351,7 +1479,7 @@
   <div>بازبینی عدم وجود اعداد در ماموریت و زمان‌دار بودن چشم‌انداز| [ ] خلط مفاهیم رخ داده (نیازمند اصلاح)</div>
 </div>
 
-<h3>۵ نشانه هشداردهنده زودهنگام (Red Flags) که نشان می‌دهد استراتژی روی کاغذ مانده است:</h3>
+<h3 id="red-flags">۵ نشانه هشداردهنده زودهنگام (Red Flags) که نشان می‌دهد استراتژی روی کاغذ مانده است:</h3>
 <ul>
 <li>🚩 <strong>نشانه اول:</strong> پرسنل سازمان از پاسخ به این سوال که «استراتژی امسال سازمان چیست؟» عاجزند یا پاسخ‌های کاملاً متناقض می‌دهند.</li>
 <li>🚩 <strong>نشانه دوم:</strong> پروژه های جدید استراتژیک به سازمان اضافه شده‌اند، اما هیچ پروژه قدیمی یا کم‌بازدهی تعطیل یا حذف نشده است (فشار کار مضاعف بدون حذف زوائد).</li>
@@ -1360,20 +1488,20 @@
 <li>🚩 <strong>نشانه پنجم:</strong> مدیران میانی برای انجام کارهای استراتژیک نیازمند اخذ مجوزهای متعدد بوروکراتیک از سطوح بالاتر هستند و اختیارات کافی ندارند.</li>
 </ul>
 <hr />
-<h1>بخش سوم: دانشنامه تفصیلی جلسه دوم (ارکان جهت‌ساز، ماتریس‌های ارزیابی و انتخاب کمی QSPM)</h1>
-<h1>اجرا و کنترل استراتژیک - جلسه دوم: ارکان جهت‌ساز، ماتریس‌های ارزیابی موقعیت و انتخاب کمی استراتژی (QSPM)</h1>
+<h1 id="qspm">بخش سوم: دانشنامه تفصیلی جلسه دوم (ارکان جهت‌ساز، ماتریس‌های ارزیابی و انتخاب کمی QSPM)</h1>
+<h1 id="-qspm">اجرا و کنترل استراتژیک - جلسه دوم: ارکان جهت‌ساز، ماتریس‌های ارزیابی موقعیت و انتخاب کمی استراتژی (QSPM)</h1>
 <p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>مدرس دوره:</strong> استاد خطیبی<br />
 <strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
 <strong>تاریخ تدریس:</strong> ۰۲ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۳ ساعت و ۱۰ دقیقه<br />
 <strong>منبع اسلایدهای پشتیبان:</strong> جزوه شماره ۱ دوره (اسلایدهای ۱ تا ۵۱)</p>
 <hr />
-<h2>۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
-<h3>۱.۱. جوهره و مانیفست محوری تدریس استاد خطیبی</h3>
+<h2 id="executive-summary_1">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_19">۱.۱. جوهره و مانیفست محوری تدریس استاد خطیبی</h3>
 <p>جلسه دوم درس اجرا و کنترل استراتژیک با تبیین این اصل بنیادی آغاز شد که <strong>تدوین استراتژی بدون در نظر گرفتن ظرفیت‌ها، زیرساخت‌ها و فرهنگ بدنه سازمان، صرفاً توهم روی کاغذ است.</strong> استاد خطیبی با بهره‌گیری از استعاره‌های میدانی قدرتمند (ماشین، جاده و گاردریل) روشن ساختند که اسناد استراتژیک زمانی به مرحله اجرا می‌رسند که ارکان جهت‌ساز (مأموریت، چشم‌انداز و ارزش‌ها) با تمامیت سازمانی (Integrity) عجین شده و سپس از طریق زنجیره ماتریس‌های تحلیلی (EFE, IFE, CPM, IEM, Grand Strategy, SWOT) به تصمیم‌گیری کمی در ماتریس QSPM منتهی شوند.</p>
 <p>استاد خطیبی تأکید کردند که استراتژیست ارشد نباید اسیر اصطلاحات وارداتی و مُدهای مدیریتی شود؛ استراتژی باید بازتاب‌دهنده واقعیت‌های عریان کف بازار ایران، کشش واقعی تقاضا، و توان تیم‌های عملیاتی باشد.</p>
 <hr />
-<h3>۱.۲. سه فرمان طلایی نگارش و اجرای استراتژی از زبان استاد خطیبی</h3>
+<h3 id="_20">۱.۲. سه فرمان طلایی نگارش و اجرای استراتژی از زبان استاد خطیبی</h3>
 <p>در آغاز جلسه، استاد خطیبی سه خط قرمز صریح را برای هرگونه نگارش سند استراتژیک در بنگاه‌های ایرانی ترسیم کردند:</p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
   <div class="p-5 rounded-2xl bg-amber-50 border border-amber-200">
@@ -1406,15 +1534,15 @@
 </div>
 
 <hr />
-<h3>۱.۳. زیان‌های سه‌گانه عدم همسوسازی ساختار با استراتژی</h3>
-<p>عدم انطباق میان تدوین و صحنه عمل، شرکت را با ۳ آسیب مهلک مواجه می‌سازد:<br />
-1. <strong>زیان اعتباری (Reputational Loss):</strong> فروپاشی وجهه برند در نزد مشتریان و بیزاری درونی کارکنان به دلیل ادعاهای توخالی مدیران.<br />
-2. <strong>زیان زمانی (Temporal Loss):</strong> از دست رفتن پنجره‌های طلایی بازار به واسطه سردرگمی واحدهای عملیاتی میان وظایف جاری و پروژه‌های استراتژیک.<br />
+<h3 id="_21">۱.۳. زیان‌های سه‌گانه عدم همسوسازی ساختار با استراتژی</h3>
+<p>عدم انطباق میان تدوین و صحنه عمل، شرکت را با ۳ آسیب مهلک مواجه می‌سازد:
+1. <strong>زیان اعتباری (Reputational Loss):</strong> فروپاشی وجهه برند در نزد مشتریان و بیزاری درونی کارکنان به دلیل ادعاهای توخالی مدیران.
+2. <strong>زیان زمانی (Temporal Loss):</strong> از دست رفتن پنجره‌های طلایی بازار به واسطه سردرگمی واحدهای عملیاتی میان وظایف جاری و پروژه‌های استراتژیک.
 3. <strong>زیان مالی و منابع (Financial Loss):</strong> هدررفت سنگین سرمایه در پروژه‌هایی که فاقد کشش بازار یا حمایت زنجیره تأمین بوده‌اند.</p>
 <hr />
-<h2>۲. استعاره‌های بنیادین کلاس: تجسم فرآیند اجرا در ذهن مدیر</h2>
+<h2 id="_22">۲. استعاره‌های بنیادین کلاس: تجسم فرآیند اجرا در ذهن مدیر</h2>
 <p>استاد خطیبی در طول تدریس، برای شکستن دیوارهای خشک تئوریک، از سه استعاره تصویری ماندگار استفاده کردند که درک فرآیند اجرا را در ذهن مدیران نهادینه می‌سازد:</p>
-<h3>۲.۱. استعاره اتومبیل، جاده و سیستم تعلیق</h3>
+<h3 id="_23">۲.۱. استعاره اتومبیل، جاده و سیستم تعلیق</h3>
 <blockquote>
 <p><strong>«استراتژی نقشه سفر است، اما رسیدن به مقصد مشروط به سلامت خودرو و مهارت راننده است.»</strong></p>
 </blockquote>
@@ -1423,14 +1551,14 @@
 <li><strong>راننده:</strong> تیم رهبری و مدیرعامل که باید با هوشیاری، چابکی و درک موقعیت فرمان را کنترل کنند.</li>
 <li><strong>موتور و سیستم تعلیق اتومبیل:</strong> معماری سازمانی، ساختار، سیستم‌های پاداش و منابع انسانی. اگر سیستم تعلیق معیوب باشد، حتی اگر بهترین نقشه و راننده را داشته باشید، در اولین دست‌انداز چرخ‌های خودرو کنده خواهد شد.</li>
 </ul>
-<h3>۲.۲. استعاره گاردریل‌های استراتژیک (Strategic Guardrails)</h3>
+<h3 id="strategic-guardrails">۲.۲. استعاره گاردریل‌های استراتژیک (Strategic Guardrails)</h3>
 <p>گاردریل‌ها همان خط قرمزها، ارزش‌های محوری، بودجه‌بندی‌های سخت‌گیرانه و سیستم‌های کنترل استراتژیک هستند. گاردریل مانع سقوط ماشین به دره ورشکستگی در پیچ‌های تند تصمیم‌گیری می‌شود. اگر سازمان فاقد گاردریل باشد، اولین شوک ارزی یا تغییر تعرفه گمرکی شرکت را به قعر دره پرتاب می‌کند.</p>
-<h3>۲.۳. استعاره کاروانسرا (The Caravanserai Metaphor)</h3>
+<h3 id="the-caravanserai-metaphor">۲.۳. استعاره کاروانسرا (The Caravanserai Metaphor)</h3>
 <p>در مسیرهای تجاری تاریخی، کاروانسراها ایستگاه‌های تجدید قوا، پایش آذوقه و بازنگری نقشه‌ها بودند. مدیران استراتژیک نباید کاروانسرا را با مقصد نهایی اشتباه بگیرند. اهداف میان‌مدت و دستاوردهای فصلی کاروانسراهایی هستند که باید در آنها سیستم‌ها را ارزیابی و برای پیمودن بقیه راه انرژی ذخیره کرد.</p>
 <hr />
-<h2>۳. کالبدشکافی ارکان جهت‌ساز: مأموریت، چشم‌انداز و ارزش‌ها</h2>
+<h2 id="_24">۳. کالبدشکافی ارکان جهت‌ساز: مأموریت، چشم‌انداز و ارزش‌ها</h2>
 <p>ارکان جهت‌ساز فونداسیون هر برنامه‌ریزی استراتژیک هستند. بدون این ارکان، تمام ماتریس‌های بعدی بی‌معنی و فاقد قطب‌نما خواهند بود.</p>
-<h3>۳.۱. بیانیه مأموریت (Mission Statement) و ۵ سؤال طلایی</h3>
+<h3 id="mission-statement_1">۳.۱. بیانیه مأموریت (Mission Statement) و ۵ سؤال طلایی</h3>
 <p>مأموریت پاسخ به چرایی وجودی سازمان در زمان حال است. استاد خطیبی تصریح کردند که یک مأموریت استاندارد و اجرایی باید به ۵ پرسش محوری بدون هیچگونه ابهام پاسخ دهد:</p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
@@ -1472,52 +1600,52 @@
 </div>
 
 <hr />
-<h3>۳.۲. چشم‌انداز (Vision): تقابل چشم‌انداز کمی در برابر چشم‌انداز کیفی</h3>
+<h3 id="vision">۳.۲. چشم‌انداز (Vision): تقابل چشم‌انداز کمی در برابر چشم‌انداز کیفی</h3>
 <p>چشم‌انداز آرمان ۵ تا ۱۰ ساله سازمان و جایگاهی است که می‌خواهد در ذهن مشتریان و صنعت تسخیر کند.</p>
-<h4>پرونده مقایسه‌ای دو غول لبنیات ایران: میهن (ایوب پایداری) در برابر کاله (غلامعلی سلیمانی)</h4>
+<h4 id="_25">پرونده مقایسه‌ای دو غول لبنیات ایران: میهن (ایوب پایداری) در برابر کاله (غلامعلی سلیمانی)</h4>
 <p>استاد خطیبی با واکاوی پرونده تأسیس و رقابت دو برند نامدار صنایع غذایی، درس تاریخی بزرگی را به مدیران گوشزد کردند:</p>
 <ul>
-<li><strong>رویکرد حاج ایوب پایداری در میهن (تمرکز بر چشم‌انداز کمی و ظرفیت تولید):</strong><br />
+<li><strong>رویکرد حاج ایوب پایداری در میهن (تمرکز بر چشم‌انداز کمی و ظرفیت تولید):</strong>
   میهن چشم‌انداز خود را عمدتاً بر «بزرگ‌ترین کارخانه»، «بیشترین تعداد خطوط تولید تتراپک و بستنی»، «خرید پیشرفته‌ترین ناوگان توزیع یخچال‌دار» و «تجهیزات مدرن آلمانی» تعریف کرد. این رویکرد ماشین‌آلات و ظرفیت فیزیکی را به عنوان هسته قدرت دید.</li>
-<li><strong>رویکرد غلامعلی سلیمانی در کاله (تمرکز بر چشم‌انداز کیفی و رهبری بازار):</strong><br />
+<li><strong>رویکرد غلامعلی سلیمانی در کاله (تمرکز بر چشم‌انداز کیفی و رهبری بازار):</strong>
   کاله چشم‌انداز خود را نه بر آهن و ماشین‌آلات، بلکه بر «تبدیل لبنیات و پنیر ایران به لیدر خاورمیانه»، «فتح بازارهای صادراتی منطقه»، «ورود به سفره روزمره مردم از طریق خلق ارزش در دسته‌های جدید (پنیر آمل، ماست سون، لبنیات ورزشی پورو)» و «برندسازی عاطفی» متمرکز ساخت.</li>
 </ul>
 <blockquote>
 <p><strong>گزاره استاد خطیبی:</strong> «ماشین‌آلات را با پول و اعتبار بانکی می‌توان خرید، اما جایگاه تسخیرشده در قلب و ذهن مشتری، شایستگی‌های بازاریابی و فرهنگ سازمانی را نمی‌توان در گمرک ترخیص کرد. چشم‌اندازی ماندگار است که کیفی، الهام‌بخش و معطوف به تسخیر بازار باشد، نه صرفاً انبار کردن ماشین‌آلات.»</p>
 </blockquote>
 <hr />
-<h3>۳.۳. ارزش‌های سازمانی، مسئولیت اجتماعی (CSR) و کیفیت زندگی کاری (QWL)</h3>
-<p>ارزش‌ها چارچوب اخلاقی و رفتاری حاکم بر تصمیم‌گیری‌ها هستند:<br />
-- <strong>کیفیت زندگی کاری (QWL - Quality of Work Life):</strong> اگر محیط کار منزلت‌آمیز، ایمن و مبتنی بر رشد نباشد، سازمان بهترین استعدادهای خود را از دست داده و دچار خروج نخبگان خواهد شد.<br />
+<h3 id="csr-qwl">۳.۳. ارزش‌های سازمانی، مسئولیت اجتماعی (CSR) و کیفیت زندگی کاری (QWL)</h3>
+<p>ارزش‌ها چارچوب اخلاقی و رفتاری حاکم بر تصمیم‌گیری‌ها هستند:
+- <strong>کیفیت زندگی کاری (QWL - Quality of Work Life):</strong> اگر محیط کار منزلت‌آمیز، ایمن و مبتنی بر رشد نباشد، سازمان بهترین استعدادهای خود را از دست داده و دچار خروج نخبگان خواهد شد.
 - <strong>مسئولیت اجتماعی شرکتی (CSR):</strong> پایداری درازمدت سودآوری در گرو حفظ منافع جامعه و حفظ محیط زیست است (بررسی نمونه‌های کوکاکولا و مهندسین مشاور صنعتی ایران).</p>
 <hr />
-<h2>۴. کالبدشکافی ساختار رقابتی و زنجیره ارزش پورتر در فاز اجرا</h2>
-<h3>۴.۱. تفاوت حیاتی «رقیب» با «محصول جانشین» (Substitute)</h3>
-<p>استاد خطیبی در تبیین مدل ۵ نیروی پورتر بر خطای رایج مدیران ارشد انگشت گذاشتند:<br />
-- <strong>رقیب (Competitor):</strong> بازیگری است که محصولی با ویژگی‌ها، ظاهر و کارکرد کاملاً مشابه به بازار ارائه می‌دهد (مانند پپسی در برابر کوکاکولا، یا دیجی‌کالا در برابر اسنپ‌مارکت در کالای تندمصرف).<br />
-- <strong>محصول جانشین (Substitute):</strong> محصولی است که <strong>ماهیت، ظاهر، فرمولاسیون و فناوری ساخت متفاوتی دارد، اما دقیقاً همان «نیاز بنیادین» مشتری را برطرف می‌کند.</strong><br />
-  * <em>مثال:</em> آب‌معدنی جانشین نوشابه است (نیاز: رفع تشنگی).<br />
+<h2 id="_26">۴. کالبدشکافی ساختار رقابتی و زنجیره ارزش پورتر در فاز اجرا</h2>
+<h3 id="substitute">۴.۱. تفاوت حیاتی «رقیب» با «محصول جانشین» (Substitute)</h3>
+<p>استاد خطیبی در تبیین مدل ۵ نیروی پورتر بر خطای رایج مدیران ارشد انگشت گذاشتند:
+- <strong>رقیب (Competitor):</strong> بازیگری است که محصولی با ویژگی‌ها، ظاهر و کارکرد کاملاً مشابه به بازار ارائه می‌دهد (مانند پپسی در برابر کوکاکولا، یا دیجی‌کالا در برابر اسنپ‌مارکت در کالای تندمصرف).
+- <strong>محصول جانشین (Substitute):</strong> محصولی است که <strong>ماهیت، ظاهر، فرمولاسیون و فناوری ساخت متفاوتی دارد، اما دقیقاً همان «نیاز بنیادین» مشتری را برطرف می‌کند.</strong>
+  * <em>مثال:</em> آب‌معدنی جانشین نوشابه است (نیاز: رفع تشنگی).
   * <em>مثال:</em> پلتفرم‌های تماشای آنلاین (فیلیمو/نماوا) جانشین سینما و DVD فیزیکی هستند (نیاز: سرگرمی).</p>
-<h3>۴.۲. افت تقاضا، پدیده منسوخ شدن فناوری و استراتژی انحلال</h3>
+<h3 id="_27">۴.۲. افت تقاضا، پدیده منسوخ شدن فناوری و استراتژی انحلال</h3>
 <p>استاد خطیبی با ذکر یک مثال ملموس تاریخی هشدار دادند:</p>
 <blockquote>
 <p><strong>«وقتی یک فناوری یا نیاز منسوخ می‌شود، با هیچ تبلیغات و بازاریابی پرخرجی نمی‌توان جلوی مرگ آن را گرفت. شما امروز با پیشرفته‌ترین کمپین‌های تبلیغاتی هم نمی‌توانید چراغ نفتی علاءالدین یا کپسول گاز پیک‌نیکی را در آپارتمان‌های تهران به فروش برسانید! گاز شهری و شوفاژ جانشین کل آن ساختار شده است.»</strong></p>
 </blockquote>
-<p>در این وضعیت، بنگاه از نقطه سربه‌سر (Break-even Point) عبور کرده و وارد زیان‌دهی مستمر می‌شود. در اینجا استراتژیست ارشد باید شجاعت تصمیم‌گیری داشته باشد:<br />
-1. <strong>استراتژی کاهش و واگذاری (Retrenchment):</strong> کاهش خطوط، واگذاری دارایی‌های مازاد و تمرکز بر هسته سودآور.<br />
+<p>در این وضعیت، بنگاه از نقطه سربه‌سر (Break-even Point) عبور کرده و وارد زیان‌دهی مستمر می‌شود. در اینجا استراتژیست ارشد باید شجاعت تصمیم‌گیری داشته باشد:
+1. <strong>استراتژی کاهش و واگذاری (Retrenchment):</strong> کاهش خطوط، واگذاری دارایی‌های مازاد و تمرکز بر هسته سودآور.
 2. <strong>استراتژی انحلال (Liquidation):</strong> بستن خطوط تولید زیان‌ده قبل از بلعیده شدن تمام دارایی‌ها؛ مشابه تصمیماتی که ایران‌خودرو برای توقف خط تولید پیکان و پژو ۴۰۵ گرفت، یا شرکت اپل برای توقف نسل‌های قدیمی آیفون اعمال می‌کند.</p>
 <hr />
-<h3>۴.۳. زنجیره ارزش پورتر: تفکیک صف و ستاد در معماری اجرا (اسلاید ۳۷)</h3>
-<p>یکی از دلایل شکست استراتژی‌ها، درگیری بی‌پایان میان لایه‌های صف و ستاد است:<br />
-- <strong>فعالیت‌های اصلی / صف (Line Activities):</strong> تدارکات ورودی (Inbound Logistics)، عملیات تولید (Operations)، تدارکات خروجی (Outbound Logistics)، بازاریابی و فروش (Marketing &amp; Sales)، و خدمات پس از فروش (Service).<br />
+<h3 id="_28">۴.۳. زنجیره ارزش پورتر: تفکیک صف و ستاد در معماری اجرا (اسلاید ۳۷)</h3>
+<p>یکی از دلایل شکست استراتژی‌ها، درگیری بی‌پایان میان لایه‌های صف و ستاد است:
+- <strong>فعالیت‌های اصلی / صف (Line Activities):</strong> تدارکات ورودی (Inbound Logistics)، عملیات تولید (Operations)، تدارکات خروجی (Outbound Logistics)، بازاریابی و فروش (Marketing &amp; Sales)، و خدمات پس از فروش (Service).
 - <strong>فعالیت‌های پشتیبانی / ستاد (Staff Activities):</strong> زیرساخت شرکت، مدیریت منابع انسانی (HRM)، تحقیق و توسعه (R&amp;D)، و خرید و تدارکات استراتژیک.</p>
 <blockquote>
 <p><strong>هشدار استاد خطیبی به هلدینگ‌ها:</strong> اگر مدیریت منابع انسانی در سطح هلدینگ به جای سیاست‌گذاری و توسعه شایستگی‌های استراتژیک، بخواهد در امور روزمره استخدامی شرکت‌های تابعه دخالت کند، زنجیره ارزش فلج خواهد شد. ستاد باید پشتیبان و هم‌سوساز صف باشد، نه گلوگاه توقف کار.</p>
 </blockquote>
 <hr />
-<h2>۵. زنجیره ماتریس‌های ارزیابی موقعیت و تولید استراتژی</h2>
+<h2 id="_29">۵. زنجیره ماتریس‌های ارزیابی موقعیت و تولید استراتژی</h2>
 <p>استاد خطیبی تأکید کردند که ماتریس‌ها ابزارهایی برای سامان‌بخشی به ذهن مدیر هستند، نه بت‌هایی که جای قضاوت انسانی را بگیرند.</p>
-<h3>۵.۱. ماتریس ارزیابی عوامل خارجی (EFE Matrix) - ۵ گام استاندارد</h3>
+<h3 id="efe-matrix-">۵.۱. ماتریس ارزیابی عوامل خارجی (EFE Matrix) - ۵ گام استاندارد</h3>
 <p>این ماتریس نحوه پاسخ‌دهی بنگاه به فرصت‌ها (Opportunities) و تهدیدهای (Threats) محیط کلان و صنعت را ارزیابی می‌کند:</p>
 <ol>
 <li><strong>گام ۱:</strong> استخراج ۱۵ تا ۲۰ عامل کلیدی خارجی (فرصت‌ها و تهدیدها).</li>
@@ -1532,22 +1660,22 @@
 </ol>
 <p><em>(تحلیل نمونه EFE نتفلیکس در اسلاید ۳۶: واکنش به رشد پهنای باند و تهدید رقابت دیزنی).</em></p>
 <hr />
-<h3>۵.۲. ماتریس ارزیابی عوامل داخلی (IFE Matrix) - ۵ گام استاندارد</h3>
-<p>این ماتریس قوت‌ها (Strengths) و ضعف‌های (Weaknesses) داخلی سازمان را در بخش‌های مالی، تولید، بازاریابی و منابع انسانی می‌سنجد:<br />
-- قواعد وزن‌دهی مشابه EFE است (مجموع وزن‌ها = ۱.۰۰).<br />
-- قواعد رتبه‌دهی:<br />
-  - رتبه ۴: قوت اساسی (Major Strength).<br />
-  - رتبه ۳: قوت جزئی (Minor Strength).<br />
-  - رتبه ۲: ضعف جزئی (Minor Weakness).<br />
-  - رتبه ۱: ضعف اساسی (Major Weakness).<br />
+<h3 id="ife-matrix-">۵.۲. ماتریس ارزیابی عوامل داخلی (IFE Matrix) - ۵ گام استاندارد</h3>
+<p>این ماتریس قوت‌ها (Strengths) و ضعف‌های (Weaknesses) داخلی سازمان را در بخش‌های مالی، تولید، بازاریابی و منابع انسانی می‌سنجد:
+- قواعد وزن‌دهی مشابه EFE است (مجموع وزن‌ها = ۱.۰۰).
+- قواعد رتبه‌دهی:
+  - رتبه ۴: قوت اساسی (Major Strength).
+  - رتبه ۳: قوت جزئی (Minor Strength).
+  - رتبه ۲: ضعف جزئی (Minor Weakness).
+  - رتبه ۱: ضعف اساسی (Major Weakness).
 - نمره کل زیر ۲.۵ نشان‌دهنده غلبه ضعف‌های درونی بر قوت‌های سازمان است (تحلیل نمونه IFE نتفلیکس در اسلاید ۳۹).</p>
 <hr />
-<h3>۵.۳. ماتریس بررسی رقابتی (CPM - Competitive Profile Matrix)</h3>
-<p>این ماتریس جایگاه استراتژیک شرکت را در برابر رقبای اصلی بر اساس <strong>عوامل حیاتی موفقیت (CSF - Critical Success Factors)</strong> ارزیابی می‌کند:<br />
-- وزن‌دهی بر اساس اهمیت صنعت.<br />
+<h3 id="cpm-competitive-profile-matrix">۵.۳. ماتریس بررسی رقابتی (CPM - Competitive Profile Matrix)</h3>
+<p>این ماتریس جایگاه استراتژیک شرکت را در برابر رقبای اصلی بر اساس <strong>عوامل حیاتی موفقیت (CSF - Critical Success Factors)</strong> ارزیابی می‌کند:
+- وزن‌دهی بر اساس اهمیت صنعت.
 - مقایسه امتیازدهی شرکت خودی در برابر رقبای A و B (بررسی نمونه شرکت افق داده‌ها در اسلاید ۴۱).</p>
 <hr />
-<h3>۵.۴. ماتریس داخلی و خارجی (IEM - Internal-External Matrix)</h3>
+<h3 id="iem-internal-external-matrix">۵.۴. ماتریس داخلی و خارجی (IEM - Internal-External Matrix)</h3>
 <p>ماتریس ۹ خانه‌ای IEM از تقاطع نمره نهایی IFE (محور افقی) و EFE (محور عمودی) تشکیل می‌شود:</p>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-center border border-slate-700 rounded-lg overflow-hidden text-xs">
@@ -1588,22 +1716,22 @@
 <li><strong>منطقه ۳ (خانه‌های VI, VIII, IX): برداشت و واگذاری (Harvest or Divest):</strong> استراتژی‌های کاهش مقیاس، انحلال یا فروش واحد کسب‌وکار.</li>
 </ul>
 <hr />
-<h3>۵.۵. استراتژی‌های کلان یکپارچگی در سطح هلدینگ‌ها (Integration Strategies)</h3>
-<p>استاد خطیبی با بررسی سبد سرمایه‌گذاری هلدینگ‌های غدیر، شستا، بنیاد و سامسونگ، مسیرهای سه‌گانه یکپارچگی را تشریح کردند:<br />
-1. <strong>یکپارچگی رو به جلو (Forward Integration):</strong> تملک یا کنترل کانال‌های توزیع و فروشگاه‌ها توسط تولیدکننده (مثال: افتتاح شعب فروشگاهی توسط چرم مشهد یا کاله).<br />
-2. <strong>یکپارچگی رو به عقب (Backward Integration):</strong> تملک منابع تأمین مواد اولیه (مثال: احداث مزارع دامداری و تولید علوفه توسط کارخانجات لبنی، یا تملک معادن توسط فولادسازان).<br />
+<h3 id="integration-strategies">۵.۵. استراتژی‌های کلان یکپارچگی در سطح هلدینگ‌ها (Integration Strategies)</h3>
+<p>استاد خطیبی با بررسی سبد سرمایه‌گذاری هلدینگ‌های غدیر، شستا، بنیاد و سامسونگ، مسیرهای سه‌گانه یکپارچگی را تشریح کردند:
+1. <strong>یکپارچگی رو به جلو (Forward Integration):</strong> تملک یا کنترل کانال‌های توزیع و فروشگاه‌ها توسط تولیدکننده (مثال: افتتاح شعب فروشگاهی توسط چرم مشهد یا کاله).
+2. <strong>یکپارچگی رو به عقب (Backward Integration):</strong> تملک منابع تأمین مواد اولیه (مثال: احداث مزارع دامداری و تولید علوفه توسط کارخانجات لبنی، یا تملک معادن توسط فولادسازان).
 3. <strong>یکپارچگی افقی (Horizontal Integration):</strong> خرید، ادغام یا تملک رقبای مستقیم برای افزایش سهم بازار و صرفه‌جویی ناشی از مقیاس (مثال: خرید برندهای رقیب توسط هلدینگ‌های بهداشتی و شوینده).</p>
 <hr />
-<h3>۵.۶. ماتریس SWOT و تولید استراتژی‌های چهارگانه</h3>
-<p>در این مرحله، عوامل ماتریس IFE و EFE با هم تقاطع داده می‌شوند تا ۴ سناریوی عملیاتی خلق شود:<br />
-- <strong>استراتژی‌های تهاجمی (SO):</strong> استفاده از قوت‌های داخلی برای شکار فرصت‌های خارجی.<br />
-- <strong>استراتژی‌های رقابتی / انطباقی (ST):</strong> استفاده از قوت‌های سازمان برای مهار تهدیدهای محیطی.<br />
-- <strong>استراتژی‌های بازنگری / تغییر مسیر (WO):</strong> بهره‌برداری از فرصت‌های خارجی جهت برطرف کردن ضعف‌های درونی.<br />
+<h3 id="swot">۵.۶. ماتریس SWOT و تولید استراتژی‌های چهارگانه</h3>
+<p>در این مرحله، عوامل ماتریس IFE و EFE با هم تقاطع داده می‌شوند تا ۴ سناریوی عملیاتی خلق شود:
+- <strong>استراتژی‌های تهاجمی (SO):</strong> استفاده از قوت‌های داخلی برای شکار فرصت‌های خارجی.
+- <strong>استراتژی‌های رقابتی / انطباقی (ST):</strong> استفاده از قوت‌های سازمان برای مهار تهدیدهای محیطی.
+- <strong>استراتژی‌های بازنگری / تغییر مسیر (WO):</strong> بهره‌برداری از فرصت‌های خارجی جهت برطرف کردن ضعف‌های درونی.
 - <strong>استراتژی‌های تدافعی (WT):</strong> تلاش برای کاهش ضعف‌های داخلی و پرهیز از تهدیدهای خارجی (حالت بقا).</p>
 <hr />
-<h2>۶. انتخاب نهایی استراتژی با ماتریس برنامه‌ریزی کمی (QSPM)</h2>
+<h2 id="qspm_1">۶. انتخاب نهایی استراتژی با ماتریس برنامه‌ریزی کمی (QSPM)</h2>
 <p>ماتریس QSPM (Quantitative Strategic Planning Matrix) گام نهایی است که جذابیت نسبی هر یک از استراتژی‌های پیشنهادی SWOT را به صورت ریاضی ارزیابی می‌کند تا از تصمیم‌گیری‌های سلیقه‌ای، سیاسی و شهودی مدیران جلوگیری شود.</p>
-<h3>۶.۱. پنج گام اجرای ماتریس QSPM (اسلایدهای ۴۸ تا ۵۱)</h3>
+<h3 id="qspm_2">۶.۱. پنج گام اجرای ماتریس QSPM (اسلایدهای ۴۸ تا ۵۱)</h3>
 <ol>
 <li><strong>درج عوامل:</strong> ثبت دقیق تمامی قوت‌ها، ضعف‌ها، فرصت‌ها و تهدیدهای استخراج‌شده از EFE و IFE در ستون اول.</li>
 <li><strong>تخصیص وزن‌ها:</strong> درج دقیق وزن‌های تعیین‌شده در مراحل قبل (مجموع وزن‌ها در EFE و IFE).</li>
@@ -1623,24 +1751,24 @@
 </ol>
 <p><em>(تحلیل پرونده شرکت مهندسین مشاور صنعتی ایران در اسلاید ۵۱: مقایسه استراتژی توسعه بازارهای منطقه‌ای با استراتژی تنوع خدمات مهندسی).</em></p>
 <hr />
-<h2>۷. گفت‌وگوهای زنده کلاسی، چالش‌ها و دیالوگ‌های دانشجویان</h2>
-<h3>پرسش و پاسخ اول: راز شکست استراتژی‌های درخشان</h3>
+<h2 id="_30">۷. گفت‌وگوهای زنده کلاسی، چالش‌ها و دیالوگ‌های دانشجویان</h2>
+<h3 id="_31">پرسش و پاسخ اول: راز شکست استراتژی‌های درخشان</h3>
 <ul>
 <li><strong>پرسش شقایق:</strong> «استاد، چرا بسیاری از شرکت‌های ایرانی اسناد استراتژیک بسیار حجیم و چشم‌اندازهای درخشانی دارند اما در صحنه عمل هیچ اثری از آن دیده نمی‌شود و سازمان فلج است؟»</li>
 <li><strong>پاسخ استاد خطیبی:</strong> «چون مدیران فکر می‌کنند نوشتن استراتژی یعنی استخدام یک تیم مشاوره و بستن یک سند قطور! شکست استراتژی بیش از ۸۵ درصد ناشی از اجرای غلط و عدم همسوسازی ساختار و فرهنگ است. اگر ساختار پاداش شما همچنان به کارمندی که هیچ تلاشی برای استراتژی نکرده مثل بقیه پاداش بدهد، و اگر بودجه شرکت هنوز بر اساس چانه‌زنی سنتی توزیع شود نه اهداف استراتژیک، آن سند در قفسه خاک خواهد خورد.»</li>
 </ul>
-<h3>پرسش و پاسخ دوم: پیتر دراکر و پارادوکس فرهنگ سازمانی</h3>
+<h3 id="_32">پرسش و پاسخ دوم: پیتر دراکر و پارادوکس فرهنگ سازمانی</h3>
 <ul>
 <li><strong>پرسش نرگس:</strong> «آیا واقعاً طبق گزاره پیتر دراکر که می‌گوید "Culture eats strategy for breakfast"، فرهنگ همیشه استراتژی را می‌بلعد؟ آیا ما نمی‌توانیم فرهنگ را سریعاً با استراتژی جدید هماهنگ کنیم؟»</li>
 <li><strong>پاسخ استاد خطیبی:</strong> «فرهنگ لایه‌ای رسوبی از عادات، باورها و منافع پنهان انسانی در سازمان است. شما نمی‌توانید با یک بخشنامه اداری فرهنگ را یک‌شبه تغییر دهید. اگر فرهنگ موجود در تضاد با استراتژی باشد، بله! استراتژی را در صبحانه می‌بلعد! راهکار چیست؟ مدیرعامل باید از تغییر رفتارهای کوچک، اصلاح معیارهای تشویق و ارتقا، و الگو بودن لایه‌های ارشد آغاز کند تا طی ماه‌ها و سال‌ها، فرهنگ سازمان در خدمت استراتژی درآید.»</li>
 </ul>
-<h3>پرسش و پاسخ سوم: جایگاه واقعی منابع انسانی (HR) در هلدینگ‌ها</h3>
+<h3 id="hr">پرسش و پاسخ سوم: جایگاه واقعی منابع انسانی (HR) در هلدینگ‌ها</h3>
 <ul>
 <li><strong>پرسش مهلیا:</strong> «نقش معاونت منابع انسانی در اجرای استراتژی چیست؟ آیا باید یک واحد صف باشد یا ستاد؟»</li>
 <li><strong>پاسخ استاد خطیبی:</strong> «منابع انسانی در تراز استراتژیک، دروازه‌بان شایستگی‌هاست. اگر استراتژی شما حرکت به سمت دیجیتالیزاسیون یا صادرات است اما واحد HR شما هنوز با معیارهای ۱۰ سال پیش مصاحبه می‌کند و افراد بی‌انگیزه را استخدام می‌نماید، استراتژی پیش از تولد مرده است. HR در هلدینگ باید یک ستاد راهبردی باشد که ماتریس شایستگی‌ها را با چشم‌انداز شرکت همسو می‌سازد.»</li>
 </ul>
 <hr />
-<h2>۸. منشور اقدامات دوشنبه صبح مدیرعامل (CEO Execution Mandate)</h2>
+<h2 id="ceo-execution-mandate">۸. منشور اقدامات دوشنبه صبح مدیرعامل (CEO Execution Mandate)</h2>
 <p>استاد خطیبی کلاس را با چهار فرمان اجرایی و فوری برای مدیران عامل خاتمه دادند:</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
   <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-700">
@@ -1670,7 +1798,7 @@
 </div>
 
 <hr />
-<h2>۹. پیوندها و گام‌های بعدی در نقشه راه دوره</h2>
+<h2 id="_33">۹. پیوندها و گام‌های بعدی در نقشه راه دوره</h2>
 <ul>
 <li><strong>پرونده تفصیلی جلسه اول:</strong> [[Session_01_Notes]]</li>
 <li><strong>هندبوک جامع دوره:</strong> [[MBA_Strategy_Implementation_Master_Handbook]]</li>
@@ -1696,7 +1824,7 @@
       <div>
         <div class="inline-flex flex-wrap items-center justify-center gap-3">
   <span class="text-slate-300 text-xs md:text-sm">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
-  <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
+  <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-3 py-1 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
     <span>Parsa Rezaie</span>
   </a>
@@ -1726,21 +1854,28 @@
       if (window.MathJax && window.MathJax.typesetPromise) {
         window.MathJax.typesetPromise();
       }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Toggle notes accordion
-    function toggleNotes(sessionId) {
-      const container = document.getElementById(sessionId + '-notes');
-      const icon = document.getElementById(sessionId + '-icon');
+    // Toggle full lecture notes
+    function toggleSessionFull(sessionId) {
+      const container = document.getElementById('full-' + sessionId);
+      const icon = document.getElementById('icon-toggle-' + sessionId);
+      const btn = document.getElementById('btn-toggle-' + sessionId);
+      
+      if (!container) return;
+
       if (container.classList.contains('hidden')) {
         container.classList.remove('hidden');
-        icon.innerText = '▲ بستن';
+        if (icon) icon.innerText = '▲';
+        if (btn) btn.querySelector('span:first-child').innerText = 'بستن متن کامل و تفصیلی';
         if (window.MathJax && window.MathJax.typesetPromise) {
           window.MathJax.typesetPromise();
         }
       } else {
         container.classList.add('hidden');
-        icon.innerText = '▼ باز کردن';
+        if (icon) icon.innerText = '▼';
+        if (btn) btn.querySelector('span:first-child').innerText = 'مطالعه متن کامل و تفصیلی جلسه';
       }
     }
 

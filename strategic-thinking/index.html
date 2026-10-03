@@ -29,9 +29,9 @@
     .prose-custom li { margin-bottom: 0.45rem; }
     .prose-custom blockquote { border-right: 4px solid #4f46e5; background-color: #eef2ff; padding: 0.95rem 1.25rem; border-radius: 0.5rem; margin: 1.35rem 0; color: #3730a3; font-weight: 500; }
     .prose-custom table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.85rem; border-radius: 0.5rem; overflow: hidden; }
-    .prose-custom th { background-color: #f1f5f9; padding: 0.75rem 0.9rem; font-weight: 700; border: 1px solid #cbd5e1; text-align: right !important; direction: rtl !important; }
-    .prose-custom td { padding: 0.75rem 0.9rem; border: 1px solid #e2e8f0; text-align: right !important; direction: rtl !important; }
-    .prose-custom pre { background-color: #0f172a; color: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; overflow-x: auto; font-family: monospace; font-size: 0.85rem; margin: 1.25rem 0; direction: ltr; text-align: left; }
+    .prose-custom th { background-color: #1e293b; color: #fbbf24; padding: 0.75rem; border: 1px solid #334155; font-weight: 700; }
+    .prose-custom td { padding: 0.75rem; border: 1px solid #e2e8f0; }
+    .prose-custom tr:nth-child(even) { background-color: #f8fafc; }
     .prose-custom code { background-color: #f1f5f9; color: #0f172a; padding: 0.2rem 0.45rem; border-radius: 0.3rem; font-family: monospace; font-size: 0.85rem; }
     .prose-custom pre code { background-color: transparent; color: inherit; padding: 0; }
   </style>
@@ -60,7 +60,7 @@
             تفکر استراتژیک
           </h1>
           <p class="text-indigo-100 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
-            مجموعه تحلیلی و راهبردی ۲ جلسه کامل | مدرس: <strong class="text-white font-semibold">استاد صدقیانی‌فر</strong> | <div class="inline-flex items-center gap-2 mt-1">
+            مجموعه تحلیلی و راهبردی ۳ جلسه کامل | مدرس: <strong class="text-white font-semibold">استاد صدقیانی‌فر</strong> | <div class="inline-flex items-center gap-2 mt-1">
   <span class="text-blue-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
   <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -71,8 +71,8 @@
         </div>
         <div class="flex items-center gap-3">
           <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3.5 text-center min-w-[120px]">
-            <div class="text-2xl font-black text-amber-300">۲ جلسه</div>
-            <div class="text-xs text-indigo-100 font-medium">۵.۸ ساعت تدریس کاربردی</div>
+            <div class="text-2xl font-black text-amber-300">۳ جلسه</div>
+            <div class="text-xs text-indigo-100 font-medium">۸.۶ ساعت تدریس کاربردی</div>
           </div>
         </div>
       </div>
@@ -87,6 +87,9 @@
         </button>
         <button onclick="switchTab('session2')" id="tab-session2" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           جلسه ۲: تفکر در زمان، نوستالژی و تفکر سیستمی
+        </button>
+        <button onclick="switchTab('session3')" id="tab-session3" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۳: اکوسیستم، چرخه دمینگ و طرح کلان (GP)
         </button>
         <button onclick="switchTab('simulator')" id="tab-simulator" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           🧭 ارزیاب بلوغ لیدکا و خطاهای شناختی
@@ -114,7 +117,7 @@
             گذر از برنامه‌ریزی صلب به شهود عقلانی و بصیرت استراتژیک
           </h2>
           <p class="text-xs md:text-sm text-slate-600 max-w-2xl leading-relaxed">
-            استراتژی یک سند سالانه در کتابخانه نیست؛ بلکه یک «انتخاب آگاهانه در بستر زمان» است. این داشبورد تمامی آموزه‌های کلاس استاد صدقیانی‌فر را از تحلیل علوم رسوبی و مدل پنج‌رکن لیدکا تا واکاوی بازار مسکن، تفکر در زمان و مهار نوستالژی سازمانی در دسترس مدیران ارشد قرار می‌دهد.
+            استراتژی یک سند سالانه در کتابخانه نیست؛ بلکه یک «انتخاب آگاهانه در بستر زمان» است. این داشبورد تمامی آموزه‌های کلاس استاد صدقیانی‌فر را از تحلیل علوم رسوبی و مدل پنج‌رکن لیدکا تا واکاوی بازار مسکن، تفکر در زمان، اکوسیستم‌های کسب‌وکار و تعمیر موتور در حال پرواز در دسترس مدیران ارشد قرار می‌دهد.
           </p>
         </div>
         <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -125,8 +128,8 @@
         </div>
       </div>
 
-      <!-- 2 Session Executive Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- 3 Session Executive Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         <!-- S1 Card -->
         <div class="card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
@@ -162,6 +165,23 @@
           </button>
         </div>
 
+        <!-- S3 Card -->
+        <div class="card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">۳</span>
+              <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">جلسه سوم • ۲.۸ ساعت</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">اکوسیستم کسب‌وکار، چرخه دمینگ و طرح کلان (GP)</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              نقد تفکر ماتریسی، کشف سرِ کلاف سازمانی، تعمیر موتور در حال پرواز، مطالعه موردی ۱۰ هکتاری بلوار کازینو رامسر و استعاره گلف و میمون‌ها.
+            </p>
+          </div>
+          <button onclick="switchTab('session3')" class="w-full text-center text-xs font-bold text-emerald-700 hover:text-emerald-900 pt-3 border-t border-slate-100">
+            ورود به جزوه تفصیلی و خلاصه جلسه سوم ➔
+          </button>
+        </div>
+
       </div>
 
       <!-- Core Frameworks Card -->
@@ -176,24 +196,26 @@
             <p class="text-slate-600 leading-relaxed">دیدن کل تصویر سازمان و زنجیره ارزش؛ درک اثر متقابل متغیرهای داخلی با تلاطم‌های محیط بیرونی.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۲. تمرکز بر قصد استراتژیک (Intent-Focused)</strong>
-            <p class="text-slate-600 leading-relaxed">ایجاد جهت‌گیری بلندپروازانه و هم‌راستا کردن تمام انرژی‌های سازمان روی نقطه تمرکز محوری.</p>
+            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۲. تمرکز بر قصد استراتژیک (Strategic Intent)</strong>
+            <p class="text-slate-600 leading-relaxed">تمرکز انرژی کل سازمان بر یک هدف بزرگ و جاه‌طلبانه فراتر از منابع جاری؛ حفظ قطب‌نمای حرکت.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۳. هوشمندی فرصت‌طلبانه (Intelligent Opportunism)</strong>
-            <p class="text-slate-600 leading-relaxed">توانایی شناسایی و شکار سریع فرصت‌های نوظهور در بازار، بدون گم کردن قطب‌نمای اصلی شرکت.</p>
+            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۳. تفکر در زمان (Thinking in Time)</strong>
+            <p class="text-slate-600 leading-relaxed">پیوند ارگانیک گذشته، حال و آینده؛ استفاده از درس‌های تاریخ بدون گرفتار شدن در تله نوستالژی سازمانی.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۴. تفکر در زمان (Thinking in Time)</strong>
-            <p class="text-slate-600 leading-relaxed">پل زدن مداوم میان گذشته، حال و آینده؛ استفاده از الگوهای پیشین برای فهم افق‌های محتمل فردا.</p>
+            <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۴. هوشمندی فرصت‌طلبانه (Intelligent Opportunism)</strong>
+            <p class="text-slate-600 leading-relaxed">انعطاف و آمادگی برای تصاحب فرصت‌های نوظهور محیطی بدون انحراف از قصد کلان سازمان.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
             <strong class="text-slate-900 block mb-1 text-sm text-indigo-700">۵. پیش‌روی فرضیه‌محور (Hypothesis-Driven)</strong>
-            <p class="text-slate-600 leading-relaxed">جایگزینی برنامه‌ریزی قطعی با خلق فرضیه‌های شجاعانه، آزمایش سریع در مقیاس کوچک و پالایش مداوم اقدامات.</p>
+            <p class="text-slate-600 leading-relaxed">خلق فرضیه‌های نوآورانه تجاری و آزمون سریع آن‌ها در بازار، به جای تدوین اسناد قطور و صلب پیش‌بینی.</p>
           </div>
-          <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex flex-col justify-center items-center text-center">
-            <button onclick="switchTab('simulator')" class="px-4 py-2 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 rounded-xl font-bold transition-all text-xs">
-              ورود به ارزیاب بلوغ لیدکا ➔
+          <div class="p-4 rounded-xl bg-indigo-50 border border-indigo-100 flex flex-col justify-center text-center">
+            <span class="text-indigo-900 font-extrabold text-sm mb-1">ارزیابی آنلاین سازمان شما</span>
+            <p class="text-[11px] text-indigo-700 mb-3">سنجش آمادگی و بلوغ تیم رهبری با ابزار لیدکا</p>
+            <button onclick="switchTab('simulator')" class="bg-indigo-600 text-white font-bold py-1.5 px-3 rounded-lg text-xs hover:bg-indigo-700 transition">
+              اجرای شبیه‌ساز لیدکا ➔
             </button>
           </div>
         </div>
@@ -207,87 +229,70 @@
       <!-- Tab Header -->
       <div class="flex items-center justify-between pb-4 border-b border-slate-200">
         <div>
-          <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">جلسه اول • ۲.۷ ساعت تدریس</span>
-          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">مبانی اندیشه استراتژیک، شکست برنامه‌ریزی صلب و مدل لیدکا</h2>
+          <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">جلسه اول • ۲.۷ ساعت تدریس</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">مبانی تفکر استراتژیک، ارکان لیدکا و تحلیل روندهای کلان اقتصادی ایران</h2>
         </div>
-        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-indigo-600 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-indigo-700 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
       </div>
 
       <!-- TOP LAYER: Executive Visual Summary -->
       <div class="bg-indigo-50/60 border border-indigo-200 rounded-2xl p-6">
         <div class="flex items-center gap-2 mb-3">
-          <span class="text-xl">🎯</span>
-          <h3 class="text-base md:text-lg font-black text-indigo-950">خلاصه اجرایی و مدیریتی جلسه اول: پارادایم تفکر در برابر دام برنامه‌ریزی صلب</h3>
+          <span class="text-xl">💡</span>
+          <h3 class="text-base md:text-lg font-black text-indigo-950">خلاصه اجرایی و مدیریتی جلسه اول: پارادایم‌های بنیادین و هوشمندی محیطی</h3>
         </div>
         <p class="text-xs md:text-sm text-indigo-900 leading-relaxed mb-5 text-justify">
-          در این جلسه استاد صدقیانی‌فر بنیان‌های تفکر استراتژیک را کالبدشکافی کردند: چرا برنامه‌ریزی صلب در شرایط عدم‌قطعیت ایران محکوم به شکست است؟ تفاوت علوم کاربردی (Applied) که تاریخ‌مصرف دارند با علوم رسوبی (Accumulative) که حکمت کسب‌وکار را می‌سازند، و معرفی ارکان پنج‌گانه مدل لیدکا همراه با تحلیل عمیق بازار مسکن و صنعت خودرو.
+          در این نشست افتتاحیه، استاد صدقیانی‌فر تفاوت ماهوی میان «تفکر استراتژیک» (جهت‌گیری، بینش، کشف الگو) با «برنامه‌ریزی استراتژیک» (گام‌های اجرایی صلب و جدول‌های بودجه) را تبیین کردند. همچنین تبارشناسی علوم به دو دسته «علوم کاربردی» (Applied) و «علوم رسوبی/کارکردی» (Functional/Accumulative) و تأثیر بلامنازع دومین دسته بر تربیت ذهنیت رهبران کسب‌وکار بررسی شد.
         </p>
 
         <!-- 3 Highlight Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
           <div class="bg-white p-4 rounded-xl border border-indigo-100 shadow-sm">
             <div class="text-xs font-bold text-indigo-700 mb-1 flex items-center gap-1.5">
-              <span>🧠</span>
-              <span>استراتژی در برابر برنامه‌ریزی</span>
+              <span>🎯</span>
+              <span>سه‌گانه بنیادین استراتژی</span>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">برنامه‌ریزی، خط‌کشی و بهینه‌سازی روتین‌ها برای آینده‌ای قابل‌پیش‌بینی است؛ استراتژی هنر خلق قواعد بازی و بقای خلاقانه در دل تلاطم و ابهام مطلق است.</p>
+            <p class="text-xs text-slate-600 leading-relaxed">تفکیک «تفکر استراتژیک» (خلق بصیرت و قطب‌نما)، «برنامه‌ریزی استراتژیک» (ترسیم نقشه و تخصیص منابع) و «مدیریت استراتژیک» (رهبری و توازن در اجرا).</p>
           </div>
           <div class="bg-white p-4 rounded-xl border border-indigo-100 shadow-sm">
             <div class="text-xs font-bold text-indigo-700 mb-1 flex items-center gap-1.5">
-              <span>📚</span>
+              <span>🏛️</span>
               <span>علوم کاربردی در برابر علوم رسوبی</span>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">علوم کاربردی (حسابداری، سئو، کدنویسی) تاریخ مصرف دارند؛ اما علوم رسوبی (تاریخ، فلسفه، روانشناسی) بینش و عقلانیت عمیق استراتژیست را شکل می‌دهند.</p>
+            <p class="text-xs text-slate-600 leading-relaxed">علوم کاربردی ابزار دست کارشناسان است؛ اما رهبر استراتژیست به علوم رسوبی (تاریخ، جامعه‌شناسی، فلسفه و بینش رفتاری) برای دیدن نبض جامعه محتاج است.</p>
           </div>
           <div class="bg-white p-4 rounded-xl border border-indigo-100 shadow-sm">
             <div class="text-xs font-bold text-indigo-700 mb-1 flex items-center gap-1.5">
-              <span>🏘️</span>
-              <span>کالبدشکافی بومی بازار مسکن</span>
+              <span>📉</span>
+              <span>واکاوی بازار مسکن و دارایی‌ها</span>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">اشتباه مرگبار استراتژیست‌های ایرانی در نگاه صرفاً تورمی به ملک بدون در نظر گرفتن هرم جمعیتی، نرخ تشکیل خانوار، سرانه درآمد و رکود معاملاتی حاکم بر بازار.</p>
+            <p class="text-xs text-slate-600 leading-relaxed">تحلیل دوره بازگشت سرمایه، نرخ بازده مسکن در تهران، قفل‌شدگی نقدینگی در دارایی‌های راکد و ضرورت درک روندهای کلان پیش از تصمیم‌گیری سرمایه‌گذاری.</p>
           </div>
         </div>
 
-        <!-- Comparison Table: Strategy vs Planning -->
-        <div class="bg-white rounded-xl border border-indigo-200 overflow-hidden shadow-sm mb-5">
+        <!-- Macro Trends Comparison Table -->
+        <div class="bg-white rounded-xl border border-indigo-200 overflow-hidden shadow-sm">
           <table class="w-full text-xs text-right">
             <thead class="bg-indigo-100 text-indigo-950 font-bold">
               <tr>
-                <th class="p-3">شاخص مقایسه</th>
-                <th class="p-3 text-indigo-900">تفکر استراتژیک (Strategic Thinking)</th>
-                <th class="p-3 text-slate-700">برنامه‌ریزی استراتژیک صلب (Strategic Planning)</th>
+                <th class="p-3">حوزه راهبردی</th>
+                <th class="p-3 text-indigo-900">رویکرد برنامه‌ریزی سنتی (کوته‌بینانه)</th>
+                <th class="p-3 text-slate-700">رویکرد تفکر استراتژیک (لیدکا)</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-indigo-100 text-slate-700">
               <tr>
-                <td class="p-3 font-bold text-indigo-900 bg-slate-50">پارادایم حاکم</td>
-                <td class="p-3 font-semibold text-indigo-950">اکتشافی، شهودی، ترکیبی و کل‌نگر (سنتز و خلق قواعد جدید).</td>
-                <td class="p-3">تحلیلی، مکانیکی، فرمول‌محور و خطی (تجزیه گذشته به اجزا).</td>
+                <td class="p-3 font-bold text-indigo-900 bg-slate-50">نگاه به تلاطم‌های بازار</td>
+                <td class="p-3 text-rose-700">تلاش برای پیش‌بینی دقیق ریاضی تورم و نرخ ارز در جدول ۵ ساله.</td>
+                <td class="p-3 font-semibold text-emerald-800">فرضیه‌سازی هوشمندانه و ایجاد انعطاف عملیاتی در برابر انواع سناریوها.</td>
               </tr>
               <tr>
-                <td class="p-3 font-bold text-indigo-900 bg-slate-50">مواجهه با آینده</td>
-                <td class="p-3 font-semibold text-indigo-950">آینده را غیرقابل‌پیش‌بینی می‌داند؛ سناریوسازی چابک و آزمون فرضیه.</td>
-                <td class="p-3">آینده را امتداد خطی گذشته فرض می‌کند و بر پیش‌بینی‌های عددی صلب تکیه دارد.</td>
-              </tr>
-              <tr>
-                <td class="p-3 font-bold text-indigo-900 bg-slate-50">فرجام در بازار ایران</td>
-                <td class="p-3 bg-emerald-50/70 text-emerald-900 font-semibold">بقا، کشف پنجره‌های سودآور در بحران و چابکی در برابر شوک‌ها.</td>
-                <td class="p-3 bg-rose-50/70 text-rose-900 font-semibold">تولید اسناد کاغذی قطور، سرخوردگی مدیران و فلج شدن سازمان در اولین شوک ارزی.</td>
+                <td class="p-3 font-bold text-indigo-900 bg-slate-50">توسعه منابع انسانی</td>
+                <td class="p-3 text-rose-700">برگزاری دوره‌های ابزاری و تکنیکال برای مدیران ارشد.</td>
+                <td class="p-3 font-semibold text-emerald-800">توسعه هوش تاریخی، تفکر سیستمی و درک الگوهای رفتاری مصرف‌کننده.</td>
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <!-- Liedtka 5-Pillar Snapshot -->
-        <div class="bg-white p-4 rounded-xl border border-indigo-200 shadow-sm">
-          <div class="text-xs font-bold text-indigo-900 mb-2">🏛️ پنج رکن مدل جین لیدکا در یک نگاه:</div>
-          <div class="grid grid-cols-1 md:grid-cols-5 gap-2 text-center text-xs">
-            <div class="p-2.5 rounded-lg bg-indigo-50/60 font-semibold text-indigo-900">۱. دیدگاه سیستمی</div>
-            <div class="p-2.5 rounded-lg bg-indigo-50/60 font-semibold text-indigo-900">۲. تمرکز بر قصد</div>
-            <div class="p-2.5 rounded-lg bg-indigo-50/60 font-semibold text-indigo-900">۳. فرصت‌جویی هوشمند</div>
-            <div class="p-2.5 rounded-lg bg-indigo-50/60 font-semibold text-indigo-900">۴. تفکر در زمان</div>
-            <div class="p-2.5 rounded-lg bg-indigo-50/60 font-semibold text-indigo-900">۵. رویکرد فرضیه‌محور</div>
-          </div>
         </div>
 
       </div>
@@ -296,7 +301,7 @@
       <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
         <div>
           <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه اول</h3>
-          <p class="text-xs text-slate-400">شامل دیالوگ‌های کلاسی، ریشه‌یابی خطاهای شناختی، تحلیل مکاتب پورتر و مینتزبرگ و تحلیل‌های اقتصادی استاد صدقیانی‌فر</p>
+          <p class="text-xs text-slate-400">شامل تمامی مباحث، تمایز علوم، کالبدشکافی ارکان لیدکا و تحلیل روندهای بازار مسکن و سرمایه‌گذاری</p>
         </div>
         <button onclick="toggleSessionFull('s1')" id="btn-toggle-s1" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
           <span>مطالعه متن کامل و تفصیلی جلسه</span>
@@ -1414,6 +1419,360 @@
 
     </section>
 
+    <!-- TAB: SESSION 3 -->
+    <section id="content-session3" class="tab-content hidden space-y-6">
+      
+      <!-- Tab Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">جلسه سوم • ۲.۸ ساعت تدریس</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">اکوسیستم کسب‌وکار، چرخه دمینگ پویا، تبارشناسی طرح کلان (GP) و کالبدشکافی گلوگاه‌های بقا</h2>
+        </div>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-emerald-700 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+      </div>
+
+      <!-- TOP LAYER: Executive Visual Summary -->
+      <div class="bg-emerald-50/60 border border-emerald-200 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">🌐</span>
+          <h3 class="text-base md:text-lg font-black text-emerald-950">خلاصه اجرایی و مدیریتی جلسه سوم: معماری اکوسیستم، استعاره‌های بقا و طرح کلان</h3>
+        </div>
+        <p class="text-xs md:text-sm text-emerald-900 leading-relaxed mb-5 text-justify">
+          در این نشست، استاد صدقیانی‌فر نقد کوبنده‌ای بر توهم کمّی‌سازی و ماتریس‌های صلب (IFE/EFE) وارد ساختند و شرایط سه‌گانه عدم نیاز به تدوین استراتژی را تشریح کردند. چرخه باز دمینگ و استعاره حیاتی «تعمیر موتور در حال پرواز»، تبارشناسی اکوسیستم‌های کسب‌وکار در ایران و مطالعه موردی ۱۰ هکتاری بلوار کازینو رامسر (تمایز طرح کلان GP با طرح تجاری BP) ستون‌های اصلی این جلسه را تشکیل دادند.
+        </p>
+
+        <!-- 3 Highlight Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+          <div class="bg-white p-4 rounded-xl border border-emerald-100 shadow-sm">
+            <div class="text-xs font-bold text-emerald-700 mb-1 flex items-center gap-1.5">
+              <span>🎯</span>
+              <span>نقد توهم ماتریسی و قیف استراتژیک</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">ریاضی‌نمایی جایگزین شهود نمی‌شود. در شرایط بحران نقدینگی، فقدان رهبری قاطع یا وجود یک گلوگاه ملموس، تدوین سند استراتژی خطای مهلک است.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-emerald-100 shadow-sm">
+            <div class="text-xs font-bold text-emerald-700 mb-1 flex items-center gap-1.5">
+              <span>✈️</span>
+              <span>تعمیر موتور در حال پرواز</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">سازمان زنده توقف‌پذیر نیست. مرحله Do هرگز متوقف نمی‌شود؛ سازمان نمی‌تواند به بهانه انبارگردانی فکری یا برنامه‌ریزی، موتور عملیات را خاموش کند.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-emerald-100 shadow-sm">
+            <div class="text-xs font-bold text-emerald-700 mb-1 flex items-center gap-1.5">
+              <span>📐</span>
+              <span>طرح کلان (GP) در برابر بیزینس‌پلن (BP)</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">مطالعه موردی رامسر: بیزینس‌پلن گاوداری را توجیه می‌کرد اما طرح کلان اکوسیستمی، احداث هتل لوکس بین‌المللی با سرمایه ۷۵ میلیارد تومانی را اثبات کرد.</p>
+          </div>
+        </div>
+
+        <!-- Parable & Case Study Matrix -->
+        <div class="bg-white rounded-xl border border-emerald-200 overflow-hidden shadow-sm mb-5">
+          <div class="bg-emerald-100 px-4 py-2.5 text-xs font-bold text-emerald-950 flex items-center justify-between">
+            <span>🐒 استعاره استراتژیک جلسه: گلف، میمون‌ها و واقعیت‌های اقتصاد ایران</span>
+            <span class="text-[11px] text-emerald-700 font-normal">قانون بازی در شرایط آشوب</span>
+          </div>
+          <div class="p-4 text-xs text-slate-700 leading-relaxed text-justify">
+            <strong class="text-emerald-900 block mb-1 font-bold">«You must play the ball wherever the monkey drops it!»</strong>
+            در هند مستعمره، میمون‌ها توپ‌های گلف را جا‌به‌جا می‌کردند. مدیران ایرانی نیز قواعد متلاطم کلان، شوک‌های ارزی و تورم را خلق نکرده‌اند؛ اما استراتژیست ارشد حق ترک بازی یا گریستن ندارد. او باید توپ کسب‌وکار را دقیقاً از همان نقطه‌ای که میمون شرایط محیطی پرتاب کرده، با هوشمندی به سوی هدف شوت کند.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+      <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+        <div>
+          <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه سوم</h3>
+          <p class="text-xs text-slate-400">شامل تمامی مباحث اکوسیستم، نقد ماتریس‌های صلب، مطالعه موردی بلوار کازینو رامسر و پروتکل دوشنبه صبح مدیران عامل</p>
+        </div>
+        <button onclick="toggleSessionFull('s3')" id="btn-toggle-s3" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+          <span>مطالعه متن کامل و تفصیلی جلسه</span>
+          <span id="icon-toggle-s3">▼</span>
+        </button>
+      </div>
+
+      <div id="full-s3" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+        <div class="prose-custom"><h1 id="-gp">تفکر استراتژیک - جلسه سوم: اکوسیستم کسب‌وکار، چرخه دمینگ پویا، تبارشناسی طرح کلان (GP) و کالبدشکافی گلوگاه‌های بقا</h1>
+<p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
+<strong>مدرس دوره:</strong> استاد صدقیانی‌فر<br />
+<strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
+<strong>تاریخ تدریس:</strong> ۰۹ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۲ ساعت و ۴۷ دقیقه<br />
+<strong>موضوع محوری:</strong> اکوسیستم‌های کسب‌وکار، فراتر رفتن از ماتریس‌های خطی، تمایز طرح کلان (GP) با طرح تجاری (BP)، و حل معمای بقا در شرایط آشوب</p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. جوهره و مانیفست محوری تدریس استاد صدقیانی‌فر</h3>
+<p>جلسه سوم درس تفکر استراتژیک، یک شوک پارادایمی تمام‌عیار به الگوهای صلب و کلاسیک برنامه‌ریزی استراتژیک وارد کرد. استاد صدقیانی‌فر با عبور از خط‌کشی‌های رایج ماتریسی، تفکر استراتژیک را نه فرمول‌های بسته ریاضی، بلکه «هنر کشف سرِ کلاف در یک کلاف سردرگم»، «تعمیر موتور هواپیما در حال پرواز» و «معماری اکوسیستمی پایدار» تعریف کردند.</p>
+<p>پیام محوری این جلسه در سه گزاره راهبردی خلاصه می‌شود:
+1. <strong>توقف توهم کمّی‌سازی در تدوین استراتژی:</strong> پر کردن جدول‌های صلب IFE و EFE با نمرات اعشاری، جایگزین فهم شهودی و درک ریشه‌ای مسائل سازمان نمی‌شود.
+2. <strong>چرخه دمینگ باز (واگرا) در برابر چرخه بسته:</strong> عملیات اجرایی و حل مسائل سازمان هرگز متوقف نمی‌شود؛ سازمان نمی‌تواند به بهانه تدوین استراتژی یا انبارگردانی، موتور کسب‌وکار را خاموش کند.
+3. <strong>شکست بیزینس‌پلن (BP) بدون جنرال‌پلن (GP):</strong> در فضای غیرقابل پیش‌بینی، پیش‌بینی دقیق صورت‌های مالی ۵ ساله بدون داشتن نقشه جامع اکوسیستمی، توهمی پرهزینه است.</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    🌐 ارکان پنج‌گانه تدریس جلسه سوم استاد صدقیانی‌فر
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30">
+      <div class="text-indigo-300 font-bold text-sm mb-1">۱. نقد تفکر ماتریسی و قیف استراتژیک</div>
+      <p class="text-xs text-slate-300 leading-relaxed">چرا وزن‌دهی ریاضی جایگزین درک ریشه‌ای نمی‌شود و چه زمانی سازمان نباید استراتژی تدوین کند.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-sky-500/30">
+      <div class="text-sky-300 font-bold text-sm mb-1">۲. چرخه پویای دمینگ و پیوستار رشد</div>
+      <p class="text-xs text-slate-300 leading-relaxed">تعمیر موتور در حال پرواز، استعاره قطار دیزلی و رد توقف سازمان برای انبارگردانی فکری.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-emerald-500/30">
+      <div class="text-emerald-300 font-bold text-sm mb-1">۳. کالبدشکافی اکوسیستم‌های کسب‌وکار</div>
+      <p class="text-xs text-slate-300 leading-relaxed">اجزای زنده و غیرزنده، رقابت توأم با همکاری، اثرات بیرونی و تبارشناسی اکوسیستم‌های صنعتی ایران.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30">
+      <div class="text-amber-300 font-bold text-sm mb-1">۴. تمایز طرح کلان (GP) با طرح تجاری (BP)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">مطالعه موردی ۱۰ هکتاری بلوار کازینو رامسر: هتل لوکس بین‌المللی در برابر دامداری شیری صنعتی.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-rose-500/30">
+      <div class="text-rose-300 font-bold text-sm mb-1">۵. پارادوکس اخلاق و بقا در بازار ایران</div>
+      <p class="text-xs text-slate-300 leading-relaxed">تمایز فرصت واقعی از غارت، و حکایت استراتژیک میمون‌ها و زمین گلف در اقتصاد آشوب‌زده.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-purple-500/30">
+      <div class="text-purple-300 font-bold text-sm mb-1">۶. پروتکل دوشنبه صبح مدیران ارشد</div>
+      <p class="text-xs text-slate-300 leading-relaxed">راهنمای عملیاتی کشف سرِ کلاف، واگذاری تصدی‌گری و صیانت از جریان نقدینگی حیاتی.</p>
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="_2">۲. چه زمانی سازمان به «تدوین استراتژی» نیاز ندارد؟ (مدل قیف استراتژیک)</h2>
+<p>یکی از جسورانه‌ترین گزاره‌های مطرح‌شده توسط استاد صدقیانی‌فر در ابتدای جلسه، شکستن این پندار عمومی بود که «تدوین سند استراتژی همواره داروی شفابخش هر کسب‌وکاری است». ایشان با معرفی متدولوژی <strong>قیف استراتژیک (Strategic Funnel)</strong> تبیین کردند که در ۳ وضعیت حیاتی، وارد شدن به فرآیند زمان‌بر و هزینه‌بر تدوین استراتژی یک خطای مهلک مدیریتی است:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">موقعیت سازمانی</th>
+        <th class="p-3 border-b border-slate-700">ویژگی‌ها و علائم بالینی</th>
+        <th class="p-3 border-b border-slate-700">علت عدم نیاز به تدوین استراتژی</th>
+        <th class="p-3 border-b border-slate-700">اقدام عاجل جایگزین</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۱. فقدان رهبری قاطع یا بحران تعهد مالکیت</td>
+        <td class="p-3">سهامداران بر سر اهداف توافق ندارند، مدیرعامل اختیارات کافی ندارد یا اراده تغییر وجود ندارد.</td>
+        <td class="p-3 text-rose-700">هر سندی تولید شود در کشوی میز خاک خواهد خورد و موجب بی‌اعتمادی بیشتر بدنه می‌شود.</td>
+        <td class="p-3 text-emerald-800 font-bold">حل تعارض در سطح حکمرانی (Governance) و تعیین تکلیف ساختار قدرت.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۲. وجود یک گلوگاه حیاتی مشخص (Single Bottleneck)</td>
+        <td class="p-3">سازمان مشکل استراتژی ندارد؛ بلکه یک نقص حاد فنی، مالی یا حقوقی مانع تنفس آن شده است.</td>
+        <td class="p-3 text-rose-700">تدوین استراتژی فراگیر توجه و انرژی مدیریت را از حل فوری گلوگاه منحرف می‌سازد.</td>
+        <td class="p-3 text-emerald-800 font-bold">تمرکز ۱۰۰٪ انرژی و منابع روی رفع گلوگاه (مانند وصل مجدد خط اعتباری بانکی).</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۳. بحران بقای آنی و خون‌ریزی مالی شدید</td>
+        <td class="p-3">نقدینگی سازمان برای پرداخت حقوق ماه جاری یا تسویه چک‌های سررسیدشده کافی نیست.</td>
+        <td class="p-3 text-rose-700">وقتی بیمار در حال خون‌ریزی است، صحبت از رژیم غذایی و ورزش درازمدت جنایت است.</td>
+        <td class="p-3 text-emerald-800 font-bold">اقدامات اضطراری بقا (Turnaround)، فروش دارایی‌های راکد و تزریق سریع نقدینگی.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+<h2 id="_3">۳. نقد تفکر ماتریسی صلب: توهم دقت ریاضی در برابر بینش شهودی</h2>
+<p>استاد صدقیانی‌فر در نقد روش‌های متداول تدوین استراتژی در دانشگاه‌ها و شرکت‌های مشاوره‌ای (به‌ویژه ماتریس‌های ارزیابی عوامل داخلی IFE و خارجی EFE) هشداری جدی دادند:</p>
+<blockquote>
+<p><strong>گزاره استاد صدقیانی‌فر:</strong> «دادن نمره ۰.۱۵ به یک قوت سازمانی و ضرب کردن آن در رتبه ۳ یا ۴ و رسیدن به عدد ۲.۶۸، توهمی از علم و دقت ریاضی ایجاد می‌کند. این کار ریاضی‌نمایی (Mathiness) است، نه تفکر استراتژیک. استراتژی حاصل بینش عمیق کیفی، کشف روابط علی و معلولی و ادراک شهودی واقعیت‌های بازار است، نه جمع جبری اعداد انتزاعی.»</p>
+</blockquote>
+<h3 id="_4">خطاهای شناختی رایج در پر کردن ماتریس‌های کلاسیک:</h3>
+<ol>
+<li><strong>دستکاری ضرایب برای رسیدن به نتیجه دلخواه:</strong> مدیران ابتدا تصمیم می‌گیرند چه کاری انجام دهند، سپس وزن‌ها و رتبه‌ها را طوری تغییر می‌دهند تا عدد نهایی در خانه دلخواه ماتریس بیفتد.</li>
+<li><strong>هم‌وزن پنداشتن متغیرهای ناهمگن:</strong> قرار دادن متغیری حیاتی مانند «تحریم بانکی بین‌المللی» در کنار «تاخیر در بازسازی وب‌سایت شرکت» در یک جدول ماتریسی، وزن‌دهی را مضحک می‌کند.</li>
+<li><strong>غفلت از ماهیت پویا و غیرخطی سیستم‌ها:</strong> یک عامل به ظاهر کوچک (مانند نارضایتی یک کارشناس کلیدی فروش) می‌تواند در اثر حلقه‌های بازخورد مثبت تشدید شده و کل شبکه توزیع را مختل کند، در حالی که در ماتریس صلب کم‌اهمیت به نظر می‌رسد.</li>
+</ol>
+<hr />
+<h2 id="organizational-root-finding">۴. هنر کشف «سرِ کلاف» در آسیب‌شناسی سازمانی (Organizational Root Finding)</h2>
+<p>استاد صدقیانی‌فر با یک تمثیل کاربردی، شیوه مواجهه مدیر استراتژیست با بحران‌های انباشته‌شده سازمانی را تشریح کردند:</p>
+<blockquote>
+<p><strong>تمثیل کلاف سردرگم:</strong> «وقتی وارد یک شرکت بحران‌زده می‌شوید، مدیران لیستی از ده‌ها مشکل جلوی شما می‌گذارند: فروش پایین است، پرسنل بی‌انگیزه‌اند، تامین‌کنندگان قطعه نمی‌دهند، انبار خواب سرمایه دارد، مشتریان شاکی هستند و حساب‌ها کدر است. اگر بخواهید به همه این‌ها همزمان حمله کنید، له می‌شوید. وظیفه استراتژیست پیدا کردن <strong>سرِ کلاف</strong> است. اگر سر کلاف را بکشید، بقیه گره‌ها یکی‌یکی باز می‌شوند؛ اما اگر نخ اشتباهی را بکشید، گره‌ها کورتر خواهند شد.»</p>
+</blockquote>
+<div class="my-6 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800">
+  <div class="text-center font-bold text-amber-400 text-sm mb-4">🔗 زنجیره علّی بحران سازمانی و کشف نقطه اهرمی (Root-Cause Cascade)</div>
+  <div class="flex flex-col md:flex-row items-center justify-between gap-2 text-center text-xs">
+    <div class="p-3 bg-slate-800 rounded-xl border border-rose-500/40 w-full md:w-auto flex-1">
+      <span class="block text-rose-400 font-bold mb-1">سرِ کلاف (ریشه اصلی)</span>
+      کندی گردش سرمایه و تاخیر در تصمیم‌گیری مالی
+    </div>
+    <div class="text-slate-500 font-bold hidden md:block">←</div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-amber-500/40 w-full md:w-auto flex-1">
+      <span class="block text-amber-400 font-bold mb-1">پیامد مرحله ۱</span>
+      تاخیر در تسویه با تامین‌کننده و توقف تامین مواد اولیه
+    </div>
+    <div class="text-slate-500 font-bold hidden md:block">←</div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-blue-500/40 w-full md:w-auto flex-1">
+      <span class="block text-blue-400 font-bold mb-1">پیامد مرحله ۲</span>
+      توقف خطوط مونتاژ و تحویل ناقص سفارشات به مشتری
+    </div>
+    <div class="text-slate-500 font-bold hidden md:block">←</div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-indigo-500/40 w-full md:w-auto flex-1">
+      <span class="block text-indigo-400 font-bold mb-1">پیامد مرحله ۳</span>
+      ریزش مشتریان وفادار، فرسودگی سرمایه انسانی و تخریب برند
+    </div>
+  </div>
+</div>
+
+<p>مدیر ناوارد تصور می‌کند باید مشکل «انگیزش پرسنل» یا «تبلیغات فروش» را حل کند؛ در حالی که ریشه واقعی در فرآیند بروکراتیک تصویب و گردش پول نهفته است.</p>
+<hr />
+<h2 id="pdca">۵. چرخه دمینگ پویا (PDCA) و استعاره تعمیر موتور در حال پرواز</h2>
+<p>در دیدگاه سنتی، چرخه دمینگ (Plan-Do-Check-Act) به عنوان یک چرخه دایره‌ای بسته دیده می‌شود که گویی مرحله قبلی پایان می‌یابد و مرحله بعد آغاز می‌گردد. استاد صدقیانی‌فر این تلقی را رد کردند و مفهوم <strong>چرخه واگرا و پیوستار رشد</strong> را تبیین نمودند:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div class="p-5 rounded-2xl bg-indigo-50 border border-indigo-200">
+    <div class="text-indigo-900 font-black text-sm mb-2">✈️ ۱. استعاره تعمیر موتور هواپیما در حال پرواز</div>
+    <p class="text-xs text-slate-700 leading-relaxed text-justify">
+      سازمان یک کارخانه یا مغازه کوچک نیست که روی در آن بنویسید «به دلیل انبارگردانی یا تدوین استراتژی تا اطلاع ثانوی تعطیل است!». مشتریان منتظر نمی‌مانند، رقبا بازار را تسخیر می‌کنند و هزینه‌های ثابت (اجاره، حقوق، بیمه، مالیات) لحظه‌ای متوقف نمی‌شوند. مدیریت استراتژیک یعنی توانایی بازآفرینی سیستم و اجرای اصلاحات بنیادین، درست در شرایطی که خطوط تولید با حداکثر توان کار می‌کنند و هواپیما در ارتفاع ۳۰ هزار پایی در حال پرواز است.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-200">
+    <div class="text-emerald-900 font-black text-sm mb-2">🚂 ۲. استعاره لکوموتیو دیزلی و اینرسی حرکت</div>
+    <p class="text-xs text-slate-700 leading-relaxed text-justify">
+      سازمان زنده دارای اینرسی و تکانه حرکتی عظیمی مانند یک قطار باری سنگین است. مرحله <strong>Do (اجرا و اقدام)</strong> هیچ‌گاه قطع نمی‌شود. اگر رهبر سازمان بخواهد برای فکر کردن (Plan) یا بازنگری (Check) قطار را به طور کامل متوقف کند، هزینه و انرژی لازم برای به حرکت درآوردن مجدد آن ده برابر خواهد بود. بنابراین برنامه‌ریزی و پایش باید همگام و همزمان با جریان مداوم عمل رخ دهد.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="business-ecosystems">۶. کالبدشکافی اکوسیستم‌های کسب‌وکار (Business Ecosystems)</h2>
+<p>یکی از عمیق‌ترین مباحث نظری جلسه، تشریح مفهوم <strong>اکوسیستم کسب‌وکار</strong> و گذار از نگاه محدود بنگاه‌محور (Firm-Centric) به نگاه شبکه‌ای و بوم‌سازگان بود.</p>
+<h3 id="_5">۶.۱. تعریف و اجزای تشکیل‌دهنده اکوسیستم</h3>
+<p>اکوسیستم مجموعه‌ای از بازیگران، منابع و شرایط محیطی درهم‌تنیده است که بقا و شکوفایی هر یک وابسته به عملکرد کل سامانه است:
+*   <strong>اجزای زنده (Biotic Components):</strong> بنگاه‌های تجاری، مشتریان، تامین‌کنندگان، شرکای لجستیکی، رقبا، نیروی کار متخصص، نهادهای تنظیم‌گر (رگولاتورها) و تشکل‌های صنفی.
+*   <strong>اجزای غیرزنده (Abiotic Components):</strong> زیرساخت‌های فیزیکی، بسترهای ابری و دیجیتال، نرخ ارز، قوانین تجاری و گمرکی، نرخ تورم، پروتکل‌های زیست‌محیطی (مانند پیمان کیوتو و معاهده پاریس) و جریان‌های کلان پولی.</p>
+<h3 id="co-opetition">۶.۲. رقابت توأم با همکاری (Co-opetition) در اکوسیستم</h3>
+<p>در یک اکوسیستم بالغ، رقابت یک بازی با حاصل‌جمع صفر نیست. بنگاه‌ها در توسعه زیرساخت‌ها، فرهنگ‌سازی بازار، دفاع از حقوق صنف در برابر رگولاتوری ناعادلانه، و توسعه استانداردهای مشترک <strong>همکاری (Cooperation)</strong> می‌کنند، اما در سهم بازار و جذب مشتری نهایی با یکدیگر <strong>رقابت (Competition)</strong> می‌نمایند.</p>
+<div class="my-6 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800">
+  <div class="text-center font-bold text-amber-400 text-sm mb-4">🌱 ۴ رکن بنیادین شکوفایی اکوسیستم صنعتی (مقایسه تطبیقی ایران و کره جنوبی)</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-xs text-center">
+    <div class="p-3 bg-slate-800 rounded-xl border border-sky-500/30">
+      <span class="block text-sky-400 font-bold mb-1">۱. پایداری جریان نقدینگی</span>
+      وجود شبکه بانکی توسعه‌ای و تامین مالی زنجیره‌ای بدون رانت
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-emerald-500/30">
+      <span class="block text-emerald-400 font-bold mb-1">۲. زنجیره تامین پیوسته</span>
+      پیوند ارگانیک صنایع بالادستی مادر با خوشه‌های کوچک پایین‌دستی
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-purple-500/30">
+      <span class="block text-purple-400 font-bold mb-1">۳. تحقیق و توسعه درون‌زا</span>
+      انتقال مداوم دانش فنی از دانشگاه‌ها به خطوط تولید تجاری
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-amber-500/30">
+      <span class="block text-amber-400 font-bold mb-1">۴. رگولاتوری شفاف و قابل‌پیش‌بینی</span>
+      ثبات قوانین گمرکی، ارزی و تجاری حداقل در افق‌های ۵ ساله
+    </div>
+  </div>
+</div>
+
+<h3 id="_6">۶.۳. مطالعات موردی ایرانی مطرح‌شده توسط استاد صدقیانی‌فر:</h3>
+<ol>
+<li><strong>پرونده پتروشیمی میانکاله و اثرات جانبی (Externalities):</strong> نمونه بارز برخورد یک پروژه صنعتی منفرد با تعادل اکولوژیک و اجتماعی منطقه. احداث پتروشیمی در تالاب میانکاله بدون در نظر گرفتن هزینه‌های پنهان زیست‌محیطی و اعتراضات مدنی، نشان داد که استراتژیست نمی‌تواند مرزهای پروژه را محدود به چهاردیواری کارخانه بداند.</li>
+<li><strong>پلی‌پروپیلن (PP) در کرمانشاه و تله صنایع بالادست رانت‌محور:</strong> استاد صدقیانی‌فر تشریح کردند که چگونه صنایع مادر پتروشیمی در ایران خوراک ارزان دولتی می‌گیرند و محصول پایه را خام صادر می‌کنند، در حالی که صنایع تولیدی پایین‌دستی و ارزش‌آفرین کشور (مانند صنایع نساجی، قطعه‌سازی خودرو یا لوازم‌التحریر نظیر برندهای پاپکو و نیلپر) در حسرت مواد اولیه مرغوب در بازار بورس کالا زمین‌گیر می‌شوند.</li>
+<li><strong>سرکوب تولید ارزش‌آفرین توسط کارتل‌های سرمایه سنتی بازار:</strong> تحلیلی تاریخی بر رفتار سرمایه‌داران سنتی و واسطه‌گران که به دلیل سودهای کوتاه‌مدت تجاری و واردات بی‌رویه، مانع شکل‌گیری زنجیره ارزش و برندهای پایدار ایرانی در دهه‌های گذشته شده‌اند.</li>
+</ol>
+<hr />
+<h2 id="general-plan-gp-business-plan-bp">۷. تمایز طرح کلان (General Plan - GP) با طرح تجاری (Business Plan - BP)</h2>
+<p>یکی از کاربردی‌ترین بخش‌های تدریس استاد صدقیانی‌فر، کالبدشکافی چرایی شکست اکثر طرح‌های توجیهی و بیزینس‌پلن‌ها در ایران بود:</p>
+<blockquote>
+<p><strong>گزاره استاد صدقیانی‌فر:</strong> «در کشورهایی با بی‌ثباتی شدید اقتصادی، نوشتن بیزینس‌پلن‌های ۲۰ صفحه‌ای پر از جدول‌های فرضی تنزیل جریان نقدینگی (DCF) و نرخ بازده داخلی (IRR) برای ۵ سال آینده، صرفاً نوعی خودفریبی است. پیش از نوشتن هر بیزینس‌پلن، سازمان نیازمند یک <strong>طرح کلان معماری کسب‌وکار (General Plan)</strong> است. جنرال‌پلن سند جهت‌گیری اکوسیستمی، درک هویت پروژه، تحلیل مقیاس و هم‌خوانی کاربری با محیط است.»</p>
+</blockquote>
+<h3 id="_7">مطالعه موردی جامع: پرونده ۱۰ هکتاری بلوار کازینو رامسر</h3>
+<p>استاد صدقیانی‌فر تجربه واقعی بررسی یک زمین ۱۰ هکتاری در بلوار تاریخی کازینو در شهر رامسر را برای کلاس بازگو کردند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">مولفه ارزیابی</th>
+        <th class="p-3 border-b border-slate-700">گزینه الف: دامداری صنعتی گاو شیری</th>
+        <th class="p-3 border-b border-slate-700">گزینه ب: هتل لوکس بین‌المللی و مرکز گردشگری سلامت</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">سرمایه‌گذاری اولیه برآوردی</td>
+        <td class="p-3">حدود ۲۰ الی ۲۵ میلیارد تومان</td>
+        <td class="p-3 font-bold text-indigo-700">۷۰ الی ۷۵ میلیارد تومان (افق ۸۰ ماهه)</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">تحلیل سازگاری با محیط (GP)</td>
+        <td class="p-3 text-rose-700 font-bold">ناسازگاری فاجعه‌بار با بافت گردشگری، بوی نامطبوع، پساب آلاینده، تخریب ارزش اراضی مجاور.</td>
+        <td class="p-3 text-emerald-800 font-bold">هم‌افزایی کامل با میراث فرهنگی رامسر، جذب گردشگر خارجی، ارتقای کلاس منطقه‌ای.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">خروجی بیزینس‌پلن صلب (BP)</td>
+        <td class="p-3">بازگشت سرمایه سریع ۳ ساله به دلیل نیاز روزمره به شیر و لبنیات و دریافت نهاده دولتی.</td>
+        <td class="p-3">دوره بازگشت سرمایه طولانی (بیش از ۸ سال) و ریسک‌های نوسان گردشگری.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">قضاوت نهایی استراتژیست</td>
+        <td class="p-3 text-rose-800">تخریب دارایی استراتژیک به بهانه بازده کوتاه‌مدت حسابداری. رد قطعی.</td>
+        <td class="p-3 text-emerald-900 font-black">انتخاب استراتژیک مبتنی بر خلق ثروت پایدار و برندسازی ماندگار اکوسیستمی.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>این پرونده به روشنی نشان داد که اگر مدیر صرفاً به فرمول‌های مالی بیزینس‌پلن اتکا کند، ممکن است مرغوب‌ترین زمین ساحلی و گردشگری کشور را به گاوداری تبدیل نماید! جنرال‌پلن خط‌کش پیشینی سنجش هویت کسب‌وکار است.</p>
+<hr />
+<h2 id="_8">۸. کالبدشکافی مناقشه کلاسی: پارادوکس اخلاق و بقا در شرایط بحران اقتصادی</h2>
+<p>در میانه تدریس، مباحثه‌ای طولانی و پرحرارت میان دانشجویان پیرامون رفتار فعالان اقتصادی در شرایط تورمی، مفهوم رانت و پرونده‌های خرید انحصاری شکل گرفت.</p>
+<blockquote>
+<p>[!NOTE]
+<strong>یادداشت تحلیلی کلاس:</strong> در بازه زمانی ۰۱:۰۵:۰۸ الی ۰۱:۴۵:۵۰ (حدود ۴۱ دقیقه)، بخشی از کلاس به بحث و تنش میان چند تن از دانشجویان پیرامون موضوع «نسبت اخلاق و بقا در شرایط آشوب، انحصار، و کیس خرید سهام دیجی‌کالا توسط همراه اول» گذشت. جهت حفظ تمرکز و انضباط ساختاری جزوه، حواشی و مباحث غیرعلمی فیلتر شده و ادامه مباحث تخصصی استاد صدقیانی‌فر پیگیری شده است.</p>
+</blockquote>
+<h3 id="_9">۸.۱. دو قطب فکری مطرح‌شده در کلاس</h3>
+<p>در این گفتگو، دوقطبی بنیادین میان نگاه اخلاق‌گرای سنتی و نگاه عمل‌گرای داروینیسم اقتصادی آشکار گردید:
+1. <strong>دیدگاه اخلاق‌گرا و نقاد بازار:</strong> برخی از دانشجویان معتقد بودند که بخش بزرگی از آنچه در ایران «فرصت استراتژیک» نامیده می‌شود، عملاً ماهی‌گیری از آب گل‌آلود، استفاده از رانت انحصار، تباهی حقوق مصرف‌کننده، و غارت ثروت عمومی است. به عنوان نمونه، بلعیده شدن استارتاپ‌های بومی توسط غول‌های شبه‌دولتی یا فروش کالاهای بی‌کیفیت تحت لوای حمایت از تولید ملی، غیراخلاقی ارزیابی شد.
+2. <strong>دیدگاه عمل‌گرای واقع‌بین (Survivalist):</strong> در نقطه مقابل، رویکرد دیگری بقا در محیط تورمی و پرآشوب ایران را منوط به استفاده بی‌درنگ از فرصت‌های سرمایه‌گذاری دانست و تأکید کرد که اگر یک بنگاه خصوصی خود را بزرگ نکند و سهم بازار را بلع نکند، توسط رقبا و شوک‌های تورمی بلعیده خواهد شد.</p>
+<h3 id="_10">۸.۲. استعاره میمون‌ها و زمین گلف در هند انگلیسی: مانیفست عمل‌گرایی در اقتصاد ایران</h3>
+<p>در پایان این مناقشه، یکی از دانشجویان داستانی تاریخی را نقل کرد که جمع‌بندی استراتژیک جلسه را شکل داد:</p>
+<blockquote>
+<p><strong>حکایت گلف و میمون‌ها:</strong> «در دوران استعمار انگلیس در هندوستان، افسران بریتانیایی یک زمین گلف بسیار لوکس در حاشیه جنگل احداث کردند. اما با یک مشکل عجیب مواجه شدند: میمون‌های بازیگوش جنگل از بالای درختان فرود می‌آمدند، توپ‌های گلف را از روی چمن برمی‌داشتند و در جای دیگری (لای بوته‌ها، روی درخت یا نزدیک سوراخ) رها می‌کردند! افسران ابتدا تصمیم گرفتند میمون‌ها را بکشند یا حصارهای عظیم بسازند، اما جنگل بی‌پایان بود و میمون‌ها شکست‌ناپذیر. سرانجام تصمیم گرفتند یک قانون محلی و غیرمعمول در بازی وضع کنند:<br />
+<strong>«You must play the ball wherever the monkey drops it!» (شما باید توپ را دقیقاً از همان نقطه‌ای بازی کنید که میمون آن را انداخته است!)</strong>»</p>
+</blockquote>
+<p>استاد صدقیانی‌فر این استعاره را به عنوان آیینه تمام‌نمای مدیریت استراتژیک در ایران تصدیق کردند:<br />
+مدیران بخش خصوصی قواعد غیرقابل پیش‌بینی، شوک‌های ارزی، تورم‌های تاریخی و تصمیمات خلق‌الساعه رگولاتوری را ایجاد نکرده‌اند؛ اما به عنوان استراتژیست ارشد، حق ندارند دست از بازی بکشند یا در اتاق مدیریت خود گریه کنند. وظیفه استراتژیست بقا، بازی هوشمندانه و پیروزی در نقطه‌ای است که «میمون شرایط کلان، توپ کسب‌وکار او را پرتاب کرده است».</p>
+<hr />
+<h2 id="monday-morning-action-protocol">۹. پروتکل اجرایی «صبح دوشنبه» مدیران عامل (Monday Morning Action Protocol)</h2>
+<p>بر اساس تدریس جلسه سوم استاد صدقیانی‌فر، مدیرعاملی که می‌خواهد سازمان خود را از ورطه تله‌های کلاسیک خارج کرده و به یک اکوسیستم چابک بدل سازد، باید از صبح روز دوشنبه اقدامات زیر را به صورت ضربتی در دستور کار قرار دهد:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-amber-400 font-bold text-sm mb-2">۱. پاک‌سازی تقویم از جلسات صلب ماتریسی</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      تمام جلسات طولانی و فرسایشی که صرف پر کردن فرم‌های وزن‌دهی عددی یا بررسی ادعاهای تزئینی بیزینس‌پلن‌های گذشته می‌شوند را معلق کنید. به جای آن، جلسات اکتشافی تحلیل جریان نقدینگی و رضایت مشتریان کلیدی را جایگزین سازید.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-emerald-400 font-bold text-sm mb-2">۲. شناسایی «سرِ کلاف» سازمان</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      با حضور مستقیم در خط مقدم عملیات (کف کارخانه یا تیم فروش)، گره اصلی که مانع روانی و مالی زنجیره ارزش شده را کشف کنید. اجازه ندهید منابع مالی برای درمان علائم ظاهری (نظیر دوره‌های انگیزش صوری پرسنل) هدر رود وقتی اصل مشکل در جای دیگری قفل شده است.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-sky-400 font-bold text-sm mb-2">۳. اجرای اصل «تعمیر موتور در حال پرواز»</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      هرگونه توقف عملیاتی به بهانه تغییر ساختار، نصب نرم‌افزار جدید ERP یا نگارش آیین‌نامه را ممنوع اعلام کنید. فرآیندهای اصلاحی را در قالب پایلوت‌های موازی اجرا کرده و به تدریج به بدنه اصلی تزریق نمایید.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-purple-400 font-bold text-sm mb-2">۴. ممیزی اکوسیستمی پروژه‌ها (فیلتر جنرال‌پلن)</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      پروژه‌های سرمایه‌گذاری جدید را پیش از آنکه به دست حسابداران برای برآورد IRR سپرده شوند، با خط‌کش اکوسیستم بسنجید: آیا این پروژه با هویت برند، ظرفیت زنجیره تامین، محدودیت‌های رگولاتوری و محیط اجتماعی ما سازگار است یا خیر؟
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="_11">۱۰. پیوندگاه‌های تفکر استراتژیک: عبور از تحلیل به معماری ارزش</h2>
+<p>جلسه سوم درس تفکر استراتژیک، پیوند عمیقی میان واقعیت‌های عریان فضای صنعتی ایران و تئوری‌های نوین مدیریت برقرار ساخت. استاد صدقیانی‌فر نشان دادند که در عصر عدم‌قطعیت‌های فزاینده، سازمانی برنده است که نه اسیر ماتریس‌های گذشته‌نگر شود و نه در برابر تلاطم‌ها احساس ناتوانی کند؛ بلکه با ساخت اکوسیستمی تاب‌آور، جریان نقدینگی قدرتمند و درک عمیق پدیده‌ها، فرصت‌های آینده را در دل چالش‌های امروز بازآفرینی نماید.</p></div>
+      </div>
+
+    </section>
+
     <!-- TAB: SIMULATOR -->
     <section id="content-simulator" class="tab-content hidden space-y-8">
       <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-10">
@@ -1471,29 +1830,29 @@
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
                 <span>۴. هوشمندی فرصت‌طلبانه (Intelligent Opportunism)</span>
-                <span class="text-xs font-normal text-slate-500">(انعطاف و شکار پنجره‌های نوظهور در بحران)</span>
+                <span class="text-xs font-normal text-slate-500">(چابکی در شکار فرصت‌های نوظهور محیطی)</span>
               </label>
-              <span id="val-p4" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۴۵٪ (متوسط)</span>
+              <span id="val-p4" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۵۰٪ (متوسط)</span>
             </div>
-            <input type="range" id="range-p4" min="0" max="100" value="45" oninput="calculateMaturity()" class="w-full accent-indigo-600 cursor-pointer">
+            <input type="range" id="range-p4" min="0" max="100" value="50" oninput="calculateMaturity()" class="w-full accent-indigo-600 cursor-pointer">
           </div>
 
           <div>
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
-                <span>۵. رویکرد فرضیه‌محور (Hypothesis-Driven)</span>
-                <span class="text-xs font-normal text-slate-500">(آزمون سریع ایده‌ها به جای برنامه‌ریزی قطعی)</span>
+                <span>۵. پیش‌روی فرضیه‌محور (Hypothesis-Driven)</span>
+                <span class="text-xs font-normal text-slate-500">(آزمون سریع فرضیات تجاری قبل از سرمایه‌گذاری سنگین)</span>
               </label>
-              <span id="val-p5" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۳۵٪ (ضعیف)</span>
+              <span id="val-p5" class="text-xs font-black text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">۴۵٪ (متوسط)</span>
             </div>
-            <input type="range" id="range-p5" min="0" max="100" value="35" oninput="calculateMaturity()" class="w-full accent-indigo-600 cursor-pointer">
+            <input type="range" id="range-p5" min="0" max="100" value="45" oninput="calculateMaturity()" class="w-full accent-indigo-600 cursor-pointer">
           </div>
 
         </div>
 
-        <!-- Output Diagnostic Box -->
-        <div id="maturity-result-box" class="mt-8 p-6 rounded-2xl border transition-all">
-          <!-- Dynamically populated via JS -->
+        <!-- Result Box -->
+        <div id="maturity-result-box" class="mt-8 p-6 rounded-2xl border border-amber-300 bg-amber-50 text-amber-900 transition-all">
+          <!-- Dynamic JS output -->
         </div>
 
       </div>
@@ -1501,13 +1860,23 @@
 
     <!-- TAB: HANDBOOK -->
     <section id="content-handbook" class="tab-content hidden space-y-6">
-      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-10 space-y-8 prose-custom">
-        <h1 id="master-handbook">دانشنامه جامع و راهنمای مرجع استراتژیک (Master Handbook)</h1>
+      
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full">دانشنامه جامع مرجع • نسخه ۳.۰</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">هندبوک جامع تفکر استراتژیک (Master Handbook)</h2>
+        </div>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-indigo-700 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 md:p-10 border border-slate-200 shadow-sm">
+        <div class="prose-custom">
+          <h1 id="master-handbook">دانشنامه جامع و راهنمای مرجع استراتژیک (Master Handbook)</h1>
 <h2 id="strategic-thinking-for-c-suite-executives">تفکر استراتژیک در تراز رهبری ارشد کسب‌وکار (Strategic Thinking for C-Suite Executives)</h2>
 <p><strong>مرجع علمی و آکادمیک:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>مدرس دوره:</strong> استاد صدقیانی‌فر<br />
 <strong>طراحی، تدوین ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
-<strong>نسخه سند:</strong> ۲.۰ (پاییز ۱۴۰۵ - تجمیع تحلیلی جلسات ۰۱ و ۰۲)</p>
+<strong>نسخه سند:</strong> ۳.۰ (پاییز ۱۴۰۵ - تجمیع تحلیلی جلسات ۰۱، ۰۲ و ۰۳)</p>
 <hr />
 <h1 id="_1">بخش اول: مانیفست بنیادین و ارکان پنج‌گانه تفکر استراتژیک (مدل جین لیدکا)</h1>
 <h2 id="_2">۱. رهایی از توهم برنامه‌ریزی صلب در شرایط عدم‌قطعیت ایران</h2>
@@ -1515,7 +1884,7 @@
 <h3 id="jeanne-liedtka">ارکان پنج‌گانه مدل جین لیدکا (Jeanne Liedtka):</h3>
 <ol>
 <li><strong>دید سیستمی (System Perspective):</strong> درک زنجیره ارزش کل سازمان و اثر متقابل آن با محیط کلان.</li>
-<li><strong>تمرکز بر هدف و قصد استراتژیک (Intent Focused):</strong> ایجاد جهت‌گیری تسلیم‌ناپذیر و تمرکز انرژی کل سازمان بر غایت نهایی.</li>
+<li><strong>تمرکز بر قصد استراتژیک (Intent Focused):</strong> ایجاد جهت‌گیری تسلیم‌ناپذیر و تمرکز انرژی کل سازمان بر غایت نهایی.</li>
 <li><strong>فرصت‌جویی هوشمندانه (Intelligent Opportunism):</strong> انعطاف و آمادگی برای تصاحب فرصت‌های نوظهور محیطی بدون انحراف از قصد کلان.</li>
 <li><strong>تفکر در زمان (Thinking in Time):</strong> پیوند ارگانیک گذشته، حال و آینده و اجتناب از تله نوستالژی سازمانی.</li>
 <li><strong>پیش‌روی فرضیه‌محور (Hypothesis-Driven):</strong> آزمایش سریع فرضیه‌ها در میدان عمل به جای طراحی برنامه‌های صلب غیرقابل‌انطباق.</li>
@@ -2510,42 +2879,325 @@
 <li>[ ] <strong>تحلیل شرایط ضرورت تدوین سند استراتژی:</strong> پیش از پرداخت هزینه‌های سنگین به مشاوران مدیریت، اطمینان حاصل کرده‌اید که سازمان شما به بیماری «فقدان تعهد به فرایند»، «تعارض فعال مخرب» یا «مدیریت متزلزل کوتاه‌مدت» مبتلا نیست؟</li>
 <li>[ ] <strong>مدیریت پدیده‌های صفرنشدنی:</strong> آیا به جای سرکوب تعارض، مکانیزم‌های شفاف گفتگو، ارزیابی ریسک پویا و مدیریت زنجیره تأمین در برابر اثر شلاق چرمی را مستقر ساخته‌اید؟</li>
 </ul>
+<hr />
+<h1 id="gp">بخش چهارم: دانشنامه تفصیلی جلسه سوم (اکوسیستم کسب‌وکار، چرخه دمینگ پویا، تبارشناسی طرح کلان GP و گلوگاه‌های بقا)</h1>
+<h1 id="-gp">تفکر استراتژیک - جلسه سوم: اکوسیستم کسب‌وکار، چرخه دمینگ پویا، تبارشناسی طرح کلان (GP) و کالبدشکافی گلوگاه‌های بقا</h1>
+<p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
+<strong>مدرس دوره:</strong> استاد صدقیانی‌فر<br />
+<strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
+<strong>تاریخ تدریس:</strong> ۰۹ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۲ ساعت و ۴۷ دقیقه<br />
+<strong>موضوع محوری:</strong> اکوسیستم‌های کسب‌وکار، فراتر رفتن از ماتریس‌های خطی، تمایز طرح کلان (GP) با طرح تجاری (BP)، و حل معمای بقا در شرایط آشوب</p>
+<hr />
+<h2 id="executive-summary_2">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_27">۱.۱. جوهره و مانیفست محوری تدریس استاد صدقیانی‌فر</h3>
+<p>جلسه سوم درس تفکر استراتژیک، یک شوک پارادایمی تمام‌عیار به الگوهای صلب و کلاسیک برنامه‌ریزی استراتژیک وارد کرد. استاد صدقیانی‌فر با عبور از خط‌کشی‌های رایج ماتریسی، تفکر استراتژیک را نه فرمول‌های بسته ریاضی، بلکه «هنر کشف سرِ کلاف در یک کلاف سردرگم»، «تعمیر موتور هواپیما در حال پرواز» و «معماری اکوسیستمی پایدار» تعریف کردند.</p>
+<p>پیام محوری این جلسه در سه گزاره راهبردی خلاصه می‌شود:
+1. <strong>توقف توهم کمّی‌سازی در تدوین استراتژی:</strong> پر کردن جدول‌های صلب IFE و EFE با نمرات اعشاری، جایگزین فهم شهودی و درک ریشه‌ای مسائل سازمان نمی‌شود.
+2. <strong>چرخه دمینگ باز (واگرا) در برابر چرخه بسته:</strong> عملیات اجرایی و حل مسائل سازمان هرگز متوقف نمی‌شود؛ سازمان نمی‌تواند به بهانه تدوین استراتژی یا انبارگردانی، موتور کسب‌وکار را خاموش کند.
+3. <strong>شکست بیزینس‌پلن (BP) بدون جنرال‌پلن (GP):</strong> در فضای غیرقابل پیش‌بینی، پیش‌بینی دقیق صورت‌های مالی ۵ ساله بدون داشتن نقشه جامع اکوسیستمی، توهمی پرهزینه است.</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    🌐 ارکان پنج‌گانه تدریس جلسه سوم استاد صدقیانی‌فر
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30">
+      <div class="text-indigo-300 font-bold text-sm mb-1">۱. نقد تفکر ماتریسی و قیف استراتژیک</div>
+      <p class="text-xs text-slate-300 leading-relaxed">چرا وزن‌دهی ریاضی جایگزین درک ریشه‌ای نمی‌شود و چه زمانی سازمان نباید استراتژی تدوین کند.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-sky-500/30">
+      <div class="text-sky-300 font-bold text-sm mb-1">۲. چرخه پویای دمینگ و پیوستار رشد</div>
+      <p class="text-xs text-slate-300 leading-relaxed">تعمیر موتور در حال پرواز، استعاره قطار دیزلی و رد توقف سازمان برای انبارگردانی فکری.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-emerald-500/30">
+      <div class="text-emerald-300 font-bold text-sm mb-1">۳. کالبدشکافی اکوسیستم‌های کسب‌وکار</div>
+      <p class="text-xs text-slate-300 leading-relaxed">اجزای زنده و غیرزنده، رقابت توأم با همکاری، اثرات بیرونی و تبارشناسی اکوسیستم‌های صنعتی ایران.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30">
+      <div class="text-amber-300 font-bold text-sm mb-1">۴. تمایز طرح کلان (GP) با طرح تجاری (BP)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">مطالعه موردی ۱۰ هکتاری بلوار کازینو رامسر: هتل لوکس بین‌المللی در برابر دامداری شیری صنعتی.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-rose-500/30">
+      <div class="text-rose-300 font-bold text-sm mb-1">۵. پارادوکس اخلاق و بقا در بازار ایران</div>
+      <p class="text-xs text-slate-300 leading-relaxed">تمایز فرصت واقعی از غارت، و حکایت استراتژیک میمون‌ها و زمین گلف در اقتصاد آشوب‌زده.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-purple-500/30">
+      <div class="text-purple-300 font-bold text-sm mb-1">۶. پروتکل دوشنبه صبح مدیران ارشد</div>
+      <p class="text-xs text-slate-300 leading-relaxed">راهنمای عملیاتی کشف سرِ کلاف، واگذاری تصدی‌گری و صیانت از جریان نقدینگی حیاتی.</p>
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="_28">۲. چه زمانی سازمان به «تدوین استراتژی» نیاز ندارد؟ (مدل قیف استراتژیک)</h2>
+<p>یکی از جسورانه‌ترین گزاره‌های مطرح‌شده توسط استاد صدقیانی‌فر در ابتدای جلسه، شکستن این پندار عمومی بود که «تدوین سند استراتژی همواره داروی شفابخش هر کسب‌وکاری است». ایشان با معرفی متدولوژی <strong>قیف استراتژیک (Strategic Funnel)</strong> تبیین کردند که در ۳ وضعیت حیاتی، وارد شدن به فرآیند زمان‌بر و هزینه‌بر تدوین استراتژی یک خطای مهلک مدیریتی است:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">موقعیت سازمانی</th>
+        <th class="p-3 border-b border-slate-700">ویژگی‌ها و علائم بالینی</th>
+        <th class="p-3 border-b border-slate-700">علت عدم نیاز به تدوین استراتژی</th>
+        <th class="p-3 border-b border-slate-700">اقدام عاجل جایگزین</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۱. فقدان رهبری قاطع یا بحران تعهد مالکیت</td>
+        <td class="p-3">سهامداران بر سر اهداف توافق ندارند، مدیرعامل اختیارات کافی ندارد یا اراده تغییر وجود ندارد.</td>
+        <td class="p-3 text-rose-700">هر سندی تولید شود در کشوی میز خاک خواهد خورد و موجب بی‌اعتمادی بیشتر بدنه می‌شود.</td>
+        <td class="p-3 text-emerald-800 font-bold">حل تعارض در سطح حکمرانی (Governance) و تعیین تکلیف ساختار قدرت.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۲. وجود یک گلوگاه حیاتی مشخص (Single Bottleneck)</td>
+        <td class="p-3">سازمان مشکل استراتژی ندارد؛ بلکه یک نقص حاد فنی، مالی یا حقوقی مانع تنفس آن شده است.</td>
+        <td class="p-3 text-rose-700">تدوین استراتژی فراگیر توجه و انرژی مدیریت را از حل فوری گلوگاه منحرف می‌سازد.</td>
+        <td class="p-3 text-emerald-800 font-bold">تمرکز ۱۰۰٪ انرژی و منابع روی رفع گلوگاه (مانند وصل مجدد خط اعتباری بانکی).</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۳. بحران بقای آنی و خون‌ریزی مالی شدید</td>
+        <td class="p-3">نقدینگی سازمان برای پرداخت حقوق ماه جاری یا تسویه چک‌های سررسیدشده کافی نیست.</td>
+        <td class="p-3 text-rose-700">وقتی بیمار در حال خون‌ریزی است، صحبت از رژیم غذایی و ورزش درازمدت جنایت است.</td>
+        <td class="p-3 text-emerald-800 font-bold">اقدامات اضطراری بقا (Turnaround)، فروش دارایی‌های راکد و تزریق سریع نقدینگی.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+<h2 id="_29">۳. نقد تفکر ماتریسی صلب: توهم دقت ریاضی در برابر بینش شهودی</h2>
+<p>استاد صدقیانی‌فر در نقد روش‌های متداول تدوین استراتژی در دانشگاه‌ها و شرکت‌های مشاوره‌ای (به‌ویژه ماتریس‌های ارزیابی عوامل داخلی IFE و خارجی EFE) هشداری جدی دادند:</p>
+<blockquote>
+<p><strong>گزاره استاد صدقیانی‌فر:</strong> «دادن نمره ۰.۱۵ به یک قوت سازمانی و ضرب کردن آن در رتبه ۳ یا ۴ و رسیدن به عدد ۲.۶۸، توهمی از علم و دقت ریاضی ایجاد می‌کند. این کار ریاضی‌نمایی (Mathiness) است، نه تفکر استراتژیک. استراتژی حاصل بینش عمیق کیفی، کشف روابط علی و معلولی و ادراک شهودی واقعیت‌های بازار است، نه جمع جبری اعداد انتزاعی.»</p>
+</blockquote>
+<h3 id="_30">خطاهای شناختی رایج در پر کردن ماتریس‌های کلاسیک:</h3>
+<ol>
+<li><strong>دستکاری ضرایب برای رسیدن به نتیجه دلخواه:</strong> مدیران ابتدا تصمیم می‌گیرند چه کاری انجام دهند، سپس وزن‌ها و رتبه‌ها را طوری تغییر می‌دهند تا عدد نهایی در خانه دلخواه ماتریس بیفتد.</li>
+<li><strong>هم‌وزن پنداشتن متغیرهای ناهمگن:</strong> قرار دادن متغیری حیاتی مانند «تحریم بانکی بین‌المللی» در کنار «تاخیر در بازسازی وب‌سایت شرکت» در یک جدول ماتریسی، وزن‌دهی را مضحک می‌کند.</li>
+<li><strong>غفلت از ماهیت پویا و غیرخطی سیستم‌ها:</strong> یک عامل به ظاهر کوچک (مانند نارضایتی یک کارشناس کلیدی فروش) می‌تواند در اثر حلقه‌های بازخورد مثبت تشدید شده و کل شبکه توزیع را مختل کند، در حالی که در ماتریس صلب کم‌اهمیت به نظر می‌رسد.</li>
+</ol>
+<hr />
+<h2 id="organizational-root-finding">۴. هنر کشف «سرِ کلاف» در آسیب‌شناسی سازمانی (Organizational Root Finding)</h2>
+<p>استاد صدقیانی‌فر با یک تمثیل کاربردی، شیوه مواجهه مدیر استراتژیست با بحران‌های انباشته‌شده سازمانی را تشریح کردند:</p>
+<blockquote>
+<p><strong>تمثیل کلاف سردرگم:</strong> «وقتی وارد یک شرکت بحران‌زده می‌شوید، مدیران لیستی از ده‌ها مشکل جلوی شما می‌گذارند: فروش پایین است، پرسنل بی‌انگیزه‌اند، تامین‌کنندگان قطعه نمی‌دهند، انبار خواب سرمایه دارد، مشتریان شاکی هستند و حساب‌ها کدر است. اگر بخواهید به همه این‌ها همزمان حمله کنید، له می‌شوید. وظیفه استراتژیست پیدا کردن <strong>سرِ کلاف</strong> است. اگر سر کلاف را بکشید، بقیه گره‌ها یکی‌یکی باز می‌شوند؛ اما اگر نخ اشتباهی را بکشید، گره‌ها کورتر خواهند شد.»</p>
+</blockquote>
+<div class="my-6 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800">
+  <div class="text-center font-bold text-amber-400 text-sm mb-4">🔗 زنجیره علّی بحران سازمانی و کشف نقطه اهرمی (Root-Cause Cascade)</div>
+  <div class="flex flex-col md:flex-row items-center justify-between gap-2 text-center text-xs">
+    <div class="p-3 bg-slate-800 rounded-xl border border-rose-500/40 w-full md:w-auto flex-1">
+      <span class="block text-rose-400 font-bold mb-1">سرِ کلاف (ریشه اصلی)</span>
+      کندی گردش سرمایه و تاخیر در تصمیم‌گیری مالی
+    </div>
+    <div class="text-slate-500 font-bold hidden md:block">←</div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-amber-500/40 w-full md:w-auto flex-1">
+      <span class="block text-amber-400 font-bold mb-1">پیامد مرحله ۱</span>
+      تاخیر در تسویه با تامین‌کننده و توقف تامین مواد اولیه
+    </div>
+    <div class="text-slate-500 font-bold hidden md:block">←</div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-blue-500/40 w-full md:w-auto flex-1">
+      <span class="block text-blue-400 font-bold mb-1">پیامد مرحله ۲</span>
+      توقف خطوط مونتاژ و تحویل ناقص سفارشات به مشتری
+    </div>
+    <div class="text-slate-500 font-bold hidden md:block">←</div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-indigo-500/40 w-full md:w-auto flex-1">
+      <span class="block text-indigo-400 font-bold mb-1">پیامد مرحله ۳</span>
+      ریزش مشتریان وفادار، فرسودگی سرمایه انسانی و تخریب برند
+    </div>
+  </div>
+</div>
+
+<p>مدیر ناوارد تصور می‌کند باید مشکل «انگیزش پرسنل» یا «تبلیغات فروش» را حل کند؛ در حالی که ریشه واقعی در فرآیند بروکراتیک تصویب و گردش پول نهفته است.</p>
+<hr />
+<h2 id="pdca">۵. چرخه دمینگ پویا (PDCA) و استعاره تعمیر موتور در حال پرواز</h2>
+<p>در دیدگاه سنتی، چرخه دمینگ (Plan-Do-Check-Act) به عنوان یک چرخه دایره‌ای بسته دیده می‌شود که گویی مرحله قبلی پایان می‌یابد و مرحله بعد آغاز می‌گردد. استاد صدقیانی‌فر این تلقی را رد کردند و مفهوم <strong>چرخه واگرا و پیوستار رشد</strong> را تبیین نمودند:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div class="p-5 rounded-2xl bg-indigo-50 border border-indigo-200">
+    <div class="text-indigo-900 font-black text-sm mb-2">✈️ ۱. استعاره تعمیر موتور هواپیما در حال پرواز</div>
+    <p class="text-xs text-slate-700 leading-relaxed text-justify">
+      سازمان یک کارخانه یا مغازه کوچک نیست که روی در آن بنویسید «به دلیل انبارگردانی یا تدوین استراتژی تا اطلاع ثانوی تعطیل است!». مشتریان منتظر نمی‌مانند، رقبا بازار را تسخیر می‌کنند و هزینه‌های ثابت (اجاره، حقوق، بیمه، مالیات) لحظه‌ای متوقف نمی‌شوند. مدیریت استراتژیک یعنی توانایی بازآفرینی سیستم و اجرای اصلاحات بنیادین، درست در شرایطی که خطوط تولید با حداکثر توان کار می‌کنند و هواپیما در ارتفاع ۳۰ هزار پایی در حال پرواز است.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-emerald-50 border border-emerald-200">
+    <div class="text-emerald-900 font-black text-sm mb-2">🚂 ۲. استعاره لکوموتیو دیزلی و اینرسی حرکت</div>
+    <p class="text-xs text-slate-700 leading-relaxed text-justify">
+      سازمان زنده دارای اینرسی و تکانه حرکتی عظیمی مانند یک قطار باری سنگین است. مرحله <strong>Do (اجرا و اقدام)</strong> هیچ‌گاه قطع نمی‌شود. اگر رهبر سازمان بخواهد برای فکر کردن (Plan) یا بازنگری (Check) قطار را به طور کامل متوقف کند، هزینه و انرژی لازم برای به حرکت درآوردن مجدد آن ده برابر خواهد بود. بنابراین برنامه‌ریزی و پایش باید همگام و همزمان با جریان مداوم عمل رخ دهد.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="business-ecosystems">۶. کالبدشکافی اکوسیستم‌های کسب‌وکار (Business Ecosystems)</h2>
+<p>یکی از عمیق‌ترین مباحث نظری جلسه، تشریح مفهوم <strong>اکوسیستم کسب‌وکار</strong> و گذار از نگاه محدود بنگاه‌محور (Firm-Centric) به نگاه شبکه‌ای و بوم‌سازگان بود.</p>
+<h3 id="_31">۶.۱. تعریف و اجزای تشکیل‌دهنده اکوسیستم</h3>
+<p>اکوسیستم مجموعه‌ای از بازیگران، منابع و شرایط محیطی درهم‌تنیده است که بقا و شکوفایی هر یک وابسته به عملکرد کل سامانه است:
+*   <strong>اجزای زنده (Biotic Components):</strong> بنگاه‌های تجاری، مشتریان، تامین‌کنندگان، شرکای لجستیکی، رقبا، نیروی کار متخصص، نهادهای تنظیم‌گر (رگولاتورها) و تشکل‌های صنفی.
+*   <strong>اجزای غیرزنده (Abiotic Components):</strong> زیرساخت‌های فیزیکی، بسترهای ابری و دیجیتال، نرخ ارز، قوانین تجاری و گمرکی، نرخ تورم، پروتکل‌های زیست‌محیطی (مانند پیمان کیوتو و معاهده پاریس) و جریان‌های کلان پولی.</p>
+<h3 id="co-opetition">۶.۲. رقابت توأم با همکاری (Co-opetition) در اکوسیستم</h3>
+<p>در یک اکوسیستم بالغ، رقابت یک بازی با حاصل‌جمع صفر نیست. بنگاه‌ها در توسعه زیرساخت‌ها، فرهنگ‌سازی بازار، دفاع از حقوق صنف در برابر رگولاتوری ناعادلانه، و توسعه استانداردهای مشترک <strong>همکاری (Cooperation)</strong> می‌کنند، اما در سهم بازار و جذب مشتری نهایی با یکدیگر <strong>رقابت (Competition)</strong> می‌نمایند.</p>
+<div class="my-6 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800">
+  <div class="text-center font-bold text-amber-400 text-sm mb-4">🌱 ۴ رکن بنیادین شکوفایی اکوسیستم صنعتی (مقایسه تطبیقی ایران و کره جنوبی)</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-xs text-center">
+    <div class="p-3 bg-slate-800 rounded-xl border border-sky-500/30">
+      <span class="block text-sky-400 font-bold mb-1">۱. پایداری جریان نقدینگی</span>
+      وجود شبکه بانکی توسعه‌ای و تامین مالی زنجیره‌ای بدون رانت
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-emerald-500/30">
+      <span class="block text-emerald-400 font-bold mb-1">۲. زنجیره تامین پیوسته</span>
+      پیوند ارگانیک صنایع بالادستی مادر با خوشه‌های کوچک پایین‌دستی
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-purple-500/30">
+      <span class="block text-purple-400 font-bold mb-1">۳. تحقیق و توسعه درون‌زا</span>
+      انتقال مداوم دانش فنی از دانشگاه‌ها به خطوط تولید تجاری
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-amber-500/30">
+      <span class="block text-amber-400 font-bold mb-1">۴. رگولاتوری شفاف و قابل‌پیش‌بینی</span>
+      ثبات قوانین گمرکی، ارزی و تجاری حداقل در افق‌های ۵ ساله
+    </div>
+  </div>
+</div>
+
+<h3 id="_32">۶.۳. مطالعات موردی ایرانی مطرح‌شده توسط استاد صدقیانی‌فر:</h3>
+<ol>
+<li><strong>پرونده پتروشیمی میانکاله و اثرات جانبی (Externalities):</strong> نمونه بارز برخورد یک پروژه صنعتی منفرد با تعادل اکولوژیک و اجتماعی منطقه. احداث پتروشیمی در تالاب میانکاله بدون در نظر گرفتن هزینه‌های پنهان زیست‌محیطی و اعتراضات مدنی، نشان داد که استراتژیست نمی‌تواند مرزهای پروژه را محدود به چهاردیواری کارخانه بداند.</li>
+<li><strong>پلی‌پروپیلن (PP) در کرمانشاه و تله صنایع بالادست رانت‌محور:</strong> استاد صدقیانی‌فر تشریح کردند که چگونه صنایع مادر پتروشیمی در ایران خوراک ارزان دولتی می‌گیرند و محصول پایه را خام صادر می‌کنند، در حالی که صنایع تولیدی پایین‌دستی و ارزش‌آفرین کشور (مانند صنایع نساجی، قطعه‌سازی خودرو یا لوازم‌التحریر نظیر برندهای پاپکو و نیلپر) در حسرت مواد اولیه مرغوب در بازار بورس کالا زمین‌گیر می‌شوند.</li>
+<li><strong>سرکوب تولید ارزش‌آفرین توسط کارتل‌های سرمایه سنتی بازار:</strong> تحلیلی تاریخی بر رفتار سرمایه‌داران سنتی و واسطه‌گران که به دلیل سودهای کوتاه‌مدت تجاری و واردات بی‌رویه، مانع شکل‌گیری زنجیره ارزش و برندهای پایدار ایرانی در دهه‌های گذشته شده‌اند.</li>
+</ol>
+<hr />
+<h2 id="general-plan-gp-business-plan-bp">۷. تمایز طرح کلان (General Plan - GP) با طرح تجاری (Business Plan - BP)</h2>
+<p>یکی از کاربردی‌ترین بخش‌های تدریس استاد صدقیانی‌فر، کالبدشکافی چرایی شکست اکثر طرح‌های توجیهی و بیزینس‌پلن‌ها در ایران بود:</p>
+<blockquote>
+<p><strong>گزاره استاد صدقیانی‌فر:</strong> «در کشورهایی با بی‌ثباتی شدید اقتصادی، نوشتن بیزینس‌پلن‌های ۲۰ صفحه‌ای پر از جدول‌های فرضی تنزیل جریان نقدینگی (DCF) و نرخ بازده داخلی (IRR) برای ۵ سال آینده، صرفاً نوعی خودفریبی است. پیش از نوشتن هر بیزینس‌پلن، سازمان نیازمند یک <strong>طرح کلان معماری کسب‌وکار (General Plan)</strong> است. جنرال‌پلن سند جهت‌گیری اکوسیستمی، درک هویت پروژه، تحلیل مقیاس و هم‌خوانی کاربری با محیط است.»</p>
+</blockquote>
+<h3 id="_33">مطالعه موردی جامع: پرونده ۱۰ هکتاری بلوار کازینو رامسر</h3>
+<p>استاد صدقیانی‌فر تجربه واقعی بررسی یک زمین ۱۰ هکتاری در بلوار تاریخی کازینو در شهر رامسر را برای کلاس بازگو کردند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">مولفه ارزیابی</th>
+        <th class="p-3 border-b border-slate-700">گزینه الف: دامداری صنعتی گاو شیری</th>
+        <th class="p-3 border-b border-slate-700">گزینه ب: هتل لوکس بین‌المللی و مرکز گردشگری سلامت</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">سرمایه‌گذاری اولیه برآوردی</td>
+        <td class="p-3">حدود ۲۰ الی ۲۵ میلیارد تومان</td>
+        <td class="p-3 font-bold text-indigo-700">۷۰ الی ۷۵ میلیارد تومان (افق ۸۰ ماهه)</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">تحلیل سازگاری با محیط (GP)</td>
+        <td class="p-3 text-rose-700 font-bold">ناسازگاری فاجعه‌بار با بافت گردشگری، بوی نامطبوع، پساب آلاینده، تخریب ارزش اراضی مجاور.</td>
+        <td class="p-3 text-emerald-800 font-bold">هم‌افزایی کامل با میراث فرهنگی رامسر، جذب گردشگر خارجی، ارتقای کلاس منطقه‌ای.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">خروجی بیزینس‌پلن صلب (BP)</td>
+        <td class="p-3">بازگشت سرمایه سریع ۳ ساله به دلیل نیاز روزمره به شیر و لبنیات و دریافت نهاده دولتی.</td>
+        <td class="p-3">دوره بازگشت سرمایه طولانی (بیش از ۸ سال) و ریسک‌های نوسان گردشگری.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">قضاوت نهایی استراتژیست</td>
+        <td class="p-3 text-rose-800">تخریب دارایی استراتژیک به بهانه بازده کوتاه‌مدت حسابداری. رد قطعی.</td>
+        <td class="p-3 text-emerald-900 font-black">انتخاب استراتژیک مبتنی بر خلق ثروت پایدار و برندسازی ماندگار اکوسیستمی.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>این پرونده به روشنی نشان داد که اگر مدیر صرفاً به فرمول‌های مالی بیزینس‌پلن اتکا کند، ممکن است مرغوب‌ترین زمین ساحلی و گردشگری کشور را به گاوداری تبدیل نماید! جنرال‌پلن خط‌کش پیشینی سنجش هویت کسب‌وکار است.</p>
+<hr />
+<h2 id="_34">۸. کالبدشکافی مناقشه کلاسی: پارادوکس اخلاق و بقا در شرایط بحران اقتصادی</h2>
+<p>در میانه تدریس، مباحثه‌ای طولانی و پرحرارت میان دانشجویان پیرامون رفتار فعالان اقتصادی در شرایط تورمی، مفهوم رانت و پرونده‌های خرید انحصاری شکل گرفت.</p>
+<blockquote>
+<p>[!NOTE]
+<strong>یادداشت تحلیلی کلاس:</strong> در بازه زمانی ۰۱:۰۵:۰۸ الی ۰۱:۴۵:۵۰ (حدود ۴۱ دقیقه)، بخشی از کلاس به بحث و تنش میان چند تن از دانشجویان پیرامون موضوع «نسبت اخلاق و بقا در شرایط آشوب، انحصار، و کیس خرید سهام دیجی‌کالا توسط همراه اول» گذشت. جهت حفظ تمرکز و انضباط ساختاری جزوه، حواشی و مباحث غیرعلمی فیلتر شده و ادامه مباحث تخصصی استاد صدقیانی‌فر پیگیری شده است.</p>
+</blockquote>
+<h3 id="_35">۸.۱. دو قطب فکری مطرح‌شده در کلاس</h3>
+<p>در این گفتگو، دوقطبی بنیادین میان نگاه اخلاق‌گرای سنتی و نگاه عمل‌گرای داروینیسم اقتصادی آشکار گردید:
+1. <strong>دیدگاه اخلاق‌گرا و نقاد بازار:</strong> برخی از دانشجویان معتقد بودند که بخش بزرگی از آنچه در ایران «فرصت استراتژیک» نامیده می‌شود، عملاً ماهی‌گیری از آب گل‌آلود، استفاده از رانت انحصار، تباهی حقوق مصرف‌کننده، و غارت ثروت عمومی است. به عنوان نمونه، بلعیده شدن استارتاپ‌های بومی توسط غول‌های شبه‌دولتی یا فروش کالاهای بی‌کیفیت تحت لوای حمایت از تولید ملی، غیراخلاقی ارزیابی شد.
+2. <strong>دیدگاه عمل‌گرای واقع‌بین (Survivalist):</strong> در نقطه مقابل، رویکرد دیگری بقا در محیط تورمی و پرآشوب ایران را منوط به استفاده بی‌درنگ از فرصت‌های سرمایه‌گذاری دانست و تأکید کرد که اگر یک بنگاه خصوصی خود را بزرگ نکند و سهم بازار را بلع نکند، توسط رقبا و شوک‌های تورمی بلعیده خواهد شد.</p>
+<h3 id="_36">۸.۲. استعاره میمون‌ها و زمین گلف در هند انگلیسی: مانیفست عمل‌گرایی در اقتصاد ایران</h3>
+<p>در پایان این مناقشه، یکی از دانشجویان داستانی تاریخی را نقل کرد که جمع‌بندی استراتژیک جلسه را شکل داد:</p>
+<blockquote>
+<p><strong>حکایت گلف و میمون‌ها:</strong> «در دوران استعمار انگلیس در هندوستان، افسران بریتانیایی یک زمین گلف بسیار لوکس در حاشیه جنگل احداث کردند. اما با یک مشکل عجیب مواجه شدند: میمون‌های بازیگوش جنگل از بالای درختان فرود می‌آمدند، توپ‌های گلف را از روی چمن برمی‌داشتند و در جای دیگری (لای بوته‌ها، روی درخت یا نزدیک سوراخ) رها می‌کردند! افسران ابتدا تصمیم گرفتند میمون‌ها را بکشند یا حصارهای عظیم بسازند، اما جنگل بی‌پایان بود و میمون‌ها شکست‌ناپذیر. سرانجام تصمیم گرفتند یک قانون محلی و غیرمعمول در بازی وضع کنند:<br />
+<strong>«You must play the ball wherever the monkey drops it!» (شما باید توپ را دقیقاً از همان نقطه‌ای بازی کنید که میمون آن را انداخته است!)</strong>»</p>
+</blockquote>
+<p>استاد صدقیانی‌فر این استعاره را به عنوان آیینه تمام‌نمای مدیریت استراتژیک در ایران تصدیق کردند:<br />
+مدیران بخش خصوصی قواعد غیرقابل پیش‌بینی، شوک‌های ارزی، تورم‌های تاریخی و تصمیمات خلق‌الساعه رگولاتوری را ایجاد نکرده‌اند؛ اما به عنوان استراتژیست ارشد، حق ندارند دست از بازی بکشند یا در اتاق مدیریت خود گریه کنند. وظیفه استراتژیست بقا، بازی هوشمندانه و پیروزی در نقطه‌ای است که «میمون شرایط کلان، توپ کسب‌وکار او را پرتاب کرده است».</p>
+<hr />
+<h2 id="monday-morning-action-protocol">۹. پروتکل اجرایی «صبح دوشنبه» مدیران عامل (Monday Morning Action Protocol)</h2>
+<p>بر اساس تدریس جلسه سوم استاد صدقیانی‌فر، مدیرعاملی که می‌خواهد سازمان خود را از ورطه تله‌های کلاسیک خارج کرده و به یک اکوسیستم چابک بدل سازد، باید از صبح روز دوشنبه اقدامات زیر را به صورت ضربتی در دستور کار قرار دهد:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-amber-400 font-bold text-sm mb-2">۱. پاک‌سازی تقویم از جلسات صلب ماتریسی</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      تمام جلسات طولانی و فرسایشی که صرف پر کردن فرم‌های وزن‌دهی عددی یا بررسی ادعاهای تزئینی بیزینس‌پلن‌های گذشته می‌شوند را معلق کنید. به جای آن، جلسات اکتشافی تحلیل جریان نقدینگی و رضایت مشتریان کلیدی را جایگزین سازید.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-emerald-400 font-bold text-sm mb-2">۲. شناسایی «سرِ کلاف» سازمان</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      با حضور مستقیم در خط مقدم عملیات (کف کارخانه یا تیم فروش)، گره اصلی که مانع روانی و مالی زنجیره ارزش شده را کشف کنید. اجازه ندهید منابع مالی برای درمان علائم ظاهری (نظیر دوره‌های انگیزش صوری پرسنل) هدر رود وقتی اصل مشکل در جای دیگری قفل شده است.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-sky-400 font-bold text-sm mb-2">۳. اجرای اصل «تعمیر موتور در حال پرواز»</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      هرگونه توقف عملیاتی به بهانه تغییر ساختار، نصب نرم‌افزار جدید ERP یا نگارش آیین‌نامه را ممنوع اعلام کنید. فرآیندهای اصلاحی را در قالب پایلوت‌های موازی اجرا کرده و به تدریج به بدنه اصلی تزریق نمایید.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-purple-400 font-bold text-sm mb-2">۴. ممیزی اکوسیستمی پروژه‌ها (فیلتر جنرال‌پلن)</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      پروژه‌های سرمایه‌گذاری جدید را پیش از آنکه به دست حسابداران برای برآورد IRR سپرده شوند، با خط‌کش اکوسیستم بسنجید: آیا این پروژه با هویت برند، ظرفیت زنجیره تامین، محدودیت‌های رگولاتوری و محیط اجتماعی ما سازگار است یا خیر؟
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="_37">۱۰. پیوندگاه‌های تفکر استراتژیک: عبور از تحلیل به معماری ارزش</h2>
+<p>جلسه سوم درس تفکر استراتژیک، پیوند عمیقی میان واقعیت‌های عریان فضای صنعتی ایران و تئوری‌های نوین مدیریت برقرار ساخت. استاد صدقیانی‌فر نشان دادند که در عصر عدم‌قطعیت‌های فزاینده، سازمانی برنده است که نه اسیر ماتریس‌های گذشته‌نگر شود و نه در برابر تلاطم‌ها احساس ناتوانی کند؛ بلکه با ساخت اکوسیستمی تاب‌آور، جریان نقدینگی قدرتمند و درک عمیق پدیده‌ها، فرصت‌های آینده را در دل چالش‌های امروز بازآفرینی نماید.</p>
+        </div>
       </div>
+
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-10 px-6 border-t border-slate-800 mt-auto">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
-      <div class="space-y-2">
-        <div class="text-sm font-bold text-slate-200">
-          دانشکده اقتصاد دانشگاه تهران • دوره تخصصی MBA (کد 0410)
-        </div>
-        <div class="text-xs text-slate-400">
-          درس تفکر استراتژیک • مدرس: استاد صدقیانی‌فر
-        </div>
+  <footer class="bg-slate-950 text-slate-400 py-10 px-4 mt-auto border-t border-slate-800 text-center">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full font-bold">دانشکده اقتصاد دانشگاه تهران</span>
+        <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full font-bold">دوره تخصصی MBA</span>
+        <span class="text-xs bg-slate-800 text-amber-400 px-3 py-1 rounded-full font-bold">پاییز ۱۴۰۵</span>
       </div>
-      <div>
-        <div class="inline-flex flex-wrap items-center justify-center gap-3">
+      <div class="text-xs leading-relaxed max-w-xl mx-auto">
+        طراحی و معماری سیستم جامع دانشی MBA توسط <strong>پارسا رضائی</strong> جهت ارتقای استانداردهای تحلیلی و تصمیم‌گیری رهبران کسب‌وکار در ایران.
+      </div>
+      <div class="inline-flex flex-wrap items-center justify-center gap-3">
   <span class="text-slate-300 text-xs md:text-sm">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
   <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-3 py-1 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
     <span>Parsa Rezaie</span>
   </a>
 </div>
-      </div>
     </div>
   </footer>
 
+  <!-- Interactive Scripts -->
   <script>
-    // Tab switching
     function switchTab(tabId) {
-      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-      const activeContent = document.getElementById('content-' + tabId);
-      if (activeContent) activeContent.classList.remove('hidden');
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(c => c.classList.add('hidden'));
 
-      document.querySelectorAll('.tab-btn').forEach(btn => {
+      const activeContent = document.getElementById('content-' + tabId);
+      if (activeContent) {
+        activeContent.classList.remove('hidden');
+      }
+
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      tabBtns.forEach(btn => {
         btn.classList.remove('bg-white', 'text-slate-900', 'shadow-md', 'active');
         btn.classList.add('bg-white/15', 'text-white');
       });

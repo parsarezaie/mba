@@ -14,7 +14,7 @@
   </script>
   <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>
-    .gradient-header { background: linear-gradient(135deg, #091e3a 0%, #1e3a8a 50%, #0284c7 100%); }
+    .gradient-header { background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 40%, #0284c7 75%, #0f172a 100%); }
     body { font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, sans-serif; }
     .card-hover { transition: all 0.25s ease-in-out; }
     .card-hover:hover { transform: translateY(-3px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1); }
@@ -29,9 +29,9 @@
     .prose-custom li { margin-bottom: 0.45rem; }
     .prose-custom blockquote { border-right: 4px solid #0284c7; background-color: #f0f9ff; padding: 0.95rem 1.25rem; border-radius: 0.5rem; margin: 1.35rem 0; color: #0369a1; font-weight: 500; }
     .prose-custom table { width: 100%; border-collapse: collapse; margin: 1.25rem 0; font-size: 0.85rem; border-radius: 0.5rem; overflow: hidden; }
-    .prose-custom th { background-color: #f1f5f9; padding: 0.75rem 0.9rem; font-weight: 700; border: 1px solid #cbd5e1; text-align: right !important; direction: rtl !important; }
-    .prose-custom td { padding: 0.75rem 0.9rem; border: 1px solid #e2e8f0; text-align: right !important; direction: rtl !important; }
-    .prose-custom pre { background-color: #0f172a; color: #f8fafc; padding: 1.25rem; border-radius: 0.75rem; overflow-x: auto; font-family: monospace; font-size: 0.85rem; margin: 1.25rem 0; direction: ltr; text-align: left; }
+    .prose-custom th { background-color: #0f172a; color: #38bdf8; padding: 0.75rem; border: 1px solid #334155; font-weight: 700; }
+    .prose-custom td { padding: 0.75rem; border: 1px solid #e2e8f0; }
+    .prose-custom tr:nth-child(even) { background-color: #f8fafc; }
     .prose-custom code { background-color: #f1f5f9; color: #0f172a; padding: 0.2rem 0.45rem; border-radius: 0.3rem; font-family: monospace; font-size: 0.85rem; }
     .prose-custom pre code { background-color: transparent; color: inherit; padding: 0; }
   </style>
@@ -60,7 +60,7 @@
             اجرا و کنترل استراتژیک
           </h1>
           <p class="text-blue-100 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
-            مجموعه تحلیلی و راهبردی ۲ جلسه کامل | مدرس: <strong class="text-white font-semibold">استاد خطیبی</strong> | <div class="inline-flex items-center gap-2 mt-1">
+            مجموعه تحلیلی و راهبردی ۳ جلسه کامل | مدرس: <strong class="text-white font-semibold">استاد خطیبی</strong> | <div class="inline-flex items-center gap-2 mt-1">
   <span class="text-blue-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
   <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -71,8 +71,8 @@
         </div>
         <div class="flex items-center gap-3">
           <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3.5 text-center min-w-[120px]">
-            <div class="text-2xl font-black text-amber-300">۲ جلسه</div>
-            <div class="text-xs text-blue-100 font-medium">۶.۴ ساعت تدریس کاربردی</div>
+            <div class="text-2xl font-black text-amber-300">۳ جلسه</div>
+            <div class="text-xs text-blue-100 font-medium">۹.۶ ساعت تدریس کاربردی</div>
           </div>
         </div>
       </div>
@@ -87,6 +87,9 @@
         </button>
         <button onclick="switchTab('session2')" id="tab-session2" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           جلسه ۲: ارکان جهت‌ساز، ماتریس‌ها و QSPM
+        </button>
+        <button onclick="switchTab('session3')" id="tab-session3" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۳: گذار به اجرا، آمار گالوپ و ارکان ۴‌گانه
         </button>
         <button onclick="switchTab('simulator')" id="tab-simulator" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           ⚙️ عارضه‌یاب موانع ۴‌گانه اجرا
@@ -107,40 +110,40 @@
       <!-- Strategic Banner -->
       <div class="bg-white rounded-3xl p-6 md:p-8 border border-slate-200 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div class="space-y-2">
-          <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">
-            <span>🏛️ معماری پیاده‌سازی و کنترل در تراز مدیرعامل</span>
+          <div class="inline-flex items-center gap-2 bg-sky-50 text-sky-700 text-xs font-bold px-3 py-1 rounded-full">
+            <span>⚙️ عبور از تله‌های مرگبار شکاف استراتژی-عملکرد (Strategy Gap)</span>
           </div>
           <h2 class="text-xl md:text-2xl font-black text-slate-900">
-            نقشه راهبردی اجرا و مهار شکاف استراتژی-عملکرد (Strategy-to-Execution Gap)
+            معماری پیاده‌سازی و سیستم‌های کنترل در تراز رهبری ارشد
           </h2>
           <p class="text-xs md:text-sm text-slate-600 max-w-2xl leading-relaxed">
-            بیش از ۸۵ درصد استراتژی‌های سازمانی نه به دلیل ضعف تحلیل، بلکه به دلیل اجرای ضعیف، مقاومت پنهان رفتاری و تضاد منافع ناکام می‌مانند. این داشبورد تمامی آموزه‌های کلاس استاد خطیبی و اسلایدهای ۱ تا ۵۱ را به جعبه‌ابزاری قطعی برای مدیران ارشد تبدیل کرده است.
+            استراتژی عالی در مرحله تدوین، ضامن موفقیت نیست؛ بلکه بیش از ۷۰ تا ۹۰ درصد استراتژی‌ها در میدان عمل و به دست کارکنان شکست می‌خورند. این پرتال آموزشی تمامی مفاهیم کلاس استاد خطیبی را از مدل‌های عارضه‌یابی تا ارکان جهت‌ساز، ماتریس‌های تصمیم‌گیری و ارکان ۴‌گانه اجرا در اختیار مدیران قرار می‌دهد.
           </p>
         </div>
         <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-          <button onclick="switchTab('handbook')" class="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-bold text-xs md:text-sm shadow-md transition-all flex items-center justify-center gap-2">
+          <button onclick="switchTab('handbook')" class="px-5 py-3 bg-sky-600 hover:bg-sky-700 text-white rounded-2xl font-bold text-xs md:text-sm shadow-md transition-all flex items-center justify-center gap-2">
             <span>📖 مطالعه دانشنامه کامل دوره</span>
             <span>➔</span>
           </button>
         </div>
       </div>
 
-      <!-- 2 Session Executive Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- 3 Session Executive Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         <!-- S1 Card -->
         <div class="card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm">۱</span>
-              <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full">جلسه اول • ۳.۳ ساعت</span>
+              <span class="w-8 h-8 rounded-lg bg-sky-100 text-sky-800 flex items-center justify-center font-bold text-sm">۱</span>
+              <span class="text-xs font-bold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-full">جلسه اول • ۳.۳ ساعت</span>
             </div>
-            <h4 class="text-base font-extrabold text-slate-900 mb-2">چالش‌های بنیادین اجرا و موانع ۴‌گانه کاپلان-نورتون</h4>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">شکاف اجرا، موانع ۴‌گانه کاپلان-نورتون و ۴ نوع کنترل استراتژیک</h4>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              پارادوکس اجرا، تفاوت ماهوی تدوین با پیاده‌سازی، کالبدشکافی ۴ مانع مهلک (چشم‌انداز، مشوق‌ها، مدیریت، منابع) و سیستم‌های کنترل ۴‌گانه (فرضیات، نظارت، پیاده‌سازی، هشدار ویژه).
+              کالبدشکافی علل شکست ۹۰ درصدی استراتژی‌ها در صحنه اجرا، موانع چهارگانه (چشم‌انداز، مشوق‌ها، مدیریت، منابع) و سیستم‌های کنترل مقدماتی، نظارت مداوم و هشدارهای ویژه.
             </p>
           </div>
-          <button onclick="switchTab('session1')" class="w-full text-center text-xs font-bold text-blue-700 hover:text-blue-900 pt-3 border-t border-slate-100">
+          <button onclick="switchTab('session1')" class="w-full text-center text-xs font-bold text-sky-700 hover:text-sky-900 pt-3 border-t border-slate-100">
             ورود به جزوه تفصیلی و خلاصه جلسه اول ➔
           </button>
         </div>
@@ -149,43 +152,60 @@
         <div class="card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
-              <span class="w-8 h-8 rounded-lg bg-sky-100 text-sky-800 flex items-center justify-center font-bold text-sm">۲</span>
-              <span class="text-xs font-bold text-sky-700 bg-sky-50 px-2.5 py-1 rounded-full">جلسه دوم • ۳.۱ ساعت (اسلایدهای ۱ تا ۵۱)</span>
+              <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm">۲</span>
+              <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-full">جلسه دوم • ۳.۱ ساعت</span>
             </div>
-            <h4 class="text-base font-extrabold text-slate-900 mb-2">ارکان جهت‌ساز، ماتریس‌های ارزیابی و ماتریس QSPM</h4>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">ارکان جهت‌ساز، ماتریس‌های ارزیابی موقعیت و تصمیم‌گیری QSPM</h4>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              ماموریت ۵ سؤالی، چشم‌انداز کیفی/کمی (کاله و میهن)، ارزش‌ها و CSR، زنجیره ماتریس‌های EFE و IFE نتفلیکس، CPM افق داده‌ها، ماتریس ۹ خانه‌ای IEM، گرند استراتژی و QSPM مهندسین مشاور.
+              پل اتصال تدوین به اجرا: بیانیه مأموریت و چشم‌انداز، اخلاق کسب‌وکار، تحلیل‌های EFE/IFE/CPM، ماتریس ۹ خانه‌ای IEM و اولویت‌بندی کمی راهبردها با ماتریس QSPM.
             </p>
           </div>
-          <button onclick="switchTab('session2')" class="w-full text-center text-xs font-bold text-sky-700 hover:text-sky-900 pt-3 border-t border-slate-100">
+          <button onclick="switchTab('session2')" class="w-full text-center text-xs font-bold text-blue-700 hover:text-blue-900 pt-3 border-t border-slate-100">
             ورود به جزوه تفصیلی و خلاصه جلسه دوم ➔
+          </button>
+        </div>
+
+        <!-- S3 Card -->
+        <div class="card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">۳</span>
+              <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">جلسه سوم • ۳.۲ ساعت</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">گذار از تدوین به اجرا، آمار گالوپ و ارکان ۴‌گانه پیاده‌سازی</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              کالبدشکافی آمار تکان‌دهنده ۷۰٪ شکست گالوپ، دو بعد تخصیص منابع و مدیریت تحول، ۴ رکن پیاده‌سازی و پیش‌درآمدی بر کارت امتیازی متوازن (BSC).
+            </p>
+          </div>
+          <button onclick="switchTab('session3')" class="w-full text-center text-xs font-bold text-emerald-700 hover:text-emerald-900 pt-3 border-t border-slate-100">
+            ورود به جزوه تفصیلی و خلاصه جلسه سوم ➔
           </button>
         </div>
 
       </div>
 
-      <!-- Core Frameworks Card -->
+      <!-- Execution Barriers Overview Card -->
       <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
         <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
-          <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+          <span class="w-3 h-3 rounded-full bg-sky-600"></span>
           <span>چهار مانع مهلک اجرای استراتژی (مدل رابرت کاپلان و دیوید نورتون)</span>
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-            <strong class="text-slate-900 block mb-1 text-sm text-amber-700">۱. مانع چشم‌انداز (Vision Barrier)</strong>
-            <p class="text-slate-600 leading-relaxed">کمتر از ۵٪ از کارکنان سازمان استراتژی را درک می‌کنند؛ چرا که استراتژی در اسناد محرمانه محبوس است و به زبان کار روزمره ترجمه نشده است.</p>
+            <strong class="text-slate-900 block mb-1 text-sm text-sky-700">۱. مانع چشم‌انداز (Vision)</strong>
+            <p class="text-slate-600 leading-relaxed">کمتر از ۵٪ پرسنل استراتژی را می‌فهمند. سند در گاوصندوق مدیران محبوس است و زبان مشترک وجود ندارد.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-            <strong class="text-slate-900 block mb-1 text-sm text-blue-700">۲. مانع افراد و مشوق‌ها (People Barrier)</strong>
-            <p class="text-slate-600 leading-relaxed">تنها ۲۵٪ از مدیران پاداش خود را متصل به استراتژی می‌بینند؛ در نتیجه کارکنان بر منافع کوتاه‌مدت یا وظایف روتین متمرکز می‌شوند.</p>
+            <strong class="text-slate-900 block mb-1 text-sm text-sky-700">۲. مانع افراد (People)</strong>
+            <p class="text-slate-600 leading-relaxed">تنها ۲۵٪ مدیران پاداش و ارزیابی خود را متصل به استراتژی می‌بینند؛ مشوق‌ها همسو نیستند.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-            <strong class="text-slate-900 block mb-1 text-sm text-emerald-700">۳. مانع مدیریت و رهبری (Management Barrier)</strong>
-            <p class="text-slate-600 leading-relaxed">۸۵٪ از مدیران ارشد ماهانه کمتر از یک ساعت درباره استراتژی گفتگو می‌کنند و توانشان در اطفای حریق‌های روزمره بلعیده می‌شود.</p>
+            <strong class="text-slate-900 block mb-1 text-sm text-sky-700">۳. مانع مدیریت (Management)</strong>
+            <p class="text-slate-600 leading-relaxed">۸۵٪ مدیران ماهانه کمتر از ۱ ساعت را صرف استراتژی می‌کنند و ۹۹٪ توانشان در حل بحران‌های جاری بلعیده می‌شود.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
-            <strong class="text-slate-900 block mb-1 text-sm text-purple-700">۴. مانع منابع و بودجه (Resource Barrier)</strong>
-            <p class="text-slate-600 leading-relaxed">۶۰٪ سازمان‌ها بودجه و منابع را به استراتژی وصل نمی‌کنند؛ ابتکارات استراتژیک فاقد بودجه مجزا (StratEx) بوده و قربانی هزینه‌های جاری می‌شوند.</p>
+            <strong class="text-slate-900 block mb-1 text-sm text-sky-700">۴. مانع منابع (Resource)</strong>
+            <p class="text-slate-600 leading-relaxed">۶۰٪ سازمان‌ها بودجه مالی و منابع انسانی را به استراتژی وصل نمی‌کنند و پروژه‌های تحول بدون بودجه می‌مانند.</p>
           </div>
         </div>
       </div>
@@ -198,80 +218,83 @@
       <!-- Tab Header -->
       <div class="flex items-center justify-between pb-4 border-b border-slate-200">
         <div>
-          <span class="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">جلسه اول • ۳.۳ ساعت تدریس</span>
-          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">چالش‌های بنیادین پیاده‌سازی، موانع ۴‌گانه کاپلان-نورتون و سیستم‌های کنترل</h2>
+          <span class="text-xs font-bold text-sky-700 bg-sky-50 px-3 py-1 rounded-full">جلسه اول • ۳.۳ ساعت تدریس</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">شکاف استراتژی-عملکرد، موانع ۴‌گانه کاپلان-نورتون و معماری کنترل استراتژیک</h2>
         </div>
-        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-blue-600 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-sky-700 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
       </div>
 
       <!-- TOP LAYER: Executive Visual Summary -->
-      <div class="bg-blue-50/60 border border-blue-200 rounded-2xl p-6">
+      <div class="bg-sky-50/60 border border-sky-200 rounded-2xl p-6">
         <div class="flex items-center gap-2 mb-3">
-          <span class="text-xl">🎯</span>
-          <h3 class="text-base md:text-lg font-black text-blue-950">خلاصه اجرایی و مدیریتی جلسه اول: کالبدشکافی شکاف اجرا و معماری سیستم‌های کنترل</h3>
+          <span class="text-xl">⚠️</span>
+          <h3 class="text-base md:text-lg font-black text-sky-950">خلاصه اجرایی و مدیریتی جلسه اول: کالبدشکافی ریشه‌های شکست استراتژی‌ها</h3>
         </div>
-        <p class="text-xs md:text-sm text-blue-900 leading-relaxed mb-5 text-justify">
-          در این جلسه مانیفست محوری شکست استراتژی‌ها بررسی شد: چرا سازمان‌های ایرانی استراتژی‌های درخشان روی کاغذ دارند اما در عمل فلج می‌شوند؟ تفاوت ماهوی تدوین با پیاده‌سازی، چهار مانع کاپلان-نورتون و سازوکار کنترل فرضیات، نظارت استراتژیک، کنترل پیاده‌سازی و هشدارهای ویژه کالبدشکافی شد.
+        <p class="text-xs md:text-sm text-sky-900 leading-relaxed mb-5 text-justify">
+          در این نشست، استاد خطیبی شکاف هولناک میان اتاق فکر و کف خط تولید را تشریح کردند. طبق شواهد هاروارد و گالوپ، بین ۷۰ تا ۹۰ درصد استراتژی‌های تدوین‌شده با شکست روبرو می‌شوند؛ و در بیش از ۸۵ درصد موارد، نقص نه از تحلیل اولیه، بلکه از فقدان ساختار اجرایی، مقاومت فرهنگی و نبود سیستم‌های پایش و کنترل هوشمند است.
         </p>
 
         <!-- 3 Highlight Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
-          <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
-            <div class="text-xs font-bold text-blue-700 mb-1 flex items-center gap-1.5">
-              <span>⚠️</span>
+          <div class="bg-white p-4 rounded-xl border border-sky-100 shadow-sm">
+            <div class="text-xs font-bold text-sky-700 mb-1 flex items-center gap-1.5">
+              <span>📉</span>
               <span>شکاف استراتژی-عملکرد</span>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">بیش از ۸۵٪ شکست‌ها ناشی از اجرای ضعیف است نه تدوین غلط. فرمولاسیون حاصل تحلیل در اتاق فکر است، اما پیاده‌سازی نیازمند تغییر رفتار و فرهنگ در خط مقدم است.</p>
+            <p class="text-xs text-slate-600 leading-relaxed">شکاف میان آنچه روی کاغذ نوشته شده با آنچه در عمل اجرا می‌شود؛ ناشی از تضاد منافع، ناهماهنگی بین واحدها و گم شدن استراتژی در بروکراسی اداری.</p>
           </div>
-          <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
-            <div class="text-xs font-bold text-blue-700 mb-1 flex items-center gap-1.5">
-              <span>🧱</span>
-              <span>موانع ۴‌گانه کاپلان-نورتون</span>
-            </div>
-            <p class="text-xs text-slate-600 leading-relaxed">چهار سد اصلی: چشم‌انداز (درک زیر ۵٪)، افراد و مشوق‌ها (همسویی پاداش ۲۵٪)، مدیریت (زمان هفتگی زیر ۱ ساعت) و منابع (فقدان بودجه استراتژیک StratEx مستقل از OpEx).</p>
-          </div>
-          <div class="bg-white p-4 rounded-xl border border-blue-100 shadow-sm">
-            <div class="text-xs font-bold text-blue-700 mb-1 flex items-center gap-1.5">
+          <div class="bg-white p-4 rounded-xl border border-sky-100 shadow-sm">
+            <div class="text-xs font-bold text-sky-700 mb-1 flex items-center gap-1.5">
               <span>🛡️</span>
-              <span>سیستم‌های چهارگانه کنترل</span>
+              <span>۴ نوع کنترل استراتژیک</span>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">کنترل پیش‌فرض‌ها (Premise Control)، نظارت استراتژیک (Strategic Surveillance)، کنترل اجرا (Implementation Control) و هشدارهای ویژه (Special Alert) برای مهار بحران‌ها.</p>
+            <p class="text-xs text-slate-600 leading-relaxed">۱. کنترل فرضیات (Premise) ۲. نظارت استراتژیک مداوم (Surveillance) ۳. کنترل ویژه هشدارهای بحران (Special Alert) ۴. کنترل پیاده‌سازی گام‌به‌گام.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-sky-100 shadow-sm">
+            <div class="text-xs font-bold text-sky-700 mb-1 flex items-center gap-1.5">
+              <span>🧩</span>
+              <span>همسوسازی ساختار و فرهنگ</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">اگر ساختار سازمانی و فرهنگ رفتاری با استراتژی جدید منطبق نشود، فرهنگ سازمانی استراتژی را در وعده صبحانه خواهد بلعید!</p>
           </div>
         </div>
 
-        <!-- Matrix Table: Formulation vs Implementation -->
-        <div class="bg-white rounded-xl border border-blue-200 overflow-hidden shadow-sm mb-5">
+        <!-- 4 Control Systems Matrix -->
+        <div class="bg-white rounded-xl border border-sky-200 overflow-hidden shadow-sm">
+          <div class="bg-sky-100 px-4 py-2.5 text-xs font-bold text-sky-950">
+            🛡️ سیستم‌های چهارگانه کنترل استراتژیک (مدل پیرس و رابینسون در تدریس استاد خطیبی)
+          </div>
           <table class="w-full text-xs text-right">
-            <thead class="bg-blue-100 text-blue-950 font-bold">
+            <thead class="bg-slate-50 text-slate-700 font-bold border-b border-slate-200">
               <tr>
-                <th class="p-3">ماتریس کیفیت تدوین / اجرا</th>
-                <th class="p-3">کیفیت تدوین: عالی (Good Formulation)</th>
-                <th class="p-3">کیفیت تدوین: ضعیف (Poor Formulation)</th>
+                <th class="p-3">نوع کنترل</th>
+                <th class="p-3 text-sky-950">هدف و کارکرد</th>
+                <th class="p-3 text-slate-700">نحوه پایش و زمان اقدام</th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-blue-100 text-slate-700">
+            <tbody class="divide-y divide-slate-100 text-slate-700">
               <tr>
-                <td class="p-3 font-bold text-blue-900 bg-slate-50">کیفیت اجرای عالی (Good Implementation)</td>
-                <td class="p-3 bg-emerald-50/70 text-emerald-900 font-semibold">🏆 موفقیت پایدار (Success): استراتژی درست با انضباط سازمانی به حداکثر سودآوری و رهبری بازار می‌رسد.</td>
-                <td class="p-3 bg-amber-50/70 text-amber-900 font-semibold">🎲 قمار / نجات موقت (Roulette): اجرای بی‌نظیر استراتژی غلط ممکن است موقتاً شرکت را نجات دهد یا سقوط را تسریع کند.</td>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">۱. کنترل مفروضات (Premise Control)</td>
+                <td class="p-3 font-semibold text-sky-950">بررسی مداوم این‌که آیا پیش‌فرض‌های محیطی و صنعتی در زمان تدوین، هنوز معتبرند؟</td>
+                <td class="p-3">پایش هفتگی/ماهانه شاخص‌های کلان نظیر تورم، نرخ ارز، قوانین تجاری و فناوری‌های نوظهور.</td>
               </tr>
               <tr>
-                <td class="p-3 font-bold text-blue-900 bg-slate-50">کیفیت اجرای ضعیف (Poor Implementation)</td>
-                <td class="p-3 bg-rose-50/70 text-rose-900 font-semibold">💥 فاجعه در اجرا (Execution Ruin): رایج‌ترین دام در ایران! برنامه بی‌نقص روی کاغذ به دلیل ضعف ساختار و انگیزش خاک می‌خورد.</td>
-                <td class="p-3 bg-red-100/70 text-red-950 font-semibold">☠️ شکست قطعی (Failure): فقدان جهت‌گیری درست همراه با ناتوانی در عمل؛ نابودی حتمی در کمتر از ۲ سال.</td>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">۲. نظارت استراتژیک (Strategic Surveillance)</td>
+                <td class="p-3 font-semibold text-sky-950">رصد گسترده رویدادهای غیرمنتظره محیطی که خارج از رادارهای پیش‌بینی اولیه رخ می‌دهند.</td>
+                <td class="p-3">پایش مداوم گزارش‌های خبری، رفتارهای رقبا، تغییرات ژئوپلیتیک و تحولات زنجیره تأمین.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">۳. کنترل ویژه هشدارها (Special Alert)</td>
+                <td class="p-3 font-semibold text-sky-950">واکنش ضربتی و اضطراری به رخدادهای ناگهانی شدید مانند جنگ، تحریم فوری یا پاندمی.</td>
+                <td class="p-3">تشکیل فوری اتاق بحران با اختیارات کامل و بازآرایی سریع تخصیص منابع و نقدینگی.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-slate-900 bg-slate-50">۴. کنترل پیاده‌سازی (Implementation Control)</td>
+                <td class="p-3 font-semibold text-sky-950">ارزیابی میزان تحقق مایل‌استون‌ها، پیشرفت پروژه‌ها و کارایی تخصیص بودجه StratEx.</td>
+                <td class="p-3">جلسات ماهانه بررسی پیشرفت با ابزارهای داشبورد مدیریتی و شاخص‌های کلیدی عملکرد.</td>
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <!-- Class Metaphors Card -->
-        <div class="bg-white p-4 rounded-xl border border-blue-200 shadow-sm">
-          <div class="text-xs font-bold text-blue-800 mb-2">🚗 سه استعاره راهبردی تدریس استاد خطیبی در تفهیم پیاده‌سازی:</div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-slate-600">
-            <div class="p-2.5 rounded-lg bg-blue-50/50"><strong>۱. خودرو، جاده و سیستم تعلیق:</strong> استراتژی نقشه سفر است اما عبور از دست‌اندازهای کف بازار نیازمند سلامت موتور، بدنه و فنربندی سازمان است.</div>
-            <div class="p-2.5 rounded-lg bg-blue-50/50"><strong>۲. گاردریل‌های استراتژیک:</strong> ارزش‌های محوری و شاخص‌های کنترلی مانع سقوط سازمان در پیچ‌های تند شوک‌های اقتصادی و ارزی هستند.</div>
-            <div class="p-2.5 rounded-lg bg-blue-50/50"><strong>۳. کاروانسراها:</strong> اهداف فصلی ایستگاه‌های استراحت، تجدید قوا و سنجش آذوقه‌اند؛ آنها را هرگز با مقصد نهایی اشتباه نگیرید.</div>
-          </div>
         </div>
 
       </div>
@@ -280,9 +303,9 @@
       <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
         <div>
           <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه اول</h3>
-          <p class="text-xs text-slate-400">شامل دیالوگ‌های کلاسی، سوالات دانشجویان، تشریح موانع ۴‌گانه، پروتکل‌های کنترلی و تحلیل‌های عمیق سازمانی</p>
+          <p class="text-xs text-slate-400">شامل تمامی مباحث، موانع ۴‌گانه کاپلان-نورتون، سیستم‌های کنترل چهارگانه و دستورالعمل اجرایی مدیران</p>
         </div>
-        <button onclick="toggleSessionFull('s1')" id="btn-toggle-s1" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+        <button onclick="toggleSessionFull('s1')" id="btn-toggle-s1" class="bg-sky-600 hover:bg-sky-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
           <span>مطالعه متن کامل و تفصیلی جلسه</span>
           <span id="icon-toggle-s1">▼</span>
         </button>
@@ -990,7 +1013,7 @@
               <span>🎯</span>
               <span>۵ سؤال طلایی بیانیه مأموریت</span>
             </div>
-            <p class="text-xs text-slate-600 leading-relaxed">۱. ما کیستیم؟ ۲. مشتریان ما کیستند؟ ۳. چه نیازی را رفع می‌کنیم؟ ۴. با چه تکنولوژی و مهارتی؟ ۵. تمایز و مزیت رقابتی ما چیست؟ (بررسی موردی دقیق‌صنعت اسلاید ۱۶).</p>
+            <p class="text-xs text-slate-600 leading-relaxed">۱. ما کیستیم؟ ۲. مشتریان ما کیستند؟ ۳. چه نیازی را رفع می‌کنیم؟ ۴. با چه تکنولوژی و مهارتی؟ ۵. تمایز و مزیت رقابتی ما چیست؟</p>
           </div>
           <div class="bg-white p-4 rounded-xl border border-sky-100 shadow-sm">
             <div class="text-xs font-bold text-sky-700 mb-1 flex items-center gap-1.5">
@@ -1008,7 +1031,7 @@
           </div>
         </div>
 
-        <!-- Bridging Framework Card: Formulation to Implementation -->
+        <!-- Bridging Framework Card -->
         <div class="bg-white rounded-xl border border-sky-200 overflow-hidden shadow-sm mb-5">
           <div class="bg-gradient-to-r from-sky-900 to-indigo-900 px-4 py-3 text-xs font-bold text-white flex items-center justify-between">
             <span class="flex items-center gap-2">
@@ -1018,49 +1041,21 @@
             <span class="text-[11px] text-sky-200 font-medium">پیش‌نیاز ورود به فاز پیاده‌سازی و کنترل</span>
           </div>
           <div class="p-4 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-            <div class="space-y-2.5">
-              <div class="font-bold text-slate-800 flex items-center gap-1.5 border-b pb-1.5">
-                <span class="text-sky-600">🔹</span>
-                <span>ارکان جهت‌ساز و انضباط اخلاقی سازمان</span>
-              </div>
-              <ul class="space-y-1.5 text-slate-600 text-[11.5px] leading-relaxed list-disc list-inside">
-                <li><strong class="text-slate-800">بیانیه مأموریت:</strong> پاسخ به ۵ پرسش بنیادین (کیس دقیق‌صنعت اسلاید ۱۶).</li>
-                <li><strong class="text-slate-800">چشم‌انداز سنجش‌پذیر:</strong> تعیین افق کمی و ملموس (کیس توسعه ساختمان غدیر اسلاید ۲۰).</li>
-                <li><strong class="text-slate-800">ارزش‌ها و کدهای اخلاقی:</strong> اصل تمامیت (Integrity) و پاسخگویی نهایی (Accountability) به عنوان ستون فقرات اجرای بدون انحراف.</li>
+            <div class="space-y-2">
+              <strong class="text-sky-950 block font-bold border-b border-slate-100 pb-1">۱. ارکان جهت‌ساز (Directional Pillars)</strong>
+              <ul class="space-y-1.5 text-slate-600 leading-relaxed list-disc pr-4">
+                <li><strong>بیانیه مأموریت (Mission Statement):</strong> فلسفه وجودی کسب‌وکار در زمان حال و پاسخ به ۵ نیاز اساسی بازار.</li>
+                <li><strong>چشم‌انداز (Vision):</strong> قله مطلوب آینده در افق ۵ تا ۱۰ ساله که سازمان در پی فتح آن است.</li>
+                <li><strong>ارزش‌ها و اخلاق حرفه‌ای (Core Values):</strong> خطوط قرمز و اصول رفتاری غیرقابل‌مذاکره سازمان در مسیر کسب سود.</li>
               </ul>
             </div>
-            <div class="space-y-2.5">
-              <div class="font-bold text-slate-800 flex items-center gap-1.5 border-b pb-1.5">
-                <span class="text-indigo-600">🔹</span>
-                <span>زنجیره ماتریسی تدوین تا اولویت‌بندی</span>
-              </div>
-              <ul class="space-y-1.5 text-slate-600 text-[11.5px] leading-relaxed list-disc list-inside">
-                <li><strong class="text-slate-800">تحلیل محیطی (EFE و IFE):</strong> تعیین وزن و رتبه فرصت‌ها، تهدیدها، قوت‌ها و ضعف‌ها (کیس نتفلیکس).</li>
-                <li><strong class="text-slate-800">ماتریس رقابتی (CPM):</strong> سنجش عوامل کلیدی موفقیت در برابر رقبا (کیس افق داده‌ها اسلاید ۴۱).</li>
-                <li><strong class="text-slate-800">ماتریس IEM و QSPM:</strong> تعیین موضع کلان (رشد، نگهداری، برداشت) و اولویت‌بندی کمی بدون دخالت سلیقه (کیس مهندسین مشاور صنعتی ایران).</li>
+            <div class="space-y-2">
+              <strong class="text-sky-950 block font-bold border-b border-slate-100 pb-1">۲. زنجیره ابزارهای ماتریسی (Matrix Pipeline)</strong>
+              <ul class="space-y-1.5 text-slate-600 leading-relaxed list-disc pr-4">
+                <li><strong>مرحله اول (Input Stage):</strong> ماتریس EFE (فرصت‌ها/تهدیدها)، IFE (قوت‌ها/ضعف‌ها) و ماتریس CPM رقابتی.</li>
+                <li><strong>مرحله دوم (Matching Stage):</strong> ماتریس SWOT و ماتریس ۹ خانه‌ای داخلی-خارجی (IEM).</li>
+                <li><strong>مرحله سوم (Decision Stage):</strong> ماتریس QSPM برای انتخاب قطعی گزینه‌های استراتژیک تخصیص منابع.</li>
               </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- IEM 9-Cell Infographic Framework -->
-        <div class="bg-white p-4 rounded-xl border border-sky-200 shadow-sm">
-          <div class="text-xs font-bold text-sky-900 mb-2 flex items-center justify-between">
-            <span>🗺️ راهنمای اقدام در ماتریس ۹ خانه‌ای داخلی-خارجی (IEM):</span>
-            <span class="text-[11px] text-slate-500">تقاطع نمرات IFE و EFE (دامنه ۱.۰ تا ۴.۰)</span>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
-            <div class="p-3 rounded-lg bg-emerald-50 border border-emerald-200">
-              <div class="font-bold text-emerald-900 mb-1">🟢 خانه‌های I و II و IV: رشد و ساخت (Grow & Build)</div>
-              <p class="text-emerald-800 leading-relaxed text-[11px]">موقعیت قدرتمند؛ استراتژی‌های تهاجمی: رسوخ در بازار، توسعه بازار و توسعه محصول. سرمایه‌گذاری سنگین با بودجه StratEx مستقل.</p>
-            </div>
-            <div class="p-3 rounded-lg bg-amber-50 border border-amber-200">
-              <div class="font-bold text-amber-900 mb-1">🟡 خانه‌های III و V و VII: حفظ و نگهداری (Hold & Maintain)</div>
-              <p class="text-amber-800 leading-relaxed text-[11px]">موقعیت خنثی؛ استراتژی‌های محافظه‌کارانه: بهبود بهره‌وری فرآیندها، حفظ مشتریان فعلی و نفوذ کنترل‌شده با حداقل ریسک مالی.</p>
-            </div>
-            <div class="p-3 rounded-lg bg-rose-50 border border-rose-200">
-              <div class="font-bold text-rose-900 mb-1">🔴 خانه‌های VI و VIII و IX: برداشت یا واگذاری (Harvest & Divest)</div>
-              <p class="text-rose-800 leading-relaxed text-[11px]">موقعیت بحرانی؛ استراتژی‌های تدافعی: مهار هزینه‌ها، انحلال خطوط زیان‌ده، فروش دارایی‌های مازاد و تمرکز بقا در بازار اصلی.</p>
             </div>
           </div>
         </div>
@@ -2169,6 +2164,463 @@
 
     </section>
 
+    <!-- TAB: SESSION 3 -->
+    <section id="content-session3" class="tab-content hidden space-y-6">
+      
+      <!-- Tab Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">جلسه سوم • ۳.۲ ساعت تدریس</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">گذار از تدوین به اجرا، کالبدشکافی آمار گالوپ، ۴ رکن پیاده‌سازی و معماری هولوگرافیک</h2>
+        </div>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-emerald-700 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+      </div>
+
+      <!-- TOP LAYER: Executive Visual Summary -->
+      <div class="bg-emerald-50/60 border border-emerald-200 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">⚙️</span>
+          <h3 class="text-base md:text-lg font-black text-emerald-950">خلاصه اجرایی و مدیریتی جلسه سوم: پل عبور از تدوین به پیاده‌سازی عملیاتی</h3>
+        </div>
+        <p class="text-xs md:text-sm text-emerald-900 leading-relaxed mb-5 text-justify">
+          در این نشست دکتر خطیبی نقطه عطف دوره را با بررسی آمار تکان‌دهنده گالوپ بنا نهادند: ۷۰٪ استراتژی‌ها در دنیا شکست می‌خورند و ۹۰٪ این شکست‌ها صرفاً در مرحله پیاده‌سازی و اجرا رخ می‌دهد (>۶۳٪ کل استراتژی‌های جهان در اجرا می‌میرند). مفهوم دوگانه اجرا (تخصیص منابع + مدیریت تحول)، تفکیک اثربخشی و کارایی، ارکان چهارگانه مقدماتی اجرا، و مدل سازمان هولوگرافیک ستون‌های مفهومی این جلسه را شکل دادند.
+        </p>
+
+        <!-- 3 Highlight Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+          <div class="bg-white p-4 rounded-xl border border-emerald-100 shadow-sm">
+            <div class="text-xs font-bold text-emerald-700 mb-1 flex items-center gap-1.5">
+              <span>📉</span>
+              <span>پاشنه آشیل: آمار گالوپ</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">۷۰٪ استراتژی‌ها شکست می‌خورند و ۹۰٪ این شکست‌ها ناشی از نقص اجراست نه تدوین. ارزش ایده ۱۰٪ و ارزش اجرای منضبط ۹۰٪ است.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-emerald-100 shadow-sm">
+            <div class="text-xs font-bold text-emerald-700 mb-1 flex items-center gap-1.5">
+              <span>⚖️</span>
+              <span>دو بعد سخت و نرم پیاده‌سازی</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">بُعد سخت: تخصیص منابع، تجهیزات و بودجه‌های مستقل StratEx. بُعد نرم: مدیریت تحول، همسوسازی پاداش‌ها و غلبه بر مقاومت فرهنگی بدنه.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-emerald-100 shadow-sm">
+            <div class="text-xs font-bold text-emerald-700 mb-1 flex items-center gap-1.5">
+              <span>🎯</span>
+              <span>اثربخشی در برابر کارایی</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">اثربخشی: انجام کار درست (بازار و هدف). کارایی: درست انجام دادن کار (راندمان و ضایعات). بهره‌وری حاصل‌ضرب این دو در بستر رهبری تحول‌آفرین است.</p>
+          </div>
+        </div>
+
+        <!-- 4 Foundational Pillars Grid -->
+        <div class="bg-white rounded-xl border border-emerald-200 overflow-hidden shadow-sm mb-5">
+          <div class="bg-emerald-100 px-4 py-2.5 text-xs font-bold text-emerald-950 flex items-center justify-between">
+            <span>🏛️ ارکان چهارگانه پیش‌نیاز پیاده‌سازی استراتژی (پیش‌درآمد BSC)</span>
+            <span class="text-[11px] text-emerald-700 font-normal">معماری عملیاتی شرکت</span>
+          </div>
+          <div class="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <strong class="text-slate-900 block mb-1 text-emerald-800">۱. سیاست‌ها (Policies)</strong>
+              <p class="text-slate-600 leading-relaxed">ریل‌ها و گاردریل‌های روزمره تصمیم‌گیری؛ تفویض اختیار بدون نیاز به مراجعه دائم به مدیرعامل.</p>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <strong class="text-slate-900 block mb-1 text-emerald-800">۲. اهداف سالیانه (Annuals)</strong>
+              <p class="text-slate-600 leading-relaxed">شکستن اهداف ۵ ساله به تارگت‌های کمّی، شفاف و زمان‌دار ۱۲ ماهه متصل به سیستم ارزیابی عملکرد.</p>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <strong class="text-slate-900 block mb-1 text-emerald-800">۳. استراتژی وظیفه‌ای (Functionals)</strong>
+              <p class="text-slate-600 leading-relaxed">ترجمه استراتژی کلان به زبان دپارتمان‌های مالی، بازاریابی، تولید، زنجیره تامین و منابع انسانی.</p>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-200">
+              <strong class="text-slate-900 block mb-1 text-emerald-800">۴. تخصیص منابع (Resources)</strong>
+              <p class="text-slate-600 leading-relaxed">توزیع هدفمند بودجه، تجهیزات و شایسته‌ترین پرسنل در پروژه‌های اولویت‌دار استراتژیک شرکت.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Holographic Organization Grid -->
+        <div class="bg-white rounded-xl border border-emerald-200 p-4 text-xs text-slate-700">
+          <strong class="text-emerald-950 block mb-1 font-bold">سازمان هولوگرافیک (Holographic Organization):</strong>
+          در یک سازمان هولوگرافیک، اگر با یک کارشناس ساده در خط بسته یا یک کارمند جزء در دورافتاده‌ترین شعبه گفتگو کنید، او باید بداند جهت‌گیری کلان شرکت چیست و کار روزمره او چه نقشی در تحقق رسالت استراتژیک ایفا می‌کند. استراتژی باید در ۴ سطح هلدینگ (Corporate)، واحد کسب‌وکار (SBU)، وظیفه‌ای (Functional) و عملیاتی (Operational) درهم‌تنیده باشد.
+        </div>
+
+      </div>
+
+      <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+      <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+        <div>
+          <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه سوم</h3>
+          <p class="text-xs text-slate-400">شامل تمامی مباحث کلاسی، آمار گالوپ، ۴ رکن پیاده‌سازی، تفکیک استراتژی‌های وظیفه‌ای، پیش‌درآمد BSC و پروتکل دوشنبه صبح</p>
+        </div>
+        <button onclick="toggleSessionFull('s3')" id="btn-toggle-s3" class="bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+          <span>مطالعه متن کامل و تفصیلی جلسه</span>
+          <span id="icon-toggle-s3">▼</span>
+        </button>
+      </div>
+
+      <div id="full-s3" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+        <div class="prose-custom"><h1 id="-">اجرا و کنترل استراتژیک - جلسه سوم: گذار از تدوین به اجرا، کالبدشکافی آمار گالوپ، ۴ رکن پیاده‌سازی و معماری هولوگرافیک</h1>
+<p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
+<strong>مدرس دوره:</strong> دکتر محمد خطیبی<br />
+<strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
+<strong>تاریخ تدریس:</strong> ۰۹ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۳ ساعت و ۱۲ دقیقه<br />
+<strong>موضوع محوری:</strong> تبیین شکاف اجرا (Strategy-to-Execution Gap)، بازتعریف اثربخشی و رهبری، ۴ رکن پیاده‌سازی، و پیش‌درآمدی بر کارت امتیازی متوازن (BSC)</p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. جوهره و مانیفست محوری تدریس دکتر خطیبی</h3>
+<p>جلسه سوم درس «اجرا و کنترل استراتژیک»، نقطه عطف تاریخی دوره در عبور از جهان ذهنی و انتزاعی «تدوین استراتژی» به میدان واقعی، پرچالش و اصطکاک‌زای «پیاده‌سازی و اجرای استراتژی» بود. دکتر خطیبی با کالبدشکافی آمارهای مراجع بین‌المللی اثبات کردند که بحران اصلی مدیریت در جهان معاصر، کمبود نظریه یا نقص در اسناد استراتژیک نیست؛ بلکه ناتوانی ساختاری، فرهنگی و انگیزشی سازمان‌ها در ترجمه استراتژی به اقدامات روزمره است.</p>
+<p>پیام‌های کلیدی جلسه در ۴ اصل بنیادی خلاصه می‌شود:
+1. <strong>قبرستان اسناد بی‌نقص:</strong> بیش از ۶۳٪ کل استراتژی‌های جهان در مرحله اجرا دفن می‌شوند؛ استراتژی‌هایی که روی کاغذ بالاترین نمرات ماتریسی را کسب کرده بودند.
+2. <strong>دو روی سکه پیاده‌سازی:</strong> اجرای استراتژی همزمان به معنای «تخصیص بهینه منابع محدود» و «مدیریت تحول و تغییر رفتار انسانی» است.
+3. <strong>تفکیک چهارگانه کلیدی:</strong> اثربخشی (کار درست)، کارایی (درست انجام دادن کار)، بهره‌وری (ترکیب این دو)، و رهبری (ایجاد انگیزه در پرسنل برای تحقق استراتژی).
+4. <strong>چهار رکن پیش‌نیاز اجرا:</strong> پیش از استقرار ابزارهایی مانند کارت امتیازی متوازن (BSC)، سازمان باید ۴ رکن اساسی شامل سیاست‌ها، اهداف سالیانه، استراتژی‌های وظیفه‌ای، و سیستم‌های تخصیص منابع را بازآفرینی کند.</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    ⚙️ منظومه جامع پیاده‌سازی و کنترل استراتژیک در تدریس دکتر خطیبی
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30">
+      <div class="text-indigo-300 font-bold text-sm mb-1">۱. کالبدشکافی آمار تکان‌دهنده گالوپ</div>
+      <p class="text-xs text-slate-300 leading-relaxed">چرا ۷۰٪ استراتژی‌ها شکست می‌خورند و چرا ۹۰٪ شکست‌ها منحصراً در لایه اجرا و کنترل رخ می‌دهد.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-sky-500/30">
+      <div class="text-sky-300 font-bold text-sm mb-1">۲. تبارشناسی دوگانه پیاده‌سازی</div>
+      <p class="text-xs text-slate-300 leading-relaxed">تخصیص منابع (بودجه و تجهیزات) در کنار مدیریت تحول (فرهنگ سازمانی، غلبه بر مقاومت بدنه و پاداش).</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-emerald-500/30">
+      <div class="text-emerald-300 font-bold text-sm mb-1">۳. ماتریس مفاهیم بنیادین مدیریت</div>
+      <p class="text-xs text-slate-300 leading-relaxed">مرزبندی دقیق میان اثربخشی، کارایی، بهره‌وری و رهبری تحول‌آفرین در صحنه عملیات.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30">
+      <div class="text-amber-300 font-bold text-sm mb-1">۴. ارکان چهارگانه پیش‌نیاز اجرا</div>
+      <p class="text-xs text-slate-300 leading-relaxed">کالبدشکافی سیاست‌ها، اهداف سالیانه، استراتژی‌های وظیفه‌ای، و مکانیزم‌های تخصیص منابع.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-rose-500/30">
+      <div class="text-rose-300 font-bold text-sm mb-1">۵. معماری هولوگرافیک سلسله‌مراتب</div>
+      <p class="text-xs text-slate-300 leading-relaxed">همراستاسازی سطوح سازمانی، اتصال استراتژی شرکتی به کف خط، و شکستن سیلوهای دپارتمانی.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-purple-500/30">
+      <div class="text-purple-300 font-bold text-sm mb-1">۶. پیش‌درآمد کارت امتیازی متوازن (BSC)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">چهار منظر مالی، مشتری، فرآیند داخلی و رشد/یادگیری به مثابه ابزار سنجش سلامت کلان اجرا.</p>
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="_2">۲. کالبدشکافی پاشنه آشیل استراتژی: آمار تکان‌دهنده موسسه گالوپ</h2>
+<p>دکتر خطیبی جلسه را با ارائه آماری تکان‌دهنده و تکان‌دهنده از وضعیت پروژه‌های استراتژیک در شرکت‌های بین‌المللی و ایرانی آغاز کردند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">شاخص عملکردی</th>
+        <th class="p-3 border-b border-slate-700">میزان در جامعه آماری گالوپ</th>
+        <th class="p-3 border-b border-slate-700">تحلیل ریشه‌ای و پیامد راهبردی</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">نرخ کلی شکست استراتژی‌ها</td>
+        <td class="p-3 font-black text-rose-600">۷۰٪</td>
+        <td class="p-3">از هر ۱۰ استراتژی تدوین‌شده، ۷ استراتژی در رسیدن به اهداف نهایی خود ناکام می‌مانند.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">سهم نقص پیاده‌سازی در شکست‌ها</td>
+        <td class="p-3 font-black text-rose-600">۹۰٪</td>
+        <td class="p-3">از میان استراتژی‌های شکست‌خورده، ۹۰٪ آن‌ها در فاز تدوین کاملاً علمی و بی‌نقص بوده‌اند و علت مرگشان صرفاً در اجرا بوده است.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">نرخ خالص مرگ استراتژی در اجرا</td>
+        <td class="p-3 font-black text-rose-700">بیش از ۶۳٪</td>
+        <td class="p-3">حاصل‌ضرب ۷۰٪ در ۹۰٪ نشان می‌دهد که حداقل ۶۳٪ از کل استراتژی‌های تدوین‌شده در دنیا به دلیل ناتوانی در پیاده‌سازی متلاشی می‌شوند.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">سهم نقص تدوین در شکست‌ها</td>
+        <td class="p-3 font-black text-emerald-700">تنها ۱۰٪</td>
+        <td class="p-3">تنها بخش ناچیزی از شکست‌ها ناشی از تحلیل نادرست بازار، ضعف ماتریس‌ها یا اطلاعات غلط است.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<blockquote>
+<p><strong>گزاره دکتر خطیبی:</strong> «ما در دانشگاه‌ها و هیئت‌مدیره‌ها ۹۰ درصد انرژی و زمان خود را صرف فاز تدوین (Formulation) می‌کنیم؛ جلسات پرهزینه برگزار می‌کنیم، ماتریس می‌کشیم و اسناد لوکس تهیه می‌کنیم. اما واقعیت بازار این است که ارزش یک ایده درخشان تنها ۱۰ درصد است و ۹۰ درصد موفقیت به عرق ریختن، انضباط آهنین و ظرافت‌های اجرایی بستگی دارد.»</p>
+</blockquote>
+<hr />
+<h2 id="_3">۳. تعریف دوگانه پیاده‌سازی استراتژی: تخصیص منابع و مدیریت تغییر</h2>
+<p>دکتر خطیبی اجرای استراتژی را فراتر از صدور یک بخشنامه سازمانی یا تنظیم جدول زمان‌بندی دانستند و آن را به مثابه فرآیندی دووجهی تبیین کردند:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div class="p-5 rounded-2xl bg-indigo-50 border border-indigo-200">
+    <div class="text-indigo-900 font-black text-sm mb-2">💰 بُعد سخت‌افزاری: تخصیص منابع (Resource Allocation)</div>
+    <p class="text-xs text-slate-700 leading-relaxed text-justify">
+      استراتژی بدون بودجه، یک شعر عاشقانه است! اگر مدیرعامل مدعی استراتژی تنوع‌بخشی یا ورود به بازارهای صادراتی است، باید نشان دهد که بودجه مالی، تجهیزات، بهترین مدیران ارشد و ساعات کاری کلیدی شرکت به این اولویت اختصاص یافته است. هر استراتژی که در ردیف‌های بودجه سالیانه و برنامه‌های سرمایه‌ای (CAPEX) منعکس نشود، فریبی بیش نیست. تخصیص بهینه منابع مستلزم شجاعت متوقف کردن پروژه‌های منسوخ و انتقال سرمایه به حوزه‌های رشد است.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-rose-50 border border-rose-200">
+    <div class="text-rose-900 font-black text-sm mb-2">🧠 بُعد نرم‌افزاری: مدیریت تحول (Change Management)</div>
+    <p class="text-xs text-slate-700 leading-relaxed text-justify">
+      پیاده‌سازی یعنی تغییر عادات و منافع کارکنان. افراد به طور طبیعی در برابر هرگونه تغییر در فرآیندها، شرح وظایف یا ساختار قدرت مقاومت می‌کنند؛ زیرا تغییر حامل ناامنی و ابهام است. هنر مدیر اجرایی، مدیریت تعارضات، شفاف‌سازی چشم‌انداز برای پرسنل، همسوسازی نظام‌های پاداش با اهداف استراتژیک، و ایجاد ائتلاف‌های قدرتمند برای پیشبرد تغییر است. بدون تغییر در باورهای کارکنان، ساختارهای جدید صرفاً دکور اداری خواهند بود.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="_4">۴. بازتعریف و تفکیک مفاهیم بنیادین: اثربخشی، کارایی، بهره‌وری و رهبری</h2>
+<p>یکی از مهم‌ترین ارکان آموزشی این جلسه، اصلاح آشفتگی اصطلاحات مدیریتی در ذهن مدیران بود. دکتر خطیبی با مثال‌های کاربردی، مرز این چهار مفهوم را روشن ساختند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">مفهوم مدیریتی</th>
+        <th class="p-3 border-b border-slate-700">معادل انگلیسی</th>
+        <th class="p-3 border-b border-slate-700">تعریف عملیاتی و کاربردی</th>
+        <th class="p-3 border-b border-slate-700">مثال ملموس سازمانی</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">اثربخشی</td>
+        <td class="p-3 font-mono text-indigo-700">Effectiveness</td>
+        <td class="p-3 font-bold">«انجام دادن کار درست» (Doing the right things)؛ سنجش میزان دستیابی به اهداف کلان و بازارهای هدف.</td>
+        <td class="p-3">تولید خودرویی برقی که دقیقا پاسخگوی نیاز مشتریان هدف است و در بازار خریدار دارد.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">کارایی</td>
+        <td class="p-3 font-mono text-sky-700">Efficiency</td>
+        <td class="p-3 font-bold">«درست انجام دادن کار» (Doing things right)؛ نسبت خروجی‌ها به ورودی‌ها، کاهش ضایعات و هزینه.</td>
+        <td class="p-3">مونتاژ یک قطعه معیوب با کمترین مصرف برق و در سریع‌ترین زمان ممکن (کارایی بالا در خدمت کاری نادرست!).</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">بهره‌وری</td>
+        <td class="p-3 font-mono text-emerald-700">Productivity</td>
+        <td class="p-3 font-bold">ترکیب همزمان اثربخشی و کارایی؛ یعنی تحقق اهداف درست بازار با حداقل مصرف منابع و هزینه.</td>
+        <td class="p-3">تولید کالای رقابتی مورد تقاضای بازار با بالاترین راندمان خط و پایین‌ترین قیمت تمام‌شده.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">رهبری سازمانی</td>
+        <td class="p-3 font-mono text-purple-700">Leadership</td>
+        <td class="p-3 font-bold">هنر نفوذ در دل‌ها و ایجاد انگیزه در بدنه انسانی برای حرکت مشتاقانه به سوی اهداف استراتژیک.</td>
+        <td class="p-3">برانگیختن تعهد قلبی مهندسان و کارگران خط برای تحمل سختی‌های تحول سازمانی.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<blockquote>
+<p><strong>تمثیل دراکر از زبان دکتر خطیبی:</strong> «هیچ چیز بی‌حاصل‌تر و خطرناک‌تر از این نیست که کاری را با حداکثر کارایی انجام دهید که اصولاً نباید انجام می‌شد!»</p>
+</blockquote>
+<hr />
+<h2 id="_5">۵. ارکان چهارگانه پیش‌نیاز پیاده‌سازی استراتژی</h2>
+<p>دکتر خطیبی تبیین کردند که پیش از استقرار نرم‌افزارها یا مدل‌های ارزیابی عملکرد، هر سازمان باید <strong>۴ رکن مقدماتی اجرا</strong> را به عنوان سنگ‌بنای معماری عملیاتی خود پایه‌ریزی کند:</p>
+<div class="my-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-amber-400 font-bold text-sm mb-2 flex items-center gap-2">
+      <span>📜</span>
+      <span>۱. سیاست‌ها و خط‌مشی‌ها (Policies)</span>
+    </div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      سیاست‌ها ریل‌ها و گاردریل‌های روزمره تصمیم‌گیری هستند. سیاست مشخص می‌کند که کارکنان در شرایط تکرارشونده چگونه رفتار کنند بدون اینکه نیاز به مراجعه مکرر به مدیرعامل باشد. (مثال: سیاست تخفیف تجاری، سیاست جذب نخبگان، یا سیاست عدم اعطای نسیه بیش از ۳۰ روز). سیاست‌ها اختیارات را تفویض کرده، ناهماهنگی بین بخش‌ها را برطرف ساخته و سرعت عمل سازمان را در برابر مشتری به طور چشمگیری افزایش می‌دهند.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-sky-400 font-bold text-sm mb-2 flex items-center gap-2">
+      <span>🎯</span>
+      <span>۲. اهداف سالیانه (Annual Objectives)</span>
+    </div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      اهداف ۵ ساله استراتژیک باید شکسته شده و به تارگت‌های کمّی، شفاف، زمان‌دار و قابل‌اندازه‌گیری ۱۲ ماهه تبدیل شوند. اگر هدف ۵ ساله دستیابی به سهم بازار ۳۰ درصدی است، هدف سال اول باید صراحتاً «جذب ۵۰۰ مشتری جدید در منطقه غرب و رشد ۱۲ درصدی فروش» تعریف شود تا مبنای پاداش قرار گیرد. اهداف سالیانه پل اتصال برنامه‌های بلندمدت به ارزیابی عملکرد روزمره پرسنل هستند.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-emerald-400 font-bold text-sm mb-2 flex items-center gap-2">
+      <span>🔧</span>
+      <span>۳. استراتژی‌های وظیفه‌ای (Functional Strategies)</span>
+    </div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      استراتژی کلان سازمان باید به زبان دپارتمان‌های صف و ستاد ترجمه شود: استراتژی واحد مالی، استراتژی بازاریابی، استراتژی تولید و زنجیره تامین، استراتژی منابع انسانی، و استراتژی تحقیق و توسعه. بدون استراتژی وظیفه‌ای همسو، دپارتمان‌ها به صورت جزیره‌ای و حتی در تضاد با استراتژی کلان عمل خواهند کرد؛ به عنوان مثال واحد فروش برای افزایش حجم تلاش می‌کند در حالی که استراتژی شرکت حفظ حاشیه سود بالا و برندینگ لوکس است.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-purple-400 font-bold text-sm mb-2 flex items-center gap-2">
+      <span>⚖️</span>
+      <span>۴. تخصیص بهینه منابع (Resource Allocation)</span>
+    </div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      توزیع هدفمند و شفاف چهار دسته منابع اصلی: ۱. منابع مالی (سرمایه در گردش و بودجه‌های توسعه‌ای)، ۲. منابع فیزیکی (فضا، خطوط تولید و سرورها)، ۳. منابع انسانی (استقرار شایسته‌ترین پرسنل در پروژه‌های استراتژیک)، و ۴. منابع فناوری و اطلاعات. اولویت‌بندی تخصیص منابع آزمون واقعی تعهد مدیران به استراتژی است. سازمانی که بودجه را بر اساس چانه‌زنی‌های شخصی یا رویه‌های سنتی توزیع می‌کند، محکوم به شکست در پیاده‌سازی است.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="_6">۶. تفکیک استراتژی‌های وظیفه‌ای در چهار حوزه محوری سازمان</h2>
+<p>دکتر خطیبی جزئیات استقرار استراتژی‌های وظیفه‌ای را در چهار ستون اصلی هر شرکت تشریح کردند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">حوزه وظیفه‌ای</th>
+        <th class="p-3 border-b border-slate-700">مسئولیت استراتژیک</th>
+        <th class="p-3 border-b border-slate-700">نقش در پیاده‌سازی استراتژی کلان</th>
+        <th class="p-3 border-b border-slate-700">خطای رایج در شرکت‌های ایرانی</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۱. بازاریابی و فروش (Marketing & Sales)</td>
+        <td class="p-3">تحلیل بخش‌بندی بازار (STP)، طراحی آمیخته ۴P/7P، تعیین کانال‌های توزیع و قیمت‌گذاری.</td>
+        <td class="p-3">خلق تقاضای واقعی برای مزیت‌های رقابتی سازمان و تامین جریان نقدینگی عملیاتی.</td>
+        <td class="p-3 text-rose-700">تمرکز صرف بر تخفیف‌های سنگین و حراج‌های فصلی به جای ساخت برند و وفادارسازی.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۲. مالی و حسابداری (Finance & Accounting)</td>
+        <td class="p-3">مدیریت سرمایه در گردش، ساختار بدهی/سرمایه، اعتبارسنجی مشتریان و پیش‌بینی جریان وجوه نقد.</td>
+        <td class="p-3">تامین سوخت مالی پروژه‌های استراتژیک و مدیریت ریسک‌های تورمی و نوسانات نرخ ارز.</td>
+        <td class="p-3 text-rose-700">نگاه ثبت‌کننده‌صرف (دفترداری سنتی) به جای ایفای نقش شریک تجاری استراتژیک مدیرعامل.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۳. عملیات و زنجیره تامین (Operations & SCM)</td>
+        <td class="p-3">کنترل کیفیت جامع (TQM)، بهینه‌سازی ظرفیت خطوط، مدیریت موجودی انبار و تامین به‌موقع (JIT).</td>
+        <td class="p-3">تضمین تحویل به موقع تعهدات با استاندارد بالا و کاهش بهای تمام‌شده کالای فروش‌رفته.</td>
+        <td class="p-3 text-rose-700">انباشت سرمایه در قطعات یدکی غیرضروری و انجماد نقدینگی در انبارهای راکد.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۴. منابع انسانی و فرهنگ (HR & Culture)</td>
+        <td class="p-3">جذب استعدادهای کلیدی، طراحی سیستم‌های کارانه بر مبنای KPI، شایسته‌گزینی و آموزش مداوم.</td>
+        <td class="p-3">انرژی‌بخشی به بدنه، حذف مقاومت‌های زیرپوستی و حفظ تعهد نخبگان در شرایط بحران.</td>
+        <td class="p-3 text-rose-700">روابط‌عمومی‌انگاری واحد منابع انسانی و عدم ارتباط پاداش‌ها با تحقق استراتژی.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+<h2 id="_7">۷. مدل هولوگرافیک و سلسله‌مراتب عمودی سازمان</h2>
+<p>یکی از ظریف‌ترین مباحث تئوریک ارائه شده توسط دکتر خطیبی، مفهوم <strong>سازمان هولوگرافیک (Holographic Organization)</strong> بود:</p>
+<blockquote>
+<p><strong>گزاره دکتر خطیبی:</strong> «در یک هولوگرام واقعی، اگر تکه‌ای از تصویر را بشکنید، هر قطعه شکسته بازتاب‌دهنده کل تصویر اصلی است. سازمان متعالی نیز باید هولوگرافیک باشد؛ یعنی اگر با یک کارشناس ساده در خط بسته یا یک کارمند جزء در دورافتاده‌ترین شعبه شرکت گفتگو کنید، او باید بداند استراتژی کلی شرکت چیست و کار روزمره او چه نقشی در تحقق رسالت کلان سازمان ایفا می‌کند.»</p>
+</blockquote>
+<div class="my-6 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800">
+  <div class="text-center font-bold text-amber-400 text-sm mb-4">🏛️ سطوح چهارگانه سلسله‌مراتب استراتژیک سازمان</div>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-xs text-center">
+    <div class="p-3 bg-slate-800 rounded-xl border border-indigo-500/40">
+      <span class="block text-indigo-400 font-bold mb-1">۱. سطح کلان هلدینگ (Corporate)</span>
+      پورتفوی کسب‌وکارها، تنوع‌بخشی، ادغام و تملک (M&A) و تخصیص سرمایه مادر
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-sky-500/40">
+      <span class="block text-sky-400 font-bold mb-1">۲. سطح واحد کسب‌وکار (SBU)</span>
+      مزیت رقابتی، تمایز محصول، رهبری هزینه و نحوه پیروزی در بازار هدف مشخص
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-emerald-500/40">
+      <span class="block text-emerald-400 font-bold mb-1">۳. سطح وظیفه‌ای (Functional)</span>
+      همسوسازی فرآیندهای مالی، فروش، بازاریابی، منابع انسانی و تولید با استراتژی SBU
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-amber-500/40">
+      <span class="block text-amber-400 font-bold mb-1">۴. سطح عملیاتی (Operational)</span>
+      تارگت‌های شیفت کاری، چک‌لیست‌های کیفی، انضباط خطی و KPIهای روزانه پرسنل
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="balanced-scorecard-bsc">۸. پیش‌درآمدی بر کارت امتیازی متوازن (Balanced Scorecard - BSC)</h2>
+<p>دکتر خطیبی در بخش پایانی جلسه، زیربنای ورود به شاهکار رابرت کاپلان و دیوید نورتون یعنی <strong>کارت امتیازی متوازن (BSC)</strong> را پی‌ریزی کردند. ایشان تشریح کردند که نگاه صرف به شاخص‌های مالی گذشته‌نگر (مانند سود خالص، گردش دارایی یا حاشیه سود) مانند رانندگی با نگاه به آینه عقب اتومبیل است:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 my-6 text-xs text-right">
+  <div class="p-4 rounded-xl bg-slate-800 text-white border border-blue-500/40">
+    <div class="text-blue-400 font-black mb-1">۱. منظر مالی (Financial)</div>
+    <p class="text-slate-300 leading-relaxed">«برای موفقیت مالی، در چشم سهامداران چگونه باید به نظر برسیم؟» تمرکز بر سودآوری، رشد درآمد و بازده سرمایه در گردش.</p>
+  </div>
+  <div class="p-4 rounded-xl bg-slate-800 text-white border border-emerald-500/40">
+    <div class="text-emerald-400 font-black mb-1">۲. منظر مشتری (Customer)</div>
+    <p class="text-slate-300 leading-relaxed">«برای تحقق چشم‌انداز، نزد مشتریان چگونه باید جلوه کنیم؟» رضایت مشتری، سهم کیف پول، وفاداری و ادراک تمایز برند.</p>
+  </div>
+  <div class="p-4 rounded-xl bg-slate-800 text-white border border-amber-500/40">
+    <div class="text-amber-400 font-black mb-1">۳. منظر فرآیندهای داخلی (Internal Processes)</div>
+    <p class="text-slate-300 leading-relaxed">«برای جلب رضایت مشتریان و سهامداران، در چه فرآیندهایی باید سرآمد باشیم؟» کیفیت تولید، چابکی زنجیره تامین و نوآوری.</p>
+  </div>
+  <div class="p-4 rounded-xl bg-slate-800 text-white border border-purple-500/40">
+    <div class="text-purple-400 font-black mb-1">۴. منظر رشد و یادگیری (Learning & Growth)</div>
+    <p class="text-slate-300 leading-relaxed">«برای دستیابی به اهداف فوق، چگونه توانایی تغییر و بهبود را حفظ کنیم؟» انگیزش پرسنل، زیرساخت فناوری و فرهنگ سازمانی.</p>
+  </div>
+</div>
+
+<hr />
+<h2 id="kaplan-norton-barriers">۹. موانع چهارگانه اجرای استراتژی در بنگاه‌های ایرانی (Kaplan &amp; Norton Barriers)</h2>
+<p>بر اساس مطالعات کاپلان و نورتون و تطبیق آن با ساختار بنگاه‌های اقتصادی ایران توسط دکتر خطیبی، چهار مانع مرگبار زیر سد راه اجرای استراتژی هستند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">عنوان مانع</th>
+        <th class="p-3 border-b border-slate-700">درصد جهانی / وضعیت ایرانی</th>
+        <th class="p-3 border-b border-slate-700">شرح عارضه در شرکت‌های ایرانی</th>
+        <th class="p-3 border-b border-slate-700">راهکار درمانی دکتر خطیبی</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۱. مانع بینش (Vision Barrier)</td>
+        <td class="p-3 text-rose-600 font-bold">کمتر از ۵٪ پرسنل استراتژی را می‌فهمند!</td>
+        <td class="p-3">استراتژی به ادبیاتی سخت، تزئینی و غیرقابل فهم برای کارکنان خط تبدیل شده و کسی هدف شرکت را درک نمی‌کند.</td>
+        <td class="p-3 text-emerald-800 font-bold">ترجمه استراتژی به پیام‌های ساده، ملموس و قابل فهم برای هر رده شغلی.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۲. مانع افراد (People Barrier)</td>
+        <td class="p-3 text-rose-600 font-bold">تنها ۲۵٪ مدیران پاداش همسو دارند!</td>
+        <td class="p-3">سیستم حقوق، مزایا و ارتقای پرسنل به تحقق اهداف استراتژیک وصل نیست؛ افراد برای کارهای روتین پاداش می‌گیرند.</td>
+        <td class="p-3 text-emerald-800 font-bold">طراحی نظام جبران خدمات و کارانه مبتنی بر KPIهای استراتژیک سالیانه.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۳. مانع مدیریت (Management Barrier)</td>
+        <td class="p-3 text-rose-600 font-bold">۸۵٪ مدیران کمتر از یک ساعت وقت می‌گذارند!</td>
+        <td class="p-3">جلسات هفتگی مدیران غرق در اطفای حریق‌های روزمره و چک‌های برگشتی است و وقتی برای پایش استراتژی نمی‌ماند.</td>
+        <td class="p-3 text-emerald-800 font-bold">جداسازی کامل جلسات پایش استراتژیک ماهانه از جلسات عملیاتی روزمره.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۴. مانع منابع (Resource Barrier)</td>
+        <td class="p-3 text-rose-600 font-bold">۶۰٪ سازمان‌ها بودجه را به استراتژی وصل نمی‌کنند!</td>
+        <td class="p-3">بودجه‌ریزی صرفاً افزایشی بر مبنای هزینه‌های سال گذشته است، نه بر مبنای پروژه‌های تحول‌آفرین استراتژیک.</td>
+        <td class="p-3 text-emerald-800 font-bold">طراحی بودجه‌ریزی بر مبنای صفر و تخصیص مستقیم سرمایه به کارت‌های امتیازی.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+<h2 id="monday-morning-action-protocol">۱۰. پروتکل اجرایی «صبح دوشنبه» مدیران عامل (Monday Morning Action Protocol)</h2>
+<p>برای نجات استراتژی‌های سازمان از بایگانی شدن در پوشه‌های شرکتی، مدیرعامل و اعضای هیئت‌مدیره باید از صبح دوشنبه پروتکل‌های ۵ گانه زیر را عملیاتی سازند:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-amber-400 font-bold text-sm mb-2">۱. ممیزی انطباق بودجه با استراتژی</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      سرفصل‌های بودجه مصوب ۶ ماه آینده را کالبدشکافی کنید. اگر بیش از ۳۰ درصد از هزینه‌های توسعه‌ای به پروژه‌های اولویت‌دار استراتژیک اختصاص ندارد، بلافاصله بودجه را رد و بازآرایی نمایید.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-emerald-400 font-bold text-sm mb-2">۲. شکستن استراتژی به تارگت‌های سالیانه</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      با تک‌تک معاونین و مدیران واحدهای وظیفه‌ای (بازاریابی، مالی، تولید، منابع انسانی) جلسه بگذارید و سهم دقیق هر واحد از تحقق اهداف ۱۲ ماهه پیش‌رو را بر روی یک برگه کاغذ نهایی و امضا کنید.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-sky-400 font-bold text-sm mb-2">۳. راه‌اندازی جلسه ماهانه کنترل فرضیات</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      یک روز ثابت در هر ماه (مثلا اولین چهارشنبه) را منحصراً به بررسی پیشرفت استراتژی اختصاص دهید. در این جلسه، هیچ گزارشی درباره مسائل جاری، خرابی دستگاه یا تاخیر اداری پذیرفته نخواهد شد.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-purple-400 font-bold text-sm mb-2">۴. ارزیابی هولوگرافیک بدنه پرسنلی</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      به طور تصادفی با ۳ نفر از کارشناسان و پرسنل خط گفتگو کنید و بپرسید «هدف امسال شرکت چیست؟». پاسخ آن‌ها عیار واقعی اثربخشی ارتباطات استراتژیک و مانع بینش در سازمان شما را برملا خواهد کرد.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="_8">۱۱. پیوندگاه‌های استراتژیک: پیش‌درآمد فاز کنترل و نقشه‌های استراتژی</h2>
+<p>جلسه سوم درس اجرا و کنترل استراتژیک، با موفقیت زیربنای معرفتی، ساختاری و فرهنگی لازم را برای گام بعدی یعنی طراحی <strong>نقشه‌های استراتژی (Strategy Maps)</strong> و معماری <strong>کارت امتیازی متوازن (BSC)</strong> فراهم آورد. سازمان زمانی می‌تواند مدعی هوشمندی استراتژیک باشد که فاصله‌ای میان تصمیم‌گیری در اتاق هیئت‌مدیره و عملکرد کارکنان در خطوط عملیاتی احساس نشود.</p></div>
+      </div>
+
+    </section>
+
     <!-- TAB: SIMULATOR -->
     <section id="content-simulator" class="tab-content hidden space-y-8">
       <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-10">
@@ -2206,7 +2658,7 @@
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
                 <span>۲. همسوسازی پاداش‌ها و مشوق‌ها (Incentive Alignment)</span>
-                <span class="text-xs font-normal text-slate-500">(درصد مدیرانی که پاداش آنان مستقیماً به اهداف استراتژیک متصل است)</span>
+                <span class="text-xs font-normal text-slate-500">(درصد مدیرانی که پاداش آن‌ها به KPIهای استراتژیک متصل است)</span>
               </label>
               <span id="val-b2" class="text-xs font-black text-blue-700 bg-blue-100 px-2 py-0.5 rounded">۲۵٪ (ضعیف)</span>
             </div>
@@ -2217,31 +2669,31 @@
           <div>
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
-                <span>۳. تمرکز مدیریتی و زمان رهبری (Executive Focus)</span>
-                <span class="text-xs font-normal text-slate-500">(ساعت اختصاص‌یافته توسط تیم رهبری در ماه به گفتگوهای استراتژیک)</span>
+                <span>۳. زمان هفتگی تیم رهبری برای استراتژی (Executive Time)</span>
+                <span class="text-xs font-normal text-slate-500">(میانگین ساعت در هفته صرف بازنگری و پایش استراتژی)</span>
               </label>
               <span id="val-b3" class="text-xs font-black text-blue-700 bg-blue-100 px-2 py-0.5 rounded">۱ ساعت (خیلی کم)</span>
             </div>
-            <input type="range" id="range-b3" min="0" max="20" value="1" oninput="calculateReadiness()" class="w-full accent-blue-600 cursor-pointer">
+            <input type="range" id="range-b3" min="0" max="10" value="1" oninput="calculateReadiness()" class="w-full accent-blue-600 cursor-pointer">
           </div>
 
           <!-- Barrier 4 -->
           <div>
             <div class="flex justify-between items-center mb-1.5">
               <label class="font-extrabold text-slate-800 text-sm flex items-center gap-2">
-                <span>۴. تفکیک بودجه استراتژیک (StratEx vs OpEx)</span>
-                <span class="text-xs font-normal text-slate-500">(درصد بودجه کل سازمان که تضمین‌شده به پروژه‌های تحول استراتژیک اختصاص دارد)</span>
+                <span>۴. سهم بودجه استراتژیک از کل بودجه (StratEx Share)</span>
+                <span class="text-xs font-normal text-slate-500">(درصد بودجه کل اختصاص‌یافته به پروژه‌های تحول‌آفرین)</span>
               </label>
               <span id="val-b4" class="text-xs font-black text-blue-700 bg-blue-100 px-2 py-0.5 rounded">۵٪ (ناچیز)</span>
             </div>
-            <input type="range" id="range-b4" min="0" max="40" value="5" oninput="calculateReadiness()" class="w-full accent-blue-600 cursor-pointer">
+            <input type="range" id="range-b4" min="0" max="20" value="5" oninput="calculateReadiness()" class="w-full accent-blue-600 cursor-pointer">
           </div>
 
         </div>
 
-        <!-- Output Diagnostic Box -->
-        <div id="sim-result-box" class="mt-8 p-6 rounded-2xl border transition-all">
-          <!-- Dynamically populated via JS -->
+        <!-- Result Box -->
+        <div id="sim-result-box" class="mt-8 p-6 rounded-2xl border border-rose-300 bg-rose-50 text-rose-900 transition-all">
+          <!-- Dynamic JS output -->
         </div>
 
       </div>
@@ -2249,13 +2701,23 @@
 
     <!-- TAB: HANDBOOK -->
     <section id="content-handbook" class="tab-content hidden space-y-6">
-      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-6 md:p-10 space-y-8 prose-custom">
-        <h1 id="master-handbook">دانشنامه جامع و راهنمای مرجع اجرایی (Master Handbook)</h1>
+      
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold text-sky-700 bg-sky-50 px-3 py-1 rounded-full">دانشنامه جامع مرجع • نسخه ۳.۰</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">هندبوک جامع اجرا و کنترل استراتژیک (Master Handbook)</h2>
+        </div>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-sky-700 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 md:p-10 border border-slate-200 shadow-sm">
+        <div class="prose-custom">
+          <h1 id="master-handbook">دانشنامه جامع و راهنمای مرجع اجرایی (Master Handbook)</h1>
 <h2 id="strategy-implementation-strategic-control">اجرا و کنترل استراتژیک در تراز رهبری ارشد کسب‌وکار (Strategy Implementation &amp; Strategic Control)</h2>
 <p><strong>مرجع علمی و آکادمیک:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
-<strong>مدرس دوره:</strong> استاد خطیبی<br />
+<strong>مدرس دوره:</strong> دکتر محمد خطیبی<br />
 <strong>طراحی، تدوین ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
-<strong>نسخه سند:</strong> ۲.۰ (پاییز ۱۴۰۵ - تجمیع تحلیلی جلسات ۰۱ و ۰۲)</p>
+<strong>نسخه سند:</strong> ۳.۰ (پاییز ۱۴۰۵ - تجمیع تحلیلی جلسات ۰۱، ۰۲ و ۰۳)</p>
 <hr />
 <h1 id="_1">بخش اول: مانیفست بنیادین و چهارچوب اجرایی کاپلان و نورتون</h1>
 <h2 id="-strategy-to-execution-gap">۱. عبور از شکاف استراتژی-عملکرد (Strategy-to-Execution Gap)</h2>
@@ -2866,8 +3328,8 @@
 <h2 id="execution-change-leadership-toolkit">۶. جعبه‌ابزار رهبری اجرا و رفع موانع رفتاری (Execution &amp; Change Leadership Toolkit)</h2>
 <p>اجرای استراتژی مستلزم مدیریت تغییر (Change Management) و غلبه بر مقاومت‌های رفتاری سازمان است. استاد خطیبی ابزارهای زیر را برای غلبه بر موانع اجرایی تبیین نمودند:</p>
 <h3 id="change-readiness">۶.۱. ماتریس سنجش آمادگی سازمانی برای تغییر (Change Readiness)</h3>
-<div class="my-6 p-5 rounded-2xl bg-slate-900/60 border border-slate-800">
-  <div class="text-xs font-bold text-slate-200 mb-3 flex items-center justify-between">
+<div class="my-6 p-5 rounded-2xl bg-slate-900 border border-slate-800 text-white shadow-xl">
+  <div class="text-xs font-bold text-amber-400 mb-3 pb-2 border-b border-slate-800 flex items-center justify-between">
     <span>🗺️ ماتریس سنجش آمادگی سازمانی برای تغییر (Change Readiness Matrix)</span>
     <span class="text-[11px] text-slate-400 font-normal">بر مبنای دو بعد تمایل (Willingness) و توانمندی (Ability)</span>
   </div>
@@ -2886,7 +3348,7 @@
       </div>
       <p class="text-slate-300 text-[11px] leading-relaxed">پرسنل انگیزه و شور بالایی دارند اما مهارت تکنیکال ندارند. اقدام: کارگاه‌های مهارتی، منتورینگ عملیاتی و توانمندسازی سریع.</p>
     </div>
-    <div class="p-3.5 rounded-xl bg-sky-950/40 border border-sky-500/30">
+    <div class="p-3.5 rounded-xl bg-sky-950/40 border border-sky-500/40">
       <div class="font-bold text-sky-300 mb-1 flex items-center justify-between">
         <span>🔵 ۳. ناحیه همراهی نامطمئن (Skeptics Zone)</span>
         <span class="text-[10px] text-sky-200 bg-sky-900/60 px-2 py-0.5 rounded">توان بالا / تمایل پایین</span>
@@ -4042,42 +4504,408 @@
 
 <hr />
 <p><em>پایان جزوه جلسه دوم - درس اجرا و کنترل استراتژیک</em></p>
+<hr />
+<h1 id="_33">بخش چهارم: دانشنامه تفصیلی جلسه سوم (گذار از تدوین به اجرا، کالبدشکافی آمار گالوپ، ۴ رکن پیاده‌سازی و معماری هولوگرافیک)</h1>
+<h1 id="-_1">اجرا و کنترل استراتژیک - جلسه سوم: گذار از تدوین به اجرا، کالبدشکافی آمار گالوپ، ۴ رکن پیاده‌سازی و معماری هولوگرافیک</h1>
+<p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
+<strong>مدرس دوره:</strong> دکتر محمد خطیبی<br />
+<strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
+<strong>تاریخ تدریس:</strong> ۰۹ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۳ ساعت و ۱۲ دقیقه<br />
+<strong>موضوع محوری:</strong> تبیین شکاف اجرا (Strategy-to-Execution Gap)، بازتعریف اثربخشی و رهبری، ۴ رکن پیاده‌سازی، و پیش‌درآمدی بر کارت امتیازی متوازن (BSC)</p>
+<hr />
+<h2 id="executive-summary_2">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_34">۱.۱. جوهره و مانیفست محوری تدریس دکتر خطیبی</h3>
+<p>جلسه سوم درس «اجرا و کنترل استراتژیک»، نقطه عطف تاریخی دوره در عبور از جهان ذهنی و انتزاعی «تدوین استراتژی» به میدان واقعی، پرچالش و اصطکاک‌زای «پیاده‌سازی و اجرای استراتژی» بود. دکتر خطیبی با کالبدشکافی آمارهای مراجع بین‌المللی اثبات کردند که بحران اصلی مدیریت در جهان معاصر، کمبود نظریه یا نقص در اسناد استراتژیک نیست؛ بلکه ناتوانی ساختاری، فرهنگی و انگیزشی سازمان‌ها در ترجمه استراتژی به اقدامات روزمره است.</p>
+<p>پیام‌های کلیدی جلسه در ۴ اصل بنیادی خلاصه می‌شود:
+1. <strong>قبرستان اسناد بی‌نقص:</strong> بیش از ۶۳٪ کل استراتژی‌های جهان در مرحله اجرا دفن می‌شوند؛ استراتژی‌هایی که روی کاغذ بالاترین نمرات ماتریسی را کسب کرده بودند.
+2. <strong>دو روی سکه پیاده‌سازی:</strong> اجرای استراتژی همزمان به معنای «تخصیص بهینه منابع محدود» و «مدیریت تحول و تغییر رفتار انسانی» است.
+3. <strong>تفکیک چهارگانه کلیدی:</strong> اثربخشی (کار درست)، کارایی (درست انجام دادن کار)، بهره‌وری (ترکیب این دو)، و رهبری (ایجاد انگیزه در پرسنل برای تحقق استراتژی).
+4. <strong>چهار رکن پیش‌نیاز اجرا:</strong> پیش از استقرار ابزارهایی مانند کارت امتیازی متوازن (BSC)، سازمان باید ۴ رکن اساسی شامل سیاست‌ها، اهداف سالیانه، استراتژی‌های وظیفه‌ای، و سیستم‌های تخصیص منابع را بازآفرینی کند.</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    ⚙️ منظومه جامع پیاده‌سازی و کنترل استراتژیک در تدریس دکتر خطیبی
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30">
+      <div class="text-indigo-300 font-bold text-sm mb-1">۱. کالبدشکافی آمار تکان‌دهنده گالوپ</div>
+      <p class="text-xs text-slate-300 leading-relaxed">چرا ۷۰٪ استراتژی‌ها شکست می‌خورند و چرا ۹۰٪ شکست‌ها منحصراً در لایه اجرا و کنترل رخ می‌دهد.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-sky-500/30">
+      <div class="text-sky-300 font-bold text-sm mb-1">۲. تبارشناسی دوگانه پیاده‌سازی</div>
+      <p class="text-xs text-slate-300 leading-relaxed">تخصیص منابع (بودجه و تجهیزات) در کنار مدیریت تحول (فرهنگ سازمانی، غلبه بر مقاومت بدنه و پاداش).</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-emerald-500/30">
+      <div class="text-emerald-300 font-bold text-sm mb-1">۳. ماتریس مفاهیم بنیادین مدیریت</div>
+      <p class="text-xs text-slate-300 leading-relaxed">مرزبندی دقیق میان اثربخشی، کارایی، بهره‌وری و رهبری تحول‌آفرین در صحنه عملیات.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30">
+      <div class="text-amber-300 font-bold text-sm mb-1">۴. ارکان چهارگانه پیش‌نیاز اجرا</div>
+      <p class="text-xs text-slate-300 leading-relaxed">کالبدشکافی سیاست‌ها، اهداف سالیانه، استراتژی‌های وظیفه‌ای، و مکانیزم‌های تخصیص منابع.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-rose-500/30">
+      <div class="text-rose-300 font-bold text-sm mb-1">۵. معماری هولوگرافیک سلسله‌مراتب</div>
+      <p class="text-xs text-slate-300 leading-relaxed">همراستاسازی سطوح سازمانی، اتصال استراتژی شرکتی به کف خط، و شکستن سیلوهای دپارتمانی.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-purple-500/30">
+      <div class="text-purple-300 font-bold text-sm mb-1">۶. پیش‌درآمد کارت امتیازی متوازن (BSC)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">چهار منظر مالی، مشتری، فرآیند داخلی و رشد/یادگیری به مثابه ابزار سنجش سلامت کلان اجرا.</p>
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="_35">۲. کالبدشکافی پاشنه آشیل استراتژی: آمار تکان‌دهنده موسسه گالوپ</h2>
+<p>دکتر خطیبی جلسه را با ارائه آماری تکان‌دهنده و تکان‌دهنده از وضعیت پروژه‌های استراتژیک در شرکت‌های بین‌المللی و ایرانی آغاز کردند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">شاخص عملکردی</th>
+        <th class="p-3 border-b border-slate-700">میزان در جامعه آماری گالوپ</th>
+        <th class="p-3 border-b border-slate-700">تحلیل ریشه‌ای و پیامد راهبردی</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">نرخ کلی شکست استراتژی‌ها</td>
+        <td class="p-3 font-black text-rose-600">۷۰٪</td>
+        <td class="p-3">از هر ۱۰ استراتژی تدوین‌شده، ۷ استراتژی در رسیدن به اهداف نهایی خود ناکام می‌مانند.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">سهم نقص پیاده‌سازی در شکست‌ها</td>
+        <td class="p-3 font-black text-rose-600">۹۰٪</td>
+        <td class="p-3">از میان استراتژی‌های شکست‌خورده، ۹۰٪ آن‌ها در فاز تدوین کاملاً علمی و بی‌نقص بوده‌اند و علت مرگشان صرفاً در اجرا بوده است.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">نرخ خالص مرگ استراتژی در اجرا</td>
+        <td class="p-3 font-black text-rose-700">بیش از ۶۳٪</td>
+        <td class="p-3">حاصل‌ضرب ۷۰٪ در ۹۰٪ نشان می‌دهد که حداقل ۶۳٪ از کل استراتژی‌های تدوین‌شده در دنیا به دلیل ناتوانی در پیاده‌سازی متلاشی می‌شوند.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">سهم نقص تدوین در شکست‌ها</td>
+        <td class="p-3 font-black text-emerald-700">تنها ۱۰٪</td>
+        <td class="p-3">تنها بخش ناچیزی از شکست‌ها ناشی از تحلیل نادرست بازار، ضعف ماتریس‌ها یا اطلاعات غلط است.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<blockquote>
+<p><strong>گزاره دکتر خطیبی:</strong> «ما در دانشگاه‌ها و هیئت‌مدیره‌ها ۹۰ درصد انرژی و زمان خود را صرف فاز تدوین (Formulation) می‌کنیم؛ جلسات پرهزینه برگزار می‌کنیم، ماتریس می‌کشیم و اسناد لوکس تهیه می‌کنیم. اما واقعیت بازار این است که ارزش یک ایده درخشان تنها ۱۰ درصد است و ۹۰ درصد موفقیت به عرق ریختن، انضباط آهنین و ظرافت‌های اجرایی بستگی دارد.»</p>
+</blockquote>
+<hr />
+<h2 id="_36">۳. تعریف دوگانه پیاده‌سازی استراتژی: تخصیص منابع و مدیریت تغییر</h2>
+<p>دکتر خطیبی اجرای استراتژی را فراتر از صدور یک بخشنامه سازمانی یا تنظیم جدول زمان‌بندی دانستند و آن را به مثابه فرآیندی دووجهی تبیین کردند:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div class="p-5 rounded-2xl bg-indigo-50 border border-indigo-200">
+    <div class="text-indigo-900 font-black text-sm mb-2">💰 بُعد سخت‌افزاری: تخصیص منابع (Resource Allocation)</div>
+    <p class="text-xs text-slate-700 leading-relaxed text-justify">
+      استراتژی بدون بودجه، یک شعر عاشقانه است! اگر مدیرعامل مدعی استراتژی تنوع‌بخشی یا ورود به بازارهای صادراتی است، باید نشان دهد که بودجه مالی، تجهیزات، بهترین مدیران ارشد و ساعات کاری کلیدی شرکت به این اولویت اختصاص یافته است. هر استراتژی که در ردیف‌های بودجه سالیانه و برنامه‌های سرمایه‌ای (CAPEX) منعکس نشود، فریبی بیش نیست. تخصیص بهینه منابع مستلزم شجاعت متوقف کردن پروژه‌های منسوخ و انتقال سرمایه به حوزه‌های رشد است.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-rose-50 border border-rose-200">
+    <div class="text-rose-900 font-black text-sm mb-2">🧠 بُعد نرم‌افزاری: مدیریت تحول (Change Management)</div>
+    <p class="text-xs text-slate-700 leading-relaxed text-justify">
+      پیاده‌سازی یعنی تغییر عادات و منافع کارکنان. افراد به طور طبیعی در برابر هرگونه تغییر در فرآیندها، شرح وظایف یا ساختار قدرت مقاومت می‌کنند؛ زیرا تغییر حامل ناامنی و ابهام است. هنر مدیر اجرایی، مدیریت تعارضات، شفاف‌سازی چشم‌انداز برای پرسنل، همسوسازی نظام‌های پاداش با اهداف استراتژیک، و ایجاد ائتلاف‌های قدرتمند برای پیشبرد تغییر است. بدون تغییر در باورهای کارکنان، ساختارهای جدید صرفاً دکور اداری خواهند بود.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="_37">۴. بازتعریف و تفکیک مفاهیم بنیادین: اثربخشی، کارایی، بهره‌وری و رهبری</h2>
+<p>یکی از مهم‌ترین ارکان آموزشی این جلسه، اصلاح آشفتگی اصطلاحات مدیریتی در ذهن مدیران بود. دکتر خطیبی با مثال‌های کاربردی، مرز این چهار مفهوم را روشن ساختند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">مفهوم مدیریتی</th>
+        <th class="p-3 border-b border-slate-700">معادل انگلیسی</th>
+        <th class="p-3 border-b border-slate-700">تعریف عملیاتی و کاربردی</th>
+        <th class="p-3 border-b border-slate-700">مثال ملموس سازمانی</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">اثربخشی</td>
+        <td class="p-3 font-mono text-indigo-700">Effectiveness</td>
+        <td class="p-3 font-bold">«انجام دادن کار درست» (Doing the right things)؛ سنجش میزان دستیابی به اهداف کلان و بازارهای هدف.</td>
+        <td class="p-3">تولید خودرویی برقی که دقیقا پاسخگوی نیاز مشتریان هدف است و در بازار خریدار دارد.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">کارایی</td>
+        <td class="p-3 font-mono text-sky-700">Efficiency</td>
+        <td class="p-3 font-bold">«درست انجام دادن کار» (Doing things right)؛ نسبت خروجی‌ها به ورودی‌ها، کاهش ضایعات و هزینه.</td>
+        <td class="p-3">مونتاژ یک قطعه معیوب با کمترین مصرف برق و در سریع‌ترین زمان ممکن (کارایی بالا در خدمت کاری نادرست!).</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">بهره‌وری</td>
+        <td class="p-3 font-mono text-emerald-700">Productivity</td>
+        <td class="p-3 font-bold">ترکیب همزمان اثربخشی و کارایی؛ یعنی تحقق اهداف درست بازار با حداقل مصرف منابع و هزینه.</td>
+        <td class="p-3">تولید کالای رقابتی مورد تقاضای بازار با بالاترین راندمان خط و پایین‌ترین قیمت تمام‌شده.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">رهبری سازمانی</td>
+        <td class="p-3 font-mono text-purple-700">Leadership</td>
+        <td class="p-3 font-bold">هنر نفوذ در دل‌ها و ایجاد انگیزه در بدنه انسانی برای حرکت مشتاقانه به سوی اهداف استراتژیک.</td>
+        <td class="p-3">برانگیختن تعهد قلبی مهندسان و کارگران خط برای تحمل سختی‌های تحول سازمانی.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<blockquote>
+<p><strong>تمثیل دراکر از زبان دکتر خطیبی:</strong> «هیچ چیز بی‌حاصل‌تر و خطرناک‌تر از این نیست که کاری را با حداکثر کارایی انجام دهید که اصولاً نباید انجام می‌شد!»</p>
+</blockquote>
+<hr />
+<h2 id="_38">۵. ارکان چهارگانه پیش‌نیاز پیاده‌سازی استراتژی</h2>
+<p>دکتر خطیبی تبیین کردند که پیش از استقرار نرم‌افزارها یا مدل‌های ارزیابی عملکرد، هر سازمان باید <strong>۴ رکن مقدماتی اجرا</strong> را به عنوان سنگ‌بنای معماری عملیاتی خود پایه‌ریزی کند:</p>
+<div class="my-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-amber-400 font-bold text-sm mb-2 flex items-center gap-2">
+      <span>📜</span>
+      <span>۱. سیاست‌ها و خط‌مشی‌ها (Policies)</span>
+    </div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      سیاست‌ها ریل‌ها و گاردریل‌های روزمره تصمیم‌گیری هستند. سیاست مشخص می‌کند که کارکنان در شرایط تکرارشونده چگونه رفتار کنند بدون اینکه نیاز به مراجعه مکرر به مدیرعامل باشد. (مثال: سیاست تخفیف تجاری، سیاست جذب نخبگان، یا سیاست عدم اعطای نسیه بیش از ۳۰ روز). سیاست‌ها اختیارات را تفویض کرده، ناهماهنگی بین بخش‌ها را برطرف ساخته و سرعت عمل سازمان را در برابر مشتری به طور چشمگیری افزایش می‌دهند.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-sky-400 font-bold text-sm mb-2 flex items-center gap-2">
+      <span>🎯</span>
+      <span>۲. اهداف سالیانه (Annual Objectives)</span>
+    </div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      اهداف ۵ ساله استراتژیک باید شکسته شده و به تارگت‌های کمّی، شفاف، زمان‌دار و قابل‌اندازه‌گیری ۱۲ ماهه تبدیل شوند. اگر هدف ۵ ساله دستیابی به سهم بازار ۳۰ درصدی است، هدف سال اول باید صراحتاً «جذب ۵۰۰ مشتری جدید در منطقه غرب و رشد ۱۲ درصدی فروش» تعریف شود تا مبنای پاداش قرار گیرد. اهداف سالیانه پل اتصال برنامه‌های بلندمدت به ارزیابی عملکرد روزمره پرسنل هستند.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-emerald-400 font-bold text-sm mb-2 flex items-center gap-2">
+      <span>🔧</span>
+      <span>۳. استراتژی‌های وظیفه‌ای (Functional Strategies)</span>
+    </div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      استراتژی کلان سازمان باید به زبان دپارتمان‌های صف و ستاد ترجمه شود: استراتژی واحد مالی، استراتژی بازاریابی، استراتژی تولید و زنجیره تامین، استراتژی منابع انسانی، و استراتژی تحقیق و توسعه. بدون استراتژی وظیفه‌ای همسو، دپارتمان‌ها به صورت جزیره‌ای و حتی در تضاد با استراتژی کلان عمل خواهند کرد؛ به عنوان مثال واحد فروش برای افزایش حجم تلاش می‌کند در حالی که استراتژی شرکت حفظ حاشیه سود بالا و برندینگ لوکس است.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-purple-400 font-bold text-sm mb-2 flex items-center gap-2">
+      <span>⚖️</span>
+      <span>۴. تخصیص بهینه منابع (Resource Allocation)</span>
+    </div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      توزیع هدفمند و شفاف چهار دسته منابع اصلی: ۱. منابع مالی (سرمایه در گردش و بودجه‌های توسعه‌ای)، ۲. منابع فیزیکی (فضا، خطوط تولید و سرورها)، ۳. منابع انسانی (استقرار شایسته‌ترین پرسنل در پروژه‌های استراتژیک)، و ۴. منابع فناوری و اطلاعات. اولویت‌بندی تخصیص منابع آزمون واقعی تعهد مدیران به استراتژی است. سازمانی که بودجه را بر اساس چانه‌زنی‌های شخصی یا رویه‌های سنتی توزیع می‌کند، محکوم به شکست در پیاده‌سازی است.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="_39">۶. تفکیک استراتژی‌های وظیفه‌ای در چهار حوزه محوری سازمان</h2>
+<p>دکتر خطیبی جزئیات استقرار استراتژی‌های وظیفه‌ای را در چهار ستون اصلی هر شرکت تشریح کردند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">حوزه وظیفه‌ای</th>
+        <th class="p-3 border-b border-slate-700">مسئولیت استراتژیک</th>
+        <th class="p-3 border-b border-slate-700">نقش در پیاده‌سازی استراتژی کلان</th>
+        <th class="p-3 border-b border-slate-700">خطای رایج در شرکت‌های ایرانی</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۱. بازاریابی و فروش (Marketing & Sales)</td>
+        <td class="p-3">تحلیل بخش‌بندی بازار (STP)، طراحی آمیخته ۴P/7P، تعیین کانال‌های توزیع و قیمت‌گذاری.</td>
+        <td class="p-3">خلق تقاضای واقعی برای مزیت‌های رقابتی سازمان و تامین جریان نقدینگی عملیاتی.</td>
+        <td class="p-3 text-rose-700">تمرکز صرف بر تخفیف‌های سنگین و حراج‌های فصلی به جای ساخت برند و وفادارسازی.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۲. مالی و حسابداری (Finance & Accounting)</td>
+        <td class="p-3">مدیریت سرمایه در گردش، ساختار بدهی/سرمایه، اعتبارسنجی مشتریان و پیش‌بینی جریان وجوه نقد.</td>
+        <td class="p-3">تامین سوخت مالی پروژه‌های استراتژیک و مدیریت ریسک‌های تورمی و نوسانات نرخ ارز.</td>
+        <td class="p-3 text-rose-700">نگاه ثبت‌کننده‌صرف (دفترداری سنتی) به جای ایفای نقش شریک تجاری استراتژیک مدیرعامل.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۳. عملیات و زنجیره تامین (Operations & SCM)</td>
+        <td class="p-3">کنترل کیفیت جامع (TQM)، بهینه‌سازی ظرفیت خطوط، مدیریت موجودی انبار و تامین به‌موقع (JIT).</td>
+        <td class="p-3">تضمین تحویل به موقع تعهدات با استاندارد بالا و کاهش بهای تمام‌شده کالای فروش‌رفته.</td>
+        <td class="p-3 text-rose-700">انباشت سرمایه در قطعات یدکی غیرضروری و انجماد نقدینگی در انبارهای راکد.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۴. منابع انسانی و فرهنگ (HR & Culture)</td>
+        <td class="p-3">جذب استعدادهای کلیدی، طراحی سیستم‌های کارانه بر مبنای KPI، شایسته‌گزینی و آموزش مداوم.</td>
+        <td class="p-3">انرژی‌بخشی به بدنه، حذف مقاومت‌های زیرپوستی و حفظ تعهد نخبگان در شرایط بحران.</td>
+        <td class="p-3 text-rose-700">روابط‌عمومی‌انگاری واحد منابع انسانی و عدم ارتباط پاداش‌ها با تحقق استراتژی.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+<h2 id="_40">۷. مدل هولوگرافیک و سلسله‌مراتب عمودی سازمان</h2>
+<p>یکی از ظریف‌ترین مباحث تئوریک ارائه شده توسط دکتر خطیبی، مفهوم <strong>سازمان هولوگرافیک (Holographic Organization)</strong> بود:</p>
+<blockquote>
+<p><strong>گزاره دکتر خطیبی:</strong> «در یک هولوگرام واقعی، اگر تکه‌ای از تصویر را بشکنید، هر قطعه شکسته بازتاب‌دهنده کل تصویر اصلی است. سازمان متعالی نیز باید هولوگرافیک باشد؛ یعنی اگر با یک کارشناس ساده در خط بسته یا یک کارمند جزء در دورافتاده‌ترین شعبه شرکت گفتگو کنید، او باید بداند استراتژی کلی شرکت چیست و کار روزمره او چه نقشی در تحقق رسالت کلان سازمان ایفا می‌کند.»</p>
+</blockquote>
+<div class="my-6 p-6 rounded-2xl bg-slate-900 text-white border border-slate-800">
+  <div class="text-center font-bold text-amber-400 text-sm mb-4">🏛️ سطوح چهارگانه سلسله‌مراتب استراتژیک سازمان</div>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-xs text-center">
+    <div class="p-3 bg-slate-800 rounded-xl border border-indigo-500/40">
+      <span class="block text-indigo-400 font-bold mb-1">۱. سطح کلان هلدینگ (Corporate)</span>
+      پورتفوی کسب‌وکارها، تنوع‌بخشی، ادغام و تملک (M&A) و تخصیص سرمایه مادر
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-sky-500/40">
+      <span class="block text-sky-400 font-bold mb-1">۲. سطح واحد کسب‌وکار (SBU)</span>
+      مزیت رقابتی، تمایز محصول، رهبری هزینه و نحوه پیروزی در بازار هدف مشخص
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-emerald-500/40">
+      <span class="block text-emerald-400 font-bold mb-1">۳. سطح وظیفه‌ای (Functional)</span>
+      همسوسازی فرآیندهای مالی، فروش، بازاریابی، منابع انسانی و تولید با استراتژی SBU
+    </div>
+    <div class="p-3 bg-slate-800 rounded-xl border border-amber-500/40">
+      <span class="block text-amber-400 font-bold mb-1">۴. سطح عملیاتی (Operational)</span>
+      تارگت‌های شیفت کاری، چک‌لیست‌های کیفی، انضباط خطی و KPIهای روزانه پرسنل
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="balanced-scorecard-bsc">۸. پیش‌درآمدی بر کارت امتیازی متوازن (Balanced Scorecard - BSC)</h2>
+<p>دکتر خطیبی در بخش پایانی جلسه، زیربنای ورود به شاهکار رابرت کاپلان و دیوید نورتون یعنی <strong>کارت امتیازی متوازن (BSC)</strong> را پی‌ریزی کردند. ایشان تشریح کردند که نگاه صرف به شاخص‌های مالی گذشته‌نگر (مانند سود خالص، گردش دارایی یا حاشیه سود) مانند رانندگی با نگاه به آینه عقب اتومبیل است:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 my-6 text-xs text-right">
+  <div class="p-4 rounded-xl bg-slate-800 text-white border border-blue-500/40">
+    <div class="text-blue-400 font-black mb-1">۱. منظر مالی (Financial)</div>
+    <p class="text-slate-300 leading-relaxed">«برای موفقیت مالی، در چشم سهامداران چگونه باید به نظر برسیم؟» تمرکز بر سودآوری، رشد درآمد و بازده سرمایه در گردش.</p>
+  </div>
+  <div class="p-4 rounded-xl bg-slate-800 text-white border border-emerald-500/40">
+    <div class="text-emerald-400 font-black mb-1">۲. منظر مشتری (Customer)</div>
+    <p class="text-slate-300 leading-relaxed">«برای تحقق چشم‌انداز، نزد مشتریان چگونه باید جلوه کنیم؟» رضایت مشتری، سهم کیف پول، وفاداری و ادراک تمایز برند.</p>
+  </div>
+  <div class="p-4 rounded-xl bg-slate-800 text-white border border-amber-500/40">
+    <div class="text-amber-400 font-black mb-1">۳. منظر فرآیندهای داخلی (Internal Processes)</div>
+    <p class="text-slate-300 leading-relaxed">«برای جلب رضایت مشتریان و سهامداران، در چه فرآیندهایی باید سرآمد باشیم؟» کیفیت تولید، چابکی زنجیره تامین و نوآوری.</p>
+  </div>
+  <div class="p-4 rounded-xl bg-slate-800 text-white border border-purple-500/40">
+    <div class="text-purple-400 font-black mb-1">۴. منظر رشد و یادگیری (Learning & Growth)</div>
+    <p class="text-slate-300 leading-relaxed">«برای دستیابی به اهداف فوق، چگونه توانایی تغییر و بهبود را حفظ کنیم؟» انگیزش پرسنل، زیرساخت فناوری و فرهنگ سازمانی.</p>
+  </div>
+</div>
+
+<hr />
+<h2 id="kaplan-norton-barriers">۹. موانع چهارگانه اجرای استراتژی در بنگاه‌های ایرانی (Kaplan &amp; Norton Barriers)</h2>
+<p>بر اساس مطالعات کاپلان و نورتون و تطبیق آن با ساختار بنگاه‌های اقتصادی ایران توسط دکتر خطیبی، چهار مانع مرگبار زیر سد راه اجرای استراتژی هستند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-200 rounded-lg overflow-hidden shadow-sm">
+    <thead class="bg-slate-800 text-amber-400 text-xs">
+      <tr>
+        <th class="p-3 border-b border-slate-700">عنوان مانع</th>
+        <th class="p-3 border-b border-slate-700">درصد جهانی / وضعیت ایرانی</th>
+        <th class="p-3 border-b border-slate-700">شرح عارضه در شرکت‌های ایرانی</th>
+        <th class="p-3 border-b border-slate-700">راهکار درمانی دکتر خطیبی</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-200 bg-white text-slate-700 text-xs leading-relaxed">
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۱. مانع بینش (Vision Barrier)</td>
+        <td class="p-3 text-rose-600 font-bold">کمتر از ۵٪ پرسنل استراتژی را می‌فهمند!</td>
+        <td class="p-3">استراتژی به ادبیاتی سخت، تزئینی و غیرقابل فهم برای کارکنان خط تبدیل شده و کسی هدف شرکت را درک نمی‌کند.</td>
+        <td class="p-3 text-emerald-800 font-bold">ترجمه استراتژی به پیام‌های ساده، ملموس و قابل فهم برای هر رده شغلی.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۲. مانع افراد (People Barrier)</td>
+        <td class="p-3 text-rose-600 font-bold">تنها ۲۵٪ مدیران پاداش همسو دارند!</td>
+        <td class="p-3">سیستم حقوق، مزایا و ارتقای پرسنل به تحقق اهداف استراتژیک وصل نیست؛ افراد برای کارهای روتین پاداش می‌گیرند.</td>
+        <td class="p-3 text-emerald-800 font-bold">طراحی نظام جبران خدمات و کارانه مبتنی بر KPIهای استراتژیک سالیانه.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۳. مانع مدیریت (Management Barrier)</td>
+        <td class="p-3 text-rose-600 font-bold">۸۵٪ مدیران کمتر از یک ساعت وقت می‌گذارند!</td>
+        <td class="p-3">جلسات هفتگی مدیران غرق در اطفای حریق‌های روزمره و چک‌های برگشتی است و وقتی برای پایش استراتژی نمی‌ماند.</td>
+        <td class="p-3 text-emerald-800 font-bold">جداسازی کامل جلسات پایش استراتژیک ماهانه از جلسات عملیاتی روزمره.</td>
+      </tr>
+      <tr>
+        <td class="p-3 font-bold text-slate-900">۴. مانع منابع (Resource Barrier)</td>
+        <td class="p-3 text-rose-600 font-bold">۶۰٪ سازمان‌ها بودجه را به استراتژی وصل نمی‌کنند!</td>
+        <td class="p-3">بودجه‌ریزی صرفاً افزایشی بر مبنای هزینه‌های سال گذشته است، نه بر مبنای پروژه‌های تحول‌آفرین استراتژیک.</td>
+        <td class="p-3 text-emerald-800 font-bold">طراحی بودجه‌ریزی بر مبنای صفر و تخصیص مستقیم سرمایه به کارت‌های امتیازی.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+<h2 id="monday-morning-action-protocol">۱۰. پروتکل اجرایی «صبح دوشنبه» مدیران عامل (Monday Morning Action Protocol)</h2>
+<p>برای نجات استراتژی‌های سازمان از بایگانی شدن در پوشه‌های شرکتی، مدیرعامل و اعضای هیئت‌مدیره باید از صبح دوشنبه پروتکل‌های ۵ گانه زیر را عملیاتی سازند:</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-amber-400 font-bold text-sm mb-2">۱. ممیزی انطباق بودجه با استراتژی</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      سرفصل‌های بودجه مصوب ۶ ماه آینده را کالبدشکافی کنید. اگر بیش از ۳۰ درصد از هزینه‌های توسعه‌ای به پروژه‌های اولویت‌دار استراتژیک اختصاص ندارد، بلافاصله بودجه را رد و بازآرایی نمایید.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-emerald-400 font-bold text-sm mb-2">۲. شکستن استراتژی به تارگت‌های سالیانه</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      با تک‌تک معاونین و مدیران واحدهای وظیفه‌ای (بازاریابی، مالی، تولید، منابع انسانی) جلسه بگذارید و سهم دقیق هر واحد از تحقق اهداف ۱۲ ماهه پیش‌رو را بر روی یک برگه کاغذ نهایی و امضا کنید.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-sky-400 font-bold text-sm mb-2">۳. راه‌اندازی جلسه ماهانه کنترل فرضیات</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      یک روز ثابت در هر ماه (مثلا اولین چهارشنبه) را منحصراً به بررسی پیشرفت استراتژی اختصاص دهید. در این جلسه، هیچ گزارشی درباره مسائل جاری، خرابی دستگاه یا تاخیر اداری پذیرفته نخواهد شد.
+    </p>
+  </div>
+  <div class="p-5 rounded-2xl bg-slate-900 text-white border border-slate-800">
+    <div class="text-purple-400 font-bold text-sm mb-2">۴. ارزیابی هولوگرافیک بدنه پرسنلی</div>
+    <p class="text-xs text-slate-300 leading-relaxed text-justify">
+      به طور تصادفی با ۳ نفر از کارشناسان و پرسنل خط گفتگو کنید و بپرسید «هدف امسال شرکت چیست؟». پاسخ آن‌ها عیار واقعی اثربخشی ارتباطات استراتژیک و مانع بینش در سازمان شما را برملا خواهد کرد.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="_41">۱۱. پیوندگاه‌های استراتژیک: پیش‌درآمد فاز کنترل و نقشه‌های استراتژی</h2>
+<p>جلسه سوم درس اجرا و کنترل استراتژیک، با موفقیت زیربنای معرفتی، ساختاری و فرهنگی لازم را برای گام بعدی یعنی طراحی <strong>نقشه‌های استراتژی (Strategy Maps)</strong> و معماری <strong>کارت امتیازی متوازن (BSC)</strong> فراهم آورد. سازمان زمانی می‌تواند مدعی هوشمندی استراتژیک باشد که فاصله‌ای میان تصمیم‌گیری در اتاق هیئت‌مدیره و عملکرد کارکنان در خطوط عملیاتی احساس نشود.</p>
+        </div>
       </div>
+
     </section>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-10 px-6 border-t border-slate-800 mt-auto">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
-      <div class="space-y-2">
-        <div class="text-sm font-bold text-slate-200">
-          دانشکده اقتصاد دانشگاه تهران • دوره تخصصی MBA (کد 0410)
-        </div>
-        <div class="text-xs text-slate-400">
-          درس اجرا و کنترل استراتژیک • مدرس: استاد خطیبی
-        </div>
+  <footer class="bg-slate-950 text-slate-400 py-10 px-4 mt-auto border-t border-slate-800 text-center">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full font-bold">دانشکده اقتصاد دانشگاه تهران</span>
+        <span class="text-xs bg-slate-800 text-slate-300 px-3 py-1 rounded-full font-bold">دوره تخصصی MBA</span>
+        <span class="text-xs bg-slate-800 text-amber-400 px-3 py-1 rounded-full font-bold">پاییز ۱۴۰۵</span>
       </div>
-      <div>
-        <div class="inline-flex flex-wrap items-center justify-center gap-3">
+      <div class="text-xs leading-relaxed max-w-xl mx-auto">
+        طراحی و معماری سیستم جامع دانشی MBA توسط <strong>پارسا رضائی</strong> جهت ارتقای استانداردهای تحلیلی و تصمیم‌گیری رهبران کسب‌وکار در ایران.
+      </div>
+      <div class="inline-flex flex-wrap items-center justify-center gap-3">
   <span class="text-slate-300 text-xs md:text-sm">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
   <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-3 py-1 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
     <span>Parsa Rezaie</span>
   </a>
 </div>
-      </div>
     </div>
   </footer>
 
+  <!-- Interactive Scripts -->
   <script>
-    // Tab switching
     function switchTab(tabId) {
-      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-      const activeContent = document.getElementById('content-' + tabId);
-      if (activeContent) activeContent.classList.remove('hidden');
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(c => c.classList.add('hidden'));
 
-      document.querySelectorAll('.tab-btn').forEach(btn => {
+      const activeContent = document.getElementById('content-' + tabId);
+      if (activeContent) {
+        activeContent.classList.remove('hidden');
+      }
+
+      const tabBtns = document.querySelectorAll('.tab-btn');
+      tabBtns.forEach(btn => {
         btn.classList.remove('bg-white', 'text-slate-900', 'shadow-md', 'active');
         btn.classList.add('bg-white/15', 'text-white');
       });
@@ -4116,7 +4944,7 @@
       }
     }
 
-    // Simulator calculations
+    // Barrier Readiness calculation
     function calculateReadiness() {
       const b1 = parseInt(document.getElementById('range-b1').value);
       const b2 = parseInt(document.getElementById('range-b2').value);

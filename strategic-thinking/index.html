@@ -60,7 +60,7 @@
             تفکر استراتژیک
           </h1>
           <p class="text-indigo-100 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
-            مجموعه تحلیلی و راهبردی ۴ جلسه کامل | مدرس: <strong class="text-white font-semibold">استاد صدقیانی‌فر</strong> | <div class="inline-flex items-center gap-2 mt-1">
+            مجموعه تحلیلی و راهبردی ۵ جلسه کامل (اختتامیه ماژول) | مدرس: <strong class="text-white font-semibold">استاد صدقیانی‌فر</strong> | <div class="inline-flex items-center gap-2 mt-1">
   <span class="text-blue-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
   <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -71,8 +71,8 @@
         </div>
         <div class="flex items-center gap-3">
           <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3.5 text-center min-w-[120px]">
-            <div class="text-2xl font-black text-amber-300">۴ جلسه</div>
-            <div class="text-xs text-indigo-100 font-medium">۱۱.۳ ساعت تدریس کاربردی</div>
+            <div class="text-2xl font-black text-amber-300">۵ جلسه</div>
+            <div class="text-xs text-indigo-100 font-medium">۱۴.۰ ساعت تدریس کاربردی</div>
           </div>
         </div>
       </div>
@@ -93,6 +93,9 @@
         </button>
         <button onclick="switchTab('session4')" id="tab-session4" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           جلسه ۴: استقرار، زنجیره ۴ گانه و ماتریس PESTEL
+        </button>
+        <button onclick="switchTab('session5')" id="tab-session5" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۵: MAPIT و IDEA، نقاط مرجع و شکاف نسلی
         </button>
         <button onclick="switchTab('simulator')" id="tab-simulator" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           🧭 ارزیاب بلوغ لیدکا و خطاهای شناختی
@@ -131,8 +134,8 @@
         </div>
       </div>
 
-      <!-- 4 Session Executive Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+      <!-- 5 Session Executive Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         
         <!-- S1 Card -->
         <div class="card-hover bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col justify-between">
@@ -199,6 +202,23 @@
           </div>
           <button onclick="switchTab('session4')" class="w-full text-center text-xs font-bold text-amber-700 hover:text-amber-900 pt-3 border-t border-slate-100">
             ورود به جزوه جلسه چهارم ➔
+          </button>
+        </div>
+
+        <!-- S5 Card -->
+        <div class="card-hover bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="w-8 h-8 rounded-lg bg-rose-100 text-rose-800 flex items-center justify-center font-bold text-sm">۵</span>
+              <span class="text-xs font-bold text-rose-800 bg-rose-50 px-2.5 py-1 rounded-full">جلسه پنجم • ۲.۷ ساعت</span>
+            </div>
+            <h4 class="text-sm font-extrabold text-slate-900 mb-2">فرجام ماژول، فریم‌ورک‌های MAPIT و IDEA، نقاط مرجع و شکاف نسلی</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              ماتریس تقاطع PESTEL، مدل‌های اولویت‌بندی MAPIT و پلتفرمی IDEA، نقاط مرجع استراتژیک (SRP) و رفتار ریسک، تقدم سیاست بر استراتژی، ۵ نسل مدیران در ایران و زمان بیت‌محور داووس.
+            </p>
+          </div>
+          <button onclick="switchTab('session5')" class="w-full text-center text-xs font-bold text-rose-700 hover:text-rose-900 pt-3 border-t border-slate-100">
+            ورود به جزوه جلسه پنجم ➔
           </button>
         </div>
 
@@ -2471,6 +2491,409 @@
 <p>خانه‌ای که بیشترین مقدار $CP_{ij}$ را کسب کند، <strong>نقطه بحرانی شماره یک سازمان</strong> است و باید کانون اصلی تخصیص منابع و طراحی برنامه‌های عملیاتی قرار گیرد.</p></div>
       </div>
 
+    <!-- TAB: SESSION 5 -->
+    <section id="content-session5" class="tab-content hidden space-y-6">
+      
+      <!-- Tab Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold text-rose-800 bg-rose-50 px-3 py-1 rounded-full">جلسه پنجم (اختتامیه ماژول) • ۲.۷ ساعت تدریس</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">فرجام ماژول، مدل‌های MAPIT و IDEA، نقاط مرجع استراتژیک (SRP) و جامعه‌شناسی نسلی کسب‌وکار در ایران</h2>
+        </div>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-rose-700 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+      </div>
+
+      <!-- TOP LAYER: Executive Visual Summary -->
+      <div class="bg-rose-50/60 border border-rose-200 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">🏆</span>
+          <h3 class="text-base md:text-lg font-black text-rose-950">خلاصه اجرایی و مدیریتی جلسه پنجم: فرجام ماژول، فریم‌ورک‌های MAPIT و IDEA، نقاط مرجع استراتژیک و رفتارشناسی ریسک</h3>
+        </div>
+        <p class="text-xs md:text-sm text-rose-900 leading-relaxed mb-5 text-justify">
+          در نشست پایانی ماژول تفکر استراتژیک، استاد صدقیانی‌فر تمامی پایه‌های مفهومی جلسات گذشته را به مدلی منسجم و کاربردی پیوند زدند. در این نشست، ماتریس تقاطع دو محوره PESTEL با سوژه‌های سازمانی (کشف عوامل بحرانی موفقیت CFS و گلوگاه‌های بقا)، مدل درون‌صنعتی MAPIT (بازار، بازیگران، محصول، تأثیرات، تعاملات)، مدل زیست‌بوم‌محور پلتفرمی IDEA، ماتریس نقاط مرجع استراتژیک (SRP) و دینامیک ریسک‌پذیری همگام با انباشت دارایی، تقدم قطعی سیاست بر استراتژی، تبارشناسی شکاف ۵ نسلی نیروی کار ایران و پارادایم نوین زمان بیت‌محور اجلاس داووس به عنوان منشور عمل رهبران ارشد تبیین شد.
+        </p>
+
+        <!-- 4 Highlight Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
+          <div class="bg-white p-4 rounded-xl border border-rose-100 shadow-sm">
+            <div class="text-xs font-bold text-rose-800 mb-1 flex items-center gap-1.5">
+              <span>🎯</span>
+              <span>ماتریس تقاطع PESTEL و سوژه‌ها</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">گذر از جدول‌سازی ایستا به تقاطع دو محوره سوژه‌ها و ابعاد کلان؛ استخراج عوامل حیاتی موفقیت (CFS) و کشف زودهنگام گلوگاه‌های بحرانی سازمان.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-rose-100 shadow-sm">
+            <div class="text-xs font-bold text-rose-800 mb-1 flex items-center gap-1.5">
+              <span>📊</span>
+              <span>مدل تحلیلی درون‌صنعتی MAPIT</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">کالبدشکافی ۵ مؤلفه بازار، بازیگران، محصول، تأثیرات و تعاملات در بازار لوازم خانگی امین‌حضور و مهندسی بسته بهینه منابع (Resource Bundle).</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-rose-100 shadow-sm">
+            <div class="text-xs font-bold text-rose-800 mb-1 flex items-center gap-1.5">
+              <span>🌐</span>
+              <span>مدل پلتفرمی IDEA و ماتریس SRP</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">۴ رکن شناسایی، طراحی، ارزیابی و انطباق شبکه در بازارهای دوسویه (اسنپ/تپسی)، در کنار تحلیل تمایل به ریسک و تأمین مالی بر پایه نقاط مرجع استراتژیک.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-rose-100 shadow-sm">
+            <div class="text-xs font-bold text-rose-800 mb-1 flex items-center gap-1.5">
+              <span>⏳</span>
+              <span>جامعه‌شناسی نسلی و زمان داووس</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">واکاوی ۵ نسل مدیریتی ایران از ۱۳۰۰ تا نسل Z، تقدم سیاست‌های ۳ گانه مالکیت بر استراتژی، و مفهوم زمان بیت‌محور در اقتصادهای ۲۴/۷ غیرمتمرکز.</p>
+          </div>
+        </div>
+
+        <!-- Case Study & Framework Matrix -->
+        <div class="bg-white rounded-xl border border-rose-200 overflow-hidden shadow-sm">
+          <table class="w-full text-xs text-right">
+            <thead class="bg-rose-100 text-rose-950 font-bold">
+              <tr>
+                <th class="p-3">فریم‌ورک / کیس استراتژیک بومی</th>
+                <th class="p-3 text-rose-900">تله شناختی / خطای تحلیلی</th>
+                <th class="p-3 text-slate-700">حکم تفکر استراتژیک (استاد صدقیانی‌فر)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-rose-100 text-slate-700">
+              <tr>
+                <td class="p-3 font-bold text-rose-950 bg-slate-50">مدل MAPIT در بازار لوازم خانگی امین‌حضور</td>
+                <td class="p-3 text-rose-700">تمرکز صرف بر بهای تمام‌شده و نادیده گرفتن تعاملات بازیگران غیررسمی بازار.</td>
+                <td class="p-3 font-semibold text-emerald-800">تحلیل یکپارچه ۵ رکن (Market, Actors, Product, Impacts, Transactions) و طراحی Resource Bundle برای دور زدن قیمت‌گذاری دستوری.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-rose-950 bg-slate-50">نقاط مرجع استراتژیک (مبلمان نیلپر vs یاخچی‌آباد)</td>
+                <td class="p-3 text-rose-700">انتظار ریسک‌پذیری و جسارت کارآفرینی یکسان از غول‌های صنعتی دارای دارایی‌های سنگین.</td>
+                <td class="p-3 font-semibold text-emerald-800">با افزایش دارایی و ارزش برند، نقطه مرجع درونی حاکم شده و سازمان محافظه‌کار می‌شود؛ ابزار تأمین مالی باید از استقراض به سود انباشته تغییر کند.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-rose-950 bg-slate-50">تقدم سیاست بر استراتژی (Corporate Policy)</td>
+                <td class="p-3 text-rose-700">تدوین استراتژی‌های تهاجمی در شرایطی که جهت‌گیری مالکان، بقا یا تثبیت دارایی‌هاست.</td>
+                <td class="p-3 font-semibold text-emerald-800">استراتژی خادم سیاست است؛ تا زمانی که سیاست کلان (رشد، تثبیت یا تعدیل ساختاری) مشخص نباشد، هر سند استراتژی اتلاف سرمایه است.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+      <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+        <div>
+          <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه پنجم</h3>
+          <p class="text-xs text-slate-400">شامل تمامی مباحث ماتریس تقاطع PESTEL، مدل‌های MAPIT و IDEA، نقاط مرجع استراتژیک، تقدم سیاست، جامعه‌شناسی نسلی و افق داووس</p>
+        </div>
+        <button onclick="toggleSessionFull('s5')" id="btn-toggle-s5" class="bg-rose-600 hover:bg-rose-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+          <span>مطالعه متن کامل و تفصیلی جلسه</span>
+          <span id="icon-toggle-s5">▼</span>
+        </button>
+      </div>
+
+      <div id="full-s5" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+        <div class="prose-custom"><h1 id="-mapit-idea-srp">تفکر استراتژیک - جلسه پنجم: فرجام ماژول، مدل‌های MAPIT و IDEA، نقاط مرجع استراتژیک (SRP) و جامعه‌شناسی نسلی کسب‌وکار در ایران</h1>
+<p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
+<strong>مدرس دوره:</strong> استاد صدقیانی‌فر<br />
+<strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
+<strong>تاریخ تدریس:</strong> ۲۳ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۲ ساعت و ۴۲ دقیقه و ۴۳ ثانیه<br />
+<strong>موضوع محوری:</strong> جمع‌بندی نهایی ماژول تفکر استراتژیک، ماتریس پیشرفته تقاطع PESTEL با سوژه‌ها (CFS و Bottlenecks)، مدل‌های تحلیلی درون‌صنعتی MAPIT و اکوسیستمی IDEA، نقاط مرجع استراتژیک (Strategic Reference Points) و ریسک‌پذیری سازمانی، تفکیک سیاست‌های کلان کسب‌وکار از استراتژی، جامعه‌شناسی تاریخی و گسست نسلی نیروی کار ایران، پارادایم‌های جهانی ۲۰۲۶+ و مفهوم «زمان بر مبنای بیت (Bit)» در اجلاس داووس.</p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. مانیفست اختتامیه ماژول تفکر استراتژیک</h3>
+<p>جلسه پنجم، ایستگاه پایانی ماژول «تفکر استراتژیک» با تدریس استاد صدقیانی‌فر است. در این نشست ۱۶۲ دقیقه‌ای، مفاهیم چهار جلسه پیشین (تمایز تفکر و برنامه‌ریزی، پارادایم‌های تصمیم‌گیری، فلسفه اکوسیستم، و زنجیره استقرار) به یک کل منسجم، کاربردی و بومی پیوند می‌خورند. پیام بنیادین استاد در این جلسه آن است که: <strong>«استراتژی محصول تحلیل صرف نیست؛ استراتژی هنر حسگری محیطی، کشف الگوها در شرایط ابهام حداکثری و ترکیب بهینه منابع (Resource Bundle) برای خلق مزیت است.»</strong></p>
+<p>جلسه بر هفت محور بنیادین استوار است:
+1. <strong>ماتریس تقاطع PESTEL و سوژه‌ها:</strong> بازتعریف جدول PESTEL از یک چک‌لیست کتابخانه‌ای ایستا به یک ماتریس دو محوره پویا؛ محور افقی عوامل شش‌گانه کلان و محور عمودی سوژه‌ها/پروژه‌ها، جهت آشکارسازی گلوگاه‌های حاد (Bottlenecks) و عوامل بحرانی موفقیت (CFS).
+2. <strong>پاتولوژی مدیریت دانش و سرمایه انسانی:</strong> تفکیک دانش مکتوب (Explicit) از دانش مکتوم (Tacit) و تبیین چرایی مقاومت کارکنان ایرانی در به اشتراک‌گذاری دانش به عنوان تنها سپر بقا در فضای تورمی و ناامن شغلی.
+3. <strong>مدل‌های مکمل MAPIT و IDEA:</strong> معرفی فریم‌ورک تحلیلی MAPIT (بازار، بازیگران، محصول، تأثیرات، تعاملات) برای اولویت‌بندی درون‌صنعتی و تخصیص منابع، در کنار مدل زیست‌بوم‌محور IDEA (شناسایی، طراحی، ارزیابی، همسوسازی) برای پلتفرم‌های دوسویه و شبکه‌های نوین.
+4. <strong>ماتریس نقاط مرجع استراتژیک (SRP) و رفتارشناسی ریسک:</strong> تحلیل چگونگی تغییر تمایل به ریسک سازمان‌ها با افزایش دارایی و گذار از کارآفرینی جسورانه به محافظه‌کاری بوروکراتیک، و انطباق استراتژی‌های تأمین مالی (سود انباشته، استقراض بانکی، عرضه عمومی سهام IPO) با این نقاط.
+5. <strong>تقدم سیاست بر استراتژی (Policy Precedes Strategy):</strong> اثبات تقدم جهت‌گیری‌های بنیادین مالکیت/بنگاه (توسعه، تثبیت، تعدیل ساختاری) بر ابزارهای استراتژیک، و بازتعریف واژه «تعدیل» از اخراج به تطبیق پویای منابع.
+6. <strong>جامعه‌شناسی نسلی و تاریخ مدیریت در ایران:</strong> تبیین شکاف نسلی ۵ لایه در ایران از نسل جنگ (۱۳۰۰–۱۳۲۰) تا نسل Z و گسست انتقال تجارب مدیریتی ناشی از شوک‌های تاریخی، انقلاب و جنگ تحمیلی.
+7. <strong>جهانی‌شدن نوین و مفهوم زمان در اقتصاد دیجیتال:</strong> بازخوانی پیشنهاد اجلاس داووس ۲۰۲۲ برای جایگزینی ساعت ۲۴ ساعته با واحدهای زمانی خرد مبتنی بر داده (Bit) در بازارهای مالی غیرمتمرکز و اقتصادهای بدون خواب ۲۴/۷.</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    🧭 نقشه راه و سرفصل‌های جلسه پنجم و پایانی تفکر استراتژیک (۱۶۲ دقیقه تدریس)
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30">
+      <div class="text-indigo-300 font-bold text-sm mb-1">۱. تقاطع PESTEL و دانش (۰۰:۰۰ - ۲۳:۴۵)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">مهندسی ماتریس سوژه-محیط، استخراج CFS و گلوگاه‌ها، تفاوت دانش مکتوب و مکتوم، و فرسایش سرمایه اجتماعی در بنگاه‌های ایرانی.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-sky-500/30">
+      <div class="text-sky-300 font-bold text-sm mb-1">۲. مدل تحلیلی MAPIT (۲۳:۴۵ - ۵۸:۴۵)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">کالبدشکافی مؤلفه‌های پنج‌گانه، کارگاه بازار لوازم خانگی امین‌حضور، اقتصاد دستوری و بحران سوزن ته‌گرد، و ترکیب بهینه منابع (Resource Bundle).</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-emerald-500/30">
+      <div class="text-emerald-300 font-bold text-sm mb-1">۳. مدل زیست‌بوم‌محور IDEA (۵۸:۴۵ - ۷۸:۱۵)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">چهار رکن شناسایی، طراحی، ارزیابی و انطباق شبکه، کیس ورود اسنپ و تپسی به حمل‌ونقل شهری تهران، و خلق بازارهای دوسویه.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30">
+      <div class="text-amber-300 font-bold text-sm mb-1">۴. نقاط مرجع استراتژیک (SRP) (۷۸:۱۵ - ۱۰۶:۳۰)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">ماتریس کنترل-تمرکز، رفتارشناسی میل به ریسک، بازار مبلمان حسن‌آباد (نیلپر در برابر یاخچی‌آباد)، ارزش‌گذاری سهام فیس‌بوک و IPO تسلا.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-rose-500/30">
+      <div class="text-rose-300 font-bold text-sm mb-1">۵. تقدم سیاست بر استراتژی (۱۰۶:۳۰ - ۱۲۱:۲۰)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">سه سیاست کلان رشد، بقا، و تعدیل ساختاری، تصمیمات زنجیره ارزش و سرمایه‌گذاری، و جایگزینی دارایی در صنایع سنگین.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-purple-500/30">
+      <div class="text-purple-300 font-bold text-sm mb-1">۶. جامعه‌شناسی تاریخی و داووس (۱۲۱:۲۰ - ۱۶۲:۴۳)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">کالبدشکافی ۵ نسل اجتماعی در ایران، خلأ نخبگان پس از ۵۷، مفهوم زمان بر پایه بیت در داووس، و توصیه نهایی به مدیران عامل.</p>
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="pestel">۲. بازمهندسی ماتریسی PESTEL و نقاط بحرانی استراتژیک</h2>
+<h3 id="pestel_1">۲.۱. ساختار تقاطعی PESTEL در برابر چک‌لیست‌های سنتی</h3>
+<p>استاد صدقیانی‌فر در دقایق آغازین جلسه (<code>00:00</code> تا <code>10:30</code>)، نگرش کلاسیک به ابزار PESTEL را نقد کردند. در رویکرد سنتی، مدیران صرفاً فهرستی از اخبار سیاسی، شاخص‌های اقتصادی یا تغییرات فرهنگی را گردآوری می‌کنند که به دلیل عدم اتصال به «سوژه»، کاربرد تصمیم‌گیری ندارد.</p>
+<p>رویکرد پیشرفته تفکر استراتژیک، یک <strong>ماتریس تقاطعی دو بُعدی</strong> است:
+- <strong>محور افقی (بردار کلان محیطی):</strong> متغیرهای سیاسی ($P$)، اقتصادی ($E$)، اجتماعی ($S$)، فناورانه ($T$)، زیست‌محیطی ($E$)، و حقوقی ($L$).
+- <strong>محور عمودی (بردار سوژه‌های تصمیم‌گیری):</strong> محصولات سبد تجاری، طرح‌های توسعه سرمایه‌ای، خطوط تولیدی، یا بازارهای جغرافیایی هدف.</p>
+<div class="my-6 overflow-x-auto">
+  <table class="w-full text-right border-collapse text-xs md:text-sm bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+    <thead class="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold">
+      <tr>
+        <th class="p-3 border-b">سوژه ارزیابی سازمانی</th>
+        <th class="p-3 border-b text-center">سیاسی (P)</th>
+        <th class="p-3 border-b text-center">اقتصادی (E)</th>
+        <th class="p-3 border-b text-center">اجتماعی (S)</th>
+        <th class="p-3 border-b text-center">فناوری (T)</th>
+        <th class="p-3 border-b text-center">محیطی (E)</th>
+        <th class="p-3 border-b text-center">حقوقی (L)</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">محصول استراتژیک A (صادراتی)</td>
+        <td class="p-3 text-center text-amber-600 font-bold">تحریم و ریسک FATF (گلوگاه)</td>
+        <td class="p-3 text-center text-emerald-600 font-bold">جهش نرخ ارز (فرصت CFS)</td>
+        <td class="p-3 text-center text-slate-400">تأثیر خنثی</td>
+        <td class="p-3 text-center text-slate-400">تأثیر ملایم</td>
+        <td class="p-3 text-center text-rose-600 font-bold">ردپای کربن (گلوگاه)</td>
+        <td class="p-3 text-center text-slate-400">استاندارد مقصد</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-sky-600 dark:text-sky-400">پروژه تحول دیجیتال B</td>
+        <td class="p-3 text-center text-slate-400">خنثی</td>
+        <td class="p-3 text-center text-rose-600 font-bold">هزینه سرور دلاری (گلوگاه)</td>
+        <td class="p-3 text-center text-emerald-600 font-bold">مهاجرت نسل جوان به آنلاین (CFS)</td>
+        <td class="p-3 text-center text-emerald-600 font-bold">ابزارهای AI و Cloud (CFS)</td>
+        <td class="p-3 text-center text-slate-400">کاهش مصرف کاغذ</td>
+        <td class="p-3 text-center text-amber-600 font-bold">صیانت و فیلترینگ (گلوگاه)</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-purple-600 dark:text-purple-400">طرح سرمایه‌گذاری کارخانه C</td>
+        <td class="p-3 text-center text-slate-400">پروانه بهره‌برداری</td>
+        <td class="p-3 text-center text-rose-600 font-bold">نرخ سود بانکی ۳۰٪+ (گلوگاه)</td>
+        <td class="p-3 text-center text-slate-400">تأمین نیروی کار بومی</td>
+        <td class="p-3 text-center text-slate-400">ماشین‌آلات وارداتی</td>
+        <td class="p-3 text-center text-rose-700 font-bold">ناترازی گاز و برق (ابرگلوگاه)</td>
+        <td class="p-3 text-center text-slate-400">قانون کار و تأمین اجتماعی</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="cfs-vs-bottlenecks">۲.۲. تفکیک گلوگاه‌ها از عوامل بحرانی موفقیت (CFS vs Bottlenecks)</h3>
+<p>تقاطع این دو محور دو دسته خروجی تعیین‌کننده ایجاد می‌کند:
+1. <strong>عوامل بحرانی موفقیت (Critical Factors of Success - CFS):</strong> نقاط تلاقی هستند که محیط بیرونی شرایط جهش را فراهم کرده و سازمان با تجهیز شایستگی محوری خود می‌تواند سهم بازار و حاشیه سود چشمگیر تصاحب کند (مانند جهش درآمد ریالی صادرکنندگان با جهش نرخ تسعیر ارز).
+2. <strong>گلوگاه‌ها و تهدیدات حاد (Bottlenecks):</strong> عواملی که ادامه حیات یا سودآوری سوژه را مسدود می‌کنند (نظیر قطعی برق و گاز صنایع در تابستان و زمستان در ایران). وظیفه تفکر استراتژیک، بازطراحی زنجیره ارزش برای خنثی‌سازی، دور زدن یا ادغام عمودی در این گلوگاه‌هاست.</p>
+<h3 id="_2">۲.۳. مبانی مدیریت دانش در بستر استراتژی؛ فرسایش سرمایه اجتماعی</h3>
+<p>در دقایق <code>10:30</code> تا <code>23:45</code>، استاد صدقیانی‌فر پیوند عمیقی میان استراتژی و سرمایه انسانی برقرار کردند:
+- <strong>دانش مکتوب (Explicit Knowledge):</strong> فرمول‌ها، مستندات ایزو، کدها و گزارش‌های متنی که به سادگی قابل کپی یا جایگزینی هستند و مزیت انحصاری بلندمدت ایجاد نمی‌کنند.
+- <strong>دانش مکتوم (Tacit Knowledge):</strong> حس ششم سازمانی، قلق‌های فنی مهندسی، شناخت رفتار تامین‌کنندگان و مدل‌های ذهنی در ذهن نخبگان.</p>
+<p><strong>پاتولوژی رفتاری محیط‌های تورمی ایران:</strong><br />
+در شرایط تورم مزمن و ناامنی اقتصادی، متخصصان احساس می‌کنند حقوق ثابت توان جبران افت ارزش دارایی آن‌ها را ندارد. در نتیجه، دانش مکتوم خود را به «اهرم گروگان‌گیری سازمانی» تبدیل می‌کنند تا اخراج نشوند یا امتیاز مالی بگیرند. سازمان‌های پیشرو با ایجاد <strong>محیط‌های یادگیری هم‌افزا (Learning Organizations)</strong>، شفاف‌سازی جریان ارتقا، و پرداخت پاداش مبتنی بر ارزش‌آفرینی به جای مزد سنواتی، انگیزه اشتراک‌گذاری دانش را احیا می‌کنند.</p>
+<hr />
+<h2 id="mapit">۳. مدل تحلیلی درون‌صنعتی MAPIT</h2>
+<p>در دقایق <code>23:45</code> تا <code>58:45</code>، استاد فریم‌ورک تحلیلی $MAPIT$ را معرفی کردند که برای کالبدشکافی ساختار بازار، تشخیص گرانیگاه سود و تخصیص بهینه منابع سازمانی به کار می‌رود:</p>
+<div class="my-6 grid grid-cols-1 md:grid-cols-5 gap-3 text-center">
+  <div class="p-4 bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-xl">
+    <div class="text-2xl font-black text-indigo-600 dark:text-indigo-400 mb-1">M</div>
+    <div class="font-bold text-sm text-slate-800 dark:text-slate-100">Market (بازار)</div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">اندازه بازار، کشش قیمتی، روند رشد، جغرافیا، بخش‌بندی و پویایی تقاضای مشتری نهایی.</p>
+  </div>
+  <div class="p-4 bg-sky-50 dark:bg-sky-950/40 border border-sky-200 dark:border-sky-800 rounded-xl">
+    <div class="text-2xl font-black text-sky-600 dark:text-sky-400 mb-1">A</div>
+    <div class="font-bold text-sm text-slate-800 dark:text-slate-100">Actors (بازیگران)</div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">رقبای مستقیم، تامین‌کنندگان بالادست، اصناف، نهادهای حاکمیتی و کانال‌های سنتی/مدرن توزیع.</p>
+  </div>
+  <div class="p-4 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-xl">
+    <div class="text-2xl font-black text-emerald-600 dark:text-emerald-400 mb-1">P</div>
+    <div class="font-bold text-sm text-slate-800 dark:text-slate-100">Product (محصول)</div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">ویژگی‌های ملموس، تمایز کیفی، نوآوری در فرم، خدمات پس از فروش و ادراک مشتری از ارزش.</p>
+  </div>
+  <div class="p-4 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 rounded-xl">
+    <div class="text-2xl font-black text-amber-600 dark:text-amber-400 mb-1">I</div>
+    <div class="font-bold text-sm text-slate-800 dark:text-slate-100">Impacts (تأثیرات)</div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">قدرت برند، شبکه‌سازی، اثرات مقیاس، اعتبار صنفی، و مدل‌های نفوذ B2B و B2C.</p>
+  </div>
+  <div class="p-4 bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 rounded-xl">
+    <div class="text-2xl font-black text-rose-600 dark:text-rose-400 mb-1">T</div>
+    <div class="font-bold text-sm text-slate-800 dark:text-slate-100">Transactions (تعاملات)</div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">شیوه تسویه مالی (نقدی، چکی، اعتباری)، ریسک قراردادها، زمان وصول و حاشیه سود زنجیره.</p>
+  </div>
+</div>
+
+<h3 id="_3">۳.۱. کارگاه عملی کلاسی: بازار لوازم خانگی تهران (امین‌حضور و خیابان جمهوری)</h3>
+<p>استاد صدقیانی‌فر با همراهی دانشجویان، مدل $MAPIT$ را روی بازار لوازم خانگی پیاده‌سازی کردند:
+- <strong>تحلیل بازیگران (A):</strong> بنکداران سنتی امین‌حضور و هایپرمارکت‌های اقساطی لوازم خانگی. در سال‌های اخیر گرانیگاه بازار از «کیفیت محصول (P)» به سمت «تعاملات مالی و فروش اقساطی (T)» شیفت کرده است. خریداری که قدرت خرید نقدی ندارد، محصولی با کیفیت متوسط را صرفاً به دلیل تسویه ۲۴ ماهه انتخاب می‌کند.
+- <strong>نتیجه استراتژیک:</strong> شرکتی که تمام منابع خود را صرف افزایش کیفیت مهندسی ($P$) کند اما ابزار لیزینگ و اعتبار اسنادی ($T$) ایجاد نکند، محکوم به شکست است. وزن $T$ در این صنعت به رتبه اول جهش کرده است.</p>
+<h3 id="_4">۳.۲. اقتصاد دستوری و بحران سوزن ته‌گرد در لهستان (۱۹۸۳)</h3>
+<p>استاد به تجربه اسکار لانگه در لهستان و ناتوانی قیمت‌گذاری دستوری سوسیالیستی اشاره کردند؛ زمانی که کمیسیون مرکزی برنامه‌ریزی برای تمام جزئیات از جمله قیمت سوزن ته‌گرد تصمیم می‌گرفت، تولیدکنندگان به دلیل زیان تولید سوزن را متوقف کردند و کل صنعت پوشاک لهستان به دلیل نبود سوزن متوقف شد!
+- <strong>مقایسه ترابانت (آلمان شرقی) با بنز (آلمان غربی):</strong> محصول اقتصاد دستوری خودرویی پلاستیکی، ۲ سیلندر، دودزا با صف خرید ۱۰ ساله بود؛ در حالی که بازار آزاد آلمان غربی استانداردهای مهندسی جهان را رقم زد.</p>
+<h3 id="resource-bundle">۳.۳. فن ترکیب منابع (Resource Bundle) و مرز مزیت استراتژیک</h3>
+<ul>
+<li><strong>تعریف استراتژیک مدیریت:</strong> هنر و مهارت ترکیب منابع در دسترس ($Resource\,Bundle$) برای تولید ارزش مازاد پایدار.</li>
+<li><strong>تمایز شرکت‌های کارمحور (Labor-intensive) و سرمایه‌محور (Capital-intensive):</strong> در شرکت‌های سرمایه‌محور (پتروشیمی و فولاد)، تصمیمات استراتژیک حول استهلاک و بهینه‌سازی دارایی ثابت می‌چرخد؛ در حالی که در شرکت‌های کارمحور (نرم‌افزار، خدمات، مشاوره)، استراتژی وابسته به چابکی، رضایت و نرخ ماندگاری نخبگان است.</li>
+</ul>
+<hr />
+<h2 id="idea">۴. مدل زیست‌بوم‌محور IDEA و خلق پلتفرم‌های اکوسیستمی</h2>
+<p>در حالی که $MAPIT$ تحلیلی درون‌صنعتی و خطی ارائه می‌دهد، مدل <strong>IDEA</strong> ابزار خلق، توسعه و حاکمیت بر <strong>اکوسیستم‌ها و پلتفرم‌های دوسویه</strong> است:</p>
+<div class="my-6 p-6 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-r-4 border-indigo-500">
+      <div class="text-indigo-600 dark:text-indigo-400 font-black text-lg mb-1">۱. شناسایی (Identification)</div>
+      <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">شناسایی پتانسیل‌های نهفته، اصطکاک‌های حل‌نشده بازار و بازیگرانی که ظرفیت بلااستفاده دارند (ماشین‌های خالی در سطح شهر، فضاهای اقامتی خالی).</p>
+    </div>
+    <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-r-4 border-sky-500">
+      <div class="text-sky-600 dark:text-sky-400 font-black text-lg mb-1">۲. طراحی مدل (Design)</div>
+      <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">معماری سازوکار ارزش‌آفرینی پلتفرم، قیمت‌گذاری پویا، ایجاد امنیت مبادله، و تعیین سهم عادلانه طرفین از پای کیک اقتصادی.</p>
+    </div>
+    <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-r-4 border-amber-500">
+      <div class="text-amber-600 dark:text-amber-400 font-black text-lg mb-1">۳. ارزیابی و اقدام (Evaluation & Action)</div>
+      <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">سنجش مستمر شاخص‌های پلتفرم: اثرات شبکه‌ای، نرخ پذیرش، ریزش راننده/مسافر، و اصلاح سریع الگوریتم‌ها بر مبنای فیدبک زنده.</p>
+    </div>
+    <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-r-4 border-emerald-500">
+      <div class="text-emerald-600 dark:text-emerald-400 font-black text-lg mb-1">۴. همسوسازی ذینفعان (Alignment)</div>
+      <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">قفل‌کردن منافع تمام بازیگران در موفقیت سیستم؛ اگر درآمد راننده، رضایت مسافر و حاشیه سود پلتفرم به شکل ارگانیک به هم گره نخورند، اکوسیستم فرو می‌پاشد.</p>
+    </div>
+  </div>
+</div>
+
+<p><strong>مطالعه موردی اسنپ و تپسی:</strong><br />
+این شرکت‌ها بدون مالکیت حتی یک خودرو، با پیاده‌سازی اصول $IDEA$ ظرفیت‌های خالی ناوگان مسافربر شخصی را شناسایی ($I$)، مدل قیمت‌گذاری پویا بر اساس ترافیک و مسافت را طراحی ($D$)، با مانیتورینگ آنلاین الگوریتم‌ها عملکرد را پایش ($E$) و منافع مسافر (کرایه پایین‌تر از آژانس)، راننده (سفر بازگشت پر) و پلتفرم (کمیسیون ۱۵٪) را همسو ($A$) ساختند.</p>
+<hr />
+<h2 id="srp">۵. ماتریس نقاط مرجع استراتژیک (SRP) و رفتارشناسی ریسک</h2>
+<p>در دقایق <code>78:15</code> تا <code>106:30</code>، استاد به کالبدشکافی نظریه <strong>نقاط مرجع استراتژیک (Strategic Reference Points - SRP)</strong> پرداختند. مدیران تصمیمات خود را در خلأ اتخاذ نمی‌کنند؛ بلکه جایگاه سازمان خود را نسبت به یک یا چند نقطه مرجع می‌سنجند.</p>
+<h3 id="_5">۵.۱. ماتریس ۴ موقعیت رفتاری ریسک</h3>
+<p>سازمان‌ها در تقاطع دو بردار <strong>«میزان کنترل / قطعیت»</strong> و <strong>«کانون توجه (درونی یا بیرونی)»</strong> در چهار موقعیت متمایز قرار می‌گیرند:</p>
+<div class="my-6 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-bold text-amber-400 text-sm mb-4">
+    ماتریس گرایش به ریسک بر مبنای نقاط مرجع استراتژیک (SRP)
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+    <div class="p-4 bg-slate-800 rounded-xl border border-emerald-500/40">
+      <div class="text-emerald-400 font-black text-base mb-1">موقعیت ۱: پیشرو و جسور (بسیار ریسک‌پذیر)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">سازمان حس می‌کند فرصت‌های بازار بی‌پایان است، سرمایه اولیه اندک دارد و برای بقا چیزی برای از دست دادن ندارد (استارتاپ‌ها، استراتژی اقیانوس آبی، نوآوری تحول‌آفرین).</p>
+    </div>
+    <div class="p-4 bg-slate-800 rounded-xl border border-sky-500/40">
+      <div class="text-sky-400 font-black text-base mb-1">موقعیت ۲: محاسبه‌گر رقابتی (ریسک‌پذیر منطقی)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">تمرکز روی شکست رقبا با اتکا به قابلیت‌های داخلی؛ پذیرش ریسک‌های مهندسی‌شده و ورود به پروژه‌های R&D با دوره بازگشت مشخص.</p>
+    </div>
+    <div class="p-4 bg-slate-800 rounded-xl border border-amber-500/40">
+      <div class="text-amber-400 font-black text-base mb-1">موقعیت ۳: مدافع بازار (ریسک‌گریز محافظه‌کار)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">شرکت به حجم دارایی‌های عظیم رسیده و دغدغه اصلی آن حفظ دستاوردهاست. هر تصمیمی ابتدا با فیلتر حقوقی و مالی سخت‌گیرانه سنجیده می‌شود.</p>
+    </div>
+    <div class="p-4 bg-slate-800 rounded-xl border border-rose-500/40">
+      <div class="text-rose-400 font-black text-base mb-1">موقعیت ۴: بوروکراسی قفل‌شده (بسیار ریسک‌گریز)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">فلج تحلیلی، اجتناب از هرگونه تغییر، تقدم رویه‌ها بر نتایج. سازمان در خطر غافلگیری فناورانه قرار دارد (کداک، نوکیا، هلدینگ‌های دولتی).</p>
+    </div>
+  </div>
+</div>
+
+<h3 id="_6">۵.۲. پاتولوژی انباشت دارایی و محافظه‌کاری؛ کیس مبلمان حسن‌آباد</h3>
+<ul>
+<li><strong>شرکت‌های کوچک یاخچی‌آباد:</strong> سرمایه اندک، بدون تعهدات بانکی سنگین، سرعت بالا در کپی‌کردن طرح‌های مدرن اروپایی و فروش سریع در بازار بدون فاکتور رسمی (ریسک‌پذیری بالا).</li>
+<li><strong>برندهای تثبیت‌شده (نیلپر و رایانه صنعت):</strong> کارخانه‌های بزرگ در شهرک‌های صنعتی، صدها کارگر بیمه‌شده، مالیات رسمی، زنجیره خدمات گسترده؛ این شرکت‌ها به دلیل هزینه سنگین خطا، بسیار محتاطانه وارد لاین‌های جدید می‌شوند (ریسک‌گریزی ناشی از دارایی).</li>
+</ul>
+<h3 id="_7">۵.۳. تطبیق استراتژی تأمین مالی با نقاط مرجع</h3>
+<ul>
+<li><strong>سود انباشته (Retained Earnings):</strong> انتخاب اول سازمان‌های ریسک‌گریز که مایل به پرداخت هزینه مالی به بانک‌ها نیستند.</li>
+<li><strong>استقراض بانکی و اوراق بدهی (Debt Financing):</strong> اهرم‌سازی مالی برای رشد سریع در زمان جهش‌های صنعتی به شرطی که بازدهی دارایی ($ROA$) بالاتر از نرخ بهره باشد.</li>
+<li><strong>عرضه عمومی سهام (IPO):</strong> ابزار استراتژیک برای جذب سرمایه عمومی بدون تعهد بازپرداخت اقساط، همراه با شفاف‌سازی دارایی‌ها (مانند IPO تسلا و ارزش‌گذاری مناقشه‌برانگیز فیس‌بوک در وال‌استریت).</li>
+</ul>
+<hr />
+<h2 id="policy-precedes-strategy">۶. تقدم سیاست‌های کلان بر استراتژی (Policy Precedes Strategy)</h2>
+<p>در دقایق <code>106:30</code> تا <code>121:20</code>، استاد گزاره‌ای کلیدی را اثبات کردند: <strong>«استراتژی همواره ذیل سیاست تعریف می‌شود.»</strong> اگر هیئت مدیره یا سهامدار کلان سیاست روشنی نداشته باشد، بهترین مشاوران استراتژی هیچ دستاوردی نخواهند داشت.</p>
+<h3 id="_8">۶.۱. سه سیاست عام کسب‌وکار</h3>
+<ol>
+<li><strong>سیاست حفظ و توسعه (Growth &amp; Expansion):</strong> تمرکز بر تصاحب سهم بازار، ادغام‌های افقی و عمودی، گشایش شعب جدید و ورود به بازارهای صادراتی.</li>
+<li><strong>سیاست حفظ و تعدیل (Stability &amp; Rationalization):</strong> نگه‌داشت موقعیت فعلی، توقف پروژه‌های پرریسک، ارتقای بهره‌وری درونی و متناسب‌سازی هزینه‌ها با واقعیت بازار.</li>
+<li><strong>سیاست تعدیل و کاهش (Retrenchment &amp; Divestment):</strong> واگذاری دارایی‌های مازاد، خروج از لاین‌های زیان‌ده، تجمیع واحدهای موازی و کوچک‌سازی ساختار.</li>
+</ol>
+<blockquote>
+<p><strong>نکته کلیدی استاد درباره واژه «تعدیل» (Adjustment):</strong><br />
+در ادبیات بازار ایران، تعدیل به غلط مترادف با اخراج کارگران به کار می‌رود؛ در حالی که در علم مدیریت، تعدیل یعنی <strong>انطباق هندسه منابع سازمان با اندازه واقعی تقاضای بازار</strong>. اگر سازمانی ظرفیت تولید ۱ میلیون قطعه دارد اما بازار تنها ۵۰۰ هزار قطعه تقاضا دارد، نگه داشتن ظرفیت خالی نامش تعهد نیست، بلکه اتلاف سرمایه ملی است.</p>
+</blockquote>
+<hr />
+<h2 id="_9">۷. جامعه‌شناسی تاریخی و شکاف نسلی در محیط کسب‌وکار ایران</h2>
+<p>در بخش پایانی تدریس (<code>121:20</code> تا <code>146:30</code>)، استاد صدقیانی‌فر یکی از غنی‌ترین مباحث کل دوره را تحت عنوان <strong>«بستر اجتماعی و جامعه‌شناختی تفکر استراتژیک در ایران»</strong> مطرح کردند. مدیر استراتژیک بدون درک شکاف نسلی کارکنان و مشتریان، در هدایت سازمان شکست خواهد خورد.</p>
+<div class="my-6 overflow-x-auto">
+  <table class="w-full text-right border-collapse text-xs md:text-sm bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+    <thead class="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold">
+      <tr>
+        <th class="p-3 border-b">دوره تاریخی / نسل</th>
+        <th class="p-3 border-b">شاخص‌های هویت اجتماعی و ذهنی</th>
+        <th class="p-3 border-b">رویکرد به کار، سلسله‌مراتب و وفاداری</th>
+        <th class="p-3 border-b">پیامد در مدیریت و تصمیم‌گیری استراتژیک</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-slate-900 dark:text-slate-100">نسل اول (۱۳۰۰–۱۳۲۰)<br><span class="text-xs text-slate-500">نسل جنگ و قحطی</span></td>
+        <td class="p-3">تجربه تلخ ناامنی، قحطی، جنگ‌های جهانی؛ تقدیس بقا، صرفه‌جویی شدید، احتیاط در کلام.</td>
+        <td class="p-3">وفاداری مادام‌العمر به کارفرما، پذیرش کامل اقتدار پدرسالار، کار بدنی طاقت‌فرسا.</td>
+        <td class="p-3">ساختارهای سنتی بازاری، انباشت طلا و ملک، بیزاری مطلق از استقراض و بدهی.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-indigo-700 dark:text-indigo-400">نسل دوم (۱۳۲۰–۱۳۴۰)<br><span class="text-xs text-slate-500">آرمان‌گرا و توسعه‌طلب</span></td>
+        <td class="p-3">شکل‌گیری طبقه متوسط جدید، جنبش‌های ۱۹۶۸ جهان، اگزیستانسیالیسم، پینک فلوید، تکنوکراسی دهه چهل ایران.</td>
+        <td class="p-3">تعهد به ساختن کشور، وفاداری به سازمان در ازای پیشرفت حرفه‌ای، شکل‌گیری صنایع مادر.</td>
+        <td class="p-3">پایه‌گذاران صنایع مدرن ایران (ایران‌خودرو، کفش ملی، بهشهر)، نگاه بلندمدت و استراتژیک.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-sky-700 dark:text-sky-400">نسل سوم (۱۳۴۰–۱۳۶۰)<br><span class="text-xs text-slate-500">نسل X و بحران هویت</span></td>
+        <td class="p-3">جهش درآمدهای نفتی دهه ۵۰، انقلاب ۵۷، جنگ ۸ ساله، کوپن، فضای آرمان‌گرایانه و سپس سرخوردگی.</td>
+        <td class="p-3">جستجوی امنیت شغلی در استخدام دولتی، اطاعت از مقررات بوروکراتیک، فداکاری فردی.</td>
+        <td class="p-3">شکل‌گیری طبقه مدیران دولتی، ترجیح حفظ وضع موجود به نوآوری، شکاف با بازار جهانی.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-emerald-700 dark:text-emerald-400">نسل چهارم (۱۳۶۰–۱۳۸۰)<br><span class="text-xs text-slate-500">نسل دات‌کام و بیبی‌بوم</span></td>
+        <td class="p-3">انفجار جمعیتی مدارس، کنکور سراسری، ظهور اینترنت دیال‌آپ، تب مهندسی و پزشکی، یادگیری سریع و سطحی.</td>
+        <td class="p-3">تعهد به تخصص شخصی نه سازمان، تمایل به کارآفرینی و استارتاپ، مقایسه دائم ایران با غرب.</td>
+        <td class="p-3">بنیان‌گذاران اکوسیستم دیجیتال ایران (دیجی‌کالا، اسنپ، کافه‌بازار)، مواجهه با چالش مهاجرت نخبگان.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-rose-700 dark:text-rose-400">نسل پنجم (۱۳۸۰ به بعد)<br><span class="text-xs text-slate-500">نسل Z و بومیان دیجیتال</span></td>
+        <td class="p-3">تولد در عصر گوشی هوشمند و شبکه‌های اجتماعی، استقلال شدید فکری، نفی کامل سلسله‌مراتب سنتی، کم‌حوصلگی در فرآیندهای طولانی.</td>
+        <td class="p-3">عدم تعهد به حضور فیزیکی ۹ تا ۵، ترجیح فریلنسری و دورکاری، اولویت سلامت روان و استقلال فردی بر عنوان شغلی.</td>
+        <td class="p-3">تغییر بنیادین استراتژی جذب استعداد؛ شکست مدل‌های انگیزشی سنتی و ضرورت بازطراحی محیط کار منعطف.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="_10">۷.۱. بحران گسست انتقال مفاهیم مدیریتی در ایران</h3>
+<p>استاد به نکته تلخی اشاره کردند: با پیروزی انقلاب و جنگ تحمیلی، زنجیره انتقال تجارب نسل طلایی صنعت‌گران و تکنوکرات‌های دهه چهل و پنجاه قطع شد. مدیران جوان بدون مربیگری مستقیماً سکان صنایع عظیم را به دست گرفتند که هزینه‌های سنگین یادگیری با آزمون و خطا را به اقتصاد تحمیل کرد. عدم هم‌زبانی سیستم حاکم با نسل جدید، ریشه در این گسست نیم‌قرنی دارد.</p>
+<hr />
+<h2 id="_11">۸. تحولات پارادایمی جهان: داووس و بازتعریف مفهوم «زمان بر پایه بیت»</h2>
+<p>در دقایق پایانی جلسه (<code>146:30</code> تا <code>162:43</code>)، استاد توجه دانشجویان را به لبه‌های پیشرو تفکر استراتژیک در مقیاس جهانی جلب کردند:</p>
+<h3 id="bit-based-time">۸.۱. پیشنهاد داووس ۲۰۲۲: زمان بر مبنای بیت (Bit-based Time)</h3>
+<p>در مجمع جهانی اقتصاد در داووس، اقتصاددانان دیجیتال مسئله‌ای تکان‌دهنده را مطرح کردند: تقویم ۲۴ ساعته و هفته ۵ روزه محصول عصر کشاورزی و انقلاب صنعتی است. در عصر بلاکچین، قراردادهای هوشمند، رمزارزها و هوش مصنوعی، سیستم مالی ۲۴/۷ و بدون توقف کار می‌کند. مفهوم «زمان بر پایه بیت» پیشنهاد می‌کند که تسویه‌حساب‌ها و معاملات نه بر مبنای گردش عقربه‌های ساعت محلی، بلکه بر اساس تواتر پکت‌های داده و تراکنش‌های درون‌شبکه‌ای محاسبه شوند.</p>
+<h3 id="_12">۸.۲. منشور اختتامیه استاد صدقیانی‌فر: توصیه دوشنبه صبح به مدیران عامل</h3>
+<p>استاد کلاس را با چند توصیه استراتژیک ماندگار خاتمه دادند:
+1. <strong>فراتر از فرمول‌های صلب کتابی فکر کنید:</strong> تفکر استراتژیک با مدرک MBA ساخته نمی‌شود؛ این تفکر محصول پیوند زدن ادبیات، جامعه‌شناسی، تاریخ، هنر و مهندسی سیستم‌هاست.
+2. <strong>استعاره کمپین فیات ۵۰۰ (Fiat Topolino):</strong> فیات زمانی که خواست پس از جنگ ایتالیا را به حرکت درآورد، خودرویی ساخت که هر خانواده طبقه کارگر بتواند بخرد. استراتژی موفق یعنی شناخت نبض نیاز جامعه و پاسخ به آن در بهینه‌ترین مقیاس.
+3. <strong>اقدام عملیاتی دوشنبه صبح:</strong> وقتی دوشنبه به سازمان بازمی‌گردید، سند برنامه‌ریزی ۱۰۰ صفحه‌ای ننویسید. بروید ببینید کدام گلوگاه در PESTEL گلوی جریان نقدینگی شرکت را فشرده است؛ وزن‌دهی MAPIT را روی محصولتان بازبینی کنید و مطمئن شوید که افراد حاضر در خط مقدم، استراتژی شما را به زبان خود می‌فهمند.</p>
+<hr />
+<h2 id="_13">۹. گزاره‌های طلایی استاد صدقیانی‌فر در جلسه پنجم</h2>
+<blockquote>
+<p><strong>«سیاست همواره بر استراتژی مقدم است. اگر سهامدار نداند می‌خواهد بماند یا برود، توسعه دهد یا حفظ کند، نبوغ‌آمیزترین استراتژی‌های جهان فقط بنزین ریختن روی خاکستر است.»</strong></p>
+<p><strong>«در اقتصاد تورمی، متخصصان دانش مکتوم خود را گروگان می‌گیرند تا بیمه بقا بسازند. شما با بخشنامه نمی‌توانید مغزها را باز کنید؛ باید فضای یادگیری بسازید و میوه مشارکت را با آنان شریک شوید.»</strong></p>
+<p><strong>«مزیت استراتژیک یعنی خلق حداکثر ارزش با حداقل هزینه، زمان و پیچیدگی. هر چیزی که فرآیند را پیچیده‌تر کند، نامش مدیریت نیست، بوروکراسی است.»</strong></p>
+<p><strong>«ما نمی‌توانیم جوان دهه هشتادی را با قواعد پادگانی دهه شصت اداره کنیم. اگر زبان نسل Z را نفهمید، نه مشتری سازمان شما خواهند بود و نه همکار شما؛ و سازمانی که آینده را در خط مقدم از دست بدهد، پیش از آنکه متوجه شود، منقرض شده است.»</strong></p>
+</blockquote></div>
+      </div>
+
     </section>
 
     <!-- TAB: SIMULATOR -->
@@ -2576,7 +2999,7 @@
 <p><strong>مرجع علمی و آکادمیک:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>مدرس دوره:</strong> استاد صدقیانی‌فر<br />
 <strong>طراحی، تدوین ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
-<strong>نسخه سند:</strong> ۴.۰ (پاییز ۱۴۰۵ - تجمیع تحلیلی جلسات ۰۱، ۰۲، ۰۳ و ۰۴)</p>
+<strong>نسخه سند:</strong> ۵.۰ (پاییز ۱۴۰۵ - تجمیع تحلیلی جلسات ۰۱، ۰۲، ۰۳، ۰۴ و ۰۵ - ماژول نهایی و تکمیل‌شده)</p>
 <hr />
 <h1 id="_1">بخش اول: مانیفست بنیادین و ارکان پنج‌گانه تفکر استراتژیک (مدل جین لیدکا)</h1>
 <h2 id="_2">۱. رهایی از توهم برنامه‌ریزی صلب در شرایط عدم‌قطعیت ایران</h2>
@@ -4448,6 +4871,310 @@
 * <strong>امتیاز نقطه بحرانی خانه $(i, j)$:</strong></p>
 <p>$$CP_{ij} = w_{ij} \times \left( \frac{S_i}{\sum S_k} \right) \times \left( \frac{D_j}{\sum D_l} \right)$$</p>
 <p>خانه‌ای که بیشترین مقدار $CP_{ij}$ را کسب کند، <strong>نقطه بحرانی شماره یک سازمان</strong> است و باید کانون اصلی تخصیص منابع و طراحی برنامه‌های عملیاتی قرار گیرد.</p>
+<hr />
+<h1 id="mapit-idea-srp">بخش ششم: دانشنامه تفصیلی جلسه پنجم (فرجام ماژول، مدل‌های MAPIT و IDEA، نقاط مرجع استراتژیک SRP و جامعه‌شناسی نسلی کسب‌وکار در ایران)</h1>
+<h1 id="-mapit-idea-srp">تفکر استراتژیک - جلسه پنجم: فرجام ماژول، مدل‌های MAPIT و IDEA، نقاط مرجع استراتژیک (SRP) و جامعه‌شناسی نسلی کسب‌وکار در ایران</h1>
+<p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
+<strong>مدرس دوره:</strong> استاد صدقیانی‌فر<br />
+<strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
+<strong>تاریخ تدریس:</strong> ۲۳ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۲ ساعت و ۴۲ دقیقه و ۴۳ ثانیه<br />
+<strong>موضوع محوری:</strong> جمع‌بندی نهایی ماژول تفکر استراتژیک، ماتریس پیشرفته تقاطع PESTEL با سوژه‌ها (CFS و Bottlenecks)، مدل‌های تحلیلی درون‌صنعتی MAPIT و اکوسیستمی IDEA، نقاط مرجع استراتژیک (Strategic Reference Points) و ریسک‌پذیری سازمانی، تفکیک سیاست‌های کلان کسب‌وکار از استراتژی، جامعه‌شناسی تاریخی و گسست نسلی نیروی کار ایران، پارادایم‌های جهانی ۲۰۲۶+ و مفهوم «زمان بر مبنای بیت (Bit)» در اجلاس داووس.</p>
+<hr />
+<h2 id="executive-summary_4">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_50">۱.۱. مانیفست اختتامیه ماژول تفکر استراتژیک</h3>
+<p>جلسه پنجم، ایستگاه پایانی ماژول «تفکر استراتژیک» با تدریس استاد صدقیانی‌فر است. در این نشست ۱۶۲ دقیقه‌ای، مفاهیم چهار جلسه پیشین (تمایز تفکر و برنامه‌ریزی، پارادایم‌های تصمیم‌گیری، فلسفه اکوسیستم، و زنجیره استقرار) به یک کل منسجم، کاربردی و بومی پیوند می‌خورند. پیام بنیادین استاد در این جلسه آن است که: <strong>«استراتژی محصول تحلیل صرف نیست؛ استراتژی هنر حسگری محیطی، کشف الگوها در شرایط ابهام حداکثری و ترکیب بهینه منابع (Resource Bundle) برای خلق مزیت است.»</strong></p>
+<p>جلسه بر هفت محور بنیادین استوار است:
+1. <strong>ماتریس تقاطع PESTEL و سوژه‌ها:</strong> بازتعریف جدول PESTEL از یک چک‌لیست کتابخانه‌ای ایستا به یک ماتریس دو محوره پویا؛ محور افقی عوامل شش‌گانه کلان و محور عمودی سوژه‌ها/پروژه‌ها، جهت آشکارسازی گلوگاه‌های حاد (Bottlenecks) و عوامل بحرانی موفقیت (CFS).
+2. <strong>پاتولوژی مدیریت دانش و سرمایه انسانی:</strong> تفکیک دانش مکتوب (Explicit) از دانش مکتوم (Tacit) و تبیین چرایی مقاومت کارکنان ایرانی در به اشتراک‌گذاری دانش به عنوان تنها سپر بقا در فضای تورمی و ناامن شغلی.
+3. <strong>مدل‌های مکمل MAPIT و IDEA:</strong> معرفی فریم‌ورک تحلیلی MAPIT (بازار، بازیگران، محصول، تأثیرات، تعاملات) برای اولویت‌بندی درون‌صنعتی و تخصیص منابع، در کنار مدل زیست‌بوم‌محور IDEA (شناسایی، طراحی، ارزیابی، همسوسازی) برای پلتفرم‌های دوسویه و شبکه‌های نوین.
+4. <strong>ماتریس نقاط مرجع استراتژیک (SRP) و رفتارشناسی ریسک:</strong> تحلیل چگونگی تغییر تمایل به ریسک سازمان‌ها با افزایش دارایی و گذار از کارآفرینی جسورانه به محافظه‌کاری بوروکراتیک، و انطباق استراتژی‌های تأمین مالی (سود انباشته، استقراض بانکی، عرضه عمومی سهام IPO) با این نقاط.
+5. <strong>تقدم سیاست بر استراتژی (Policy Precedes Strategy):</strong> اثبات تقدم جهت‌گیری‌های بنیادین مالکیت/بنگاه (توسعه، تثبیت، تعدیل ساختاری) بر ابزارهای استراتژیک، و بازتعریف واژه «تعدیل» از اخراج به تطبیق پویای منابع.
+6. <strong>جامعه‌شناسی نسلی و تاریخ مدیریت در ایران:</strong> تبیین شکاف نسلی ۵ لایه در ایران از نسل جنگ (۱۳۰۰–۱۳۲۰) تا نسل Z و گسست انتقال تجارب مدیریتی ناشی از شوک‌های تاریخی، انقلاب و جنگ تحمیلی.
+7. <strong>جهانی‌شدن نوین و مفهوم زمان در اقتصاد دیجیتال:</strong> بازخوانی پیشنهاد اجلاس داووس ۲۰۲۲ برای جایگزینی ساعت ۲۴ ساعته با واحدهای زمانی خرد مبتنی بر داده (Bit) در بازارهای مالی غیرمتمرکز و اقتصادهای بدون خواب ۲۴/۷.</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    🧭 نقشه راه و سرفصل‌های جلسه پنجم و پایانی تفکر استراتژیک (۱۶۲ دقیقه تدریس)
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30">
+      <div class="text-indigo-300 font-bold text-sm mb-1">۱. تقاطع PESTEL و دانش (۰۰:۰۰ - ۲۳:۴۵)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">مهندسی ماتریس سوژه-محیط، استخراج CFS و گلوگاه‌ها، تفاوت دانش مکتوب و مکتوم، و فرسایش سرمایه اجتماعی در بنگاه‌های ایرانی.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-sky-500/30">
+      <div class="text-sky-300 font-bold text-sm mb-1">۲. مدل تحلیلی MAPIT (۲۳:۴۵ - ۵۸:۴۵)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">کالبدشکافی مؤلفه‌های پنج‌گانه، کارگاه بازار لوازم خانگی امین‌حضور، اقتصاد دستوری و بحران سوزن ته‌گرد، و ترکیب بهینه منابع (Resource Bundle).</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-emerald-500/30">
+      <div class="text-emerald-300 font-bold text-sm mb-1">۳. مدل زیست‌بوم‌محور IDEA (۵۸:۴۵ - ۷۸:۱۵)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">چهار رکن شناسایی، طراحی، ارزیابی و انطباق شبکه، کیس ورود اسنپ و تپسی به حمل‌ونقل شهری تهران، و خلق بازارهای دوسویه.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30">
+      <div class="text-amber-300 font-bold text-sm mb-1">۴. نقاط مرجع استراتژیک (SRP) (۷۸:۱۵ - ۱۰۶:۳۰)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">ماتریس کنترل-تمرکز، رفتارشناسی میل به ریسک، بازار مبلمان حسن‌آباد (نیلپر در برابر یاخچی‌آباد)، ارزش‌گذاری سهام فیس‌بوک و IPO تسلا.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-rose-500/30">
+      <div class="text-rose-300 font-bold text-sm mb-1">۵. تقدم سیاست بر استراتژی (۱۰۶:۳۰ - ۱۲۱:۲۰)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">سه سیاست کلان رشد، بقا، و تعدیل ساختاری، تصمیمات زنجیره ارزش و سرمایه‌گذاری، و جایگزینی دارایی در صنایع سنگین.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-purple-500/30">
+      <div class="text-purple-300 font-bold text-sm mb-1">۶. جامعه‌شناسی تاریخی و داووس (۱۲۱:۲۰ - ۱۶۲:۴۳)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">کالبدشکافی ۵ نسل اجتماعی در ایران، خلأ نخبگان پس از ۵۷، مفهوم زمان بر پایه بیت در داووس، و توصیه نهایی به مدیران عامل.</p>
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="pestel_3">۲. بازمهندسی ماتریسی PESTEL و نقاط بحرانی استراتژیک</h2>
+<h3 id="pestel_4">۲.۱. ساختار تقاطعی PESTEL در برابر چک‌لیست‌های سنتی</h3>
+<p>استاد صدقیانی‌فر در دقایق آغازین جلسه (<code>00:00</code> تا <code>10:30</code>)، نگرش کلاسیک به ابزار PESTEL را نقد کردند. در رویکرد سنتی، مدیران صرفاً فهرستی از اخبار سیاسی، شاخص‌های اقتصادی یا تغییرات فرهنگی را گردآوری می‌کنند که به دلیل عدم اتصال به «سوژه»، کاربرد تصمیم‌گیری ندارد.</p>
+<p>رویکرد پیشرفته تفکر استراتژیک، یک <strong>ماتریس تقاطعی دو بُعدی</strong> است:
+- <strong>محور افقی (بردار کلان محیطی):</strong> متغیرهای سیاسی ($P$)، اقتصادی ($E$)، اجتماعی ($S$)، فناورانه ($T$)، زیست‌محیطی ($E$)، و حقوقی ($L$).
+- <strong>محور عمودی (بردار سوژه‌های تصمیم‌گیری):</strong> محصولات سبد تجاری، طرح‌های توسعه سرمایه‌ای، خطوط تولیدی، یا بازارهای جغرافیایی هدف.</p>
+<div class="my-6 overflow-x-auto">
+  <table class="w-full text-right border-collapse text-xs md:text-sm bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+    <thead class="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold">
+      <tr>
+        <th class="p-3 border-b">سوژه ارزیابی سازمانی</th>
+        <th class="p-3 border-b text-center">سیاسی (P)</th>
+        <th class="p-3 border-b text-center">اقتصادی (E)</th>
+        <th class="p-3 border-b text-center">اجتماعی (S)</th>
+        <th class="p-3 border-b text-center">فناوری (T)</th>
+        <th class="p-3 border-b text-center">محیطی (E)</th>
+        <th class="p-3 border-b text-center">حقوقی (L)</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">محصول استراتژیک A (صادراتی)</td>
+        <td class="p-3 text-center text-amber-600 font-bold">تحریم و ریسک FATF (گلوگاه)</td>
+        <td class="p-3 text-center text-emerald-600 font-bold">جهش نرخ ارز (فرصت CFS)</td>
+        <td class="p-3 text-center text-slate-400">تأثیر خنثی</td>
+        <td class="p-3 text-center text-slate-400">تأثیر ملایم</td>
+        <td class="p-3 text-center text-rose-600 font-bold">ردپای کربن (گلوگاه)</td>
+        <td class="p-3 text-center text-slate-400">استاندارد مقصد</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-sky-600 dark:text-sky-400">پروژه تحول دیجیتال B</td>
+        <td class="p-3 text-center text-slate-400">خنثی</td>
+        <td class="p-3 text-center text-rose-600 font-bold">هزینه سرور دلاری (گلوگاه)</td>
+        <td class="p-3 text-center text-emerald-600 font-bold">مهاجرت نسل جوان به آنلاین (CFS)</td>
+        <td class="p-3 text-center text-emerald-600 font-bold">ابزارهای AI و Cloud (CFS)</td>
+        <td class="p-3 text-center text-slate-400">کاهش مصرف کاغذ</td>
+        <td class="p-3 text-center text-amber-600 font-bold">صیانت و فیلترینگ (گلوگاه)</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-purple-600 dark:text-purple-400">طرح سرمایه‌گذاری کارخانه C</td>
+        <td class="p-3 text-center text-slate-400">پروانه بهره‌برداری</td>
+        <td class="p-3 text-center text-rose-600 font-bold">نرخ سود بانکی ۳۰٪+ (گلوگاه)</td>
+        <td class="p-3 text-center text-slate-400">تأمین نیروی کار بومی</td>
+        <td class="p-3 text-center text-slate-400">ماشین‌آلات وارداتی</td>
+        <td class="p-3 text-center text-rose-700 font-bold">ناترازی گاز و برق (ابرگلوگاه)</td>
+        <td class="p-3 text-center text-slate-400">قانون کار و تأمین اجتماعی</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="cfs-vs-bottlenecks">۲.۲. تفکیک گلوگاه‌ها از عوامل بحرانی موفقیت (CFS vs Bottlenecks)</h3>
+<p>تقاطع این دو محور دو دسته خروجی تعیین‌کننده ایجاد می‌کند:
+1. <strong>عوامل بحرانی موفقیت (Critical Factors of Success - CFS):</strong> نقاط تلاقی هستند که محیط بیرونی شرایط جهش را فراهم کرده و سازمان با تجهیز شایستگی محوری خود می‌تواند سهم بازار و حاشیه سود چشمگیر تصاحب کند (مانند جهش درآمد ریالی صادرکنندگان با جهش نرخ تسعیر ارز).
+2. <strong>گلوگاه‌ها و تهدیدات حاد (Bottlenecks):</strong> عواملی که ادامه حیات یا سودآوری سوژه را مسدود می‌کنند (نظیر قطعی برق و گاز صنایع در تابستان و زمستان در ایران). وظیفه تفکر استراتژیک، بازطراحی زنجیره ارزش برای خنثی‌سازی، دور زدن یا ادغام عمودی در این گلوگاه‌هاست.</p>
+<h3 id="_51">۲.۳. مبانی مدیریت دانش در بستر استراتژی؛ فرسایش سرمایه اجتماعی</h3>
+<p>در دقایق <code>10:30</code> تا <code>23:45</code>، استاد صدقیانی‌فر پیوند عمیقی میان استراتژی و سرمایه انسانی برقرار کردند:
+- <strong>دانش مکتوب (Explicit Knowledge):</strong> فرمول‌ها، مستندات ایزو، کدها و گزارش‌های متنی که به سادگی قابل کپی یا جایگزینی هستند و مزیت انحصاری بلندمدت ایجاد نمی‌کنند.
+- <strong>دانش مکتوم (Tacit Knowledge):</strong> حس ششم سازمانی، قلق‌های فنی مهندسی، شناخت رفتار تامین‌کنندگان و مدل‌های ذهنی در ذهن نخبگان.</p>
+<p><strong>پاتولوژی رفتاری محیط‌های تورمی ایران:</strong><br />
+در شرایط تورم مزمن و ناامنی اقتصادی، متخصصان احساس می‌کنند حقوق ثابت توان جبران افت ارزش دارایی آن‌ها را ندارد. در نتیجه، دانش مکتوم خود را به «اهرم گروگان‌گیری سازمانی» تبدیل می‌کنند تا اخراج نشوند یا امتیاز مالی بگیرند. سازمان‌های پیشرو با ایجاد <strong>محیط‌های یادگیری هم‌افزا (Learning Organizations)</strong>، شفاف‌سازی جریان ارتقا، و پرداخت پاداش مبتنی بر ارزش‌آفرینی به جای مزد سنواتی، انگیزه اشتراک‌گذاری دانش را احیا می‌کنند.</p>
+<hr />
+<h2 id="mapit">۳. مدل تحلیلی درون‌صنعتی MAPIT</h2>
+<p>در دقایق <code>23:45</code> تا <code>58:45</code>، استاد فریم‌ورک تحلیلی $MAPIT$ را معرفی کردند که برای کالبدشکافی ساختار بازار، تشخیص گرانیگاه سود و تخصیص بهینه منابع سازمانی به کار می‌رود:</p>
+<div class="my-6 grid grid-cols-1 md:grid-cols-5 gap-3 text-center">
+  <div class="p-4 bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 rounded-xl">
+    <div class="text-2xl font-black text-indigo-600 dark:text-indigo-400 mb-1">M</div>
+    <div class="font-bold text-sm text-slate-800 dark:text-slate-100">Market (بازار)</div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">اندازه بازار، کشش قیمتی، روند رشد، جغرافیا، بخش‌بندی و پویایی تقاضای مشتری نهایی.</p>
+  </div>
+  <div class="p-4 bg-sky-50 dark:bg-sky-950/40 border border-sky-200 dark:border-sky-800 rounded-xl">
+    <div class="text-2xl font-black text-sky-600 dark:text-sky-400 mb-1">A</div>
+    <div class="font-bold text-sm text-slate-800 dark:text-slate-100">Actors (بازیگران)</div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">رقبای مستقیم، تامین‌کنندگان بالادست، اصناف، نهادهای حاکمیتی و کانال‌های سنتی/مدرن توزیع.</p>
+  </div>
+  <div class="p-4 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-xl">
+    <div class="text-2xl font-black text-emerald-600 dark:text-emerald-400 mb-1">P</div>
+    <div class="font-bold text-sm text-slate-800 dark:text-slate-100">Product (محصول)</div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">ویژگی‌های ملموس، تمایز کیفی، نوآوری در فرم، خدمات پس از فروش و ادراک مشتری از ارزش.</p>
+  </div>
+  <div class="p-4 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 rounded-xl">
+    <div class="text-2xl font-black text-amber-600 dark:text-amber-400 mb-1">I</div>
+    <div class="font-bold text-sm text-slate-800 dark:text-slate-100">Impacts (تأثیرات)</div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">قدرت برند، شبکه‌سازی، اثرات مقیاس، اعتبار صنفی، و مدل‌های نفوذ B2B و B2C.</p>
+  </div>
+  <div class="p-4 bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 rounded-xl">
+    <div class="text-2xl font-black text-rose-600 dark:text-rose-400 mb-1">T</div>
+    <div class="font-bold text-sm text-slate-800 dark:text-slate-100">Transactions (تعاملات)</div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 mt-2">شیوه تسویه مالی (نقدی، چکی، اعتباری)، ریسک قراردادها، زمان وصول و حاشیه سود زنجیره.</p>
+  </div>
+</div>
+
+<h3 id="_52">۳.۱. کارگاه عملی کلاسی: بازار لوازم خانگی تهران (امین‌حضور و خیابان جمهوری)</h3>
+<p>استاد صدقیانی‌فر با همراهی دانشجویان، مدل $MAPIT$ را روی بازار لوازم خانگی پیاده‌سازی کردند:
+- <strong>تحلیل بازیگران (A):</strong> بنکداران سنتی امین‌حضور و هایپرمارکت‌های اقساطی لوازم خانگی. در سال‌های اخیر گرانیگاه بازار از «کیفیت محصول (P)» به سمت «تعاملات مالی و فروش اقساطی (T)» شیفت کرده است. خریداری که قدرت خرید نقدی ندارد، محصولی با کیفیت متوسط را صرفاً به دلیل تسویه ۲۴ ماهه انتخاب می‌کند.
+- <strong>نتیجه استراتژیک:</strong> شرکتی که تمام منابع خود را صرف افزایش کیفیت مهندسی ($P$) کند اما ابزار لیزینگ و اعتبار اسنادی ($T$) ایجاد نکند، محکوم به شکست است. وزن $T$ در این صنعت به رتبه اول جهش کرده است.</p>
+<h3 id="_53">۳.۲. اقتصاد دستوری و بحران سوزن ته‌گرد در لهستان (۱۹۸۳)</h3>
+<p>استاد به تجربه اسکار لانگه در لهستان و ناتوانی قیمت‌گذاری دستوری سوسیالیستی اشاره کردند؛ زمانی که کمیسیون مرکزی برنامه‌ریزی برای تمام جزئیات از جمله قیمت سوزن ته‌گرد تصمیم می‌گرفت، تولیدکنندگان به دلیل زیان تولید سوزن را متوقف کردند و کل صنعت پوشاک لهستان به دلیل نبود سوزن متوقف شد!
+- <strong>مقایسه ترابانت (آلمان شرقی) با بنز (آلمان غربی):</strong> محصول اقتصاد دستوری خودرویی پلاستیکی، ۲ سیلندر، دودزا با صف خرید ۱۰ ساله بود؛ در حالی که بازار آزاد آلمان غربی استانداردهای مهندسی جهان را رقم زد.</p>
+<h3 id="resource-bundle">۳.۳. فن ترکیب منابع (Resource Bundle) و مرز مزیت استراتژیک</h3>
+<ul>
+<li><strong>تعریف استراتژیک مدیریت:</strong> هنر و مهارت ترکیب منابع در دسترس ($Resource\,Bundle$) برای تولید ارزش مازاد پایدار.</li>
+<li><strong>تمایز شرکت‌های کارمحور (Labor-intensive) و سرمایه‌محور (Capital-intensive):</strong> در شرکت‌های سرمایه‌محور (پتروشیمی و فولاد)، تصمیمات استراتژیک حول استهلاک و بهینه‌سازی دارایی ثابت می‌چرخد؛ در حالی که در شرکت‌های کارمحور (نرم‌افزار، خدمات، مشاوره)، استراتژی وابسته به چابکی، رضایت و نرخ ماندگاری نخبگان است.</li>
+</ul>
+<hr />
+<h2 id="idea">۴. مدل زیست‌بوم‌محور IDEA و خلق پلتفرم‌های اکوسیستمی</h2>
+<p>در حالی که $MAPIT$ تحلیلی درون‌صنعتی و خطی ارائه می‌دهد، مدل <strong>IDEA</strong> ابزار خلق، توسعه و حاکمیت بر <strong>اکوسیستم‌ها و پلتفرم‌های دوسویه</strong> است:</p>
+<div class="my-6 p-6 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-r-4 border-indigo-500">
+      <div class="text-indigo-600 dark:text-indigo-400 font-black text-lg mb-1">۱. شناسایی (Identification)</div>
+      <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">شناسایی پتانسیل‌های نهفته، اصطکاک‌های حل‌نشده بازار و بازیگرانی که ظرفیت بلااستفاده دارند (ماشین‌های خالی در سطح شهر، فضاهای اقامتی خالی).</p>
+    </div>
+    <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-r-4 border-sky-500">
+      <div class="text-sky-600 dark:text-sky-400 font-black text-lg mb-1">۲. طراحی مدل (Design)</div>
+      <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">معماری سازوکار ارزش‌آفرینی پلتفرم، قیمت‌گذاری پویا، ایجاد امنیت مبادله، و تعیین سهم عادلانه طرفین از پای کیک اقتصادی.</p>
+    </div>
+    <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-r-4 border-amber-500">
+      <div class="text-amber-600 dark:text-amber-400 font-black text-lg mb-1">۳. ارزیابی و اقدام (Evaluation & Action)</div>
+      <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">سنجش مستمر شاخص‌های پلتفرم: اثرات شبکه‌ای، نرخ پذیرش، ریزش راننده/مسافر، و اصلاح سریع الگوریتم‌ها بر مبنای فیدبک زنده.</p>
+    </div>
+    <div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border-r-4 border-emerald-500">
+      <div class="text-emerald-600 dark:text-emerald-400 font-black text-lg mb-1">۴. همسوسازی ذینفعان (Alignment)</div>
+      <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">قفل‌کردن منافع تمام بازیگران در موفقیت سیستم؛ اگر درآمد راننده، رضایت مسافر و حاشیه سود پلتفرم به شکل ارگانیک به هم گره نخورند، اکوسیستم فرو می‌پاشد.</p>
+    </div>
+  </div>
+</div>
+
+<p><strong>مطالعه موردی اسنپ و تپسی:</strong><br />
+این شرکت‌ها بدون مالکیت حتی یک خودرو، با پیاده‌سازی اصول $IDEA$ ظرفیت‌های خالی ناوگان مسافربر شخصی را شناسایی ($I$)، مدل قیمت‌گذاری پویا بر اساس ترافیک و مسافت را طراحی ($D$)، با مانیتورینگ آنلاین الگوریتم‌ها عملکرد را پایش ($E$) و منافع مسافر (کرایه پایین‌تر از آژانس)، راننده (سفر بازگشت پر) و پلتفرم (کمیسیون ۱۵٪) را همسو ($A$) ساختند.</p>
+<hr />
+<h2 id="srp">۵. ماتریس نقاط مرجع استراتژیک (SRP) و رفتارشناسی ریسک</h2>
+<p>در دقایق <code>78:15</code> تا <code>106:30</code>، استاد به کالبدشکافی نظریه <strong>نقاط مرجع استراتژیک (Strategic Reference Points - SRP)</strong> پرداختند. مدیران تصمیمات خود را در خلأ اتخاذ نمی‌کنند؛ بلکه جایگاه سازمان خود را نسبت به یک یا چند نقطه مرجع می‌سنجند.</p>
+<h3 id="_54">۵.۱. ماتریس ۴ موقعیت رفتاری ریسک</h3>
+<p>سازمان‌ها در تقاطع دو بردار <strong>«میزان کنترل / قطعیت»</strong> و <strong>«کانون توجه (درونی یا بیرونی)»</strong> در چهار موقعیت متمایز قرار می‌گیرند:</p>
+<div class="my-6 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-bold text-amber-400 text-sm mb-4">
+    ماتریس گرایش به ریسک بر مبنای نقاط مرجع استراتژیک (SRP)
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
+    <div class="p-4 bg-slate-800 rounded-xl border border-emerald-500/40">
+      <div class="text-emerald-400 font-black text-base mb-1">موقعیت ۱: پیشرو و جسور (بسیار ریسک‌پذیر)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">سازمان حس می‌کند فرصت‌های بازار بی‌پایان است، سرمایه اولیه اندک دارد و برای بقا چیزی برای از دست دادن ندارد (استارتاپ‌ها، استراتژی اقیانوس آبی، نوآوری تحول‌آفرین).</p>
+    </div>
+    <div class="p-4 bg-slate-800 rounded-xl border border-sky-500/40">
+      <div class="text-sky-400 font-black text-base mb-1">موقعیت ۲: محاسبه‌گر رقابتی (ریسک‌پذیر منطقی)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">تمرکز روی شکست رقبا با اتکا به قابلیت‌های داخلی؛ پذیرش ریسک‌های مهندسی‌شده و ورود به پروژه‌های R&D با دوره بازگشت مشخص.</p>
+    </div>
+    <div class="p-4 bg-slate-800 rounded-xl border border-amber-500/40">
+      <div class="text-amber-400 font-black text-base mb-1">موقعیت ۳: مدافع بازار (ریسک‌گریز محافظه‌کار)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">شرکت به حجم دارایی‌های عظیم رسیده و دغدغه اصلی آن حفظ دستاوردهاست. هر تصمیمی ابتدا با فیلتر حقوقی و مالی سخت‌گیرانه سنجیده می‌شود.</p>
+    </div>
+    <div class="p-4 bg-slate-800 rounded-xl border border-rose-500/40">
+      <div class="text-rose-400 font-black text-base mb-1">موقعیت ۴: بوروکراسی قفل‌شده (بسیار ریسک‌گریز)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">فلج تحلیلی، اجتناب از هرگونه تغییر، تقدم رویه‌ها بر نتایج. سازمان در خطر غافلگیری فناورانه قرار دارد (کداک، نوکیا، هلدینگ‌های دولتی).</p>
+    </div>
+  </div>
+</div>
+
+<h3 id="_55">۵.۲. پاتولوژی انباشت دارایی و محافظه‌کاری؛ کیس مبلمان حسن‌آباد</h3>
+<ul>
+<li><strong>شرکت‌های کوچک یاخچی‌آباد:</strong> سرمایه اندک، بدون تعهدات بانکی سنگین، سرعت بالا در کپی‌کردن طرح‌های مدرن اروپایی و فروش سریع در بازار بدون فاکتور رسمی (ریسک‌پذیری بالا).</li>
+<li><strong>برندهای تثبیت‌شده (نیلپر و رایانه صنعت):</strong> کارخانه‌های بزرگ در شهرک‌های صنعتی، صدها کارگر بیمه‌شده، مالیات رسمی، زنجیره خدمات گسترده؛ این شرکت‌ها به دلیل هزینه سنگین خطا، بسیار محتاطانه وارد لاین‌های جدید می‌شوند (ریسک‌گریزی ناشی از دارایی).</li>
+</ul>
+<h3 id="_56">۵.۳. تطبیق استراتژی تأمین مالی با نقاط مرجع</h3>
+<ul>
+<li><strong>سود انباشته (Retained Earnings):</strong> انتخاب اول سازمان‌های ریسک‌گریز که مایل به پرداخت هزینه مالی به بانک‌ها نیستند.</li>
+<li><strong>استقراض بانکی و اوراق بدهی (Debt Financing):</strong> اهرم‌سازی مالی برای رشد سریع در زمان جهش‌های صنعتی به شرطی که بازدهی دارایی ($ROA$) بالاتر از نرخ بهره باشد.</li>
+<li><strong>عرضه عمومی سهام (IPO):</strong> ابزار استراتژیک برای جذب سرمایه عمومی بدون تعهد بازپرداخت اقساط، همراه با شفاف‌سازی دارایی‌ها (مانند IPO تسلا و ارزش‌گذاری مناقشه‌برانگیز فیس‌بوک در وال‌استریت).</li>
+</ul>
+<hr />
+<h2 id="policy-precedes-strategy">۶. تقدم سیاست‌های کلان بر استراتژی (Policy Precedes Strategy)</h2>
+<p>در دقایق <code>106:30</code> تا <code>121:20</code>، استاد گزاره‌ای کلیدی را اثبات کردند: <strong>«استراتژی همواره ذیل سیاست تعریف می‌شود.»</strong> اگر هیئت مدیره یا سهامدار کلان سیاست روشنی نداشته باشد، بهترین مشاوران استراتژی هیچ دستاوردی نخواهند داشت.</p>
+<h3 id="_57">۶.۱. سه سیاست عام کسب‌وکار</h3>
+<ol>
+<li><strong>سیاست حفظ و توسعه (Growth &amp; Expansion):</strong> تمرکز بر تصاحب سهم بازار، ادغام‌های افقی و عمودی، گشایش شعب جدید و ورود به بازارهای صادراتی.</li>
+<li><strong>سیاست حفظ و تعدیل (Stability &amp; Rationalization):</strong> نگه‌داشت موقعیت فعلی، توقف پروژه‌های پرریسک، ارتقای بهره‌وری درونی و متناسب‌سازی هزینه‌ها با واقعیت بازار.</li>
+<li><strong>سیاست تعدیل و کاهش (Retrenchment &amp; Divestment):</strong> واگذاری دارایی‌های مازاد، خروج از لاین‌های زیان‌ده، تجمیع واحدهای موازی و کوچک‌سازی ساختار.</li>
+</ol>
+<blockquote>
+<p><strong>نکته کلیدی استاد درباره واژه «تعدیل» (Adjustment):</strong><br />
+در ادبیات بازار ایران، تعدیل به غلط مترادف با اخراج کارگران به کار می‌رود؛ در حالی که در علم مدیریت، تعدیل یعنی <strong>انطباق هندسه منابع سازمان با اندازه واقعی تقاضای بازار</strong>. اگر سازمانی ظرفیت تولید ۱ میلیون قطعه دارد اما بازار تنها ۵۰۰ هزار قطعه تقاضا دارد، نگه داشتن ظرفیت خالی نامش تعهد نیست، بلکه اتلاف سرمایه ملی است.</p>
+</blockquote>
+<hr />
+<h2 id="_58">۷. جامعه‌شناسی تاریخی و شکاف نسلی در محیط کسب‌وکار ایران</h2>
+<p>در بخش پایانی تدریس (<code>121:20</code> تا <code>146:30</code>)، استاد صدقیانی‌فر یکی از غنی‌ترین مباحث کل دوره را تحت عنوان <strong>«بستر اجتماعی و جامعه‌شناختی تفکر استراتژیک در ایران»</strong> مطرح کردند. مدیر استراتژیک بدون درک شکاف نسلی کارکنان و مشتریان، در هدایت سازمان شکست خواهد خورد.</p>
+<div class="my-6 overflow-x-auto">
+  <table class="w-full text-right border-collapse text-xs md:text-sm bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+    <thead class="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold">
+      <tr>
+        <th class="p-3 border-b">دوره تاریخی / نسل</th>
+        <th class="p-3 border-b">شاخص‌های هویت اجتماعی و ذهنی</th>
+        <th class="p-3 border-b">رویکرد به کار، سلسله‌مراتب و وفاداری</th>
+        <th class="p-3 border-b">پیامد در مدیریت و تصمیم‌گیری استراتژیک</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-slate-900 dark:text-slate-100">نسل اول (۱۳۰۰–۱۳۲۰)<br><span class="text-xs text-slate-500">نسل جنگ و قحطی</span></td>
+        <td class="p-3">تجربه تلخ ناامنی، قحطی، جنگ‌های جهانی؛ تقدیس بقا، صرفه‌جویی شدید، احتیاط در کلام.</td>
+        <td class="p-3">وفاداری مادام‌العمر به کارفرما، پذیرش کامل اقتدار پدرسالار، کار بدنی طاقت‌فرسا.</td>
+        <td class="p-3">ساختارهای سنتی بازاری، انباشت طلا و ملک، بیزاری مطلق از استقراض و بدهی.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-indigo-700 dark:text-indigo-400">نسل دوم (۱۳۲۰–۱۳۴۰)<br><span class="text-xs text-slate-500">آرمان‌گرا و توسعه‌طلب</span></td>
+        <td class="p-3">شکل‌گیری طبقه متوسط جدید، جنبش‌های ۱۹۶۸ جهان، اگزیستانسیالیسم، پینک فلوید، تکنوکراسی دهه چهل ایران.</td>
+        <td class="p-3">تعهد به ساختن کشور، وفاداری به سازمان در ازای پیشرفت حرفه‌ای، شکل‌گیری صنایع مادر.</td>
+        <td class="p-3">پایه‌گذاران صنایع مدرن ایران (ایران‌خودرو، کفش ملی، بهشهر)، نگاه بلندمدت و استراتژیک.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-sky-700 dark:text-sky-400">نسل سوم (۱۳۴۰–۱۳۶۰)<br><span class="text-xs text-slate-500">نسل X و بحران هویت</span></td>
+        <td class="p-3">جهش درآمدهای نفتی دهه ۵۰، انقلاب ۵۷، جنگ ۸ ساله، کوپن، فضای آرمان‌گرایانه و سپس سرخوردگی.</td>
+        <td class="p-3">جستجوی امنیت شغلی در استخدام دولتی، اطاعت از مقررات بوروکراتیک، فداکاری فردی.</td>
+        <td class="p-3">شکل‌گیری طبقه مدیران دولتی، ترجیح حفظ وضع موجود به نوآوری، شکاف با بازار جهانی.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-emerald-700 dark:text-emerald-400">نسل چهارم (۱۳۶۰–۱۳۸۰)<br><span class="text-xs text-slate-500">نسل دات‌کام و بیبی‌بوم</span></td>
+        <td class="p-3">انفجار جمعیتی مدارس، کنکور سراسری، ظهور اینترنت دیال‌آپ، تب مهندسی و پزشکی، یادگیری سریع و سطحی.</td>
+        <td class="p-3">تعهد به تخصص شخصی نه سازمان، تمایل به کارآفرینی و استارتاپ، مقایسه دائم ایران با غرب.</td>
+        <td class="p-3">بنیان‌گذاران اکوسیستم دیجیتال ایران (دیجی‌کالا، اسنپ، کافه‌بازار)، مواجهه با چالش مهاجرت نخبگان.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-rose-700 dark:text-rose-400">نسل پنجم (۱۳۸۰ به بعد)<br><span class="text-xs text-slate-500">نسل Z و بومیان دیجیتال</span></td>
+        <td class="p-3">تولد در عصر گوشی هوشمند و شبکه‌های اجتماعی، استقلال شدید فکری، نفی کامل سلسله‌مراتب سنتی، کم‌حوصلگی در فرآیندهای طولانی.</td>
+        <td class="p-3">عدم تعهد به حضور فیزیکی ۹ تا ۵، ترجیح فریلنسری و دورکاری، اولویت سلامت روان و استقلال فردی بر عنوان شغلی.</td>
+        <td class="p-3">تغییر بنیادین استراتژی جذب استعداد؛ شکست مدل‌های انگیزشی سنتی و ضرورت بازطراحی محیط کار منعطف.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="_59">۷.۱. بحران گسست انتقال مفاهیم مدیریتی در ایران</h3>
+<p>استاد به نکته تلخی اشاره کردند: با پیروزی انقلاب و جنگ تحمیلی، زنجیره انتقال تجارب نسل طلایی صنعت‌گران و تکنوکرات‌های دهه چهل و پنجاه قطع شد. مدیران جوان بدون مربیگری مستقیماً سکان صنایع عظیم را به دست گرفتند که هزینه‌های سنگین یادگیری با آزمون و خطا را به اقتصاد تحمیل کرد. عدم هم‌زبانی سیستم حاکم با نسل جدید، ریشه در این گسست نیم‌قرنی دارد.</p>
+<hr />
+<h2 id="_60">۸. تحولات پارادایمی جهان: داووس و بازتعریف مفهوم «زمان بر پایه بیت»</h2>
+<p>در دقایق پایانی جلسه (<code>146:30</code> تا <code>162:43</code>)، استاد توجه دانشجویان را به لبه‌های پیشرو تفکر استراتژیک در مقیاس جهانی جلب کردند:</p>
+<h3 id="bit-based-time">۸.۱. پیشنهاد داووس ۲۰۲۲: زمان بر مبنای بیت (Bit-based Time)</h3>
+<p>در مجمع جهانی اقتصاد در داووس، اقتصاددانان دیجیتال مسئله‌ای تکان‌دهنده را مطرح کردند: تقویم ۲۴ ساعته و هفته ۵ روزه محصول عصر کشاورزی و انقلاب صنعتی است. در عصر بلاکچین، قراردادهای هوشمند، رمزارزها و هوش مصنوعی، سیستم مالی ۲۴/۷ و بدون توقف کار می‌کند. مفهوم «زمان بر پایه بیت» پیشنهاد می‌کند که تسویه‌حساب‌ها و معاملات نه بر مبنای گردش عقربه‌های ساعت محلی، بلکه بر اساس تواتر پکت‌های داده و تراکنش‌های درون‌شبکه‌ای محاسبه شوند.</p>
+<h3 id="_61">۸.۲. منشور اختتامیه استاد صدقیانی‌فر: توصیه دوشنبه صبح به مدیران عامل</h3>
+<p>استاد کلاس را با چند توصیه استراتژیک ماندگار خاتمه دادند:
+1. <strong>فراتر از فرمول‌های صلب کتابی فکر کنید:</strong> تفکر استراتژیک با مدرک MBA ساخته نمی‌شود؛ این تفکر محصول پیوند زدن ادبیات، جامعه‌شناسی، تاریخ، هنر و مهندسی سیستم‌هاست.
+2. <strong>استعاره کمپین فیات ۵۰۰ (Fiat Topolino):</strong> فیات زمانی که خواست پس از جنگ ایتالیا را به حرکت درآورد، خودرویی ساخت که هر خانواده طبقه کارگر بتواند بخرد. استراتژی موفق یعنی شناخت نبض نیاز جامعه و پاسخ به آن در بهینه‌ترین مقیاس.
+3. <strong>اقدام عملیاتی دوشنبه صبح:</strong> وقتی دوشنبه به سازمان بازمی‌گردید، سند برنامه‌ریزی ۱۰۰ صفحه‌ای ننویسید. بروید ببینید کدام گلوگاه در PESTEL گلوی جریان نقدینگی شرکت را فشرده است؛ وزن‌دهی MAPIT را روی محصولتان بازبینی کنید و مطمئن شوید که افراد حاضر در خط مقدم، استراتژی شما را به زبان خود می‌فهمند.</p>
+<hr />
+<h2 id="_62">۹. گزاره‌های طلایی استاد صدقیانی‌فر در جلسه پنجم</h2>
+<blockquote>
+<p><strong>«سیاست همواره بر استراتژی مقدم است. اگر سهامدار نداند می‌خواهد بماند یا برود، توسعه دهد یا حفظ کند، نبوغ‌آمیزترین استراتژی‌های جهان فقط بنزین ریختن روی خاکستر است.»</strong></p>
+<p><strong>«در اقتصاد تورمی، متخصصان دانش مکتوم خود را گروگان می‌گیرند تا بیمه بقا بسازند. شما با بخشنامه نمی‌توانید مغزها را باز کنید؛ باید فضای یادگیری بسازید و میوه مشارکت را با آنان شریک شوید.»</strong></p>
+<p><strong>«مزیت استراتژیک یعنی خلق حداکثر ارزش با حداقل هزینه، زمان و پیچیدگی. هر چیزی که فرآیند را پیچیده‌تر کند، نامش مدیریت نیست، بوروکراسی است.»</strong></p>
+<p><strong>«ما نمی‌توانیم جوان دهه هشتادی را با قواعد پادگانی دهه شصت اداره کنیم. اگر زبان نسل Z را نفهمید، نه مشتری سازمان شما خواهند بود و نه همکار شما؛ و سازمانی که آینده را در خط مقدم از دست بدهد، پیش از آنکه متوجه شود، منقرض شده است.»</strong></p>
+</blockquote>
         </div>
       </div>
 

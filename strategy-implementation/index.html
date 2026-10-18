@@ -60,7 +60,7 @@
             اجرا و کنترل استراتژیک
           </h1>
           <p class="text-blue-100 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
-            مجموعه تحلیلی و راهبردی ۴ جلسه کامل | مدرس: <strong class="text-white font-semibold">استاد خطیبی</strong> | <div class="inline-flex items-center gap-2 mt-1">
+            مجموعه تحلیلی و راهبردی ۵ جلسه کامل (اختتامیه ماژول) | مدرس: <strong class="text-white font-semibold">استاد خطیبی</strong> | <div class="inline-flex items-center gap-2 mt-1">
   <span class="text-blue-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
   <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
     <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -71,8 +71,8 @@
         </div>
         <div class="flex items-center gap-3">
           <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3.5 text-center min-w-[120px]">
-            <div class="text-2xl font-black text-amber-300">۴ جلسه</div>
-            <div class="text-xs text-blue-100 font-medium">۱۲.۶ ساعت تدریس کاربردی</div>
+            <div class="text-2xl font-black text-amber-300">۵ جلسه</div>
+            <div class="text-xs text-blue-100 font-medium">۱۵.۵ ساعت تدریس کاربردی</div>
           </div>
         </div>
       </div>
@@ -93,6 +93,9 @@
         </button>
         <button onclick="switchTab('session4')" id="tab-session4" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           جلسه ۴: مدیریت تعارض، ساختار، پاداش و فرهنگ OCAI
+        </button>
+        <button onclick="switchTab('session5')" id="tab-session5" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۵: BSC، نقشه استراتژی، ۵ اصل SFO و پتروشیمی NPC
         </button>
         <button onclick="switchTab('simulator')" id="tab-simulator" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           ⚙️ عارضه‌یاب موانع ۴‌گانه اجرا
@@ -132,7 +135,8 @@
       </div>
 
       <!-- 4 Session Executive Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- 5 Session Executive Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
         <!-- S1 Card -->
         <div class="card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
@@ -199,6 +203,23 @@
           </div>
           <button onclick="switchTab('session4')" class="w-full text-center text-xs font-bold text-purple-700 hover:text-purple-900 pt-3 border-t border-slate-100">
             ورود به جزوه تفصیلی و خلاصه جلسه چهارم ➔
+          </button>
+        </div>
+
+        <!-- S5 Card -->
+        <div class="card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-800 flex items-center justify-center font-bold text-sm">۵</span>
+              <span class="text-xs font-bold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-full">جلسه پنجم • ۲.۹ ساعت</span>
+            </div>
+            <h4 class="text-base font-extrabold text-slate-900 mb-2">کارت امتیازی (BSC)، نقشه استراتژی، ۵ اصل SFO و پتروشیمی NPC</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              مناظر چهارگانه BSC، ترسیم نقشه استراتژی، ۵ اصل سازمان استراتژی‌محور، تفکیک OpEx از StratEx، معماری سه‌گانه جلسات مدیریتی و مطالعه موردی هلدینگ پتروشیمی NPC.
+            </p>
+          </div>
+          <button onclick="switchTab('session5')" class="w-full text-center text-xs font-bold text-teal-700 hover:text-teal-900 pt-3 border-t border-slate-100">
+            ورود به جزوه تفصیلی و خلاصه جلسه پنجم ➔
           </button>
         </div>
 
@@ -3560,6 +3581,403 @@
 </div></div>
       </div>
 
+    <!-- TAB: SESSION 5 -->
+    <section id="content-session5" class="tab-content hidden space-y-6">
+      
+      <!-- Tab Header -->
+      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+        <div>
+          <span class="text-xs font-bold text-teal-800 bg-teal-50 px-3 py-1 rounded-full">جلسه پنجم (اختتامیه ماژول) • ۲.۹ ساعت تدریس</span>
+          <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-2">کارت امتیازی متوازن (BSC)، معماری نقشه استراتژی، سازمان استراتژی‌محور (SFO)، جلسات سه‌گانه مدیریتی و کیس پتروشیمی NPC</h2>
+        </div>
+        <button onclick="switchTab('overview')" class="text-xs font-bold text-slate-500 hover:text-teal-700 bg-slate-100 px-3 py-2 rounded-lg transition">بازگشت به داشبورد ➔</button>
+      </div>
+
+      <!-- TOP LAYER: Executive Visual Summary -->
+      <div class="bg-teal-50/60 border border-teal-200 rounded-2xl p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl">🏆</span>
+          <h3 class="text-base md:text-lg font-black text-teal-950">خلاصه اجرایی و مدیریتی جلسه پنجم: معماری کارت امتیازی متوازن (BSC)، نقشه استراتژی و سازمان استراتژی‌محور (SFO)</h3>
+        </div>
+        <p class="text-xs md:text-sm text-teal-900 leading-relaxed mb-5 text-justify">
+          در نشست پایانی ماژول اجرا و کنترل استراتژی، دکتر محمد خطیبی به کالبدشکافی موتور محرکه عملیاتی‌سازی استراتژی پرداختند. در این نشست، مناظر چهارگانه کارت امتیازی متوازن (مالی، مشتری، فرآیندهای داخلی، یادگیری و رشد)، منطق ترسیم نقشه استراتژی (The Strategy Map) با زنجیره روابط علت و معلولی، پنج اصل بنیادین سازمان استراتژی‌محور (SFO)، تفکیک بودجه عملیاتی (OpEx) از بودجه استراتژیک (StratEx)، معماری سه‌گانه جلسات مدیریتی، بررسی کیس‌های بین‌المللی (Mobil Oil, City of Charlotte, Store 24) و ارزیابی پروژه جامع استراتژیک شرکت ملی صنایع پتروشیمی ایران (NPC) به عنوان چارچوب‌های نهایی پیاده‌سازی ارائه گردید.
+        </p>
+
+        <!-- 4 Highlight Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
+          <div class="bg-white p-4 rounded-xl border border-teal-100 shadow-sm">
+            <div class="text-xs font-bold text-teal-800 mb-1 flex items-center gap-1.5">
+              <span>⚖️</span>
+              <span>کارت امتیازی متوازن (BSC)</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">گذر از سنجش صرفاً مالی گذشته‌نگر به ایجاد توازن پایدار میان اهداف کوتاه‌مدت مالی با پیشران‌های مشتری، فرآیند داخلی و رشد سازمانی.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-teal-100 shadow-sm">
+            <div class="text-xs font-bold text-teal-800 mb-1 flex items-center gap-1.5">
+              <span>🗺️</span>
+              <span>معماری نقشه استراتژی</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">ترسیم تصویری و علت و معلولی استراتژی از پایین به بالا؛ همسوسازی ارزش پیشنهادی مشتری با ۴ خوشه فرآیندی و تجربه نجات شرکت Mobil Oil.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-teal-100 shadow-sm">
+            <div class="text-xs font-bold text-teal-800 mb-1 flex items-center gap-1.5">
+              <span>🏢</span>
+              <span>پنج اصل سازمان استراتژی‌محور (SFO)</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">ترجمه استراتژی، همسوسازی صف و خدمات مشترک، تبدیل به شغل روزمره کارکنان، تفکیک بودجه StratEx از OpEx، و رهبری تحول‌آفرین.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-teal-100 shadow-sm">
+            <div class="text-xs font-bold text-teal-800 mb-1 flex items-center gap-1.5">
+              <span>🔄</span>
+              <span>معماری جلسات و کیس NPC پتروشیمی</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">تفکیک اکید جلسات هفتگی عملیاتی، ماهانه استراتژیک و فصلی آزمون فرضیات؛ در کنار کالبدشکافی سند راهبردی و ماتریس TOWS صنعت پتروشیمی ایران.</p>
+          </div>
+        </div>
+
+        <!-- BSC Perspectives Matrix -->
+        <div class="bg-white rounded-xl border border-teal-200 overflow-hidden shadow-sm">
+          <table class="w-full text-xs text-right">
+            <thead class="bg-teal-100 text-teal-950 font-bold">
+              <tr>
+                <th class="p-3">منظر استراتژیک BSC</th>
+                <th class="p-3 text-teal-900">محورهای تمرکز و خوشه‌های فرآیندی</th>
+                <th class="p-3 text-slate-700">شاخص‌های کلیدی عملکرد (KPIs / Lag & Lead)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-teal-100 text-slate-700">
+              <tr>
+                <td class="p-3 font-bold text-teal-950 bg-slate-50">منظر مالی (Financial Perspective)</td>
+                <td class="p-3">استراتژی رشد درآمد (بازارهای جدید و سودآوری مشتری) و استراتژی بهره‌وری (کاهش هزینه‌ها و بهره‌وری دارایی‌ها).</td>
+                <td class="p-3 font-semibold text-teal-900">بازده حقوق صاحبان سهام (ROE)، حاشیه سود عملیاتی، بازده دارایی‌ها (ROA)، جریان نقد آزاد.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-teal-950 bg-slate-50">منظر مشتری (Customer Perspective)</td>
+                <td class="p-3">۳ ارزش پیشنهادی تریسی-ویرسما: سرآمدی عملیاتی (قیمت و کیفیت)، رهبری محصول (نوآوری سریع)، صمیمیت با مشتری (راه‌حل‌های سفارشی).</td>
+                <td class="p-3 font-semibold text-teal-900">سهم بازار، نرخ حفظ مشتری، رضایت مشتری، ارزش طول عمر مشتری (CLV).</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-teal-950 bg-slate-50">منظر فرآیندهای داخلی (Internal Processes)</td>
+                <td class="p-3">۴ خوشه فرآیندی: مدیریت عملیات (تولید و توزیع)، مدیریت مشتری، فرآیندهای نوآوری، و فرآیندهای نظارتی و اجتماعی.</td>
+                <td class="p-3 font-semibold text-teal-900">زمان چرخه تولید، نرخ خطای صفر، زمان رسیدن به بازار (Time to Market)، انطباق زیست‌محیطی.</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-bold text-teal-950 bg-slate-50">منظر یادگیری و رشد (Learning & Growth)</td>
+                <td class="p-3">دارایی‌های ناملموس در ۳ بعد: سرمایه انسانی (مهارت‌ها)، سرمایه اطلاعاتی (IT/ERP)، و سرمایه سازمانی (فرهنگ و رهبری).</td>
+                <td class="p-3 font-semibold text-teal-900">شاخص آمادگی استراتژیک سرمایه انسانی، نرخ دسترسی به داده‌های بلادرنگ، همسوسازی اهداف فردی.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM LAYER: Collapsible Full Deep Lecture Notes -->
+      <div class="bg-slate-900 text-white rounded-2xl p-5 md:p-6 shadow-md flex flex-wrap items-center justify-between gap-4 mt-8">
+        <div>
+          <h3 class="text-base md:text-lg font-black text-white mb-1">📖 متن تفصیلی و کامل کلاسی جلسه پنجم</h3>
+          <p class="text-xs text-slate-400">شامل مبانی BSC، مناظر چهارگانه، نقشه استراتژی، ۵ اصل SFO، جلسات سه‌گانه مدیریتی، کیس Mobil Oil و مطالعه موردی پتروشیمی NPC</p>
+        </div>
+        <button onclick="toggleSessionFull('s5')" id="btn-toggle-s5" class="bg-teal-600 hover:bg-teal-500 text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition shadow">
+          <span>مطالعه متن کامل و تفصیلی جلسه</span>
+          <span id="icon-toggle-s5">▼</span>
+        </button>
+      </div>
+
+      <div id="full-s5" class="hidden bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm mt-4">
+        <div class="prose-custom"><h1 id="-bsc-sfo-npc">اجرا و کنترل استراتژی - جلسه پنجم: کارت امتیازی متوازن (BSC)، معماری نقشه استراتژی، سازمان استراتژی‌محور (SFO)، جلسات سه‌گانه مدیریتی و کیس پتروشیمی NPC</h1>
+<p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
+<strong>مدرس دوره:</strong> دکتر محمد خطیبی (Mohammad Khatibi, PhD)<br />
+<strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
+<strong>تاریخ تدریس:</strong> ۲۳ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۲ ساعت و ۵۰ دقیقه<br />
+<strong>موضوع محوری:</strong> اختتامیه ماژول اجرا و کنترل استراتژی، مبانی کارت امتیازی متوازن (Balanced Scorecard)، مناظر چهارگانه و تفکیک شاخص‌های تاخیری (Lagging) از پیشرو (Leading)، معماری نقشه استراتژی (The Strategy Map) و منطق علی و معلولی، پنج اصل سازمان استراتژی‌محور (SFO)، تفکیک بودجه عملیاتی (OpEx) از بودجه استراتژیک (StratEx)، معماری سه‌گانه جلسات مدیریتی (عملیاتی، بازنگری استراتژی، آزمون فرضیات)، مطالعات موردی جهانی (Mobil Oil, City of Charlotte, NYPD, HSBC Rail, Store 24) و کالبدشکافی پروژه استراتژیک شرکت ملی صنایع پتروشیمی ایران (NPC).</p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. مانیفست اختتامیه ماژول اجرا و کنترل استراتژی</h3>
+<p>جلسه پنجم، نقطه اوج و اختتامیه ماژول «اجرا و کنترل استراتژی» با تدریس دکتر محمد خطیبی است. اگر در جلسات پیشین، چالش‌های ساختاری (چندلر و ساختارهای ماتریسی)، موانع فرهنگی (مدل OCAI)، و پارادایم‌های حاکمیت شرکتی مورد مداقه قرار گرفتند، در این نشست پایانی، <strong>«موتور محرکه عملیاتی‌سازی استراتژی»</strong> رونمایی می‌شود. </p>
+<p>دکتر خطیبی با ارجاع به پژوهش‌های کاپلان و نورتون، این واقعیت هولناک را یادآور شدند که: <strong>«بیش از ۹۰٪ شکست‌های استراتژیک ناشی از نقص در استراتژی نیست؛ بلکه ریشه در ناتوانی سازمان‌ها در ترجمه، همسوسازی، پایش و تبدیل استراتژی به کار روزمره کارکنان دارد.»</strong></p>
+<p>پیام محوری این جلسه بر <strong>شش ستون بنیادین</strong> استوار است:
+1. <strong>کارت امتیازی متوازن (BSC) فراتر از ابزار اندازه‌گیری:</strong> گذار از یک ابزار صرفاً کنترلی حسابداری به یک <strong>سیستم جامع مدیریت استراتژیک</strong> که توازن پایدار میان اهداف کوتاه‌مدت و بلندمدت، سنجه‌های مالی و غیرمالی، و محرک‌های پیشرو و نتایج تاخیری برقرار می‌سازد.
+2. <strong>چهار منظر حیات سازمان:</strong> تبیین دقیق مناظر چهارگانه: مالی (نتایج سهامداران)، مشتری (ارزش پیشنهادی و تمایز)، فرآیندهای داخلی (۴ خوشه فرآیندی: عملیات، مشتری، نوآوری، مقررات)، و یادگیری و رشد (دارایی‌های ناملموس: سرمایه انسانی، اطلاعاتی و سازمانی).
+3. <strong>معماری نقشه استراتژی (The Strategy Map):</strong> ترسیم فرضیات استراتژیک به شکل روابط علت و معلولی صریح از پایین به بالا؛ استراتژی یک فرضیه علمی است و نقشه استراتژی دیاگرام اثبات این فرضیه است.
+4. <strong>پنج اصل سازمان استراتژی‌محور (SFO):</strong> ترجمه استراتژی، همسوسازی کل سازمان (SBUها و واحدهای خدمات مشترک Shared Services)، تبدیل استراتژی به کار روزانه همگان (کارت امتیازی فردی و پاداش متوازن)، تبدیل استراتژی به فرآیند مستمر (تفکیک OpEx از StratEx)، و بسیج تحول از طریق رهبری ارشد.
+5. <strong>معماری سه‌گانه جلسات مدیریتی:</strong> تفکیک اکید جلسات بازنگری عملیات (Operational Review - هفتگی)، جلسات بازنگری استراتژی (Strategy Review - ماهانه)، و جلسات آزمون و تطبیق استراتژی (Strategy Testing &amp; Adapting - فصلی/سالانه).
+6. <strong>مطالعه موردی بومی: شرکت ملی صنایع پتروشیمی (NPC):</strong> تحلیل کاربردی فرآیند جاری‌سازی استراتژی، ماتریس TOWS، نقشه استراتژی و چالش‌های اجرای کارت امتیازی در صنعت پتروشیمی ایران.</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    🧭 نقشه راه و سرفصل‌های جلسه پنجم و پایانی اجرا و کنترل استراتژی
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30">
+      <div class="text-indigo-300 font-bold text-sm mb-1">۱. پایه‌های BSC و ۴ منظر (بخش اول)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">نقد حسابداری سنتی، مناظر چهارگانه، ارزش پیشنهادی مشتری (۳ استراتژی تریسی و ویرسما)، و خوشه‌های ۴گانه فرآیند داخلی.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-sky-500/30">
+      <div class="text-sky-300 font-bold text-sm mb-1">۲. نقشه استراتژی و کیس موبیل (بخش دوم)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">منطق روابط علی و معلولی از پایین به بالا، مطالعه موردی نجات شرکت Mobil NAM&R، و تطبیق نقشه در بخش دولتی (شهر شارلوت).</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-emerald-500/30">
+      <div class="text-emerald-300 font-bold text-sm mb-1">۳. همسوسازی و خدمات مشترک (اصل ۲ SFO)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">هم‌افزایی میان واحدهای صف (SBU) و واحدهای خدمات مشترک (SSU)، قراردادهای SLA، و معماری Corporate BSC.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30">
+      <div class="text-amber-300 font-bold text-sm mb-1">۴. کار روزانه و جبران خدمات (اصل ۳ SFO)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">آگاهی استراتژیک، رویکرد آبشاری، کارت امتیازی متوازن فردی (Personal Scorecard)، و اتصال پاداش متوازن در شرکت موبیل.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-rose-500/30">
+      <div class="text-rose-300 font-bold text-sm mb-1">۵. فرآیند مستمر و جلسات سه‌گانه (اصل ۴ SFO)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">تفکیک OpEx از StratEx، یادگیری دوحلقه‌ای، ماتریس ۳ جلسه مدیریتی (NYPD, HSBC Rail, Store 24)، و سکوی مشتعل (اصل ۵).</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-purple-500/30">
+      <div class="text-purple-300 font-bold text-sm mb-1">۶. کیس پتروشیمی ایران (NPC) و سنتز نهایی</div>
+      <p class="text-xs text-slate-300 leading-relaxed">سند راهبردی پتروشیمی، ماتریس TOWS، پیاده‌سازی کارت امتیازی در هلدینگ‌های ایرانی و منشور دوشنبه صبح مدیران عامل.</p>
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="balanced-scorecard">۲. کارت امتیازی متوازن (Balanced Scorecard): فراتر از سنجش عملکرد</h2>
+<h3 id="_2">۲.۱. آسیب‌شناسی سیستم‌های حسابداری سنتی</h3>
+<p>دکتر خطیبی با نقد سیستم‌های مالی سنتی آغاز کردند: صورت‌های مالی (ترازنامه و سود و زیان) مانند «رانندگی با نگاه کردن مداوم به آینه عقب خودرو» هستند! این شاخص‌ها گزارش می‌دهند که در گذشته چه رخ داده است، اما هیچ سرنخی درباره وضعیت موتور، اصطکاک جاده یا مسیر پیش‌رو ارائه نمی‌دهند.</p>
+<p>سیستم کارت امتیازی متوازن (BSC) که توسط <strong>رابرت کاپلان و دیوید نورتون (۱۹۹۲)</strong> ابداع شد، برای ایجاد توازن در ۴ بعد اساسی طراحی شد:
+1. <strong>توازن میان شاخص‌های مالی و غیرمالی:</strong> ارزش‌آفرینی واقعی در دارایی‌های نامشهود (سرمایه فکری، نرم‌افزار، روابط مشتری) نهفته است.
+2. <strong>توازن میان شاخص‌های تاخیری (Lagging) و پیشرو (Leading / Performance Drivers):</strong> سنجه‌های تاخیری (مثل سود خالص یا بازده حقوق صاحبان سهام ROE) خروجی نهایی هستند؛ اما سنجه‌های پیشرو (مثل نرخ رضایت مشتری، زمان سیکل سفارش، ساعات آموزش کارکنان) محرک‌های زنده خلق آن خروجی‌ها هستند.
+3. <strong>توازن میان ذینفعان بیرونی (سهامداران و مشتریان) و فرآیندهای درونی (عملیات و پرسنل).</strong>
+4. <strong>توازن میان اهداف کوتاه‌مدت عملیاتی و جهت‌گیری‌های بلندمدت استراتژیک.</strong></p>
+<h3 id="the-4-perspectives">۲.۲. مناظر چهارگانه کارت امتیازی متوازن (The 4 Perspectives)</h3>
+<div class="my-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+      <h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">۱. منظر مالی (Financial Perspective)</h3>
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      <strong>سوال کلیدی:</strong> برای موفقیت مالی و جلب رضایت سهامداران، چه عملکردی باید ارائه دهیم؟<br>
+      <strong>دو بازوی اصلی ارزش مالی:</strong><br>
+      • <em>استراتژی رشد درآمد (Revenue Growth):</em> ورود به بازارهای جدید، محصولات نو، افزایش ارزش سبد مشتریان.<br>
+      • <em>استراتژی بهره‌وری (Productivity):</em> کاهش بهای تمام‌شده، حذف اتلاف‌ها، و بهره‌برداری بهینه از دارایی‌های ثابت و در گردش ($ROA, ROCE$).
+    </p>
+  </div>
+
+  <div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-sky-500"></span>
+      <h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">۲. منظر مشتری (Customer Perspective)</h3>
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      <strong>سوال کلیدی:</strong> برای تحقق مقاصد مالی، چه ارزشی باید به مشتریان هدف ارائه دهیم؟<br>
+      <strong>ارزش پیشنهادی مشتری (Customer Value Proposition):</strong> برگرفته از مدل ۳گانه مایکل تریسی و فرد ویرسما:<br>
+      • <em>سرآمدی عملیاتی (Operational Excellence):</em> قیمت رقابتی، سرعت، دقت و دسترسی آسان (مانند وال‌مارت یا مک‌دونالد).<br>
+      • <em>رهبری محصول (Product Leadership):</em> نوآوری خط‌شکن، کارایی بالاتر از استاندارد بازار و پرستیژ (مانند اپل یا مرسدس بنز).<br>
+      • <em>صمیمیت با مشتری (Customer Intimacy):</em> سفارشی‌سازی راه‌حل، خدمات مشاوره پیوسته و رابطه بلندمدت.
+    </p>
+  </div>
+
+  <div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+      <h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">۳. منظر فرآیندهای داخلی (Internal Business Processes)</h3>
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      <strong>سوال کلیدی:</strong> برای خشنودی مشتریان و سهامداران، در چه فرآیندهایی باید سرآمد شویم؟<br>
+      <strong>چهار خوشه فرآیندی حیاتی:</strong><br>
+      ۱. <em>مدیریت عملیات:</em> تامین، تولید، انبارداری و توزیع کارا.<br>
+      ۲. <em>مدیریت مشتری:</em> گزینش، جذب، حفظ و توسعه فروش به مشتریان سودآور.<br>
+      ۳. <em>نوآوری:</em> شناسایی فرصت‌های بازار، تحقیق و توسعه ($R&D$)، طراحی محصول جدید و تجاری‌سازی سریع.<br>
+      ۴. <em>قوانین و محیط‌زیست:</em> رعایت استانداردهای زیست‌محیطی ($ESG$)، ایمنی، بهداشت شغلی و مسئولیت اجتماعی.
+    </p>
+  </div>
+
+  <div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-purple-500"></span>
+      <h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">۴. منظر یادگیری و رشد (Learning & Growth)</h3>
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      <strong>سوال کلیدی:</strong> برای دستیابی به اهداف سه منظر بالا، چگونه باید قابلیت‌ها و توانمندی‌هایمان را توسعه دهیم؟<br>
+      <strong>سه ستون دارایی‌های ناملموس (Intangible Assets):</strong><br>
+      • <em>سرمایه انسانی (Human Capital):</em> مهارت‌ها، شایستگی‌های رفتاری و تخصص مشاغل کلیدی استراتژیک.<br>
+      • <em>سرمایه اطلاعاتی (Information Capital):</em> پایگاه‌های داده، زیرساخت نرم‌افزاری، شبکه‌ها و سیستم‌های تصمیم‌یار.<br>
+      • <em>سرمایه سازمانی (Organization Capital):</em> فرهنگ مشارکتی، رهبری تحول‌آفرین، همسویی انگیزشی و کار تیمی.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="the-strategy-map">۳. معماری نقشه استراتژی (The Strategy Map) و زنجیره علی و معلولی</h2>
+<p>نقشه استراتژی، بازنمایی بصری رابطه علی و معلولی ($Cause-and-Effect$) میان اهداف استراتژیک در طول مناظر چهارگانه است. فرضیه استراتژی از <strong>پایین به بالا</strong> جریان دارد:</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-bold text-amber-400 text-sm mb-6">
+    زنجیره علی و معلولی خلق ارزش در نقشه استراتژی (از پایین به بالا)
+  </div>
+
+  <div class="space-y-4 text-xs md:text-sm">
+    <div class="p-4 bg-emerald-950/60 border border-emerald-500/40 rounded-xl flex items-center justify-between">
+      <div>
+        <span class="text-emerald-400 font-bold block mb-1">منظر مالی: نتایج نهایی سهامداران</span>
+        <span class="text-slate-300">ارتقای بازده سرمایه ($ROCE$) = استراتژی رشد درآمد (فروش محصولات پریمیوم) + استراتژی بهره‌وری (کاهش ضایعات تولید)</span>
+      </div>
+      <span class="text-emerald-400 font-black text-xl">▲</span>
+    </div>
+
+    <div class="p-4 bg-sky-950/60 border border-sky-500/40 rounded-xl flex items-center justify-between">
+      <div>
+        <span class="text-sky-400 font-bold block mb-1">منظر مشتری: ارزش پیشنهادی متمایز</span>
+        <span class="text-slate-300">جذب مشتریان وفادار از طریق تحویل به‌موقع ($OTIF > ۹۸\%$)، کیفیت تضمین‌شده و تجربه خرید سفارشی</span>
+      </div>
+      <span class="text-sky-400 font-black text-xl">▲</span>
+    </div>
+
+    <div class="p-4 bg-amber-950/60 border border-amber-500/40 rounded-xl flex items-center justify-between">
+      <div>
+        <span class="text-amber-400 font-bold block mb-1">منظر فرآیندهای داخلی: تعالی عملیاتی و نوآوری</span>
+        <span class="text-slate-300">کاهش زمان چرخه سفارش، پیاده‌سازی مدیریت کیفیت جامع ($TQM$)، توسعه محصولات سازگار با محیط‌زیست</span>
+      </div>
+      <span class="text-amber-400 font-black text-xl">▲</span>
+    </div>
+
+    <div class="p-4 bg-purple-950/60 border border-purple-500/40 rounded-xl flex items-center justify-between">
+      <div>
+        <span class="text-purple-400 font-bold block mb-1">منظر یادگیری و رشد: فونداسیون زیرساختی</span>
+        <span class="text-slate-300">آموزش شایستگی‌های مهندسی، پیاده‌سازی سیستم یکپارچه $ERP$، فرهنگ تقدیر از نوآوری و چابکی</span>
+      </div>
+      <span class="text-purple-400 font-bold text-xs bg-purple-900/50 px-2 py-1 rounded">نقطه آغاز</span>
+    </div>
+  </div>
+</div>
+
+<h3 id="mobil-namr">۳.۱. مطالعه موردی جهانی: تحول شگفت‌انگیز شرکت موبیل (Mobil NAM&amp;R)</h3>
+<p>دکتر خطیبی به بررسی دقیق کیس کمپانی Mobil Oil (بخش پالایش و بازاریابی آمریکای شمالی) پرداختند:
+- <strong>وضعیت بحرانی (۱۹۹۲):</strong> رتبه آخر در سودآوری میان تمام شرکت‌های نفتی آمریکا، جریان نقدینگی منفی ۵۰۰ میلیون دلار در سال و بازده دارایی اندک.
+- <strong>رویکرد تحول با نقشه استراتژی:</strong>
+  - <em>تحقیقات بازار:</em> کشف این نکته که ۲۰٪ مشتریان حساس به قیمت بنزین هستند، اما ۸۰٪ حاضرند برای سوخت باکیفیت، جایگاه تمیز، سرویس بهداشتی استریل و پرسنل خوش‌برخورد پول بیشتری پرداخت کنند.
+  - <em>ارزش پیشنهادی:</em> معرفی برند «Friendly Serve» و فناوری پرداخت الکترونیک سریع Speedpass.
+  - <em>نقشه استراتژی:</em> پیوند دادن آموزش پرسنل جایگاه‌ها و بستر IT با سرعت خدمت‌رسانی، افزایش رضایت مشتری، و نهایتاً جهش حاشیه سود هر گالن بنزین.
+- <strong>دستاورد اعجاب‌انگیز (۱۹۹۵):</strong> صعود از رتبه آخر به <strong>رتبه اول سودآوری</strong> در صنعت نفت آمریکا و تولید سالانه ۱ میلیارد دلار جریان نقد خالص مازاد!</p>
+<h3 id="_3">۳.۲. تعدیل معماری نقشه استراتژی در شرکت‌های دولتی و غیرانتفاعی</h3>
+<p>در بخش دولتی و شهرداری‌ها، هدف نهایی «حداکثرسازی سود سهامدار» نیست؛ بلکه <strong>«تحقق ماموریت سازمانی و خدمت به شهروندان»</strong> است.
+- <strong>تغییر معماری نقشه:</strong> در سازمان‌های عمومی، منظر مالی در ردیف بالا قرار نمی‌گیرد؛ بلکه در کنار منظر فرآیندها به عنوان یک قید بودجه‌ای دیده می‌شود. در صدر نقشه، <strong>منظر شهروندان / جامعه</strong> و تحقق مأموریت قانونی می‌نشیند (مطالعه موردی موفق شهر شارلوت City of Charlotte در کارولینای شمالی).</p>
+<hr />
+<h2 id="the-5-principles-of-sfo">۴. پنج اصل سازمان استراتژی‌محور (The 5 Principles of SFO)</h2>
+<p>کاپلان و نورتون پس از مشاهده سازمان‌های موفق در پیاده‌سازی BSC، الگوی رفتاری آن‌ها را در قالب <strong>پنج اصل سازمان استراتژی‌محور (Strategy-Focused Organization)</strong> مدون ساختند:</p>
+<div class="my-6 space-y-4">
+  <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+    <div class="flex items-center gap-2 mb-2 font-bold text-slate-800 dark:text-slate-100 text-sm">
+      <span class="px-2 py-0.5 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 rounded text-xs">اصل اول</span>
+      استراتژی را به اصطلاحات عملیاتی ترجمه کنید (Translate Strategy to Operational Terms)
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      استراتژی تا زمانی که در قالب مفاهیم مجرد بیانیه ماموریت و چشم‌انداز باقی بماند، دردی را دوا نمی‌کند. نقشه استراتژی و کارت امتیازی متوازن، چشم‌انداز مبهم را به اهداف کمی، شاخص‌های عینی ($KPI$)، مقادیر هدف ($Targets$) و برنامه‌های اقدام ($Strategic\,Initiatives$) تبدیل می‌کنند.
+    </p>
+  </div>
+
+  <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+    <div class="flex items-center gap-2 mb-2 font-bold text-slate-800 dark:text-slate-100 text-sm">
+      <span class="px-2 py-0.5 bg-sky-100 dark:bg-sky-900/50 text-sky-700 dark:text-sky-300 rounded text-xs">اصل دوم</span>
+      سازمان را در جهت تحقق استراتژی همسو کنید (Align the Organization to the Strategy)
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      سیلوهای سازمانی (دپارتمان‌های جزیره‌ای) قاتل استراتژی هستند. هلدینگ باید کارت امتیازی شرکتی ($Corporate\,BSC$) را تدوین کند و تمام واحدهای کسب‌وکار ($SBU$) و واحدهای خدمات مشترک ($SSU$ مانند منابع انسانی، مالی و IT) را از طریق قراردادهای سطح خدمت ($SLA$) به آن پیوند بزند.
+    </p>
+  </div>
+
+  <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+    <div class="flex items-center gap-2 mb-2 font-bold text-slate-800 dark:text-slate-100 text-sm">
+      <span class="px-2 py-0.5 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 rounded text-xs">اصل سوم</span>
+      استراتژی را به کار هر روز هر کس تبدیل کنید (Make Strategy Everyone's Everyday Job)
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      استراتژی از اتاق مدیرعامل اجرا نمی‌شود، بلکه توسط کارگر خط تولید و کارشناس فروش در خط مقدم محقق می‌شود. این اصل از طریق ۳ گام تحقق می‌یابد:
+      ۱. <em>ایجاد آگاهی استراتژیک (Strategic Awareness):</em> ارتباط شفاف مدیران ارشد با بدنه سازمان.
+      ۲. <em>همسوسازی اهداف فردی (Personal Scorecards):</em> هر کارمند اهداف شغلی سالانه خود را با کارت واحد متبوعش تطبیق دهد.
+      ۳. <em>پرداخت پاداش متوازن (Incentive Compensation):</em> در شرکت موبیل، تا ۳۰٪ پاداش پرسنل به عملکرد کارت متوازن گره خورد.
+    </p>
+  </div>
+
+  <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+    <div class="flex items-center gap-2 mb-2 font-bold text-slate-800 dark:text-slate-100 text-sm">
+      <span class="px-2 py-0.5 bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300 rounded text-xs">اصل چهارم</span>
+      استراتژی را به یک فرآیند مستمر تبدیل کنید (Make Strategy a Continual Process)
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      استراتژی پروژه‌ای نیست که یک بار در سال نوشته و کنار گذاشته شود. استراتژی یک چرخه بی‌پایان بازخورد و یادگیری دوحلقه‌ای ($Double-Loop\,Learning$) است که به بودجه‌بندی پویا و جلسات ساختاریافته گره خورده است.
+    </p>
+  </div>
+
+  <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+    <div class="flex items-center gap-2 mb-2 font-bold text-slate-800 dark:text-slate-100 text-sm">
+      <span class="px-2 py-0.5 bg-rose-100 dark:bg-rose-900/50 text-rose-700 dark:text-rose-300 rounded text-xs">اصل پنجم</span>
+      ایجاد تحول از طریق رهبری مدیریت ارشد (Mobilize Change through Executive Leadership)
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      استراتژی نیازمند تغییر عمیق رفتاری است. مدیرعامل باید حس اضطرار ناشی از «سکوی مشتعل» ($Burning\,Platform$) را القا کند، حاکمیت استراتژی را در دست گیرد، و با تأسیس «دفتر مدیریت استراتژیک» ($Office\,of\,Strategy\,Management - OSM$)، متولی واحدی برای رصد مستمر نقشه تعیین نماید.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="_4">۵. فرآیند مستمر و معماری سه‌گانه جلسات مدیریتی</h2>
+<p>یکی از درخشان‌ترین بخش‌های تدریس دکتر خطیبی در این جلسه، تفکیک <strong>بودجه‌بندی استراتژیک</strong> و <strong>معماری سه‌گانه جلسات مدیریتی</strong> بود.</p>
+<h3 id="opex-stratex">۵.۱. تفکیک بودجه عملیاتی (OpEx) از بودجه استراتژیک (StratEx)</h3>
+<p>در سازمان‌های سنتی، بودجه سالانه یکپارچه بسته می‌شود؛ به این معنا که در زمان کسری بودجه، اولین ردیف‌هایی که حذف می‌شوند، پروژه‌های آموزشی، R&amp;D، فناوری اطلاعات و بازاریابی هستند (یعنی دقیقاً موتورهای محرک آینده سازمان!).
+- <strong>بودجه عملیاتی (Operating Expense - OpEx):</strong> هزینه‌های جاری برای چرخش وضع موجود (حقوق جاری، مواد اولیه، اجاره، قبوض).
+- <strong>بودجه استراتژیک (Strategic Expense - StratEx):</strong> منابع اختصاص‌یافته برای بستن شکاف‌های استراتژیک نقشه (خرید لایسنس جدید، آموزش تحول دیجیتال، تغییر فرمول محصول). در سازمان‌های استراتژی‌محور، بودجه $StratEx$ دارای حساب جداگانه است و مدیران اجازه ندارند برای پوشش کسری عملیاتی، به آن دست‌اندازی کنند.</p>
+<h3 id="_5">۵.۲. معماری سه‌گانه جلسات بازنگری و تطبیق استراتژی</h3>
+<div class="my-6 overflow-x-auto">
+  <table class="w-full text-right border-collapse text-xs md:text-sm bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+    <thead class="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold">
+      <tr>
+        <th class="p-3 border-b">نوع جلسه مدیریتی</th>
+        <th class="p-3 border-b">سوال کلیدی و بنیادین</th>
+        <th class="p-3 border-b">دوره تناوب و مخاطبان</th>
+        <th class="p-3 border-b">دستور جلسه و مطالعه موردی</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-emerald-600 dark:text-emerald-400">۱. جلسات بازنگری عملیات<br><span class="text-xs text-slate-500">Operational Review</span></td>
+        <td class="p-3 font-bold text-slate-800 dark:text-slate-100">«آیا عملیات ما تحت کنترل است؟»</td>
+        <td class="p-3">هفتگی، دوهفته‌یک‌بار یا روزانه<br>مدیران صف، سرپرستان خط و مدیران میانی</td>
+        <td class="p-3">بررسی انحرافات مقطعی از بودجه، توقف خط، شکایات روزانه، حل مسائل فوری.<br><strong>کیس:</strong> دپارتمان پلیس نیویورک ($NYPD$) و سیستم $CompStat$ برای پایش روزانه جرایم محلات.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-sky-600 dark:text-sky-400">۲. جلسات بازنگری استراتژی<br><span class="text-xs text-slate-500">Strategy Review</span></td>
+        <td class="p-3 font-bold text-slate-800 dark:text-slate-100">«آیا به خوبی استراتژی را اجرا می‌کنیم؟»</td>
+        <td class="p-3">ماهانه (مدت زمان: ۳ تا ۵ ساعت)<br>تیم رهبری ارشد، مدیرعامل و مدیران ارشد دپارتمان‌ها</td>
+        <td class="p-3">بررسی شاخص‌های نقشه استراتژی و کارت متوازن؛ ریشه‌یابی چرایی عدم تحقق مقادیر هدف، تصویب اقدامات اصلاحی.<br><strong>کیس:</strong> شرکت راه‌آهن $HSBC\,Rail$ برای همسوسازی مجدد اهداف سودآوری واگن‌ها.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-rose-600 dark:text-rose-400">۳. جلسات آزمون و تطبیق استراتژی<br><span class="text-xs text-slate-500">Strategy Testing & Adapting</span></td>
+        <td class="p-3 font-bold text-slate-800 dark:text-slate-100">«آیا اساساً استراتژی درستی در پیش گرفته‌ایم؟»</td>
+        <td class="p-3">فصلی یا سالانه (کارگاه ۲ یا ۳ روزه برون‌سازمانی)<br>هیئت مدیره، مدیرعامل و مشاوران کلیدی</td>
+        <td class="p-3">تست اعتبار فرضیات بنیادین نقشه استراتژی؛ تحلیل‌های اقتصادسنجی و همبستگی شاخص‌ها؛ تغییر مسیر در صورت رد فرضیه.<br><strong>کیس:</strong> زنجیره فروشگاه‌های $Store\,24$ (تست فرضیه سرعت در برابر سرگرمی مشتری).</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+<h2 id="npc">۶. مطالعه موردی بومی: شرکت ملی صنایع پتروشیمی ایران (NPC)</h2>
+<p>دکتر خطیبی به کالبدشکافی پروژه جامع تدوین و اجرای برنامه استراتژیک <strong>شرکت ملی صنایع پتروشیمی (NPC)</strong> پرداختند؛ پروژه‌ای که حاصل ۹ ماه ممارست، کارگروه‌های تخصصی ستاد راهبردی و جلسات ارزیابی خرد جمعی بود:
+1. <strong>الگوی جامع مدیریت استراتژیک در پتروشیمی:</strong>
+   - تبیین مأموریت صنعت پتروشیمی در تبدیل مزیت هیدروکربوری کشور به ثروت پایدار و محصولات با ارزش افزوده بالا (پرهیز از خام‌فروشی).
+   - تحلیل عوامل داخلی ($IFE$) و خارجی ($EFE$) با توجه به بازارهای صادراتی آسیا، خوراک گاز، و نوسانات جهانی قیمت پلیمرها.
+2. <strong>ماتریس TOWS و انتخاب استراتژی‌ها:</strong>
+   - بهره‌برداری از نقاط قوت داخلی برای تصاحب فرصت‌های جهانی (استراتژی‌های SO: توسعه بازارهای منطقه‌ای، تنوع‌بخشی به گرید محصولات پلیمری).
+   - خنثی‌سازی تهدیدات تحریمی و تامین کاتالیست‌ها (استراتژی‌های ST: بومی‌سازی کاتالیست‌های استراتژیک و توسعه زنجیره تامین داخلی).
+3. <strong>ترسیم نقشه استراتژی و کارت امتیازی در NPC:</strong>
+   - ایجاد توازن میان بازدهی سرمایه‌گذاری‌های مگاپروژه‌ها (منظر مالی) با جلب رضایت مشتریان بین‌المللی از نظر ثبات مشخصات فنی محصول (منظر مشتری).
+   - چالش اصلی جاری‌سازی: درگیر کردن مدیران مجتمع‌های پتروشیمی جنوب (عسلویه و ماهشهر) در فهم شاخص‌های رشد و یادگیری، و پرهیز از تکیه انحصاری بر حجم تناژ تولید روزانه.</p>
+<hr />
+<h2 id="_6">۷. گزاره‌های طلایی دکتر خطیبی در جلسه پنجم</h2>
+<blockquote>
+<p><strong>«استراتژی یک فرضیه علمی است، نه یک وحی منزل. اگر نتوانید فرضیه‌تان را در قالب نقشه علت و معلولی ترسیم کنید، نمی‌دانید چه چیز را می‌خواهید کنترل کنید.»</strong></p>
+<p><strong>«اتصال پاداش به کارت امتیازی متوازن مانند سوخت راکت است؛ اگر نقشه استراتژی درستی نداشته باشید، با پاداش دادن صرفاً با سرعت بیشتری سازمان را به دیوار خواهید کوبید!»</strong></p>
+<p><strong>«در جلسات ماهانه استراتژی، گزارش‌خوانی و شنیدن داستان‌های تکراری ممنوع است. این جلسات دادگاه محاکمه نیست؛ اتاق همفکری برای حل موانعی است که مانع عبور شاخص‌ها از خط قرمز به سبز شده‌اند.»</strong></p>
+<p><strong>«مدیران ارشد اغلب می‌گویند پرسنل خط مقدم استراتژی را نمی‌فهمند؛ اما حقیقت آن است که رهبران سازمان نتوانسته‌اند مأموریت را به زبان ساده و قابل لمس روزمره ترجمه کنند. استراتژی وقتی زنده است که یک تکنسین انبار بداند کار روزمره‌اش چگونه ارزش سهامدار و رضایت مشتری را رقم می‌زند.»</strong></p>
+</blockquote></div>
+      </div>
+
     </section>
 
     <!-- TAB: SIMULATOR -->
@@ -3658,7 +4076,7 @@
 <p><strong>مرجع علمی و آکادمیک:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
 <strong>مدرس دوره:</strong> دکتر محمد خطیبی<br />
 <strong>طراحی، تدوین ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
-<strong>نسخه سند:</strong> ۴.۰ (پاییز ۱۴۰۵ - تجمیع تحلیلی جلسات ۰۱، ۰۲، ۰۳ و ۰۴)</p>
+<strong>نسخه سند:</strong> ۵.۰ (پاییز ۱۴۰۵ - تجمیع تحلیلی جلسات ۰۱، ۰۲، ۰۳، ۰۴ و ۰۵ - ماژول نهایی و تکمیل‌شده)</p>
 <hr />
 <h1 id="_1">بخش اول: مانیفست بنیادین و چهارچوب اجرایی کاپلان و نورتون</h1>
 <h2 id="-strategy-to-execution-gap">۱. عبور از شکاف استراتژی-عملکرد (Strategy-to-Execution Gap)</h2>
@@ -6524,6 +6942,300 @@
     </p>
   </div>
 </div>
+
+<hr />
+<h1 id="bsc-sfo-npc">بخش ششم: دانشنامه تفصیلی جلسه پنجم (کارت امتیازی متوازن BSC، معماری نقشه استراتژی، سازمان استراتژی‌محور SFO، جلسات سه‌گانه مدیریتی و کیس پتروشیمی NPC)</h1>
+<h1 id="-bsc-sfo-npc">اجرا و کنترل استراتژی - جلسه پنجم: کارت امتیازی متوازن (BSC)، معماری نقشه استراتژی، سازمان استراتژی‌محور (SFO)، جلسات سه‌گانه مدیریتی و کیس پتروشیمی NPC</h1>
+<p><strong>مرجع علمی و سازمانی:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
+<strong>مدرس دوره:</strong> دکتر محمد خطیبی (Mohammad Khatibi, PhD)<br />
+<strong>مدیر تدوین، تحلیل ساختاری و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
+<strong>تاریخ تدریس:</strong> ۲۳ مهر ۱۴۰۵ | <strong>مدت زمان جلسه:</strong> ۲ ساعت و ۵۰ دقیقه<br />
+<strong>موضوع محوری:</strong> اختتامیه ماژول اجرا و کنترل استراتژی، مبانی کارت امتیازی متوازن (Balanced Scorecard)، مناظر چهارگانه و تفکیک شاخص‌های تاخیری (Lagging) از پیشرو (Leading)، معماری نقشه استراتژی (The Strategy Map) و منطق علی و معلولی، پنج اصل سازمان استراتژی‌محور (SFO)، تفکیک بودجه عملیاتی (OpEx) از بودجه استراتژیک (StratEx)، معماری سه‌گانه جلسات مدیریتی (عملیاتی، بازنگری استراتژی، آزمون فرضیات)، مطالعات موردی جهانی (Mobil Oil, City of Charlotte, NYPD, HSBC Rail, Store 24) و کالبدشکافی پروژه استراتژیک شرکت ملی صنایع پتروشیمی ایران (NPC).</p>
+<hr />
+<h2 id="executive-summary_4">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_59">۱.۱. مانیفست اختتامیه ماژول اجرا و کنترل استراتژی</h3>
+<p>جلسه پنجم، نقطه اوج و اختتامیه ماژول «اجرا و کنترل استراتژی» با تدریس دکتر محمد خطیبی است. اگر در جلسات پیشین، چالش‌های ساختاری (چندلر و ساختارهای ماتریسی)، موانع فرهنگی (مدل OCAI)، و پارادایم‌های حاکمیت شرکتی مورد مداقه قرار گرفتند، در این نشست پایانی، <strong>«موتور محرکه عملیاتی‌سازی استراتژی»</strong> رونمایی می‌شود. </p>
+<p>دکتر خطیبی با ارجاع به پژوهش‌های کاپلان و نورتون، این واقعیت هولناک را یادآور شدند که: <strong>«بیش از ۹۰٪ شکست‌های استراتژیک ناشی از نقص در استراتژی نیست؛ بلکه ریشه در ناتوانی سازمان‌ها در ترجمه، همسوسازی، پایش و تبدیل استراتژی به کار روزمره کارکنان دارد.»</strong></p>
+<p>پیام محوری این جلسه بر <strong>شش ستون بنیادین</strong> استوار است:
+1. <strong>کارت امتیازی متوازن (BSC) فراتر از ابزار اندازه‌گیری:</strong> گذار از یک ابزار صرفاً کنترلی حسابداری به یک <strong>سیستم جامع مدیریت استراتژیک</strong> که توازن پایدار میان اهداف کوتاه‌مدت و بلندمدت، سنجه‌های مالی و غیرمالی، و محرک‌های پیشرو و نتایج تاخیری برقرار می‌سازد.
+2. <strong>چهار منظر حیات سازمان:</strong> تبیین دقیق مناظر چهارگانه: مالی (نتایج سهامداران)، مشتری (ارزش پیشنهادی و تمایز)، فرآیندهای داخلی (۴ خوشه فرآیندی: عملیات، مشتری، نوآوری، مقررات)، و یادگیری و رشد (دارایی‌های ناملموس: سرمایه انسانی، اطلاعاتی و سازمانی).
+3. <strong>معماری نقشه استراتژی (The Strategy Map):</strong> ترسیم فرضیات استراتژیک به شکل روابط علت و معلولی صریح از پایین به بالا؛ استراتژی یک فرضیه علمی است و نقشه استراتژی دیاگرام اثبات این فرضیه است.
+4. <strong>پنج اصل سازمان استراتژی‌محور (SFO):</strong> ترجمه استراتژی، همسوسازی کل سازمان (SBUها و واحدهای خدمات مشترک Shared Services)، تبدیل استراتژی به کار روزانه همگان (کارت امتیازی فردی و پاداش متوازن)، تبدیل استراتژی به فرآیند مستمر (تفکیک OpEx از StratEx)، و بسیج تحول از طریق رهبری ارشد.
+5. <strong>معماری سه‌گانه جلسات مدیریتی:</strong> تفکیک اکید جلسات بازنگری عملیات (Operational Review - هفتگی)، جلسات بازنگری استراتژی (Strategy Review - ماهانه)، و جلسات آزمون و تطبیق استراتژی (Strategy Testing &amp; Adapting - فصلی/سالانه).
+6. <strong>مطالعه موردی بومی: شرکت ملی صنایع پتروشیمی (NPC):</strong> تحلیل کاربردی فرآیند جاری‌سازی استراتژی، ماتریس TOWS، نقشه استراتژی و چالش‌های اجرای کارت امتیازی در صنعت پتروشیمی ایران.</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    🧭 نقشه راه و سرفصل‌های جلسه پنجم و پایانی اجرا و کنترل استراتژی
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-indigo-500/30">
+      <div class="text-indigo-300 font-bold text-sm mb-1">۱. پایه‌های BSC و ۴ منظر (بخش اول)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">نقد حسابداری سنتی، مناظر چهارگانه، ارزش پیشنهادی مشتری (۳ استراتژی تریسی و ویرسما)، و خوشه‌های ۴گانه فرآیند داخلی.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-sky-500/30">
+      <div class="text-sky-300 font-bold text-sm mb-1">۲. نقشه استراتژی و کیس موبیل (بخش دوم)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">منطق روابط علی و معلولی از پایین به بالا، مطالعه موردی نجات شرکت Mobil NAM&R، و تطبیق نقشه در بخش دولتی (شهر شارلوت).</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-emerald-500/30">
+      <div class="text-emerald-300 font-bold text-sm mb-1">۳. همسوسازی و خدمات مشترک (اصل ۲ SFO)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">هم‌افزایی میان واحدهای صف (SBU) و واحدهای خدمات مشترک (SSU)، قراردادهای SLA، و معماری Corporate BSC.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-amber-500/30">
+      <div class="text-amber-300 font-bold text-sm mb-1">۴. کار روزانه و جبران خدمات (اصل ۳ SFO)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">آگاهی استراتژیک، رویکرد آبشاری، کارت امتیازی متوازن فردی (Personal Scorecard)، و اتصال پاداش متوازن در شرکت موبیل.</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-rose-500/30">
+      <div class="text-rose-300 font-bold text-sm mb-1">۵. فرآیند مستمر و جلسات سه‌گانه (اصل ۴ SFO)</div>
+      <p class="text-xs text-slate-300 leading-relaxed">تفکیک OpEx از StratEx، یادگیری دوحلقه‌ای، ماتریس ۳ جلسه مدیریتی (NYPD, HSBC Rail, Store 24)، و سکوی مشتعل (اصل ۵).</p>
+    </div>
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-purple-500/30">
+      <div class="text-purple-300 font-bold text-sm mb-1">۶. کیس پتروشیمی ایران (NPC) و سنتز نهایی</div>
+      <p class="text-xs text-slate-300 leading-relaxed">سند راهبردی پتروشیمی، ماتریس TOWS، پیاده‌سازی کارت امتیازی در هلدینگ‌های ایرانی و منشور دوشنبه صبح مدیران عامل.</p>
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="balanced-scorecard">۲. کارت امتیازی متوازن (Balanced Scorecard): فراتر از سنجش عملکرد</h2>
+<h3 id="_60">۲.۱. آسیب‌شناسی سیستم‌های حسابداری سنتی</h3>
+<p>دکتر خطیبی با نقد سیستم‌های مالی سنتی آغاز کردند: صورت‌های مالی (ترازنامه و سود و زیان) مانند «رانندگی با نگاه کردن مداوم به آینه عقب خودرو» هستند! این شاخص‌ها گزارش می‌دهند که در گذشته چه رخ داده است، اما هیچ سرنخی درباره وضعیت موتور، اصطکاک جاده یا مسیر پیش‌رو ارائه نمی‌دهند.</p>
+<p>سیستم کارت امتیازی متوازن (BSC) که توسط <strong>رابرت کاپلان و دیوید نورتون (۱۹۹۲)</strong> ابداع شد، برای ایجاد توازن در ۴ بعد اساسی طراحی شد:
+1. <strong>توازن میان شاخص‌های مالی و غیرمالی:</strong> ارزش‌آفرینی واقعی در دارایی‌های نامشهود (سرمایه فکری، نرم‌افزار، روابط مشتری) نهفته است.
+2. <strong>توازن میان شاخص‌های تاخیری (Lagging) و پیشرو (Leading / Performance Drivers):</strong> سنجه‌های تاخیری (مثل سود خالص یا بازده حقوق صاحبان سهام ROE) خروجی نهایی هستند؛ اما سنجه‌های پیشرو (مثل نرخ رضایت مشتری، زمان سیکل سفارش، ساعات آموزش کارکنان) محرک‌های زنده خلق آن خروجی‌ها هستند.
+3. <strong>توازن میان ذینفعان بیرونی (سهامداران و مشتریان) و فرآیندهای درونی (عملیات و پرسنل).</strong>
+4. <strong>توازن میان اهداف کوتاه‌مدت عملیاتی و جهت‌گیری‌های بلندمدت استراتژیک.</strong></p>
+<h3 id="the-4-perspectives">۲.۲. مناظر چهارگانه کارت امتیازی متوازن (The 4 Perspectives)</h3>
+<div class="my-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+      <h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">۱. منظر مالی (Financial Perspective)</h3>
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      <strong>سوال کلیدی:</strong> برای موفقیت مالی و جلب رضایت سهامداران، چه عملکردی باید ارائه دهیم؟<br>
+      <strong>دو بازوی اصلی ارزش مالی:</strong><br>
+      • <em>استراتژی رشد درآمد (Revenue Growth):</em> ورود به بازارهای جدید، محصولات نو، افزایش ارزش سبد مشتریان.<br>
+      • <em>استراتژی بهره‌وری (Productivity):</em> کاهش بهای تمام‌شده، حذف اتلاف‌ها، و بهره‌برداری بهینه از دارایی‌های ثابت و در گردش ($ROA, ROCE$).
+    </p>
+  </div>
+
+  <div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-sky-500"></span>
+      <h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">۲. منظر مشتری (Customer Perspective)</h3>
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      <strong>سوال کلیدی:</strong> برای تحقق مقاصد مالی، چه ارزشی باید به مشتریان هدف ارائه دهیم؟<br>
+      <strong>ارزش پیشنهادی مشتری (Customer Value Proposition):</strong> برگرفته از مدل ۳گانه مایکل تریسی و فرد ویرسما:<br>
+      • <em>سرآمدی عملیاتی (Operational Excellence):</em> قیمت رقابتی، سرعت، دقت و دسترسی آسان (مانند وال‌مارت یا مک‌دونالد).<br>
+      • <em>رهبری محصول (Product Leadership):</em> نوآوری خط‌شکن، کارایی بالاتر از استاندارد بازار و پرستیژ (مانند اپل یا مرسدس بنز).<br>
+      • <em>صمیمیت با مشتری (Customer Intimacy):</em> سفارشی‌سازی راه‌حل، خدمات مشاوره پیوسته و رابطه بلندمدت.
+    </p>
+  </div>
+
+  <div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+      <h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">۳. منظر فرآیندهای داخلی (Internal Business Processes)</h3>
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      <strong>سوال کلیدی:</strong> برای خشنودی مشتریان و سهامداران، در چه فرآیندهایی باید سرآمد شویم؟<br>
+      <strong>چهار خوشه فرآیندی حیاتی:</strong><br>
+      ۱. <em>مدیریت عملیات:</em> تامین، تولید، انبارداری و توزیع کارا.<br>
+      ۲. <em>مدیریت مشتری:</em> گزینش، جذب، حفظ و توسعه فروش به مشتریان سودآور.<br>
+      ۳. <em>نوآوری:</em> شناسایی فرصت‌های بازار، تحقیق و توسعه ($R&D$)، طراحی محصول جدید و تجاری‌سازی سریع.<br>
+      ۴. <em>قوانین و محیط‌زیست:</em> رعایت استانداردهای زیست‌محیطی ($ESG$)، ایمنی، بهداشت شغلی و مسئولیت اجتماعی.
+    </p>
+  </div>
+
+  <div class="p-5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-sm">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="w-3 h-3 rounded-full bg-purple-500"></span>
+      <h3 class="font-bold text-slate-900 dark:text-slate-100 text-sm">۴. منظر یادگیری و رشد (Learning & Growth)</h3>
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      <strong>سوال کلیدی:</strong> برای دستیابی به اهداف سه منظر بالا، چگونه باید قابلیت‌ها و توانمندی‌هایمان را توسعه دهیم؟<br>
+      <strong>سه ستون دارایی‌های ناملموس (Intangible Assets):</strong><br>
+      • <em>سرمایه انسانی (Human Capital):</em> مهارت‌ها، شایستگی‌های رفتاری و تخصص مشاغل کلیدی استراتژیک.<br>
+      • <em>سرمایه اطلاعاتی (Information Capital):</em> پایگاه‌های داده، زیرساخت نرم‌افزاری، شبکه‌ها و سیستم‌های تصمیم‌یار.<br>
+      • <em>سرمایه سازمانی (Organization Capital):</em> فرهنگ مشارکتی، رهبری تحول‌آفرین، همسویی انگیزشی و کار تیمی.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="the-strategy-map">۳. معماری نقشه استراتژی (The Strategy Map) و زنجیره علی و معلولی</h2>
+<p>نقشه استراتژی، بازنمایی بصری رابطه علی و معلولی ($Cause-and-Effect$) میان اهداف استراتژیک در طول مناظر چهارگانه است. فرضیه استراتژی از <strong>پایین به بالا</strong> جریان دارد:</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-bold text-amber-400 text-sm mb-6">
+    زنجیره علی و معلولی خلق ارزش در نقشه استراتژی (از پایین به بالا)
+  </div>
+
+  <div class="space-y-4 text-xs md:text-sm">
+    <div class="p-4 bg-emerald-950/60 border border-emerald-500/40 rounded-xl flex items-center justify-between">
+      <div>
+        <span class="text-emerald-400 font-bold block mb-1">منظر مالی: نتایج نهایی سهامداران</span>
+        <span class="text-slate-300">ارتقای بازده سرمایه ($ROCE$) = استراتژی رشد درآمد (فروش محصولات پریمیوم) + استراتژی بهره‌وری (کاهش ضایعات تولید)</span>
+      </div>
+      <span class="text-emerald-400 font-black text-xl">▲</span>
+    </div>
+
+    <div class="p-4 bg-sky-950/60 border border-sky-500/40 rounded-xl flex items-center justify-between">
+      <div>
+        <span class="text-sky-400 font-bold block mb-1">منظر مشتری: ارزش پیشنهادی متمایز</span>
+        <span class="text-slate-300">جذب مشتریان وفادار از طریق تحویل به‌موقع ($OTIF > ۹۸\%$)، کیفیت تضمین‌شده و تجربه خرید سفارشی</span>
+      </div>
+      <span class="text-sky-400 font-black text-xl">▲</span>
+    </div>
+
+    <div class="p-4 bg-amber-950/60 border border-amber-500/40 rounded-xl flex items-center justify-between">
+      <div>
+        <span class="text-amber-400 font-bold block mb-1">منظر فرآیندهای داخلی: تعالی عملیاتی و نوآوری</span>
+        <span class="text-slate-300">کاهش زمان چرخه سفارش، پیاده‌سازی مدیریت کیفیت جامع ($TQM$)، توسعه محصولات سازگار با محیط‌زیست</span>
+      </div>
+      <span class="text-amber-400 font-black text-xl">▲</span>
+    </div>
+
+    <div class="p-4 bg-purple-950/60 border border-purple-500/40 rounded-xl flex items-center justify-between">
+      <div>
+        <span class="text-purple-400 font-bold block mb-1">منظر یادگیری و رشد: فونداسیون زیرساختی</span>
+        <span class="text-slate-300">آموزش شایستگی‌های مهندسی، پیاده‌سازی سیستم یکپارچه $ERP$، فرهنگ تقدیر از نوآوری و چابکی</span>
+      </div>
+      <span class="text-purple-400 font-bold text-xs bg-purple-900/50 px-2 py-1 rounded">نقطه آغاز</span>
+    </div>
+  </div>
+</div>
+
+<h3 id="mobil-namr">۳.۱. مطالعه موردی جهانی: تحول شگفت‌انگیز شرکت موبیل (Mobil NAM&amp;R)</h3>
+<p>دکتر خطیبی به بررسی دقیق کیس کمپانی Mobil Oil (بخش پالایش و بازاریابی آمریکای شمالی) پرداختند:
+- <strong>وضعیت بحرانی (۱۹۹۲):</strong> رتبه آخر در سودآوری میان تمام شرکت‌های نفتی آمریکا، جریان نقدینگی منفی ۵۰۰ میلیون دلار در سال و بازده دارایی اندک.
+- <strong>رویکرد تحول با نقشه استراتژی:</strong>
+  - <em>تحقیقات بازار:</em> کشف این نکته که ۲۰٪ مشتریان حساس به قیمت بنزین هستند، اما ۸۰٪ حاضرند برای سوخت باکیفیت، جایگاه تمیز، سرویس بهداشتی استریل و پرسنل خوش‌برخورد پول بیشتری پرداخت کنند.
+  - <em>ارزش پیشنهادی:</em> معرفی برند «Friendly Serve» و فناوری پرداخت الکترونیک سریع Speedpass.
+  - <em>نقشه استراتژی:</em> پیوند دادن آموزش پرسنل جایگاه‌ها و بستر IT با سرعت خدمت‌رسانی، افزایش رضایت مشتری، و نهایتاً جهش حاشیه سود هر گالن بنزین.
+- <strong>دستاورد اعجاب‌انگیز (۱۹۹۵):</strong> صعود از رتبه آخر به <strong>رتبه اول سودآوری</strong> در صنعت نفت آمریکا و تولید سالانه ۱ میلیارد دلار جریان نقد خالص مازاد!</p>
+<h3 id="_61">۳.۲. تعدیل معماری نقشه استراتژی در شرکت‌های دولتی و غیرانتفاعی</h3>
+<p>در بخش دولتی و شهرداری‌ها، هدف نهایی «حداکثرسازی سود سهامدار» نیست؛ بلکه <strong>«تحقق ماموریت سازمانی و خدمت به شهروندان»</strong> است.
+- <strong>تغییر معماری نقشه:</strong> در سازمان‌های عمومی، منظر مالی در ردیف بالا قرار نمی‌گیرد؛ بلکه در کنار منظر فرآیندها به عنوان یک قید بودجه‌ای دیده می‌شود. در صدر نقشه، <strong>منظر شهروندان / جامعه</strong> و تحقق مأموریت قانونی می‌نشیند (مطالعه موردی موفق شهر شارلوت City of Charlotte در کارولینای شمالی).</p>
+<hr />
+<h2 id="the-5-principles-of-sfo">۴. پنج اصل سازمان استراتژی‌محور (The 5 Principles of SFO)</h2>
+<p>کاپلان و نورتون پس از مشاهده سازمان‌های موفق در پیاده‌سازی BSC، الگوی رفتاری آن‌ها را در قالب <strong>پنج اصل سازمان استراتژی‌محور (Strategy-Focused Organization)</strong> مدون ساختند:</p>
+<div class="my-6 space-y-4">
+  <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+    <div class="flex items-center gap-2 mb-2 font-bold text-slate-800 dark:text-slate-100 text-sm">
+      <span class="px-2 py-0.5 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 rounded text-xs">اصل اول</span>
+      استراتژی را به اصطلاحات عملیاتی ترجمه کنید (Translate Strategy to Operational Terms)
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      استراتژی تا زمانی که در قالب مفاهیم مجرد بیانیه ماموریت و چشم‌انداز باقی بماند، دردی را دوا نمی‌کند. نقشه استراتژی و کارت امتیازی متوازن، چشم‌انداز مبهم را به اهداف کمی، شاخص‌های عینی ($KPI$)، مقادیر هدف ($Targets$) و برنامه‌های اقدام ($Strategic\,Initiatives$) تبدیل می‌کنند.
+    </p>
+  </div>
+
+  <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+    <div class="flex items-center gap-2 mb-2 font-bold text-slate-800 dark:text-slate-100 text-sm">
+      <span class="px-2 py-0.5 bg-sky-100 dark:bg-sky-900/50 text-sky-700 dark:text-sky-300 rounded text-xs">اصل دوم</span>
+      سازمان را در جهت تحقق استراتژی همسو کنید (Align the Organization to the Strategy)
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      سیلوهای سازمانی (دپارتمان‌های جزیره‌ای) قاتل استراتژی هستند. هلدینگ باید کارت امتیازی شرکتی ($Corporate\,BSC$) را تدوین کند و تمام واحدهای کسب‌وکار ($SBU$) و واحدهای خدمات مشترک ($SSU$ مانند منابع انسانی، مالی و IT) را از طریق قراردادهای سطح خدمت ($SLA$) به آن پیوند بزند.
+    </p>
+  </div>
+
+  <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+    <div class="flex items-center gap-2 mb-2 font-bold text-slate-800 dark:text-slate-100 text-sm">
+      <span class="px-2 py-0.5 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 rounded text-xs">اصل سوم</span>
+      استراتژی را به کار هر روز هر کس تبدیل کنید (Make Strategy Everyone's Everyday Job)
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      استراتژی از اتاق مدیرعامل اجرا نمی‌شود، بلکه توسط کارگر خط تولید و کارشناس فروش در خط مقدم محقق می‌شود. این اصل از طریق ۳ گام تحقق می‌یابد:
+      ۱. <em>ایجاد آگاهی استراتژیک (Strategic Awareness):</em> ارتباط شفاف مدیران ارشد با بدنه سازمان.
+      ۲. <em>همسوسازی اهداف فردی (Personal Scorecards):</em> هر کارمند اهداف شغلی سالانه خود را با کارت واحد متبوعش تطبیق دهد.
+      ۳. <em>پرداخت پاداش متوازن (Incentive Compensation):</em> در شرکت موبیل، تا ۳۰٪ پاداش پرسنل به عملکرد کارت متوازن گره خورد.
+    </p>
+  </div>
+
+  <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+    <div class="flex items-center gap-2 mb-2 font-bold text-slate-800 dark:text-slate-100 text-sm">
+      <span class="px-2 py-0.5 bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300 rounded text-xs">اصل چهارم</span>
+      استراتژی را به یک فرآیند مستمر تبدیل کنید (Make Strategy a Continual Process)
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      استراتژی پروژه‌ای نیست که یک بار در سال نوشته و کنار گذاشته شود. استراتژی یک چرخه بی‌پایان بازخورد و یادگیری دوحلقه‌ای ($Double-Loop\,Learning$) است که به بودجه‌بندی پویا و جلسات ساختاریافته گره خورده است.
+    </p>
+  </div>
+
+  <div class="p-4 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl">
+    <div class="flex items-center gap-2 mb-2 font-bold text-slate-800 dark:text-slate-100 text-sm">
+      <span class="px-2 py-0.5 bg-rose-100 dark:bg-rose-900/50 text-rose-700 dark:text-rose-300 rounded text-xs">اصل پنجم</span>
+      ایجاد تحول از طریق رهبری مدیریت ارشد (Mobilize Change through Executive Leadership)
+    </div>
+    <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+      استراتژی نیازمند تغییر عمیق رفتاری است. مدیرعامل باید حس اضطرار ناشی از «سکوی مشتعل» ($Burning\,Platform$) را القا کند، حاکمیت استراتژی را در دست گیرد، و با تأسیس «دفتر مدیریت استراتژیک» ($Office\,of\,Strategy\,Management - OSM$)، متولی واحدی برای رصد مستمر نقشه تعیین نماید.
+    </p>
+  </div>
+</div>
+
+<hr />
+<h2 id="_62">۵. فرآیند مستمر و معماری سه‌گانه جلسات مدیریتی</h2>
+<p>یکی از درخشان‌ترین بخش‌های تدریس دکتر خطیبی در این جلسه، تفکیک <strong>بودجه‌بندی استراتژیک</strong> و <strong>معماری سه‌گانه جلسات مدیریتی</strong> بود.</p>
+<h3 id="opex-stratex">۵.۱. تفکیک بودجه عملیاتی (OpEx) از بودجه استراتژیک (StratEx)</h3>
+<p>در سازمان‌های سنتی، بودجه سالانه یکپارچه بسته می‌شود؛ به این معنا که در زمان کسری بودجه، اولین ردیف‌هایی که حذف می‌شوند، پروژه‌های آموزشی، R&amp;D، فناوری اطلاعات و بازاریابی هستند (یعنی دقیقاً موتورهای محرک آینده سازمان!).
+- <strong>بودجه عملیاتی (Operating Expense - OpEx):</strong> هزینه‌های جاری برای چرخش وضع موجود (حقوق جاری، مواد اولیه، اجاره، قبوض).
+- <strong>بودجه استراتژیک (Strategic Expense - StratEx):</strong> منابع اختصاص‌یافته برای بستن شکاف‌های استراتژیک نقشه (خرید لایسنس جدید، آموزش تحول دیجیتال، تغییر فرمول محصول). در سازمان‌های استراتژی‌محور، بودجه $StratEx$ دارای حساب جداگانه است و مدیران اجازه ندارند برای پوشش کسری عملیاتی، به آن دست‌اندازی کنند.</p>
+<h3 id="_63">۵.۲. معماری سه‌گانه جلسات بازنگری و تطبیق استراتژی</h3>
+<div class="my-6 overflow-x-auto">
+  <table class="w-full text-right border-collapse text-xs md:text-sm bg-white dark:bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-200 dark:border-slate-800">
+    <thead class="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 font-bold">
+      <tr>
+        <th class="p-3 border-b">نوع جلسه مدیریتی</th>
+        <th class="p-3 border-b">سوال کلیدی و بنیادین</th>
+        <th class="p-3 border-b">دوره تناوب و مخاطبان</th>
+        <th class="p-3 border-b">دستور جلسه و مطالعه موردی</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-slate-700 dark:text-slate-300">
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-emerald-600 dark:text-emerald-400">۱. جلسات بازنگری عملیات<br><span class="text-xs text-slate-500">Operational Review</span></td>
+        <td class="p-3 font-bold text-slate-800 dark:text-slate-100">«آیا عملیات ما تحت کنترل است؟»</td>
+        <td class="p-3">هفتگی، دوهفته‌یک‌بار یا روزانه<br>مدیران صف، سرپرستان خط و مدیران میانی</td>
+        <td class="p-3">بررسی انحرافات مقطعی از بودجه، توقف خط، شکایات روزانه، حل مسائل فوری.<br><strong>کیس:</strong> دپارتمان پلیس نیویورک ($NYPD$) و سیستم $CompStat$ برای پایش روزانه جرایم محلات.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-sky-600 dark:text-sky-400">۲. جلسات بازنگری استراتژی<br><span class="text-xs text-slate-500">Strategy Review</span></td>
+        <td class="p-3 font-bold text-slate-800 dark:text-slate-100">«آیا به خوبی استراتژی را اجرا می‌کنیم؟»</td>
+        <td class="p-3">ماهانه (مدت زمان: ۳ تا ۵ ساعت)<br>تیم رهبری ارشد، مدیرعامل و مدیران ارشد دپارتمان‌ها</td>
+        <td class="p-3">بررسی شاخص‌های نقشه استراتژی و کارت متوازن؛ ریشه‌یابی چرایی عدم تحقق مقادیر هدف، تصویب اقدامات اصلاحی.<br><strong>کیس:</strong> شرکت راه‌آهن $HSBC\,Rail$ برای همسوسازی مجدد اهداف سودآوری واگن‌ها.</td>
+      </tr>
+      <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-rose-600 dark:text-rose-400">۳. جلسات آزمون و تطبیق استراتژی<br><span class="text-xs text-slate-500">Strategy Testing & Adapting</span></td>
+        <td class="p-3 font-bold text-slate-800 dark:text-slate-100">«آیا اساساً استراتژی درستی در پیش گرفته‌ایم؟»</td>
+        <td class="p-3">فصلی یا سالانه (کارگاه ۲ یا ۳ روزه برون‌سازمانی)<br>هیئت مدیره، مدیرعامل و مشاوران کلیدی</td>
+        <td class="p-3">تست اعتبار فرضیات بنیادین نقشه استراتژی؛ تحلیل‌های اقتصادسنجی و همبستگی شاخص‌ها؛ تغییر مسیر در صورت رد فرضیه.<br><strong>کیس:</strong> زنجیره فروشگاه‌های $Store\,24$ (تست فرضیه سرعت در برابر سرگرمی مشتری).</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+<h2 id="npc">۶. مطالعه موردی بومی: شرکت ملی صنایع پتروشیمی ایران (NPC)</h2>
+<p>دکتر خطیبی به کالبدشکافی پروژه جامع تدوین و اجرای برنامه استراتژیک <strong>شرکت ملی صنایع پتروشیمی (NPC)</strong> پرداختند؛ پروژه‌ای که حاصل ۹ ماه ممارست، کارگروه‌های تخصصی ستاد راهبردی و جلسات ارزیابی خرد جمعی بود:
+1. <strong>الگوی جامع مدیریت استراتژیک در پتروشیمی:</strong>
+   - تبیین مأموریت صنعت پتروشیمی در تبدیل مزیت هیدروکربوری کشور به ثروت پایدار و محصولات با ارزش افزوده بالا (پرهیز از خام‌فروشی).
+   - تحلیل عوامل داخلی ($IFE$) و خارجی ($EFE$) با توجه به بازارهای صادراتی آسیا، خوراک گاز، و نوسانات جهانی قیمت پلیمرها.
+2. <strong>ماتریس TOWS و انتخاب استراتژی‌ها:</strong>
+   - بهره‌برداری از نقاط قوت داخلی برای تصاحب فرصت‌های جهانی (استراتژی‌های SO: توسعه بازارهای منطقه‌ای، تنوع‌بخشی به گرید محصولات پلیمری).
+   - خنثی‌سازی تهدیدات تحریمی و تامین کاتالیست‌ها (استراتژی‌های ST: بومی‌سازی کاتالیست‌های استراتژیک و توسعه زنجیره تامین داخلی).
+3. <strong>ترسیم نقشه استراتژی و کارت امتیازی در NPC:</strong>
+   - ایجاد توازن میان بازدهی سرمایه‌گذاری‌های مگاپروژه‌ها (منظر مالی) با جلب رضایت مشتریان بین‌المللی از نظر ثبات مشخصات فنی محصول (منظر مشتری).
+   - چالش اصلی جاری‌سازی: درگیر کردن مدیران مجتمع‌های پتروشیمی جنوب (عسلویه و ماهشهر) در فهم شاخص‌های رشد و یادگیری، و پرهیز از تکیه انحصاری بر حجم تناژ تولید روزانه.</p>
+<hr />
+<h2 id="_64">۷. گزاره‌های طلایی دکتر خطیبی در جلسه پنجم</h2>
+<blockquote>
+<p><strong>«استراتژی یک فرضیه علمی است، نه یک وحی منزل. اگر نتوانید فرضیه‌تان را در قالب نقشه علت و معلولی ترسیم کنید، نمی‌دانید چه چیز را می‌خواهید کنترل کنید.»</strong></p>
+<p><strong>«اتصال پاداش به کارت امتیازی متوازن مانند سوخت راکت است؛ اگر نقشه استراتژی درستی نداشته باشید، با پاداش دادن صرفاً با سرعت بیشتری سازمان را به دیوار خواهید کوبید!»</strong></p>
+<p><strong>«در جلسات ماهانه استراتژی، گزارش‌خوانی و شنیدن داستان‌های تکراری ممنوع است. این جلسات دادگاه محاکمه نیست؛ اتاق همفکری برای حل موانعی است که مانع عبور شاخص‌ها از خط قرمز به سبز شده‌اند.»</strong></p>
+<p><strong>«مدیران ارشد اغلب می‌گویند پرسنل خط مقدم استراتژی را نمی‌فهمند؛ اما حقیقت آن است که رهبران سازمان نتوانسته‌اند مأموریت را به زبان ساده و قابل لمس روزمره ترجمه کنند. استراتژی وقتی زنده است که یک تکنسین انبار بداند کار روزمره‌اش چگونه ارزش سهامدار و رضایت مشتری را رقم می‌زند.»</strong></p>
+</blockquote>
         </div>
       </div>
 

@@ -43,24 +43,29 @@
   <!-- Header Section -->
   <header class="gradient-header text-white pt-8 pb-6 px-4 md:px-8 shadow-xl relative overflow-hidden">
     <div class="max-w-6xl mx-auto relative z-10">
-      <div class="flex flex-wrap items-center justify-between gap-4">
+      
+      <!-- Top badges -->
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+        <div class="flex items-center gap-2">
+          <a href="../" class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-xl text-xs font-bold transition-all border border-white/20">
+            <span>🏠 پرتال اصلی و انتخاب کلاس</span>
+          </a>
+          <span class="bg-amber-400/20 text-amber-300 border border-amber-400/30 px-3 py-1 rounded-xl text-xs font-bold">
+            دانشکده اقتصاد دانشگاه تهران
+          </span>
+        </div>
+        <div class="text-xs text-blue-200 font-mono">
+          Course ID: <span class="font-bold text-white">mba-sm05--06-1</span>
+        </div>
+      </div>
+
+      <!-- Course Title and Meta -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mt-2">
         <div>
-          <div class="flex flex-wrap items-center gap-2 mb-3">
-            <div class="inline-flex items-center gap-2 bg-blue-500/25 border border-blue-400/40 rounded-full px-4 py-1 text-xs font-semibold">
-              <span>🎓 دانشکده اقتصاد دانشگاه تهران</span>
-              <span>•</span>
-              <span>گرایش مدیریت استراتژیک MBA (کد mba-sm05--06-1)</span>
-            </div>
-            <!-- Single Back Button -->
-            <a href="../" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white border border-white/30 rounded-full px-3.5 py-1 text-xs font-bold transition-all shadow-sm hover:scale-105 backdrop-blur-md">
-              <span>🏠 پرتال اصلی و انتخاب کلاس</span>
-              <span class="text-xs">➔</span>
-            </a>
-          </div>
-          <h1 class="text-3xl md:text-4xl font-black tracking-tight mb-2">
-            طرح تدوین کسب‌وکار (BP)
+          <h1 class="text-2xl md:text-4xl font-black tracking-tight text-white mb-2">
+            طرح تدوین کسب‌وکار (Business Plan)
           </h1>
-          <p class="text-blue-100 text-sm md:text-base font-normal max-w-2xl leading-relaxed">
+          <p class="text-blue-100 text-xs md:text-sm max-w-2xl leading-relaxed">
             سند راهبردی اعتبارسنجی عقلانیت اقتصادی، امکان‌سنجی پویا و انضباط جریان نقدینگی | مدرس: <strong class="text-white font-semibold">استاد رحیم‌زاده</strong> | <div class="inline-flex items-center gap-2 mt-1">
   <span class="text-blue-200 text-xs md:text-sm font-normal">تنظیم و گردآوری: <strong class="text-white font-bold">پارسا رضائی</strong></span>
   <a href="https://www.linkedin.com/in/parsarezaie/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-[#0077b5] hover:bg-[#005e93] text-white px-2.5 py-0.5 rounded-lg text-xs font-bold shadow transition-all hover:scale-105 border border-white/20">
@@ -85,6 +90,9 @@
         </button>
         <button onclick="switchTab('session1')" id="tab-session1" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           جلسه ۱: فلسفه وجودی، تثلیث BM/FS/BP و مهندسی ارزش
+        </button>
+        <button onclick="switchTab('books')" id="tab-books" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          📚 قفسه کتاب و مراجع علمی
         </button>
         <button onclick="switchTab('handbook')" id="tab-handbook" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           📘 هندبوک جامع و کاربردی
@@ -120,11 +128,26 @@
         </div>
       </div>
 
+      <!-- Quick Book Shelf Preview Callout -->
+      <div class="p-5 rounded-2xl bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 border border-indigo-800/40 text-white flex flex-col md:flex-row items-center justify-between gap-4 shadow-md">
+        <div class="flex items-center gap-3">
+          <span class="text-3xl">📚</span>
+          <div>
+            <h4 class="text-sm font-bold text-amber-400">کتاب‌شناسی راهبردی تدریس استاد رحیم‌زاده</h4>
+            <p class="text-xs text-slate-300">۱۲ کتاب مرجع استاندارد بین‌المللی (استروالدر، بیل اولت، کارول دوک، لری کیلی، سولومون، پورتر، و کامفار یونیدو)</p>
+          </div>
+        </div>
+        <button onclick="switchTab('books')" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold transition-all shadow shrink-0">
+          مشاهده قفسه کتاب‌ها ←
+        </button>
+      </div>
+
       <!-- Core Triad Architecture Cards -->
       <div>
         <h3 class="text-lg font-black text-slate-900 mb-4 flex items-center gap-2">
-          <span>🏛️ تثلیث معماری کسب‌وکار: زنجیره منطقی تبدیل ایده به ارزش</span>
+          <span>🏛️ معماری تثلیث کسب‌وکار: زنجیره اعتبارسنجی از ایده تا اجرا</span>
         </h3>
+        
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
@@ -351,6 +374,10 @@
     <div class="p-4 rounded-xl bg-slate-800/70 border border-slate-700/60">
       <div class="text-amber-400 font-bold text-sm mb-2">۶. سه‌گانه ارزش و لجستیک زنجیره سرد</div>
       <p class="text-xs text-slate-300 leading-relaxed">خلق ارزش، تحویل ارزش و کسب ارزش، اقتصاد توجه و درس‌های راهبردی کیس بستنی دایتی.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/70 border border-slate-700/60 md:col-span-2 lg:col-span-3">
+      <div class="text-amber-400 font-bold text-sm mb-2">۷. کتاب‌شناسی و مراجع مطالعاتی جامع دوره</div>
+      <p class="text-xs text-slate-300 leading-relaxed">فهرست کامل کتب مرجع معرفی‌شده توسط استاد رحیم‌زاده: بوم استروالدر، ۲۴ گام بیل اولت، تفکر رشد کارول دوک، ۱۰ نوع نوآوری کیلی، رفتار مصرف‌کننده سولومون، پورتر و استانداردهای کامفار یونیدو.</p>
     </div>
   </div>
 </div>
@@ -744,11 +771,402 @@
 - به جای ارائه جداول اکسل خوش‌بینانه، با محاسبات استاندارد نرم‌افزار کامفار ۳، انضباط جریان نقدینگی را تضمین نماید.
 - از آزمون بیرحم وکیل مدافع شیطان در مرحله امکان‌سنجی سربلند بیرون آمده باشد.
 - با مهندسی زنجیره تأمین و لجستیک، پیوند ناگسستنی میان خلق، تحویل و کسب ارزش برقرار سازد.</p>
+<hr />
+<h2 id="_22">۱۲. کتاب‌شناسی جامع و مراجع مطالعاتی معرفی‌شده توسط استاد رحیم‌زاده</h2>
+<p>یکی از محوری‌ترین تأکیدات استاد رحیم‌زاده در جلسه اول، ضرورت تجهیز استراتژیست‌ها و طراحان طرح کسب‌وکار به <strong>«جعبه‌ابزار چندرشته‌ای و مراجع تراز اول بین‌المللی»</strong> بود. ایشان تصریح کردند که تدوین یک طرح کسب‌وکار برنده، نیازمند تلفیق بینش‌های برآمده از «تفکر طراحی»، «نوآوری در مدل درآمدی»، «روانشناسی رفتار مصرف‌کننده» و «مدل‌سازی مالی استاندارد» است و هیچ‌یک از کتب یا ابزارها به تنهایی کفایت نمی‌کنند.</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    📚 ماتریس یکپارچه کتب مرجع تدوین طرح کسب‌وکار (معرفی‌شده در جلسه اول)
+  </div>
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-xs">
+      <thead class="bg-slate-800 text-amber-400">
+        <tr>
+          <th class="p-3 border-b border-slate-700">ردیف</th>
+          <th class="p-3 border-b border-slate-700">عنوان کتاب (فارسی / انگلیسی)</th>
+          <th class="p-3 border-b border-slate-700">مؤلف / صاحب‌نظر</th>
+          <th class="p-3 border-b border-slate-700">فاز بهره‌برداری در فرآیند BP</th>
+          <th class="p-3 border-b border-slate-700">رهنمود و آموزه کلیدی استاد رحیم‌زاده</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-700/50 bg-slate-900/60 text-slate-200">
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">01</td>
+          <td class="p-3 font-semibold text-white">خلق مدل کسب‌وکار<br><span class="font-mono text-slate-400 text-[11px]">Business Model Generation</span></td>
+          <td class="p-3">الکساندر استروالدر و ایو پیگنیور<br><span class="font-mono text-slate-400 text-[11px]">(A. Osterwalder & Y. Pigneur)</span></td>
+          <td class="p-3 text-blue-300">مفهوم‌سازی و منطق ارزش (BM)</td>
+          <td class="p-3 text-slate-300">نخستین مرجع ضروری؛ پاسخ به این پرسش که موتور خلق و کسب ثروت بنگاه در قالب ۹ بلوک چگونه کار می‌کند.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">02</td>
+          <td class="p-3 font-semibold text-white">راه‌اندازی کسب‌وکار: ۲۴ گام برای موفقیت<br><span class="font-mono text-slate-400 text-[11px]">Disciplined Entrepreneurship</span></td>
+          <td class="p-3">بیل اولت<br><span class="font-mono text-slate-400 text-[11px]">(Bill Aulet - MIT Sloan)</span></td>
+          <td class="p-3 text-emerald-300">نقشه راه عملیاتی استارتاپ</td>
+          <td class="p-3 text-slate-300">رویکرد گام‌به‌گام و منضبط برای گذار از ایده به بازار، محاسبه دقیق TAM، پرسونا و اقتصاد واحد (CAC/LTV).</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">03</td>
+          <td class="p-3 font-semibold text-white">طراحی ارزش پیشنهادی<br><span class="font-mono text-slate-400 text-[11px]">Value Proposition Design</span></td>
+          <td class="p-3">الکساندر استروالدر و همکاران<br><span class="font-mono text-slate-400 text-[11px]">(Strategyzer Series)</span></td>
+          <td class="p-3 text-blue-300">تناسب محصول با بازار (PMF)</td>
+          <td class="p-3 text-slate-300">مکمل بوم مدل؛ کالبدشکافی دقیق دردهای مشتری، دستاوردها و وظایف او برای ممانعت قطعی از تله ابزارمحوری.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">04</td>
+          <td class="p-3 font-semibold text-white">مدل کسب‌وکار شما (بوم شخصی)<br><span class="font-mono text-slate-400 text-[11px]">Business Model You</span></td>
+          <td class="p-3">تیم کلارک و همکاران<br><span class="font-mono text-slate-400 text-[11px]">(Tim Clark, Osterwalder)</span></td>
+          <td class="p-3 text-purple-300">شایستگی‌های محوری بنیان‌گذار</td>
+          <td class="p-3 text-slate-300">کاربست ابزارهای بوم در سطح توانمندی‌های فردی؛ هم‌راستاسازی مهارت‌های تیم کارآفرین با ماهیت طرح.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">05</td>
+          <td class="p-3 font-semibold text-white">طراحی برای رشد / تفکر طراحی در کسب‌وکار<br><span class="font-mono text-slate-400 text-[11px]">Designing for Growth / Design Thinking</span></td>
+          <td class="p-3">ژان لیدکا و تیم اوگیلوی / آت‌مایر<br><span class="font-mono text-slate-400 text-[11px]">(J. Liedtka & T. Ogilvie)</span></td>
+          <td class="p-3 text-amber-300">امکان‌سنجی پویا و حل مسئله</td>
+          <td class="p-3 text-slate-300">به‌کارگیری تفکر طراحی در تمام ارکان BP؛ فرضیه‌سازی جسورانه، آزمایش سریع و پرهیز از دگماتیسم مدیریتی.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">06</td>
+          <td class="p-3 font-semibold text-white">۱۰ نوع نوآوری: نظم حاکم بر جهش‌ها<br><span class="font-mono text-slate-400 text-[11px]">Ten Types of Innovation</span></td>
+          <td class="p-3">لری کیلی و مؤسسه دابلین<br><span class="font-mono text-slate-400 text-[11px]">(Larry Keeley - Doblin/Deloitte)</span></td>
+          <td class="p-3 text-cyan-300">خلق مزیت رقابتی پایدار</td>
+          <td class="p-3 text-slate-300">ضروری برای گسترش نوآوری فراتر از محصول (نوآوری در مدل سودآوری، شبکه توزیع، فرآیند، برند و تجربه مشتری).</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">07</td>
+          <td class="p-3 font-semibold text-white">شرکت شکست‌ناپذیر<br><span class="font-mono text-slate-400 text-[11px]">The Invincible Company</span></td>
+          <td class="p-3">الکساندر استروالدر و همکاران<br><span class="font-mono text-slate-400 text-[11px]">(Strategyzer Series)</span></td>
+          <td class="p-3 text-emerald-300">تاب‌آوری سازمانی و بقای بلندمدت</td>
+          <td class="p-3 text-slate-300">مدیریت هم‌زمان سبد کسب‌وکارهای بهره‌برداری و اکتشافی در شرایط نااطمینانی و طوفان‌های اقتصادی.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">08</td>
+          <td class="p-3 font-semibold text-white">طرز فکر / ذهنیت: روانشناسی نوین موفقیت<br><span class="font-mono text-slate-400 text-[11px]">Mindset: The New Psychology of Success</span></td>
+          <td class="p-3">کارول دوک<br><span class="font-mono text-slate-400 text-[11px]">(Carol S. Dweck - Stanford)</span></td>
+          <td class="p-3 text-rose-300">پیش‌نیاز ذهنی و پارادایم بنیان‌گذار</td>
+          <td class="p-3 text-slate-300">«قبل از هر اقدامی حتماً این کتاب را بخوانید»؛ گذار از تفکر ثابت (تله اسب سریع‌تر) به تفکر رشد (حل نیاز حمل‌ونقل).</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">09</td>
+          <td class="p-3 font-semibold text-white">رفتار مصرف‌کننده: خریدن، داشتن، بودن<br><span class="font-mono text-slate-400 text-[11px]">Consumer Behavior: Buying, Having, Being</span></td>
+          <td class="p-3">مایکل آر. سولومون<br><span class="font-mono text-slate-400 text-[11px]">(Michael R. Solomon)</span></td>
+          <td class="p-3 text-blue-300">اقتصاد توجه و تحلیل تقاضا</td>
+          <td class="p-3 text-slate-300">تحلیل داده‌های عمیق ذائقه مشتری، باز کردن پنجره‌های توجه در ذهن مخاطب، و درک محرک‌های روانی تصمیم خرید.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">10</td>
+          <td class="p-3 font-semibold text-white">قهرمان و یاغی: کهن‌الگوها در برندینگ<br><span class="font-mono text-slate-400 text-[11px]">The Hero and the Outlaw</span></td>
+          <td class="p-3">مارگارت مارک و کارول پیرسون<br><span class="font-mono text-slate-400 text-[11px]">(M. Mark & C. Pearson / C.G. Jung)</span></td>
+          <td class="p-3 text-indigo-300">هویت برند و ارزش پیشنهادی</td>
+          <td class="p-3 text-slate-300">۱۲ کهن‌الگوی استاندارد یونگ (نقد ادعای زئوس)؛ هویت‌بخشی به برند (مانند قهرمان برای نایک، حاکم/کمال‌گرا برای بنز).</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">11</td>
+          <td class="p-3 font-semibold text-white">استراتژی رقابتی و مزیت رقابتی<br><span class="font-mono text-slate-400 text-[11px]">Competitive Strategy & Advantage</span></td>
+          <td class="p-3">مایکل پورتر<br><span class="font-mono text-slate-400 text-[11px]">(Michael E. Porter - Harvard)</span></td>
+          <td class="p-3 text-amber-300">تحلیل ساختار صنعت و رقابت</td>
+          <td class="p-3 text-slate-300">۵ نیروی رقابتی و تحلیل موانع ورود؛ با اصلاح بومی استاد رحیم‌زاده در وزن‌دهی به «اعتماد» و «شبکه توزیع مویرگی».</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">12</td>
+          <td class="p-3 font-semibold text-white">راهنمای امکان‌سنجی صنعتی یونیدو و کامفار<br><span class="font-mono text-slate-400 text-[11px]">UNIDO Feasibility Manual / Comfar III</span></td>
+          <td class="p-3">ورنر بهرنز و پیتر ام. هاورانک<br><span class="font-mono text-slate-400 text-[11px]">(W. Behrens & P.M. Hawranek)</span></td>
+          <td class="p-3 text-emerald-300">مدل‌سازی مالی و تحلیل حساسیت</td>
+          <td class="p-3 text-slate-300">استاندارد بین‌المللی ارزیابی اقتصادی پروژه‌ها؛ الزام قطعی خروجی‌های نسخه ۳ کامفار به همراه آزمون حساسیت تورمی.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h3 id="_23">۱۲.۱. شرح تفصیلی کتب و آموزه‌های کاربردی در بستر ایران</h3>
+<h4 id="strategyzer-series">۱. الکساندر استروالدر: چهارگانه استراتژایزر (Strategyzer Series)</h4>
+<p>استاد رحیم‌زاده آثار استروالدر را نقطه عطف ادبیات نوین کارآفرینی دانستند:
+- <strong>«خلق مدل کسب‌وکار» (BMG):</strong> با وجود گذشت ۱۵ سال از انتشار، این کتاب شالوده درک زبان مشترک تیم‌های کسب‌وکار است. استاد تأکید کردند که پیش‌گفتار اساتید برجسته ایرانی نظیر دکتر علینقی مشایخی (بنیان‌گذار دانشکده مدیریت و اقتصاد شریف) بر ترجمه این کتاب، ارزش والایی برای فهم بومی موضوع دارد.
+- <strong>«طراحی ارزش پیشنهادی» (VPD):</strong> ابزاری تکمیلی برای جراحی بخش ارزش پیشنهادی و بخش مشتریان. این کتاب به مدیر یاد می‌دهد که محصول صرفاً بسته‌بندی راه‌حل است؛ ارزش واقعی در کاهش رنج و رهانیدن مشتری از اضطراب نهفته است.
+- <strong>«شرکت شکست‌ناپذیر»:</strong> تمرکز بر بقای سازمان‌های چندمحصولی و نحوه جابه‌جایی منابع از کسب‌وکارهای در حال افول به موتورهای جدید ارزش‌آفرینی.</p>
+<h4 id="mit-disciplined-entrepreneurship">۲. بیل اولت: انضباط کارآفرینانه دانشگاه MIT (Disciplined Entrepreneurship)</h4>
+<p>بر خلاف دیدگاه‌های رمانتیک که کارآفرینی را نبوغ بدون ساختار می‌دانند، کتاب ۲۴ گام بیل اولت رویکردی کاملاً مهندسی، فرآیندی و سنجش‌پذیر ارائه می‌دهد. استاد رحیم‌زاده این کتاب را برای تیم‌هایی که در دام پیش‌بینی‌های فروش خوش‌بینانه می‌افتند، پادزهری حیاتی برشمردند.</p>
+<h4 id="mindset">۳. کارول دوک: روانشناسی طرز فکر (Mindset)</h4>
+<p>استاد با تأکید مکرر خطاب به دانشجویان فرمودند: «این کتاب را قبل از هر اقدامی بخوانید.» در تفکر ثابت (Fixed Mindset)، مدیر با اولین بازخورد منفی بازار ایده را رها کرده یا شروع به انکار واقعیت می‌کند. در نقطه مقابل، تفکر رشد (Growth Mindset) شکست در امکان‌سنجی را یادگیری کم‌هزینه تلقی کرده و فرضیات را با شجاعت اصلاح می‌کند.</p>
+<h4 id="ten-types-of-innovation">۴. لری کیلی: ۱۰ نوع نوآوری (Ten Types of Innovation)</h4>
+<p>استاد رحیم‌زاده هشدار دادند که بیش از ۹۰ درصد کارآفرینان تمام انرژی نوآوری خود را در «عملکرد محصول» حبس می‌کنند، در حالی که بالاترین حاشیه سود و غیرقابل تقلیدترین مزیت‌ها در نوآوری‌های ساختاری، کانال‌های توزیع، مدل سود و تجربیات برند (مانند کیس ناوگان اختصاصی دایتی) نهفته است.</p>
+<h4 id="hbr">۵. مقالات و کیس‌استادی‌های هاروارد بیزنس ریویو (HBR)</h4>
+<p>استاد به دانشجویان توصیه کردند که علاوه بر کتب فوق، مطالعه مستمر مقالات مرجع HBR پیرامون مدل‌های کسب‌وکار، تحول صنایع و پرونده‌های مطالعاتی (از مدل تولید انبوه هنری فورد تا استراتژی‌های زنجیره تأمین مدرن) را در برنامه پژوهشی هفتگی خود قرار دهند.</p>
       </div>
 
     </div>
 
-    <!-- TAB 3: HANDBOOK -->
+    <!-- TAB 3: BOOKS & REFERENCE SHELF -->
+    <div id="content-books" class="tab-content hidden space-y-8">
+      
+      <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-xl border border-indigo-900/40">
+        <div class="max-w-3xl space-y-2">
+          <span class="text-xs bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full font-bold border border-indigo-500/30">کتاب‌شناسی راهبردی تدریس استاد رحیم‌زاده</span>
+          <h2 class="text-xl md:text-3xl font-black text-white">📚 قفسه کتاب و مراجع علمی طرح تدوین کسب‌وکار</h2>
+          <p class="text-slate-300 text-xs md:text-sm leading-relaxed text-justify">
+            به تأکید استاد رحیم‌زاده، تدوین یک BP استاندارد حاصل تلاقی «تفکر طراحی»، «نوآوری در مدل درآمدی»، «روانشناسی رفتار مصرف‌کننده» و «مدل‌سازی مالی» است. در ادامه، ۱۲ کتاب مرجع اصلی تدریس‌شده توسط استاد به همراه رهنمود کاربردی هر یک آورده شده است.
+          </p>
+        </div>
+      </div>
+
+      <!-- Books Grid (12 Books + HBR + Domestic Forewords) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Book 1: Osterwalder BMG -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2.5 py-0.5 rounded-full font-bold">بوم مدل کسب‌وکار</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#01</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">خلق مدل کسب‌وکار</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Business Model Generation</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> الکساندر استروالدر و ایو پیگنیور<br>
+              <strong>کاربرد:</strong> مرجع کلاسیک طراحی بوم ۹ بخشی. استاد تأکید کردند که این کتاب نخستین پیش‌نیاز هر مدیری برای فهم زبان مشترک خلق و کسب ثروت است.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-blue-300">
+            <strong>نکته استاد:</strong> پیش‌گفتار دکتر علینقی مشایخی در ترجمه فارسی، تطبیق بومی ارزشمندی ارائه می‌دهد.
+          </div>
+        </div>
+
+        <!-- Book 2: Bill Aulet -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2.5 py-0.5 rounded-full font-bold">کارآفرینی منضبط MIT</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#02</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">راه‌اندازی کسب‌وکار: ۲۴ گام</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Disciplined Entrepreneurship</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> بیل اولت (Bill Aulet - دانشگاه MIT Sloan)<br>
+              <strong>کاربرد:</strong> ۲۴ گام مهندسی‌شده برای گذار از ایده به بیزنس پایدار، تحلیل اندازه بازار (TAM)، پرسونای کاربر نهایی و اقتصاد واحد (CAC / LTV).
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-emerald-300">
+            <strong>نکته استاد:</strong> پادزهر خوش‌بینی کاذب؛ کارآفرینی نبوغ بی‌قاعده نیست، بلکه فرآیندی منضبط است.
+          </div>
+        </div>
+
+        <!-- Book 3: Osterwalder VPD -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 px-2.5 py-0.5 rounded-full font-bold">تناسب محصول-بازار</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#03</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">طراحی ارزش پیشنهادی</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Value Proposition Design</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> الکساندر استروالدر و همکاران<br>
+              <strong>کاربرد:</strong> کالبدشکافی دردها (Pains)، دستاوردها (Gains) و وظایف مشتری (Customer Jobs) برای ممانعت از تله محصول‌محوری در نگارش BP.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-cyan-300">
+            <strong>نکته استاد:</strong> محصول صرفاً بسته‌بندی راه‌حل است؛ ارزش در کاهش درد روانی و هزینه‌های مشتری است.
+          </div>
+        </div>
+
+        <!-- Book 4: Business Model You -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-purple-500/20 text-purple-300 border border-purple-500/30 px-2.5 py-0.5 rounded-full font-bold">بوم مدل فردی</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#04</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">مدل کسب‌وکار شما</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Business Model You</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> تیم کلارک، استروالدر و پیگنیور<br>
+              <strong>کاربرد:</strong> نگاشت قابلیت‌ها، شایستگی‌های محوری و ارزش‌های تیم بنیان‌گذار و سنجش تناسب توانمندی‌های فردی با مأموریت تجاری شرکت.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-purple-300">
+            <strong>نکته استاد:</strong> قبل از طراحی بیزنس برای دیگران، باید بوم مهارت‌ها و نقاط اهرمی خودتان را شناخته باشید.
+          </div>
+        </div>
+
+        <!-- Book 5: Designing for Growth -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-amber-500/20 text-amber-300 border border-amber-500/30 px-2.5 py-0.5 rounded-full font-bold">تفکر طراحی</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#05</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">طراحی برای رشد / تفکر طراحی</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Designing for Growth</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> ژان لیدکا و تیم اوگیلوی / استیون آت‌مایر<br>
+              <strong>کاربرد:</strong> جعبه‌ابزار حل مسائل استراتژیک، فرضیه‌سازی جسورانه و پروتوتایپ سریع در فاز امکان‌سنجی پویا پیش از قفل‌شدگی منابع.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-amber-300">
+            <strong>نکته استاد:</strong> رویکرد تفکر طراحی باید در تمام مراحل تدوین BP جاری باشد تا از دگماتیسم جلوگیری شود.
+          </div>
+        </div>
+
+        <!-- Book 6: 10 Types of Innovation -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-rose-500/20 text-rose-300 border border-rose-500/30 px-2.5 py-0.5 rounded-full font-bold">نوآوری فراتر از محصول</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#06</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">۱۰ نوع نوآوری</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Ten Types of Innovation</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> لری کیلی و مؤسسه دابلین (Larry Keeley - Doblin)<br>
+              <strong>کاربرد:</strong> نوآوری در مدل سودآوری، شبکه ارتباطی، فرآیندها، برند و تجربه مشتری به جای حبس شدن در نوآوری صرف فنی.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-rose-300">
+            <strong>نکته استاد:</strong> بالاترین بازده و پایدارترین مزیت‌ها در نوآوری ساختاری و کانال توزیع است، نه ویژگی کالا.
+          </div>
+        </div>
+
+        <!-- Book 7: Invincible Company -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 px-2.5 py-0.5 rounded-full font-bold">پایداری و تاب‌آوری</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#07</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">شرکت شکست‌ناپذیر</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">The Invincible Company</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> الکساندر استروالدر و همکاران<br>
+              <strong>کاربرد:</strong> مدیریت پورتفوی هم‌زمان کسب‌وکارهای بهره‌برداری (Exploitation) و پروژه‌های اکتشافی (Exploration) در شرایط بحران و تغییرات ناگهانی بازار.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-indigo-300">
+            <strong>نکته استاد:</strong> شرکت پایدار، شرکتی است که پیش از خشکیدن چشمه درآمدهای سنتی، مدل جدید خلق کند.
+          </div>
+        </div>
+
+        <!-- Book 8: Carol Dweck Mindset -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-red-500/20 text-red-300 border border-red-500/30 px-2.5 py-0.5 rounded-full font-bold">طرز فکر کارآفرین</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#08</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">طرز فکر / ذهنیت</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Mindset: The New Psychology</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> کارول دوک (Carol S. Dweck - دانشگاه استنفورد)<br>
+              <strong>کاربرد:</strong> گذار از تفکر ثابت (Fixed Mindset) به تفکر رشد (Growth Mindset)؛ استقبال از ابطال فرضیات در امکان‌سنجی به جای لجاجت بر شکست.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-red-300">
+            <strong>توصیه اکید استاد:</strong> «قبل از هر اقدامی در کسب‌وکار، اول این کتاب را مطالعه کنید!»
+          </div>
+        </div>
+
+        <!-- Book 9: Michael Solomon -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-sky-500/20 text-sky-300 border border-sky-500/30 px-2.5 py-0.5 rounded-full font-bold">روانشناسی مصرف‌کننده</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#09</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">رفتار مصرف‌کننده: خریدن، داشتن</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Consumer Behavior: Solomon</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> مایکل آر. سولومون (Michael R. Solomon)<br>
+              <strong>کاربرد:</strong> تحلیل الگوهای ناخودآگاه خرید، اقتصاد توجه (Attention Economy)، داده‌کاوی ذائقه مشتری («کاوایی») و طراحی پنجره‌های توجه.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-sky-300">
+            <strong>نکته استاد:</strong> در دنیای اشباع تبلیغات، جلب توجه نیمی از فروش است؛ بدون فهم رفتار مصرف، BP کاغذی باطل است.
+          </div>
+        </div>
+
+        <!-- Book 10: Hero and the Outlaw Archetypes -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-violet-500/20 text-violet-300 border border-violet-500/30 px-2.5 py-0.5 rounded-full font-bold">آرکتایپ‌های برندینگ</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#10</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">قهرمان و یاغی: کهن‌الگوها</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">The Hero and the Outlaw</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> مارگارت مارک و کارول پیرسون (مبتنی بر روانشناسی یونگ)<br>
+              <strong>کاربرد:</strong> ۱۲ آرکتایپ استاندارد (نقد ادعای دانشجو درباره زئوس)؛ شخصیت‌بخشی به برند (قهرمان برای نایک، حاکم/کمال‌گرا برای بنز).
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-violet-300">
+            <strong>نکته استاد:</strong> برندهای پایدار با ناخودآگاه جمعی پیوند می‌خورند، نه صرفاً با لوگوی گرافیکی.
+          </div>
+        </div>
+
+        <!-- Book 11: Michael Porter -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-orange-500/20 text-orange-300 border border-orange-500/30 px-2.5 py-0.5 rounded-full font-bold">استراتژی رقابتی</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#11</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">استراتژی رقابتی و مزیت رقابتی</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Competitive Strategy / Advantage</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> مایکل پورتر (Michael E. Porter - Harvard)<br>
+              <strong>کاربرد:</strong> تحلیل ساختار صنعت، ۵ نیروی رقابتی، موانع ورود و خروج، با بومی‌سازی استاد در وزن‌دهی به متغیرهای «اعتماد» و «شبکه توزیع مویرگی».
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-orange-300">
+            <strong>نکته استاد:</strong> ورود آسان نشانه فرصت نیست، زنگ خطر نابودی حاشیه سود با هجوم رقباست.
+          </div>
+        </div>
+
+        <!-- Book 12: UNIDO Comfar III -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2.5 py-0.5 rounded-full font-bold">امکان‌سنجی صنعتی</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#12</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">راهنمای امکان‌سنجی یونیدو و کامفار</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">UNIDO Comfar III Manual</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> ورنر بهرنز و پیتر هاورانک (سازمان ملل UNIDO)<br>
+              <strong>کاربرد:</strong> چارچوب ریاضی و رسمی ارزیابی طرح‌های سرمایه‌گذاری، خروجی‌های نسخه ۳ نرم‌افزار Comfar، نرخ بازده داخلی (IRR) و تحلیل حساسیت.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-emerald-300">
+            <strong>نکته استاد:</strong> محاسبات مالی BP باید منحصراً با خروجی‌های رسمی نرم‌افزار کامفار ۳ ارائه گردد.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Additional References Callout (HBR and Iranian Scholar Forewords) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 text-slate-200">
+          <div class="flex items-center gap-2 text-blue-400 font-bold text-sm mb-2">
+            <span>📰 مقالات و کیس‌استادی‌های هاروارد بیزنس ریویو (HBR)</span>
+          </div>
+          <p class="text-xs leading-relaxed text-slate-300 text-justify">
+            استاد رحیم‌زاده مطالعه هفتگی مقالات HBR پیرامون دگرگونی مدل‌های کسب‌وکار و کالبدشکافی تجربیات شرکت‌های تراز اول (نظیر کیس تولید انبوه هنری فورد و زنجیره تأمین تسلا) را به عنوان بخش لاینفک ارتقای درک استراتژیک دانشجویان توصیه کردند.
+          </p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 text-slate-200">
+          <div class="flex items-center gap-2 text-amber-400 font-bold text-sm mb-2">
+            <span>🇮🇷 اهمیت مطالعه مقدمه‌های تحلیلی اساتید ایرانی</span>
+          </div>
+          <p class="text-xs leading-relaxed text-slate-300 text-justify">
+            استاد تأکید داشتند که پیش‌گفتارهای اساتید پیشکسوت مدیریت در ایران (نظیر دکتر علینقی مشایخی در ترجمه کتاب خلق مدل کسب‌وکار) نباید نادیده گرفته شوند، زیرا پل ارتباطی حیاتی میان نظریه‌های جهانی و واقعیت‌های اصطکاک‌دار اقتصاد ایران هستند.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TAB 4: HANDBOOK -->
     <div id="content-handbook" class="tab-content hidden space-y-8">
       <div class="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-xl border border-indigo-900/40">
         <div class="max-w-3xl space-y-2">
@@ -1034,12 +1452,107 @@
 </div>
 
 <hr />
-<h2 id="_7">۸. جمع‌بندی مدیریتی</h2>
+<h2 id="recommended-academic-bibliography">۸. کتاب‌شناسی راهبردی و مراجع علمی مرجع (Recommended Academic Bibliography)</h2>
+<p>به تأکید استاد رحیم‌زاده در دانشکده اقتصاد دانشگاه تهران، تسلط بر تدوین طرح کسب‌وکار نیازمند یکپارچه‌سازی بینش‌های چندرشته‌ای است. هیچ سندی بدون اتصال به منابع معتبر تراز اول جهان و انطباق آن با زیست‌بوم اقتصادی ایران، واجد اعتبار حرفه‌ای نخواهد بود:</p>
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    📚 منظومه کتب مرجع طرح تدوین کسب‌وکار (BP Master Bibliography)
+  </div>
+  <div class="overflow-x-auto">
+    <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-xs">
+      <thead class="bg-slate-800 text-amber-400">
+        <tr>
+          <th class="p-3 border-b border-slate-700">ردیف</th>
+          <th class="p-3 border-b border-slate-700">عنوان کتاب (فارسی / لاتین)</th>
+          <th class="p-3 border-b border-slate-700">مؤلف / مرجع</th>
+          <th class="p-3 border-b border-slate-700">جایگاه کاربردی در تدوین طرح کسب‌وکار</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-700/50 bg-slate-900/60 text-slate-200">
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">01</td>
+          <td class="p-3 font-semibold text-white">خلق مدل کسب‌وکار<br><span class="font-mono text-slate-400 text-[11px]">Business Model Generation</span></td>
+          <td class="p-3">الکساندر استروالدر و ایو پیگنیور<br><span class="font-mono text-slate-400 text-[11px]">(A. Osterwalder & Y. Pigneur)</span></td>
+          <td class="p-3 text-slate-300">طراحی منطق بنیادین خلق ارزش در قالب بوم ۹ بخشی پیش از ورود به جزئیات زمان‌بندی و مالی.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">02</td>
+          <td class="p-3 font-semibold text-white">راه‌اندازی کسب‌وکار: ۲۴ گام منضبط<br><span class="font-mono text-slate-400 text-[11px]">Disciplined Entrepreneurship</span></td>
+          <td class="p-3">بیل اولت<br><span class="font-mono text-slate-400 text-[11px]">(Bill Aulet - MIT Sloan)</span></td>
+          <td class="p-3 text-slate-300">نقشه راه مهندسی‌شده برای شناخت پرسونای مشتری، سنجش اندازه بازار (TAM) و اقتصاد واحد (CAC/LTV).</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">03</td>
+          <td class="p-3 font-semibold text-white">طراحی ارزش پیشنهادی<br><span class="font-mono text-slate-400 text-[11px]">Value Proposition Design</span></td>
+          <td class="p-3">استروالدر، پیگنیور، برناردا، اسمیت<br><span class="font-mono text-slate-400 text-[11px]">(Strategyzer Series)</span></td>
+          <td class="p-3 text-slate-300">کالبدشکافی دردها و دستاوردهای مشتری برای تضمین تناسب محصول-بازار (PMF) و نجات از تله ابزارمحوری.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">04</td>
+          <td class="p-3 font-semibold text-white">مدل کسب‌وکار شما (بوم شخصی)<br><span class="font-mono text-slate-400 text-[11px]">Business Model You</span></td>
+          <td class="p-3">تیم کلارک و همکاران<br><span class="font-mono text-slate-400 text-[11px]">(Tim Clark, Osterwalder)</span></td>
+          <td class="p-3 text-slate-300">ارزیابی تناسب مهارت‌ها و شایستگی‌های محوری تیم بنیان‌گذار با مأموریت و مدل درآمدی سازمان.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">05</td>
+          <td class="p-3 font-semibold text-white">طراحی برای رشد / تفکر طراحی در کسب‌وکار<br><span class="font-mono text-slate-400 text-[11px]">Designing for Growth</span></td>
+          <td class="p-3">ژان لیدکا و تیم اوگیلوی<br><span class="font-mono text-slate-400 text-[11px]">(J. Liedtka & T. Ogilvie)</span></td>
+          <td class="p-3 text-slate-300">به‌کارگیری تفکر طراحی، فرضیه‌سازی جسورانه و پروتوتایپ سریع در فاز امکان‌سنجی پویا.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">06</td>
+          <td class="p-3 font-semibold text-white">۱۰ نوع نوآوری: نظم حاکم بر جهش‌های بزرگ<br><span class="font-mono text-slate-400 text-[11px]">Ten Types of Innovation</span></td>
+          <td class="p-3">لری کیلی و مؤسسه دابلین<br><span class="font-mono text-slate-400 text-[11px]">(Larry Keeley - Doblin/Deloitte)</span></td>
+          <td class="p-3 text-slate-300">خروج از توهم نوآوری صرف در محصول؛ بازطراحی مدل سودآوری، شبکه توزیع، برند و تجربه مشتری.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">07</td>
+          <td class="p-3 font-semibold text-white">شرکت شکست‌ناپذیر<br><span class="font-mono text-slate-400 text-[11px]">The Invincible Company</span></td>
+          <td class="p-3">استروالدر و تیم استراتژایزر<br><span class="font-mono text-slate-400 text-[11px]">(Strategyzer Series)</span></td>
+          <td class="p-3 text-slate-300">مدیریت هم‌زمان پورتفوی کسب‌وکارهای پایدار و پروژه‌های اکتشافی در شرایط بحران و تورم.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">08</td>
+          <td class="p-3 font-semibold text-white">طرز فکر / ذهنیت: روانشناسی موفقیت<br><span class="font-mono text-slate-400 text-[11px]">Mindset: The New Psychology</span></td>
+          <td class="p-3">کارول دوک<br><span class="font-mono text-slate-400 text-[11px]">(Carol S. Dweck - Stanford)</span></td>
+          <td class="p-3 text-slate-300">پیش‌نیاز ذهنی کارآفرین: عبور از تفکر ثابت (انکار خطا) به تفکر رشد (استقبال از بازخورد و اصلاح فرضیات).</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">09</td>
+          <td class="p-3 font-semibold text-white">رفتار مصرف‌کننده: خریدن، داشتن و بودن<br><span class="font-mono text-slate-400 text-[11px]">Consumer Behavior</span></td>
+          <td class="p-3">مایکل آر. سولومون<br><span class="font-mono text-slate-400 text-[11px]">(Michael R. Solomon)</span></td>
+          <td class="p-3 text-slate-300">تحلیل عمیق محرک‌های روانشناختی خرید، اقتصاد توجه، و کشف الگوهای ترجیح مصرف‌کننده.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">10</td>
+          <td class="p-3 font-semibold text-white">قهرمان و یاغی: کهن‌الگوها در برندینگ<br><span class="font-mono text-slate-400 text-[11px]">The Hero and the Outlaw</span></td>
+          <td class="p-3">مارگارت مارک و کارول پیرسون<br><span class="font-mono text-slate-400 text-[11px]">(M. Mark & C. Pearson / Jung)</span></td>
+          <td class="p-3 text-slate-300">هویت‌بخشی به برند بر مبنای ۱۲ کهن‌الگوی روانشناسی یونگ (نظیر قهرمان در نایک و حاکم در بنز).</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">11</td>
+          <td class="p-3 font-semibold text-white">استراتژی رقابتی و مزیت رقابتی<br><span class="font-mono text-slate-400 text-[11px]">Competitive Strategy & Advantage</span></td>
+          <td class="p-3">مایکل پورتر<br><span class="font-mono text-slate-400 text-[11px]">(Michael E. Porter - Harvard)</span></td>
+          <td class="p-3 text-slate-300">تحلیل ساختار صنعت و ۵ نیروی رقابت با انطباق بر مؤلفه‌های زیست‌بوم ایران (اعتماد و شبکه توزیع مویرگی).</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">12</td>
+          <td class="p-3 font-semibold text-white">راهنمای امکان‌سنجی صنعتی یونیدو و کامفار<br><span class="font-mono text-slate-400 text-[11px]">UNIDO Feasibility Manual / Comfar III</span></td>
+          <td class="p-3">ورنر بهرنز و پیتر ام. هاورانک<br><span class="font-mono text-slate-400 text-[11px]">(W. Behrens & P.M. Hawranek)</span></td>
+          <td class="p-3 text-slate-300">مرجع استاندارد مدلسازی مالی، پیش‌بینی نقدینگی، محاسبه IRR/NPV و تحلیل حساسیت تورمی با کامفار ۳.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr />
+<h2 id="_7">۹. جمع‌بندی مدیریتی و مانیفست بقا</h2>
 <p>طرح تدوین کسب‌وکار، مرز میان کارآفرینی حرفه‌ای و قمار تجاری است. مدیری که پیش از ورود به بازار، فرضیات خود را در کوره امکان‌سنجی پویا ذوب کرده، انضباط جریان نقدینگی را با نرم‌افزار کامفار به اثبات رسانده و زنجیره ارزش خود را با زیرساخت لجستیک و توزیع پیوند زده باشد، در دشوارترین طوفان‌های اقتصادی نیز مسیر بقا و تعالی بنگاه را تضمین خواهد کرد.</p>
       </div>
     </div>
 
-    <!-- TAB 4: SIMULATOR -->
+    <!-- TAB 5: SIMULATOR -->
     <div id="content-simulator" class="tab-content hidden space-y-8">
       
       <div class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-xl border border-blue-900/40">
@@ -1104,7 +1617,7 @@
 
     </div>
 
-    <!-- TAB 5: CASES -->
+    <!-- TAB 6: CASES -->
     <div id="content-cases" class="tab-content hidden space-y-8">
       
       <div class="bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-xl border border-blue-900/40">
@@ -1142,24 +1655,24 @@
             </div>
             <h3 class="text-lg font-black text-amber-400 mb-2">بستنی دایتی: مزیت رقابتی ناوگان یخچال‌دار و انطباق صادراتی</h3>
             <p class="text-xs text-slate-300 leading-relaxed text-justify mb-4">
-              دایتی با بهره‌گیری از نیسان‌های یخچال‌دار اختصاصی توانست به نقاطی نفوذ کند که رقبای بزرگ به دلیل نبود زنجیره سرد ناتوان از عرضه بودند. در ادامه با تغییر ساختار رقابت داخلی، استراتژی صادرات به کشورهای عربی و آفریقایی را برای بهره‌مندی از تسویه نقدی ارزی برگزید.
+              دایتی با سرمایه‌گذاری جسورانه روی صدها دستگاه نیسان یخچال‌دار، کنترل زنجیره سرد را از دست واسطه‌ها خارج کرد. همچنین در مواجهه با اشباع بازار داخلی، با شیفت استراتژیک به صادرات با تسویه نقدی، سودآوری خود را نجات داد.
             </p>
           </div>
           <div class="pt-3 border-t border-slate-800 text-[11px] text-amber-300">
-            <strong>درس استراتژیک:</strong> لجستیک، تحویل ارزش را ممکن می‌سازد. تغییر جهت (Pivot) نشانه شکست نیست؛ انطباق با ساختار بازار است.
+            <strong>درس استراتژیک:</strong> تحویل ارزش (لجستیک) بخش تفکیک‌ناپذیر بیزنس پلن در ایران است؛ خلق ارزش بدون ناوگان توزیع مساوی با شکست است.
           </div>
         </div>
 
-        <!-- Case 3: Digikala -->
+        <!-- Case 3: Digikala Logistics -->
         <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 text-white shadow-md flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full font-bold border border-emerald-500/30">امکان‌سنجی زیرساخت</span>
-              <span class="text-xs text-amber-400 font-bold">تجارت الکترونیک ایران</span>
+              <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2.5 py-0.5 rounded-full font-bold border border-emerald-500/30">اعتماد و زیرساخت فیزیکی</span>
+              <span class="text-xs text-amber-400 font-bold">تجارت الکترونیک</span>
             </div>
-            <h3 class="text-lg font-black text-emerald-400 mb-2">دیجی‌کالا: غلبه بر مانع اعتماد و لجستیک فیزیکی</h3>
+            <h3 class="text-lg font-black text-emerald-400 mb-2">دیجی‌کالا: سرمایه‌گذاری سنگین در مراکز پردازش و ناوگان حمل</h3>
             <p class="text-xs text-slate-300 leading-relaxed text-justify mb-4">
-              برخلاف مدل‌های محض آنلاین در غرب، دیجی‌کالا در امکان‌سنجی اولیه پی برد که بدون ناوگان پخش مویرگی درون‌شهری اختصاصی و گزینه پرداخت در محل، خرید اینترنتی در ایران پا نمی‌گیرد. ترکیب بستر دیجیتال با زیرساخت فیزیکی ضامن بقای آن شد.
+              برخلاف استارتاپ‌های نرم‌افزاری صِرف، دیجی‌کالا بخش عمده سرمایه خود را صرف ناوگان لجستیک و انبارهای عظیم کرد تا مزیت غیرقابل تقلید بسازد. در بازار ایران، اعتماد خریدار از طریق سرعت و کیفیت تحویل فیزیکی شکل می‌گیرد.
             </p>
           </div>
           <div class="pt-3 border-t border-slate-800 text-[11px] text-emerald-300">
@@ -1215,7 +1728,7 @@
   <script>
     // Tab switching logic
     function switchTab(tabId) {
-      const tabs = ['overview', 'session1', 'handbook', 'simulator', 'cases'];
+      const tabs = ['overview', 'session1', 'books', 'handbook', 'simulator', 'cases'];
       tabs.forEach(id => {
         const el = document.getElementById('content-' + id);
         if (el) el.classList.add('hidden');
@@ -1271,85 +1784,106 @@
       const growth = parseInt(document.getElementById('range-growth').value);
       const conc = parseInt(document.getElementById('range-concentration').value);
       const lead = parseInt(document.getElementById('range-leadtime').value);
-      const inflation = parseInt(document.getElementById('range-inflation').value);
+      const infl = parseInt(document.getElementById('range-inflation').value);
 
-      document.getElementById('val-growth').innerText = growth + '%';
-      document.getElementById('val-concentration').innerText = conc + '%';
+      document.getElementById('val-growth').innerText = growth + '٪';
+      document.getElementById('val-concentration').innerText = conc + '٪';
       document.getElementById('val-leadtime').innerText = lead + ' ماه';
-      document.getElementById('val-inflation').innerText = inflation + '%';
+      document.getElementById('val-inflation').innerText = infl + '٪';
 
+      // Evaluation Logic
       let riskScore = 0;
       let warnings = [];
+      let statusColor = "text-emerald-400";
+      let statusBg = "bg-emerald-950/40 border-emerald-500/40";
+      let statusText = "وضعیت متوازن و پایدار (Green / Investment Ready)";
 
-      // Growth trap check
       if (growth > 70) {
         riskScore += 35;
-        warnings.push('خطر تله رشد (Growth Trap): رشد فروش بالای ۷۰٪ نیازمند تزریق سرمایه در گردش سنگین است که در غیاب خط اعتباری، نقدینگی را می‌بلعد.');
-      } else if (growth > 45) {
-        riskScore += 15;
+        warnings.push("⚠️ خطر تله رشد (Growth Trap): رشد بالای ۷۰٪ نیازمند تزریق سرمایه در گردش سنگین است؛ در غیر این صورت به ورشکستگی نقدینگی ختم می‌شود.");
       }
 
-      // Customer concentration check
-      if (conc >= 38) {
-        riskScore += 35;
-        warnings.push('خطر بحرانی تمرکز مشتری (قاعده ۳۸٪ استاد رحیم‌زاده): وابستگی کسب‌وکار به یک مشتری واحد در سطح اضطرار قرار دارد؛ خروج این مشتری به ورشکستگی فوری می‌انجامد.');
+      if (conc >= 35) {
+        riskScore += 40;
+        warnings.push("🚨 ریسک فوق‌بحرانی تمرکز مشتری: تمرکز بیش از ۳۵٪ (مانند نمونه بحرانی ۳۸٪ تدریس‌شده) به معنای گروگان بودن بنگاه نزد تک‌مشتری است.");
       } else if (conc >= 25) {
-        riskScore += 15;
-        warnings.push('هشدار تمرکز مشتری: بیش از یک‌چهارم درآمد به یک حساب متکی است؛ تدوین سبد تنوع مشتریان الزامی است.');
+        riskScore += 20;
+        warnings.push("⚠️ تمرکز مشتری بالاست (بالای ۲۵٪)؛ الزام تدوین برنامه بازاریابی برای تنوع‌بخشی به پرتفوی خریداران.");
       }
 
-      // Payment lead time check
-      if (lead >= 6) {
+      if (lead >= 5) {
         riskScore += 25;
-        warnings.push('دوره وصول طولانی (Lead Time): دوره انتظار ۶ ماه به بالا، کسری جریان نقد ماهانه را تشدید کرده و به ورشکستگی تکنیکال منجر می‌شود.');
-      } else if (lead >= 4) {
-        riskScore += 10;
+        warnings.push("⏳ شکاف عمیق وصول مطالبات: دوره وصول بالای ۵ ماه، نیاز به تسهیلات سرمایه در گردش بانکی با هزینه مالی بالا را تحمیل می‌کند.");
       }
 
-      // Inflation sensitivity check
-      if (inflation >= 30) {
-        riskScore += 15;
-        warnings.push('حساسیت تورمی بالا در Comfar: جهش بیش از ۳۰٪ در مواد اولیه، نرخ بازده داخلی (IRR) را به زیر نرخ تورم مورد انتظار می‌رساند.');
+      if (infl >= 30) {
+        riskScore += 20;
+        warnings.push("📈 تحلیل حساسیت تورمی: جهش بالای ۳۰٪ نرخ مواد اولیه، نرخ بازده داخلی (IRR) را در محاسبات Comfar به شدت فرسایش می‌دهد.");
       }
-
-      const resultBox = document.getElementById('bp-sim-result');
-      let statusClass = 'border-emerald-500 bg-slate-900';
-      let title = 'وضعیت مالی و جریان نقدینگی: پایدار و قابل دفاع در Comfar III';
-      let badge = 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30';
 
       if (riskScore >= 60) {
-        statusClass = 'border-rose-500 bg-slate-900';
-        title = 'وضعیت بحرانی: خطر حاد ورشکستگی تکنیکال (Technical Bankruptcy)';
-        badge = 'text-rose-400 bg-rose-500/10 border-rose-500/30';
+        statusColor = "text-rose-400";
+        statusBg = "bg-rose-950/40 border-rose-500/40";
+        statusText = "منطقه فاجعه نقدینگی (Disaster Zone / Default Risk)";
       } else if (riskScore >= 30) {
-        statusClass = 'border-amber-500 bg-slate-900';
-        title = 'وضعیت هشدار میانی: ریسک تله نقدینگی و نیاز به بازطراحی وصول مطالبات';
-        badge = 'text-amber-400 bg-amber-500/10 border-amber-500/30';
+        statusColor = "text-amber-400";
+        statusBg = "bg-amber-950/40 border-amber-500/40";
+        statusText = "منطقه هشدار ریسک ساختاری (Yellow Zone / Conditional)";
       }
 
-      let warningListHtml = warnings.map(w => `<li class="mb-1 text-slate-300">• ${w}</li>`).join('');
-      if (!warningListHtml) {
-        warningListHtml = '<li class="text-emerald-400">✓ فرضیات طرح در محدوده انضباط نقدینگی و استانداردهای امکان‌سنجی استاد رحیم‌زاده قرار دارد.</li>';
-      }
+      // Calculate approximate simulated IRR under sensitivity
+      let baseIRR = 48 - (infl * 0.45) - (lead * 1.5) - (growth > 70 ? 8 : 0);
+      if (baseIRR < 0) baseIRR = 4.2;
 
-      resultBox.className = 'p-6 rounded-2xl border transition-all ' + statusClass;
-      resultBox.innerHTML = `
-        <div class="flex items-center justify-between flex-wrap gap-2 mb-4">
-          <div class="font-black text-base md:text-lg flex items-center gap-2">
-            <span>📊 شاخص ریسک ساختاری BP:</span>
-            <span class="text-xl md:text-2xl font-mono text-amber-300">${riskScore} از ۱۰۰</span>
+      let html = `
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+          <div class="flex items-center gap-2">
+            <span class="text-xs px-3 py-1 rounded-full font-bold border ${statusBg} ${statusColor}">
+              ${statusText}
+            </span>
           </div>
-          <span class="text-xs font-bold px-3 py-1 rounded-full border ${badge}">${title}</span>
+          <div class="text-xs font-mono text-slate-300">
+            امتیاز ریسک ساختاری: <strong class="${statusColor}">${riskScore} / 100</strong>
+          </div>
         </div>
-        <div class="border-t border-slate-800 pt-3">
-          <div class="text-xs font-bold text-slate-200 mb-2">تحلیل راهبردی و هشدارهای ممیزی:</div>
-          <ul class="text-xs space-y-1 text-justify">
-            ${warningListHtml}
-          </ul>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 text-center">
+          <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60">
+            <div class="text-[11px] text-slate-400">تخمین نرخ بازده داخلی (IRR تحلیلی)</div>
+            <div class="text-lg font-black ${baseIRR > 25 ? 'text-emerald-400' : 'text-rose-400'} font-mono">${baseIRR.toFixed(1)}٪</div>
+            <div class="text-[10px] text-slate-400">در مقایسه با نرخ بهره بدون ریسک ۳۰٪</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60">
+            <div class="text-[11px] text-slate-400">شکاف جریان نقد عملیاتی</div>
+            <div class="text-lg font-black ${lead > 4 || growth > 70 ? 'text-rose-400' : 'text-emerald-400'}">
+              ${lead > 4 || growth > 70 ? 'منفی و بحرانی' : 'مثبت و تحت کنترل'}
+            </div>
+            <div class="text-[10px] text-slate-400">وابسته به دوره وصول و سرمایه در گردش</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60">
+            <div class="text-[11px] text-slate-400">حکم وکیل مدافع شیطان (FS Verdict)</div>
+            <div class="text-sm font-bold ${riskScore >= 60 ? 'text-rose-400' : (riskScore >= 30 ? 'text-amber-400' : 'text-emerald-400')}">
+              ${riskScore >= 60 ? 'توقف و رد قطعی ایده' : (riskScore >= 30 ? 'بازنگری پیش از نگارش BP' : 'تصویب برای ورود به Comfar')}
+            </div>
+            <div class="text-[10px] text-slate-400">آزمون عقلانیت پیش از سرمایه‌گذاری</div>
+          </div>
         </div>
       `;
+
+      if (warnings.length > 0) {
+        html += '<div class="space-y-2 mt-3 pt-3 border-t border-slate-800">';
+        warnings.forEach(w => {
+          html += `<div class="text-xs text-slate-300 leading-relaxed">${w}</div>`;
+        });
+        html += '</div>';
+      } else {
+        html += '<div class="text-xs text-emerald-300 mt-2">تمام پارامترها در دامنه عقلانیت اقتصادی و پایداری نقدینگی قرار دارند.</div>';
+      }
+
+      document.getElementById('bp-sim-result').innerHTML = html;
     }
 
+    // Run simulation on initial page load
     window.addEventListener('DOMContentLoaded', () => {
       runBpSimulation();
     });

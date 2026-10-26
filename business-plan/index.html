@@ -274,8 +274,8 @@
           <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
             اگر با خروج، سفر یا غیبت بنیان‌گذار، فرآیند خرید مشتری مختل شود، سازمان واجد سیستم نیست؛ بلکه یک شغل وابسته به فرد است. BP باید فرآیندهای تفویض اختیار و تیم‌سازی را نهادینه سازد:
           </p>
-          <div class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-center text-xs text-emerald-400 font-mono">
-            $$ P(	ext{Customer Purchase} \mid 	ext{Founder Absence}) 	o 1 $$
+          <div class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-center text-xs text-emerald-400 font-mono font-bold">
+            P(Customer Purchase | Founder Absence) &rarr; 1
           </div>
         </div>
 
@@ -358,16 +358,59 @@
 <hr />
 <h2 id="_2">۲. تثلیث مفهومی: تفکیک ساختاری بیزنس مدل، امکان‌سنجی و بیزنس پلن</h2>
 <p>یکی از حیاتی‌ترین مباحث تدریس استاد رحیم‌زاده، رفع اغتشاش مفهومی رایج میان سه ابزار مدیریتی است:</p>
-<pre><code class="language-mermaid">graph TD
-    A[&quot;بیزنس مدل (BM)&lt;br&gt;منطق مفهومی خلق، تحویل و کسب ارزش&quot;] --&gt; B[&quot;امکان‌سنجی پویا (FS)&lt;br&gt;فیلتر ابطال‌پذیری فنی، مالی و کشش بازار&lt;br&gt;(وکیل مدافع شیطان)&quot;]
-    B --&gt;|تأیید عقلانیت و امکان‌پذیری| C[&quot;طرح کسب‌وکار (BP)&lt;br&gt;نقشه راه عملیاتی، جریان نقدینگی، بازاریابی و استاندارد Comfar&quot;]
-    B --&gt;|ابطال فرضیات بازار| D[&quot;توقف طرح / بازنگری اساسی (Pivot)&lt;br&gt;نجات سرمایه از نابودی&quot;]
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    🏛️ معماری تثلیث کسب‌وکار: زنجیره منطقی اعتبارسنجی از ایده تا اجرا
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="p-5 rounded-2xl bg-slate-800/80 border border-blue-500/40 shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-500/20 text-blue-300">گام اول: مفهوم‌سازی</span>
+          <span class="text-lg">💡</span>
+        </div>
+        <h4 class="text-base font-black text-amber-400 mb-2">۱. بیزنس مدل (BM)</h4>
+        <p class="text-xs text-slate-300 leading-relaxed text-justify">
+          منطق مفهومی خلق، تحویل و کسب ارزش در قالب بوم ۹ بخشی استروالدر. پاسخ به این پرسش کلان که «موتور تولید ثروت در این بنگاه چگونه کار می‌کند؟»
+        </p>
+      </div>
+      <div class="mt-4 pt-3 border-t border-slate-700/60 text-[11px] text-blue-300 font-semibold">
+        سطح: کیفی و انتزاعی
+      </div>
+    </div>
+    <div class="p-5 rounded-2xl bg-slate-800/80 border border-amber-500/40 shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300">گام دوم: ابطال‌پذیری</span>
+          <span class="text-lg">⚖️</span>
+        </div>
+        <h4 class="text-base font-black text-amber-400 mb-2">۲. امکان‌سنجی پویا (FS)</h4>
+        <p class="text-xs text-slate-300 leading-relaxed text-justify">
+          فیلتر بی‌رحم ارزیابی عقلانیت فنی، مالی و کشش بازار. کارآفرین در این مرحله نقش «وکیل مدافع شیطان» (Devil's Advocate) را برای نقد ایده خود بازی می‌کند.
+        </p>
+      </div>
+      <div class="mt-4 pt-3 border-t border-slate-700/60 text-[11px] text-amber-300 font-semibold">
+        خروجی: تصمیم Go / No-Go
+      </div>
+    </div>
+    <div class="p-5 rounded-2xl bg-slate-800/80 border border-emerald-500/40 shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300">گام سوم: نقشه عملیات</span>
+          <span class="text-lg">🚀</span>
+        </div>
+        <h4 class="text-base font-black text-emerald-400 mb-2">۳. طرح کسب‌وکار (BP)</h4>
+        <p class="text-xs text-slate-300 leading-relaxed text-justify">
+          سند جامع عملیاتی، تقویم زمان‌بندی، استراتژی بازاریابی، مدیریت جریان نقدینگی و مدل‌سازی استاندارد صنعتی با نرم‌افزار Comfar III همراه با تحلیل حساسیت.
+        </p>
+      </div>
+      <div class="mt-4 pt-3 border-t border-slate-700/60 text-[11px] text-emerald-400 font-semibold">
+        خروجی: گزارش رسمی و نقشه راه اجرا
+      </div>
+    </div>
+  </div>
+</div>
 
-    style A fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#f8fafc
-    style B fill:#334155,stroke:#f59e0b,stroke-width:2px,color:#f8fafc
-    style C fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#f8fafc
-    style D fill:#450a0a,stroke:#ef4444,stroke-width:2px,color:#f8fafc
-</code></pre>
 <h3 id="business-model">۲.۱. بیزنس مدل (Business Model): منطق درونی خلق ارزش</h3>
 <p>بیزنس مدل، نقشه ذهنی و معماری پیوند میان ارکان کسب‌وکار است. استاد با ارجاع به مدل‌های علمی نظیر بوم مدل کسب‌وکار الکساندر استروالدر (Alexander Osterwalder)، توضیح دادند که بیزنس مدل به این سؤال بنیادین پاسخ می‌دهد که «منطق کسب‌وکار شما برای تولید ثروت چیست؟» بیزنس مدل هنوز وارد جزئیات برنامه‌ریزی ماه به ماه، بودجه تفصیلی و ساختار سازمانی نمی‌شود.</p>
 <h3 id="feasibility-study-fs">۲.۲. امکان‌سنجی (Feasibility Study - FS): فیلتر بی‌رحم ابطال‌پذیری</h3>
@@ -425,7 +468,7 @@
 <h3 id="_4">۳.۱. تمثیل تاریخی پارادایم حمل‌ونقل: از کالسکه تا تسلا و هوش مصنوعی</h3>
 <p>استاد رحیم‌زاده با طرح سیر تحول ترابری بشری، به کالبدشکافی مفهوم بنیادین «نیاز» در برابر «ابزار» پرداختند:
 - در سده‌های گذشته، نیاز انسان به جابه‌جایی از طریق اسب، قاطر و کالسکه برطرف می‌شد.
-- اگر شخصی با تفکر ثابت (Fixed Mindset) می‌خواست کسب‌وکاری در آن حوزه راه بیندازد، تمام تمرکزش بر پرورش اسب‌های سریع‌تر، بهبود نعل یا تعویض چوب کالسکه قرار می‌گرفت.
+- اگر شخصی با تفکر ثابت (Fixed Mindset) می‌خواست کسب‌وکاری در آن حوزه راه بیندازد، تمام تمرکزش بر پرورش اسب‌های سریع‌تر، بهبود نعل یا تعویض چوب کالسکه قرار می‌گفت.
 - اما نیازی که انسان در پی رفع آن بود، «اسب‌سواری» نبود؛ بلکه <strong>«جابه‌جایی سریع‌تر، ایمن‌تر و ارزان‌تر»</strong> بود.
 - هنگامی که موتور بخار و سپس خودروهای احتراق داخلی ظهور کردند، تمامی سرمایه‌گذاری‌ها روی ابزارهای قبلی نابود شدند.
 - امروزه نیز کارآفرینانی چون ایلان ماسک (Elon Musk) در پروژه‌های تسلا (Tesla) و اسپیس‌اکس (SpaceX)، روی حل ریشه‌ای مسئله انرژی و تحرک بین‌سیاره‌ای تمرکز کرده‌اند.</p>
@@ -452,7 +495,14 @@
 <h3 id="founder-dependency-trap">۴.۳. تله وابستگی به بنیان‌گذار (Founder Dependency Trap)</h3>
 <p>یکی از آسیب‌های بزرگ بنگاه‌های اقتصادی در ایران، وابستگی تمام تصمیمات، ارتباطات و عملیات به شخص بنیان‌گذار است.
 استاد رحیم‌زاده آزمون حیاتی زیر را برای ارزیابی سلامت BP مطرح کردند:</p>
-<p>$$ P(\text{Customer Purchase} \mid \text{Founder Absence}) \to 1 $$</p>
+<div class="my-6 p-4 rounded-2xl bg-slate-900 border border-slate-800 text-center shadow-inner">
+  <div class="text-xs text-slate-400 mb-2 font-bold">آزمون پایداری سیستم در غیاب بنیان‌گذار (Founder Independence Test)</div>
+  <div class="inline-flex items-center justify-center gap-2 text-sm md:text-base font-black font-mono text-emerald-400 bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700">
+    <span>P(Customer Purchase | Founder Absence) &rarr; 1</span>
+  </div>
+  <p class="text-[11px] text-slate-400 mt-2">احتمال خرید مشتری در صورت غیبت یا خروج بنیان‌گذار باید به ۱ میل کند.</p>
+</div>
+
 <p>اگر با خروج، سفر یا غیبت بنیان‌گذار، فرآیند خرید مشتری متوقف شود، آن بنگاه واجد سیستم نیست. بیزنس پلن باید معماری تفویض اختیار، ساختار فرآیندی و تیم‌سازی را به گونه‌ای ترسیم کند که سازمان مستقل از افراد به حیات خود ادامه دهد.</p>
 <h3 id="branding-vs-advertising">۴.۴. تبلیغات در برابر برندسازی (Branding vs. Advertising)</h3>
 <p>استاد با هشدار نسبت به اتلاف بودجه در کمپین‌های بازاریابی تأکید کردند:
@@ -461,16 +511,37 @@
 - برندینگ یعنی جایگاه‌سازی ذهنی (Mental Positioning). به عنوان مثال، نایک و آدیداس صرفاً کفش نمی‌فروشند؛ آن‌ها آرکتایپ قهرمان (Hero Archetype) را به هویت مصرف‌کننده پیوند می‌زنند.</p>
 <hr />
 <h2 id="_8">۵. مدیریت ریسک، انضباط نقدینگی و تحلیل سرمایه‌گذاری</h2>
-<pre><code class="language-mermaid">graph TD
-    T1[&quot;رشد سریع فروش بالای ۷۰٪&quot;] --&gt; T2[&quot;افزایش شدید دوره وصول مطالبات و نیاز به سرمایه در گردش&quot;]
-    T2 --&gt; T3[&quot;کسری بحرانی جریان نقدینگی ماهانه&quot;]
-    T3 --&gt; T4[&quot;ورشکستگی تکنیکال بنگاه اقتصادی&lt;br&gt;(سود حسابداری، نقدینگی در دسترس نیست)&quot;]
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-rose-400 text-base mb-6 pb-3 border-b border-slate-800">
+    ⚠️ توالی سقوط در تله رشد: فرآیند شکل‌گیری ورشکستگی تکنیکال
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-right">
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-blue-500/30">
+      <div class="text-xs font-bold text-blue-400 mb-1">مرحله ۱: رشد توهمی</div>
+      <div class="text-sm font-bold text-white mb-2">رشد فروش بالای ۷۰٪</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">افزایش انفجاری قراردادها و سفارشات بدون ارزیابی زیرساخت مالی.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-amber-500/30">
+      <div class="text-xs font-bold text-amber-400 mb-1">مرحله ۲: انجماد سرمایه</div>
+      <div class="text-sm font-bold text-white mb-2">طولانی شدن دوره وصول</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">افزایش Lead Time تسویه فاکتورها و نیاز مبرم به تأمین سرمایه در گردش.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-orange-500/30">
+      <div class="text-xs font-bold text-orange-400 mb-1">مرحله ۳: بحران نقدینگی</div>
+      <div class="text-sm font-bold text-white mb-2">کسری نقدینگی ماهانه</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">ناتوانی در پرداخت تعهدات جاری شامل حقوق پرسنل، قبوض و مطالبات تأمین‌کننده.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-rose-500/40">
+      <div class="text-xs font-bold text-rose-400 mb-1">مرحله ۴: سقوط رسمی</div>
+      <div class="text-sm font-bold text-white mb-2">ورشکستگی تکنیکال</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">شرکت روی کاغذ در ترازنامه سود نشان می‌دهد اما به دلیل نبود وجه نقد منحل می‌شود.</p>
+    </div>
+  </div>
+  <div class="mt-4 pt-3 border-t border-slate-800 text-center text-xs text-amber-300 font-bold">
+    قانون طلایی تدریس استاد رحیم‌زاده: Cash is King (نقدینگی پادشاه است)
+  </div>
+</div>
 
-    style T1 fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#f8fafc
-    style T2 fill:#334155,stroke:#f59e0b,stroke-width:2px,color:#f8fafc
-    style T3 fill:#450a0a,stroke:#ef4444,stroke-width:2px,color:#f8fafc
-    style T4 fill:#7f1d1d,stroke:#b91c1c,stroke-width:2px,color:#f8fafc
-</code></pre>
 <h3 id="growth-trap">۵.۱. کالبدشکافی تله رشد (Growth Trap): خطای رایج رشد فروش بالای ۷۰٪</h3>
 <p>بسیاری از کارآفرینان در BPهای خود به پیش‌بینی رشدهای انفجاری فروش افتخار می‌کنند. استاد رحیم‌زاده هشدار دادند که رشد سریع فروش بدون زیرساخت نقدینگی، مستقیماً به ورشکستگی ختم می‌شود:
 - وقتی شرکتی بیش از ۷۰٪ رشد فروش را ثبت می‌کند، سرمایه در گردش (Working Capital) مورد نیاز برای تأمین مواد اولیه، پرداخت دستمزد و هزینه‌های عملیاتی به شدت افزایش می‌یابد.
@@ -512,16 +583,34 @@
 - استاد تأکید کردند که تغییر جهت دایتی، نشانه شکست نبود؛ بلکه بازتابی از «تغییر ساختار بازار» و انطباق زنجیره تأمین با اقتضائات سودآوری است.</p>
 <hr />
 <h2 id="bp-comfar-iii">۷. استانداردهای ساختاری BP و الزامات مدل‌سازی مالی Comfar III</h2>
-<pre><code class="language-mermaid">graph LR
-    P1[&quot;۱. تحلیل صنعت&lt;br&gt;اندازه بازار و موانع ورود&quot;] --&gt; P2[&quot;۲. تحلیل بازار&lt;br&gt;بخش‌بندی و پرسونای مخاطب&quot;]
-    P2 --&gt; P3[&quot;۳. برنامه عملیات&lt;br&gt;زنجیره تأمین و ظرفیت تولید&quot;]
-    P3 --&gt; P4[&quot;۴. مدل مالی Comfar III&lt;br&gt;تحلیل حساسیت و آزمون IRR&quot;]
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    📊 ارکان چهارگانه استاندارد در تدوین طرح کسب‌وکار (BP)
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-right">
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-slate-700">
+      <div class="text-xs font-bold text-blue-400 mb-1">رکن اول</div>
+      <div class="text-sm font-bold text-white mb-2">۱. تحلیل صنعت</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">سنجش ساختار رقابت، نیروهای پورتر، موانع ورود و خروج، و روند رشد کلان صنعت.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-slate-700">
+      <div class="text-xs font-bold text-indigo-400 mb-1">رکن دوم</div>
+      <div class="text-sm font-bold text-white mb-2">۲. تحلیل بازار و مشتری</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">بخش‌بندی بازار (STP)، شناسایی درد واقعی مشتری، کشش تقاضا و اقتصاد توجه.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-slate-700">
+      <div class="text-xs font-bold text-amber-400 mb-1">رکن سوم</div>
+      <div class="text-sm font-bold text-white mb-2">۳. برنامه عملیات و لجستیک</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">ظرفیت‌سنجی فیزیکی، مهندسی زنجیره تأمین و شبکه توزیع مویرگی (زنجیره سرد).</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-slate-700">
+      <div class="text-xs font-bold text-emerald-400 mb-1">رکن چهارم</div>
+      <div class="text-sm font-bold text-white mb-2">۴. مدل مالی Comfar III</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">محاسبه نقطه سر به سر، نرخ بازده داخلی (IRR) و آزمون حساسیت در برابر جهش تورم.</p>
+    </div>
+  </div>
+</div>
 
-    style P1 fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#f8fafc
-    style P2 fill:#1e293b,stroke:#6366f1,stroke-width:2px,color:#f8fafc
-    style P3 fill:#1e293b,stroke:#f59e0b,stroke-width:2px,color:#f8fafc
-    style P4 fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#f8fafc
-</code></pre>
 <h3 id="executive-summary_1">۷.۱. قوانین طلایی نگارش خلاصه اجرایی (Executive Summary)</h3>
 <p>خلاصه اجرایی، حیاتی‌ترین بخش یک BP است:
 - <strong>استاندارد حجم:</strong> حداکثر ۱ تا ۳ صفحه.
@@ -531,14 +620,14 @@
 <p>استاد با صراحت تأکید کردند که محاسبات مالی BP نباید با شیت‌های متفرقه اکسل یا فرمول‌های دستی ارائه شوند:
 - استاندارد پذیرفته‌شده در نظام بانکی، صندوق‌های توسعه و شرکت‌های سرمایه‌گذاری در ایران، خروجی‌های رسمی نرم‌افزار <strong>Comfar III</strong> (توسعه‌یافته توسط سازمان یونیدو - UNIDO) از نسخه ۳ به بالا است.
 - این نرم‌افزار با لحاظ کردن استهلاک، سرمایه در گردش، جدول زمان‌بندی تأمین مالی و مالیات، شاخص‌های کلیدی زیر را استخراج می‌کند:
-  - نرخ بازده داخلی سرمایه‌گذاری ($$IRR$$)
-  - ارزش فعلی خالص ($$NPV$$)
-  - نرخ بازگشت سرمایه ($$ROI$$)
+  - نرخ بازده داخلی سرمایه‌گذاری (IRR)
+  - ارزش فعلی خالص (NPV)
+  - نرخ بازگشت سرمایه (ROI)
   - دوره بازگشت سرمایه عادی و تنزیل‌شده (Payback Period)</p>
 <h3 id="sensitivity-analysis">۷.۳. الزام تحلیل حساسیت (Sensitivity Analysis) در محیط تورمی ایران</h3>
 <p>در اقتصادهای بی‌ثبات، ارائه یک عدد ثابت برای سودآوری، نشانه ناشی‌گری است.
 استاد دستور دادند که در بخش مالی BP حتماً ماتریس تحلیل حساسیت ترسیم شود:
-- «اگر قیمت مواد اولیه وارداتی یا داخلی ۲۰ درصد افزایش یابد، نرخ بازده داخلی ($$IRR$$) چقدر کاهش می‌یابد؟»
+- «اگر قیمت مواد اولیه وارداتی یا داخلی ۲۰ درصد افزایش یابد، نرخ بازده داخلی (IRR) چقدر کاهش می‌یابد؟»
 - «اگر تقاضای بازار ۳۰ درصد کمتر از پیش‌بینی محقق شود، نقطه سر به سر چه زمانی رخ می‌دهد؟»</p>
 <h3 id="_13">۷.۴. بومی‌سازی مدل نیروهای رقابتی پورتر در بازار ایران</h3>
 <p>استاد رحیم‌زاده با تطبیق مدل مایکل پورتر (Michael Porter) بر فضای تجاری ایران اعلام کردند:
@@ -547,8 +636,19 @@
 <hr />
 <h2 id="_14">۸. سه‌گانه زنجیره ارزش، اقتصاد توجه و رفتار مصرف‌کننده</h2>
 <h3 id="_15">۸.۱. سه‌گانه بنیادین زنجیره ارزش</h3>
-<p>استاد مهندسی ارزش را در سه گام متوالی تفکیک کردند:</p>
-<p>$$ \text{Business Success} = \text{Value Creation} \times \text{Value Delivery} \times \text{Value Capture} $$</p>
+<div class="my-6 p-4 rounded-2xl bg-slate-900 border border-blue-500/30 text-center shadow-inner">
+  <div class="text-xs text-slate-400 mb-2 font-bold">فرمول سه‌گانه مهندسی ارزش (Value Chain Equation)</div>
+  <div class="inline-flex flex-wrap items-center justify-center gap-2 text-sm md:text-base font-black font-mono">
+    <span class="px-3 py-1.5 rounded-xl bg-blue-600/30 border border-blue-500/40 text-blue-300">خلق ارزش (Creation)</span>
+    <span class="text-amber-400 text-lg">×</span>
+    <span class="px-3 py-1.5 rounded-xl bg-amber-600/30 border border-amber-500/40 text-amber-300">تحویل ارزش (Delivery)</span>
+    <span class="text-amber-400 text-lg">×</span>
+    <span class="px-3 py-1.5 rounded-xl bg-emerald-600/30 border border-emerald-500/40 text-emerald-300">کسب ارزش (Capture)</span>
+    <span class="text-white text-lg">=</span>
+    <span class="px-3 py-1.5 rounded-xl bg-indigo-600/40 border border-indigo-400/50 text-white font-bold">پایداری کسب‌وکار</span>
+  </div>
+</div>
+
 <ol>
 <li><strong>خلق ارزش (Value Creation):</strong> طراحی محصول یا خدمتی که مزیتی معنادار به مشتری ارائه دهد و کارآمدتر از رقبای موجود باشد.</li>
 <li><strong>تحویل ارزش (Value Delivery):</strong> فرآیند انتقال ارزش به دست مصرف‌کننده از طریق لجستیک، ناوگان حمل، کانال‌های دیجیتال یا فیزیکی.</li>
@@ -674,26 +774,59 @@
 <hr />
 <h2 id="bm-fs-bp">۲. تثلیث معماری کسب‌وکار: تمایز ساختاری BM، FS و BP</h2>
 <p>برای جلوگیری از هرگونه اغتشاش مفهومی در طراحی سازمان، سه مفهوم بنیادین باید در توالی منطقی زیر از یکدیگر تفکیک گردند:</p>
-<pre><code class="language-mermaid">graph TD
-    subgraph مرحله اول: مفهوم‌سازی
-        BM[&quot;۱. بوم مدل کسب‌وکار (BM)&lt;br&gt;منطق مفهومی خلق، تحویل و کسب ارزش&quot;]
-    end
-    subgraph مرحله دوم: اعتبارسنجی نقادانه
-        FS[&quot;۲. امکان‌سنجی پویا (FS)&lt;br&gt;آزمون ابطال‌پذیری فنی، مالی و کشش بازار&lt;br&gt;(وکیل مدافع شیطان)&quot;]
-    end
-    subgraph مرحله سوم: برنامه‌ریزی اجرایی
-        BP[&quot;۳. طرح کسب‌وکار (BP)&lt;br&gt;برنامه عملیاتی، تقویم اجرایی، بازاریابی و استاندارد Comfar&quot;]
-    end
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    🏛️ معماری تثلیث کسب‌وکار: زنجیره منطقی اعتبارسنجی از ایده تا اجرا
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="p-5 rounded-2xl bg-slate-800/80 border border-blue-500/40 shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-500/20 text-blue-300">گام اول: مفهوم‌سازی</span>
+          <span class="text-lg">💡</span>
+        </div>
+        <h4 class="text-base font-black text-amber-400 mb-2">۱. بیزنس مدل (BM)</h4>
+        <p class="text-xs text-slate-300 leading-relaxed text-justify">
+          منطق مفهومی خلق، تحویل و کسب ارزش در قالب بوم مدل کسب‌وکار. پاسخ به این پرسش کلان که «موتور تولید ثروت چگونه کار می‌کند؟»
+        </p>
+      </div>
+      <div class="mt-4 pt-3 border-t border-slate-700/60 text-[11px] text-blue-300 font-semibold">
+        سطح: کیفی و انتزاعی
+      </div>
+    </div>
+    <div class="p-5 rounded-2xl bg-slate-800/80 border border-amber-500/40 shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300">گام دوم: ابطال‌پذیری</span>
+          <span class="text-lg">⚖️</span>
+        </div>
+        <h4 class="text-base font-black text-amber-400 mb-2">۲. امکان‌سنجی پویا (FS)</h4>
+        <p class="text-xs text-slate-300 leading-relaxed text-justify">
+          فیلتر بی‌رحم ارزیابی عقلانیت فنی، مالی و کشش بازار. آزمون فرضیات در نقش «وکیل مدافع شیطان» (Devil's Advocate).
+        </p>
+      </div>
+      <div class="mt-4 pt-3 border-t border-slate-700/60 text-[11px] text-amber-300 font-semibold">
+        خروجی: تصمیم Go / No-Go
+      </div>
+    </div>
+    <div class="p-5 rounded-2xl bg-slate-800/80 border border-emerald-500/40 shadow-sm flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300">گام سوم: نقشه عملیات</span>
+          <span class="text-lg">🚀</span>
+        </div>
+        <h4 class="text-base font-black text-emerald-400 mb-2">۳. طرح کسب‌وکار (BP)</h4>
+        <p class="text-xs text-slate-300 leading-relaxed text-justify">
+          سند جامع عملیاتی، تقویم زمان‌بندی، استراتژی بازاریابی، مدیریت جریان نقدینگی و مدل‌سازی استاندارد صنعتی با نرم‌افزار Comfar III.
+        </p>
+      </div>
+      <div class="mt-4 pt-3 border-t border-slate-700/60 text-[11px] text-emerald-400 font-semibold">
+        خروجی: گزارش رسمی و نقشه راه اجرا
+      </div>
+    </div>
+  </div>
+</div>
 
-    BM --&gt; FS
-    FS --&gt;|تأیید عقلانیت و اقتصادی بودن| BP
-    FS --&gt;|رد فرضیات بازار| Pivot[&quot;تغییر جهت استراتژیک (Pivot) / توقف پروژه&quot;]
-
-    style BM fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#f8fafc
-    style FS fill:#334155,stroke:#f59e0b,stroke-width:2px,color:#f8fafc
-    style BP fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#f8fafc
-    style Pivot fill:#450a0a,stroke:#ef4444,stroke-width:2px,color:#f8fafc
-</code></pre>
 <h3 id="business-model">۲.۱. بوم مدل کسب‌وکار (Business Model)</h3>
 <p>بیزنس مدل، نقشه کلان منطق کسب‌وکار است. این سند به زبان کیفی و انتزاعی نشان می‌دهد که بنگاه چگونه برای مشتریان خود ارزش‌آفرینی کرده و سهمی از این ارزش را در قالب درآمد به جیب سازمان بازمی‌گرداند.</p>
 <h3 id="feasibility-study">۲.۲. امکان‌سنجی پویا (Feasibility Study) به مثابه وکیل مدافع شیطان</h3>
@@ -747,41 +880,87 @@
 </ul>
 <hr />
 <h2 id="cash-is-king">۴. انضباط جریان نقدینگی و تحلیل سرمایه‌گذاری (Cash is King)</h2>
-<pre><code class="language-mermaid">graph LR
-    R1[&quot;رشد سریع فروش &gt; ۷۰٪&quot;] --&gt; R2[&quot;طولانی شدن دوره وصول (Lead Time)&quot;]
-    R2 --&gt; R3[&quot;کسری شدید سرمایه در گردش&quot;]
-    R3 --&gt; R4[&quot;ورشکستگی تکنیکال بنگاه&quot;]
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-rose-400 text-base mb-6 pb-3 border-b border-slate-800">
+    ⚠️ توالی سقوط در تله رشد: فرآیند شکل‌گیری ورشکستگی تکنیکال
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-right">
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-blue-500/30">
+      <div class="text-xs font-bold text-blue-400 mb-1">مرحله ۱: رشد توهمی</div>
+      <div class="text-sm font-bold text-white mb-2">رشد فروش بالای ۷۰٪</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">افزایش انفجاری قراردادها و سفارشات بدون ارزیابی زیرساخت مالی.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-amber-500/30">
+      <div class="text-xs font-bold text-amber-400 mb-1">مرحله ۲: انجماد سرمایه</div>
+      <div class="text-sm font-bold text-white mb-2">طولانی شدن دوره وصول</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">افزایش Lead Time تسویه فاکتورها و نیاز مبرم به تأمین سرمایه در گردش.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-orange-500/30">
+      <div class="text-xs font-bold text-orange-400 mb-1">مرحله ۳: بحران نقدینگی</div>
+      <div class="text-sm font-bold text-white mb-2">کسری نقدینگی ماهانه</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">ناتوانی در پرداخت تعهدات جاری شامل حقوق پرسنل، قبوض و مطالبات تأمین‌کننده.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-rose-500/40">
+      <div class="text-xs font-bold text-rose-400 mb-1">مرحله ۴: سقوط رسمی</div>
+      <div class="text-sm font-bold text-white mb-2">ورشکستگی تکنیکال</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">شرکت روی کاغذ در ترازنامه سود نشان می‌دهد اما به دلیل نبود وجه نقد منحل می‌شود.</p>
+    </div>
+  </div>
+  <div class="mt-4 pt-3 border-t border-slate-800 text-center text-xs text-amber-300 font-bold">
+    قانون طلایی تدریس استاد رحیم‌زاده: Cash is King (نقدینگی پادشاه است)
+  </div>
+</div>
 
-    style R1 fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#f8fafc
-    style R2 fill:#334155,stroke:#f59e0b,stroke-width:2px,color:#f8fafc
-    style R3 fill:#450a0a,stroke:#ef4444,stroke-width:2px,color:#f8fafc
-    style R4 fill:#7f1d1d,stroke:#b91c1c,stroke-width:2px,color:#f8fafc
-</code></pre>
 <h3 id="growth-trap">۴.۱. کالبدشکافی تله رشد (Growth Trap)</h3>
 <p>یکی از شایع‌ترین علل فروپاشی شرکت‌های به ظاهر موفق، ثبت نرخ‌های رشد نجومی در فروش (مثلاً بالای ۷۰ درصد) بدون برخورداری از پشتوانه نقدینگی کافی است. افزایش مقیاس فروش بدون اصلاح چرخه نقدینگی، مستلزم تأمین سرمایه در گردش سنگین برای خرید مواد اولیه و پرداخت هزینه‌های عملیاتی است. اگر وصول مطالبات با تأخیر مواجه شود، شرکت علی‌رغم سودآوری دفتری، به دلیل نبود پول نقد در حساب بانکی سقوط می‌کند.</p>
 <h3 id="_4">۴.۲. ریسک تمرکز بر مشتری (قاعده هشدار ۳۸٪)</h3>
 <p>وابستگی بیش از حد به یک یا دو مشتری بزرگ، پاشنه آشیل هر طرح تجاری است. در صورتی که سهم یک مشتری به ارقامی مانند ۳۸ درصد کل فروش برسد، کسب‌وکار در موقعیت «گروگان مشتری» قرار می‌گیرد. هرگونه شوک مالی یا مدیریتی در شرکت خریدار، حیات سازمان تأمین‌کننده را تهدید خواهد کرد. BP باید دارای برنامه مدون برای تنوع‌بخشی به سبد مشتریان باشد.</p>
 <h3 id="founder-independence">۴.۳. آزمون پایداری بدون بنیان‌گذار (Founder Independence)</h3>
 <p>سیستمی که بقای آن وابسته به نفس کشیدن بنیان‌گذار باشد، کسب‌وکار نیست؛ بلکه شغل فردی است. طرح کسب‌وکار موفق باید ساختار سازمانی، رویه‌های عملیاتی و فرهنگ تصمیم‌گیری را به گونه‌ای مهندسی کند که حتی با غیبت طولانی‌مدت بنیان‌گذار، فرآیند خلق ارزش و کسب درآمد بدون اختلال ادامه یابد:</p>
-<p>$$ P(\text{Customer Purchase} \mid \text{Founder Absence}) \to 1 $$</p>
+<div class="my-6 p-4 rounded-2xl bg-slate-900 border border-slate-800 text-center shadow-inner">
+  <div class="text-xs text-slate-400 mb-2 font-bold">آزمون پایداری سیستم در غیاب بنیان‌گذار (Founder Independence Test)</div>
+  <div class="inline-flex items-center justify-center gap-2 text-sm md:text-base font-black font-mono text-emerald-400 bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700">
+    <span>P(Customer Purchase | Founder Absence) &rarr; 1</span>
+  </div>
+  <p class="text-[11px] text-slate-400 mt-2">احتمال خرید مشتری در صورت غیبت یا خروج بنیان‌گذار باید به ۱ میل کند.</p>
+</div>
+
 <hr />
 <h2 id="bp-comfar-iii">۵. استانداردهای ساختاری BP و الزامات مدل‌سازی مالی Comfar III</h2>
-<pre><code class="language-mermaid">graph LR
-    C1[&quot;تحلیل صنعت و رقبا&quot;] --&gt; C2[&quot;تحلیل بازار و رفتار مشتری&quot;]
-    C2 --&gt; C3[&quot;برنامه عملیاتی و زنجیره تأمین&quot;]
-    C3 --&gt; C4[&quot;مدل مالی استاندارد Comfar III&quot;]
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
+    📊 ارکان چهارگانه استاندارد در تدوین طرح کسب‌وکار (BP)
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-right">
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-slate-700">
+      <div class="text-xs font-bold text-blue-400 mb-1">رکن اول</div>
+      <div class="text-sm font-bold text-white mb-2">۱. تحلیل صنعت</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">سنجش ساختار رقابت، نیروهای پورتر، موانع ورود و خروج، و روند رشد کلان صنعت.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-slate-700">
+      <div class="text-xs font-bold text-indigo-400 mb-1">رکن دوم</div>
+      <div class="text-sm font-bold text-white mb-2">۲. تحلیل بازار و مشتری</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">بخش‌بندی بازار (STP)، شناسایی درد واقعی مشتری، کشش تقاضا و اقتصاد توجه.</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-slate-700">
+      <div class="text-xs font-bold text-amber-400 mb-1">رکن سوم</div>
+      <div class="text-sm font-bold text-white mb-2">۳. برنامه عملیات و لجستیک</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">ظرفیت‌سنجی فیزیکی، مهندسی زنجیره تأمین و شبکه توزیع مویرگی (زنجیره سرد).</p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/90 border border-slate-700">
+      <div class="text-xs font-bold text-emerald-400 mb-1">رکن چهارم</div>
+      <div class="text-sm font-bold text-white mb-2">۴. مدل مالی Comfar III</div>
+      <p class="text-[11px] text-slate-300 leading-relaxed">محاسبه نقطه سر به سر، نرخ بازده داخلی (IRR) و آزمون حساسیت در برابر جهش تورم.</p>
+    </div>
+  </div>
+</div>
 
-    style C1 fill:#1e293b,stroke:#3b82f6,stroke-width:2px,color:#f8fafc
-    style C2 fill:#1e293b,stroke:#6366f1,stroke-width:2px,color:#f8fafc
-    style C3 fill:#1e293b,stroke:#f59e0b,stroke-width:2px,color:#f8fafc
-    style C4 fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#f8fafc
-</code></pre>
 <h3 id="executive-summary">۵.۱. خلاصه اجرایی (Executive Summary): ویترین ۳ دقیقه‌ای</h3>
 <p>خلاصه اجرایی باید در حداکثر ۱ تا ۳ صفحه، جوهره طرح را منعکس کند. سرمایه‌گذاران جسور و داوران بانکی در همان نگاه اول باید ۴ پرسش را پاسخ‌گرفته ببینند:
 1. اندازه فرصت بازار و جذابیت صنعت چیست؟
 2. راهکار تمایزیافته ما چه دردی از مشتری دوا می‌کند؟
 3. میزان سرمایه درخواستی چقدر است؟
-4. شاخص‌های مالی کلیدی شامل نرخ بازده داخلی ($$IRR$$)، دوره بازگشت سرمایه و ارزش فعلی خالص ($$NPV$$) چه وضعیتی دارند؟</p>
+4. شاخص‌های مالی کلیدی شامل نرخ بازده داخلی (IRR)، دوره بازگشت سرمایه و ارزش فعلی خالص (NPV) چه وضعیتی دارند؟</p>
 <h3 id="comfar-iii">۵.۲. استاندارد نرم‌افزار صنعتی Comfar III</h3>
 <p>در ارزیابی طرح‌های تجاری، خروجی‌های محاسباتی نرم‌افزار رسمی سازمان توسعه صنعتی ملل متحد (UNIDO) تحت عنوان <strong>Comfar III</strong> به عنوان مرجع قطعی پذیرفته شده است. طرح‌های تجاری مبتنی بر فایل‌های اکسل غیررسمی فاقد وجاهت ممیزی در شبکه بانکی و صندوق‌های توسعه هستند.</p>
 <h3 id="sensitivity-analysis">۵.۳. تحلیل حساسیت سناریومحور (Sensitivity Analysis)</h3>
@@ -793,7 +972,19 @@
 <p>در زیست‌بوم تجاری ایران، دو رکن <strong>«اعتماد (Trust)»</strong> و <strong>«شبکه توزیع مویرگی (Distribution Channels)»</strong> قدرتی به مراتب فراتر از نوآوری‌های صِرف تکنولوژیک دارند. کارآفرین باید در BP نشان دهد چگونه این دو اهرم بومی را به تسخیر خود درآورده است.</p>
 <hr />
 <h2 id="_6">۶. سه‌گانه زنجیره ارزش، لجستیک و اقتصاد توجه</h2>
-<p>$$ \text{Business Value} = \text{Value Creation} \times \text{Value Delivery} \times \text{Value Capture} $$</p>
+<div class="my-6 p-4 rounded-2xl bg-slate-900 border border-blue-500/30 text-center shadow-inner">
+  <div class="text-xs text-slate-400 mb-2 font-bold">فرمول سه‌گانه مهندسی ارزش (Value Chain Equation)</div>
+  <div class="inline-flex flex-wrap items-center justify-center gap-2 text-sm md:text-base font-black font-mono">
+    <span class="px-3 py-1.5 rounded-xl bg-blue-600/30 border border-blue-500/40 text-blue-300">خلق ارزش (Creation)</span>
+    <span class="text-amber-400 text-lg">×</span>
+    <span class="px-3 py-1.5 rounded-xl bg-amber-600/30 border border-amber-500/40 text-amber-300">تحویل ارزش (Delivery)</span>
+    <span class="text-amber-400 text-lg">×</span>
+    <span class="px-3 py-1.5 rounded-xl bg-emerald-600/30 border border-emerald-500/40 text-emerald-300">کسب ارزش (Capture)</span>
+    <span class="text-white text-lg">=</span>
+    <span class="px-3 py-1.5 rounded-xl bg-indigo-600/40 border border-indigo-400/50 text-white font-bold">پایداری کسب‌وکار</span>
+  </div>
+</div>
+
 <ol>
 <li><strong>خلق ارزش (Value Creation):</strong> حل مسئله و تولید کالایی با تمایز واقعی.</li>
 <li><strong>تحویل ارزش (Value Delivery):</strong> زیرساخت لجستیک، ناوگان حمل و شبکه توزیع مویرگی (مانند نقش نیسان‌های یخچال‌دار دایتی در نفوذ به بازارهای محلی یا سرمایه‌گذاری اولیه دیجی‌کالا در ناوگان اختصاصی).</li>

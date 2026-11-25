@@ -77,8 +77,8 @@
         </div>
         <div class="flex items-center gap-3">
           <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-3.5 text-center min-w-[120px]">
-            <div class="text-2xl font-black text-amber-300">جلسه ۱</div>
-            <div class="text-xs text-blue-100 font-medium">۳.۳ ساعت تدریس تحلیلی</div>
+            <div class="text-2xl font-black text-amber-300">۴ جلسه</div>
+            <div class="text-xs text-blue-100 font-medium">۱۳.۵ ساعت تدریس تحلیلی</div>
           </div>
         </div>
       </div>
@@ -93,6 +93,12 @@
         </button>
         <button onclick="switchTab('session2')" id="tab-session2" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           جلسه ۲: نگاشت STP، ماتریس رقابتی، JTBD و ارزش خدمات
+        </button>
+        <button onclick="switchTab('session3')" id="tab-session3" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۳: کانال توزیع، RFM، مدل درآمدی و هویت برند
+        </button>
+        <button onclick="switchTab('session4')" id="tab-session4" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
+          جلسه ۴: 7S و IDBASS، ۶ نیروی رقابتی و انقلاب پلتفرم
         </button>
         <button onclick="switchTab('books')" id="tab-books" class="tab-btn px-4 py-2.5 rounded-xl text-xs md:text-sm font-semibold transition-all bg-white/15 text-white hover:bg-white/25">
           📚 قفسه کتاب و مراجع علمی
@@ -299,6 +305,57 @@
       <!-- Layer 1: Visual Matrix & Executive Roadmap -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         
+        <!-- Case: Hilti & Platformization -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 text-white shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-amber-500/20 text-amber-300 px-3 py-1 rounded-full font-bold border border-amber-500/30">گذار پلتفرمی</span>
+              <span class="text-xs text-amber-400 font-bold">صنعت ابزارهای صنعتی</span>
+            </div>
+            <h3 class="text-lg font-black text-amber-400 mb-2">هیلتی (Hilti Fleet Service) و پلتفرم‌های میلیاردی</h3>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-4">
+              هیلتی با گذار از فروش صرف ابزار به اشتراک مدیریت ناوگان و تضمین تداوم عملیات کارگاه، قیمت‌گذاری پرمیوم خود را تثبیت کرد. در مقیاس کلان نیز پلتفرم‌های چندبرندی (با بیش از ۱.۲۵ میلیون تجهیز) نشان دادند چگونه می‌توان سرمایه چند میلیونی را طی ۱۰ سال به ارزش یک میلیارد دلار رساند.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-amber-300">
+            <strong>درس استراتژیک:</strong> فروش «دسترسی تضمینی و تداوم کار» بسیار سودآورتر از فروش فیزیکی دستگاه است.
+          </div>
+        </div>
+
+        <!-- Case: ING & Blu Bank -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 text-white shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full font-bold border border-cyan-500/30">تجربه مشتری و اعتماد</span>
+              <span class="text-xs text-amber-400 font-bold">بانکداری دیجیتال</span>
+            </div>
+            <h3 class="text-lg font-black text-amber-400 mb-2">بانک ING هلند و بلو بانک در برابر بانک‌های سنتی</h3>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-4">
+              ING با طراحی شعب تجربه‌محور بدون باجه و الهام از هویت دریانوردی هلند درخشید و بلو بانک در ایران با گیمیفیکیشن و جذب نوجوانان، ارزش طول عمر (CLV) نسل آینده را تصرف کرد؛ در حالی که تقلیدهای بی‌بومی‌سازی نظیر پذیرایی رایگان شعبه سبزه میدان شکست خوردند.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-cyan-300">
+            <strong>درس استراتژیک:</strong> اعتماد طی سال‌ها ساخته و با یک بدعهدی نابود می‌شود؛ هرگز به دام اعتمادسوزی نیفتید.
+          </div>
+        </div>
+
+        <!-- Case: New Coke & Walmart -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 text-white shadow-md flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-rose-500/20 text-rose-300 px-3 py-1 rounded-full font-bold border border-rose-500/30">میراث برند و داده</span>
+              <span class="text-xs text-amber-400 font-bold">کوکاکولا و وال‌مارت</span>
+            </div>
+            <h3 class="text-lg font-black text-amber-400 mb-2">فاجعه New Coke (۱۹۸۵) و تحلیل سبد وال‌مارت</h3>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-4">
+              کوکاکولا با استنباط غلط از تست کور یک‌جرعه‌ای چالش پپسی، میراث صدساله خود را کنار گذاشت و با واکنش شدید مشتریان به Coca-Cola Classic بازگشت. در مقابل، وال‌مارت با تحلیل داده‌های واقعی سبد خرید مشتریان، الگوهای رفتاری آینده را پیش‌بینی می‌کند.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-rose-300">
+            <strong>درس استراتژیک:</strong> خطای آزمون را از خطای استنباط تفکیک کنید و میراث هویتی برند را حفظ نمایید.
+          </div>
+        </div>
+
         <!-- Case: Elevator JTBD -->
         <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 text-white shadow-md flex flex-col justify-between">
           <div>
@@ -1501,6 +1558,674 @@
 
     </div>
 
+    <!-- TAB: SESSION 3 -->
+    <div id="content-session3" class="tab-content hidden space-y-8">
+      
+      <!-- Session Header Card -->
+      <div class="bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-xl border border-emerald-800/40">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <div class="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs px-3.5 py-1 rounded-full font-bold">
+            <span>جلسه سوم</span>
+            <span>•</span>
+            <span>۱۴ آبان ۱۴۰۵</span>
+            <span>•</span>
+            <span>مدت تدریس: ۳ ساعت و ۲۴ دقیقه</span>
+          </div>
+          <button onclick="toggleSessionFull('s3')" id="btn-toggle-s3" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs md:text-sm font-bold px-4 py-2 rounded-xl shadow transition-all hover:scale-105">
+            <span>مطالعه متن کامل و تفصیلی جلسه</span>
+            <span id="icon-toggle-s3">▼</span>
+          </button>
+        </div>
+        <h2 class="text-xl md:text-3xl font-black mb-3">
+          معماری کانال‌های توزیع، ماتریس RFM، مدل‌های درآمدی (PMT/لیزینگ)، زنجیره تأمین و هویت برند
+        </h2>
+        <p class="text-slate-300 text-xs md:text-sm leading-relaxed text-justify max-w-3xl">
+          تفکیک واسطه علمی از دلال، مالکیت داده‌های مشتری (Salesforce و وال‌مارت)، ماتریس RFM و قطع تخفیف فراگیر، سندرم رژ لب در رکود، فرمول اقساط PMT و منطق لیزینگ، قانون حداقل سه تأمین‌کننده، تمایز Rebranding از Redesign، فاجعه New Coke و تقدم هویت بر استراتژی.
+        </p>
+      </div>
+
+      <!-- Layer 1: Visual Matrix & Executive Roadmap -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-slate-200">
+          <h4 class="text-amber-400 font-bold text-sm mb-3 flex items-center gap-2">
+            <span>🚚 کانال توزیع، CRM و مالکیت داده (Information is Power)</span>
+          </h4>
+          <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+            واسطه علمی ارزش لجستیکی و اعتباری می‌آفریند اما دلال فاقد ارزش است. بر اساس تجربه وال‌مارت و Salesforce، در انتخاب میان کانال مستقیم (سطح ۰) و غیرمستقیم، مالکیت داده‌های رفتار مشتری تعیین‌کننده مزیت رقابتی بلندمدت است.
+          </p>
+          <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60 text-xs text-slate-300">
+            <strong class="text-emerald-300">قانون زنجیره تأمین:</strong> برای هیچ نهاده حیاتی به یک تأمین‌کننده وابسته نمانید؛ حداقل ۳ تأمین‌کننده آماده داشته باشید.
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-slate-200">
+          <h4 class="text-amber-400 font-bold text-sm mb-3 flex items-center gap-2">
+            <span>💄 ماتریس RFM، اثر رژ لب و فرمول PMT</span>
+          </h4>
+          <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+            تخفیف‌های عمومی حاشیه سود را می‌بلعند؛ مشتریان را با RFM دسته‌بندی کنید. در رکود تورمی، مصرف‌کننده از خرید سرمایه‌ای به کالاهای لوکس خرد (Lipstick Effect) و خرید اعتباری/لیزینگ مبتنی بر فرمول PMT روی می‌آورد تا نقدینگی حفظ شود.
+          </p>
+          <div class="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/60 text-center text-xs text-amber-300 font-mono font-bold">
+            RFM &rarr; Economic Profit &gt; Accounting Profit
+          </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-slate-200">
+          <h4 class="text-amber-400 font-bold text-sm mb-3 flex items-center gap-2">
+            <span>🥤 شکست New Coke: خطای آزمون در برابر خطای استنباط</span>
+          </h4>
+          <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+            کوکاکولا در واکنش به چالش پپسی و تست کور یک‌جرعه‌ای، فرمول ۱۰۰ ساله خود را تغییر داد و شکست خورد. داده‌های تست طعم غلط نبودند، بلکه استنباط مدیران و نادیده گرفتن میراث برند (Brand Heritage) فاجعه آفرید.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-slate-200">
+          <h4 class="text-amber-400 font-bold text-sm mb-3 flex items-center gap-2">
+            <span>🛡️ تقدم هویت بر استراتژی و نقد جف بیزوس</span>
+          </h4>
+          <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+            برند «تصویر ذهنی طراحی‌شده و هدفمند در غیاب شما» است، نه صرفاً روایت تصادفی دیگران. همان‌طور که برند شخصی علی دایی از شهرت مقطعی متمایز است، سازمان باهویت هرگز به دام تفکر «هدف وسیله را توجیه می‌کند» نمی‌افتد.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Layer 2: Toggleable Complete Canonical Lecture Notes -->
+      <div id="full-s3" class="hidden bg-white rounded-3xl p-6 md:p-10 shadow-lg border border-slate-200 prose-custom">
+        <h1 id="bp-rfm">طرح تدوین کسب‌وکار (BP) - جلسه سوم: معماری کانال‌های توزیع، ماتریس RFM، مدل‌های درآمدی، زنجیره تأمین و هویت برند</h1>
+<p><strong>مدرس:</strong> استاد رحیم‌زاده<br />
+<strong>مرجع علمی و آکادمیک:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
+<strong>تاریخ برگزاری:</strong> ۱۴ آبان ۱۴۰۵<br />
+<strong>مدیر تدوین، ساختاردهی و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
+<strong>پروفایل حرفه‌ای:</strong> <a href="https://www.linkedin.com/in/parsarezaie/">linkedin.com/in/parsarezaie</a></p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. جوهره، فلسفه محوری و پیام بنیادین جلسه سوم</h3>
+<p>سومین جلسه از دوره «طرح تدوین کسب‌وکار (Business Plan)» به رهبری استاد رحیم‌زاده در دانشکده اقتصاد دانشگاه تهران، با تمرکز بر <strong>«مهندسی اجزای عملیاتی بوم کسب‌وکار از کانال‌های توزیع و جریان‌های درآمدی تا زنجیره تأمین و تقدم هویت برند بر استراتژی»</strong> برگزار گردید. استاد رحیم‌زاده با تکمیل اضلاع سمت راست و چپ بوم مدل کسب‌وکار (BMC)، نشان دادند که چگونه تصمیمات ظاهراً تاکتیکی — مانند انتخاب واسطه‌ها، طراحی تخفیف، فرمول‌بندی اقساط یا تغییر لوگو — در صورت نبود منطق اقتصادی و هویت منسجم، می‌توانند بنیان یک کسب‌وکار را فرو بپاشند.</p>
+<p>محور تحلیلی این جلسه بر چهار ستون استوار بود: نخست، جایگزینی واسطه‌گری علمی به جای دلالی و مالکیت داده‌های مشتری در کانال‌های توزیع؛ دوم، مهندسی جریان نقدینگی و رفتار مصرف‌کننده در دوران رکود تورمی (RFM، اثر رژ لب، فرمول PMT و لیزینگ)؛ سوم، تاب‌آوری زنجیره تأمین با قانون حداقل سه تأمین‌کننده؛ و چهارم، اثبات تقدم «هویت برند» بر استراتژی از طریق کالبدشکافی شکست تاریخی New Coke و تمایز بازآفرینی هویتی (Rebranding) از بازطراحی ظاهری (Redesign).</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
+    <thead class="bg-slate-800 text-amber-400">
+      <tr>
+        <th class="p-3 border-b border-slate-700">محور راهبردی</th>
+        <th class="p-3 border-b border-slate-700">خطای رایج در طرح‌های کسب‌وکار ایران</th>
+        <th class="p-3 border-b border-slate-700">چارچوب علمی و راهبردی تدریس استاد رحیم‌زاده</th>
+        <th class="p-3 border-b border-slate-700">پیامد عملیاتی در تدوین BP</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-700/50 bg-slate-900/60 text-slate-200">
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">کانال‌های توزیع و داده‌ها</td>
+        <td class="p-3">سپردن کامل فروش به واسطه‌ها و بی‌خبری از مشتری نهایی</td>
+        <td class="p-3 text-emerald-400">تفکیک واسطه ارزش‌آفرین از دلال و تحلیل موازنه سطح ۰ تا ۳</td>
+        <td class="p-3 text-slate-300">حفظ مالکیت داده (Information is Power) و کنترل حاشیه سود</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">رفتار مشتری و تخفیف‌دهی</td>
+        <td class="p-3">ارائه تخفیف‌های عمومی و همگانی (Blanket Discounts) در رکود</td>
+        <td class="p-3 text-emerald-400">بخش‌بندی RFM، بهره‌گیری از اثر رژ لب و محاسبه دقیق CLV</td>
+        <td class="p-3 text-slate-300">جلوگیری از تخریب تصویر برند و تمرکز بودجه روی مشتریان ارزشمند</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">مدل‌های درآمدی و تأمین مالی</td>
+        <td class="p-3">اتکا به فروش نقدی صرف و هراس از هزینه بهره لیزینگ</td>
+        <td class="p-3 text-emerald-400">مهندسی اقساط با فرمول PMT، لیزینگ عملیاتی، BNPL و فری‌میوم</td>
+        <td class="p-3 text-slate-300">گشودن قفل قدرت خرید مشتری در رکود بدون قفل شدن سرمایه در گردش</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">زنجیره تأمین و منابع کلیدی</td>
+        <td class="p-3">وابستگی ۱۰۰٪ به یک تأمین‌کننده انحصاری به بهانه تخفیف خرید</td>
+        <td class="p-3 text-emerald-400">قانون حداقل سه تأمین‌کننده و برون‌سپاری فعالیت‌های غیرکلیدی</td>
+        <td class="p-3 text-slate-300">پیشگیری از توقف خط تولید در بحران‌ها و حفظ چابکی سرمایه</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">هویت برند و تغییرات ظاهری</td>
+        <td class="p-3">تغییر شتاب‌زده لوگو یا محصول به نام Rebranding بدون شناخت هویت</td>
+        <td class="p-3 text-emerald-400">تقدم هویت بر استراتژی، صیانت از میراث برند و تفکیک Redesign</td>
+        <td class="p-3 text-slate-300">اجتناب از فجایعی نظیر New Coke و هم‌سوسازی تمام تصمیمات با خط قرمز هویتی</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-amber-400 font-bold text-lg mb-4 flex items-center gap-2">
+    <span>🧭</span> نقشه جریان ارزش و معماری مفهومی جلسه سوم
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+    <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+      <div class="text-emerald-400 font-bold mb-2">بخش ۱: کانال‌ها، داده‌ها و RFM</div>
+      <p class="text-slate-300 leading-relaxed text-xs">
+        کالبدشکافی سطوح توزیع، تمایز واسطه از دلال، تجربه وال‌مارت و Salesforce، هرم ارزش مشتری، تحلیل سود اقتصادی در برابر حسابداری و پدیده اثر رژ لب.
+      </p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+      <div class="text-cyan-400 font-bold mb-2">بخش ۲: مهندسی درآمد و زنجیره تأمین</div>
+      <p class="text-slate-300 leading-relaxed text-xs">
+        محاسبه اقساط PMT، منطق لیزینگ در نرخ بهره بالا، مدل‌های BNPL، اشتراک و فری‌میوم، برون‌سپاری، تفکیک منابع کلیدی و قانون حداقل ۳ تأمین‌کننده.
+      </p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+      <div class="text-amber-400 font-bold mb-2">بخش ۳: هویت، میراث برند و تست بازار</div>
+      <p class="text-slate-300 leading-relaxed text-xs">
+        تفاوت Rebranding و Redesign، تحلیل خطای استنباط در کیس چالش پپسی و New Coke، فریم‌ورک ۴ پرسشی هم‌سویی هویتی و نقد تعریف برند جف بیزوس.
+      </p>
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="distribution-channels">۲. معماری کانال‌های توزیع (Distribution Channels) و مالکیت داده</h2>
+<h3 id="_2">۲.۱. سطوح کانال توزیع و تمایز ساختاری واسطه از دلال</h3>
+<p>استاد رحیم‌زاده در تشریح بلوک کانال‌های توزیع بوم مدل کسب‌وکار، ساختار انتقال محصول یا خدمت از مبدأ (تولیدکننده/واردکننده) به مصرف‌کننده نهایی را به چهار سطح تقسیم کردند:
+- <strong>سطح ۰ (کانال مستقیم):</strong> فروش بی‌واسطه تولیدکننده به مصرف‌کننده (وب‌سایت اختصاصی، فروشگاه پرچم‌دار).
+- <strong>سطح ۱:</strong> تولیدکننده ⬅ خرده‌فروش ⬅ مصرف‌کننده.
+- <strong>سطح ۲:</strong> تولیدکننده ⬅ عمده‌فروش (پخش) ⬅ خرده‌فروش ⬅ مصرف‌کننده.
+- <strong>سطح ۳:</strong> تولیدکننده ⬅ نماینده/کارگزار منطقه‌ای ⬅ عمده‌فروش ⬅ خرده‌فروش ⬅ مصرف‌کننده.</p>
+<p>نکته کانونی تدریس استاد، <strong>تمایز ماهوی «واسطه علمی و ساختاریافته» (Intermediary) از «دلال» (Middleman/Broker)</strong> بود: واسطه واقعی با ایجاد زیرساخت لجستیک، انبارداری استاندارد، شکستن حجم (Bulk Breaking) و تأمین اعتبار مالی، ارزش اقتصادی واقعی خلق می‌کند؛ در حالی که دلال بدون افزودن هیچ ارزشی به زنجیره، صرفاً از رانت عدم شفافیت اطلاعاتی سود می‌برد.</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
+    <thead class="bg-slate-800 text-amber-400">
+      <tr>
+        <th class="p-3 border-b border-slate-700">معیار موازنه (Trade-off)</th>
+        <th class="p-3 border-b border-slate-700">کانال مستقیم (سطح ۰)</th>
+        <th class="p-3 border-b border-slate-700">کانال غیرمستقیم (سطوح ۱ تا ۳)</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-700/50 bg-slate-900/60 text-slate-200">
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">مالکیت داده‌های مشتری</td>
+        <td class="p-3 text-emerald-400">۱۰۰٪ در اختیار شرکت (شناخت رفتار، فرکانس خرید و ذائقه)</td>
+        <td class="p-3 text-rose-300">گسست اطلاعاتی؛ واسطه صاحب داده و ارتباط با مشتری است</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">حاشیه سود ناخالص واحد</td>
+        <td class="p-3 text-emerald-400">بالا (عدم پرداخت پورسانت توزیع)</td>
+        <td class="p-3 text-amber-300">کاهش‌یافته به دلیل تخفیفات زنجیره‌ای عمده‌فروش و خرده‌فروش</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">سرعت نفوذ و پوشش جغرافیایی</td>
+        <td class="p-3 text-rose-300">کند و پرهزینه (نیاز به سرمایه‌گذاری سنگین در ناوگان و شعب)</td>
+        <td class="p-3 text-emerald-400">سریع و گسترده با تکیه بر شبکه آماده پخش مویرگی</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="salesforce-walmart">۲.۲. اطلاعات یعنی قدرت: درس‌های Salesforce و وال‌مارت (Walmart)</h3>
+<p>استاد با انتقاد از نگاه سطحی به CRM در ایران (محدود کردن آن به نرم‌افزار ثبت شماره تلفن)، بر قدرت تحلیل داده تأکید کردند:
+- <strong>پلتفرم Salesforce:</strong> پیشتاز جهانی مدیریت ابری ارتباط با مشتری که تمام نقاط تماس را به دارایی داده‌ای تبدیل می‌کند.
+- <strong>کیس‌استادی وال‌مارت (Walmart):</strong> بزرگ‌ترین خرده‌فروشی جهان با سیاست «تخفیف‌های دائمی» (Everyday Low Prices) و تحلیل داده‌های کارت‌های خرید مشتریان، الگوهای پنهان تغییر سبد خانوار را پیش‌بینی می‌کند و پیش از رقبا موجودی و چیدمان را تنظیم می‌نماید. <strong>اطلاعات یعنی قدرت (Information is Power).</strong></p>
+<hr />
+<h2 id="rfm">۳. ماتریس RFM، هرم ارزش مشتری، سود اقتصادی و اثر رژ لب</h2>
+<h3 id="rfm_1">۳.۱. بخش‌بندی رفتاری با ماتریس RFM و هرم ۴ سطحی مشتریان</h3>
+<p>استاد رحیم‌زاده برای مدیریت بلوک «ارتباط با مشتریان» و پرهیز از اتلاف بودجه بازاریابی، مدل ارزیابی <strong>RFM</strong> را بر پایه سه متغیر تشریح کردند:
+1. <strong>تازگی خرید (Recency - R):</strong> آخرین بار چه زمانی از ما خرید کرده است؟
+2. <strong>تواتر خرید (Frequency - F):</strong> چند بار در دوره زمانی مشخص خرید تکرار شده است؟
+3. <strong>ارزش مالی خرید (Monetary - M):</strong> مجموع مبلغ پرداختی مشتری چقدر است؟</p>
+<p>بر اساس ترکیب این شاخص‌ها، مشتریان در ۴ سطح دسته‌بندی می‌شوند و هرگز نباید برای همه آن‌ها یک نسخه واحد (نظیر تخفیف‌های عمومی) پیچید؛ چرا که <strong>تخفیف فراگیر (Blanket Discount)</strong> حاشیه سود مشتریان وفادار را می‌بلعد و شکارچیان تخفیف بی‌وفا را جذب می‌کند.</p>
+<h3 id="_3">۳.۲. سود حسابداری در برابر سود اقتصادی و خطرات توسعه خط به سمت پایین</h3>
+<ul>
+<li><strong>سود حسابداری (Accounting Profit):</strong> درآمد منهای هزینه‌های صریح ثبت‌شده در دفاتر.</li>
+<li><strong>سود اقتصادی (Economic Profit):</strong> سود حسابداری منهای <strong>هزینه فرصت (Opportunity Cost)</strong> سرمایه و زمان بنیان‌گذار. بسیاری از کسب‌وکارها روی کاغذ سود حسابداری دارند اما با لحاظ تورم و بازده بدون ریسک بازار، سود اقتصادی آن‌ها منفی است.</li>
+<li><strong>توسعه خط محصول به سمت پایین (Downward Line Extension):</strong> عرضه نسخه ارزان و کم‌کیفیت از یک برند پرمیوم در دوران رکود، می‌تواند به جای جذب بازار انبوه، اعتبار برند مادر را تخریب کرده و مشتریان وفادار رده‌بالا را فراری دهد.</li>
+</ul>
+<h3 id="lipstick-effect">۳.۳. رفتار مصرف‌کننده در رکود: سندرم/اثر رژ لب (Lipstick Effect)</h3>
+<p>با ارجاع به کتاب مرجع <strong>«رفتار مصرف‌کننده» اثر پروفسور مایکل سولومون</strong>، استاد رحیم‌زاده پدیده روان‌شناختی <strong>اثر رژ لب</strong> را تبیین کردند: در دوران جنگ (مانند جنگ جهانی دوم) و رکودهای شدید اقتصادی، مصرف‌کنندگان از خرید کالاهای سرمایه‌ای و گران‌قیمت (خودرو، مسکن، لوازم خانگی سنگین) ناتوان یا منصرف می‌شوند، اما برای حفظ روحیه، امید به آینده و رضایت شخصی، به خرید <strong>کالاهای لوکس خرد و ارزان‌تر</strong> (مانند یک رژ لب باکیفیت، یک وعده کافه ویژه یا اکسسوری لوکس کوچک) روی می‌آورند. در تدوین BP برای اقتصاد تورمی ایران، طراحی پیشنهادهای «لوکس خرد و دسترس‌پذیر» در کنار ابزارهای اعتباری BNPL، نرخ تبدیل را به‌شدت افزایش می‌دهد.</p>
+<hr />
+<h2 id="pmt">۴. مهندسی جریان‌های درآمدی: فرمول PMT، لیزینگ، اشتراک و فری‌میوم</h2>
+<p>استاد رحیم‌زاده در کالبدشکافی بلوک «جریان‌های درآمدی» (Revenue Streams)، فرمول محاسبه اقساط <strong>PMT</strong> و منطق اقتصادی ابزارهای تأمین مالی را تشریح کردند:</p>
+<div class="math-eq my-4 p-4 bg-slate-900 rounded-xl border border-slate-700 text-amber-300" dir="ltr">
+  <span class="math-var">PMT</span>
+  <span class="math-op">=</span>
+  <span class="math-frac">
+    <span class="math-num">P &times; r &times; (1 + r)<sup>n</sup></span>
+    <span class="math-den">(1 + r)<sup>n</sup> &minus; 1</span>
+  </span>
+</div>
+
+<p>که در آن <span dir="ltr"><code>P</code></span> اصل سرمایه یا مبلغ تسهیلات، <span dir="ltr"><code>r</code></span> نرخ بهره دوره‌ای و <span dir="ltr"><code>n</code></span> تعداد دوره‌های بازپرداخت است.</p>
+<h3 id="_4">۴.۱. چرا کسب‌وکارها لیزینگ با نرخ بهره ظاهراً بالا را می‌پذیرند؟</h3>
+<p>استاد نشان دادند که در بیزنس پلن حرفه‌ای (به‌ویژه در ناوگان خودرو، ماشین‌آلات صنعتی و مسکن)، خرید نقدی تجهیزات اغلب مرگبار است زیرا <strong>سرمایه در گردش (Working Capital)</strong> بنگاه را منجمد می‌کند. اگر بازده سرمایه در گردش در عملیات جاری (ROI عملیاتی) بیشتر از نرخ بهره لیزینگ باشد، استفاده از لیزینگ حتی با نرخ بهره بالا کاملاً عقلایی و ارزش‌آفرین است؛ مشروط بر آنکه با جریان نقدی ماهانه طرح هم‌خوانی داشته باشد.</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
+    <thead class="bg-slate-800 text-amber-400">
+      <tr>
+        <th class="p-3 border-b border-slate-700">مدل جریان درآمدی</th>
+        <th class="p-3 border-b border-slate-700">سازوکار عملیاتی</th>
+        <th class="p-3 border-b border-slate-700">کاربرد بهینه در طرح کسب‌وکار (BP)</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-700/50 bg-slate-900/60 text-slate-200">
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">لیزینگ و اجاره به شرط تملیک</td>
+        <td class="p-3">تأمین دارایی سرمایه‌ای با اقساط PMT و مالکیت تدریجی یا بازگشت دارایی</td>
+        <td class="p-3 text-emerald-400">تجهیزات سنگین، ناوگان حمل‌ونقل و ماشین‌آلات صنعتی با حفظ نقدینگی</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">مدل اعتباری BNPL</td>
+        <td class="p-3">تقسیط کوتاه‌مدت (مثلاً ۴ قسطه) برای خریدهای خرد بدون وثیقه بانکی</td>
+        <td class="p-3 text-emerald-400">خرده‌فروشی آنلاین و خدمات B2C در شرایط افت قدرت خرید ریالی</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">مدل اشتراک (Subscription)</td>
+        <td class="p-3">پرداخت مستمر ماهانه/سالانه در ازای دسترسی پیوسته</td>
+        <td class="p-3 text-emerald-400">نرم‌افزارهای ابری (SaaS)، باشگاه‌ها و خدمات نگهداری دوره‌ای (MRR پایدار)</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">فری‌میوم (Freemium)</td>
+        <td class="p-3">ارائه هسته پایه به‌صورت رایگان و فروش امکانات ویژه به درصد کوچکی از کاربران</td>
+        <td class="p-3 text-rose-300">نیازمند کنترل دقیق هزینه میزبانی کاربران رایگان نسبت به نرخ تبدیل پولی</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<hr />
+<h2 id="_5">۵. معماری سمت چپ بوم: منابع کلیدی، برون‌سپاری و قانون حداقل سه تأمین‌کننده</h2>
+<p>در بخش «فعالیت‌های کلیدی»، «منابع کلیدی» و «شرکای کلیدی»، استاد رحیم‌زاده سه اصل انضباطی را مطرح کردند:
+1. <strong>تفکیک منابع عادی از منابع کلیدی:</strong> منبع کلیدی آن دارایی (فیزیکی، فکری/دانشی، انسانی یا مالی) است که بدون آن، ارزش پیشنهادی شما متوقف می‌شود و به سادگی قابل جایگزینی در بازار نیست.
+2. <strong>نگاشت توانمندی داخلی و برون‌سپاری (Outsourcing):</strong> فعالیت‌هایی که جزو شایستگی محوری (Core Competency) سازمان نیستند (مانند حمل‌ونقل عمومی، امور حسابداری استاندارد یا سرورهای عمومی) باید برون‌سپاری شوند تا تمرکز و سرمایه روی مزیت رقابتی متمرکز بماند.
+3. <strong>قانون طلایی حداقل سه تأمین‌کننده:</strong> اتکا به یک تأمین‌کننده یا پیمانکار واحد در تدوین BP یک خودکشی عملیاتی است. برای هر ماده اولیه یا خدمت حیاتی باید حداقل <strong>۳ تأمین‌کننده جایگزین</strong> در رتبه‌بندی آمادگی داشته باشید تا در صورت قطع همکاری، تحریم یا شوک قیمتی، خط تولید متوقف نشود.</p>
+<hr />
+<h2 id="new-coke">۶. هویت برند، بازآفرینی در برابر بازطراحی و شکست تاریخی New Coke</h2>
+<h3 id="rebranding-redesign">۶.۱. تمایز استراتژیک Rebranding در برابر Redesign</h3>
+<p>یکی از بزرگ‌ترین اشتباهات مدیران و آژانس‌های تبلیغاتی در ایران، خلط مبحث میان دو مفهوم است:
+- <strong>بازطراحی (Redesign):</strong> تغییر در لایه بصری و فیزیکی (تغییر فونت لوگو، رنگ سازمانی، بسته‌بندی یا دکوراسیون) با حفظ کامل هسته هویتی و وعده برند.
+- <strong>بازآفرینی برند (Rebranding):</strong> تغییر بنیادین در شخصیت، مخاطب هدف، ارزش پیشنهادی و جایگاه‌یابی ذهنی برند؛ اقدامی بسیار پرریسک که معمولاً پس از ادغام‌ها یا تغییر کامل مدل کسب‌وکار انجام می‌شود.</p>
+<p><strong>صیانت از میراث برند (Brand Heritage):</strong> تغییر بی‌محابای نشانه‌ها و وعده‌هایی که طی سال‌ها در حافظه تاریخی مصرف‌کننده حک شده‌اند، سرمایه اعتماد برند را نابود می‌کند. تغییر برای صرفاً «متفاوت بودن» بدون ریشه هویتی، به معنای گم کردن مشتری وفادار است.</p>
+<h3 id="new-coke_1">۶.۲. کیس‌استادی چالش پپسی و فاجعه New Coke (۱۹۸۵): خطای استنباط از داده</h3>
+<p>استاد رحیم‌زاده با کالبدشکافی نبرد تاریخی پپسی و کوکاکولا در سال ۱۹۸۵، تفاوت حیاتی میان <strong>«خطای آزمون» (Testing Error)</strong> و <strong>«خطای استنباط از استخراج داده» (Inference Error)</strong> را تشریح کردند:
+- پپسی با اجرای تست کور (Blind Taste Test) به نام «چالش پپسی» نشان داد که در نوشیدن <strong>یک جرعه</strong>، بیشتر افراد طعم شیرین‌تر پپسی را ترجیح می‌دهند.
+- کوکاکولا با هراس از افت سهم بازار، فرمول ۱۰۰ ساله خود را تغییر داد و <strong>New Coke</strong> را عرضه کرد.
+- نتیجه یک فاجعه تاریخی و شورش مشتریان بود و کوکاکولا مجبور شد با عنوان <strong>Coca-Cola Classic</strong> به فرمول قبلی بازگردد!
+- <strong>تحلیل دقیق استاد:</strong> داده تست طعم فی‌نفسه غلط نبود (خطای آزمون وجود نداشت)؛ اما <strong>استنباط مدیران غلط بود</strong>. اولاً طعم یک جرعه در تست آزمایشگاهی با لذت نوشیدن یک قوطی کامل متفاوت است؛ ثانیاً مصرف‌کننده کوکاکولا صرفاً آب و شکر نمی‌خرید، بلکه <strong>هویت، نوستالژی و خاطره جمعی</strong> برند را مصرف می‌کرد.</p>
+<hr />
+<h2 id="_6">۷. تقدم هویت بر استراتژی و نقد تعریف برند جف بیزوس</h2>
+<h3 id="_7">۷.۱. فریم‌ورک ۴ پرسشی هم‌سویی هویتی و خطر سازمان بی‌هویت</h3>
+<p>استاد رحیم‌زاده تأکید کردند که <strong>هویت (Identity) بر استراتژی (Strategy) مقدم است</strong>. سازمانی که خط قرمزهای هویتی و اخلاقی مشخصی نداشته باشد، به دام تفکر «هدف، وسیله را توجیه می‌کند» می‌افتد (نظیر فروشنده‌ای که به خاطر ۵ هزار تومان سود بیشتر، حق مشتری را ضایع می‌کند و کل اعتماد آینده را می‌سوزاند). هر پروژه یا تغییر استراتژیک جدید در سازمان باید از فیلتر <strong>۴ پرسش کلیدی هم‌سویی هویتی</strong> (بر مبنای بایدها و نبایدهای هویتی بنگاه) عبور کند.</p>
+<h3 id="-">۷.۲. نقد علمی تعریف جف بیزوس و مدل شکاف هویت-تصویر</h3>
+<p>استاد رحیم‌زاده جمله مشهور جف بیزوس («برند چیزی است که وقتی در اتاق نیستید، دیگران درباره شما می‌گویند») را به‌عنوان تعریفی ناقص و منفعل نقد کردند؛ زیرا اگر کنترل روایت را رها کنید، دیگران بر اساس اتفاقات تصادفی درباره شما قضاوت می‌کنند.
+- <strong>تعریف دقیق استاد رحیم‌زاده:</strong> برند عبارت است از <strong>«تصویر ذهنیِ طراحی‌شده و هدفمندی که شما می‌خواهید دیگران در غیاب شما از شما داشته باشند»</strong>.
+- موفقیت برندینگ در گرو به حداقل رساندن شکاف میان <strong>هویت طراحی‌شده (Identity)</strong> و <strong>تصویر ادراک‌شده (Image)</strong> است.</p>
+<h3 id="_8">۷.۳. کیس برند شخصی: علی دایی در برابر شهرت مقطعی</h3>
+<p>برای تبیین فرق بنیادین <strong>«شهرت» (Fame)</strong> و <strong>«برند شخصی» (Personal Brand)</strong>، استاد دو نمونه را مقایسه کردند:
+- شخصی ممکن است در جشنواره کن جایزه بگیرد و یک‌شبه مشهور شود، اما به دلیل نداشتن مهارت تعامل، هویت منسجم و اصالت رفتاری، برند پایداری ندارد.
+- در نقطه مقابل، <strong>علی دایی</strong> حتی اگر از اردوگاه یا فدراسیون حذف شود، شخصیت، اعتبار و هویت برند او به‌طور مستقل همچنان کار می‌کند، ارزش می‌آفریند و در ذهن جامعه محترم می‌ماند.</p>
+<hr />
+<h2 id="_9">۸. دیالوگ‌های سقراطی کلاسی و تبادل دیدگاه‌های عملیاتی</h2>
+<h3 id="_10">دیالوگ اول: درباره استفاده از واسطه‌ها در ابتدای راه‌اندازی کسب‌وکار</h3>
+<ul>
+<li><strong>دانشجو:</strong> اگر یک استارتاپ در ابتدای مسیر سرمایه کافی برای ایجاد کانال توزیع مستقیم (سطح ۰) نداشته باشد، آیا باید از همان روز اول به دنبال حذف واسطه‌ها باشد؟</li>
+<li><strong>استاد رحیم‌زاده:</strong> خیر، حذف احساسی واسطه‌ها در شروع کار اشتباه است. شما باید ببینید آن واسطه چه ارزشی به شما می‌دهد. اگر واسطه لجستیک، انبارش و دسترسی سریع به خرده‌فروشان را با هزینه کمتر از ظرفیت داخلی شما فراهم می‌کند، از آن استفاده کنید؛ اما هم‌زمان مکانیسمی (نظیر گارانتی، QR کد روی بسته‌بندی یا باشگاه مشتریان) طراحی کنید که ارتباط داده‌ای شما با مصرف‌کننده نهایی قطع نشود.</li>
+</ul>
+<h3 id="_11">دیالوگ دوم: درباره هم‌سویی تغییرهای جدید با هویت سازمان</h3>
+<ul>
+<li><strong>دانشجو:</strong> آیا منظور از تقدم هویت بر استراتژی این است که اگر تغییر یا فرصت جدیدی در بازار به سازمان جهت داد، نباید آن را بپذیریم؟</li>
+<li><strong>استاد رحیم‌زاده:</strong> نه، منظور این نیست که سازمان منفعل باشد یا تغییر نکند. موضوع این است که چطور این تغییرات را دریافت و هضم می‌کنید. تغییر می‌آید اما باید از صافی بایدها و نبایدهای هویتی شما بگذرد. اگر فرصتی سودآور است اما خط قرمز هویتی و اعتبار بلندمدت شما را می‌سوزاند، پذیرفتن آن یعنی خودکشی برند.</li>
+</ul>
+<h3 id="_12">دیالوگ سوم: درباره بقای فروشگاه‌های بی‌هویت در بازار ایران</h3>
+<ul>
+<li><strong>دانشجو:</strong> پس چرا سازمان‌ها و فروشگاه‌هایی که هیچ خط قرمزی برای صیانت از مشتری ندارند و حقوق مشتری را رعایت نمی‌کنند، همچنان در بازار حضور دارند؟</li>
+<li><strong>استاد رحیم‌زاده:</strong> حضور مقطعی با بقای پایدار و مقیاس‌پذیری متفاوت است! کسی که بی‌هویت است و سر مشتری کلاه می‌گذارد، مجبور است مدام به دنبال مشتری جدید و فریب تازه بگردد، هزینه جذبش سر به فلک می‌کشد و با اولین تغییر شرایط بازار یا شفافیت اطلاعاتی حذف می‌شود. این کسب‌وکارها هرگز تبدیل به دارایی برند قابل ارزش‌گذاری نمی‌شوند.</li>
+</ul>
+<hr />
+<h2 id="_13">۹. کتاب‌شناسی و مراجع علمی جلسه سوم</h2>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
+    <thead class="bg-slate-800 text-amber-400">
+      <tr>
+        <th class="p-3 border-b border-slate-700">ردیف</th>
+        <th class="p-3 border-b border-slate-700">عنوان اثر / منبع مرجع</th>
+        <th class="p-3 border-b border-slate-700">پدیدآورنده / پلتفرم</th>
+        <th class="p-3 border-b border-slate-700">آموزه محوری در جلسه سوم</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-700/50 bg-slate-900/60 text-slate-200">
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-mono text-amber-400 font-bold">1</td>
+        <td class="p-3 font-semibold text-white">رفتار مصرف‌کننده<br><span class="font-mono text-slate-400 text-[11px]">Consumer Behavior</span></td>
+        <td class="p-3">پروفسور مایکل آر. سولومون<br><span class="font-mono text-slate-400 text-[11px]">(Michael R. Solomon)</span></td>
+        <td class="p-3 text-slate-300">تحلیل روان‌شناسی خریدار در شرایط رکود، اثر رژ لب (Lipstick Effect) و محرک‌های پنهان تصمیم خرید.</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-mono text-amber-400 font-bold">2</td>
+        <td class="p-3 font-semibold text-white">خلق مدل کسب‌وکار<br><span class="font-mono text-slate-400 text-[11px]">Business Model Generation</span></td>
+        <td class="p-3">الکساندر استروالدر و ایو پیگنیور<br><span class="font-mono text-slate-400 text-[11px]">(Osterwalder & Pigneur)</span></td>
+        <td class="p-3 text-slate-300">تکمیل بلوک‌های کانال توزیع، ارتباط با مشتریان، جریان درآمدی، منابع، فعالیت‌ها و شرکای کلیدی.</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-mono text-amber-400 font-bold">3</td>
+        <td class="p-3 font-semibold text-white">مستندات تحلیلی و کیس‌های مدیریت داده<br><span class="font-mono text-slate-400 text-[11px]">Salesforce CRM & Walmart Data Case</span></td>
+        <td class="p-3">منابع تجربی و مطالعات موردی کلاس</td>
+        <td class="p-3 text-slate-300">کاربست عملیاتی CRM داده‌محور، ماتریس RFM، تحلیل سبد خرید و مالکیت اطلاعات مشتری.</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-mono text-amber-400 font-bold">4</td>
+        <td class="p-3 font-semibold text-white">پرونده موردی تاریخ برندینگ کوکاکولا و پپسی<br><span class="font-mono text-slate-400 text-[11px]">New Coke (1985) & Pepsi Challenge</span></td>
+        <td class="p-3">پرونده‌های کلاسیک هاروارد و تاریخ بازاریابی</td>
+        <td class="p-3 text-slate-300">تمایز خطای آزمون از خطای استنباط، حفاظت از میراث برند و مرز Rebranding با Redesign.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+      </div>
+
+    </div>
+
+    <!-- TAB: SESSION 4 -->
+    <div id="content-session4" class="tab-content hidden space-y-8">
+      
+      <!-- Session Header Card -->
+      <div class="bg-gradient-to-r from-slate-900 via-amber-950 to-slate-900 text-white rounded-3xl p-6 md:p-8 shadow-xl border border-amber-800/40">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <div class="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs px-3.5 py-1 rounded-full font-bold">
+            <span>جلسه چهارم</span>
+            <span>•</span>
+            <span>۲۸ آبان ۱۴۰۵</span>
+            <span>•</span>
+            <span>مدت تدریس: ۳ ساعت و ۳۴ دقیقه</span>
+          </div>
+          <button onclick="toggleSessionFull('s4')" id="btn-toggle-s4" class="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-500 text-white text-xs md:text-sm font-bold px-4 py-2 rounded-xl shadow transition-all hover:scale-105">
+            <span>مطالعه متن کامل و تفصیلی جلسه</span>
+            <span id="icon-toggle-s4">▼</span>
+          </button>
+        </div>
+        <h2 class="text-xl md:text-3xl font-black mb-3">
+          ارزیابی درون‌سازمانی (7S و IDBASS)، شش نیروی رقابتی، تله موفقیت، بانکداری دیجیتال و انقلاب پلتفرم‌ها
+        </h2>
+        <p class="text-slate-300 text-xs md:text-sm leading-relaxed text-justify max-w-3xl">
+          منطق واگذاری سهام در تیم بنیان‌گذار، چارچوب 7S مک‌کنزی و مدل اختصاصی IDBASS، مدل ۶ نیروی پورتر-رحیم‌زاده، نظریه انتخاب گلاسر و اقناع سیالدینی، الگوی بانک ING هلند و بلو بانک، هشدار بحران اعتمادسوزی، تله موفقیت قبلی، و چرخش هیلتی (Hilti Fleet Service) به انقلاب پلتفرم‌های میلیاردی.
+        </p>
+      </div>
+
+      <!-- Layer 1: Visual Matrix & Executive Roadmap -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-slate-200">
+          <h4 class="text-amber-400 font-bold text-sm mb-3 flex items-center gap-2">
+            <span>🧩 7S مک‌کنزی، IDBASS v2 و ۶ نیروی رقابتی</span>
+          </h4>
+          <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+            در ارزیابی درون‌سازمانی، فرهنگ تحت عنوان «ارزش‌های مشترک» (Shared Values) محور مدل 7S است و در کنار مدل اختصاصی IDBASS نقاط ضعف پنهان را آشکار می‌سازد. در تحلیل صنعت نیز افزودن نیروی ششم (تکمیل‌کننده‌ها) به مدل پورتر و مصاحبه با خبرگان ضروری است.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-slate-200">
+          <h4 class="text-amber-400 font-bold text-sm mb-3 flex items-center gap-2">
+            <span>🏦 بانک ING هلند، بلو بانک و بحران اعتمادسوزی</span>
+          </h4>
+          <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+            بانک ING شعب فیزیکی بدون باجه را بر پایه هویت دریانوردی هلند ساخت و بلو بانک با گیمیفیکیشن، CLV نسل جدید را پیش از بانک‌های سنتی تصرف کرد. استاد هشدار دادند تقلید کورکورانه (پذیرایی رایگان) شکست می‌خورد و اعتمادسوزی سرمایه برند را نابود می‌کند.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-slate-200">
+          <h4 class="text-amber-400 font-bold text-sm mb-3 flex items-center gap-2">
+            <span>⚠️ تله موفقیت و شکاف‌یابی زنجیره ارزش</span>
+          </h4>
+          <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+            موفقیت دیروز بزرگ‌ترین تهدید فرداست (کیس صابون مسافرتی). به جای اختراع مجدد چرخ، تک‌تک فعالیت‌های زنجیره ارزش را با متوسط صنعت مقایسه کنید و دقیقاً در نقطه شکاف صنعت، ارزش افزوده خلق نمایید.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-slate-200">
+          <h4 class="text-amber-400 font-bold text-sm mb-3 flex items-center gap-2">
+            <span>🛠️ کیس هیلتی (Hilti Fleet) و مقیاس‌پذیری پلتفرم</span>
+          </h4>
+          <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+            هیلتی از فروش ابزارهای های‌اند به سرویس مدیریت ناوگان (Fleet Service) گذار کرد. پلتفرم‌های تجمیع‌کننده چندبرندی (با بیش از ۱.۲۵ میلیون تجهیز) نشان دادند چگونه می‌توان سرمایه‌گذاری چند میلیون دلاری را طی ۱۰ سال به ارزش ۱ میلیارد دلار رساند.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Layer 2: Toggleable Complete Canonical Lecture Notes -->
+      <div id="full-s4" class="hidden bg-white rounded-3xl p-6 md:p-10 shadow-lg border border-slate-200 prose-custom">
+        <h1 id="bp-7s-idbass">طرح تدوین کسب‌وکار (BP) - جلسه چهارم: ارزیابی درون‌سازمانی (7S و IDBASS)، شش نیروی رقابتی، تله موفقیت، بانکداری دیجیتال و انقلاب پلتفرم‌ها</h1>
+<p><strong>مدرس:</strong> استاد رحیم‌زاده<br />
+<strong>مرجع علمی و آکادمیک:</strong> دانشکده اقتصاد دانشگاه تهران - گرایش مدیریت استراتژیک MBA (کد دوره: <code>mba-sm05--06-1</code>)<br />
+<strong>تاریخ برگزاری:</strong> ۲۸ آبان ۱۴۰۵<br />
+<strong>مدیر تدوین، ساختاردهی و نگارش جامع:</strong> پارسا رضائی (Parsa Rezaie)<br />
+<strong>پروفایل حرفه‌ای:</strong> <a href="https://www.linkedin.com/in/parsarezaie/">linkedin.com/in/parsarezaie</a></p>
+<hr />
+<h2 id="executive-summary">۱. شناسنامه جلسه و چکیده راهبردی اجرایی (Executive Summary)</h2>
+<h3 id="_1">۱.۱. جوهره، فلسفه محوری و پیام بنیادین جلسه چهارم</h3>
+<p>چهارمین جلسه از دوره «طرح تدوین کسب‌وکار (Business Plan)» با تدریس استاد رحیم‌زاده در دانشکده اقتصاد دانشگاه تهران، به <strong>«کالبدشکافی عمیق محیط درون‌سازمانی و برون‌سازمانی، مهندسی اعتماد، آسیب‌شناسی تله موفقیت و گذار از فروش محصول به مدل‌های پلتفرمی و خدماتی»</strong> اختصاص یافت.</p>
+<p>استاد رحیم‌زاده در این نشست نشان دادند که تدوین BP بدون درک ساختار درونی سازمان (تیم بنیان‌گذار، منطق واگذاری سهام، چارچوب 7S مک‌کنزی و مدل اختصاصی IDBASS) و بدون تحلیل شش نیروی رقابتی صنعت، صرفاً به تولید اسناد توهمی می‌انجامد. ایشان با طرح کیس‌استادی‌های زنده از <strong>بانک ING هلند، بلو بانک، بانک ملت، برند هیلتی (Hilti Fleet Service)</strong> و انقلاب پلتفرم‌های چندبرندی طی دهه گذشته، ثابت کردند که کسب‌وکارهای برنده‌ی فردا، بنگاه‌هایی هستند که <strong>قربانی موفقیت دیروز خود نمی‌شوند</strong> و شکاف‌های زنجیره ارزش صنعت را به اهرم خلق ارزش تبدیل می‌کنند.</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
+    <thead class="bg-slate-800 text-amber-400">
+      <tr>
+        <th class="p-3 border-b border-slate-700">محور تحلیلی</th>
+        <th class="p-3 border-b border-slate-700">تله رایج در کسب‌وکارهای ایرانی</th>
+        <th class="p-3 border-b border-slate-700">چارچوب علمی و راهبردی تدریس استاد رحیم‌زاده</th>
+        <th class="p-3 border-b border-slate-700">کاربرد مستقیم در تدوین BP</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-700/50 bg-slate-900/60 text-slate-200">
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">تیم‌سازی و واگذاری سهام</td>
+        <td class="p-3">تک‌روی بنیان‌گذار یا استخدام صرف با حقوق ثابت بالا در روز اول</td>
+        <td class="p-3 text-emerald-400">واگذاری هدفمند سهام جهت تقسیم ریسک، سنجش همراهی و انگیزه مالکیت</td>
+        <td class="p-3 text-slate-300">کاهش فشار نقدینگی اولیه و تثبیت هسته سخت تیم هم‌بنیان‌گذار</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">ارزیابی درون‌سازمانی</td>
+        <td class="p-3">بسنده کردن به SWOT سطحی و کلیشه‌ای بدون عمق عملیاتی</td>
+        <td class="p-3 text-emerald-400">ترکیب 7S مک‌کنزی (با محوریت Shared Values) و مدل اختصاصی IDBASS</td>
+        <td class="p-3 text-slate-300">شناسایی دقیق نقاط ضعف ساختاری و هم‌راستاسازی اجزای سخت و نرم</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">تحلیل ساختار صنعت</td>
+        <td class="p-3">تحلیل ایستا و نادیده گرفتن بازیگران مکمل در زیست‌بوم</td>
+        <td class="p-3 text-emerald-400">مدل ۶ نیروی رقابتی پورتر-رحیم‌زاده، BCG، GE و مصاحبه با خبرگان</td>
+        <td class="p-3 text-slate-300">سنجش واقعی سودآوری صنعت و طراحی ائتلاف با تکمیل‌کننده‌ها</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">نوآوری در تجربه و اعتماد</td>
+        <td class="p-3">تقلید ظاهری از غرب (پذیرایی رایگان) و غفلت از اعتمادسوزی</td>
+        <td class="p-3 text-emerald-400">بومی‌سازی تجربه (ING vs بلو بانک) و صیانت مطلق از اعتماد مشتری</td>
+        <td class="p-3 text-slate-300">تسخیر CLV نسل جدید و جلوگیری از فروپاشی سرمایه اجتماعی برند</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">مدل درآمدی و مقیاس‌پذیری</td>
+        <td class="p-3">گیر افتادن در فروش تک‌محصولی و قربانی موفقیت قبلی شدن</td>
+        <td class="p-3 text-emerald-400">گذار از فروش ابزار به سرویس اشتراکی/فلیت (هیلتی) و مدل پلتفرمی</td>
+        <td class="p-3 text-slate-300">جهش نمایی ارزش بنگاه (از سرمایه‌گذاری میلیون‌دلاری به ارزش میلیاردی)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
+  <div class="text-amber-400 font-bold text-lg mb-4 flex items-center gap-2">
+    <span>🏛️</span> نقشه جریان ارزش و معماری مفهومی جلسه چهارم
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+    <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+      <div class="text-emerald-400 font-bold mb-2">فاز ۱: کالبدشکافی سازمان و صنعت</div>
+      <p class="text-slate-300 leading-relaxed text-xs">
+        منطق واگذاری سهام در شروع، ارزیابی درونی با 7S مک‌کنزی و مدل IDBASS v2، تحلیل ۶ نیروی پورتر-رحیم‌زاده، ماتریس‌های BCG/GE و درس‌آموزی از شکست‌ها.
+      </p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+      <div class="text-cyan-400 font-bold mb-2">فاز ۲: روان‌شناسی، تجربه و اعتماد</div>
+      <p class="text-slate-300 leading-relaxed text-xs">
+        نظریه انتخاب گلاسر، مثبت‌نگری سلیگمان، اصول اقناع سیالدینی، تحلیل بانک ING هلند، بلو بانک در برابر بانک‌های سنتی و هشدار بحران اعتمادسوزی.
+      </p>
+    </div>
+    <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700">
+      <div class="text-amber-400 font-bold mb-2">فاز ۳: تله موفقیت و انقلاب پلتفرم</div>
+      <p class="text-slate-300 leading-relaxed text-xs">
+        تله موفقیت قبلی (صابون مایع و بسته‌بندی)، بنچمارک شکاف زنجیره ارزش، کیس هیلتی (Hilti Fleet Service) و مقیاس‌پذیری پلتفرم‌های چندبرندی.
+      </p>
+    </div>
+  </div>
+</div>
+
+<hr />
+<h2 id="7s-idbass">۲. تیم بنیان‌گذار، منطق واگذاری سهام و ارزیابی درون‌سازمانی (7S و IDBASS)</h2>
+<h3 id="_2">۲.۱. چرا در ابتدای کسب‌وکار سهام واگذار می‌کنیم و تنها عمل نمی‌کنیم؟</h3>
+<p>در پاسخ به پرسش کلاس پیرامون دلیل تقسیم سهام در ابتدای مسیر، استاد رحیم‌زاده چهار منطق اقتصادی و رفتاری را تبیین کردند:
+1. <strong>محدودیت نقدینگی اولیه:</strong> در شروع کار، شرکت توان پرداخت حقوق‌های سنگین بازار را ندارد.
+2. <strong>تسهیم ریسک (Risk Sharing):</strong> با واگذاری سهام، افراد کلیدی در ریسک شکست یا پیروزی پروژه شریک می‌شوند.
+3. <strong>آزمون وفاداری و همراهی واقعی:</strong> در ماه‌های نخست مشخص می‌شود چه کسی واقعاً دغدغه رشد سازمان را دارد و چه کسی صرفاً حقوق‌بگیر است.
+4. <strong>ایجاد انگیزه درونی مالکیت:</strong> فرد سهامدار با ذهنیت «این کسب‌وکار متعلق به خودم است» شبانه‌روز برای حل بحران‌ها تلاش می‌کند.</p>
+<h3 id="7s-idbass_1">۲.۲. چارچوب 7S مک‌کنزی و مدل اختصاصی IDBASS (نسخه دوم)</h3>
+<p>برای ارزیابی توانمندی‌های درونی بنگاه پیش از تدوین BP، استاد دو ابزار کلیدی را معرفی کردند:
+- <strong>چارچوب 7S مک‌کنزی (McKinsey 7S Framework):</strong> بررسی هم‌راستایی میان ۳ عنصر سخت (Strategy, Structure, Systems) و ۴ عنصر نرم (Style, Staff, Skills, <strong>Shared Values</strong>). استاد تأکید کردند که در این مدل، فرهنگ سازمانی با عنوان دقیق <strong>ارزش‌های مشترک (Shared Values)</strong> در مرکز شبکه قرار دارد.
+- <strong>مدل اختصاصی IDBASS (نسخه دوم):</strong> مدلی طراحی‌شده توسط استاد رحیم‌زاده (خارج از منابع عمومی رایج) که برای جراحی عمیق نقاط قوت و ضعف کلیدی سازمان و آمادگی آن جهت ورود به بازار تدوین گردیده است.</p>
+<hr />
+<h2 id="-">۳. تحلیل محیط صنعت: مدل شش نیروی رقابتی پورتر-رحیم‌زاده و پژوهش میدانی</h2>
+<p>استاد رحیم‌زاده سطح «محیط صنعت» (Industry Environment) را حد فاصل میان کسب‌وکار فردی و محیط کلان اقتصاد تعریف کرده و مدل کلاسیک مایکل پورتر را با افزودن <strong>نیروی ششم</strong> تکمیل نمودند:</p>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
+    <thead class="bg-slate-800 text-amber-400">
+      <tr>
+        <th class="p-3 border-b border-slate-700">نیروی رقابتی</th>
+        <th class="p-3 border-b border-slate-700">کارکرد تحلیلی در بیزنس پلن</th>
+        <th class="p-3 border-b border-slate-700">اثر بر حاشیه سود صنعت</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-700/50 bg-slate-900/60 text-slate-200">
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">۱. شدت رقابت درون‌صنعتی (هسته مرکزی)</td>
+        <td class="p-3">سنجش جنگ قیمت، تبلیغات تهاجمی و نبرد بر سر سهم بازار (اقیانوس سرخ)</td>
+        <td class="p-3 text-rose-300">رقابت شدید ⬅ فرسایش مستقیم سود</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">۲. تهدید تازه‌واردان (موانع ورود)</td>
+        <td class="p-3">ارزیابی مجوزها، سرمایه اولیه، تکنولوژی و برندینگ لازم برای ورود رقیب جدید</td>
+        <td class="p-3 text-rose-300">موانع پایین ⬅ تقسیم سریع بازار</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">۳. قدرت چانه‌زنی خریداران</td>
+        <td class="p-3">توانایی مشتریان در تحمیل کاهش قیمت یا دریافت خدمات رایگان بیشتر</td>
+        <td class="p-3 text-amber-300">تمرکز خریدار ⬅ فشار بر قیمت فروش</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">۴. قدرت چانه‌زنی تأمین‌کنندگان</td>
+        <td class="p-3">انحصار تأمین مواد اولیه یا فناوری و امکان افزایش یک‌جانبه قیمت‌ها</td>
+        <td class="p-3 text-amber-300">انحصار تأمین ⬅ افزایش بهای تمام‌شده</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-white">۵. تهدید کالاها و خدمات جایگزین</td>
+        <td class="p-3">ظهور راه‌حل‌های متفاوت از صنایع دیگر که همان نیاز (JTBD) را حل می‌کنند</td>
+        <td class="p-3 text-rose-300">سقف‌گذاری قیمتی بر کل صنعت</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-semibold text-amber-300">۶. تکمیل‌کننده‌ها (Complementors - نیروی ششم)</td>
+        <td class="p-3">کسب‌وکارهایی که محصولشان ارزش محصول شما را چند برابر می‌کند (تکمیل اکوسیستم)</td>
+        <td class="p-3 text-emerald-400">هم‌افزایی و افزایش تقاضای کل صنعت</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="bcg-ge">۳.۱. ابزارهای مکمل: BCG، GE/مک‌کنزی، مصاحبه با خبرگان و درس از شکست‌ها</h3>
+<p>استاد یادآور شدند که برای تحلیل پورتفولیو و صنعت، علاوه بر <strong>ماتریس BCG</strong> (نرخ رشد بازار در برابر سهم نسبی) و <strong>ماتریس GE/مک‌کنزی</strong>، تدوین‌کننده BP باید دو اقدام میدانی انجام دهد:
+- <strong>مصاحبه عمیق با خبرگان صنعت (In-depth Expert Interviews):</strong> داده‌های واقعی و اصطکاک‌های پنهان بازار در گزارش‌های کتابخانه‌ای یافت نمی‌شوند.
+- <strong>تحلیل کسب‌وکارهای شکست‌خورده (Learning from Past Failures):</strong> بررسی چرایی شکست پیشینیان در همان صنعت، ارزان‌ترین راه پیشگیری از تکرار خطاهای مرگبار است.</p>
+<hr />
+<h2 id="_3">۴. ابعاد روان‌شناختی و اقناع در طراحی کسب‌وکار</h2>
+<p>استاد رحیم‌زاده برای درک رفتار مشتریان، تیم داخلی و سرمایه‌گذاران، سه نظریه بنیادین روان‌شناسی را به ادبیات BP پیوند زدند:
+1. <strong>نظریه انتخاب ویلیام گلاسر (Choice Theory):</strong> انسان‌ها بر اساس نیازهای بنیادین درونی (بقا، عشق و تعلق، قدرت، آزادی، تفریح) انتخاب می‌کنند؛ طراحی ارزش پیشنهادی باید با این محرک‌ها هم‌سو باشد.
+2. <strong>روان‌شناسی مثبت‌گرا مارتین سلیگمان (Positive Psychology):</strong> تمرکز بر نقاط قوت و ایجاد تجربه معنادار برای مشتری و کارکنان به جای مدیریت صرفاً واکنشی بر ضعف‌ها.
+3. <strong>روان‌شناسی نفوذ و متقاعدسازی رابرت سیالدینی (Influence &amp; Persuasion):</strong> بهره‌گیری اخلاقی از اصول شش‌گانه اقناع (عمل متقابل، تعهد و ثبات، تایید اجتماعی، دوست‌داشتن، اقتدار و کمیابی) در ارائه BP به سرمایه‌گذار و طراحی قیف فروش.</p>
+<hr />
+<h2 id="_4">۵. کیس‌استادی‌های بانکداری، تقلید کورکورانه و بحران اعتمادسوزی</h2>
+<h3 id="ing">۵.۱. الگوی بانکداری تجربه‌محور ING هلند در برابر تقلید سطحی در ایران</h3>
+<p>استاد رحیم‌زاده الگوی درخشان <strong>بانک ING هلند</strong> را تشریح کردند: یک بانک ۱۰۰٪ دیجیتال که در شعب فیزیکی خود هیچ باجه سنتی ندارد؛ بلکه فضایی تجربه‌محور با دیوایس‌های مدرن، اینترنت پرسرعت رایگان و طراحی برگرفته از <strong>هویت تاریخی دریانوردی و تجارت هلند</strong> خلق کرده است و هر شعبه ضمن حفظ هویت یکپارچه، طراحی منحصربه‌فردی دارد.
+- <strong>نقد تقلید کورکورانه در ایران:</strong> استاد به <strong>کیس شکست پذیرایی رایگان در شعبه سبزه میدان</strong> اشاره کردند که با کپی‌برداری بدون بومی‌سازی فرهنگی از الگوهای خارجی، به جای خلق پرستیژ بانکی، دچار سوءاستفاده مراجعان غیرمرتبط و شکست عملیاتی شد.</p>
+<h3 id="_5">۵.۲. نبرد نئوبانک‌ها: بلو بانک در برابر بانک‌های سنتی (ملت و ملی)</h3>
+<p>استاد با مقایسه <strong>بلو بانک (Blu Bank)</strong> و غول‌های سنتی بانکی، نشان دادند که چگونه غفلت بانک‌های بزرگ از <strong>ارزش طول عمر (CLV) نسل جدید</strong> فرصت طلایی خلق کرد:
+- بلو بانک با گیمیفیکیشن، آموزش مالی، کارت‌های رنگی متنوع و تمرکز بر نوجوانان و دانش‌آموزان، جایگاه خود را در جیب و ذهن نسل آینده تثبیت کرد.
+- بانک‌های سنتی (مانند بانک ملت) با سال‌ها تأخیر و پس از تثبیت موقعیت بلو بانک، با محصولاتی نظیر «تیما کارت» و سامانه «دیما» وارد واکنش دفاعی شدند.</p>
+<h3 id="trust-erosion">۵.۳. هشدار حیاتی: بحران اعتمادسوزی (Trust Erosion) و سپرده‌های ارزی</h3>
+<p>استاد رحیم‌زاده با لحنی قاطع هشدار دادند که <strong>اعتماد (Trust)</strong> طی سال‌ها با زحمت ساخته می‌شود، اما با یک تصمیم بی‌درایت یا بدعهدی (مانند تغییر یک‌جانبه قواعد در سپرده‌های ارزی یا خلف وعده مالی) برای همیشه نابود می‌گردد. در طراحی BP، هیچ منفعت کوتاه‌مدتی ارزش تخریب اعتماد مشتری را ندارد.</p>
+<hr />
+<h2 id="_6">۶. تله موفقیت قبلی، بنچمارک زنجیره ارزش، کیس هیلتی و انقلاب پلتفرم‌ها</h2>
+<h3 id="success-trap">۶.۱. تله موفقیت (Success Trap) و کیس صابون مسافرتی</h3>
+<p>استاد با اشاره به کیس نوآوری در صابون (پودر کردن صابون در بسته‌های کوچک جیبی و مسافرتی و سپس مایع‌سازی و بسته‌بندی نوین آن)، هشدار دادند که <strong>«موفقیت دیروز شما بزرگ‌ترین تهدید برای فردای شماست»</strong>. سازمان‌هایی که به مدل برنده فعلی خود قانع می‌شوند و از ترس تغییر، نوآوری را متوقف می‌کنند، توسط بازیگران جدید بلعیده خواهند شد.</p>
+<h3 id="value-chain-gap-benchmarking">۶.۲. منظر سوم زنجیره ارزش: شکاف‌یابی صنعت (Value Chain Gap Benchmarking)</h3>
+<p>استاد رحیم‌زاده یک روش عملیاتی برای نوآوری بدون اختراع مجدد چرخ ارائه دادند: تک‌تک حلقه‌های <strong>زنجیره ارزش</strong> سازمان خود را شناسایی کنید، عملکرد هر حلقه را با <strong>متوسط صنعت</strong> مقایسه کنید و دقیقاً در نقطه‌ای که کل صنعت ضعف و شکاف دارد، برتری غیرقابل تقلید ایجاد نمایید.</p>
+<h3 id="hilti-fleet-service">۶.۳. کیس‌استادی برند هیلتی (Hilti) و گذار به سرویس فلیت (Fleet Service)</h3>
+<p>استاد برند سوئیسی-لیختن‌اشتاینی <strong>هیلتی (Hilti)</strong> را در صنعت ابزارها و ماشین‌آلات صنعتی های‌اند (High-End) بررسی کردند:
+- هیلتی به گونه‌ای جایگاه‌یابی کرده است که از نظر استحکام، کیفیت متریال و اعتماد مشتری، حتی در مقایسه با برندهایی نظیر <strong>زیمنس</strong> در تراز نخست قرار دارد و قطعات کلیدی خود را در کارخانه‌های اختصاصی تولید می‌کند.
+- <strong>چرخش استراتژیک به مدل خدماتی:</strong> هیلتی از فروش صرف ابزار فیزیکی فراتر رفت و با راه‌اندازی <strong>سرویس فلیت هیلتی (Hilti Fleet Service)</strong>، به‌جای فروش دریل و تجهیزات، «دسترسی تضمینی، تعمیر و جایگزینی مستمر ناوگان ابزار» را در قالب اشتراک و خدمات پلتفرمی به پیمانکاران ارائه داد.</p>
+<h3 id="_7">۶.۴. انقلاب پلتفرم‌ها و قدرت مقیاس‌پذیری (۱۰ ساله)</h3>
+<p>در بخش پایانی، استاد تحول مدل‌های کسب‌وکار از ۲۰۰۸ تا ۲۰۱۸ و پس از آن را واکاوی کردند:
+- گذار از فروش محدود یک برند خاص به <strong>پلتفرم‌های تجمیع‌کننده چندبرندی</strong> که بیش از <strong>۱,۲۵۰,۰۰۰ تا ۱.۵ میلیون</strong> دستگاه و تجهیز متنوع از تمام برندهای معتبر جهان را در دسترس مشتری قرار می‌دهند (با سهم غالب ۹۰٪ برندهای معتبر در سبد تقاضا).
+- <strong>قدرت مالی مقیاس‌پذیری پلتفرم:</strong> استاد با ذکر یک نمونه واقعی از جهش مالی طی ۱۰ سال نشان دادند که چگونه یک ساختار پلتفرمی با سرمایه‌گذاری اولیه چند میلیون دلاری (و سودآوری اولیه در حدود ۲ میلیون دلار) توانست با تجمیع زنجیره ارزش و ایجاد اثر شبکه‌ای، ارزش بنگاه خود را به <strong>یک میلیارد دلار</strong> برساند.</p>
+<hr />
+<h2 id="_8">۷. دیالوگ‌های سقراطی کلاسی و تبادل دیدگاه‌های عملیاتی</h2>
+<h3 id="7s">دیالوگ اول: درباره نام‌گذاری فرهنگ در مدل 7S مک‌کنزی</h3>
+<ul>
+<li><strong>دانشجو:</strong> استاد، در مورد ارزیابی فرهنگ سازمان، آیا نام دیگری هم در مدل 7S مک‌کنزی برای آن استفاده می‌شود؟</li>
+<li><strong>استاد رحیم‌زاده:</strong> بله، در مدل 7S مک‌کنزی به جای واژه مستقیم «Culture»، از اصطلاح دقیق <strong>Shared Values</strong> (ارزش‌های مشترک) استفاده می‌شود که در قلب شش عنصر دیگر قرار می‌گیرد و جهت‌دهنده کل سازمان است.</li>
+</ul>
+<h3 id="_9">دیالوگ دوم: درباره قیمت‌گذاری بالای برندهایی مثل هیلتی</h3>
+<ul>
+<li><strong>دانشجو:</strong> آیا برندینگ هیلتی باعث می‌شود که کارخانه بتواند محصولاتش را با قیمت بسیار بالا بفروشد؟</li>
+<li><strong>استاد رحیم‌زاده:</strong> برندینگ به‌تنهایی و بدون پشتوانه فنی دوام نمی‌آورد! هیلتی به این دلیل می‌تواند قیمت پرمیوم بگیرد که هم سختی متریال، مهندسی و دوام قطعاتش در کارخانه بی‌نقص است و هم با سرویس فلیت (Fleet Service) ریسک خوابِ پروژه پیمانکار را به صفر می‌رساند. مشتری پول توقف کارگاه را نمی‌دهد؛ پول تداوم عملیات را می‌دهد.</li>
+</ul>
+<h3 id="_10">دیالوگ سوم: درباره چالش ورود برندهای باکیفیت به بازارهای جهانی و صادرات</h3>
+<ul>
+<li><strong>دانشجو:</strong> چرا برخی شرکت‌ها با وجود داشتن محصولات باکیفیت (مانند فرش دستباف یا صنایع دستی ایران)، در فروش جهانی دچار مشکل می‌شوند؟</li>
+<li><strong>استاد رحیم‌زاده:</strong> چون محصول خوب بدون <strong>برندینگ، استانداردسازی روایت و کانال توزیع بین‌المللی</strong> ارزش افزوده‌اش را به واسطه‌های خارجی واگذار می‌کند. در حوزه فرش دستی و هنر، ما گپ بزرگی داریم؛ سود دلاری را دیگران می‌برند در حالی که رقیبی مثل چین با بسته‌بندی و برندسازی بازار را می‌گیرد. مطالعه کتاب <strong>«اقتصاد هنر» اثر آقای بیات‌نژاد</strong> و کار روی برندسازی صادراتی در این حوزه‌ها حیاتی است.</li>
+</ul>
+<hr />
+<h2 id="_11">۸. کتاب‌شناسی و مراجع علمی جلسه چهارم</h2>
+<div class="overflow-x-auto my-6">
+  <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
+    <thead class="bg-slate-800 text-amber-400">
+      <tr>
+        <th class="p-3 border-b border-slate-700">ردیف</th>
+        <th class="p-3 border-b border-slate-700">عنوان اثر / نظریه مرجع</th>
+        <th class="p-3 border-b border-slate-700">پدیدآورنده / مرجع</th>
+        <th class="p-3 border-b border-slate-700">کاربرد در تدوین طرح کسب‌وکار (BP)</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-700/50 bg-slate-900/60 text-slate-200">
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-mono text-amber-400 font-bold">1</td>
+        <td class="p-3 font-semibold text-white">استراتژی رقابتی (مدل ۶ نیروی رقابتی)<br><span class="font-mono text-slate-400 text-[11px]">Competitive Strategy</span></td>
+        <td class="p-3">مایکل پورتر (تکمیل‌شده با نیروی ششم برندنبورگر، نالباف و استاد رحیم‌زاده)</td>
+        <td class="p-3 text-slate-300">تحلیل ساختار صنعت، موانع ورود، قدرت چانه‌زنی و نقش تکمیل‌کننده‌ها در سودآوری BP.</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-mono text-amber-400 font-bold">2</td>
+        <td class="p-3 font-semibold text-white">اقتصاد هنر<br><span class="font-mono text-slate-400 text-[11px]">Economics of Art</span></td>
+        <td class="p-3">بیات‌نژاد</td>
+        <td class="p-3 text-slate-300">درک ارزش‌گذاری اقتصادی، برندینگ و تجاری‌سازی صنایع دستی، هنری و صادرات محور در ایران.</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-mono text-amber-400 font-bold">3</td>
+        <td class="p-3 font-semibold text-white">راهنمای پیکره دانش مدیریت پروژه<br><span class="font-mono text-slate-400 text-[11px]">PMBOK Guide</span></td>
+        <td class="p-3">مؤسسه مدیریت پروژه (PMI)</td>
+        <td class="p-3 text-slate-300">ساختاریافتگی اجرای طرح کسب‌وکار، زمان‌بندی، کنترل محدوده و مدیریت ریسک‌های اجرایی.</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-mono text-amber-400 font-bold">4</td>
+        <td class="p-3 font-semibold text-white">نظریه انتخاب و روان‌شناسی مثبت‌گرا<br><span class="font-mono text-slate-400 text-[11px]">Choice Theory & Positive Psychology</span></td>
+        <td class="p-3">ویلیام گلاسر و مارتین سلیگمان</td>
+        <td class="p-3 text-slate-300">تحلیل انگیزه‌های درونی تصمیم‌گیری مشتری و طراحی فرهنگ تیمی تاب‌آور.</td>
+      </tr>
+      <tr class="hover:bg-slate-800/50">
+        <td class="p-3 font-mono text-amber-400 font-bold">5</td>
+        <td class="p-3 font-semibold text-white">نفوذ: روان‌شناسی متقاعدسازی<br><span class="font-mono text-slate-400 text-[11px]">Influence: The Psychology of Persuasion</span></td>
+        <td class="p-3">رابرت سیالدینی<br><span class="font-mono text-slate-400 text-[11px]">(Robert Cialdini)</span></td>
+        <td class="p-3 text-slate-300">کاربست اصول شش‌گانه اقناع در ارائه طرح کسب‌وکار به سرمایه‌گذاران و طراحی قیف فروش.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+      </div>
+
+    </div>
+
     <!-- TAB 3: BOOKS & REFERENCE SHELF -->
     <div id="content-books" class="tab-content hidden space-y-8">
       
@@ -1517,6 +2242,63 @@
       <!-- Books Grid (12 Books + HBR + Domestic Forewords) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
+        <!-- Book 17: Economics of Art -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-rose-500/20 text-rose-300 border border-rose-500/30 px-2.5 py-0.5 rounded-full font-bold">اقتصاد و صادرات هنر</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#17</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">اقتصاد هنر</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Economics of Art</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلف:</strong> بیات‌نژاد<br>
+              <strong>کاربرد در BP:</strong> درک ارزش‌گذاری اقتصادی، برندینگ صادراتی و بسته‌بندی صنایع دستی و فرش ایرانی در بازارهای جهانی.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-rose-300">
+            <strong>نکته استاد رحیم‌زاده:</strong> بدون برندینگ صادراتی، سود دلاری صنایع دستی ما به جیب واسطه‌های خارجی می‌رود.
+          </div>
+        </div>
+
+        <!-- Book 18: PMBOK Guide -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-blue-500/20 text-blue-300 border border-blue-500/30 px-2.5 py-0.5 rounded-full font-bold">مدیریت پروژه</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#18</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">پیکره دانش مدیریت پروژه</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">PMBOK Guide (PMI)</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مرجع:</strong> مؤسسه مدیریت پروژه (PMI)<br>
+              <strong>کاربرد در BP:</strong> ساختاردهی زمان‌بندی اجرایی، کنترل محدوده و مدیریت ریسک‌های عملیاتی هنگام پیاده‌سازی طرح کسب‌وکار.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-blue-300">
+            <strong>کاربرد کلاسی:</strong> اتصال برنامه عملیاتی BP به استانداردهای بین‌المللی اجرای پروژه.
+          </div>
+        </div>
+
+        <!-- Book 19: Influence & Choice Theory -->
+        <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs bg-purple-500/20 text-purple-300 border border-purple-500/30 px-2.5 py-0.5 rounded-full font-bold">روان‌شناسی و اقناع</span>
+              <span class="text-xs text-amber-400 font-mono font-bold">#19</span>
+            </div>
+            <h3 class="text-base font-black text-amber-400 mb-1">نفوذ، نظریه انتخاب و روان‌شناسی مثبت‌گرا</h3>
+            <div class="text-[11px] font-mono text-slate-400 mb-3">Cialdini, Glasser & Seligman</div>
+            <p class="text-xs text-slate-300 leading-relaxed text-justify mb-3">
+              <strong>مؤلفان:</strong> رابرت سیالدینی، ویلیام گلاسر و مارتین سلیگمان<br>
+              <strong>کاربرد در BP:</strong> مهندسی قیف فروش، انگیزش درونی خریدار و اقناع حرفه‌ای سرمایه‌گذاران.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800 text-[11px] text-purple-300">
+            <strong>کاربرد کلاسی:</strong> طراحی تجربه مشتری بر اساس نیازهای بنیادین انتخاب.
+          </div>
+        </div>
+
         <!-- Book 13: Blue Ocean Strategy -->
         <div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between shadow-md">
           <div>
@@ -2038,7 +2820,31 @@
 - مدیریت فسادپذیری ظرفیت با طراحی باشگاه‌های مشتریان و برنامه‌های وفاداری هوشمند (برگرفته از مدل نوآورانه امریکن ایرلاینز).
 - استانداردسازی تجارب کاربری برای مهار خطای انسانی در خدمت‌رسانی.</p>
 <hr />
-<h2 id="ide-matrix">۱۵. ماتریس تصمیم‌گیری و اعتبارسنجی ایده تا اجرا (IDE-Matrix)</h2>
+<h2 id="rfm">۱۵. معماری کانال‌های توزیع، مالکیت داده و ماتریس RFM</h2>
+<h3 id="_11">۱۵.۱. سطوح توزیع و تمایز واسطه علمی از دلال</h3>
+<p>در طراحی کانال‌های توزیع (سطح ۰ تا سطح ۳)، واسطه علمی با ایجاد زیرساخت لجستیک، انبارداری و تأمین اعتبار، ارزش اقتصادی می‌سازد، در حالی که دلال صرفاً از رانت عدم شفافیت اطلاعات سود می‌برد. انتخاب میان فروش مستقیم و غیرمستقیم نیازمند موازنه میان حاشیه سود ناخالص، پوشش جغرافیایی و <strong>مالکیت داده‌های مشتری</strong> است (درس‌های Salesforce و وال‌مارت: <em>Information is Power</em>).</p>
+<h3 id="rfm_1">۱۵.۲. بخش‌بندی رفتاری RFM، سود اقتصادی و اثر رژ لب</h3>
+<p>مدیریت ارتباط با مشتری با ماتریس <strong>RFM</strong> (تازگی، تواتر و ارزش مالی خرید) از ارائه تخفیف‌های فراگیر مخرب جلوگیری می‌کند. هم‌زمان، در تحلیل مالی BP باید <strong>سود اقتصادی</strong> (با کسر هزینه فرصت سرمایه) مبنا قرار گیرد و در دوران رکود تورمی، با تکیه بر <strong>سندرم رژ لب (Lipstick Effect)</strong> و <strong>مدل محاسبه اقساط PMT / لیزینگ عملیاتی</strong>، قدرت خرید مشتریان را بدون قفل کردن سرمایه در گردش آزاد ساخت.</p>
+<hr />
+<h2 id="7s-idbass">۱۶. تاب‌آوری زنجیره تأمین، هویت برند و تحلیل محیط رقابتی (7S، IDBASS و ۶ نیرو)</h2>
+<h3 id="_12">۱۶.۱. قانون حداقل سه تأمین‌کننده و تقدم هویت بر استراتژی</h3>
+<ul>
+<li><strong>زنجیره تأمین:</strong> برای هر نهاده کلیدی باید حداقل ۳ تأمین‌کننده آماده وجود داشته باشد و فعالیت‌های غیرمحوری برون‌سپاری شوند.</li>
+<li><strong>تقدم هویت برند:</strong> برند «تصویر ذهنی طراحی‌شده و هدفمند در غیاب شما» است (نقد تعریف منفعل جف بیزوس). پیش از هر تغییر استراتژیک یا ظاهری (تمایز <strong>Rebranding</strong> از <strong>Redesign</strong>)، هم‌سویی با میراث برند باید سنجیده شود تا فجایعی نظیر <strong>New Coke</strong> تکرار نگردد.</li>
+</ul>
+<h3 id="-">۱۶.۲. ارزیابی درون‌سازمانی و مدل ۶ نیروی رقابتی پورتر-رحیم‌زاده</h3>
+<ul>
+<li><strong>درون‌سازمانی:</strong> هم‌راستاسازی ۷ عنصر <strong>7S مک‌کنزی</strong> (با محوریت Shared Values)، کاربست <strong>مدل اختصاصی IDBASS (نسخه دوم)</strong> و منطق واگذاری سهام اولیه برای تقسیم ریسک و ایجاد انگیزه مالکیت.</li>
+<li><strong>ساختار صنعت:</strong> تکمیل نیروهای پنج‌گانه پورتر با <strong>نیروی ششم (تکمیل‌کننده‌ها / Complementors)</strong>، ترکیب با ماتریس‌های BCG/GE، مصاحبه عمیق با خبرگان صنعت و درس‌آموزی از کسب‌وکارهای شکست‌خورده.</li>
+</ul>
+<hr />
+<h2 id="ing">۱۷. تله موفقیت، بحران اعتمادسوزی و انقلاب پلتفرم‌ها (ING، بلو بانک و هیلتی)</h2>
+<ul>
+<li><strong>بومی‌سازی تجربه و صیانت از اعتماد:</strong> تقلید کورکورانه بدون فرهنگ‌سازی بومی (کیس پذیرایی رایگان شعبه سبزه میدان) به شکست می‌انجامد، در حالی که الگوی <strong>بانک ING هلند</strong> و <strong>بلو بانک</strong> (گیمیفیکیشن و تسخیر CLV نسل جدید) استاندارد نوین تجربه مشتری است. هیچ سود کوتاه‌مدتی نباید به <strong>اعتمادسوزی (Trust Erosion)</strong> منتهی شود.</li>
+<li><strong>تله موفقیت (Success Trap) و گذار پلتفرمی:</strong> سازمان‌ها نباید قربانی موفقیت دیروز شوند (کیس صابون مسافرتی). با <strong>بنچمارک شکاف زنجیره ارزش</strong> و چرخش از فروش محصول صرف به خدمات مستمر و پلتفرم‌های چندبرندی (نظیر سرویس فلیت <strong>هیلتی</strong> و جهش میلیون‌دلاری به ارزش میلیاردی پلتفرم‌ها در ۱۰ سال)، مقیاس‌پذیری پایدار رقم می‌خورد.</li>
+</ul>
+<hr />
+<h2 id="ide-matrix">۱۸. ماتریس تصمیم‌گیری و اعتبارسنجی ایده تا اجرا (IDE-Matrix)</h2>
 <div class="overflow-x-auto my-6">
   <table class="min-w-full text-right border border-slate-700 rounded-lg overflow-hidden text-sm">
     <thead class="bg-slate-800 text-amber-400">
@@ -2079,7 +2885,7 @@
 </div>
 
 <hr />
-<h2 id="recommended-academic-bibliography">۱۶. کتاب‌شناسی راهبردی و مراجع علمی مرجع (Recommended Academic Bibliography)</h2>
+<h2 id="recommended-academic-bibliography">۱۹. کتاب‌شناسی راهبردی و مراجع علمی مرجع (Recommended Academic Bibliography)</h2>
 <p>به تأکید استاد رحیم‌زاده در دانشکده اقتصاد دانشگاه تهران، تسلط بر تدوین طرح کسب‌وکار نیازمند یکپارچه‌سازی بینش‌های چندرشته‌ای است:</p>
 <div class="my-8 p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 shadow-md">
   <div class="text-center font-black text-amber-400 text-base mb-6 pb-3 border-b border-slate-800">
@@ -2144,13 +2950,37 @@
           <td class="p-3">ورنر بهرنز و پیتر ام. هاورانک<br><span class="font-mono text-slate-400 text-[11px]">(W. Behrens & P.M. Hawranek)</span></td>
           <td class="p-3 text-slate-300">مرجع استاندارد مدلسازی مالی، پیش‌بینی نقدینگی، محاسبه IRR/NPV و تحلیل حساسیت تورمی با کامفار ۳.</td>
         </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">09</td>
+          <td class="p-3 font-semibold text-white">رفتار مصرف‌کننده<br><span class="font-mono text-slate-400 text-[11px]">Consumer Behavior</span></td>
+          <td class="p-3">پروفسور مایکل آر. سولومون<br><span class="font-mono text-slate-400 text-[11px]">(Michael R. Solomon)</span></td>
+          <td class="p-3 text-slate-300">روان‌شناسی خریدار، اثر رژ لب (Lipstick Effect) در رکود و تحلیل رفتار مصرف‌کننده.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">10</td>
+          <td class="p-3 font-semibold text-white">استراتژی رقابتی (۶ نیروی رقابتی)<br><span class="font-mono text-slate-400 text-[11px]">Competitive Strategy</span></td>
+          <td class="p-3">مایکل پورتر، برندنبورگر، نالباف و رحیم‌زاده</td>
+          <td class="p-3 text-slate-300">تحلیل ساختار صنعت، موانع ورود و نقش نیروی ششم (تکمیل‌کننده‌ها) در سودآوری BP.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">11</td>
+          <td class="p-3 font-semibold text-white">اقتصاد هنر<br><span class="font-mono text-slate-400 text-[11px]">Economics of Art</span></td>
+          <td class="p-3">بیات‌نژاد</td>
+          <td class="p-3 text-slate-300">اقتصاد فرهنگ و هنر، ارزش‌گذاری و برندینگ صادراتی صنایع دستی و فرش ایرانی.</td>
+        </tr>
+        <tr class="hover:bg-slate-800/50">
+          <td class="p-3 font-mono text-amber-400 font-bold">12</td>
+          <td class="p-3 font-semibold text-white">نفوذ و اقناع / نظریه انتخاب / PMBOK<br><span class="font-mono text-slate-400 text-[11px]">Influence, Choice Theory & PMBOK</span></td>
+          <td class="p-3">سیالدینی، گلاسر، سلیگمان و PMI</td>
+          <td class="p-3 text-slate-300">متقاعدسازی سرمایه‌گذاران، روان‌شناسی انتخاب مشتری و انضباط اجرای پروژه‌ای BP.</td>
+        </tr>
       </tbody>
     </table>
   </div>
 </div>
 
 <hr />
-<h2 id="_11">۱۷. جمع‌بندی مدیریتی و مانیفست بقای بنگاه در شرایط نااطمینانی</h2>
+<h2 id="_13">۲۰. جمع‌بندی مدیریتی و مانیفست بقای بنگاه در شرایط نااطمینانی</h2>
 <p>طرح تدوین کسب‌وکار، مرز میان کارآفرینی حرفه‌ای و قمار تجاری است. مدیری که پیش از ورود به بازار، فرضیات خود را در کوره امکان‌سنجی پویا ذوب کرده، انضباط جریان نقدینگی را به اثبات رسانده، ارزش پیشنهادی را بر اساس کارهای واقعی مشتری (JTBD) بنا نهاده و ساختار برند و خدمات خود را مهندسی کرده باشد، در دشوارترین طوفان‌های اقتصادی نیز مسیر بقا و تعالی بنگاه را تضمین خواهد کرد.</p>
       </div>
     </div>
@@ -2331,7 +3161,7 @@
   <script>
     // Tab switching logic
     function switchTab(tabId) {
-      const tabs = ['overview', 'session1', 'session2', 'books', 'handbook', 'simulator', 'cases'];
+      const tabs = ['overview', 'session1', 'session2', 'session3', 'session4', 'books', 'handbook', 'simulator', 'cases'];
       tabs.forEach(id => {
         const el = document.getElementById('content-' + id);
         if (el) el.classList.add('hidden');
